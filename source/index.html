@@ -10,7 +10,7 @@
   <header class="page-header">
     <span class="page-header__text-logo">Погнали?</span>
     <a class="page-header__logo visually-hidden">
-      <img src="img/logo.svg" width="226" height="30" alt="Погнали?" />
+      <img src="img/logo.svg" width="226" height="30" alt="Логотип" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -33,18 +33,18 @@
             <span class="user-list__caption">АВТОРИЗАЦИЯ</span>
           </a>
         </div>
-        <dl class="main-nav__list contact-list">
-          <div class="contact-list__item">
-            <dt class="contact-list__phone">
-              <a class="contact-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</a>
+        <dl class="main-nav__list icon-list">
+          <div class="icon-list__item">
+            <dt class="icon-list__phone">
+              <a class="icon-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</a>
             </dt>
-            <dd class="contact-list__details">8 800 555-86-28</dd>
+            <dd class="icon-list__details">8 800 555-86-28</dd>
           </div>
-          <div class="contact-list__item">
-            <dt class="contact-list__email">
-              <a class="contact-list__link icon icon--dark-theme icon--mail">Напишите нам</a>
+          <div class="icon-list__item">
+            <dt class="icon-list__email">
+              <a class="icon-list__link icon icon--dark-theme icon--mail">Напишите нам</a>
             </dt>
-            <dd class="contact-list__details">MAIL@HTMLACADEMY.RU</dd>
+            <dd class="icon-list__details">MAIL@HTMLACADEMY.RU</dd>
           </div>
         </dl>
         <ul class="main-nav__list social-list">
@@ -73,14 +73,14 @@
         <header class="promo__header">
           <h2 class="promo__slogan">В путешествие с крутыми попутчиками!</h2>
           <div class="promo__traveller-illustration">
-            <img src="img/traveller.svg" alt="Путешественник">
+            <img class="promo__traveller-icon" src="img/traveller.svg" alt="Путешественник">
           </div>
-          <ul class="promo__list contact-list">
-            <li class="contact-list__item">
-              <a class="contact-list__link icon icon--main-theme icon--phone">Позвоните нам</a>
+          <ul class="promo__list icon-list">
+            <li class="icon-list__item">
+              <a class="icon-list__link icon icon--main-theme icon--phone">Позвоните нам</a>
             </li>
-            <li class="contact-list__item">
-              <a class="contact-list__link icon icon--main-theme icon--email">Напишите нам</a>
+            <li class="icon-list__item">
+              <a class="icon-list__link icon icon--main-theme icon--email">Напишите нам</a>
             </li>
           </ul>
           <div class="promo__list user-list">
@@ -93,17 +93,17 @@
           <q class="review__text">Лучшее приложение, <br> что я видел в жизни!</q>
           <p class="review__author-info">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
         </blockquote>
-        <ol class="promo__list opportunities-list">
-          <li class="opportunities-list__item opportunities-list__item--dark-theme">
+        <ol class="promo__list information-list">
+          <li class="information-list__item information-list__item--dark-theme">
             Выберите направление
           </li>
-          <li class="opportunities-list__item opportunities-list__item--middle-theme">
+          <li class="information-list__item information-list__item--middle-theme">
             Изучите идеи путешественников
           </li>
-          <li class="opportunities-list__item opportunities-list__item--light-theme">
+          <li class="information-list__item information-list__item--light-theme">
             Находите тех, кто похож на вас
           </li>
-          <li class="opportunities-list__item opportunities-list__item--even-lighter-theme">
+          <li class="information-list__item information-list__item--even-lighter-theme">
             Путешествуйте вместе!
           </li>
         </ol>
@@ -130,22 +130,183 @@
             можно там заняться.
           </p>
         </header>
-        <ul class="countries-list">
-          <li class="countries-list__item">
-            <a class="countries-list__link countries-list__link--thailand">
-              <dl class="countries-list visits-list">
-                <div class="visits-list__item">
-                  <dt class="visits-list__country">
-                    Тайланд
-                  </dt>
-                  <dd class="visits-list__count">18321</dd>
-                </div>
-              </dl>
-            </a>
+        <ul class="card-list">
+          <li class="card-list__item">
+            <div class="card-list__card">
+              <img class="card-list__thailand" src="img/thailand.svg" alt="Тайланд" />
+              <div class="card-list__info">
+                <img class="flag" src="img/thailandflag.svg" alt="Флаг Тайланда" />
+                <dl class="card-list visits-list">
+                  <div class="visits-list__item">
+                    <dt class="visits-list__country">
+                      Тайланд
+                    </dt>
+                    <dd class="visits-list__count">
+                      <img class="card-list__user-icon" src="user.svg" alt="Пользователь" />
+                      <span>18321</span>
+                    </dd>
+                  </div>
+                </dl>
+                <small>Джунгли зовут!</small>
+              </div>
+            </div>
+          </li>
+          <li class="card-list__item">
+            <div class="card-list__card">
+              <img class="card-list__france" src="img/france.svg" alt="Франция" />
+              <div class="card-list__info">
+                <img class="flag" src="img/franceflag.svg" alt="Флаг Франции" />
+                <dl class="card-list visits-list">
+                  <div class="visits-list__item">
+                    <dt class="visits-list__country">
+                      Франция
+                    </dt>
+                    <dd class="visits-list__count">
+                      <img class="card-list__user-icon" src="user.svg" alt="Пользователь" />
+                      <span>12518</span>
+                    </dd>
+                  </div>
+                </dl>
+                <small>Трэ бьен, манифик!</small>
+              </div>
+            </div>
+          </li>
+          <li class="card-list__item">
+            <div class="card-list__card">
+              <img class="card-list__czech" src="img/czech.svg" alt="Чехия" />
+              <div class="card-list__info">
+                <img class="flag" src="img/czechflag.svg" alt="Флаг Чехии" />
+                <dl class="card-list visits-list">
+                  <div class="visits-list__item">
+                    <dt class="visits-list__country">
+                      Чехия
+                    </dt>
+                    <dd class="visits-list__count">
+                      <img class="card-list__user-icon" src="user.svg" alt="Пользователь" />
+                      <span>5326</span>
+                    </dd>
+                  </div>
+                </dl>
+                <small>Закаулки старой Европы</small>
+              </div>
+            </div>
           </li>
         </ul>
+        <a class="countries__all-countries button button--arrow " href="allcountries.html">Показать все</a>
       </div>
     </section>
+    <section class="users">
+      <div class="wrapper">
+        <header class="users__header">
+          <h2 users__caption>
+            Попутчики
+          </h2>
+          <p class="users_info">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+            коктейль, а другому
+            маршрут для хайкинга. </p>
+          <p class="users__slogan">Теперь можно легко найти единомышленников!</p>
+        </header>
+        <ul class="users__cards card-list">
+          <li class="card-list__item">
+            <div class="card-list__card">
+              <img class="card-list__photo" src="img/phototany.svg" alt="Фото Тани Фирсовой" />
+              <div class="users__level ">
+                <b class="users__level-number">99</b>
+                level
+              </div>
+              <div class="card-list__info">
+                <p class="card-list__flags">
+                  <img class="flag" src="img/seychellesflag.svg" alt="Флаг Сейшилы" />
+                  <img class="flag" src="img/thailandflag.svg" alt="Флаг Тайланда" />
+                  <img class="flag" src="img/srilankaflag.svg" alt="Флаг Шри-Ланки" />
+                </p>
+                <blockquote class="card-list__item">
+                  <div class="card-list__user-info">
+                    <cite class="card-list__user-name">Таня Фирсова</cite>
+                    <p class="card-list__text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  </div>
+                </blockquote>
+                <ul class="card-list icon-list">
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--airplane icon--active">Самолет</a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--bus">Автобус</a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--bicycle">Велосипед</a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--pedestrian">Пешеходные прогулки</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="card-list__item">
+            <div class="card-list__card">
+              <img class="card-list__photo" src="img/photopetr.svg" alt="Фото Петра Демина" />
+              <div class="users__level ">
+                <b class="users__level-number">80</b>
+                level
+              </div>
+              <div class="card-list__info">
+                <p class="card-list__flags">
+                  <img class="flag" src="img/belgiumflag.svg" alt="Флаг Бельгии" />
+                  <img class="flag" src="img/czechflag.svg" alt="Флаг Чехии" />
+                </p>
+                <blockquote class="card-list__item">
+                  <div class="card-list__user-info">
+                    <cite class="card-list__user-name">Петя Демин</cite>
+                    <p class="card-list__text">#бурге #бар #футбол #концерт #крафт</p>
+                  </div>
+                </blockquote>
+                <ul class="card-list icon-list">
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--airplane icon--active">Самолет</a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--bus icon--active">Автобус</a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--bicycle">Велосипед</a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a class="icon-list__link icon icon--transparent-theme icon--pedestrian icon--active">Пешеходные
+                      прогулки</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="countries__all-countries button button--arrow " href="allcountries.html">Показать все</a>
+      </div>
+    </section>
+    <sction class="profile">
+      <header class="profile__header">
+        <h2 class="header__caption">Добавьте свой профиль</h2>
+        <img src="img/rates.svg" />
+      </header>
+      <ol class="profile__price-list">
+
+      </ol>
+
+      <!-- <ol class="promo__list information-list">
+        <li class="information-list__item information-list__item--dark-theme">
+          Выберите направление
+        </li>
+        <li class="information-list__item information-list__item--middle-theme">
+          Изучите идеи путешественников
+        </li>
+        <li class="information-list__item information-list__item--light-theme">
+          Находите тех, кто похож на вас
+        </li>
+        <li class="information-list__item information-list__item--even-lighter-theme">
+          Путешествуйте вместе!
+        </li>
+      </ol> -->
+    </sction>
   </main>
 </body>
 
