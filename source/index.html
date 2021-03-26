@@ -10,7 +10,7 @@
   <header class="page-header">
     <span class="page-header__text-logo">Погнали?</span>
     <a class="page-header__logo visually-hidden">
-      <img src="img/logo.svg" width="226" height="30" alt="Погнали?">
+      <img src="img/logo.svg" width="226" height="30" alt="Погнали?" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -36,13 +36,13 @@
         <dl class="main-nav__list contact-list">
           <div class="contact-list__item">
             <dt class="contact-list__phone">
-              <a class="icon icon--dark-theme icon--phone">Позвоните нам</a>
+              <a class="contact-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</a>
             </dt>
             <dd class="contact-list__details">8 800 555-86-28</dd>
           </div>
           <div class="contact-list__item">
             <dt class="contact-list__email">
-              <a class="icon icon--dark-theme icon--email">Напишите нам</a>
+              <a class="contact-list__link icon icon--dark-theme icon--mail">Напишите нам</a>
             </dt>
             <dd class="contact-list__details">MAIL@HTMLACADEMY.RU</dd>
           </div>
@@ -66,6 +66,55 @@
       </div>
     </nav>
   </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Погнали - лучший сайт для поиска попутчиков!</h1>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <header class="promo__header">
+          <h2 class="promo__slogan">В путешествие с крутыми попутчиками!</h2>
+          <div class="promo__traveller-illustration">
+            <img src="img/traveller.svg" alt="Путешественник">
+          </div>
+          <ul class="promo__list contact-list">
+            <li class="contact-list__item">
+              <a class="contact-list__link icon icon--main-theme icon--phone">Позвоните нам</a>
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link icon icon--main-theme icon--email">Напишите нам</a>
+            </li>
+          </ul>
+          <div class="promo user-list">
+            <a class="user-list__authorization button" href="authorization.html">
+              <span class="user-list__caption">АВТОРИЗАЦИЯ</span>
+            </a>
+          </div>
+        </header>
+        <blockquote class="promo__review">
+          <q class="review__text">Лучшее приложение, <br> что я видел в жизни!</q>
+          <p class="review__author-info">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
+          <!-- <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+          <div class="reviews__author-info">
+            <cite class="reviews__author-name">Трэвис Баркер</cite>
+            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+          </div> -->
+        </blockquote>
+        <ol class="promo__list opportunities-list">
+          <li class="opportunities-list__item opportunities-list__item--dark-theme">
+            Выберите направление
+          </li>
+          <li class="opportunities-list__item opportunities-list__item--middle-theme">
+            Изучите идеи путешественников
+          </li>
+          <li class="opportunities-list__item opportunities-list__item--light-theme">
+            Находите тех, кто похож на вас
+          </li>
+          <li class="opportunities-list__item opportunities-list__item--even-lighter-theme">
+            Путешествуйте вместе!
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
