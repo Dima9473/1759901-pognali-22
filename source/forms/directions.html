@@ -69,7 +69,30 @@
     <span class="page-header__caption">Направления</span>
   </header>
   <main class="page-main">
-
+    <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
+      <fieldset>
+        <legend class="visually-hidden">Информация о планах пользователя</legend>
+        <div class="user-info__level ">
+          <b class="user-info__level-number">80</b>
+          level
+        </div>
+        <img class="user-info__avatar" src="../img/deminphoto.svg" alt="Фотография Демина" />
+        <button class="user-info__change-photo">СМЕНИТЬ ФОТО</button>
+        <fieldset class="user-info dataset">
+          <legend class="dataset__legend">ТЭГИ</legend>
+          <textarea class="dataset__change">#бургер #бар #футбол #концерт #крафт</textarea>
+        </fieldset>
+        <fieldset class="user-info__dataset">
+          <legend class="dataset__legend">Транспорт</legend>
+          <p class="dataset__toggles">
+            <button class="dataset__toggle dataset__toggle--active" type="button">Самолет</button>
+            <button class="dataset__toggle dataset__toggle--active" type="button">Общественный траспорт</button>
+            <button class="dataset__toggle" type="button">Велосипед</button>
+            <button class="dataset__toggle dataset__toggle--active" type="button">Прогулки</button>
+          </p>
+        </fieldset>
+      </fieldset>
+    </form>
   </main>
   <footer>
 
