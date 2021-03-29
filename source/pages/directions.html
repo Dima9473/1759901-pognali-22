@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Профиль</title>
+  <title>Направления</title>
 </head>
 
 
@@ -76,37 +76,35 @@
     <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
       <div class="container">
         <section class="general-info">
-          <h2 class="visually-hidden">Предпочтения</р>
-            <div class="general-info__level ">
-              <b class="general-info__level-number">80</b>
-              level
-            </div>
-            <img class="general-info__avatar" src="../img/deminphoto.svg" alt="Фотография Демина" />
-            <button class="general-info__change-photo button button--light-theme">СМЕНИТЬ ФОТО</button>
-            <fieldset class="dataset">
-              <legend class="dataset__legend">ТЭГИ</legend>
-              <textarea class="dataset__change">#бургер #бар #футбол #концерт #крафт</textarea>
-            </fieldset>
-            <fieldset class="dataset">
-              <legend class="dataset__legend">Транспорт</legend>
-              <ul class="dataset transport-list">
-                <li class="transport-list__item">
-                  <button class="transport-list__item button button--togle button--active"
-                    type="button">Самолет</button>
-                </li>
-                <li class="transport-list__item">
-                  <button class="transport-list__item button button--togle button--active" type="button">Общественный
-                    траспорт</button>
-                </li>
-                <li class="transport-list__item">
-                  <button class="transport-list__item" type="button">Велосипед</button>
-                </li>
-                <li class="transport-list__item">
-                  <button class="transport-list__item button button--togle button--active"
-                    type="button">Прогулки</button>
-                </li>
-              </ul>
-            </fieldset>
+          <h2 class="visually-hidden">Предпочтения</h2>
+          <div class="general-info__level ">
+            <b class="general-info__level-number">80</b>
+            level
+          </div>
+          <img class="general-info__avatar" src="../img/deminphoto.svg" alt="Фотография Демина" />
+          <button class="general-info__change-photo button button--light-theme">СМЕНИТЬ ФОТО</button>
+          <fieldset class="dataset">
+            <legend class="dataset__legend">ТЭГИ</legend>
+            <textarea class="dataset__change">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+          <fieldset class="dataset">
+            <legend class="dataset__legend">Транспорт</legend>
+            <ul class="dataset transport-list">
+              <li class="transport-list__item">
+                <button class="transport-list__item button button--togle button--active" type="button">Самолет</button>
+              </li>
+              <li class="transport-list__item">
+                <button class="transport-list__item button button--togle button--active" type="button">Общественный
+                  траспорт</button>
+              </li>
+              <li class="transport-list__item">
+                <button class="transport-list__item" type="button">Велосипед</button>
+              </li>
+              <li class="transport-list__item">
+                <button class="transport-list__item button button--togle button--active" type="button">Прогулки</button>
+              </li>
+            </ul>
+          </fieldset>
         </section>
         <section class="user-plans">
           <h2 class="visually-hidden">Планы пользователя</h2>
@@ -197,8 +195,8 @@
                 <label for="children">Можно с детьми</label>
                 <input id="children" type="checkbox" />
               </div>
-              <input type="month" class="add-planse date-month" datetime="2019-03" />
-              <input type="date" class="add-planse date-days" datetime="2019-03-26" />
+              <input type="month" class="add-planse date-month" />
+              <input type="date" class="add-planse date-days" />
               <button type="button" class="add-plans__next-step button button--middle-theme">Следующий шаг</button>
             </li>
             <li class="step-list__item">
