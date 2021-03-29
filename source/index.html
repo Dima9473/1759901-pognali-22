@@ -8,32 +8,35 @@
 
 <body class="page__body">
   <header class="page-header">
-    <span class="page-header__text-logo">Погнали?</span>
-    <a class="page-header__logo visually-hidden">
-      <img src="img/logo.svg" width="226" height="30" alt="Логотип" />
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="wrapper">
+    <div class="container">
+      <span class="page-header__text-logo">Погнали?</span>
+      <a class="page-header__logo visually-hidden">
+        <img src="img/logo.svg" width="226" height="30" alt="Логотип" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="about.html">О СЕРВИСЕ</a>
+            <a class="site-list__link" href="./pages/about.html">О СЕРВИСЕ</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
+            <a class="site-list__link" href="./pages/directions.html">НАПРАВЛЕНИЯ</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="companions.html">Попутчики</a>
+            <a class="site-list__link" href="./pages/companions.html">Попутчики</a>
           </li>
         </ul>
-        <div class="main-nav__list user-list">
-          <a class="user-list__authorization button" href="authorization.html">
-            <span class="user-list__caption">АВТОРИЗАЦИЯ</span>
-          </a>
-        </div>
-        <dl class="main-nav__list icon-list">
+      </nav>
+      <div class="page-header__list user-list">
+        <a class="user-list__authorization button" href="authorization.html">
+          <span class="user-list__caption">АВТОРИЗАЦИЯ</span>
+        </a>
+      </div>
+      <div class="page-header__list  contact-list">
+        <dl class="page-header__list icon-list">
           <div class="icon-list__item">
             <dt class="icon-list__phone">
               <span class="icon-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</span>
@@ -47,7 +50,7 @@
             <dd class="icon-list__details">MAIL@HTMLACADEMY.RU</dd>
           </div>
         </dl>
-        <ul class="main-nav__list social-list">
+        <ul class="page-header__list social-list">
           <li class="social-list__item">
             <a class="social-list__link icon icon--light-theme icon--facebook"
               href="https://www.facebook.com/htmlacademy">Мы в
@@ -64,12 +67,12 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Погнали - лучший сайт для поиска попутчиков!</h1>
     <section class="promo">
-      <div class="wrapper">
+      <div class="container">
         <header class="promo__header">
           <h2 class="promo__slogan">В путешествие с крутыми попутчиками!</h2>
           <div class="promo__traveller-illustration">
@@ -110,7 +113,7 @@
       </div>
     </section>
     <section class="about">
-      <div class="wrapper">
+      <div class="container">
         <h2 class="about__caption">О сервисе</h2>
         <p class="about__info">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
@@ -122,7 +125,7 @@
       </div>
     </section>
     <section class="countries">
-      <div class="wrapper">
+      <div class="container">
         <header class="countries__header">
           <h2 class="visually-hidden">Направления для путешествий по всему свету!</h2>
           <p class="countries__info">
@@ -196,7 +199,7 @@
       </div>
     </section>
     <section class="users">
-      <div class="wrapper">
+      <div class="container">
         <header class="users__header">
           <h2 class="users__caption">
             Попутчики
@@ -223,7 +226,26 @@
                 <blockquote class="card-list__item">
                   <div class="card-list__user-info">
                     <cite class="card-list__user-name">Таня Фирсова</cite>
-                    <p class="card-list__text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                    <ul class="card-list hashtag-list">
+                      <li class="hashtag-list__item">
+                        #ЗОЖ
+                      </li>
+                      <li class="hashtag-list__item">
+                        #ПП
+                      </li>
+                      <li class="hashtag-list__item">
+                        #Фитнес
+                      </li>
+                      <li class="hashtag-list__item">
+                        #пляж
+                      </li>
+                      <li class="hashtag-list__item">
+                        #авокадо
+                      </li>
+                      <li class="hashtag-list__item">
+                        #смузи
+                      </li>
+                    </ul>
                   </div>
                 </blockquote>
                 <ul class="card-list icon-list">
@@ -258,7 +280,23 @@
                 <blockquote class="card-list__item">
                   <div class="card-list__user-info">
                     <cite class="card-list__user-name">Петя Демин</cite>
-                    <p class="card-list__text">#бурге #бар #футбол #концерт #крафт</p>
+                    <ul class="card-list hashtag-list">
+                      <li class="hashtag-list__item">
+                        #бургер
+                      </li>
+                      <li class="hashtag-list__item">
+                        #бар
+                      </li>
+                      <li class="hashtag-list__item">
+                        #футбол
+                      </li>
+                      <li class="hashtag-list__item">
+                        #концерт
+                      </li>
+                      <li class="hashtag-list__item">
+                        #крафт
+                      </li>
+                    </ul>
                   </div>
                 </blockquote>
                 <ul class="card-list icon-list">
@@ -284,7 +322,7 @@
       </div>
     </section>
     <section class="profile">
-      <div class="wrapper">
+      <div class="container">
         <header class="profile__header">
           <h2 class="header__caption">Добавьте свой профиль</h2>
           <img src="img/rates.svg" alt="Тарифы" />
@@ -308,7 +346,7 @@
       </div>
     </section>
     <section class="feedback">
-      <div class="wrapper">
+      <div class="container">
         <header class="feedback__header">
           <h2 class="feedback__caption">Заинтересовались?</h2>
           <p class="feedback__info">
@@ -338,7 +376,7 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="wrapper">
+      <div class="container">
         <header class="contacts__header">
           <h2 class="visually-hidden">Контакты компании!</h2>
           <dl class="contacts__list icon-list">
@@ -354,7 +392,7 @@
       </div>
     </section>
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="container">
         <h2 class="page-footer__caption">Погнали?</h2>
         <ul class="page-footer__list social-list">
           <li class="social-list__item">
