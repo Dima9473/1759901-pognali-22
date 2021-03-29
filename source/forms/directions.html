@@ -69,83 +69,87 @@
     <span class="page-header__caption">Направления</span>
   </header>
   <main class="page-main">
+    <h1 class="visually-hidden">Информация о направлениях пользователя</h1>
     <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
-      <fieldset>
-        <legend class="visually-hidden">Информация о планах пользователя</legend>
-        <div class="user-info__level ">
-          <b class="user-info__level-number">80</b>
-          level
-        </div>
-        <img class="user-info__avatar" src="../img/deminphoto.svg" alt="Фотография Демина" />
-        <button class="user-info__change-photo">СМЕНИТЬ ФОТО</button>
-        <fieldset class="user-info dataset">
-          <legend class="dataset__legend">ТЭГИ</legend>
-          <textarea class="dataset__change">#бургер #бар #футбол #концерт #крафт</textarea>
-        </fieldset>
-        <fieldset class="user-info__dataset">
-          <legend class="dataset__legend">Транспорт</legend>
-          <p class="dataset__toggles">
-            <button class="dataset__toggle dataset__toggle--active" type="button">Самолет</button>
-            <button class="dataset__toggle dataset__toggle--active" type="button">Общественный траспорт</button>
-            <button class="dataset__toggle" type="button">Велосипед</button>
-            <button class="dataset__toggle dataset__toggle--active" type="button">Прогулки</button>
-          </p>
-        </fieldset>
-      </fieldset>
-      <fieldset class="user-plans">
-        <ol class="card-list plan-list">
-          <li class="plan-list__item">
-            <ul class="plan-list country">
-              <li class="country__item">
-                Франция
-              </li>
-              <li class="country__item">
-                Италия
-              </li>
-            </ul>
-            <dl class="plan-list info-list">
-              <div class="info-list__item">
-                <dt class="info-list__companions-count">
-                  3
-                </dt>
-                <dd class="info-list__details">Попутчика</dd>
-              </div>
-              <div class="info-list__item">
-                <dt class="info-list__dates">
-                  26 МАР
-                </dt>
-                <dd class="info-list__dates-details">- 29 МАР</dd>
-              </div>
-            </dl>
-            <a class="plan-list button button_change">ИЗМЕНИТЬ</a>
-          </li>
-          <li class="plan-list__item">
-            <ul class="plan-list country">
-              <li class="country__item">
-                Тайланд
-              </li>
-              <li class="country__item">
-                Индонезия
-              </li>
-            </ul>
-            <dl class="plan-list info-list">
-              <div class="info-list__item">
-                <dt class="info-list__companions-count">
-                  1
-                </dt>
-                <dd class="info-list__details">Попутчик</dd>
-              </div>
-              <div class="info-list__item">
-                <dt class="info-list__dates">
-                  1 ИЮЛ
-                </dt>
-                <dd class="info-list__dates-details">- 15 ИЮЛ</dd>
-              </div>
-            </dl>
-            <a class="plan-list button button_change">ИЗМЕНИТЬ</a>
-          </li>
-        </ol>
-      </fieldset>
+      <div class="container">
+        <section class="general-info">
+          <h2 class="visually-hidden">Предпочтения</р>
+            <div class="general-info__level ">
+              <b class="general-info__level-number">80</b>
+              level
+            </div>
+            <img class="general-info__avatar" src="../img/deminphoto.svg" alt="Фотография Демина" />
+            <button class="general-info__change-photo">СМЕНИТЬ ФОТО</button>
+            <fieldset class="dataset">
+              <legend class="dataset__legend">ТЭГИ</legend>
+              <textarea class="dataset__change">#бургер #бар #футбол #концерт #крафт</textarea>
+            </fieldset>
+            <fieldset class="dataset">
+              <legend class="dataset__legend">Транспорт</legend>
+              <p class="dataset__toggles">
+                <button class="dataset__toggle dataset__toggle--active" type="button">Самолет</button>
+                <button class="dataset__toggle dataset__toggle--active" type="button">Общественный траспорт</button>
+                <button class="dataset__toggle" type="button">Велосипед</button>
+                <button class="dataset__toggle dataset__toggle--active" type="button">Прогулки</button>
+              </p>
+            </fieldset>
+        </section>
+        <section class="user-plans">
+          <h2 class="visually-hidden">Планы пользователя</h2>
+          <ol class="card-list plan-list">
+            <li class="plan-list__item">
+              <ul class="plan-list country">
+                <li class="country__item">
+                  Франция
+                </li>
+                <li class="country__item">
+                  Италия
+                </li>
+              </ul>
+              <dl class="plan-list info-list">
+                <div class="info-list__item">
+                  <dt class="info-list__companions-count">
+                    3
+                  </dt>
+                  <dd class="info-list__details">Попутчика</dd>
+                </div>
+                <div class="info-list__item">
+                  <dt class="info-list__dates">
+                    26 МАР
+                  </dt>
+                  <dd class="info-list__dates-details">- 29 МАР</dd>
+                </div>
+              </dl>
+              <a class="plan-list button button_change">ИЗМЕНИТЬ</a>
+            </li>
+            <li class="plan-list__item">
+              <ul class="plan-list country">
+                <li class="country__item">
+                  Тайланд
+                </li>
+                <li class="country__item">
+                  Индонезия
+                </li>
+              </ul>
+              <dl class="plan-list info-list">
+                <div class="info-list__item">
+                  <dt class="info-list__companions-count">
+                    1
+                  </dt>
+                  <dd class="info-list__details">Попутчик</dd>
+                </div>
+                <div class="info-list__item">
+                  <dt class="info-list__dates">
+                    1 ИЮЛ
+                  </dt>
+                  <dd class="info-list__dates-details">- 15 ИЮЛ</dd>
+                </div>
+              </dl>
+              <a class="plan-list button button_change">ИЗМЕНИТЬ</a>
+            </li>
+          </ol>
+        </section>
+      </div>
     </form>
   </main>
   <footer>
