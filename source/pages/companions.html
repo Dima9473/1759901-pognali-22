@@ -73,13 +73,14 @@
   <main class="page-main">
     <div class="container">
       <h1 class="visually-hidden">Подбор попутчиков</h1>
-      <div class="filter">
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтрация странн</h2>
         <img src="../img/filter.svg" alt="Фильтрация по странам" class="filter__filter-icon" />
         <span class="filter__filter-text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
         <button class="filter__toggle button button--points-togle" type="button">
           <span class="visually-hidden">Открыть фильтр</span>
         </button>
-        <select class="filter__input-list continent-input-list select" multiple>
+        <select class="filter__input-list select-input-list select" multiple>
           <option class="select__item" selected>ЕВРОПА</option>
           <option class="select__item">АЗИЯ</option>
           <option class="select__item">АМЕРИКА</option>
@@ -232,7 +233,7 @@
             </ul>
           </li>
         </ul>
-        <select class="filter__input-list country-input-list select" multiple>
+        <select class="filter__input-list select-input-list select" multiple>
           <option class="select__item">Австралия</option>
           <option class="select__item">Австрия</option>
           <option class="select__item">Айзербайджан</option>
@@ -245,13 +246,88 @@
           <option class="select__item">Армения</option>
           <option class="select__item">Афганистан</option>
         </select>
-        <button class="filter-info__change-photo button button--light-theme">
-          <div class="button">
-            <img src="../img/close.svg" alt="Иконка закрытия" class="button__image" />
-            <span class="button__text">СВЕРНУТЬ</span>
-          </div>
+        <button class="filter-info__change-photo button button--light-theme button--close">
+          <span class="button__text">СВЕРНУТЬ</span>
         </button>
-      </div>
+      </section>
+      <form class="choose-companion">
+        <h2 class="choose-companion__caption">Подберите идеального попутчика</h2>
+        <hr class="choose-companion__line" />
+        <ul class="choose-companion__list companions-list">
+          <li class="companions-list__item">
+            <div class="dropdown-multiple-select ">
+              <span class="dropdown-multiple-select__text">Хобби</span>
+              <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
+                <span class="visually-hidden">Открыть хобби</span>
+              </button>
+              <select class="select-input-list select visually-hidden" multiple>
+                <option class="select__item">Походы по концертам</option>
+              </select>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="dropdown-multiple-select dropdown-multiple-select--active">
+              <span class="dropdown-multiple-select__text">Музыка</span>
+              <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
+                <span class="visually-hidden">Открыть музыку</span>
+              </button>
+              <select class="select-input-list hobies-input-list select visually-hidden" multiple>
+                <option class="select__item" selected>Тяжелый рок</option>
+                <option class="select__item" selected>Русский рэп</option>
+                <option class="select__item">Евроденс</option>
+              </select>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="dropdown-multiple-select">
+              <span class="dropdown-multiple-select__text">Еда</span>
+              <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
+                <span class="visually-hidden">Открыть еду</span>
+              </button>
+              <select class="select-input-list select visually-hidden" multiple>
+                <option class="select__item">Салат цезарь</option>
+              </select>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="dropdown-multiple-select">
+              <span class="dropdown-multiple-select__text">Транспорт</span>
+              <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
+                <span class="visually-hidden">Открыть транспорт</span>
+              </button>
+              <ul class="transport-list">
+                <li class="transport-list__item">
+                  <button class="transport-list__item button button--togle button--active"
+                    type="button">Самолет</button>
+                </li>
+                <li class="transport-list__item">
+                  <button class="transport-list__item button button--togle button--active" type="button">Общественный
+                    траспорт</button>
+                </li>
+                <li class="transport-list__item">
+                  <button class="transport-list__item" type="button">Велосипед</button>
+                </li>
+                <li class="transport-list__item">
+                  <button class="transport-list__item button button--togle button--active"
+                    type="button">Прогулки</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="dropdown-multiple-select">
+              <span class="dropdown-multiple-select__text">Левел</span>
+              <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
+                <span class="visually-hidden">Открыть транспорт</span>
+              </button>
+              <span class="dropdown-multiple-select__range-min-value">30</span>
+              <input type="range" class="dropdown-multiple-select__range" min="30" max="100" />
+              <span class="dropdown-multiple-select__range-min-value">100</span>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="choose-companion__show button button--light-theme">Показать</button>
+      </form>
     </div>
   </main>
   <footer class="page-footer">
