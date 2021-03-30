@@ -79,25 +79,17 @@
         <button class="filter__toggle button button--points-togle" type="button">
           <span class="visually-hidden">Открыть фильтр</span>
         </button>
-        <ul class="filter__list continent-list">
-          <li class="continent-list__item continent-list__item--active">
-            Европа
-          </li>
-          <li class="continent-list__item">
-            Азия
-          </li>
-          <li class="continent-list__item">
-            Америка
-          </li>
-          <li class="continent-list__item">
-            Острова
-          </li>
-        </ul>
+        <select class="filter__input-list continent-input-list select" multiple>
+          <option class="select__item" selected>ЕВРОПА</option>
+          <option class="select__item">АЗИЯ</option>
+          <option class="select__item">АМЕРИКА</option>
+          <option class="select__item">ОСТРОВА</option>
+        </select>
         <ul class="filter__list buttons-block">
           <li class="buttons-block__item">
             <ul class="buttons-block__list buttons-line">
               <li class="buttons-line__item">
-                <button class="buttons-line__button">
+                <button class="buttons-line__button button--active">
                   <span class="buttons-line__button-text">А</span>
                 </button>
               </li>
@@ -240,17 +232,25 @@
             </ul>
           </li>
         </ul>
-        <!-- <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="../pages/about.html">О СЕРВИСЕ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="../pages/directions.html">НАПРАВЛЕНИЯ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Попутчики</a>
-          </li>
-        </ul> -->
+        <select class="filter__input-list country-input-list select" multiple>
+          <option class="select__item">Австралия</option>
+          <option class="select__item">Австрия</option>
+          <option class="select__item">Айзербайджан</option>
+          <option class="select__item">Албания</option>
+          <option class="select__item">Алжир</option>
+          <option class="select__item">Ангола</option>
+          <option class="select__item">Андорра</option>
+          <option class="select__item">Антигуа и Барбуда</option>
+          <option class="select__item">Аргентина</option>
+          <option class="select__item">Армения</option>
+          <option class="select__item">Афганистан</option>
+        </select>
+        <button class="filter-info__change-photo button button--light-theme">
+          <div class="button">
+            <img src="../img/close.svg" alt="Иконка закрытия" class="button__image" />
+            <span class="button__text">СВЕРНУТЬ</span>
+          </div>
+        </button>
       </div>
     </div>
   </main>
