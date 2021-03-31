@@ -38,7 +38,7 @@
         </a>
       </div>
       <div class="page-header__list  contact-list">
-        <dl class="page-header__list icon-list">
+        <dl class="contact-list__list icon-list">
           <div class="icon-list__item">
             <dt class="icon-list__phone">
               <span class="icon-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</span>
@@ -76,7 +76,6 @@
     <div class="container">
       <h1 class="visually-hidden">Информация о направлениях пользователя</h1>
       <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
-
         <section class="general-info">
           <h2 class="visually-hidden">Предпочтения</h2>
           <div class="general-info__level ">
@@ -113,25 +112,25 @@
           <ol class="card-list plan-list">
             <li class="plan-list__item">
               <ul class="plan-list country-list">
-                <li class="country__item">
+                <li class="country-list__item">
                   Франция
                 </li>
-                <li class="country__item">
+                <li class="country-list__item">
                   Италия
                 </li>
               </ul>
-              <dl class="plan-list info-list">
-                <div class="info-list__item">
-                  <dt class="info-list__companions-count">
+              <dl class="plan-list details-list">
+                <div class="details-list__item">
+                  <dt class="details-list__companions-count">
                     3
                   </dt>
-                  <dd class="info-list__details">Попутчика</dd>
+                  <dd class="details-list__details">Попутчика</dd>
                 </div>
-                <div class="info-list__item">
-                  <dt class="info-list__dates">
+                <div class="details-list__item">
+                  <dt class="details-list__dates">
                     26 МАР
                   </dt>
-                  <dd class="info-list__dates-details">- 29 МАР</dd>
+                  <dd class="details-list__dates-details">- 29 МАР</dd>
                 </div>
               </dl>
               <a class="plan-list button button--change">ИЗМЕНИТЬ</a>
@@ -145,18 +144,18 @@
                   Индонезия
                 </li>
               </ul>
-              <dl class="plan-list info-list">
-                <div class="info-list__item">
-                  <dt class="info-list__companions-count">
+              <dl class="plan-list details-list">
+                <div class="details-list__item">
+                  <dt class="details-list__companions-count">
                     1
                   </dt>
-                  <dd class="info-list__details">Попутчик</dd>
+                  <dd class="details-list__details">Попутчик</dd>
                 </div>
-                <div class="info-list__item">
-                  <dt class="info-list__dates">
+                <div class="details-list__item">
+                  <dt class="details-list__dates">
                     1 ИЮЛ
                   </dt>
-                  <dd class="info-list__dates-details">- 15 ИЮЛ</dd>
+                  <dd class="details-list__dates-details">- 15 ИЮЛ</dd>
                 </div>
               </dl>
               <a class="plan-list button button--change">ИЗМЕНИТЬ</a>
@@ -165,12 +164,12 @@
         </section>
         <section class="add-plans">
           <h2 class="add-plans__caption">Добавить план</h2>
-          <p class="add-plans__toggles slider__toggles">
-            <button class="slider__toggle button button--slider-button button--current" type="button">1</button>
-            <button class="slider__toggle button button--slider-button" type="button">2</button>
-            <button class="slider__toggle button button--slider-button" type="button">3</button>
+          <p class="add-plans__toggles slider-toggles">
+            <button class="slider-toggles__toggle button button--slider-button button--current" type="button">1</button>
+            <button class="slider-toggles__toggle button button--slider-button" type="button">2</button>
+            <button class="slider-toggles__toggle button button--slider-button" type="button">3</button>
           </p>
-          <ol class="add-plans_adding-list step-list">
+          <ol class="add-plans__adding-list step-list">
             <li class="step-list__item">
               <h3 class="step-list__caption">Даты пребывания</h3>
               <p class="step-list__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы
@@ -182,7 +181,7 @@
                 <span class="number text text--disabled">
                   ЧЕЛ.
                 </span>
-                <input id="companions" type="number" />
+                <input id="companions" class="add-plans__companions-count spinner" type="number" value="2" />
               </div>
               <div class="add-plans number">
                 <label for="days" class="number text">
@@ -191,14 +190,14 @@
                 <span class="number text text--disabled">
                   ДН.
                 </span>
-                <input id="days" type="number" />
+                <input id="days" class="add-plans__days-count spinner" type="number" value="3" />
               </div>
               <div class="add-plans boolean">
-                <label for="children">Можно с детьми</label>
-                <input id="children" type="checkbox" />
+                <label for="children" class="boolean__text">Можно с детьми</label>
+                <input id="children" class="boolean__check" type="checkbox" />
               </div>
-              <input type="month" class="add-planse date-month" />
-              <input type="date" class="add-planse date-days" />
+              <input type="month" class="add-planse date date--month" />
+              <input type="date" class="add-planse date date--days" />
               <button type="button" class="add-plans__next-step button button--middle-theme">Следующий шаг</button>
             </li>
             <li class="step-list__item">
