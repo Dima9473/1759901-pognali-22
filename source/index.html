@@ -21,7 +21,7 @@
 
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="about.html">О СЕРВИСЕ</a>
+            <a class="site-list__link" href="index.html">О СЕРВИСЕ</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
@@ -37,7 +37,7 @@
         </a>
       </div>
       <div class="page-header__list  contact-list">
-        <dl class="page-header__list icon-list">
+        <dl class="icon-list">
           <div class="icon-list__item">
             <dt class="icon-list__phone">
               <span class="icon-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</span>
@@ -94,8 +94,8 @@
           </div>
         </header>
         <blockquote class="promo__review">
-          <q class="review__text">Лучшее приложение, <br> что я видел в жизни!</q>
-          <p class="review__author-info">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
+          <q class="promo__text">Лучшее приложение, <br> что я видел в жизни!</q>
+          <p class="promo__author-info">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
         </blockquote>
         <ol class="promo__list information-list">
           <li class="information-list__item information-list__item--dark-theme">
@@ -146,12 +146,12 @@
                       Тайланд
                     </dt>
                     <dd class="visits-list__count">
-                      <img class="card-list__user-icon" src="user.svg" alt="Пользователь" />
+                      <img class="visits-list__user-icon" src="user.svg" alt="Пользователь" />
                       <span>18321</span>
                     </dd>
                   </div>
                 </dl>
-                <small>Джунгли зовут!</small>
+                <small class="visits-list__caption">Джунгли зовут!</small>
               </div>
             </div>
           </li>
@@ -166,12 +166,12 @@
                       Франция
                     </dt>
                     <dd class="visits-list__count">
-                      <img class="card-list__user-icon" src="user.svg" alt="Пользователь" />
+                      <img class="visits-list__user-icon" src="user.svg" alt="Пользователь" />
                       <span>12518</span>
                     </dd>
                   </div>
                 </dl>
-                <small>Трэ бьен, манифик!</small>
+                <small visits-list__caption>Трэ бьен, манифик!</small>
               </div>
             </div>
           </li>
@@ -186,12 +186,12 @@
                       Чехия
                     </dt>
                     <dd class="visits-list__count">
-                      <img class="card-list__user-icon" src="user.svg" alt="Пользователь" />
+                      <img class="visits-list__user-icon" src="user.svg" alt="Пользователь" />
                       <span>5326</span>
                     </dd>
                   </div>
                 </dl>
-                <small>Закаулки старой Европы</small>
+                <small visits-list__caption>Закаулки старой Европы</small>
               </div>
             </div>
           </li>
@@ -325,10 +325,10 @@
     <section class="profile">
       <div class="container">
         <header class="profile__header">
-          <h2 class="header__caption">Добавьте свой профиль</h2>
+          <h2 class="profile__caption">Добавьте свой профиль</h2>
           <img src="img/rates.svg" alt="Тарифы" />
         </header>
-        <ol class="profile__information-list">
+        <ol class="profile__list information-list">
           <li
             class="information-list__item information-list__item--transparent-theme information-list__item--digital-dark-theme">
             Базовое размещение бесплатно
@@ -392,32 +392,32 @@
         </header>
       </div>
     </section>
-    <footer class="page-footer">
-      <div class="container">
-        <h2 class="page-footer__caption">Погнали?</h2>
-        <ul class="page-footer__list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link icon icon--light-theme icon--facebook"
-              href="https://www.facebook.com/htmlacademy">Мы в
-              Фейсбуке</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link icon icon--light-theme icon--vkontakte" href="https://vk.com/htmlacademy">Мы в
-              Вконтакте</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link icon icon--light-theme icon--instagram"
-              href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
-          </li>
-        </ul>
-        <div class="page-footer__developed">
-          <span class="page-footer__developed-caption">Разработано</span>
-          <img src="img/footerlogo.svg" alt="Логотип" />
-        </div>
-      </div>
-    </footer>
   </main>
+  <footer class="page-footer">
+    <div class="container">
+      <h2 class="page-footer__caption">Погнали?</h2>
+      <ul class="page-footer__list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link icon icon--light-theme icon--facebook"
+            href="https://www.facebook.com/htmlacademy">Мы в
+            Фейсбуке</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link icon icon--light-theme icon--vkontakte" href="https://vk.com/htmlacademy">Мы в
+            Вконтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link icon icon--light-theme icon--instagram"
+            href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
+        </li>
+      </ul>
+      <div class="page-footer__developed">
+        <span class="page-footer__developed-caption">Разработано</span>
+        <img src="img/footerlogo.svg" alt="Логотип" />
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
