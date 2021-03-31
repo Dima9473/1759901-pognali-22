@@ -1,0 +1,25 @@
+.information-list{}
+
+.information-list__item{
+
+}
+
+.information-list__item--dark-theme{
+  background-color: $special-orange;
+}
+
+.information-list__item--middle-theme{
+  background-color: #FFA530;
+}
+
+.information-list__item--light-theme{
+  background-color: $special-yellow-dark
+}
+
+.information-list__item--even-lighter-theme{
+background-color: $basic-yellow;
+}
+
+.information-list__description{
+  @include text(18px, bold, $basic-blue);
+}

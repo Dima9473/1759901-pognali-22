@@ -1,4 +1,18 @@
 // Начните писать стили здесь
-@import "blocks/page.sccs";
+@import "global/colors.scss";
+@import "blocks/text.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/icon.scss";
+@import "blocks/icon-list.scss";
+@import "blocks/social-list.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/about.scss";
+@import "blocks/information-list.scss";
 
-body { background: green; }
+// body { background: green; }

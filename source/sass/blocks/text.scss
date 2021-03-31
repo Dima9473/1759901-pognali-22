@@ -1,0 +1,15 @@
+@mixin text($font-size: 16px, $font-weight: normal, $color: #ffffff){
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}
+
+.text--default{
+  @include text(16px, normal, #ffffff)
+}
+
+.text--bold{
+  @include text(16px, bold, #ffffff)
+}

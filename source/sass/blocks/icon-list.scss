@@ -1,0 +1,5 @@
+.icon-list{}
+
+.icon-list__details{
+  @include text(16px, bold, $dark-blue);
+}

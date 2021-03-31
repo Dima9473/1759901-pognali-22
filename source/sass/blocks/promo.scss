@@ -1,0 +1,7 @@
+.promo{
+  background:  url(../../img/globe-back-mobile-1.png) no-repeat;
+}
+
+.promo__slogan{
+  @include text(36px, bold, #ffffff);
+}

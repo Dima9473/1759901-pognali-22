@@ -1,0 +1,8 @@
+.button{
+  background: $basic-yellow;
+  border-radius: 25px;
+}
+
+.button__caption{
+  @include text(17px, bold, $basic-blue);
+}

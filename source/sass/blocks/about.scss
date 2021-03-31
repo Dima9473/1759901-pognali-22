@@ -1,0 +1,7 @@
+.about{
+  background: #192144 url(../../img/aboutmobile.svg) no-repeat;
+}
+
+.about__caption{
+  @include text(24px, bold, $special-orange);
+}

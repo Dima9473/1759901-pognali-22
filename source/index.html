@@ -14,59 +14,61 @@
       <a class="page-header__logo visually-hidden">
         <img class="logo" src="img/logo.svg" width="226" height="30" alt="Логотип" />
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">О СЕРВИСЕ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="companions.html">ПОПУТЧИКИ</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__list user-list">
-        <a class="user-list__authorization button" href="authorization.html">
-          <span class="user-list__caption">АВТОРИЗАЦИЯ</span>
-        </a>
-      </div>
-      <div class="page-header__list  contact-list">
-        <dl class="icon-list">
-          <div class="icon-list__item">
-            <dt class="icon-list__phone">
-              <span class="icon-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</span>
-            </dt>
-            <dd class="icon-list__details">8 800 555-86-28</dd>
-          </div>
-          <div class="icon-list__item">
-            <dt class="icon-list__email">
-              <span class="icon-list__link icon icon--dark-theme icon--mail">Напишите нам</span>
-            </dt>
-            <dd class="icon-list__details">MAIL@HTMLACADEMY.RU</dd>
-          </div>
-        </dl>
-        <ul class="page-header__list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link icon icon--light-theme icon--facebook"
-              href="https://www.facebook.com/htmlacademy">Мы в
-              Фейсбуке</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link icon icon--light-theme icon--vkontakte" href="https://vk.com/htmlacademy">Мы в
-              Вконтакте</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link icon icon--light-theme icon--instagram"
-              href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
-          </li>
-        </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-menu visually-hidden">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">О СЕРВИСЕ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="companions.html">ПОПУТЧИКИ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__list user-list">
+          <a class="user-list__authorization button" href="authorization.html">
+            <span class="button__caption">АВТОРИЗАЦИЯ</span>
+          </a>
+        </div>
+        <div class="page-header__list contact-list">
+          <dl class="icon-list">
+            <div class="icon-list__item">
+              <dt class="icon-list__phone">
+                <img class="icon-list__link icon icon--dark-theme" src="img/homephoneicon.svg" />
+                <!-- <span class="icon-list__link icon icon--dark-theme icon--home-phone">tessssssssssssssss</span> -->
+              </dt>
+              <dd class="icon-list__details">8 800 555-86-28</dd>
+            </div>
+            <div class="icon-list__item">
+              <dt class="icon-list__email">
+                <img class="icon-list__link icon icon--dark-theme" src="img/mailicon.svg" />
+              </dt>
+              <dd class="icon-list__details">MAIL@HTMLACADEMY.RU</dd>
+            </div>
+          </dl>
+          <ul class="page-header__list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link icon icon--facebook" href="https://www.facebook.com/htmlacademy"><img
+                  class="icon" src="img/facebookicon.SVG" /></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link " href="https://vk.com/htmlacademy">
+                <img class="icon" src="img/vkicon.svg" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link icon icon--instagram" href="https://www.instagram.com/htmlacademy">
+                <img class="icon" src="img/instagram.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -81,34 +83,38 @@
           </div>
           <ul class="promo__list icon-list">
             <li class="icon-list__item">
-              <a class="icon-list__link icon icon--main-theme icon--phone">Позвоните нам</a>
+              <a class="icon-list__link">
+                <img class="icon icon--main-dark-theme" src="img/phoneicon.svg" />
+              </a>
             </li>
             <li class="icon-list__item">
-              <a class="icon-list__link icon icon--main-theme icon--email">Напишите нам</a>
+              <a class="icon-list__link icon">
+                <img class="icon icon--main-theme" src="img/emailicon.svg" />
+              </a>
             </li>
           </ul>
           <div class="promo__list user-list">
             <a class="user-list__authorization button" href="authorization.html">
-              <span class="user-list__caption">АВТОРИЗАЦИЯ</span>
+              <span class="button__caption">АВТОРИЗАЦИЯ</span>
             </a>
           </div>
         </header>
         <blockquote class="promo__review">
-          <q class="promo__text">Лучшее приложение, <br> что я видел в жизни!</q>
-          <p class="promo__author-info">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
+          <q class="text--defailt">Лучшее приложение, <br> что я видел в жизни!</q>
+          <p class="text--bold">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
         </blockquote>
         <ol class="promo__list information-list">
           <li class="information-list__item information-list__item--dark-theme">
-            Выберите направление
+            <span class="information-list__description">Выберите направление</span>
           </li>
           <li class="information-list__item information-list__item--middle-theme">
-            Изучите идеи путешественников
+            <span class="information-list__description">Изучите идеи путешественников</span>
           </li>
           <li class="information-list__item information-list__item--light-theme">
-            Находите тех, кто похож на вас
+            <span class="information-list__description">Находите тех, кто похож на вас</span>
           </li>
           <li class="information-list__item information-list__item--even-lighter-theme">
-            Путешествуйте вместе!
+            <span class="information-list__description">Путешествуйте вместе!</span>
           </li>
         </ol>
       </div>
@@ -116,12 +122,12 @@
     <section class="about">
       <div class="container">
         <h2 class="about__caption">О сервисе</h2>
-        <p class="about__info">
+        <p class="text--defailt">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
           черпайте вдохновение в чужих.
         </p>
         <p>
-          <b class="about__appeal">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+          <b class="text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
         </p>
       </div>
     </section>
