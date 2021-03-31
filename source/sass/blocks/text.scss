@@ -6,6 +6,10 @@
   color: $color;
 }
 
+.text--caption{
+  @include text(24px, normal, $special-orange)
+}
+
 .text--default{
   @include text(16px, normal, #ffffff)
 }

@@ -1,0 +1,7 @@
+.countries{
+  background-color: $basic-blue-light;
+}
+
+.countries__info{
+  @include text(16px, 300, $special-grey);
+}
