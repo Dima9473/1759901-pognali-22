@@ -3,12 +3,25 @@
 
 }
 
+.users__header{
+  margin-left: 25px;
+}
+
 .users__caption{
-  background: url(../../img/back.svg) left top no-repeat, url(../../img/smolov-back-desktop.png) right top no-repeat;
+  margin-top: 34px;
+  margin-left: 51px;
+}
+
+.users__back-photo{
+  margin-left: 152px;
+}
+
+.users__description{
+  margin-bottom: 25px;
 }
 
 .users__cards{
-  background: url(../../img/rogovaya-back-desktop.png) no-repeat;
+  margin-top: 54px;
 }
 
 .users__level-number{
