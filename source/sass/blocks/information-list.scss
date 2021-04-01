@@ -25,5 +25,5 @@ background-color: $basic-yellow;
 }
 
 .information-list__description--small{
-  @include text(18px, bold, 18px, $basic-blue);
+  @include text(18px, 300, 18px, $special-grey);
 }

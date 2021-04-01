@@ -2,18 +2,53 @@
 }
 
 .icon--main-theme{
-  background: $basic-yellow;
+  fill: $basic-yellow;
 }
 
 .icon--special-dark-theme{
-  background: $special-yellow-dark
+  fill: $special-yellow-dark
 }
 
 .icon--main-dark-theme{
-  background: $special-orange;
+  fill: $special-orange;
 }
 
 .icon--dark-theme{
-  background: #121936;
+  fill: $blue;
 }
 
+.icon--dark-blue{
+  fill: $dark-blue;
+}
+
+.icon--main-background{
+  background-color: $basic-yellow;
+}
+
+.icon--middle-background{
+  background-color: $special-orange;
+}
+
+.icon--dark-background{
+  background-color: $special-yellow-dark;
+}
+
+.icon--dark-blue-background{
+  background-color: $blue;
+}
+
+.icon--dark-blue{
+  fill: $dark-blue;
+}
+
+.icon--light{
+  fill: #ffffff;;
+}
+
+.icon--active{
+  fill: #101D41;
+}
+
+.icon--disabled{
+  opacity: 0.15;
+}

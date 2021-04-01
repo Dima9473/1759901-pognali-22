@@ -20,3 +20,7 @@
 .button__caption--small{
   @include text(16px, bold, 16px, #132576);
 }
+
+.button__map-icon{
+  background-color: $blue;
+}
