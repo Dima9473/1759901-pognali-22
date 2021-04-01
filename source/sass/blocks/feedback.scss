@@ -1,0 +1,16 @@
+.feedback__authorisation-link{
+  color: $basic-yellow;
+}
+
+.feedback__email{
+}
+
+.feedback__any-questions{
+  @include text(16px, 300, 22px, #FFFFFF);
+  letter-spacing: 0.01em;
+}
+
+.feedback__email::placeholder{
+  @include text(18px, bold, 18px, $special-grey);
+  opacity: 0.3;
+}

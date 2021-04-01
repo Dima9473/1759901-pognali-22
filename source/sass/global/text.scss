@@ -8,7 +8,7 @@
 }
 
 .text--caption{
-  @include text(24px, normal, 24px, $special-orange)
+  @include text(24px, bold, 24px, $special-orange)
 }
 
 .text--default{

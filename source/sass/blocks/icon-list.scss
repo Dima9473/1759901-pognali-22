@@ -3,3 +3,11 @@
 .icon-list__details{
   @include text(16px, bold, 18px, $dark-blue);
 }
+
+.icon-list__details--light{
+  color: $basic-yellow;
+}
+
+.icon-list__mappoint{
+  background-color: #121936;
+}

@@ -2,7 +2,11 @@
 }
 
 .icon--main-theme{
-  background: $special-yellow-dark;
+  background: $basic-yellow;
+}
+
+.icon--special-dark-theme{
+  background: $special-yellow-dark
 }
 
 .icon--main-dark-theme{
@@ -13,8 +17,3 @@
   background: #121936;
 }
 
-.icon--vkontakte{
-  background-image: url(../../img/vkicon.svg);
-  background-repeat: no-repeat;
-  z-index: -1;
-}

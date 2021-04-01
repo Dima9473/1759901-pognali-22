@@ -23,3 +23,7 @@ background-color: $basic-yellow;
 .information-list__description{
   @include text(18px, bold, 18px, $basic-blue);
 }
+
+.information-list__description--small{
+  @include text(18px, bold, 18px, $basic-blue);
+}

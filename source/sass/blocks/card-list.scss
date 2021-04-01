@@ -1,0 +1,11 @@
+.card-list{
+
+}
+
+.card-list__info{
+  background: #FFFFFF
+}
+
+.card-list__user-name{
+  @include text(21px, bold, 21px, $basic-blue-light);
+}

@@ -40,31 +40,31 @@
           <dl class="icon-list">
             <div class="icon-list__item">
               <dt class="icon-list__phone">
-                <img class="icon-list__link icon icon--dark-theme" src="img/homephoneicon.svg" />
-                <!-- <span class="icon-list__link icon icon--dark-theme icon--home-phone">tessssssssssssssss</span> -->
+                <img class="icon-list__link icon icon--dark-theme" src="img/homephoneicon.svg" alt="Позвоните нам" />
               </dt>
               <dd class="icon-list__details">8 800 555-86-28</dd>
             </div>
             <div class="icon-list__item">
               <dt class="icon-list__email">
-                <img class="icon-list__link icon icon--dark-theme" src="img/mailicon.svg" />
+                <img class="icon-list__link icon icon--dark-theme" src="img/mailicon.svg" alt="Напишите нам" />
               </dt>
               <dd class="icon-list__details">MAIL@HTMLACADEMY.RU</dd>
             </div>
           </dl>
           <ul class="page-header__list social-list">
             <li class="social-list__item">
-              <a class="social-list__link icon icon--facebook" href="https://www.facebook.com/htmlacademy"><img
-                  class="icon" src="img/facebookicon.SVG" /></a>
+              <a class="social-list__link icon icon--facebook" href="https://www.facebook.com/htmlacademy">
+                <img class="icon" src="img/facebookicon.SVG" alt="Переход в Фейсбук" />
+              </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link " href="https://vk.com/htmlacademy">
-                <img class="icon" src="img/vkicon.svg" />
+                <img class="icon" src="img/vkicon.svg" alt="Переход ВК" />
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link icon icon--instagram" href="https://www.instagram.com/htmlacademy">
-                <img class="icon" src="img/instagram.svg" />
+                <img class="icon" src="img/instagram.svg" alt="Переход в Инстаграм" />
               </a>
             </li>
           </ul>
@@ -84,12 +84,12 @@
           <ul class="promo__list icon-list">
             <li class="icon-list__item">
               <a class="icon-list__link">
-                <img class="icon icon--main-dark-theme" src="img/phoneicon.svg" />
+                <img class="icon icon--main-dark-theme" src="img/phoneicon.svg" alt="Позвоните нам" />
               </a>
             </li>
             <li class="icon-list__item">
               <a class="icon-list__link icon">
-                <img class="icon icon--main-theme" src="img/emailicon.svg" />
+                <img class="icon icon--special-dark-theme" src="img/emailicon.svg" alt="Напишите нам" />
               </a>
             </li>
           </ul>
@@ -153,7 +153,7 @@
                     </dt>
                     <dd class="visits-list__count">
                       <img class="visits-list__user-icon" src="img/usericon.svg" alt="Пользователь" />
-                      <span>18321</span>
+                      <span class="visits-list__info">18321</span>
                     </dd>
                   </div>
                 </dl>
@@ -173,11 +173,11 @@
                     </dt>
                     <dd class="visits-list__count">
                       <img class="visits-list__user-icon" src="img/usericon.svg" alt="Пользователь" />
-                      <span>12518</span>
+                      <span class="visits-list__info">12518</span>
                     </dd>
                   </div>
                 </dl>
-                <small visits-list__caption>Трэ бьен, манифик!</small>
+                <small class="visits-list__caption">Трэ бьен, манифик!</small>
               </div>
             </div>
           </li>
@@ -193,36 +193,39 @@
                     </dt>
                     <dd class="visits-list__count">
                       <img class="visits-list__user-icon" src="img/usericon.svg" alt="Пользователь" />
-                      <span>5326</span>
+                      <span class="visits-list__info">5326</span>
                     </dd>
                   </div>
                 </dl>
-                <small visits-list__caption>Закаулки старой Европы</small>
+                <small class="visits-list__caption">Закаулки старой Европы</small>
               </div>
             </div>
           </li>
         </ul>
-        <a class="countries__all-countries button button--arrow" href="allcountries.html">Показать все</a>
+        <a class="countries__all-countries button button--arrow" href="allcountries.html">
+          <span class="button__text">Показать все</span>
+          <img src="img/arrowicon.svg" class="button__icon" alt="Показать все" />
+        </a>
       </div>
     </section>
     <section class="users">
       <div class="container">
         <header class="users__header">
-          <h2 class="users__caption">
+          <h2 class="users__caption text--caption">
             Попутчики
           </h2>
-          <p class="users_info">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+          <p class="text--default">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
             коктейль, а другому
             маршрут для хайкинга. </p>
-          <p class="users__slogan">Теперь можно легко найти единомышленников!</p>
+          <p class="text--bold">Теперь можно легко найти единомышленников!</p>
         </header>
         <ul class="users__cards card-list">
           <li class="card-list__item">
             <div class="card-list__card">
-              <img class="card-list__photo" src="img/tanyphoto.svg" alt="Фото Тани Фирсовой" />
+              <img class="card-list__photo" src="img/tanyaphoto.svg" alt="Фото Тани Фирсовой" />
               <div class="users__level ">
                 <b class="users__level-number">99</b>
-                level
+                <span class="users__level-text">level</span>
               </div>
               <div class="card-list__info">
                 <p class="card-list__flags">
@@ -232,6 +235,7 @@
                 </p>
                 <blockquote class="card-list__item">
                   <div class="card-list__user-info">
+                    <img class="card-list__offline" src="img/offlineicon.svg" alt="Не в сети" />
                     <cite class="card-list__user-name">Таня Фирсова</cite>
                     <ul class="card-list hashtag-list">
                       <li class="hashtag-list__item">
@@ -257,16 +261,24 @@
                 </blockquote>
                 <ul class="card-list icon-list">
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--airplane icon--active">Самолет</a>
+                    <a class="icon-list__link">
+                      <img src="img/planeicon.svg" class="icon icon--transparent-theme icon--active" alt="Самолет" />
+                    </a>
                   </li>
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--bus">Автобус</a>
+                    <a class="icon-list__link icon icon--transparent-theme icon--bus">
+                      <img src="img/busicon.svg" class="icon icon--transparent-theme" alt="Автобус" />
+                    </a>
                   </li>
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--bicycle">Велосипед</a>
+                    <a class="icon-list__link">
+                      <img src="img/bicycle.svg" class="icon icon--transparent-theme" alt="Велосипед" />
+                    </a>
                   </li>
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--pedestrian">Пешеходные прогулки</a>
+                    <a class="icon-list__link icon icon--transparent-theme icon--pedestrian">
+                      <img src="img/runicon.svg" class="icon icon--transparent-theme" alt="Пешеходные прогулки" />
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -277,7 +289,7 @@
               <img class="card-list__photo" src="img/photopetr.svg" alt="Фото Петра Демина" />
               <div class="users__level ">
                 <b class="users__level-number">80</b>
-                level
+                <span class="users__level-text">level</span>
               </div>
               <div class="card-list__info">
                 <p class="card-list__flags">
@@ -286,6 +298,7 @@
                 </p>
                 <blockquote class="card-list__item">
                   <div class="card-list__user-info">
+                    <img class="card-list__online" src="img/onlineicon.svg" alt="В сети" />
                     <cite class="card-list__user-name">Петя Демин</cite>
                     <ul class="card-list hashtag-list">
                       <li class="hashtag-list__item">
@@ -308,60 +321,75 @@
                 </blockquote>
                 <ul class="card-list icon-list">
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--airplane icon--active">Самолет</a>
+                    <a class="icon-list__link">
+                      <img src="img/planeicon.svg" class="icon icon--transparent-theme icon--active" alt="Самолет" />
+                    </a>
                   </li>
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--bus icon--active">Автобус</a>
+                    <a class="icon-list__link">
+                      <img src="img/busicon.svg" class="icon icon--transparent-theme icon--active" alt="Автобус" />
+                    </a>
                   </li>
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--bicycle">Велосипед</a>
+                    <a class="icon-list__link">
+                      <img src="img/bicycle.svg" class="icon icon--transparent-theme" alt="Велосипед" />
+                    </a>
                   </li>
                   <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--transparent-theme icon--pedestrian icon--active">Пешеходные
-                      прогулки</a>
+                    <a class="icon-list__link">
+                      <img src="img/runicon.svg" class="icon icon--transparent-theme icon--active"
+                        alt="Пешеходные прогулки" />
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
         </ul>
-        <a class="countries__all-countries button button--arrow" href="allcountries.html">Показать все</a>
+        <a class="countries__all-countries button button--arrow" href="allcountries.html">
+          <span class="button__text">Показать всех</span>
+          <img src="img/arrowicon.svg" class="button__icon" alt="Показать всех" />
+        </a>
       </div>
     </section>
     <section class="profile">
       <div class="container">
         <header class="profile__header">
-          <h2 class="profile__caption">Добавьте свой профиль</h2>
+          <h2 class="text--caption">Добавьте <br>свой <br>профиль</h2>
           <img src="img/rates.svg" alt="Тарифы" />
         </header>
         <ol class="profile__list information-list">
-          <li
-            class="information-list__item information-list__item--transparent-theme information-list__item--digital-dark-theme">
-            Базовое размещение бесплатно
+          <li class="information-list__item information-list__item--digital-dark-theme">
+            <span class="information-list__description--small">Базовое размещение <br>бесплатно</span>
           </li>
-          <li
-            class="information-list__item information-list__item--transparent-theme information-list__item--digital-middle-theme">
-            Вывод на первых позициях <br>99 руб./мес
+          <li class="information-list__item information-list__item--digital-middle-theme">
+            <span class="information-list__description--small">Вывод на первых позициях <br>99 руб./мес</span>
           </li>
-          <li
-            class="information-list__item information-list__item--transparent-theme information-list__item--digital-light-theme">
-            Кастомный цвет карточки <br>59 руб./мес
+          <li class="information-list__item information-list__item--digital-light-theme">
+            <span class="information-list__description--small">Кастомный цвет карточки <br>59 руб./мес</span>
           </li>
         </ol>
-        <a class="profile__business-tarifs button button--arrow" href="businesstarifs.html">Показать тарифы для
-          бизнеса</a>
+        <a class="profile__business-tarifs button button--arrow" href="businesstarifs.html">
+          <span class="button__caption--small">Показать тарифы для бизнеса</span>
+          <img src="img/arrowicon.svg" class="button__icon" alt="Показать тарифы для бизнеса" />
+        </a>
       </div>
     </section>
     <section class="feedback">
       <div class="container">
         <header class="feedback__header">
-          <h2 class="feedback__caption">Заинтересовались?</h2>
-          <p class="feedback__info">
+          <h2 class="text--caption">Заинтересовались?</h2>
+          <p class="text--default">
             Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
-            <a class="feedback__authorisation-link">авторизуйтесь</a>.
+            <a href="#" class="feedback__authorisation-link">авторизуйтесь</a>.
           </p>
         </header>
-        <input type="email" class="feedback__email button button--arrow" />
+        <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
+          <input type="email" class="feedback__email text--default" placeholder="E-mail" />
+          <button class="button button--arrow">
+            <img src="img/arrowicon.svg" class="button__icon" alt="Зарегистрироваться" />
+          </button>
+        </form>
         <p class="feedback__any-questions">
           Остались вопросы?<br>
           Мы с радостью на них ответим!
@@ -369,15 +397,15 @@
         <dl class="feedback__list icon-list">
           <div class="icon-list__item">
             <dt class="icon-list__phone">
-              <span class="icon-list__link icon icon--dark-theme icon--home-phone">Позвоните нам</span>
+              <img class="icon-list__link icon icon--dark-theme" src="img/homephoneicon.svg" alt="Позвоните нам" />
             </dt>
-            <dd class="icon-list__details">8 800 555-86-28</dd>
+            <dd class="icon-list__details icon-list__details--light">8 800 555-86-28</dd>
           </div>
           <div class="icon-list__item">
             <dt class="icon-list__email">
-              <span class="icon-list__link icon icon--dark-theme icon--mail">Напишите нам</span>
+              <img class="icon-list__link icon icon--dark-theme" src="img/mailicon.svg" alt="Напишите нам" />
             </dt>
-            <dd class="icon-list__details">MAIL@HTMLACADEMY.RU</dd>
+            <dd class="icon-list__details icon-list__details--light">MAIL@HTMLACADEMY.RU</dd>
           </div>
         </dl>
       </div>
@@ -388,13 +416,19 @@
           <h2 class="visually-hidden">Контакты компании!</h2>
           <dl class="contacts__list icon-list">
             <div class="icon-list__item">
-              <dt class="icon-list__phone">
-                <span class="icon-list__link icon icon--dark-theme icon--map-point">Точка на карте</span>
+              <dt class="icon-list__map-point">
+                <img src="img/mappointicon.svg" alt="Точка на карте" />
+                <!-- <span class="icon-list__link icon icon--dark-theme icon--map-point"></span> -->
               </dt>
-              <dd class="icon-list__details">УЛ. БОЛЬШАЯ <br>КОНЮШЕННАЯ, 19/8</dd>
+              <dd class="contacts__addres icon-list__details">УЛ. БОЛЬШАЯ <br>КОНЮШЕННАЯ, 19/8</dd>
             </div>
           </dl>
-          <a class="profile__business-tarifs button button--arrow" href="businesstarifs.html">Проложить маршрут</a>
+          <a class="profile__business-tarifs button button--arrow" href="businesstarifs.html">
+            <span class="button__caption button__caption--light">Проложить маршрут</span>
+            <img src="img/arrowicon.svg" class="button__icon" alt="Проложить маршрут" />
+          </a>
+          <img class="profile__map" src="img/map.svg" alt="Карта" />
+          <img class="profile__map-icon" src="img/mapicon.svg" alt="Карта" />
         </header>
       </div>
     </section>
@@ -404,22 +438,23 @@
       <h2 class="page-footer__caption">Погнали?</h2>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
-          <a class="social-list__link icon icon--light-theme icon--facebook"
-            href="https://www.facebook.com/htmlacademy">Мы в
-            Фейсбуке</a>
+          <a class="social-list__link icon icon--main-theme" href="https://www.facebook.com/htmlacademy">
+            <img class="icon" src="img/facebookicon.SVG" alt="Переход в Фейсбук" />
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link icon icon--light-theme icon--vkontakte" href="https://vk.com/htmlacademy">Мы в
-            Вконтакте</a>
+          <a class="social-list__link icon icon--main-theme" href="https://vk.com/htmlacademy">
+            <img class="icon" src="img/vkicon.svg" alt="Переход ВК" />
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link icon icon--light-theme icon--instagram"
-            href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
+          <a class="social-list__link icon icon--main-theme" href="https://www.instagram.com/htmlacademy">
+            <img class="icon" src="img/instagram.svg" alt="Переход в Инстаграм" />
+          </a>
         </li>
       </ul>
       <div class="page-footer__developed">
-        <span class="page-footer__developed-caption">Разработано</span>
+        <span class="page-footer__developed-caption text--default">Разработано</span>
         <img src="img/footerlogo.svg" alt="Логотип" />
       </div>
     </div>

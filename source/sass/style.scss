@@ -3,6 +3,8 @@
 @import "global/text.scss";
 
 //Blocks
+@import "blocks/icon-list.scss";
+@import "blocks/icon.scss";
 @import "blocks/about.scss";
 @import "blocks/add-plans.scss";
 @import "blocks/boolean.scss";
@@ -29,8 +31,6 @@
 @import "blocks/flags-list.scss";
 @import "blocks/general-info.scss";
 @import "blocks/hashtag-list.scss";
-@import "blocks/icon-list.scss";
-@import "blocks/icon.scss";
 @import "blocks/information-list.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-menu.scss";

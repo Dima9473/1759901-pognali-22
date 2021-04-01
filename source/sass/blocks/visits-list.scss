@@ -2,6 +2,20 @@
 
 }
 
+.visits-list__user-icon{
+
+}
+
 .visits-list__country{
   @include text(21px, bold, 21px, #000000);
+}
+
+.visits-list__info{
+  @include text(16px, 500, 20px, $basic-blue);
+  opacity: 0.3;
+}
+
+.visits-list__caption{
+  @include text(16px, 500, 18px, $special-grey);
+  opacity: 0.3;
 }
