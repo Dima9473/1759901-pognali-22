@@ -3,5 +3,5 @@
 }
 
 .countries__info{
-  @include text(16px, 300, $special-grey);
+  @include text(16px, 300, 22px, $special-grey);
 }

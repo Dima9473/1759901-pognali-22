@@ -4,5 +4,5 @@
 }
 
 .button__caption{
-  @include text(17px, bold, $basic-blue);
+  @include text(17px, bold, 20px, $basic-blue);
 }

@@ -1,19 +1,20 @@
-@mixin text($font-size: 16px, $font-weight: normal, $color: #ffffff){
+@mixin text($font-size: 16px, $font-weight: normal, $line-height: 22px, $color: #ffffff){
   font-family: Blogger Sans;
   font-style: normal;
   font-weight: $font-weight;
   font-size: $font-size;
+  line-height: $line-height;
   color: $color;
 }
 
 .text--caption{
-  @include text(24px, normal, $special-orange)
+  @include text(24px, normal, 24px, $special-orange)
 }
 
 .text--default{
-  @include text(16px, normal, #ffffff)
+  @include text(16px, normal, 22px, #ffffff)
 }
 
 .text--bold{
-  @include text(16px, bold, #ffffff)
+  @include text(16px, bold, 22px, #ffffff)
 }
