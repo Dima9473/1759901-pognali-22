@@ -20,6 +20,18 @@
   margin-bottom: 41px;
 }
 
+.page-header__caption{
+  @include text(36px, bold, 36px, #ffffff);
+}
+
+.page-header__logo-mobile{
+
+}
+
+.page-header__logo{
+  display: none;
+}
+
 .page-header__menu-opened{
 
 }
