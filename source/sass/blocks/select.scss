@@ -1,0 +1,9 @@
+.select{
+  @include text(14px, 500, 18px, $basic-blue-light);
+  letter-spacing: 0.09em;
+}
+
+.select__item{
+  @include text(14px, 500, 18px, $basic-blue-light);
+  letter-spacing: 0.09em;
+}

@@ -1,0 +1,31 @@
+.step-list__item{
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.step-list__description{
+  margin-bottom: 20px;
+  @include text(16px, bold, 22px, $special-grey);
+}
+
+.step-list__info{
+  @include text(16px, 500, 16px, $basic-blue-light);
+  letter-spacing: 0.09em;
+}
+
+.step-list__sub-list{
+  margin-top: 21px;
+}
+
+.step-list__nav-buttons{
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-list__button-step{
+  margin-top: 22px;
+}
+

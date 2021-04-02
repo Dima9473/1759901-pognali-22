@@ -21,3 +21,7 @@
 .text--bold{
   @include text(16px, bold, 22px, #ffffff);
 }
+
+.text--disabled{
+  opacity: 0.3;
+}

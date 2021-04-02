@@ -1,0 +1,20 @@
+.plan-list__item{
+  margin-bottom: 10px;
+  padding-left: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.plan-list__change-text{
+  @include text(14px, bold, 14px, #000000);
+  letter-spacing: 0.03em;
+  opacity: 0.3;
+}
+
+.plan-list__details{
+  margin-top: 20px;
+}
+
+.plan-list_change{
+  margin-top: 24px;
+}

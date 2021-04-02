@@ -1,0 +1,21 @@
+.general-info{
+  text-align: center;
+}
+
+.general-info__user-data{
+  display: flex;
+  justify-content: center;
+}
+
+.general-info__avatar{
+  margin-left: 35px;
+}
+
+.general-info__change-photo{
+  margin-top: 18px;
+  background-color: $special-blue-light;
+}
+
+.general-info__user-data-text{
+  @include text(20px, bold, 18px, $basic-blue);
+}

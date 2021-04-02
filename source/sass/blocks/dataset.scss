@@ -1,0 +1,7 @@
+.dataset__legend{
+  @include text(16px, bold, 18px, $basic-blue-light);
+}
+
+.dataset__change-tags{
+  @include text(16px, normal, 18px, $special-grey);
+}

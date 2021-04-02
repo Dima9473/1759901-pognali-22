@@ -9,9 +9,22 @@
   color: $basic-blue-light;
 }
 
+.button--change{
+  background-color: transparent;
+}
+
 .button__caption{
   @include text(17px, bold, 20px, $basic-blue);
 }
+
+.button--dark-theme{
+  background-color: $basic-grey;
+}
+
+.button--transparent-theme{
+  background-color: transparent;
+}
+
 
 .button__caption--light{
   color: $basic-blue-light;
