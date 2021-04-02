@@ -1,3 +1,18 @@
+.feedback{
+  padding-top: 72px;
+  padding: 44px;
+}
+
+.feedback__list{
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__header{
+  margin-left: 30px;
+  text-align: center;
+}
+
 .feedback__authorisation-link{
   color: $basic-yellow;
 }
@@ -8,6 +23,7 @@
 .feedback__any-questions{
   @include text(16px, 300, 22px, #FFFFFF);
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .feedback__email::placeholder{
