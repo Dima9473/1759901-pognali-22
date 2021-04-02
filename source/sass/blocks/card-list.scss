@@ -1,0 +1,24 @@
+.card-list{
+  padding: 0;
+}
+
+.card-list__item{
+  margin-bottom: 11px;
+}
+
+.card-list__info{
+  background: #FFFFFF;
+  text-align: center
+}
+
+.card-list__user-name{
+  @include text(21px, bold, 21px, $basic-blue-light);
+}
+
+.card-list__offline{
+  fill: #F97676;
+}
+
+.card-list__online{
+  fill: #81E31E;
+}

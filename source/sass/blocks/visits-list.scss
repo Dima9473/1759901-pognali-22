@@ -1,0 +1,28 @@
+.visits-list{
+
+}
+
+.visits-list__item{
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 26px;
+  margin-bottom: 24px;
+}
+
+.visits-list__user-icon{
+
+}
+
+.visits-list__country{
+  @include text(21px, bold, 21px, #000000);
+}
+
+.visits-list__info{
+  @include text(16px, 500, 20px, $basic-blue);
+  opacity: 0.3;
+}
+
+.visits-list__caption{
+  @include text(16px, 500, 18px, $special-grey);
+  opacity: 0.3;
+}

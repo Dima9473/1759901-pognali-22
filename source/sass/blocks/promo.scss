@@ -1,0 +1,40 @@
+.promo{
+  margin-top: 94px;
+  background:  url(../../img/globe-back-mobile.png) no-repeat;
+}
+
+.promo__actions{
+  display: flex;
+}
+
+.promo__authorization{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.promo__slogan{
+  margin-left: 41px;
+  @include text(36px, bold, 40px, #ffffff);
+}
+
+.promo__author-info{
+  margin-top: 25px;
+}
+
+.promo__list{
+  padding: 0;
+}
+
+.promo__list--indent{
+  margin-top: 29px;
+}
+
+.promo__review{
+  margin-top: 28px;
+  margin-left: 25px;
+}
+
+.promo__traveller-icon{
+  margin-top: 10px;
+  margin-left: 80px;
+}

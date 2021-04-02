@@ -1,1 +1,63 @@
-// Начните писать стили здесь
+// Gloabal
+@import "global/colors.scss";
+@import "global/text.scss";
+
+//Blocks
+@import "blocks/icon-list.scss";
+@import "blocks/icon.scss";
+@import "blocks/about.scss";
+@import "blocks/add-plans.scss";
+@import "blocks/boolean.scss";
+@import "blocks/button.scss";
+@import "blocks/buttons-block.scss";
+@import "blocks/buttons-line.scss";
+@import "blocks/card-list.scss";
+@import "blocks/choose-companion.scss";
+@import "blocks/companions-list.scss";
+@import "blocks/companions.scss";
+@import "blocks/contact-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/container.scss";
+@import "blocks/countries.scss";
+@import "blocks/country-description-list.scss";
+@import "blocks/country-list.scss";
+@import "blocks/dataset.scss";
+@import "blocks/date.scss";
+@import "blocks/details-list.scss";
+@import "blocks/dropdown-multiple-select.scss";
+@import "blocks/feedback.scss";
+@import "blocks/filter.scss";
+@import "blocks/flag.scss";
+@import "blocks/flags-list.scss";
+@import "blocks/general-info.scss";
+@import "blocks/hashtag-list.scss";
+@import "blocks/information-list.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/number.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page.scss";
+@import "blocks/plan-list.scss";
+@import "blocks/profile.scss";
+@import "blocks/promo.scss";
+@import "blocks/select-input-list.scss";
+@import "blocks/select.scss";
+@import "blocks/site-list.scss";
+@import "blocks/slider-toggles.scss";
+@import "blocks/social-list.scss";
+@import "blocks/spinner.scss";
+@import "blocks/step-list.scss";
+@import "blocks/transport-list.scss";
+@import "blocks/user-info.scss";
+@import "blocks/user-list.scss";
+@import "blocks/user-plans.scss";
+@import "blocks/users.scss";
+@import "blocks/visits-list.scss";
+@import "blocks/visually-hidden.scss";
+
+body{
+  margin: 0;
+}

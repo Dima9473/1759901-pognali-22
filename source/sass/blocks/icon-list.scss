@@ -1,0 +1,19 @@
+.icon-list{
+
+}
+
+.icon-list__details{
+  @include text(16px, bold, 18px, $dark-blue);
+}
+
+.icon-list__details--light{
+  color: $basic-yellow;
+}
+
+.icon-list__item{
+  display: inline-block;
+}
+
+.icon-list__mappoint{
+  background-color: $blue;
+}

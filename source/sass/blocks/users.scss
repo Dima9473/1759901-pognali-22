@@ -1,0 +1,34 @@
+
+.users{
+padding-bottom: 25px;
+}
+
+.users__header{
+  margin-left: 25px;
+}
+
+.users__caption{
+  margin-top: 34px;
+  margin-left: 51px;
+}
+
+.users__back-photo{
+  margin-left: 152px;
+}
+
+.users__description{
+  margin-bottom: 25px;
+}
+
+.users__cards{
+  margin-top: 54px;
+  margin-bottom: 25px;
+}
+
+.users__level-number{
+  @include text(24px, bold, 24px, #FFFFFF);
+}
+
+.users__level-text{
+  @include text(14px, normal, 14px, #FFFFFF);
+}

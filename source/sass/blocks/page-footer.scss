@@ -1,0 +1,26 @@
+.page-footer{
+  background-color: #ffffff;
+}
+
+.page-footer__caption{
+  text-align: center;
+  padding-top: 37px;
+}
+
+.page-footer__developed-caption{
+  line-height: 16px;
+  color: $special-grey;
+}
+
+.page-footer__list{
+  text-align: center;
+}
+
+.page-footer__developed{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__developed-caption{
+  padding-top: 16px;
+}

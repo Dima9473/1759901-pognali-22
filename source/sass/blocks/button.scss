@@ -1,0 +1,26 @@
+.button{
+  background: $basic-yellow;
+  border-radius: 25px;
+}
+
+.button--arrow{
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue-light;
+}
+
+.button__caption{
+  @include text(17px, bold, 20px, $basic-blue);
+}
+
+.button__caption--light{
+  color: $basic-blue-light;
+}
+
+.button__caption--small{
+  @include text(16px, bold, 16px, #132576);
+}
+
+.button__map-icon{
+  background-color: $blue;
+}

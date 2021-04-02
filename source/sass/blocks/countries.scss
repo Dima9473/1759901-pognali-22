@@ -1,0 +1,25 @@
+.countries{
+  background-color: #EDEFF6;
+  padding-bottom: 25px;
+}
+
+.countries__container{
+  padding-top: 71px;
+}
+
+.countries__header{
+  margin-left: 25px;
+}
+
+.countries__list{
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.countries__all-countries{
+  margin: 25px;
+}
+
+.countries__info{
+  @include text(16px, 300, 22px, $special-grey);
+}
