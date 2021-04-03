@@ -6,9 +6,20 @@
   }
 }
 
+.page-footer__logo-mobile{
+  display: block;
+  @media (min-width: $medium-width){
+    display: none;
+  }
+}
+
 .page-footer__logo{
   text-align: center;
   padding-top: 37px;
+  display: none;
+  @media (min-width: $medium-width){
+      display: block;
+  }
 }
 
 .page-footer__developed-caption{
