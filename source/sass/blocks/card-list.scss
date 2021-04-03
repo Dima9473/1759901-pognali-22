@@ -22,3 +22,40 @@
 .card-list__online{
   fill: #81E31E;
 }
+
+.card-list__header-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-list__likes{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list__button{
+  background-color: #F9EAEA;
+}
+
+.card-list__text{
+  @include text(15px, normal, 16px, $special-grey);
+}
+
+.card-list__additional-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-list__transports{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list__level{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list__level-number{
+  @include text(24px, bold, 24px, $basic-blue-light);
+}

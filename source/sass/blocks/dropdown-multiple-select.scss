@@ -6,3 +6,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.dropdown-multiple-select__range-min-value{
+  @include text(14px, 500, 13px, $basic-blue-light);
+  letter-spacing: 0.06em;
+}
