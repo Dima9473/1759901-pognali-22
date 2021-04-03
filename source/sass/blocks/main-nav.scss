@@ -4,9 +4,12 @@
   margin-right: 63px;
 }
 
-.main-nave__toggle{
+.main-nav__toggle{
+  @media (min-width: $large-width){
+    display: none;
+  }
 }
 
-.main-nave__close-icon{
+.main-nav__close-icon{
   fill: #CCCCCC;
 }

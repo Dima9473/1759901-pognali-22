@@ -3,6 +3,14 @@
   padding-bottom: 12px;
 }
 
+.page-header__logo-mobile{
+  display: block;
+  @media (min-width: $medium-width){
+    display: none;
+  }
+}
+
+
 .page-header__menu{
   display: flex;
   justify-content: space-between;
@@ -25,12 +33,11 @@
   @include text(36px, bold, 36px, #ffffff);
 }
 
-.page-header__logo-mobile{
-
-}
-
 .page-header__logo{
   display: none;
+  @media (min-width: $medium-width){
+      display: block;
+  }
 }
 
 .page-header__menu-opened{

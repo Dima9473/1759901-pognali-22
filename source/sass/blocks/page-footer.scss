@@ -1,6 +1,9 @@
 .page-footer{
   text-align: center;
   background-color: #ffffff;
+  @media (min-width: $medium-width){
+
+  }
 }
 
 .page-footer__logo{
