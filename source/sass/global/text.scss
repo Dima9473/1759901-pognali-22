@@ -11,13 +11,17 @@
 }
 
 .text--caption{
-  @include text(24px, bold, 24px, $special-orange)
+  @include text(24px, bold, 24px, $special-orange);
 }
 
 .text--default{
-  @include text(16px, normal, 22px, #ffffff)
+  @include text(16px, normal, 22px, #ffffff);
 }
 
 .text--bold{
-  @include text(16px, bold, 22px, #ffffff)
+  @include text(16px, bold, 22px, #ffffff);
+}
+
+.text--disabled{
+  opacity: 0.3;
 }

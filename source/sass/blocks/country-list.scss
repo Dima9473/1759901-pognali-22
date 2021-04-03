@@ -1,0 +1,12 @@
+.country-list{
+
+}
+
+.country-list__item{
+  display: inline-block;
+  @include text(16px, bold, 16px, $basic-blue-light);
+}
+
+.country-list__item:not(:last-child):after{
+  content: ", "
+}

@@ -1,0 +1,23 @@
+.country-description-list{
+  padding: 0;
+}
+
+.country-description-list__caption{
+  @include text(18px, 500, 18px, $basic-blue-light);
+}
+
+.country-description-list__country{
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-description-list__change-text{
+  @include text(16px, normal, 22px, $special-grey);
+}
+
+.country-description-list__change-text::placeholder{
+  font-family: Blogger Sans;
+  font-style: normal;
+  @include text(16px, normal, 22px, $special-grey);
+  opacity: 0.3;
+}

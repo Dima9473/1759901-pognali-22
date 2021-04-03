@@ -1,0 +1,8 @@
+
+
+.select-input-list__item{
+  display: flex;
+  &:not(:last-child){
+    margin-bottom: 22px;
+  }
+}

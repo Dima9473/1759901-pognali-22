@@ -1,14 +1,16 @@
 .page-footer{
+  text-align: center;
   background-color: #ffffff;
 }
 
-.page-footer__caption{
+.page-footer__logo{
   text-align: center;
   padding-top: 37px;
 }
 
 .page-footer__developed-caption{
   line-height: 16px;
+  padding-top: 16px;
   color: $special-grey;
 }
 
@@ -19,8 +21,4 @@
 .page-footer__developed{
   display: flex;
   justify-content: space-between;
-}
-
-.page-footer__developed-caption{
-  padding-top: 16px;
 }
