@@ -1,8 +1,13 @@
 .page-footer{
   text-align: center;
   background-color: #ffffff;
-  @media (min-width: $medium-width){
+}
 
+.page-footer__container{
+  @media (min-width: $medium-width){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -24,6 +29,7 @@
 }
 
 .page-footer__developed-caption{
+  margin-right: 23px;
   line-height: 16px;
   padding-top: 16px;
   color: $special-grey;
