@@ -1,0 +1,19 @@
+.choose-companion{
+  background-color: $basic-yellow;
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+
+.choose-companion__caption{
+  @include text(22px, bold, 22px, $basic-blue-light);
+  letter-spacing: 0.02em;
+}
+
+.choose-companion__list{
+  margin-top: 35px;
+  padding: 0;
+}
+
+.choose-companion__line{
+  border-top: 1px solid #F3C72B;
+}

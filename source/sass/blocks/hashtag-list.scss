@@ -1,7 +1,8 @@
 .hashtag-list{
-
+  list-style-type: none;
 }
 
 .hashtag-list__item{
   @include text(16px, normal, 18px, $special-grey);
+  display: inline
 }
