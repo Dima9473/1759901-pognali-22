@@ -3,8 +3,23 @@
   background:  url(../../img/globe-back-mobile.png) no-repeat;
 }
 
+.promo__header{
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .promo__actions{
   display: flex;
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: none;
+  }
 }
 
 .promo__authorization{
@@ -13,6 +28,7 @@
 }
 
 .promo__slogan{
+  text-align: center;
   margin-left: 41px;
   @include text(36px, bold, 40px, #ffffff);
 }
@@ -37,4 +53,34 @@
 .promo__traveller-icon{
   margin-top: 10px;
   margin-left: 80px;
+
+  @media (min-width: $medium-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $large-width) {
+    display: none;
+    order: 2;
+  }
+}
+
+.promo__traveller-icon__large{
+  margin-top: 10px;
+  margin-left: 80px;
+  display: none;
+  @media (min-width: $large-width) {
+    display: flex;
+  }
+}
+
+.promo__quote{
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $large-width) {
+    flex-direction: row;
+  }
 }
