@@ -1,6 +1,14 @@
 .about{
   margin-top: 72px;
-  background: #192144 url(../../img/about-mobile.png) no-repeat;
+  background-image:    url(../../img/about-mobile.png);
+  background-size:     contain;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  // background: #192144 url(../../img/about-mobile.png) no-repeat cover;
+
+  @media (min-width: $medium-width) {
+    background-position: center right;
+  }
   // background-size: contain;
 }
 
@@ -11,4 +19,25 @@
 
 .countries__header{
   margin-left: 25px;
+}
+
+.about__details{
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: block;
+  }
+}
+
+.about__description{
+  margin-bottom: 25px;
+  width: 210px;
+
+  @media (min-width: $medium-width) {
+    width: 310px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 620px;
+  }
 }

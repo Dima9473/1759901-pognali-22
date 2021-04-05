@@ -5,10 +5,18 @@
 
 .countries__container{
   padding-top: 71px;
+
+  @media (min-width:$medium-width) {
+    background-image: url(../../img/flags-background.png);
+    // background-size:     contain;
+    background-repeat:   no-repeat;
+     background-position: top right;
+  }
 }
 
 .countries__header{
   margin-left: 25px;
+  width: 380px;
 }
 
 .countries__list{
