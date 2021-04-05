@@ -1,6 +1,17 @@
 .page-header{
-  margin-top: 19px;
+  padding-top: 19px;
   padding-bottom: 12px;
+}
+
+.page-header__menu-opened{
+  // background-color: #ffffff;
+}
+
+.page-header__logo-mobile-dark{
+  display: none;
+  @media (min-width: $medium-width) {
+    display: none;
+  }
 }
 
 .page-header__logo-mobile{
@@ -20,8 +31,11 @@
 }
 
 .page-header__social-list{
-  margin-left: 110px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
+  @media (min-width: $medium-width) {
+    justify-content: flex-start;
+    margin-top: 150px;
+  }
 }
 
 .page-header__caption{
@@ -39,5 +53,19 @@
 
 }
 
+.page-header__actions{
+  display: none;
+  @media (min-width: $medium-width) {
+    padding-right: 40px;
+    display: flex;
+  }
+}
 
+.page-header__list{
+  display: none;
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
 // 19 25 25

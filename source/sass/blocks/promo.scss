@@ -4,6 +4,7 @@
 }
 
 .promo__header{
+  align-items: center;
   @media (min-width: $medium-width) {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,8 @@
 
 .promo__actions{
   display: flex;
+  justify-content: center;
+  margin-top: -200px;
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;
   }
@@ -31,6 +34,10 @@
   text-align: center;
   margin-left: 41px;
   @include text(36px, bold, 40px, #ffffff);
+
+  @media (min-width: $large-width) {
+    text-align: left;
+  }
 }
 
 .promo__author-info{
@@ -39,15 +46,14 @@
 
 .promo__list{
   padding: 0;
+  flex-direction: row;
 }
 
 .promo__list--indent{
-  margin-top: 29px;
-}
-
-.promo__review{
-  margin-top: 28px;
-  margin-left: 25px;
+  margin-top: 150px;
+  @media (min-width: $medium-width) {
+    margin-top: 0;
+  }
 }
 
 .promo__traveller-icon{
@@ -74,13 +80,29 @@
 }
 
 .promo__quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media (min-width: $medium-width) {
-    display: flex;
-    justify-content: center;
     flex-direction: row-reverse;
   }
 
   @media (min-width: $large-width) {
     flex-direction: row;
   }
+}
+
+.promo__review{
+  margin: 28px 0px 0px 0px;
+  margin-top: 28px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__author-info{
+  max-width: 170px;
 }

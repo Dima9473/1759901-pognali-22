@@ -1,3 +1,11 @@
 .main-menu{
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $medium-width) {
+    align-items: flex-start;
+    padding-left: 100px;
+  }
 }

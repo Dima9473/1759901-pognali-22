@@ -1,5 +1,6 @@
 .icon-list{
-
+  display: flex;
+  flex-direction: column
 }
 
 .icon-list__details{
@@ -11,7 +12,7 @@
 }
 
 .icon-list__item{
-  display: inline-block;
+  display: flex;
 }
 
 .icon-list__mappoint{

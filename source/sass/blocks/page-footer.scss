@@ -1,6 +1,11 @@
 .page-footer{
   text-align: center;
   background-color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  @media (min-width: $medium-width) {
+    padding: 50px 0px;
+  }
 }
 
 .page-footer__container{
@@ -20,11 +25,10 @@
 }
 
 .page-footer__logo{
-  text-align: center;
-  padding-top: 37px;
   display: none;
   @media (min-width: $medium-width){
       display: block;
+      text-align: center;
   }
 }
 
@@ -37,6 +41,7 @@
 
 .page-footer__list{
   text-align: center;
+  margin: 0;
 }
 
 .page-footer__developed{
