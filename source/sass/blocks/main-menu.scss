@@ -9,3 +9,11 @@
     padding-left: 100px;
   }
 }
+
+.main-menu--opened{
+  display: flex;
+}
+
+.main-menu--closed{
+  display: none;
+}
