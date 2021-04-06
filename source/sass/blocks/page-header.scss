@@ -21,7 +21,9 @@
 }
 
 .page-header--menu-opened{
-  background-color: #ffffff;
+  @media (max-width: $medium-max-width) {
+    background-color: #ffffff;
+  }
 }
 
 .page-header--menu-closed{
@@ -53,6 +55,7 @@
 
 .page-header__actions{
   display: none;
+  order: 1;
   @media (min-width: $medium-width) {
     padding-right: 40px;
     display: flex;
@@ -70,6 +73,9 @@
 
 .page-header__toggle{
   order: 2;
+  @media (min-width: $medium-width) {
+    order: 0;
+  }
   @media (min-width: $large-width){
     display: none;
   }
@@ -77,4 +83,9 @@
 
 .page-header__close-icon{
   fill: #CCCCCC;
+}
+
+.page-header__buttons{
+  display: flex;
+  justify-content: space-between;
 }

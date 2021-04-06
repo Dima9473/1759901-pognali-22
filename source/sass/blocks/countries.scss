@@ -22,6 +22,12 @@
 .countries__list{
   margin-top: 60px;
   margin-bottom: 25px;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .countries__all-countries{
@@ -30,4 +36,14 @@
 
 .countries__info{
   @include text(16px, 300, 22px, $special-grey);
+}
+
+.countries__collection{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large-width) {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }

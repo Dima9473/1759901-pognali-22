@@ -13,6 +13,10 @@
 
 .icon-list__item{
   display: flex;
+
+  @media (min-width: $large-width) {
+    margin-right: 110px;
+  }
 }
 
 .icon-list__mappoint{

@@ -17,6 +17,8 @@
 
 .information-list__item{
   @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
     width: 50%;
   }
 

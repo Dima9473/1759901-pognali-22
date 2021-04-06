@@ -1,4 +1,5 @@
 .profile{
+  position: relative;
   background-color: #E6E8F1;
   padding-top: 37px;
   padding-bottom: 38px;
@@ -7,6 +8,11 @@
 
 .profile__list{
   margin-bottom: 46px;
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .profile__header{
@@ -16,4 +22,19 @@
 
 .profile__business-tarifs{
   margin-left: 25px;
+}
+
+.profile__rates{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 25px;
+  padding-top: 25px;
+  @media (min-width: $medium-width) {
+    top: auto;
+  }
+
+  @media (min-width: $large-width) {
+    top: 50%;
+  }
 }

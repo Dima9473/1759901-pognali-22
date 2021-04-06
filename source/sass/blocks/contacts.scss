@@ -4,6 +4,15 @@
   padding-bottom: 35px;
 }
 
+.contacts__get-direction{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .contacts__addres{
   color: $basic-blue-light;
   line-height: 22px;
@@ -12,4 +21,10 @@
 .contacts__map-icon{
 background-color: $blue;
 fill: $basic-yellow;
+}
+
+.contacts__new-line{
+  @media (min-width: $medium-width) {
+    display: none;
+  }
 }
