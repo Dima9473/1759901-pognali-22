@@ -6,3 +6,18 @@
 .site-list__link{
   @include text(30px, 500, 35px, #192144);
 }
+
+
+.site-list__link--light{
+  color: #ffffff;
+}
+
+.site-list__link--dark{
+  color: $dark-blue;
+}
+
+.site-list__item{
+  @media (min-width: $large-width) {
+    padding-right: 35px;
+  }
+}

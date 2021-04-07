@@ -13,15 +13,35 @@
   @media (min-width: $large-width) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.promo__menu{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: none;
+  }
+
+  @media (min-width: $large-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
 .promo__actions{
   display: flex;
   justify-content: center;
-  margin-top: -200px;
-  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
-    display: none;
+
+  @media (min-width: $large-width) {
+    background-color: #ffffff;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -32,7 +52,6 @@
 
 .promo__slogan{
   text-align: center;
-  margin-left: 41px;
   @include text(36px, bold, 40px, #ffffff);
 
   @media (min-width: $large-width) {
@@ -50,9 +69,13 @@
 }
 
 .promo__list--indent{
-  margin-top: 150px;
   @media (min-width: $medium-width) {
     margin-top: 0;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -200px;
+    padding-bottom: 200px;
   }
 }
 

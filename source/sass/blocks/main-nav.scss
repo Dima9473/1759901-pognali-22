@@ -1,4 +1,5 @@
-.main-nav{
-  margin-top: 74px;
-  margin-right: 63px;
+.main-nav__list{
+  @media (min-width: $large-width) {
+    display: flex;
+  }
 }

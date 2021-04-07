@@ -2,15 +2,16 @@
   text-align: center;
   list-style-type: none;
   margin: 0 auto;
+  padding-inline-start: 0;
 
   @media (min-width: $medium-width){
-    width: 688px;
+    max-width: 688px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $large-width) {
-    width: 1320px;
+    max-width: 1320px;
     flex-wrap: nowrap;
   }
 }

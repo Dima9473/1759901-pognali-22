@@ -3,6 +3,10 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $medium-width) {
+    justify-content: flex-start;
+  }
 }
 
 .social-list__item{

@@ -1,9 +1,9 @@
 .profile{
   position: relative;
   background-color: #E6E8F1;
-  padding-top: 37px;
+  // padding-top: 37px;
   padding-bottom: 38px;
-  padding-left: 24px;
+  // padding-left: 24px;
 }
 
 .profile__list{
@@ -36,5 +36,21 @@
 
   @media (min-width: $large-width) {
     top: 50%;
+  }
+}
+
+.profile__map{
+  width: 100%;
+}
+
+.profile__caption{
+  @media (min-width: $medium-width) {
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $large-width) {
+    margin: 0 auto;
+    padding-bottom: 85px;
   }
 }

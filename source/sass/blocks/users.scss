@@ -4,7 +4,7 @@ padding-bottom: 25px;
 }
 
 .users__header{
-  margin-left: 25px;
+  // margin-left: 25px;
 }
 
 .users__caption{
@@ -13,7 +13,9 @@ padding-bottom: 25px;
 }
 
 .users__back-photo{
-  margin-left: 152px;
+  @media (min-width: $large-width) {
+    margin-left: 152px;
+  }
 }
 
 .users__description{
@@ -23,10 +25,10 @@ padding-bottom: 25px;
 .users__cards{
   margin-top: 54px;
   margin-bottom: 25px;
-
+  display: flex;
+  flex-direction: column;
   @media (min-width: $medium-width) {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
   }
 }
 

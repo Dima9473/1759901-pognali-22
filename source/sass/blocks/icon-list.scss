@@ -5,6 +5,14 @@
 
 .icon-list__details{
   @include text(16px, bold, 18px, $dark-blue);
+  margin-inline-start: 15px;
+  @media (min-width: $medium-width) {
+    margin-inline-start: 20px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-inline-start: 30px;
+  }
 }
 
 .icon-list__details--light{
@@ -17,6 +25,10 @@
   @media (min-width: $large-width) {
     margin-right: 110px;
   }
+}
+
+.icon-list__item--stuck{
+  margin-right: 0;
 }
 
 .icon-list__mappoint{
