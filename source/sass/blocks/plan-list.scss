@@ -1,8 +1,18 @@
+.plan-list{
+  padding-inline-start: 0;
+}
+
 .plan-list__item{
   margin-bottom: 10px;
   padding-left: 25px;
   background: #FFFFFF;
   border-radius: 10px;
+  list-style-type: none;
+}
+
+.plan-list__header{
+  display: flex;
+  padding-top: 25px;
 }
 
 .plan-list__change-text{
@@ -13,6 +23,8 @@
 
 .plan-list__details{
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .plan-list_change{
