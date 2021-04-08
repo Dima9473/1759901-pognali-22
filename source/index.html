@@ -78,7 +78,7 @@
         </a>
       </div>
     </div>
-    <div class="main-menu main-menu--closed">
+    <div class="container main-menu main-menu--closed">
       <nav class="main-menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -158,110 +158,112 @@
   <main class="page-main">
     <h1 class="visually-hidden">Погнали - лучший сайт для поиска попутчиков!</h1>
     <section class="promo">
-      <header class="promo__header">
-        <h2 class="promo__slogan text">В путешествие <br>с крутыми <br>попутчиками!</h2>
-        <div class="promo__quote">
-          <img class="promo__traveller-icon" src="img/traveller-illustration.png" alt="Путешественник">
-          <img class="promo__traveller-icon__large" src="img/traveller-illustration-large.png" alt="Путешественник">
-          <blockquote class="promo__review">
-            <q class="text text--default">Лучшее приложение, <br> что я видел в жизни!</q>
-            <p class="promo__author-info text text--bold">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q>
-            </p>
-          </blockquote>
+      <div class="container">
+        <header class="promo__header">
+          <h2 class="promo__slogan text">В путешествие <br>с крутыми <br>попутчиками!</h2>
+          <div class="promo__quote">
+            <img class="promo__traveller-icon" src="img/traveller-illustration.png" alt="Путешественник">
+            <img class="promo__traveller-icon__large" src="img/traveller-illustration-large.png" alt="Путешественник">
+            <blockquote class="promo__review">
+              <q class="text text--default">Лучшее приложение, <br> что я видел в жизни!</q>
+              <p class="promo__author-info text text--bold">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q>
+              </p>
+            </blockquote>
+          </div>
+        </header>
+        <div class="promo__list container">
+          <ul class="promo__list--indent information-list">
+            <li class="information-list__item  information-list__item--dark-theme">
+              <span class="text information-list__description">Выберите направление</span>
+              <span>1</span>
+            </li>
+            <li class="information-list__item information-list__item--middle-theme">
+              <span class="text information-list__description">Изучите идеи путешественников</span>
+              <span>2</span>
+            </li>
+            <li class="information-list__item information-list__item--light-theme">
+              <span class="text information-list__description">Находите тех, кто похож на вас</span>
+              <span>3</span>
+            </li>
+            <li class="information-list__item information-list__item--even-lighter-theme">
+              <span class="text information-list__description">Путешествуйте вместе!</span>
+              <span>4</span>
+            </li>
+          </ul>
         </div>
-      </header>
-      <div class="promo__list container">
-        <ul class="promo__list--indent information-list">
-          <li class="information-list__item  information-list__item--dark-theme">
-            <span class="text information-list__description">Выберите направление</span>
-            <span>1</span>
-          </li>
-          <li class="information-list__item information-list__item--middle-theme">
-            <span class="text information-list__description">Изучите идеи путешественников</span>
-            <span>2</span>
-          </li>
-          <li class="information-list__item information-list__item--light-theme">
-            <span class="text information-list__description">Находите тех, кто похож на вас</span>
-            <span>3</span>
-          </li>
-          <li class="information-list__item information-list__item--even-lighter-theme">
-            <span class="text information-list__description">Путешествуйте вместе!</span>
-            <span>4</span>
-          </li>
-        </ul>
-      </div>
-      <div class="container promo__menu menu">
-        <a href="#" class="menu__logo-mobile menu__logo-mobile--hidden">
-          <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
-        </a>
-        <a href="#" class="menu__logo-mobile-dark visually-hidden">
-          <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
-        </a>
-        <a href="#" class="menu__logo">
-          <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
-        </a>
-        <a class="menu__toggle menu__toggle--hidden">
-          <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="25" height="3" rx="1.5" />
-            <rect y="8" width="25" height="3" rx="1.5" />
-          </svg>
-          <svg class="menu__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-        <svg class="menu__line menu__line--dark" width="60" height="2" viewBox="0 0 60 2"
-          xmlns="http://www.w3.org/2000/svg">
-          <rect width="60" height="2" />
-        </svg>
-        <nav class="menu__nav main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="text site-list__link site-list__link--dark" href="#">О СЕРВИСЕ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="text site-list__link site-list__link--dark" href="directions.html">НАПРАВЛЕНИЯ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="text site-list__link site-list__link--dark" href="companions.html">ПОПУТЧИКИ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu__actions menu__actions--top menu__actions--center menu__actions--visible">
-          <ul class="menu__list menu__list--row menu__list--visible icon-list">
-            <li class="icon-list__item icon-list__item--stuck">
-              <a class="icon-list__link">
-                <svg class="icon icon--dark-blue icon--middle-background" width="19" height="19" viewBox="0 0 19 19"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z" />
-                  <path
-                    d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z" />
-                </svg>
-              </a>
-            </li>
-            <li class="icon-list__item icon-list__item--stuck">
-              <a class="icon-list__link icon">
-                <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="menu__authorization button" href="authorization.html">
-            <span class="text button__caption">АВТОРИЗАЦИЯ</span>
+        <div class="container promo__menu menu">
+          <a href="#" class="menu__logo-mobile menu__logo-mobile--hidden">
+            <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
           </a>
+          <a href="#" class="menu__logo-mobile-dark visually-hidden">
+            <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
+          </a>
+          <a href="#" class="menu__logo">
+            <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
+          </a>
+          <a class="menu__toggle menu__toggle--hidden">
+            <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="25" height="3" rx="1.5" />
+              <rect y="8" width="25" height="3" rx="1.5" />
+            </svg>
+            <svg class="menu__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <svg class="menu__line menu__line--dark" width="60" height="2" viewBox="0 0 60 2"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="2" />
+          </svg>
+          <nav class="menu__nav main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="text site-list__link site-list__link--dark" href="#">О СЕРВИСЕ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="text site-list__link site-list__link--dark" href="directions.html">НАПРАВЛЕНИЯ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="text site-list__link site-list__link--dark" href="companions.html">ПОПУТЧИКИ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__actions menu__actions--top menu__actions--center menu__actions--visible">
+            <ul class="menu__list menu__list--row menu__list--visible icon-list">
+              <li class="icon-list__item icon-list__item--stuck">
+                <a class="icon-list__link">
+                  <svg class="icon icon--dark-blue icon--middle-background" width="19" height="19" viewBox="0 0 19 19"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z" />
+                    <path
+                      d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-list__item icon-list__item--stuck">
+                <a class="icon-list__link icon">
+                  <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="menu__authorization button" href="authorization.html">
+              <span class="text button__caption">АВТОРИЗАЦИЯ</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section class="about">
-      <div class="about__container">
+      <div class="about__container container">
         <h2 class="text text--caption">О сервисе</h2>
         <p class="about__description text text--default">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
@@ -615,53 +617,54 @@
         </a>
       </div>
     </section>
-    <section class="feedback container">
-      <header class="feedback__header">
-        <h2 class="text text--caption">Заинтересовались?</h2>
-        <p class="text text--default">
-          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
-          <a href="#" class="feedback__authorisation-link">авторизуйтесь</a>.
+    <section class="feedback">
+      <div class="container">
+        <header class="feedback__header">
+          <h2 class="text text--caption">Заинтересовались?</h2>
+          <p class="text text--default">
+            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+            <a href="#" class="feedback__authorisation-link">авторизуйтесь</a>.
+          </p>
+        </header>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
+          <input type="email" class="feedback__email text text--default" placeholder="E-mail" />
+          <button class="button button--arrow">
+            <svg class="button__icon" width="11" height="12" viewBox="0 0 11 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B" />
+            </svg>
+          </button>
+        </form>
+        <p class="text feedback__any-questions">
+          Остались вопросы?<br>
+          Мы с радостью на них ответим!
         </p>
-      </header>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
-        <input type="email" class="feedback__email text text--default" placeholder="E-mail" />
-        <button class="button button--arrow">
-          <svg class="button__icon" width="11" height="12" viewBox="0 0 11 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B" />
-          </svg>
-        </button>
-      </form>
-      <p class="text feedback__any-questions">
-        Остались вопросы?<br>
-        Мы с радостью на них ответим!
-      </p>
-      <dl class="feedback__list icon-list">
-        <div class="icon-list__item">
-          <dt class="icon-list__phone">
-            <svg class="icon-list__link icon icon--main-theme icon--dark-blue-background" width="17" height="15"
-              viewBox="0 0 17 15" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M8.49995 0.0861511C5.7035 0.0861511 2.90033 0.558819 1.88322 1.50093C1.03934 2.28252 0.758038 3.66329 0.663214 4.53753C0.663214 4.53753 0.650146 4.62393 0.650146 4.66109C0.650146 5.00391 0.944447 5.27887 1.30427 5.27887C1.34678 5.27887 2.92002 5.15837 3.86851 5.08425C3.89134 5.08112 3.91434 5.07806 3.93716 5.07191C4.29043 5.0627 4.57505 4.7908 4.57505 4.45413L4.57822 3.237C4.57822 2.86014 4.90214 2.55737 5.3012 2.55737H11.6987C12.0978 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7095 5.0627 13.0628 5.07191C13.0854 5.0781 13.1085 5.08112 13.1315 5.08425C14.0801 5.15834 15.6533 5.27887 15.6957 5.27887C16.0553 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3368 4.53753 16.3368 4.53753C16.2419 3.66329 15.9609 2.28255 15.117 1.50093C14.0996 0.558819 11.2964 0.0861511 8.49995 0.0861511ZM8.49995 8.11773C7.7771 8.11773 7.19164 8.67064 7.19164 9.35333C7.19164 10.036 7.7771 10.5889 8.49995 10.5889C9.22279 10.5889 9.80823 10.036 9.80823 9.35333C9.80823 8.67064 9.22279 8.11773 8.49995 8.11773ZM7.51873 5.33752V4.56528C7.51873 4.13902 7.15236 3.79304 6.70106 3.79304C6.24977 3.79304 5.8834 4.13905 5.8834 4.56528V5.33752L1.47095 9.7889C1.16689 10.07 0.977135 10.4622 0.977135 10.8948V12.1335C0.977135 12.8162 1.56264 13.3691 2.28545 13.3691H2.61254V14.1414C2.61254 14.5677 2.97895 14.9136 3.43025 14.9136C3.88154 14.9136 4.24792 14.5677 4.24792 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1182 14.9136 13.5697 14.9136C14.021 14.9136 14.3873 14.5677 14.3873 14.1414V13.3691H14.7144C15.4373 13.3691 16.0227 12.8162 16.0227 12.1335V10.8948C16.0227 10.4622 15.833 10.07 15.5289 9.7889L11.1166 5.33752V4.56528C11.1166 4.13902 10.7502 3.79304 10.2989 3.79304C9.84757 3.79304 9.48124 4.13905 9.48124 4.56528V5.33752H7.51873ZM8.49995 6.8821C9.94564 6.8821 11.1166 7.98799 11.1166 9.35333C11.1166 10.7187 9.94567 11.8247 8.49995 11.8247C7.05426 11.8247 5.88336 10.7187 5.88336 9.35333C5.88336 7.98795 7.05426 6.8821 8.49995 6.8821Z" />
-            </svg>
-          </dt>
-          <dd class="text icon-list__details icon-list__details--light">8 800 555-86-28</dd>
-        </div>
-        <div class="icon-list__item">
-          <dt class="icon-list__email">
-            <svg class="icon-list__link icon icon--main-theme icon--dark-blue-background" width="19" height="13"
-              viewBox="0 0 19 13" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.24997 7.67188L2.95117 1.90264L2.36066 2.53365L6.69108 6.5L2.36066 10.4663L2.95117 11.0974L7.33081 7.08594L9.24997 8.84375L11.1691 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57593 0.25C0.76692 0.25 0.111084 0.948839 0.111084 1.80786V11.1921C0.111084 12.0525 0.7616 12.75 1.57593 12.75H16.924C17.733 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7383 0.25 16.924 0.25H1.57593Z" />
-            </svg>
-          </dt>
-          <dd class="text icon-list__details icon-list__details--light">MAIL@HTMLACADEMY.RU</dd>
-        </div>
-      </dl>
+        <dl class="feedback__list icon-list">
+          <div class="icon-list__item">
+            <dt class="icon-list__phone">
+              <svg class="icon-list__link icon icon--main-theme icon--dark-blue-background" width="17" height="15"
+                viewBox="0 0 17 15" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.49995 0.0861511C5.7035 0.0861511 2.90033 0.558819 1.88322 1.50093C1.03934 2.28252 0.758038 3.66329 0.663214 4.53753C0.663214 4.53753 0.650146 4.62393 0.650146 4.66109C0.650146 5.00391 0.944447 5.27887 1.30427 5.27887C1.34678 5.27887 2.92002 5.15837 3.86851 5.08425C3.89134 5.08112 3.91434 5.07806 3.93716 5.07191C4.29043 5.0627 4.57505 4.7908 4.57505 4.45413L4.57822 3.237C4.57822 2.86014 4.90214 2.55737 5.3012 2.55737H11.6987C12.0978 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7095 5.0627 13.0628 5.07191C13.0854 5.0781 13.1085 5.08112 13.1315 5.08425C14.0801 5.15834 15.6533 5.27887 15.6957 5.27887C16.0553 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3368 4.53753 16.3368 4.53753C16.2419 3.66329 15.9609 2.28255 15.117 1.50093C14.0996 0.558819 11.2964 0.0861511 8.49995 0.0861511ZM8.49995 8.11773C7.7771 8.11773 7.19164 8.67064 7.19164 9.35333C7.19164 10.036 7.7771 10.5889 8.49995 10.5889C9.22279 10.5889 9.80823 10.036 9.80823 9.35333C9.80823 8.67064 9.22279 8.11773 8.49995 8.11773ZM7.51873 5.33752V4.56528C7.51873 4.13902 7.15236 3.79304 6.70106 3.79304C6.24977 3.79304 5.8834 4.13905 5.8834 4.56528V5.33752L1.47095 9.7889C1.16689 10.07 0.977135 10.4622 0.977135 10.8948V12.1335C0.977135 12.8162 1.56264 13.3691 2.28545 13.3691H2.61254V14.1414C2.61254 14.5677 2.97895 14.9136 3.43025 14.9136C3.88154 14.9136 4.24792 14.5677 4.24792 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1182 14.9136 13.5697 14.9136C14.021 14.9136 14.3873 14.5677 14.3873 14.1414V13.3691H14.7144C15.4373 13.3691 16.0227 12.8162 16.0227 12.1335V10.8948C16.0227 10.4622 15.833 10.07 15.5289 9.7889L11.1166 5.33752V4.56528C11.1166 4.13902 10.7502 3.79304 10.2989 3.79304C9.84757 3.79304 9.48124 4.13905 9.48124 4.56528V5.33752H7.51873ZM8.49995 6.8821C9.94564 6.8821 11.1166 7.98799 11.1166 9.35333C11.1166 10.7187 9.94567 11.8247 8.49995 11.8247C7.05426 11.8247 5.88336 10.7187 5.88336 9.35333C5.88336 7.98795 7.05426 6.8821 8.49995 6.8821Z" />
+              </svg>
+            </dt>
+            <dd class="text icon-list__details icon-list__details--light">8 800 555-86-28</dd>
+          </div>
+          <div class="icon-list__item">
+            <dt class="icon-list__email">
+              <svg class="icon-list__link icon icon--main-theme icon--dark-blue-background" width="19" height="13"
+                viewBox="0 0 19 13" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.24997 7.67188L2.95117 1.90264L2.36066 2.53365L6.69108 6.5L2.36066 10.4663L2.95117 11.0974L7.33081 7.08594L9.24997 8.84375L11.1691 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57593 0.25C0.76692 0.25 0.111084 0.948839 0.111084 1.80786V11.1921C0.111084 12.0525 0.7616 12.75 1.57593 12.75H16.924C17.733 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7383 0.25 16.924 0.25H1.57593Z" />
+              </svg>
+            </dt>
+            <dd class="text icon-list__details icon-list__details--light">MAIL@HTMLACADEMY.RU</dd>
+          </div>
+        </dl>
+      </div>
     </section>
     <section class="contacts ">
-      <!-- <div class="container"> -->
-      <header class="contacts__header">
+      <header class="contacts__header container">
         <h2 class="visually-hidden">Контакты компании!</h2>
         <div class="contacts__get-direction container">
           <dl class="contacts__list icon-list">
@@ -685,13 +688,14 @@
             </svg>
           </a>
         </div>
-        <img class="profile__map" src="img/background_map.png" alt="Карта" />
-        <svg class="profile__map-point" width="41" height="41" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
+        <img class="contacts__map contacts__map--small" src="img/background_map.png" alt="Карта" />
+        <img class="contacts__map contacts__map--medium" src="img/map-medium-icon.png" alt="Карта" />
+        <img class="contacts__map contacts__map--large" src="img/map-large-icon.png" alt="Карта" />
+        <svg class="contacts__map-point" width="41" height="41" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
           <circle cx="20.5" cy="20.4998" r="19.7679" />
           <circle cx="20.4999" cy="19.7676" r="8.78572" />
         </svg>
       </header>
-      <!-- </div> -->
     </section>
   </main>
   <footer class="page-footer">
