@@ -1,6 +1,6 @@
 .add-plans__header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .add-plans__adding-list{
@@ -8,40 +8,8 @@
   padding-top: 24px;
 }
 
-.add-plans__info{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-
-.add-plans__child{
-  margin-top: 8px;
-}
-
-.add-plans__trip-data{
-  margin-bottom: 20px;
-}
-
-.add-plans__definition{
-  @include text(16px, 500, 16px, $basic-blue-light);
-  letter-spacing: 0.07em;
-}
-
-.add-plans__count{
-  @include text(14px, 500, 14px, $basic-blue-light);
-  text-align: center;
-}
-
-.add-plans__date{
-  display: flex;
-  flex-direction: column;
-}
-
-.add-planse__month-date{
-  margin-top: 27px;
-  text-align: center;
-}
-
-.add-planse__day-date{
-  margin-top: 22px;
+.add-plans__toggles{
+  @media (min-width: $large-width) {
+    display: none;
+  }
 }

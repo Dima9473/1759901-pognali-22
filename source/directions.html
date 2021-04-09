@@ -161,23 +161,28 @@
     <h1 class="visually-hidden">Информация о направлениях пользователя</h1>
     <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
       <section class="user-info__general general-info">
-        <div class="container">
+        <div class="general-info__container container">
           <h2 class="visually-hidden">Предпочтения</h2>
           <div class="general-info__user-data">
-            <div class="general-info__level ">
+            <div class="general-info__level">
               <b class="general-info__level-number">80</b>
-              <span>level</span>
+              <span class="general-info__level-text text">level</span>
             </div>
-            <img class="general-info__avatar" src="img/demin-avatar.png" alt="Фотография Демина" />
+            <img class="general-info__avatar general-info__avatar--small" src="img/demin-avatar.png"
+              alt="Фотография Демина" />
+            <img class="general-info__avatar general-info__avatar--medium" src="img/demin-avatar-medium.png"
+              alt="Фотография Демина" />
           </div>
-          <button class="general-info__change-photo button button--light-theme">
-            <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
-          </button>
-          <fieldset class="dataset">
+          <div class="general-info__change">
+            <button class="general-info__change-photo button button--light-theme">
+              <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
+            </button>
+          </div>
+          <fieldset class="general-info__tags dataset">
             <legend class="dataset__legend text">ТЭГИ</legend>
             <textarea class="dataset__change-tags text">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
-          <fieldset class="dataset">
+          <fieldset class="general-info__transport dataset">
             <legend class="dataset__legend">Транспорт</legend>
             <ul class="dataset__list transport-list">
               <li class="transport-list__item">
@@ -236,7 +241,7 @@
           <ul class="user-plans__list plan-list">
             <li class="plan-list__item">
               <div class="plan-list__header">
-                <span>1</span>
+                <span>1. </span>
                 <ul class="country-list">
                   <li class="country-list__item">
                     Франция
@@ -246,27 +251,29 @@
                   </li>
                 </ul>
               </div>
-              <dl class="plan-list__details details-list">
-                <div class="details-list__item">
-                  <dt class="details-list__companions-count">
-                    3
-                  </dt>
-                  <dd class="details-list__details">Попутчика</dd>
-                </div>
-                <div class="details-list__item">
-                  <dt class="details-list__dates">
-                    26 МАР
-                  </dt>
-                  <dd class="details-list__dates-details">- 29 МАР</dd>
-                </div>
-              </dl>
-              <a class="plan-list__change button button--change">
-                <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
-              </a>
+              <div class="plan-list__details">
+                <dl class="plan-list__details-list details-list">
+                  <div class="details-list__item">
+                    <dt class="details-list__companions-count">
+                      3
+                    </dt>
+                    <dd class="details-list__details details-list__text text">Попутчика</dd>
+                  </div>
+                  <div class="details-list__item">
+                    <dt class="details-list__dates details-list__text text">
+                      26 МАР
+                    </dt>
+                    <dd class="details-list__dates-details details-list__text text">- 29 МАР</dd>
+                  </div>
+                </dl>
+                <a class="plan-list__change button button--change">
+                  <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
+                </a>
+              </div>
             </li>
             <li class="plan-list__item">
               <div class="plan-list__header">
-                <span>1</span>
+                <span>2. </span>
                 <ul class="country-list">
                   <li class="country-list__item">
                     Тайланд
@@ -276,23 +283,25 @@
                   </li>
                 </ul>
               </div>
-              <dl class="plan-list details-list">
-                <div class="details-list__item">
-                  <dt class="details-list__companions-count">
-                    1
-                  </dt>
-                  <dd class="details-list__details">Попутчик</dd>
-                </div>
-                <div class="details-list__item">
-                  <dt class="details-list__dates">
-                    1 ИЮЛ
-                  </dt>
-                  <dd class="details-list__dates-details">- 15 ИЮЛ</dd>
-                </div>
-              </dl>
-              <a class="plan-list__change button button--change">
-                <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
-              </a>
+              <div class="plan-list__details">
+                <dl class="plan-list__details-list details-list">
+                  <div class="details-list__item">
+                    <dt class="details-list__companions-count">
+                      1
+                    </dt>
+                    <dd class="details-list__details details-list__text text">Попутчик</dd>
+                  </div>
+                  <div class="details-list__item">
+                    <dt class="details-list__dates details-list__text text">
+                      1 ИЮЛ
+                    </dt>
+                    <dd class="details-list__dates-details details-list__text text">- 15 ИЮЛ</dd>
+                  </div>
+                </dl>
+                <a class="plan-list__change button button--change">
+                  <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -310,42 +319,42 @@
           </header>
           <ol class="add-plans__adding-list step-list">
             <li class="step-list__item">
-              <div class="container">
+              <div class="step-list__item__container container">
                 <h3 class="step-list__caption">Шаг 1. <br>Даты пребывания</h3>
                 <p class="step-list__description text">Укажите предпочтительное количество попутчиков, которых вы хотели
                   бы
                   позвать в поездку, и ее предполагаемую длительность.</p>
-                <div class="add-plans__trip-data">
-                  <div class="add-plans__info">
+                <div class="step-list__trip-data step-list__trip-data--companions">
+                  <div class="step-list__info">
                     <label for="companions" class="step-list__info text">
                       <b>Ищу попутчиков:</b>
                     </label>
-                    <span class="add-plans__definition text text--disabled">
+                    <span class="step-list__definition text text--disabled">
                       ЧЕЛ.
                     </span>
                   </div>
-                  <input id="companions" class="add-plans__count spinner text" type="number" value="2" />
+                  <input id="companions" class="step-list__count spinner text" type="number" value="2" />
                 </div>
-                <div class="add-plans__trip-data">
-                  <div class="add-plans__info">
+                <div class="step-list__trip-data step-list__trip-data--duration">
+                  <div class="step-list__info">
                     <label for="days" class="step-list__info text">
                       <b>Длительность:</b>
                     </label>
-                    <span class="add-plans__definition text text--disabled">
+                    <span class="step-list__definition text text--disabled">
                       ДН.
                     </span>
                   </div>
-                  <input id="days" class="add-plans__count spinner text" type="number" value="3" />
+                  <input id="days" class="step-list__count spinner text" type="number" value="3" />
                 </div>
-                <div class="add-plans__child boolean">
+                <div class="step-list__child boolean">
                   <input id="children" class="boolean__check" type="checkbox" />
                   <label for="children" class="boolean__text text">Можно с детьми</label>
                 </div>
-                <div class="add-plans__date">
-                  <input type="month" class="add-planse__month-date date text" value="2019-03" />
-                  <input type="date" class="add-planse__day-date date " />
+                <div class="step-list__date">
+                  <input type="month" class="step-list__month-date date text" value="2019-03" />
+                  <input type="date" class="step-list__day-date date " />
                 </div>
-                <button type="button"
+                <button type=" button"
                   class="step-list__button-step button button__caption button--middle-theme">СЛЕДУЮЩИЙ
                   ШАГ</button>
               </div>

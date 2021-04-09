@@ -2,13 +2,56 @@
   text-align: center;
 }
 
+.general-info__container{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .general-info__user-data{
   display: flex;
   justify-content: center;
+
+  @media (min-width: $medium-width) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: $large-width){
+    position: absolute;
+    right: 18%;
+    margin-top: -380px;
+    align-items: center;
+  }
 }
 
 .general-info__avatar{
   margin-left: 35px;
+}
+
+.general-info__avatar--small{
+  @media (min-width: $medium-width) {
+    display: none;
+  }
+}
+
+.general-info__avatar--medium{
+  display: none;
+  @media (min-width: $medium-width){
+    display: block;
+    width: 94px;
+    height: 94px;
+  }
+
+  @media (min-width: $large-width){
+    display: block;
+    width: 190px;
+    height: 190px;
+  }
 }
 
 .general-info__change-photo{
@@ -18,4 +61,68 @@
 
 .general-info__user-data-text{
   @include text(20px, bold, 18px, $basic-blue);
+}
+
+.general-info__change{
+  display: flex;
+  justify-content: center;
+  @media (min-width: $medium-width) {
+    order: 1;
+  }
+
+  @media (min-width: $large-width) {
+    position: absolute;
+    right: 18%;
+    margin-top: -180px;
+  }
+}
+
+.general-info__tags{
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $medium-width) {
+    order: 2;
+  }
+
+  @media (min-width: $large-width) {
+    width: 50%;
+    height: 100px;
+    margin-top:30px
+  }
+}
+
+.general-info__transport{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    position: absolute;
+    left: 33%;
+    width: 310px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 30px;
+    width: 30%;
+    height: 100px;
+  }
+}
+
+.general-info__level{
+  display: flex;
+  flex-direction: column
+}
+
+.general-info__level-number{
+  @include text(20px, bold, 18px, $basic-blue);
+
+  @media (min-width: $large-width) {
+    color: #ffffff;
+  }
+}
+
+.general-info__level-text{
+  @include text(18px, normal, 18px, $basic-blue);
+
+  @media (min-width: $large-width) {
+    color: #ffffff;
+  }
 }

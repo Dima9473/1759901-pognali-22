@@ -10,6 +10,10 @@
 .user-info__general{
   padding-top: 20px;
   padding-bottom: 34px;
+
+  @media (min-width: $medium-width) {
+    position: relative;
+  }
 }
 
 .user-info__add-plans{
@@ -17,3 +21,4 @@
   padding-top: 30px;
   padding-bottom: 43px;
 }
+

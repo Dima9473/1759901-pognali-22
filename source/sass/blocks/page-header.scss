@@ -1,6 +1,11 @@
 .page-header{
   padding-top: 19px;
   padding-bottom: 12px;
+  height: 150px;
+
+  @media (min-width: $medium-width) {
+    height: 350px;
+  }
 }
 
 .page-header__menu{
@@ -23,7 +28,7 @@
   margin-bottom: 40px;
   @media (min-width: $medium-width) {
     justify-content: flex-start;
-    margin-top: 150px;
+    // margin-top: 150px;
   }
 }
 

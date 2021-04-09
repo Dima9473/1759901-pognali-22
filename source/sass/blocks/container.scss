@@ -1,11 +1,7 @@
 .container{
-
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
-  // margin-left: 25px;
-  // margin-right: 25px;
-
   max-width: $small-max-width;
 
   @media (min-width: $medium-width) {

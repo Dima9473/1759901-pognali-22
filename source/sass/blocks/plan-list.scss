@@ -4,15 +4,29 @@
 
 .plan-list__item{
   margin-bottom: 10px;
-  padding-left: 25px;
   background: #FFFFFF;
   border-radius: 10px;
   list-style-type: none;
+
+  @media(min-width: $large-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+  }
 }
 
 .plan-list__header{
   display: flex;
   padding-top: 25px;
+  padding-left: 25px;
+
+  @media (min-width: $medium-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-left: 40px;
+  }
 }
 
 .plan-list__change-text{
@@ -23,10 +37,41 @@
 
 .plan-list__details{
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+  padding-left: 25px;
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-left: 40px;
+    border-top: 1px solid #CBCED9;
+  }
+
+  @media (min-width: $large-width) {
+    // display: flex;
+    // justify-content: space-between;
+    // padding-right: 45px;
+    // padding-top: 20px;
+    // padding-left: 40px;
+    border-top: none;
+  }
 }
 
-.plan-list_change{
+.plan-list__details-list{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.plan-list__change{
   margin-top: 24px;
+
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
