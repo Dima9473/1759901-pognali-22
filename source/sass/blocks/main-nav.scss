@@ -1,12 +1,5 @@
-.main-nav{
-  margin-top: 74px;
-  margin-left: 64px;
-  margin-right: 63px;
-}
-
-.main-nave__toggle{
-}
-
-.main-nave__close-icon{
-  fill: #CCCCCC;
+.main-nav__list{
+  @media (min-width: $large-width) {
+    display: flex;
+  }
 }

@@ -1,12 +1,26 @@
 .card-list{
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card-list__item{
   margin-bottom: 11px;
 }
 
+.card-list__flag {
+  @media (min-width: $medium-width) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: -15px;
+  }
+}
+
 .card-list__info{
+  position: relative;
   background: #FFFFFF;
   text-align: center
 }
@@ -58,4 +72,27 @@
 
 .card-list__level-number{
   @include text(24px, bold, 24px, $basic-blue-light);
+}
+
+.card-list__card{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+  }
+}
+
+.card-list__card--under{
+  flex-direction: column;
+  @media (min-width: $medium-width) {
+    margin-right: 50px;
+  }
+
+  // display: flex;
+  // flex-direction: column;
+
+  // @media (min-width: $medium-width) {
+  //   flex-direction: row;
+  // }
 }

@@ -1,15 +1,18 @@
 .page-header{
-  margin-top: 19px;
+  padding-top: 19px;
   padding-bottom: 12px;
 }
 
 .page-header__menu{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.page-header__description{
-  margin-bottom: 25px;
+.page-header--menu-opened{
+  @media (max-width: $medium-max-width) {
+    background-color: #ffffff;
+  }
 }
 
 .page-header__authorisation{
@@ -17,25 +20,18 @@
 }
 
 .page-header__social-list{
-  margin-left: 110px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
+  @media (min-width: $medium-width) {
+    justify-content: flex-start;
+    margin-top: 150px;
+  }
 }
 
 .page-header__caption{
   @include text(36px, bold, 36px, #ffffff);
 }
 
-.page-header__logo-mobile{
-
+.page-header__buttons{
+  display: flex;
+  justify-content: space-between;
 }
-
-.page-header__logo{
-  display: none;
-}
-
-.page-header__menu-opened{
-
-}
-
-
-// 19 25 25

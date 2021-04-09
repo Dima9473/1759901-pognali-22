@@ -4,7 +4,7 @@ padding-bottom: 25px;
 }
 
 .users__header{
-  margin-left: 25px;
+  // margin-left: 25px;
 }
 
 .users__caption{
@@ -13,7 +13,9 @@ padding-bottom: 25px;
 }
 
 .users__back-photo{
-  margin-left: 152px;
+  @media (min-width: $large-width) {
+    margin-left: 152px;
+  }
 }
 
 .users__description{
@@ -23,6 +25,11 @@ padding-bottom: 25px;
 .users__cards{
   margin-top: 54px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+  }
 }
 
 .users__level-number{
@@ -31,4 +38,8 @@ padding-bottom: 25px;
 
 .users__level-text{
   @include text(14px, normal, 14px, #FFFFFF);
+}
+
+.users__background-images{
+  display: flex;
 }

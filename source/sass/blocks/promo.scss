@@ -3,8 +3,46 @@
   background:  url(../../img/globe-back-mobile.png) no-repeat;
 }
 
+.promo__header{
+  align-items: center;
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.promo__menu{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: none;
+  }
+
+  @media (min-width: $large-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 .promo__actions{
   display: flex;
+  justify-content: center;
+
+  @media (min-width: $large-width) {
+    background-color: #ffffff;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .promo__authorization{
@@ -13,8 +51,12 @@
 }
 
 .promo__slogan{
-  margin-left: 41px;
+  text-align: center;
   @include text(36px, bold, 40px, #ffffff);
+
+  @media (min-width: $large-width) {
+    text-align: left;
+  }
 }
 
 .promo__author-info{
@@ -23,18 +65,67 @@
 
 .promo__list{
   padding: 0;
+  flex-direction: row;
 }
 
 .promo__list--indent{
-  margin-top: 29px;
-}
+  @media (min-width: $medium-width) {
+    margin-top: 0;
+  }
 
-.promo__review{
-  margin-top: 28px;
-  margin-left: 25px;
+  @media (min-width: $large-width) {
+    margin-top: -200px;
+    padding-bottom: 200px;
+  }
 }
 
 .promo__traveller-icon{
   margin-top: 10px;
   margin-left: 80px;
+
+  @media (min-width: $medium-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $large-width) {
+    display: none;
+    order: 2;
+  }
+}
+
+.promo__traveller-icon__large{
+  margin-top: 10px;
+  margin-left: 80px;
+  display: none;
+  @media (min-width: $large-width) {
+    display: flex;
+  }
+}
+
+.promo__quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $medium-width) {
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $large-width) {
+    flex-direction: row;
+  }
+}
+
+.promo__review{
+  margin: 28px 0px 0px 0px;
+  margin-top: 28px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__author-info{
+  max-width: 170px;
 }

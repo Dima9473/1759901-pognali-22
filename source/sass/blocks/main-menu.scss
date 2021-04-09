@@ -1,3 +1,24 @@
 .main-menu{
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $medium-width) {
+    align-items: flex-start;
+    padding-left: 100px;
+  }
+}
+
+.main-menu--opened{
+  display: flex;
+}
+
+.main-menu--closed{
+  display: none;
+}
+
+.main-menu__nav{
+  margin-top: 74px;
+  margin-right: 63px;
 }

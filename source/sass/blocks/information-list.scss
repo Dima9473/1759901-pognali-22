@@ -1,7 +1,32 @@
-.information-list{}
+.information-list{
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-inline-start: 0;
+
+  @media (min-width: $medium-width){
+    max-width: 688px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $large-width) {
+    max-width: 1320px;
+    flex-wrap: nowrap;
+  }
+}
 
 .information-list__item{
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
 
+  @media (min-width: $large-width) {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
 }
 
 .information-list__item--dark-theme{

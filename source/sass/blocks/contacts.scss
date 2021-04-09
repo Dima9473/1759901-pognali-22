@@ -1,7 +1,16 @@
 .contacts{
   padding-top: 33px;
   background-color: $basic-yellow;
-  padding-bottom: 35px;
+  position: relative;
+}
+
+.contacts__get-direction{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .contacts__addres{
@@ -12,4 +21,46 @@
 .contacts__map-icon{
 background-color: $blue;
 fill: $basic-yellow;
+}
+
+.contacts__new-line{
+  @media (min-width: $medium-width) {
+    display: none;
+  }
+}
+
+
+.contacts__map{
+  width: 100%;
+}
+
+.contacts__map--small{
+  @media (min-width: $medium-width) {
+    display: none;
+  }
+}
+
+.contacts__map--medium{
+  display: none;
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: block;
+  }
+}
+
+.contacts__map--large{
+  display: none;
+  @media (min-width: $large-width) {
+    display: block;
+  }
+}
+
+.contacts__map-point{
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  @media (min-width: $medium-width) and(max-width:$medium-max-width) {
+    display: none;
+  }
+
 }

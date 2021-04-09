@@ -3,25 +3,30 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>Погнали!</title>
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header__menu-opened">
-    <div class="container page-header__menu">
-      <a href="#" class="page-header__logo-mobile">
+  <header class="page-header">
+    <div class="container page-header__menu  menu">
+      <a href="#" class="menu__logo-mobile">
         <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
       </a>
-      <a href="#" class="page-header__logo">
+      <a href="#" class="menu__logo-mobile-dark visually-hidden">
+        <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
+      </a>
+      <a href="#" class="menu__logo">
         <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
       </a>
-      <a class="main-nav__toggle">
-        <svg class="icon icon--light" width="25" height="11" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg">
+      <a class="menu__toggle">
+        <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
+          xmlns="http://www.w3.org/2000/svg">
           <rect width="25" height="3" rx="1.5" />
           <rect y="8" width="25" height="3" rx="1.5" />
         </svg>
-        <svg class="main-nave__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
+        <svg class="menu__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
             stroke-linejoin="round" />
@@ -29,10 +34,52 @@
             stroke-linejoin="round" />
         </svg>
       </a>
+      <svg class="menu__line" width="60" height="2" viewBox="0 0 60 2" xmlns="http://www.w3.org/2000/svg">
+        <rect width="60" height="2" />
+      </svg>
+      <nav class="menu__nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="text site-list__link site-list__link--light" href="#">О СЕРВИСЕ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link site-list__link--light" href="directions.html">НАПРАВЛЕНИЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link site-list__link--light" href="companions.html">ПОПУТЧИКИ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__actions">
+        <ul class="menu__list icon-list">
+          <li class="icon-list__item icon-list__item--stuck">
+            <a class="icon-list__link">
+              <svg class="icon icon--dark-blue icon--middle-background" width="19" height="19" viewBox="0 0 19 19"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z" />
+                <path
+                  d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="icon-list__item icon-list__item--stuck">
+            <a class="icon-list__link icon">
+              <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="menu__authorization button" href="authorization.html">
+          <span class="text button__caption">АВТОРИЗАЦИЯ</span>
+        </a>
+      </div>
     </div>
-    <div class="main-menu">
-      <!-- visually-hidden -->
-      <nav class="main-nav">
+    <div class="container main-menu main-menu--closed">
+      <nav class="main-menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="text site-list__link" href="#">О СЕРВИСЕ</a>
@@ -45,12 +92,12 @@
           </li>
         </ul>
       </nav>
-      <div class="container page-header__authorisation">
+      <div class="page-header__authorisation">
         <a class="user-list__authorization button" href="authorization.html">
           <span class="text button__caption">АВТОРИЗАЦИЯ</span>
         </a>
       </div>
-      <div class="container page-header__contact-list contact-list">
+      <div class="page-header__contact-list contact-list">
         <dl class="icon-list">
           <div class="icon-list__item">
             <dt class="icon-list__phone">
@@ -113,11 +160,81 @@
     <section class="promo">
       <div class="container">
         <header class="promo__header">
-          <h2 class="text promo__slogan">В путешествие с крутыми попутчиками!</h2>
-          <img class="promo__traveller-icon" src="img/traveller-illustration.png" alt="Путешественник">
-          <div class="promo__actions">
-            <ul class="promo__list icon-list">
-              <li class="icon-list__item">
+          <h2 class="promo__slogan text">В путешествие <br>с крутыми <br>попутчиками!</h2>
+          <div class="promo__quote">
+            <img class="promo__traveller-icon" src="img/traveller-illustration.png" alt="Путешественник">
+            <img class="promo__traveller-icon__large" src="img/traveller-illustration-large.png" alt="Путешественник">
+            <blockquote class="promo__review">
+              <q class="text text--default">Лучшее приложение, <br> что я видел в жизни!</q>
+              <p class="promo__author-info text text--bold">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q>
+              </p>
+            </blockquote>
+          </div>
+        </header>
+        <div class="promo__list container">
+          <ul class="promo__list--indent information-list">
+            <li class="information-list__item  information-list__item--dark-theme">
+              <span class="text information-list__description">Выберите направление</span>
+              <span>1</span>
+            </li>
+            <li class="information-list__item information-list__item--middle-theme">
+              <span class="text information-list__description">Изучите идеи путешественников</span>
+              <span>2</span>
+            </li>
+            <li class="information-list__item information-list__item--light-theme">
+              <span class="text information-list__description">Находите тех, кто похож на вас</span>
+              <span>3</span>
+            </li>
+            <li class="information-list__item information-list__item--even-lighter-theme">
+              <span class="text information-list__description">Путешествуйте вместе!</span>
+              <span>4</span>
+            </li>
+          </ul>
+        </div>
+        <div class="container promo__menu menu">
+          <a href="#" class="menu__logo-mobile menu__logo-mobile--hidden">
+            <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
+          </a>
+          <a href="#" class="menu__logo-mobile-dark visually-hidden">
+            <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
+          </a>
+          <a href="#" class="menu__logo">
+            <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
+          </a>
+          <a class="menu__toggle menu__toggle--hidden">
+            <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="25" height="3" rx="1.5" />
+              <rect y="8" width="25" height="3" rx="1.5" />
+            </svg>
+            <svg class="menu__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <svg class="menu__line menu__line--dark" width="60" height="2" viewBox="0 0 60 2"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="2" />
+          </svg>
+          <nav class="menu__nav main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="text site-list__link site-list__link--dark" href="#">О СЕРВИСЕ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="text site-list__link site-list__link--dark" href="directions.html">НАПРАВЛЕНИЯ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="text site-list__link site-list__link--dark" href="companions.html">ПОПУТЧИКИ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__actions menu__actions--top menu__actions--center menu__actions--visible">
+            <ul class="menu__list menu__list--row menu__list--visible icon-list">
+              <li class="icon-list__item icon-list__item--stuck">
                 <a class="icon-list__link">
                   <svg class="icon icon--dark-blue icon--middle-background" width="19" height="19" viewBox="0 0 19 19"
                     xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +245,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="icon-list__item">
+              <li class="icon-list__item icon-list__item--stuck">
                 <a class="icon-list__link icon">
                   <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
                     xmlns="http://www.w3.org/2000/svg">
@@ -138,126 +255,116 @@
                 </a>
               </li>
             </ul>
-            <a class="promo__authorization button" href="authorization.html">
+            <a class="menu__authorization button" href="authorization.html">
               <span class="text button__caption">АВТОРИЗАЦИЯ</span>
             </a>
           </div>
-        </header>
-        <blockquote class="promo__review">
-          <q class="text text--default">Лучшее приложение, <br> что я видел в жизни!</q>
-          <p class="promo__author-info text text--bold">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q></p>
-        </blockquote>
-        <ol class="promo__list promo__list--indent information-list">
-          <li class="information-list__item information-list__item--dark-theme">
-            <span class="text information-list__description">Выберите направление</span>
-          </li>
-          <li class="information-list__item information-list__item--middle-theme">
-            <span class="text information-list__description">Изучите идеи путешественников</span>
-          </li>
-          <li class="information-list__item information-list__item--light-theme">
-            <span class="text information-list__description">Находите тех, кто похож на вас</span>
-          </li>
-          <li class="information-list__item information-list__item--even-lighter-theme">
-            <span class="text information-list__description">Путешествуйте вместе!</span>
-          </li>
-        </ol>
+        </div>
       </div>
     </section>
     <section class="about">
-      <div class="about__container">
+      <div class="about__container container">
         <h2 class="text text--caption">О сервисе</h2>
-        <p class="page-header__description text text--default">
+        <p class="about__description text text--default">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
           черпайте вдохновение в чужих.
         </p>
-        <p>
-          <b class="text text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+        <p class="about__description text text--bold">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
+        <button class="about__details button button--arrow">
+          <span class="button__caption">Подробнее</span>
+          <svg width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
+          </svg>
+        </button>
       </div>
     </section>
     <section class="countries">
       <div class="countries__container container">
-        <header class="countries__header">
-          <h2 class="text text--caption">Направления</h2>
-          <p class="text countries__info">
-            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем
-            можно там заняться.
-          </p>
-        </header>
-        <ul class="countries__list card-list">
-          <li class="card-list__item">
-            <div class="card-list__card">
-              <img class="card-list__thailand" src="img/thailand.png" alt="Тайланд" />
-              <div class="card-list__info">
-                <img class="flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
-                <dl class="card-list visits-list">
-                  <div class="visits-list__item">
-                    <dt class="text visits-list__country">
-                      Тайланд
-                    </dt>
-                    <dd class="visits-list__count">
-                      <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.1"
-                          d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
-                      </svg>
-                      <span class="text visits-list__info">18321</span>
-                    </dd>
-                  </div>
-                </dl>
-                <small class="text visits-list__caption">Джунгли зовут!</small>
+        <div class="countries__collection">
+          <div class="countries__header">
+            <h2 class="text text--caption">Направления</h2>
+            <p class="text countries__info">
+              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем
+              можно там заняться.
+            </p>
+          </div>
+          <ul class="countries__list card-list">
+            <li class="card-list__item">
+              <div class="card-list__card">
+                <img class="card-list__thailand" src="img/thailand.png" alt="Тайланд" />
+                <div class="card-list__info">
+                  <img class="card-list__flag flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
+                  <dl class="card-list visits-list">
+                    <div class="visits-list__item">
+                      <dt class="text visits-list__country">
+                        Тайланд
+                      </dt>
+                      <dd class="visits-list__count">
+                        <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.1"
+                            d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
+                        </svg>
+                        <span class="text visits-list__info">18321</span>
+                      </dd>
+                    </div>
+                  </dl>
+                  <small class="text visits-list__caption">Джунгли зовут!</small>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="card-list__item">
-            <div class="card-list__card">
-              <img class="card-list__france" src="img/france.png" alt="Франция" />
-              <div class="card-list__info">
-                <img class="flag" src="img/france-flag.png" alt="Флаг Франции" />
-                <dl class="card-list visits-list">
-                  <div class="visits-list__item">
-                    <dt class="text visits-list__country">
-                      Франция
-                    </dt>
-                    <dd class="visits-list__count">
-                      <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.1"
-                          d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
-                      </svg>
-                      <span class="text visits-list__info">12518</span>
-                    </dd>
-                  </div>
-                </dl>
-                <small class="text visits-list__caption">Трэ бьен, манифик!</small>
+            </li>
+            <li class="card-list__item">
+              <div class="card-list__card">
+                <img class="card-list__france" src="img/france.png" alt="Франция" />
+                <div class="card-list__info">
+                  <img class="card-list__flag  flag" src="img/france-flag.png" alt="Флаг Франции" />
+                  <dl class="card-list visits-list">
+                    <div class="visits-list__item">
+                      <dt class="text visits-list__country">
+                        Франция
+                      </dt>
+                      <dd class="visits-list__count">
+                        <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.1"
+                            d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
+                        </svg>
+                        <span class="text visits-list__info">12518</span>
+                      </dd>
+                    </div>
+                  </dl>
+                  <small class="text visits-list__caption">Трэ бьен, манифик!</small>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="card-list__item">
-            <div class="card-list__card">
-              <img class="card-list__czech" src="img/czech-photo.png" alt="Чехия" />
-              <div class="card-list__info">
-                <img class="flag" src="img/czech-flag.png" alt="Флаг Чехии" />
-                <dl class="card-list visits-list">
-                  <div class="visits-list__item">
-                    <dt class="text visits-list__country">
-                      Чехия
-                    </dt>
-                    <dd class="visits-list__count">
-                      <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.1"
-                          d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
-                      </svg>
-                      <span class="text visits-list__info">5326</span>
-                    </dd>
-                  </div>
-                </dl>
-                <small class="text visits-list__caption">Закаулки старой Европы</small>
+            </li>
+            <li class="card-list__item">
+              <div class="card-list__card">
+                <img class="card-list__czech" src="img/czech-photo.png" alt="Чехия" />
+                <div class="card-list__info">
+                  <img class="card-list__flag  flag" src="img/czech-flag.png" alt="Флаг Чехии" />
+                  <dl class="card-list visits-list">
+                    <div class="visits-list__item">
+                      <dt class="text visits-list__country">
+                        Чехия
+                      </dt>
+                      <dd class="visits-list__count">
+                        <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.1"
+                            d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
+                        </svg>
+                        <span class="text visits-list__info">5326</span>
+                      </dd>
+                    </div>
+                  </dl>
+                  <small class="text visits-list__caption">Закаулки старой Европы</small>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
         <a class="countries__all-countries button button--arrow" href="allcountries.html">
           <span class="button__text">Показать все</span>
           <svg class="button__icon" width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -269,200 +376,199 @@
     </section>
     <section class="users">
       <div class="container">
-        <header class="users__header">
+        <div class="users__header">
           <h2 class="users__caption text text--caption">
             Попутчики
           </h2>
-          <img class="users__back-photo" src="img/smolov-back-desktop.png" alt="Фотографи Смолова" />
-          <img src="img/back.svg" alt="Фоновое изображение" />
+          <div class="users__background-images">
+            <img class="users__back-photo" src="img/smolov-back-desktop.png" alt="Фотографи Смолова" />
+            <img src="img/back.svg" alt="Фоновое изображение" />
+          </div>
           <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на идеальный
-            отдых. Одному нужен
-            пляж и
-            коктейль, а другому
-            маршрут для хайкинга. </p>
+            отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
           <p class="text text--bold">Теперь можно легко найти единомышленников!</p>
-        </header>
-        <img src="img/rogovaya-back-desktop.png" alt="Фото Роговой" />
-        <ul class="users__cards card-list">
-          <li class="card-list__item">
-            <div class="card-list__card">
-              <img class="card-list__photo" src="img/tany-photo.png" alt="Фото Тани Фирсовой" />
-              <div class="users__level ">
-                <b class="text users__level-number">99</b>
-                <span class="text users__level-text">level</span>
+          <!-- <img src="img/rogovaya-back-desktop.png" alt="Фото Роговой" /> -->
+          <ul class="users__cards card-list">
+            <li class="card-list__item">
+              <div class="card-list__card card-list__card--under">
+                <img class="card-list__photo" src="img/tany-photo.png" alt="Фото Тани Фирсовой" />
+                <div class="users__level ">
+                  <b class="text users__level-number">99</b>
+                  <span class="text users__level-text">level</span>
+                </div>
+                <div class="card-list__info">
+                  <p class="card-list__flags">
+                    <img class="flag" src="img/seychelles-flag.png" alt="Флаг Сейшилы" />
+                    <img class="flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
+                    <img class="flag" src="img/sri-lanka-flag.png" alt="Флаг Шри-Ланки" />
+                  </p>
+                  <blockquote class="card-list__item">
+                    <div class="card-list__user-info">
+                      <svg class="card-list__offline" width="6" height="7" viewBox="0 0 6 7"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="3" cy="3.5" r="3" />
+                      </svg>
+                      <cite class="text card-list__user-name">Таня Фирсова</cite>
+                      <ul class="card-list hashtag-list">
+                        <li class="text hashtag-list__item">
+                          #ЗОЖ
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #ПП
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #Фитнес
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #пляж
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #авокадо
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #смузи
+                        </li>
+                      </ul>
+                    </div>
+                  </blockquote>
+                  <ul class="card-list icon-list">
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--active" width="18" height="20" viewBox="0 0 18 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--disabled" width="18" height="21" viewBox="0 0 18 21"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--disabled" width="25" height="24" viewBox="0 0 25 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M18.3075 21C17.4664 21 16.6442 20.7471 15.9449 20.2732C15.2456 19.7994 14.7005 19.1258 14.3786 18.3378C14.0568 17.5498 13.9726 16.6827 14.1366 15.8462C14.3007 15.0096 14.7057 14.2412 15.3005 13.6381C15.8952 13.035 16.6529 12.6243 17.4779 12.4579C18.3028 12.2915 19.1578 12.3769 19.9349 12.7033C20.7119 13.0297 21.3761 13.5824 21.8434 14.2916C22.3106 15.0008 22.5601 15.8346 22.5601 16.6875C22.5588 17.8309 22.1104 18.927 21.3132 19.7355C20.5159 20.544 19.435 20.9988 18.3075 21V21ZM18.3075 13.875C17.759 13.875 17.2228 14.04 16.7667 14.349C16.3106 14.658 15.9551 15.0973 15.7452 15.6112C15.5353 16.1251 15.4804 16.6906 15.5874 17.2362C15.6944 17.7818 15.9585 18.2829 16.3464 18.6762C16.7343 19.0696 17.2284 19.3374 17.7664 19.446C18.3044 19.5545 18.8621 19.4988 19.3688 19.2859C19.8756 19.073 20.3088 18.7126 20.6135 18.25C20.9182 17.7875 21.0809 17.2438 21.0809 16.6875C21.08 15.9418 20.7876 15.227 20.2676 14.6997C19.7477 14.1725 19.0428 13.8759 18.3075 13.875V13.875Z" />
+                          <path
+                            d="M6.10449 21C5.26342 21 4.44123 20.7471 3.7419 20.2732C3.04257 19.7994 2.4975 19.1258 2.17564 18.3378C1.85377 17.5498 1.76956 16.6827 1.93364 15.8462C2.09773 15.0096 2.50275 14.2412 3.09748 13.6381C3.69221 13.035 4.44994 12.6243 5.27486 12.4579C6.09978 12.2915 6.95483 12.3769 7.73188 12.7033C8.50893 13.0297 9.17309 13.5824 9.64037 14.2916C10.1076 15.0008 10.3571 15.8346 10.3571 16.6875C10.3558 17.8309 9.9074 18.927 9.11016 19.7355C8.31291 20.544 7.23197 20.9988 6.10449 21V21ZM6.10449 13.875C5.55596 13.875 5.01975 14.04 4.56367 14.349C4.10758 14.658 3.75211 15.0973 3.5422 15.6112C3.33228 16.1251 3.27736 16.6906 3.38437 17.2362C3.49139 17.7818 3.75553 18.2829 4.1434 18.6762C4.53126 19.0696 5.02544 19.3374 5.56343 19.446C6.10142 19.5545 6.65906 19.4988 7.16583 19.2859C7.67261 19.073 8.10575 18.7126 8.4105 18.25C8.71525 17.7875 8.8779 17.2438 8.8779 16.6875C8.87705 15.9418 8.58458 15.227 8.06465 14.6997C7.54472 14.1725 6.83979 13.8759 6.10449 13.875V13.875Z" />
+                          <path
+                            d="M15.1644 6.00005C15.3592 6.00073 15.5522 5.96225 15.7323 5.88681C15.9123 5.81138 16.0759 5.7005 16.2134 5.56058C16.351 5.42065 16.4598 5.25447 16.5336 5.07163C16.6074 4.88879 16.6448 4.69293 16.6435 4.49536C16.6457 4.29878 16.6092 4.10374 16.5361 3.92164C16.4631 3.73954 16.3549 3.57403 16.2181 3.4348C16.0812 3.29558 15.9183 3.18542 15.739 3.11077C15.5597 3.03612 15.3675 2.99848 15.1736 3.00005C14.9794 2.99943 14.7869 3.03762 14.6072 3.11243C14.4275 3.18725 14.2641 3.29722 14.1263 3.43607C13.9885 3.57492 13.8791 3.73994 13.8042 3.92169C13.7293 4.10344 13.6904 4.29838 13.6898 4.49536C13.6892 4.69234 13.7269 4.88752 13.8007 5.06974C13.8744 5.25197 13.9829 5.41767 14.1198 5.55739C14.2567 5.69712 14.4194 5.80812 14.5987 5.88407C14.7779 5.96002 14.9701 5.99943 15.1644 6.00005V6.00005Z" />
+                          <path
+                            d="M17.3622 9.00003H15.3395C15.3063 9.00004 15.2737 8.99099 15.2452 8.97384C15.2167 8.95668 15.1932 8.93205 15.1773 8.90253L13.7101 6.17581C13.6068 5.97318 13.4578 5.79807 13.2753 5.66467C13.0928 5.53127 12.8818 5.44333 12.6596 5.40795C12.4373 5.37258 12.21 5.39077 11.996 5.46106C11.7819 5.53135 11.5872 5.65175 11.4276 5.81253L8.19843 9.11253C7.92715 9.39333 7.77316 9.76945 7.76855 10.1625C7.76855 10.9782 8.35097 11.2688 8.62369 11.4328C9.94106 12.2025 10.8688 12.7655 11.3777 13.0782C11.4047 13.0949 11.4271 13.1183 11.4427 13.1463C11.4582 13.1743 11.4664 13.2059 11.4664 13.238V16.478C11.4664 16.8816 11.7724 17.228 12.1704 17.2482C12.2703 17.253 12.3702 17.2373 12.464 17.2019C12.5577 17.1666 12.6434 17.1123 12.7159 17.0423C12.7883 16.9724 12.8461 16.8883 12.8855 16.7951C12.925 16.7018 12.9455 16.6015 12.9456 16.5V12.4688C12.9457 12.3497 12.9178 12.2324 12.8642 12.1264C12.8107 12.0204 12.7331 11.9289 12.6377 11.8594L10.9275 10.6121C10.906 10.5965 10.8881 10.5764 10.8749 10.5532C10.8617 10.53 10.8536 10.5043 10.851 10.4776C10.8485 10.451 10.8516 10.4241 10.8602 10.3988C10.8687 10.3734 10.8825 10.3503 10.9007 10.3308L12.842 8.23128C12.862 8.20968 12.8866 8.19316 12.914 8.18307C12.9414 8.17297 12.9708 8.1696 12.9997 8.17321C13.0287 8.17682 13.0563 8.18731 13.0805 8.20384C13.1047 8.22037 13.1247 8.24246 13.1388 8.26831L14.1474 10.1143C14.2115 10.2313 14.3053 10.3288 14.4191 10.3966C14.5329 10.4644 14.6625 10.5001 14.7945 10.5H17.383C17.4832 10.5002 17.5824 10.4796 17.6745 10.4397C17.7667 10.3998 17.8498 10.3413 17.919 10.2678C17.9882 10.1942 18.0419 10.1073 18.0769 10.012C18.1119 9.91685 18.1274 9.81543 18.1226 9.71394C18.1032 9.31035 17.7602 9.00003 17.3622 9.00003Z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list__item">
+                      <a class="icon-list__link icon icon--disabled">
+                        <svg class="icon icon--transparent-theme" width="21" height="24" viewBox="0 0 21 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z" />
+                          <path
+                            d="M13.9233 10.5302C14.1209 10.8586 14.4043 11.1113 14.735 11.2538C15.0657 11.3964 15.4277 11.4219 15.7719 11.327L18.6256 10.5312L18.21 8.66881L15.3562 9.46465L14.1695 7.48033C13.9159 7.05655 13.5224 6.76184 13.0748 6.66049L9.76493 5.92129C9.39465 5.83839 9.01021 5.89379 8.67097 6.07893C8.33173 6.26406 8.05657 6.56863 7.88797 6.94561L6.4611 10.129L8.00071 10.9882L9.42758 7.80385L11.1204 8.18209L6.74338 16.32H2.92749V18.24H6.74338C7.34407 18.24 7.90949 17.8829 8.2193 17.3078L9.86993 14.2397L14.3184 15.2323L15.8812 20.4634L17.5129 19.8557L15.9509 14.6256C15.8545 14.3045 15.684 14.0174 15.4564 13.7933C15.2289 13.5691 14.9524 13.4158 14.6548 13.3488L12.0395 12.7661L13.5645 9.93025L13.9233 10.5302V10.5302Z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="card-list__info">
-                <p class="card-list__flags">
-                  <img class="flag" src="img/seychelles-flag.png" alt="Флаг Сейшилы" />
-                  <img class="flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
-                  <img class="flag" src="img/sri-lanka-flag.png" alt="Флаг Шри-Ланки" />
-                </p>
-                <blockquote class="card-list__item">
-                  <div class="card-list__user-info">
-                    <svg class="card-list__offline" width="6" height="7" viewBox="0 0 6 7"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="3" cy="3.5" r="3" />
-                    </svg>
-                    <cite class="text card-list__user-name">Таня Фирсова</cite>
-                    <ul class="card-list hashtag-list">
-                      <li class="text hashtag-list__item">
-                        #ЗОЖ
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #ПП
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #Фитнес
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #пляж
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #авокадо
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #смузи
-                      </li>
-                    </ul>
-                  </div>
-                </blockquote>
-                <ul class="card-list icon-list">
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--active" width="18" height="20" viewBox="0 0 18 20"
+            </li>
+            <li class="card-list__item">
+              <div class="card-list__card card-list__card--under">
+                <img class="card-list__photo" src="img/demin-photo.png" alt="Фото Петра Демина" />
+                <div class="users__level ">
+                  <b class="text users__level-number">80</b>
+                  <span class="text users__level-text">level</span>
+                </div>
+                <div class="card-list__info">
+                  <p class="card-list__flags">
+                    <img class="flag" src="img/belgium-flag.png" alt="Флаг Бельгии" />
+                    <img class="flag" src="img/czech-flag.png" alt="Флаг Чехии" />
+                  </p>
+                  <blockquote class="card-list__item">
+                    <div class="card-list__user-info">
+                      <svg class="card-list__online" width="7" height="7" viewBox="0 0 7 7"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
+                        <circle cx="3.5" cy="3.5" r="3" />
                       </svg>
-                    </a>
-                  </li>
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--disabled" width="18" height="21" viewBox="0 0 18 21"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--disabled" width="25" height="24" viewBox="0 0 25 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M18.3075 21C17.4664 21 16.6442 20.7471 15.9449 20.2732C15.2456 19.7994 14.7005 19.1258 14.3786 18.3378C14.0568 17.5498 13.9726 16.6827 14.1366 15.8462C14.3007 15.0096 14.7057 14.2412 15.3005 13.6381C15.8952 13.035 16.6529 12.6243 17.4779 12.4579C18.3028 12.2915 19.1578 12.3769 19.9349 12.7033C20.7119 13.0297 21.3761 13.5824 21.8434 14.2916C22.3106 15.0008 22.5601 15.8346 22.5601 16.6875C22.5588 17.8309 22.1104 18.927 21.3132 19.7355C20.5159 20.544 19.435 20.9988 18.3075 21V21ZM18.3075 13.875C17.759 13.875 17.2228 14.04 16.7667 14.349C16.3106 14.658 15.9551 15.0973 15.7452 15.6112C15.5353 16.1251 15.4804 16.6906 15.5874 17.2362C15.6944 17.7818 15.9585 18.2829 16.3464 18.6762C16.7343 19.0696 17.2284 19.3374 17.7664 19.446C18.3044 19.5545 18.8621 19.4988 19.3688 19.2859C19.8756 19.073 20.3088 18.7126 20.6135 18.25C20.9182 17.7875 21.0809 17.2438 21.0809 16.6875C21.08 15.9418 20.7876 15.227 20.2676 14.6997C19.7477 14.1725 19.0428 13.8759 18.3075 13.875V13.875Z" />
-                        <path
-                          d="M6.10449 21C5.26342 21 4.44123 20.7471 3.7419 20.2732C3.04257 19.7994 2.4975 19.1258 2.17564 18.3378C1.85377 17.5498 1.76956 16.6827 1.93364 15.8462C2.09773 15.0096 2.50275 14.2412 3.09748 13.6381C3.69221 13.035 4.44994 12.6243 5.27486 12.4579C6.09978 12.2915 6.95483 12.3769 7.73188 12.7033C8.50893 13.0297 9.17309 13.5824 9.64037 14.2916C10.1076 15.0008 10.3571 15.8346 10.3571 16.6875C10.3558 17.8309 9.9074 18.927 9.11016 19.7355C8.31291 20.544 7.23197 20.9988 6.10449 21V21ZM6.10449 13.875C5.55596 13.875 5.01975 14.04 4.56367 14.349C4.10758 14.658 3.75211 15.0973 3.5422 15.6112C3.33228 16.1251 3.27736 16.6906 3.38437 17.2362C3.49139 17.7818 3.75553 18.2829 4.1434 18.6762C4.53126 19.0696 5.02544 19.3374 5.56343 19.446C6.10142 19.5545 6.65906 19.4988 7.16583 19.2859C7.67261 19.073 8.10575 18.7126 8.4105 18.25C8.71525 17.7875 8.8779 17.2438 8.8779 16.6875C8.87705 15.9418 8.58458 15.227 8.06465 14.6997C7.54472 14.1725 6.83979 13.8759 6.10449 13.875V13.875Z" />
-                        <path
-                          d="M15.1644 6.00005C15.3592 6.00073 15.5522 5.96225 15.7323 5.88681C15.9123 5.81138 16.0759 5.7005 16.2134 5.56058C16.351 5.42065 16.4598 5.25447 16.5336 5.07163C16.6074 4.88879 16.6448 4.69293 16.6435 4.49536C16.6457 4.29878 16.6092 4.10374 16.5361 3.92164C16.4631 3.73954 16.3549 3.57403 16.2181 3.4348C16.0812 3.29558 15.9183 3.18542 15.739 3.11077C15.5597 3.03612 15.3675 2.99848 15.1736 3.00005C14.9794 2.99943 14.7869 3.03762 14.6072 3.11243C14.4275 3.18725 14.2641 3.29722 14.1263 3.43607C13.9885 3.57492 13.8791 3.73994 13.8042 3.92169C13.7293 4.10344 13.6904 4.29838 13.6898 4.49536C13.6892 4.69234 13.7269 4.88752 13.8007 5.06974C13.8744 5.25197 13.9829 5.41767 14.1198 5.55739C14.2567 5.69712 14.4194 5.80812 14.5987 5.88407C14.7779 5.96002 14.9701 5.99943 15.1644 6.00005V6.00005Z" />
-                        <path
-                          d="M17.3622 9.00003H15.3395C15.3063 9.00004 15.2737 8.99099 15.2452 8.97384C15.2167 8.95668 15.1932 8.93205 15.1773 8.90253L13.7101 6.17581C13.6068 5.97318 13.4578 5.79807 13.2753 5.66467C13.0928 5.53127 12.8818 5.44333 12.6596 5.40795C12.4373 5.37258 12.21 5.39077 11.996 5.46106C11.7819 5.53135 11.5872 5.65175 11.4276 5.81253L8.19843 9.11253C7.92715 9.39333 7.77316 9.76945 7.76855 10.1625C7.76855 10.9782 8.35097 11.2688 8.62369 11.4328C9.94106 12.2025 10.8688 12.7655 11.3777 13.0782C11.4047 13.0949 11.4271 13.1183 11.4427 13.1463C11.4582 13.1743 11.4664 13.2059 11.4664 13.238V16.478C11.4664 16.8816 11.7724 17.228 12.1704 17.2482C12.2703 17.253 12.3702 17.2373 12.464 17.2019C12.5577 17.1666 12.6434 17.1123 12.7159 17.0423C12.7883 16.9724 12.8461 16.8883 12.8855 16.7951C12.925 16.7018 12.9455 16.6015 12.9456 16.5V12.4688C12.9457 12.3497 12.9178 12.2324 12.8642 12.1264C12.8107 12.0204 12.7331 11.9289 12.6377 11.8594L10.9275 10.6121C10.906 10.5965 10.8881 10.5764 10.8749 10.5532C10.8617 10.53 10.8536 10.5043 10.851 10.4776C10.8485 10.451 10.8516 10.4241 10.8602 10.3988C10.8687 10.3734 10.8825 10.3503 10.9007 10.3308L12.842 8.23128C12.862 8.20968 12.8866 8.19316 12.914 8.18307C12.9414 8.17297 12.9708 8.1696 12.9997 8.17321C13.0287 8.17682 13.0563 8.18731 13.0805 8.20384C13.1047 8.22037 13.1247 8.24246 13.1388 8.26831L14.1474 10.1143C14.2115 10.2313 14.3053 10.3288 14.4191 10.3966C14.5329 10.4644 14.6625 10.5001 14.7945 10.5H17.383C17.4832 10.5002 17.5824 10.4796 17.6745 10.4397C17.7667 10.3998 17.8498 10.3413 17.919 10.2678C17.9882 10.1942 18.0419 10.1073 18.0769 10.012C18.1119 9.91685 18.1274 9.81543 18.1226 9.71394C18.1032 9.31035 17.7602 9.00003 17.3622 9.00003Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-list__item">
-                    <a class="icon-list__link icon icon--disabled">
-                      <svg class="icon icon--transparent-theme" width="21" height="24" viewBox="0 0 21 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z" />
-                        <path
-                          d="M13.9233 10.5302C14.1209 10.8586 14.4043 11.1113 14.735 11.2538C15.0657 11.3964 15.4277 11.4219 15.7719 11.327L18.6256 10.5312L18.21 8.66881L15.3562 9.46465L14.1695 7.48033C13.9159 7.05655 13.5224 6.76184 13.0748 6.66049L9.76493 5.92129C9.39465 5.83839 9.01021 5.89379 8.67097 6.07893C8.33173 6.26406 8.05657 6.56863 7.88797 6.94561L6.4611 10.129L8.00071 10.9882L9.42758 7.80385L11.1204 8.18209L6.74338 16.32H2.92749V18.24H6.74338C7.34407 18.24 7.90949 17.8829 8.2193 17.3078L9.86993 14.2397L14.3184 15.2323L15.8812 20.4634L17.5129 19.8557L15.9509 14.6256C15.8545 14.3045 15.684 14.0174 15.4564 13.7933C15.2289 13.5691 14.9524 13.4158 14.6548 13.3488L12.0395 12.7661L13.5645 9.93025L13.9233 10.5302V10.5302Z" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+                      <cite class="text card-list__user-name">Петя Демин</cite>
+                      <ul class="card-list hashtag-list">
+                        <li class="text hashtag-list__item">
+                          #бургер
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #бар
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #футбол
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #концерт
+                        </li>
+                        <li class="text hashtag-list__item">
+                          #крафт
+                        </li>
+                      </ul>
+                    </div>
+                  </blockquote>
+                  <ul class="card-list icon-list">
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--active" width="18" height="20" viewBox="0 0 18 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--active" width="18" height="21" viewBox="0 0 18 21"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--disabled" width="25" height="24" viewBox="0 0 25 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M18.3075 21C17.4664 21 16.6442 20.7471 15.9449 20.2732C15.2456 19.7994 14.7005 19.1258 14.3786 18.3378C14.0568 17.5498 13.9726 16.6827 14.1366 15.8462C14.3007 15.0096 14.7057 14.2412 15.3005 13.6381C15.8952 13.035 16.6529 12.6243 17.4779 12.4579C18.3028 12.2915 19.1578 12.3769 19.9349 12.7033C20.7119 13.0297 21.3761 13.5824 21.8434 14.2916C22.3106 15.0008 22.5601 15.8346 22.5601 16.6875C22.5588 17.8309 22.1104 18.927 21.3132 19.7355C20.5159 20.544 19.435 20.9988 18.3075 21V21ZM18.3075 13.875C17.759 13.875 17.2228 14.04 16.7667 14.349C16.3106 14.658 15.9551 15.0973 15.7452 15.6112C15.5353 16.1251 15.4804 16.6906 15.5874 17.2362C15.6944 17.7818 15.9585 18.2829 16.3464 18.6762C16.7343 19.0696 17.2284 19.3374 17.7664 19.446C18.3044 19.5545 18.8621 19.4988 19.3688 19.2859C19.8756 19.073 20.3088 18.7126 20.6135 18.25C20.9182 17.7875 21.0809 17.2438 21.0809 16.6875C21.08 15.9418 20.7876 15.227 20.2676 14.6997C19.7477 14.1725 19.0428 13.8759 18.3075 13.875V13.875Z" />
+                          <path
+                            d="M6.10449 21C5.26342 21 4.44123 20.7471 3.7419 20.2732C3.04257 19.7994 2.4975 19.1258 2.17564 18.3378C1.85377 17.5498 1.76956 16.6827 1.93364 15.8462C2.09773 15.0096 2.50275 14.2412 3.09748 13.6381C3.69221 13.035 4.44994 12.6243 5.27486 12.4579C6.09978 12.2915 6.95483 12.3769 7.73188 12.7033C8.50893 13.0297 9.17309 13.5824 9.64037 14.2916C10.1076 15.0008 10.3571 15.8346 10.3571 16.6875C10.3558 17.8309 9.9074 18.927 9.11016 19.7355C8.31291 20.544 7.23197 20.9988 6.10449 21V21ZM6.10449 13.875C5.55596 13.875 5.01975 14.04 4.56367 14.349C4.10758 14.658 3.75211 15.0973 3.5422 15.6112C3.33228 16.1251 3.27736 16.6906 3.38437 17.2362C3.49139 17.7818 3.75553 18.2829 4.1434 18.6762C4.53126 19.0696 5.02544 19.3374 5.56343 19.446C6.10142 19.5545 6.65906 19.4988 7.16583 19.2859C7.67261 19.073 8.10575 18.7126 8.4105 18.25C8.71525 17.7875 8.8779 17.2438 8.8779 16.6875C8.87705 15.9418 8.58458 15.227 8.06465 14.6997C7.54472 14.1725 6.83979 13.8759 6.10449 13.875V13.875Z" />
+                          <path
+                            d="M15.1644 6.00005C15.3592 6.00073 15.5522 5.96225 15.7323 5.88681C15.9123 5.81138 16.0759 5.7005 16.2134 5.56058C16.351 5.42065 16.4598 5.25447 16.5336 5.07163C16.6074 4.88879 16.6448 4.69293 16.6435 4.49536C16.6457 4.29878 16.6092 4.10374 16.5361 3.92164C16.4631 3.73954 16.3549 3.57403 16.2181 3.4348C16.0812 3.29558 15.9183 3.18542 15.739 3.11077C15.5597 3.03612 15.3675 2.99848 15.1736 3.00005C14.9794 2.99943 14.7869 3.03762 14.6072 3.11243C14.4275 3.18725 14.2641 3.29722 14.1263 3.43607C13.9885 3.57492 13.8791 3.73994 13.8042 3.92169C13.7293 4.10344 13.6904 4.29838 13.6898 4.49536C13.6892 4.69234 13.7269 4.88752 13.8007 5.06974C13.8744 5.25197 13.9829 5.41767 14.1198 5.55739C14.2567 5.69712 14.4194 5.80812 14.5987 5.88407C14.7779 5.96002 14.9701 5.99943 15.1644 6.00005V6.00005Z" />
+                          <path
+                            d="M17.3622 9.00003H15.3395C15.3063 9.00004 15.2737 8.99099 15.2452 8.97384C15.2167 8.95668 15.1932 8.93205 15.1773 8.90253L13.7101 6.17581C13.6068 5.97318 13.4578 5.79807 13.2753 5.66467C13.0928 5.53127 12.8818 5.44333 12.6596 5.40795C12.4373 5.37258 12.21 5.39077 11.996 5.46106C11.7819 5.53135 11.5872 5.65175 11.4276 5.81253L8.19843 9.11253C7.92715 9.39333 7.77316 9.76945 7.76855 10.1625C7.76855 10.9782 8.35097 11.2688 8.62369 11.4328C9.94106 12.2025 10.8688 12.7655 11.3777 13.0782C11.4047 13.0949 11.4271 13.1183 11.4427 13.1463C11.4582 13.1743 11.4664 13.2059 11.4664 13.238V16.478C11.4664 16.8816 11.7724 17.228 12.1704 17.2482C12.2703 17.253 12.3702 17.2373 12.464 17.2019C12.5577 17.1666 12.6434 17.1123 12.7159 17.0423C12.7883 16.9724 12.8461 16.8883 12.8855 16.7951C12.925 16.7018 12.9455 16.6015 12.9456 16.5V12.4688C12.9457 12.3497 12.9178 12.2324 12.8642 12.1264C12.8107 12.0204 12.7331 11.9289 12.6377 11.8594L10.9275 10.6121C10.906 10.5965 10.8881 10.5764 10.8749 10.5532C10.8617 10.53 10.8536 10.5043 10.851 10.4776C10.8485 10.451 10.8516 10.4241 10.8602 10.3988C10.8687 10.3734 10.8825 10.3503 10.9007 10.3308L12.842 8.23128C12.862 8.20968 12.8866 8.19316 12.914 8.18307C12.9414 8.17297 12.9708 8.1696 12.9997 8.17321C13.0287 8.17682 13.0563 8.18731 13.0805 8.20384C13.1047 8.22037 13.1247 8.24246 13.1388 8.26831L14.1474 10.1143C14.2115 10.2313 14.3053 10.3288 14.4191 10.3966C14.5329 10.4644 14.6625 10.5001 14.7945 10.5H17.383C17.4832 10.5002 17.5824 10.4796 17.6745 10.4397C17.7667 10.3998 17.8498 10.3413 17.919 10.2678C17.9882 10.1942 18.0419 10.1073 18.0769 10.012C18.1119 9.91685 18.1274 9.81543 18.1226 9.71394C18.1032 9.31035 17.7602 9.00003 17.3622 9.00003Z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-list__item">
+                      <a class="icon-list__link">
+                        <svg class="icon icon--active" width="21" height="24" viewBox="0 0 21 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z" />
+                          <path
+                            d="M13.9233 10.5302C14.1209 10.8586 14.4043 11.1113 14.735 11.2538C15.0657 11.3964 15.4277 11.4219 15.7719 11.327L18.6256 10.5312L18.21 8.66881L15.3562 9.46465L14.1695 7.48033C13.9159 7.05655 13.5224 6.76184 13.0748 6.66049L9.76493 5.92129C9.39465 5.83839 9.01021 5.89379 8.67097 6.07893C8.33173 6.26406 8.05657 6.56863 7.88797 6.94561L6.4611 10.129L8.00071 10.9882L9.42758 7.80385L11.1204 8.18209L6.74338 16.32H2.92749V18.24H6.74338C7.34407 18.24 7.90949 17.8829 8.2193 17.3078L9.86993 14.2397L14.3184 15.2323L15.8812 20.4634L17.5129 19.8557L15.9509 14.6256C15.8545 14.3045 15.684 14.0174 15.4564 13.7933C15.2289 13.5691 14.9524 13.4158 14.6548 13.3488L12.0395 12.7661L13.5645 9.93025L13.9233 10.5302V10.5302Z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="card-list__item">
-            <div class="card-list__card">
-              <img class="card-list__photo" src="img/demin-photo.png" alt="Фото Петра Демина" />
-              <div class="users__level ">
-                <b class="text users__level-number">80</b>
-                <span class="text users__level-text">level</span>
-              </div>
-              <div class="card-list__info">
-                <p class="card-list__flags">
-                  <img class="flag" src="img/belgium-flag.png" alt="Флаг Бельгии" />
-                  <img class="flag" src="img/czech-flag.png" alt="Флаг Чехии" />
-                </p>
-                <blockquote class="card-list__item">
-                  <div class="card-list__user-info">
-                    <svg class="card-list__online" width="7" height="7" viewBox="0 0 7 7"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="3.5" cy="3.5" r="3" />
-                    </svg>
-                    <cite class="text card-list__user-name">Петя Демин</cite>
-                    <ul class="card-list hashtag-list">
-                      <li class="text hashtag-list__item">
-                        #бургер
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #бар
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #футбол
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #концерт
-                      </li>
-                      <li class="text hashtag-list__item">
-                        #крафт
-                      </li>
-                    </ul>
-                  </div>
-                </blockquote>
-                <ul class="card-list icon-list">
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--active" width="18" height="20" viewBox="0 0 18 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--active" width="18" height="21" viewBox="0 0 18 21"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--disabled" width="25" height="24" viewBox="0 0 25 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M18.3075 21C17.4664 21 16.6442 20.7471 15.9449 20.2732C15.2456 19.7994 14.7005 19.1258 14.3786 18.3378C14.0568 17.5498 13.9726 16.6827 14.1366 15.8462C14.3007 15.0096 14.7057 14.2412 15.3005 13.6381C15.8952 13.035 16.6529 12.6243 17.4779 12.4579C18.3028 12.2915 19.1578 12.3769 19.9349 12.7033C20.7119 13.0297 21.3761 13.5824 21.8434 14.2916C22.3106 15.0008 22.5601 15.8346 22.5601 16.6875C22.5588 17.8309 22.1104 18.927 21.3132 19.7355C20.5159 20.544 19.435 20.9988 18.3075 21V21ZM18.3075 13.875C17.759 13.875 17.2228 14.04 16.7667 14.349C16.3106 14.658 15.9551 15.0973 15.7452 15.6112C15.5353 16.1251 15.4804 16.6906 15.5874 17.2362C15.6944 17.7818 15.9585 18.2829 16.3464 18.6762C16.7343 19.0696 17.2284 19.3374 17.7664 19.446C18.3044 19.5545 18.8621 19.4988 19.3688 19.2859C19.8756 19.073 20.3088 18.7126 20.6135 18.25C20.9182 17.7875 21.0809 17.2438 21.0809 16.6875C21.08 15.9418 20.7876 15.227 20.2676 14.6997C19.7477 14.1725 19.0428 13.8759 18.3075 13.875V13.875Z" />
-                        <path
-                          d="M6.10449 21C5.26342 21 4.44123 20.7471 3.7419 20.2732C3.04257 19.7994 2.4975 19.1258 2.17564 18.3378C1.85377 17.5498 1.76956 16.6827 1.93364 15.8462C2.09773 15.0096 2.50275 14.2412 3.09748 13.6381C3.69221 13.035 4.44994 12.6243 5.27486 12.4579C6.09978 12.2915 6.95483 12.3769 7.73188 12.7033C8.50893 13.0297 9.17309 13.5824 9.64037 14.2916C10.1076 15.0008 10.3571 15.8346 10.3571 16.6875C10.3558 17.8309 9.9074 18.927 9.11016 19.7355C8.31291 20.544 7.23197 20.9988 6.10449 21V21ZM6.10449 13.875C5.55596 13.875 5.01975 14.04 4.56367 14.349C4.10758 14.658 3.75211 15.0973 3.5422 15.6112C3.33228 16.1251 3.27736 16.6906 3.38437 17.2362C3.49139 17.7818 3.75553 18.2829 4.1434 18.6762C4.53126 19.0696 5.02544 19.3374 5.56343 19.446C6.10142 19.5545 6.65906 19.4988 7.16583 19.2859C7.67261 19.073 8.10575 18.7126 8.4105 18.25C8.71525 17.7875 8.8779 17.2438 8.8779 16.6875C8.87705 15.9418 8.58458 15.227 8.06465 14.6997C7.54472 14.1725 6.83979 13.8759 6.10449 13.875V13.875Z" />
-                        <path
-                          d="M15.1644 6.00005C15.3592 6.00073 15.5522 5.96225 15.7323 5.88681C15.9123 5.81138 16.0759 5.7005 16.2134 5.56058C16.351 5.42065 16.4598 5.25447 16.5336 5.07163C16.6074 4.88879 16.6448 4.69293 16.6435 4.49536C16.6457 4.29878 16.6092 4.10374 16.5361 3.92164C16.4631 3.73954 16.3549 3.57403 16.2181 3.4348C16.0812 3.29558 15.9183 3.18542 15.739 3.11077C15.5597 3.03612 15.3675 2.99848 15.1736 3.00005C14.9794 2.99943 14.7869 3.03762 14.6072 3.11243C14.4275 3.18725 14.2641 3.29722 14.1263 3.43607C13.9885 3.57492 13.8791 3.73994 13.8042 3.92169C13.7293 4.10344 13.6904 4.29838 13.6898 4.49536C13.6892 4.69234 13.7269 4.88752 13.8007 5.06974C13.8744 5.25197 13.9829 5.41767 14.1198 5.55739C14.2567 5.69712 14.4194 5.80812 14.5987 5.88407C14.7779 5.96002 14.9701 5.99943 15.1644 6.00005V6.00005Z" />
-                        <path
-                          d="M17.3622 9.00003H15.3395C15.3063 9.00004 15.2737 8.99099 15.2452 8.97384C15.2167 8.95668 15.1932 8.93205 15.1773 8.90253L13.7101 6.17581C13.6068 5.97318 13.4578 5.79807 13.2753 5.66467C13.0928 5.53127 12.8818 5.44333 12.6596 5.40795C12.4373 5.37258 12.21 5.39077 11.996 5.46106C11.7819 5.53135 11.5872 5.65175 11.4276 5.81253L8.19843 9.11253C7.92715 9.39333 7.77316 9.76945 7.76855 10.1625C7.76855 10.9782 8.35097 11.2688 8.62369 11.4328C9.94106 12.2025 10.8688 12.7655 11.3777 13.0782C11.4047 13.0949 11.4271 13.1183 11.4427 13.1463C11.4582 13.1743 11.4664 13.2059 11.4664 13.238V16.478C11.4664 16.8816 11.7724 17.228 12.1704 17.2482C12.2703 17.253 12.3702 17.2373 12.464 17.2019C12.5577 17.1666 12.6434 17.1123 12.7159 17.0423C12.7883 16.9724 12.8461 16.8883 12.8855 16.7951C12.925 16.7018 12.9455 16.6015 12.9456 16.5V12.4688C12.9457 12.3497 12.9178 12.2324 12.8642 12.1264C12.8107 12.0204 12.7331 11.9289 12.6377 11.8594L10.9275 10.6121C10.906 10.5965 10.8881 10.5764 10.8749 10.5532C10.8617 10.53 10.8536 10.5043 10.851 10.4776C10.8485 10.451 10.8516 10.4241 10.8602 10.3988C10.8687 10.3734 10.8825 10.3503 10.9007 10.3308L12.842 8.23128C12.862 8.20968 12.8866 8.19316 12.914 8.18307C12.9414 8.17297 12.9708 8.1696 12.9997 8.17321C13.0287 8.17682 13.0563 8.18731 13.0805 8.20384C13.1047 8.22037 13.1247 8.24246 13.1388 8.26831L14.1474 10.1143C14.2115 10.2313 14.3053 10.3288 14.4191 10.3966C14.5329 10.4644 14.6625 10.5001 14.7945 10.5H17.383C17.4832 10.5002 17.5824 10.4796 17.6745 10.4397C17.7667 10.3998 17.8498 10.3413 17.919 10.2678C17.9882 10.1942 18.0419 10.1073 18.0769 10.012C18.1119 9.91685 18.1274 9.81543 18.1226 9.71394C18.1032 9.31035 17.7602 9.00003 17.3622 9.00003Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-list__item">
-                    <a class="icon-list__link">
-                      <svg class="icon icon--active" width="21" height="24" viewBox="0 0 21 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z" />
-                        <path
-                          d="M13.9233 10.5302C14.1209 10.8586 14.4043 11.1113 14.735 11.2538C15.0657 11.3964 15.4277 11.4219 15.7719 11.327L18.6256 10.5312L18.21 8.66881L15.3562 9.46465L14.1695 7.48033C13.9159 7.05655 13.5224 6.76184 13.0748 6.66049L9.76493 5.92129C9.39465 5.83839 9.01021 5.89379 8.67097 6.07893C8.33173 6.26406 8.05657 6.56863 7.88797 6.94561L6.4611 10.129L8.00071 10.9882L9.42758 7.80385L11.1204 8.18209L6.74338 16.32H2.92749V18.24H6.74338C7.34407 18.24 7.90949 17.8829 8.2193 17.3078L9.86993 14.2397L14.3184 15.2323L15.8812 20.4634L17.5129 19.8557L15.9509 14.6256C15.8545 14.3045 15.684 14.0174 15.4564 13.7933C15.2289 13.5691 14.9524 13.4158 14.6548 13.3488L12.0395 12.7661L13.5645 9.93025L13.9233 10.5302V10.5302Z" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
         <a class="countries__all-countries button button--arrow" href="allcountries.html">
           <span class="button__text">Показать всех</span>
           <svg class="button__icon" width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -475,21 +581,38 @@
     <section class="profile">
       <div class="container">
         <header class="profile__header">
-          <h2 class="text text--caption">Добавьте <br>свой <br>профиль</h2>
-          <img class="profile__rates" src="img/rates.png" alt="Диапозон цен" />
+          <h2 class="profile__caption text text--caption">Добавьте <br>свой <br>профиль</h2>
         </header>
+        <img class="profile__rates" src="img/rates.png" alt="Диапозон цен" />
         <ol class="profile__list information-list">
           <li class="information-list__item information-list__item--digital-dark-theme">
-            <span class="text information-list__description--small">Базовое размещение <br>бесплатно</span>
+            <span>1</span>
+            <span class="text information-list__description--small">
+              Базовое размещение
+            </span>
+            <br>
+            <span class="text information-list__description--small">
+              бесплатно
+            </span>
           </li>
           <li class="information-list__item information-list__item--digital-middle-theme">
-            <span class="text information-list__description--small">Вывод на первых позициях <br>99 руб./мес</span>
+            <span>2</span>
+            <span class="text information-list__description--small">Вывод на первых позициях</span>
+            <br>
+            <span class="text information-list__description--small">
+              99 руб./мес
+            </span>
           </li>
           <li class="information-list__item information-list__item--digital-light-theme">
-            <span class="text information-list__description--small">Кастомный цвет карточки <br>59 руб./мес</span>
+            <span>3</span>
+            <span class="text information-list__description--small">Кастомный цвет карточки </span>
+            <br>
+            <span class="text information-list__description--small">
+              59 руб./мес
+            </span>
           </li>
         </ol>
-        <a class="profile__business-tarifs button" href="businesstarifs.html">
+        <a class="profile__business-tarifs button button--transparent-theme" href="businesstarifs.html">
           <span class="text button__caption--small">Показать тарифы для бизнеса</span>
         </a>
       </div>
@@ -540,10 +663,10 @@
         </dl>
       </div>
     </section>
-    <section class="contacts">
-      <div class="container">
-        <header class="contacts__header">
-          <h2 class="visually-hidden">Контакты компании!</h2>
+    <section class="contacts ">
+      <header class="contacts__header container">
+        <h2 class="visually-hidden">Контакты компании!</h2>
+        <div class="contacts__get-direction container">
           <dl class="contacts__list icon-list">
             <div class="icon-list__item">
               <dt class="icon-list__map-point">
@@ -553,7 +676,8 @@
                     d="M8.5 0C4.15169 0 0.625 3.52669 0.625 7.875C0.625 12.9334 4.42846 15.1449 5.26923 16.1538C7.28846 18.5769 7.40257 21 8.5 21C9.59743 21 9.71154 18.5769 11.7308 16.1538C12.5715 15.1449 16.375 12.9334 16.375 7.875C16.375 3.52669 12.8483 0 8.5 0ZM8.5 13.125C5.60069 13.125 3.25 10.7743 3.25 7.875C3.25 4.97569 5.60069 2.625 8.5 2.625C11.3993 2.625 13.75 4.97569 13.75 7.875C13.75 10.7743 11.3993 13.125 8.5 13.125ZM8.5 5.25C7.051 5.25 5.875 6.426 5.875 7.875C5.875 9.324 7.051 10.5 8.5 10.5C9.949 10.5 11.125 9.324 11.125 7.875C11.125 6.426 9.949 5.25 8.5 5.25Z" />
                 </svg>
               </dt>
-              <dd class="text contacts__addres icon-list__details">УЛ. БОЛЬШАЯ <br>КОНЮШЕННАЯ, 19/8</dd>
+              <dd class="text contacts__addres icon-list__details">УЛ. БОЛЬШАЯ <br
+                  class="contacts__new-line">КОНЮШЕННАЯ, 19/8</dd>
             </div>
           </dl>
           <a class="profile__business-tarifs button button--arrow" href="businesstarifs.html">
@@ -563,19 +687,26 @@
               <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B" />
             </svg>
           </a>
-          <img class="profile__map" src="img/background_map.png" alt="Карта" />
-          <svg class="profile__map-point" width="41" height="41" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20.5" cy="20.4998" r="19.7679" />
-            <circle cx="20.4999" cy="19.7676" r="8.78572" />
-          </svg>
-        </header>
-      </div>
+        </div>
+        <img class="contacts__map contacts__map--small" src="img/background_map.png" alt="Карта" />
+        <img class="contacts__map contacts__map--medium" src="img/map-medium-icon.png" alt="Карта" />
+        <img class="contacts__map contacts__map--large" src="img/map-large-icon.png" alt="Карта" />
+        <svg class="contacts__map-point" width="41" height="41" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20.5" cy="20.4998" r="19.7679" />
+          <circle cx="20.4999" cy="19.7676" r="8.78572" />
+        </svg>
+      </header>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <h2 class="visually-hidden">Погнали?</h2>
-      <img src="img/logo-mobile-dark.png" class="page-footer__logo" alt="Логотип" />
+      <a href="#" class="page-footer__logo-mobile">
+        <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
+      </a>
+      <a href="#" class="page-footer__logo">
+        <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
+      </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
           <a class="social-list__link icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
@@ -627,6 +758,40 @@
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-menu');
+    var navToggle = document.querySelector('.menu__toggle');
+    var pageHeader = document.querySelector('.page-header');
+    var logo = document.querySelector('.menu__logo-mobile');
+    var logoDark = document.querySelector('.menu__logo-mobile-dark');
+    var closButton = document.querySelector('.menu__close-icon');
+    var openButton = document.querySelector('.menu__open-icon');
+    var promoActions = document.querySelector('.menu__actions');
+
+    // // navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-menu--closed')) {
+        navMain.classList.remove('main-menu--closed');
+        navMain.classList.add('main-menu--opened');
+        pageHeader.classList.add('page-header--menu-opened');
+        logoDark.classList.remove('visually-hidden');
+        logo.classList.add('visually-hidden');
+        closButton.classList.remove('visually-hidden');
+        openButton.classList.add('visually-hidden');
+        promoActions.classList.add('visually-hidden');
+      } else {
+        navMain.classList.add('main-menu--closed');
+        navMain.classList.remove('main-menu--opened');
+        pageHeader.classList.remove('page-header--menu-opened');
+        logoDark.classList.add('visually-hidden');
+        logo.classList.remove('visually-hidden');
+        closButton.classList.add('visually-hidden')
+        openButton.classList.remove('visually-hidden');
+        promoActions.classList.remove('visually-hidden');
+      }
+    });
+  </script>
 </body>
 
 </html>

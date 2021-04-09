@@ -5,15 +5,41 @@
 
 .countries__container{
   padding-top: 71px;
+
+  @media (min-width:$medium-width) {
+    background-image: url(../../img/flags-background.png);
+    // background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: top right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .countries__header{
   margin-left: 25px;
+  max-width: 380px;
+
+  @media (min-width: $medium-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 50px;
+    margin-left: 170px;
+  }
 }
 
 .countries__list{
   margin-top: 60px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  @media (min-width: $medium-width) {
+    align-items: center;
+  }
 }
 
 .countries__all-countries{
@@ -22,4 +48,14 @@
 
 .countries__info{
   @include text(16px, 300, 22px, $special-grey);
+}
+
+.countries__collection{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large-width) {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }
