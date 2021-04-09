@@ -15,8 +15,10 @@
 }
 
 .page-header--menu-opened{
+  height: 570px;
   @media (max-width: $medium-max-width) {
     background-color: #ffffff;
+    height: 910px;
   }
 }
 
