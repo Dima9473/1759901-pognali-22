@@ -1,0 +1,7 @@
+.details-list__item{
+  display: flex;
+}
+
+.details-list__text{
+  @include text(20px, bold, 20px, $basic-blue-light);
+}

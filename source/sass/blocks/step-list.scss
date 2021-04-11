@@ -1,8 +1,79 @@
+.step-list{
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.step-list__container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: $medium-width) {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+}
+
 .step-list__item{
   background-color: #ffffff;
   margin-bottom: 10px;
-  padding-top: 24px;
-  padding-bottom: 20px;
+  border-radius: 10px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 40px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    border-radius: 60px;
+  }
+}
+
+.step-list__header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-list__header-text{
+
+}
+
+.step-list__nav{
+  display: none;
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+}
+
+.step-list__nav-item{
+  @include text(20px, normal, 24px, #000000);
+  letter-spacing: 0.11em;
+  &::before {
+    content: "\2022";
+    color: #000000;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+
+.step-list__nav-item--disabled{
+  opacity: 0.6;
 }
 
 .step-list__description{
@@ -10,22 +81,145 @@
   @include text(16px, bold, 22px, $special-grey);
 }
 
-.step-list__info{
-  @include text(16px, 500, 16px, $basic-blue-light);
-  letter-spacing: 0.09em;
-}
-
 .step-list__sub-list{
   margin-top: 21px;
 }
 
-.step-list__nav-buttons{
+.step-list__buttons{
   margin-bottom: 22px;
   display: flex;
   flex-direction: column;
 }
 
-.step-list__button-step{
+.step-list__nav-buttons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.step-list__previous{
+  border: none;
+}
+
+.step-list__add-step{
   margin-top: 22px;
 }
 
+.step-list__add-step--outsideflow{
+  @media (min-width: $medium-width) {
+    order: 7;
+  }
+}
+
+.step-list__trip-data{
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  @include text(16px, 500, 16px, $basic-blue-light);
+  letter-spacing: 0.09em;
+  @media (min-width: $large-width) {
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
+
+.step-list__trip-data--companions{
+  @media (min-width: $medium-width) {
+    order: 3;
+  }
+}
+
+.step-list__trip-data--duration{
+  @media (min-width: $medium-width) {
+    order: 5;
+  }
+}
+
+.step-list__info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+
+  @media (min-width: $large-width) {
+    justify-content: flex-start;
+    order: 0;
+  }
+}
+
+.step-list__definition{
+  @include text(16px, 500, 16px, $basic-blue-light);
+  letter-spacing: 0.07em;
+
+  @media (min-width: $large-width) {
+    // margin-left: 35px;
+    order: 2;
+  }
+}
+
+.step-list__count{
+  @include text(14px, 500, 14px, $basic-blue-light);
+  text-align: center;
+
+  @media (max-width: $medium-max-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $large-width) {
+    order: 1;
+  }
+}
+
+.step-list__child{
+  margin-bottom: 20px;
+
+  @media (min-width: $medium-width) {
+    order: 4;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+      margin-left: auto;
+  }
+}
+
+.step-list__date{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium-width) {
+    order: 6;
+  }
+}
+
+.step-list__month-date{
+  padding-top: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.step-list__day-date{
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.step-list__questions{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

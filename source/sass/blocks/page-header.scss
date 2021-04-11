@@ -3,6 +3,14 @@
   padding-bottom: 12px;
 }
 
+.page-header--height{
+  height: 150px;
+
+  @media (min-width: $medium-width) {
+    height: 350px;
+  }
+}
+
 .page-header__menu{
   display: flex;
   justify-content: space-between;
@@ -10,8 +18,10 @@
 }
 
 .page-header--menu-opened{
+  height: 570px;
   @media (max-width: $medium-max-width) {
     background-color: #ffffff;
+    height: 910px;
   }
 }
 
@@ -23,7 +33,7 @@
   margin-bottom: 40px;
   @media (min-width: $medium-width) {
     justify-content: flex-start;
-    margin-top: 150px;
+    // margin-top: 150px;
   }
 }
 

@@ -10,20 +10,24 @@
 
 
 <body class="page__body">
-  <header class="page-header page-header__menu-opened">
-    <div class="container page-header__menu">
-      <a href="index.html" class="page-header__logo-mobile">
+  <header class="page-header page-header--height">
+    <div class="container page-header__menu  menu">
+      <a href="index.html" class="menu__logo-mobile">
         <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
       </a>
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="menu__logo-mobile-dark visually-hidden">
+        <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
+      </a>
+      <a href="index.html" class="menu__logo">
         <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
       </a>
-      <a class="main-nav__toggle">
-        <svg class="icon icon--light" width="25" height="11" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg">
+      <a class="menu__toggle">
+        <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
+          xmlns="http://www.w3.org/2000/svg">
           <rect width="25" height="3" rx="1.5" />
           <rect y="8" width="25" height="3" rx="1.5" />
         </svg>
-        <svg class="main-nave__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
+        <svg class="menu__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
             stroke-linejoin="round" />
@@ -31,27 +35,70 @@
             stroke-linejoin="round" />
         </svg>
       </a>
+      <svg class="menu__line" width="60" height="2" viewBox="0 0 60 2" xmlns="http://www.w3.org/2000/svg">
+        <rect width="60" height="2" />
+      </svg>
+      <nav class="menu__nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="text site-list__link site-list__link--light" href="index.html">О СЕРВИСЕ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link site-list__link--light" href="#">НАПРАВЛЕНИЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link site-list__link--light" href="companions.html">ПОПУТЧИКИ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__actions">
+        <ul class="menu__list icon-list">
+          <li class="icon-list__item icon-list__item--stuck">
+            <a class="icon-list__link">
+              <svg class="icon icon--dark-blue icon--middle-background" width="19" height="19" viewBox="0 0 19 19"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z" />
+                <path
+                  d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="icon-list__item icon-list__item--stuck">
+            <a class="icon-list__link icon">
+              <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.0166 2.32528L7.7666 6.55572C7.9934 6.69747 8.2868 6.76467 8.582 6.76467C8.8772 6.76467 9.1706 6.69747 9.3974 6.55572L16.1474 2.32528C16.5875 2.04913 17.0033 0.974976 16.196 0.974976H0.968901C0.161601 0.974976 0.577401 2.04913 1.0166 2.32528ZM16.3517 4.63842L9.3974 8.86677C9.0914 9.05367 8.8772 9.07572 8.582 9.07572C8.2868 9.07572 8.0726 9.05367 7.7666 8.86677C7.4606 8.67987 1.3469 4.94082 0.847401 4.63737C0.496401 4.42317 0.500001 4.67412 0.500001 4.86732V12.525C0.500001 12.966 1.0094 13.575 1.4 13.575H15.8C16.1906 13.575 16.7 12.966 16.7 12.525V4.86837C16.7 4.67517 16.7036 4.42422 16.3517 4.63842Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="menu__authorization button" href="authorization.html">
+          <span class="text button__caption">АВТОРИЗАЦИЯ</span>
+        </a>
+      </div>
     </div>
-    <div class="main-menu visually-hidden ">
-      <nav class="main-nav">
+    <div class="container main-menu main-menu--closed">
+      <nav class="main-menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="text site-list__link" href="index.html">О СЕРВИСЕ</a>
           </li>
           <li class="site-list__item">
-            <a class="text site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
+            <a class="text site-list__link" href="#">НАПРАВЛЕНИЯ</a>
           </li>
           <li class="site-list__item">
             <a class="text site-list__link" href="companions.html">ПОПУТЧИКИ</a>
           </li>
         </ul>
       </nav>
-      <div class="container page-header__authorisation">
+      <div class="page-header__authorisation">
         <a class="user-list__authorization button" href="authorization.html">
           <span class="text button__caption">АВТОРИЗАЦИЯ</span>
         </a>
       </div>
-      <div class="container page-header__contact-list contact-list">
+      <div class="page-header__contact-list contact-list">
         <dl class="icon-list">
           <div class="icon-list__item">
             <dt class="icon-list__phone">
@@ -114,23 +161,28 @@
     <h1 class="visually-hidden">Информация о направлениях пользователя</h1>
     <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
       <section class="user-info__general general-info">
-        <div class="container">
+        <div class="general-info__container container">
           <h2 class="visually-hidden">Предпочтения</h2>
           <div class="general-info__user-data">
-            <div class="general-info__level ">
+            <div class="general-info__level">
               <b class="general-info__level-number">80</b>
-              <span>level</span>
+              <span class="general-info__level-text text">level</span>
             </div>
-            <img class="general-info__avatar" src="img/demin-avatar.png" alt="Фотография Демина" />
+            <img class="general-info__avatar general-info__avatar--small" src="img/demin-avatar.png"
+              alt="Фотография Демина" />
+            <img class="general-info__avatar general-info__avatar--medium" src="img/demin-avatar-medium.png"
+              alt="Фотография Демина" />
           </div>
-          <button class="general-info__change-photo button button--light-theme">
-            <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
-          </button>
-          <fieldset class="dataset">
+          <div class="general-info__change">
+            <button class="general-info__change-photo button button--light-theme">
+              <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
+            </button>
+          </div>
+          <fieldset class="general-info__tags dataset">
             <legend class="dataset__legend text">ТЭГИ</legend>
             <textarea class="dataset__change-tags text">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
-          <fieldset class="dataset">
+          <fieldset class="general-info__transport dataset">
             <legend class="dataset__legend">Транспорт</legend>
             <ul class="dataset__list transport-list">
               <li class="transport-list__item">
@@ -186,62 +238,72 @@
       <section class="user-info__plans user-plans">
         <div class="container">
           <h2 class="user-plans__caption">Мои планы:</h2>
-          <ol class="user-plans__list plan-list">
+          <ul class="user-plans__list plan-list">
             <li class="plan-list__item">
-              <ul class="country-list">
-                <li class="country-list__item">
-                  Франция
-                </li>
-                <li class="country-list__item">
-                  Италия
-                </li>
-              </ul>
-              <dl class="plan-list__details details-list">
-                <div class="details-list__item">
-                  <dt class="details-list__companions-count">
-                    3
-                  </dt>
-                  <dd class="details-list__details">Попутчика</dd>
-                </div>
-                <div class="details-list__item">
-                  <dt class="details-list__dates">
-                    26 МАР
-                  </dt>
-                  <dd class="details-list__dates-details">- 29 МАР</dd>
-                </div>
-              </dl>
-              <a class="plan-list__change button button--change">
-                <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
-              </a>
+              <div class="plan-list__header">
+                <span>1. </span>
+                <ul class="country-list">
+                  <li class="country-list__item">
+                    Франция
+                  </li>
+                  <li class="country-list__item">
+                    Италия
+                  </li>
+                </ul>
+              </div>
+              <div class="plan-list__details">
+                <dl class="plan-list__details-list details-list">
+                  <div class="details-list__item">
+                    <dt class="details-list__companions-count">
+                      3
+                    </dt>
+                    <dd class="details-list__details details-list__text text">Попутчика</dd>
+                  </div>
+                  <div class="details-list__item">
+                    <dt class="details-list__dates details-list__text text">
+                      26 МАР
+                    </dt>
+                    <dd class="details-list__dates-details details-list__text text">- 29 МАР</dd>
+                  </div>
+                </dl>
+                <a class="plan-list__change button button--change">
+                  <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
+                </a>
+              </div>
             </li>
             <li class="plan-list__item">
-              <ul class="country-list">
-                <li class="country-list__item">
-                  Тайланд
-                </li>
-                <li class="country-list__item">
-                  Индонезия
-                </li>
-              </ul>
-              <dl class="plan-list details-list">
-                <div class="details-list__item">
-                  <dt class="details-list__companions-count">
-                    1
-                  </dt>
-                  <dd class="details-list__details">Попутчик</dd>
-                </div>
-                <div class="details-list__item">
-                  <dt class="details-list__dates">
-                    1 ИЮЛ
-                  </dt>
-                  <dd class="details-list__dates-details">- 15 ИЮЛ</dd>
-                </div>
-              </dl>
-              <a class="plan-list__change button button--change">
-                <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
-              </a>
+              <div class="plan-list__header">
+                <span>2. </span>
+                <ul class="country-list">
+                  <li class="country-list__item">
+                    Тайланд
+                  </li>
+                  <li class="country-list__item">
+                    Индонезия
+                  </li>
+                </ul>
+              </div>
+              <div class="plan-list__details">
+                <dl class="plan-list__details-list details-list">
+                  <div class="details-list__item">
+                    <dt class="details-list__companions-count">
+                      1
+                    </dt>
+                    <dd class="details-list__details details-list__text text">Попутчик</dd>
+                  </div>
+                  <div class="details-list__item">
+                    <dt class="details-list__dates details-list__text text">
+                      1 ИЮЛ
+                    </dt>
+                    <dd class="details-list__dates-details details-list__text text">- 15 ИЮЛ</dd>
+                  </div>
+                </dl>
+                <a class="plan-list__change button button--change">
+                  <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
+                </a>
+              </div>
             </li>
-          </ol>
+          </ul>
         </div>
       </section>
       <section class="user-info__add-plans add-plans">
@@ -256,183 +318,220 @@
             </p>
           </header>
           <ol class="add-plans__adding-list step-list">
-            <li class="step-list__item">
-              <div class="container">
-                <h3 class="step-list__caption">Шаг 1. <br>Даты пребывания</h3>
-                <p class="step-list__description text">Укажите предпочтительное количество попутчиков, которых вы хотели
-                  бы
-                  позвать в поездку, и ее предполагаемую длительность.</p>
-                <div class="add-plans__trip-data">
-                  <div class="add-plans__info">
-                    <label for="companions" class="step-list__info text">
-                      <b>Ищу попутчиков:</b>
-                    </label>
-                    <span class="add-plans__definition text text--disabled">
-                      ЧЕЛ.
-                    </span>
-                  </div>
-                  <input id="companions" class="add-plans__count spinner text" type="number" value="2" />
+            <li class="step-list__item step-list__container">
+              <div class="step-list__header">
+                <div class="step-list__header-text">
+                  <h3 class="step-list__caption">Шаг 1. <br>Даты пребывания</h3>
+                  <p class="step-list__description text">Укажите предпочтительное количество попутчиков, которых вы
+                    хотели
+                    бы
+                    позвать в поездку, и ее предполагаемую длительность.</p>
                 </div>
-                <div class="add-plans__trip-data">
-                  <div class="add-plans__info">
-                    <label for="days" class="step-list__info text">
-                      <b>Длительность:</b>
-                    </label>
-                    <span class="add-plans__definition text text--disabled">
-                      ДН.
-                    </span>
+                <ul class="step-list__nav">
+                  <li class="step-list__nav-item text">Даты</li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Маршрут</li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Развлечения</li>
+                </ul>
+              </div>
+              <div class="step-list__questions">
+                <div class="step-list__trip-data step-list__trip-data--companions">
+                  <label for="companions" class="step-list__info text">
+                    <b>Ищу попутчиков:</b>
+                  </label>
+                  <div class="step-list__definition text text--disabled">
+                    ЧЕЛ.
                   </div>
-                  <input id="days" class="add-plans__count spinner text" type="number" value="3" />
+                  <input id="companions" class="step-list__count spinner text" type="number" value="2" />
                 </div>
-                <div class="add-plans__child boolean">
+                <div class="step-list__trip-data step-list__trip-data--duration">
+                  <label for="days" class="step-list__info text">
+                    <b>Длительность:</b>
+                  </label>
+                  <div class="step-list__definition text text--disabled">
+                    ДН.
+                  </div>
+                  <input id="days" class="step-list__count spinner text" type="number" value="3" />
+                </div>
+                <div class="step-list__child boolean">
                   <input id="children" class="boolean__check" type="checkbox" />
                   <label for="children" class="boolean__text text">Можно с детьми</label>
                 </div>
-                <div class="add-plans__date">
-                  <input type="month" class="add-planse__month-date date text" value="2019-03" />
-                  <input type="date" class="add-planse__day-date date " />
-                </div>
-                <button type="button"
-                  class="step-list__button-step button button__caption button--middle-theme">СЛЕДУЮЩИЙ
-                  ШАГ</button>
               </div>
+              <div class="step-list__date">
+                <input type="month" class="step-list__month-date date text" value="2019-03" />
+                <input type="date" class="step-list__day-date date " />
+              </div>
+              <button type=" button"
+                class="step-list__add-step step-list__add-step--outsideflow button button__caption button--middle-theme">СЛЕДУЮЩИЙ
+                ШАГ</button>
             </li>
-            <li class="step-list__item">
-              <div class="container">
-                <h3 class="step-list__caption">Шаг 2. <br>Маршрут</h3>
-                <p class="step-list__description text">
-                  Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
-                </p>
-                <ul class="step-list__sub-list select-input-list">
-                  <li class="select-input-list__item">
-                    <select class="select-input-list select">
-                      <option class="select__item text">ВЫБЕРИТЕ СТРАНУ</option>
-                      <option class="select__item text">Австралия</option>
-                      <option class="select__item text">Австрия</option>
-                      <option class="select__item text">Айзербайджан</option>
-                      <option class="select__item text">Албания</option>
-                      <option class="select__item text">Алжир</option>
-                      <option class="select__item text">Ангола</option>
-                      <option class="select__item text">Андора</option>
-                      <option class="select__item text">Антигуа и Барбуда</option>
-                      <option class="select__item text">Аргентина</option>
-                      <option class="select__item text">Армения</option>
-                      <option class="select__item text" selected>Босния и Герцеговина</option>
-                    </select>
-                    <p class="select-input-list__dot-image select-input-list__dot-image--active">.</p>
-                    <img src="img/bosnia-and-herzegovina-flag.png" class="select-input-list__flag" alt="Флаг страны" />
-                    <sup class="select-input-list__remove-country">x</sup>
-                  </li>
-                  <li class="select-input-list__item">
-                    <select class="select-input-list select">
-                      <option class="select__item text">ВЫБЕРИТЕ СТРАНУ</option>
-                      <option class="select__item text">Австралия</option>
-                      <option class="select__item text">Австрия</option>
-                      <option class="select__item text">Айзербайджан</option>
-                      <option class="select__item text">Албания</option>
-                      <option class="select__item text">Алжир</option>
-                      <option class="select__item text">Ангола</option>
-                      <option class="select__item text">Андора</option>
-                      <option class="select__item text">Антигуа и Барбуда</option>
-                      <option class="select__item text">Аргентина</option>
-                      <option class="select__item text">Армения</option>
-                      <option class="select__item text">Афганистан</option>
-                      <option class="select__item text">Босния и Герцеговина</option>
-                      <option class="select__item text" selected>Чехия</option>
-                    </select>
-                    <p class="select-input-list__dot-image select-input-list__dot-image--active">.</p>
-                    <img src="img/czech-flag.png" class="select-input-list__flag" alt="Флаг страны" />
-                    <sup class="select-input-list__remove-country">x</sup>
-                  </li>
-                  <li class="select-input-list__item">
-                    <select class="select-input-list select text">
-                      <option class="select__item text" selected>ВЫБЕРИТЕ СТРАНУ</option>
-                      <option class="select__item text">Австралия</option>
-                      <option class="select__item text">Австрия</option>
-                      <option class="select__item text">Айзербайджан</option>
-                      <option class="select__item text">Албания</option>
-                      <option class="select__item text">Алжир</option>
-                      <option class="select__item text">Ангола</option>
-                      <option class="select__item text">Андора</option>
-                      <option class="select__item text">Антигуа и Барбуда</option>
-                      <option class="select__item text">Аргентина</option>
-                      <option class="select__item text">Армения</option>
-                      <option class="select__item text">Афганистан</option>
-                      <option class="select__item text">Босния и Герцеговина</option>
-                      <option class="select__item text">Чехия</option>
-                    </select>
-                    <p class="select-input-list__dot-image select-input-list__dot-image--active">.</p>
-                    <sup class="select-input-list__remove-country">x</sup>
-                  </li>
+            <li class="step-list__item step-list__container">
+              <div class="step-list__header">
+                <div class="step-list__header-text">
+                  <h3 class="step-list__caption">Шаг 2. <br>Маршрут</h3>
+                  <p class="step-list__description text">
+                    Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+                  </p>
+                </div>
+                <ul class="step-list__nav">
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Даты</li>
+                  <li class="step-list__nav-item text">Маршрут</li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Развлечения</li>
                 </ul>
+              </div>
+              <ul class="step-list__sub-list select-input-list">
+                <li class="select-input-list__item">
+                  <select class="select-input-list select">
+                    <option class="select__item text">ВЫБЕРИТЕ СТРАНУ</option>
+                    <option class="select__item text">Австралия</option>
+                    <option class="select__item text">Австрия</option>
+                    <option class="select__item text">Айзербайджан</option>
+                    <option class="select__item text">Албания</option>
+                    <option class="select__item text">Алжир</option>
+                    <option class="select__item text">Ангола</option>
+                    <option class="select__item text">Андора</option>
+                    <option class="select__item text">Антигуа и Барбуда</option>
+                    <option class="select__item text">Аргентина</option>
+                    <option class="select__item text">Армения</option>
+                    <option class="select__item text" selected>Босния и Герцеговина</option>
+                  </select>
+                  <p class="select-input-list__dot-image select-input-list__dot-image--active">.</p>
+                  <img src="img/bosnia-and-herzegovina-flag.png" class="select-input-list__flag" alt="Флаг страны" />
+                  <sup class="select-input-list__remove-country">x</sup>
+                </li>
+                <li class="select-input-list__item">
+                  <select class="select-input-list select">
+                    <option class="select__item text">ВЫБЕРИТЕ СТРАНУ</option>
+                    <option class="select__item text">Австралия</option>
+                    <option class="select__item text">Австрия</option>
+                    <option class="select__item text">Айзербайджан</option>
+                    <option class="select__item text">Албания</option>
+                    <option class="select__item text">Алжир</option>
+                    <option class="select__item text">Ангола</option>
+                    <option class="select__item text">Андора</option>
+                    <option class="select__item text">Антигуа и Барбуда</option>
+                    <option class="select__item text">Аргентина</option>
+                    <option class="select__item text">Армения</option>
+                    <option class="select__item text">Афганистан</option>
+                    <option class="select__item text">Босния и Герцеговина</option>
+                    <option class="select__item text" selected>Чехия</option>
+                  </select>
+                  <p class="select-input-list__dot-image select-input-list__dot-image--active">.</p>
+                  <img src="img/czech-flag.png" class="select-input-list__flag" alt="Флаг страны" />
+                  <sup class="select-input-list__remove-country">x</sup>
+                </li>
+                <li class="select-input-list__item">
+                  <select class="select-input-list select text">
+                    <option class="select__item text" selected>ВЫБЕРИТЕ СТРАНУ</option>
+                    <option class="select__item text">Австралия</option>
+                    <option class="select__item text">Австрия</option>
+                    <option class="select__item text">Айзербайджан</option>
+                    <option class="select__item text">Албания</option>
+                    <option class="select__item text">Алжир</option>
+                    <option class="select__item text">Ангола</option>
+                    <option class="select__item text">Андора</option>
+                    <option class="select__item text">Антигуа и Барбуда</option>
+                    <option class="select__item text">Аргентина</option>
+                    <option class="select__item text">Армения</option>
+                    <option class="select__item text">Афганистан</option>
+                    <option class="select__item text">Босния и Герцеговина</option>
+                    <option class="select__item text">Чехия</option>
+                  </select>
+                  <p class="select-input-list__dot-image select-input-list__dot-image--active">.</p>
+                  <sup class="select-input-list__remove-country">x</sup>
+                </li>
+              </ul>
+              <div class="step-list__buttons">
+                <button type="button" class="step-list__add-step button button--dark-theme">
+                  <span class="button__caption">ДОБАВИТЬ СТРАНУ</span>
+                  <svg class="select-input-list__flag" width="14" height="14" viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="7" x2="7" y2="14" stroke="#C2C4C9" stroke-width="2" />
+                    <line y1="7" x2="14" y2="7" stroke="#C2C4C9" stroke-width="2" />
+                  </svg>
+                </button>
                 <div class="step-list__nav-buttons">
-                  <button type="button" class="step-list__button-step button button--dark-theme">
-                    <span class="button__caption">ДОБАВИТЬ СТРАНУ</span>
-                    <svg class="select-input-list__flag" width="14" height="14" viewBox="0 0 14 14"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <line x1="7" x2="7" y2="14" stroke="#C2C4C9" stroke-width="2" />
-                      <line y1="7" x2="14" y2="7" stroke="#C2C4C9" stroke-width="2" />
-                    </svg>
-                  </button>
                   <button type="button" class="step-list__button-step button button--middle-theme">
                     <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>
                   </button>
-                  <button type="button" class="step-list__button-step button button--transparent-theme">
+                  <button type="button "
+                    class="step-list__button-step step-list__previous button button--transparent-theme">
                     <span class="button__caption">НА ШАГ НАЗАД</span>
                   </button>
                 </div>
               </div>
             </li>
-            <li class="step-list__item">
-              <div class="container">
-                <h3 class="step-list__caption">Шаг 3. <br>Развлечения</h3>
-                <p class="step-list__description">
-                  Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-                </p>
-                <ul class="step-list country-description-list">
-                  <li class="country-description-list__item">
-                    <div class="country-description-list__country">
-                      <h4 class="country-description-list__caption text">
-                        Босния и Герцеговина
-                      </h4>
-                      <img src="img/bosnia-and-herzegovina-flag.png" class="country-description-list__flag"
-                        alt="Флаг страны" />
-                    </div>
-                    <textarea class="country-description-list__change-text text" placeholder="План действий"></textarea>
-                  </li>
-                  <li class="country-description-list__item">
-                    <div class="country-description-list__country">
-                      <h4 class="country-description-list__caption text">
-                        Чехия
-                      </h4>
-                      <img src="img/czech-flag.png" class="country-description-list__flag" alt="Флаг страны" />
-                    </div>
-                    <textarea class="country-description-list__change-text text"
-                      placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                  </li>
-                </ul>
-                <div class="step-list__nav-buttons">
-                  <button type="button" class="step-list__button-step button button--middle-theme">
-                    <span class="button__caption">Отправить</span>
-                  </button>
-                  <button type="button" class="step-list__button-step button button--transparent-theme">
-                    <span class="button__caption">На шаг назад</span>
-                  </button>
+            <li class="step-list__item step-list__container">
+              <!-- <div class="step-list__header">
+                <div class="step-list__header-text">
+                  <h3 class="step-list__caption">Шаг 2. <br>Маршрут</h3>
+                  <p class="step-list__description text">
+                    Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+                  </p>
                 </div>
+                <ul class="step-list__nav">
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Даты</li>
+                  <li class="step-list__nav-item text">Маршрут</li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Развлечения</li>
+                </ul>
+              </div> -->
+              <div class="step-list__header">
+                <div class="step-list__header-text">
+                  <h3 class="step-list__caption">Шаг 3. <br>Развлечения</h3>
+                  <p class="step-list__description">
+                    Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                  </p>
+                </div>
+                <ul class="step-list__nav">
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Даты</li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled text">Маршрут</li>
+                  <li class="step-list__nav-item text">Развлечения</li>
+                </ul>
               </div>
-            </li>
-          </ol>
+              <ul class="step-list country-description-list">
+                <li class="country-description-list__item">
+                  <div class="country-description-list__country">
+                    <h4 class="country-description-list__caption text">
+                      Босния и Герцеговина
+                    </h4>
+                    <img src="img/bosnia-and-herzegovina-flag.png" class="country-description-list__flag"
+                      alt="Флаг страны" />
+                  </div>
+                  <textarea class="country-description-list__change-text text" placeholder="План действий"></textarea>
+                </li>
+                <li class="country-description-list__item">
+                  <div class="country-description-list__country">
+                    <h4 class="country-description-list__caption text">
+                      Чехия
+                    </h4>
+                    <img src="img/czech-flag.png" class="country-description-list__flag" alt="Флаг страны" />
+                  </div>
+                  <textarea class="country-description-list__change-text text"
+                    placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </li>
+              </ul>
+              <div class="step-list__nav-buttons">
+                <button type="button" class="step-list__button-step button button--middle-theme">
+                  <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>
+                </button>
+                <button type="button "
+                  class="step-list__button-step step-list__previous button button--transparent-theme">
+                  <span class="button__caption">НА ШАГ НАЗАД</span>
+                </button>
+              </div>
         </div>
+        </li>
+        </ol>
       </section>
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container">
+    <div class="page-footer__container container">
       <h2 class="visually-hidden">Погнали?</h2>
-      <a href="index.html" class="page-footer__logo-mobile">
+      <a href="#" class="page-footer__logo-mobile">
         <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
       </a>
-      <a href="index.html" class="page-footer__logo">
+      <a href="#" class="page-footer__logo">
         <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
       </a>
       <ul class="page-footer__list social-list">
@@ -486,6 +585,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/navigationActions.js"></script>
 </body>
 
 </html>
