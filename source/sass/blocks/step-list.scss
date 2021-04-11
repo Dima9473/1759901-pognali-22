@@ -29,7 +29,7 @@
 .step-list__item{
   background-color: #ffffff;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: $card-border-radius-small;
 
   @media (min-width: $medium-width) {
     margin-bottom: 40px;

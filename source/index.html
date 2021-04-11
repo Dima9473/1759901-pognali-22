@@ -377,20 +377,22 @@
     <section class="users">
       <div class="container">
         <div class="users__header">
-          <h2 class="users__caption text text--caption">
-            Попутчики
-          </h2>
-          <div class="users__background-images">
-            <img class="users__back-photo" src="img/smolov-back-desktop.png" alt="Фотографи Смолова" />
-            <img src="img/back.svg" alt="Фоновое изображение" />
+          <div class="users__info">
+            <h2 class="users__caption text text--caption">
+              Попутчики
+            </h2>
+            <div class="users__background-images">
+              <img class="users__back-photo" src="img/smolov-back-desktop.png" alt="Фотографи Смолова" />
+              <img src="img/back.svg" alt="Фоновое изображение" />
+            </div>
+            <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на идеальный
+              отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
+            <p class="text text--bold">Теперь можно легко найти единомышленников!</p>
           </div>
-          <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на идеальный
-            отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-          <p class="text text--bold">Теперь можно легко найти единомышленников!</p>
           <!-- <img src="img/rogovaya-back-desktop.png" alt="Фото Роговой" /> -->
           <ul class="users__cards card-list">
-            <li class="card-list__item">
-              <div class="card-list__card card-list__card--under">
+            <li class="users__card-list card-list__item">
+              <div class="users__card card-list__card">
                 <img class="card-list__photo" src="img/tany-photo.png" alt="Фото Тани Фирсовой" />
                 <div class="users__level ">
                   <b class="text users__level-number">99</b>
@@ -480,10 +482,10 @@
                 </div>
               </div>
             </li>
-            <li class="card-list__item">
-              <div class="card-list__card card-list__card--under">
+            <li class="users__card-list card-list__item">
+              <div class="users__card card-list__card">
                 <img class="card-list__photo" src="img/demin-photo.png" alt="Фото Петра Демина" />
-                <div class="users__level ">
+                <div class="users__level">
                   <b class="text users__level-number">80</b>
                   <span class="text users__level-text">level</span>
                 </div>
@@ -664,7 +666,7 @@
       </div>
     </section>
     <section class="contacts ">
-      <header class="contacts__header container">
+      <header class="contacts__header">
         <h2 class="visually-hidden">Контакты компании!</h2>
         <div class="contacts__get-direction container">
           <dl class="contacts__list icon-list">

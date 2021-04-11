@@ -1,0 +1,14 @@
+.companions-operations{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $large-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
