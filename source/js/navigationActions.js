@@ -30,3 +30,5 @@ navToggle.addEventListener('click', function () {
     promoActions.classList.remove('visually-hidden');
   }
 });
+
+//to remove
