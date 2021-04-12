@@ -107,16 +107,6 @@
   border: none;
 }
 
-.step-list__add-step{
-  margin-top: 22px;
-}
-
-.step-list__add-step--outsideflow{
-  @media (min-width: $medium-width) {
-    order: 7;
-  }
-}
-
 .step-list__trip-data{
   margin-bottom: 20px;
   display: flex;

@@ -1,5 +1,7 @@
 .companions{
   margin-top: 28px;
+  display: flex;
+  flex-direction: column;
 }
 
 .companions__pages{
@@ -10,16 +12,19 @@
   }
 }
 
-.companions__show-more {
-  margin-top: 20px;
-}
-
 .companions__navigation{
   margin-top: 18px;
   background-color: #ffffff;
   @media (min-width: $medium-width) {
     display: flex;
+    margin-top: 60px;
   }
+
+  @media (min-width: $large-width) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+   }
 }
 
 .companions__card{
