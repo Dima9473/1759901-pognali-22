@@ -161,28 +161,30 @@
     <h1 class="visually-hidden">Информация о направлениях пользователя</h1>
     <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
       <section class="user-info__general general-info">
-        <div class="general-info__container container">
+        <div class="user-info__container container">
           <h2 class="visually-hidden">Предпочтения</h2>
-          <div class="general-info__user-data">
-            <div class="general-info__level">
-              <b class="general-info__level-number">80</b>
-              <span class="general-info__level-text text">level</span>
-            </div>
+          <!-- <div class="general-info__user-data"> -->
+          <div class="user-info__level general-info__level">
+            <b class="general-info__level-number">80</b>
+            <span class="general-info__level-text text">level</span>
+          </div>
+          <div class="user-info__avatar general-info__avatar">
             <img class="general-info__avatar general-info__avatar--small" src="img/demin-avatar.png"
               alt="Фотография Демина" />
             <img class="general-info__avatar general-info__avatar--medium" src="img/demin-avatar-medium.png"
               alt="Фотография Демина" />
           </div>
-          <div class="general-info__change">
-            <button class="general-info__change-photo button button--light-theme">
-              <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
-            </button>
-          </div>
-          <fieldset class="general-info__tags dataset">
+          <!-- </div> -->
+          <!-- <div class="general-info__change"> -->
+          <button class="user-info__change-photo general-info__change-photo button button--light-theme">
+            <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
+          </button>
+          <!-- </div> -->
+          <fieldset class="user-info__tags general-info__tags dataset">
             <legend class="dataset__legend text">ТЭГИ</legend>
             <textarea class="dataset__change-tags text">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
-          <fieldset class="general-info__transport dataset">
+          <fieldset class="user-info__transport general-info__transport dataset">
             <legend class="dataset__legend">Транспорт</legend>
             <ul class="dataset__list transport-list">
               <li class="transport-list__item">

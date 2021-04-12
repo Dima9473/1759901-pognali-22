@@ -2,6 +2,24 @@
   background-color: $basic-grey;
 }
 
+.user-info__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: $large-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.user-info__level{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width){
+    order: 1;
+  }
+}
+
 .user-info__plans{
   padding-top: 28px;
   padding-bottom: 30px;
@@ -22,3 +40,31 @@
   padding-bottom: 43px;
 }
 
+.user-info__avatar{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width){
+    order: 2;
+  }
+}
+
+.user-info__change-photo{
+  width: 100%;
+  @media (min-width: $medium-width) and (max-width: $medium-max-width){
+    order: 3;
+  }
+}
+
+.user-info__tags{
+  width: 100%;
+  margin-top: 30px;
+  @media (min-width: $medium-width) and (max-width: $medium-max-width){
+    order: 4;
+  }
+}
+
+.user-info__transport{
+  width: 100%;
+  margin-top: 25px;
+  @media (min-width: $medium-width) and (max-width: $medium-max-width){
+    order: 5;
+  }
+}

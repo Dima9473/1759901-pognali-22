@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.general-info__container{
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $large-width) {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .general-info__user-data{
   display: flex;
   justify-content: center;
@@ -81,10 +70,6 @@
   display: flex;
   justify-content: center;
 
-  @media (min-width: $medium-width) {
-    order: 2;
-  }
-
   @media (min-width: $large-width) {
     width: 50%;
     height: 100px;
@@ -93,22 +78,22 @@
 }
 
 .general-info__transport{
-  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
-    position: absolute;
-    left: 33%;
-    width: 310px;
-  }
+  // @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+  //   position: absolute;
+  //   left: 33%;
+  //   width: 310px;
+  // }
 
-  @media (min-width: $large-width) {
-    margin-top: 30px;
-    width: 30%;
-    height: 100px;
-  }
+  // @media (min-width: $large-width) {
+  //   margin-top: 30px;
+  //   width: 30%;
+  //   height: 100px;
+  // }
 }
 
 .general-info__level{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .general-info__level-number{
