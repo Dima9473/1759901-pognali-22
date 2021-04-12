@@ -161,29 +161,31 @@
     <h1 class="visually-hidden">Информация о направлениях пользователя</h1>
     <form action="https://echo.htmlacademy.ru" method="POST" class="user-info">
       <section class="user-info__general general-info">
-        <div class="general-info__container container">
+        <div class="user-info__container container">
           <h2 class="visually-hidden">Предпочтения</h2>
-          <div class="general-info__user-data">
-            <div class="general-info__level">
-              <b class="general-info__level-number">80</b>
-              <span class="general-info__level-text text">level</span>
-            </div>
-            <img class="general-info__avatar general-info__avatar--small" src="img/demin-avatar.png"
+          <!-- <div class="general-info__user-data"> -->
+          <div class="user-info__level general-info__level">
+            <b class="general-info__level-number">80</b>
+            <span class="general-info__level-text text">level</span>
+          </div>
+          <div class="user-info__avatar">
+            <img class="user-info__avatar user-info__avatar--small" src="img/demin-avatar.png"
               alt="Фотография Демина" />
-            <img class="general-info__avatar general-info__avatar--medium" src="img/demin-avatar-medium.png"
+            <img class="user-info__avatar user-info__avatar--medium" src="img/demin-avatar-medium.png"
               alt="Фотография Демина" />
           </div>
-          <div class="general-info__change">
-            <button class="general-info__change-photo button button--light-theme">
-              <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
-            </button>
-          </div>
-          <fieldset class="general-info__tags dataset">
-            <legend class="dataset__legend text">ТЭГИ</legend>
+          <!-- </div> -->
+          <!-- <div class="general-info__change"> -->
+          <button class="user-info__change-photo general-info__change-photo button button--light-theme">
+            <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
+          </button>
+          <!-- </div> -->
+          <fieldset class="user-info__tags general-info__tags dataset">
+            <legend class="user-info__legend dataset__legend user-info__legend--left text">ТЭГИ</legend>
             <textarea class="dataset__change-tags text">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
-          <fieldset class="general-info__transport dataset">
-            <legend class="dataset__legend">Транспорт</legend>
+          <fieldset class="user-info__transport general-info__transport dataset">
+            <legend class="user-info__legend dataset__legend">Транспорт</legend>
             <ul class="dataset__list transport-list">
               <li class="transport-list__item">
                 <button class="transport-list__item button button--togle button--transparent-theme " type="button">
@@ -362,7 +364,7 @@
                 <input type="date" class="step-list__day-date date " />
               </div>
               <button type=" button"
-                class="step-list__add-step step-list__add-step--outsideflow button button__caption button--middle-theme">СЛЕДУЮЩИЙ
+                class="add-plans__button-step add-plans__button-step--outsideflow button button__caption button--middle-theme">СЛЕДУЮЩИЙ
                 ШАГ</button>
             </li>
             <li class="step-list__item step-list__container">
@@ -442,7 +444,7 @@
                 </li>
               </ul>
               <div class="step-list__buttons">
-                <button type="button" class="step-list__add-step button button--dark-theme">
+                <button type="button" class="add-plans__add-step button button--dark-theme">
                   <span class="button__caption">ДОБАВИТЬ СТРАНУ</span>
                   <svg class="select-input-list__flag" width="14" height="14" viewBox="0 0 14 14"
                     xmlns="http://www.w3.org/2000/svg">
@@ -451,11 +453,11 @@
                   </svg>
                 </button>
                 <div class="step-list__nav-buttons">
-                  <button type="button" class="step-list__button-step button button--middle-theme">
+                  <button type="button" class="add-plans__button-step button button--middle-theme">
                     <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>
                   </button>
                   <button type="button "
-                    class="step-list__button-step step-list__previous button button--transparent-theme">
+                    class="add-plans__button-step step-list__previous button button--transparent-theme">
                     <span class="button__caption">НА ШАГ НАЗАД</span>
                   </button>
                 </div>
@@ -511,11 +513,11 @@
                 </li>
               </ul>
               <div class="step-list__nav-buttons">
-                <button type="button" class="step-list__button-step button button--middle-theme">
+                <button type="button" class="add-plans__button-step button button--middle-theme">
                   <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>
                 </button>
                 <button type="button "
-                  class="step-list__button-step step-list__previous button button--transparent-theme">
+                  class="add-plans__button-step step-list__previous button button--transparent-theme">
                   <span class="button__caption">НА ШАГ НАЗАД</span>
                 </button>
               </div>

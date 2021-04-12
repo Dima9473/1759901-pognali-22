@@ -31,4 +31,3 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-//to remove

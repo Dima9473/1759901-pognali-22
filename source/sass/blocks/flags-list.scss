@@ -2,6 +2,20 @@
   list-style-type: none;
 }
 
+.flags-list__item{
+  margin-bottom: 10px;
+  margin-right: 25px
+}
+
 .flags-list__flag-caption{
   @include text(15px, 500, 16px, $basic-blue-light);
+}
+
+.flags-list__country-info{
+  display: flex;
+  align-items: center;
+}
+
+.flags-list__icon{
+  margin-right: 15px;
 }

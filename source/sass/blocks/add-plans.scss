@@ -13,3 +13,21 @@
     display: none;
   }
 }
+
+.add-plans__add-step{
+  margin-top: 22px;
+  max-width: 250px;
+}
+
+.add-plans__button-step{
+  margin-top: 22px;
+  @media (min-width: $medium-width) {
+    max-width: 50%;
+  }
+}
+
+.add-plans__button-step--outsideflow{
+  @media (min-width: $medium-width) {
+    order: 7;
+  }
+}

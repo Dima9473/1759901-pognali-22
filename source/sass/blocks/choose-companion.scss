@@ -2,6 +2,18 @@
   background-color: $basic-yellow;
   padding-top: 26px;
   padding-bottom: 22px;
+  border-radius: 20px;
+  max-width: 625px;
+
+  @media (min-width: $medium-width) {
+    // max-height: 550px;
+    max-width: 100%;
+  }
+
+  @media (min-width: $large-width) {
+    max-height: 815px;
+    max-width: 625px;
+  }
 }
 
 .choose-companion__caption{
@@ -16,4 +28,10 @@
 
 .choose-companion__line{
   border-top: 1px solid #F3C72B;
+}
+
+.choose-companion__br{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: none;
+  }
 }

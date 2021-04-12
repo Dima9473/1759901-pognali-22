@@ -5,7 +5,7 @@
 .plan-list__item{
   margin-bottom: 10px;
   background: #FFFFFF;
-  border-radius: 10px;
+  border-radius: $card-border-radius-small;
   list-style-type: none;
 
   @media(min-width: $large-width) {
