@@ -7,16 +7,41 @@
 .filter__header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .filter__body{
+  display: flex;
+}
+
+.filter__body--closed{
   display: none;
 }
 
 .filter__filter-icon{
   fill: $dark-blue;
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: none;
+  }
+}
+
+.filter__show-all{
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
 }
 
 .filter__filter-text{
   @include text(16px, bold, 18px, $dark-blue);
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    display: none;
+  }
+}
+
+.filter__hide{
+  display: none;
 }

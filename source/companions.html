@@ -174,17 +174,33 @@
             <rect x="12.3914" y="4" width="2.6087" height="2" />
           </svg>
           <span class="filter__filter-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
+          <ul class="filter__continents-list continents-list">
+            <li class="continents-list__item">
+              Европа
+            </li>
+            <li class="continents-list__item">
+              Азия
+            </li>
+            <li class="continents-list__item">
+              Америка
+            </li>
+            <li class="continents-list__item">
+              Острова
+            </li>
+          </ul>
+          <span class="filter__show-all text">Показать все</span>
+          <span class="filter__hide text">Свернуть</span>
           <button class="filter__toggle button button--points-togle  button--transparent-theme" type="button">
             <span class="visually-hidden">...</span>
           </button>
         </header>
-        <div class="filter__body">
-          <select class="filter__input-list select-input-list select" multiple>
+        <div class="filter__body filter__body--closed">
+          <!-- <select class="filter__input-list select-input-list select" multiple>
             <option class="select__item" selected>ЕВРОПА</option>
             <option class="select__item">АЗИЯ</option>
             <option class="select__item">АМЕРИКА</option>
             <option class="select__item">ОСТРОВА</option>
-          </select>
+          </select> -->
           <ul class="filter__list buttons-block">
             <li class="buttons-block__item">
               <ul class="buttons-block__list buttons-line">
@@ -357,7 +373,7 @@
         </div>
       </div>
     </section>
-    <div class="companions-container container">
+    <div class="companions-container">
       <div class="container">
         <h1 class="visually-hidden">Подбор попутчиков</h1>
         <div class="companions-operations">
@@ -1117,6 +1133,7 @@
     </div>
   </footer>
   <script src="js/navigationActions.js"></script>
+  <script src="js/filterActions.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,15 @@
   }
 }
 
+.filter__continents-list{
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    list-style-type: none;
+  }
+}
+
 .companions__navigation{
   margin-top: 18px;
   background-color: #ffffff;

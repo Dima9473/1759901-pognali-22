@@ -7,10 +7,12 @@
 
   @media (min-width: $medium-width) {
     // max-height: 550px;
+    max-width: 100%;
   }
 
   @media (min-width: $large-width) {
     max-height: 815px;
+    max-width: 625px;
   }
 }
 
