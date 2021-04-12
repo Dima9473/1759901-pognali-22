@@ -156,5 +156,7 @@
 }
 
 .user-info__legend--left{
-  left: 10%;
+  @media (min-width: $large-width) {
+    left: 10%;
+  }
 }

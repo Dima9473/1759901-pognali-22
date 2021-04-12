@@ -55,11 +55,15 @@ padding-bottom: 25px;
   position: relative;
 
   @media (min-width: $medium-width) {
-    margin-right: 55px;
+    &:not(:last-child){
+      margin-right: 55px;
+    }
   }
 
   @media (min-width: $large-width) {
-    margin-right: 60px;
+    &:not(:last-child){
+      margin-right: 60px;
+    }
   }
 }
 
@@ -72,4 +76,13 @@ padding-bottom: 25px;
     display: flex;
     flex-direction: column;
   }
+}
+
+.users__photo{
+  // width: 100%;
+  // max-height: 270px;
+
+  // @media (min-width: $medium-width) {
+  //   max-height: 290px;
+  // }
 }
