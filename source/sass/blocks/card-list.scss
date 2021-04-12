@@ -56,6 +56,10 @@
 }
 
 .card-list__photo{
+  width: 70px;
+  @media (min-width: $medium-width) {
+    width: 100%;
+  }
 }
 
 .card-list__photo--small{
@@ -92,14 +96,6 @@
   position: relative;
   text-align: center;
   width: 100%;
-}
-
-.card-list__info--inline{
-  display: flex;
-
-  @media (min-width: $medium-width) {
-    flex-wrap: wrap;
-  }
 }
 
 .card-list__preferences{
@@ -227,20 +223,6 @@
   margin-top: auto;
 }
 
-.card-list__general-info{
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $medium-width) {
-    order: 1;
-  }
-
-  @media (min-width: $large-width) {
-    width: 30%;
-    order: 1;
-  }
-}
-
 .card-list__flags-order{
   @media (min-width: $medium-width) {
     order: 2;
@@ -250,23 +232,6 @@
 .card-list_name-br{
   @media (min-width: $medium-width) {
     display: none;
-  }
-}
-
-.card-list__trips-info{
-  @media (min-width: $medium-width) {
-    display: flex;
-    // flex-direction: column-reverse;
-    // justify-content: space-between;
-    margin-left: auto;
-    order: 3;
-  }
-
-  @media (min-width: $large-width) {
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    margin-left: auto;
-    order: 3;
   }
 }
 

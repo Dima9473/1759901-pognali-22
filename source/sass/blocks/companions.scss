@@ -128,16 +128,22 @@
   position: absolute;
   margin-top: 15px;
   margin-left: 15px;
+  min-height: 70px;
+  min-width: 70px;
 
   @media (min-width: $medium-width){
     position: static;
     margin-top: 35px;
     margin-left: 35px;
+    min-height: 190px;
+    min-width: 190px;
   }
 
   @media (min-width: $large-width){
     margin-top: 0;
     margin-left: 0;
+    min-height: 285px;
+    min-width: 285px;
   }
 }
 
@@ -161,8 +167,12 @@
 .companions__likes{
   top: 0;
   position: absolute;
+  margin-top: 60px;
+  margin-left: 50px;
 
   @media (min-width: $medium-width) {
+    margin-top: 0;
+    margin-left: 0;
     position: static;
   }
 }
