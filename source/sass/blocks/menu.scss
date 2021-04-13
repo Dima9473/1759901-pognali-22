@@ -73,22 +73,6 @@
   }
 }
 
-.menu__actions--visible{
-  display: flex;
-}
-
-.menu__actions--center{
-  align-items: center;
-  justify-content: center;
-}
-
-.menu__actions--top{
-  @media (max-width: $small-max-width) {
-   margin-top: -270px;
-   padding-bottom: 270px;
-  }
-}
-
 .menu__list{
   display: none;
   @media (min-width: $large-width) {
@@ -96,10 +80,6 @@
     flex-direction: row;
     align-items: center;
   }
-}
-
-.menu__list--visible{
-  display: flex;
 }
 
 .menu__list--row{

@@ -1,6 +1,25 @@
 .button{
-  background: $basic-yellow;
+  background-color: $basic-yellow;
   border-radius: 25px;
+  text-decoration: none;
+  padding: 15px 25px 15px 25px;
+
+  &:hover{
+    background-color: $special-yellow-dark;
+  }
+
+  &:active, &:focus{
+    background-color: $special-yellow-dark;
+    opacity: 0.3;
+  }
+}
+
+.button--dark-theme{
+  background-color: $basic-grey;
+}
+
+.button--transparent-theme{
+  background-color: transparent;
 }
 
 .button--active{
@@ -35,16 +54,8 @@
 
 .button__caption{
   @include text(17px, bold, 20px, $basic-blue);
+  text-align: center;
 }
-
-.button--dark-theme{
-  background-color: $basic-grey;
-}
-
-.button--transparent-theme{
-  background-color: transparent;
-}
-
 
 .button__caption--light{
   color: $basic-blue-light;

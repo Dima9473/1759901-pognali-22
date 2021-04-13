@@ -19,6 +19,9 @@
 }
 
 .main-menu__nav{
-  margin-top: 74px;
-  margin-right: 63px;
+  margin-top: 75px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 100px;
+  }
 }

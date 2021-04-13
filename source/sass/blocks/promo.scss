@@ -18,6 +18,11 @@
 }
 
 .promo__menu{
+  display: flex;
+  justify-content: center;
+  margin-top: -280px;
+  margin-bottom: 280px;
+
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;
   }
@@ -27,6 +32,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     padding-left: 25px;
@@ -128,4 +135,18 @@
 
 .promo__author-info{
   max-width: 170px;
+}
+
+.promo__menu-actions{
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $small-max-width) {
+    margin-top: -270px;
+    padding-bottom: 270px;
+   }
+}
+
+.promo__menu-actions--visible{
+  display: flex;
 }

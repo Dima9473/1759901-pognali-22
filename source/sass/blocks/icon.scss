@@ -1,5 +1,19 @@
 .icon{
-  fill: #101D41
+  fill: #101D41;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 10px;
+
+  @media (min-width: $medium-width) {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    padding: 15px;
+  }
 }
 
 .icon--main-theme{
@@ -28,13 +42,31 @@
 
 .icon--middle-background{
   background-color: $special-orange;
+
+  &:hover{
+    background-color: #F26926;
+  }
+
+  &:active, &:focus{
+    background-color: #F26926;
+    opacity: 0.3;
+  }
 }
 
 .icon--dark-background{
   background-color: $special-yellow-dark;
+
+  &:hover{
+    background-color: $special-orange;
+  }
+
+  &:active, &:focus{
+    background-color: $special-orange;
+    opacity: 0.3;
+  }
 }
 
-.icon--dark-blue-background{
+.icon--circle-dark-blue-background{
   background-color: $blue;
 }
 
@@ -43,5 +75,5 @@
 }
 
 .icon--light{
-  fill: #ffffff;;
+  fill: #ffffff;
 }
