@@ -64,7 +64,7 @@
             </a>
           </li>
           <li class="icon-list__item icon-list__item--stuck">
-            <a class="icon-list__link icon">
+            <a class="icon-list__link">
               <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -232,7 +232,7 @@
               </li>
             </ul>
           </nav>
-          <div class="promo__menu-action menu__actions promo__menu-actions--visible">
+          <div class="promo__menu-actions menu__actions promo__menu-actions--visible">
             <ul class="menu__list menu__list--row promo__menu-actions--visible icon-list">
               <li class="icon-list__item icon-list__item--stuck">
                 <a class="icon-list__link">
@@ -246,7 +246,7 @@
                 </a>
               </li>
               <li class="icon-list__item icon-list__item--stuck">
-                <a class="icon-list__link icon">
+                <a class="icon-list__link">
                   <svg class="icon icon--dark-blue icon--dark-background" width="17" height="14" viewBox="0 0 17 14"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -255,7 +255,7 @@
                 </a>
               </li>
             </ul>
-            <a class="menu__authorization button" href="authorization.html">
+            <a class="button" href="authorization.html">
               <div class="text button__caption">АВТОРИЗАЦИЯ</div>
             </a>
           </div>
@@ -291,75 +291,81 @@
             </p>
           </div>
           <ul class="countries__list card-list">
-            <li class="card-list__item">
-              <div class="card-list__card">
-                <img class="card-list__thailand" src="img/thailand.png" alt="Тайланд" />
-                <div class="card-list__info">
-                  <img class="card-list__flag flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
-                  <dl class="card-list visits-list">
-                    <div class="visits-list__item">
-                      <dt class="text visits-list__country">
-                        Тайланд
-                      </dt>
-                      <dd class="visits-list__count">
-                        <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.1"
-                            d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
-                        </svg>
-                        <span class="text visits-list__info">18321</span>
-                      </dd>
-                    </div>
-                  </dl>
-                  <small class="text visits-list__caption">Джунгли зовут!</small>
+            <li class="countries__item card-list__item">
+              <div class="countries__cards card-list__card">
+                <img class="countries__photo" src="img/thailand.png" alt="Тайланд" />
+                <div class="countries__card-info card-list__info">
+                  <img class="countries__flag card-list__flag flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
+                  <div class="countries__description">
+                    <dl class="countries__visits card-list visits-list">
+                      <div class="visits-list__item">
+                        <dt class="text visits-list__country">
+                          Тайланд
+                        </dt>
+                        <dd class="visits-list__caption">
+                          <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.1"
+                              d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
+                          </svg>
+                          <span class="text visits-list__info">Джунгли зовут!</span>
+                        </dd>
+                      </div>
+                    </dl>
+                    <small class="countries__visists-count text visits-list__count">18321</small>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="card-list__item">
-              <div class="card-list__card">
-                <img class="card-list__france" src="img/france.png" alt="Франция" />
-                <div class="card-list__info">
-                  <img class="card-list__flag  flag" src="img/france-flag.png" alt="Флаг Франции" />
-                  <dl class="card-list visits-list">
-                    <div class="visits-list__item">
-                      <dt class="text visits-list__country">
-                        Франция
-                      </dt>
-                      <dd class="visits-list__count">
-                        <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.1"
-                            d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
-                        </svg>
-                        <span class="text visits-list__info">12518</span>
-                      </dd>
-                    </div>
-                  </dl>
-                  <small class="text visits-list__caption">Трэ бьен, манифик!</small>
+            <li class="countries__item card-list__item">
+              <div class="countries__cards card-list__card">
+                <img class="countries__photo" src="img/france.png" alt="Франция" />
+                <div class="countries__card-info card-list__info">
+                  <img class="countries__flag card-list__flag flag" src="img/france-flag.png" alt="Флаг Франции" />
+                  <div class="countries__description">
+                    <dl class="countries__visits card-list visits-list">
+                      <div class="visits-list__item">
+                        <dt class="text visits-list__country">
+                          Франция
+                        </dt>
+                        <dd class="visits-list__caption">
+                          <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.1"
+                              d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
+                          </svg>
+                          <span class="text visits-list__info">Трэ бьен, манифик!</span>
+                        </dd>
+                      </div>
+                    </dl>
+                    <small class="countries__visists-count text visits-list__count">12518</small>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="card-list__item">
-              <div class="card-list__card">
-                <img class="card-list__czech" src="img/czech-photo.png" alt="Чехия" />
-                <div class="card-list__info">
-                  <img class="card-list__flag  flag" src="img/czech-flag.png" alt="Флаг Чехии" />
-                  <dl class="card-list visits-list">
-                    <div class="visits-list__item">
-                      <dt class="text visits-list__country">
-                        Чехия
-                      </dt>
-                      <dd class="visits-list__count">
-                        <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.1"
-                            d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
-                        </svg>
-                        <span class="text visits-list__info">5326</span>
-                      </dd>
-                    </div>
-                  </dl>
-                  <small class="text visits-list__caption">Закаулки старой Европы</small>
+            <li class="countries__item card-list__item">
+              <div class="countries__cards card-list__card">
+                <img class="countries__photo" src="img/czech-photo.png" alt="Чехия" />
+                <div class="countries__card-info card-list__info">
+                  <img class="countries__flag card-list__flag flag" src="img/czech-flag.png" alt="Флаг Чехии" />
+                  <div class="countries__description">
+                    <dl class="countries__visits card-list visits-list">
+                      <div class="visits-list__item">
+                        <dt class="text visits-list__country">
+                          Чехия
+                        </dt>
+                        <dd class="visits-list__caption">
+                          <svg class="visits-list__user-icon" width="14" height="14" viewBox="0 0 14 14"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.1"
+                              d="M4.375 3.92978C4.375 5.45321 5.55275 6.69294 7 6.69294C8.44725 6.69294 9.625 5.45321 9.625 3.92978C9.625 2.40636 8.44725 1.16663 7 1.16663C5.55275 1.16663 4.375 2.40636 4.375 3.92978ZM11.6667 12.8333H12.25V12.2193C12.25 9.8497 10.4177 7.92101 8.16667 7.92101H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193V12.8333H11.6667Z" />
+                          </svg>
+                          <span class="text visits-list__info"> Закаулки старой Европы </span>
+                        </dd>
+                      </div>
+                    </dl>
+                    <small class="countries__visists-count text visits-list__count">5326</small>
+                  </div>
                 </div>
               </div>
             </li>
@@ -468,7 +474,7 @@
                       </a>
                     </li>
                     <li class="icon-list__item">
-                      <a class="icon-list__link icon icon--disabled">
+                      <a class="icon-list__link icon--disabled">
                         <svg class="icon icon--transparent-theme" width="21" height="24" viewBox="0 0 21 24"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -749,17 +755,20 @@
       </ul>
       <div class="page-footer__developed">
         <span class="page-footer__developed-caption text text--default">Разработано</span>
-        <svg class="icon icon--dark-blue" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5658L13.5 33.3892L27 25.5658V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z" />
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="27" height="33.3033" transform="translate(0 0.0859375)" />
-            </clipPath>
-          </defs>
-        </svg>
+        <a href="https://htmlacademy.ru/study">
+          <svg class="icon icon--dark-blue" width="27" height="34" viewBox="0 0 27 34"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5658L13.5 33.3892L27 25.5658V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="27" height="33.3033" transform="translate(0 0.0859375)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

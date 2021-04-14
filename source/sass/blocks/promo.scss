@@ -20,8 +20,8 @@
 .promo__menu{
   display: flex;
   justify-content: center;
-  margin-top: -280px;
-  margin-bottom: 280px;
+  margin-top: -290px;
+  margin-bottom: 290px;
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;
@@ -140,11 +140,7 @@
 .promo__menu-actions{
   align-items: center;
   justify-content: center;
-
-  @media (max-width: $small-max-width) {
-    margin-top: -270px;
-    padding-bottom: 270px;
-   }
+  align-items: center;
 }
 
 .promo__menu-actions--visible{

@@ -38,6 +38,15 @@
 
 .icon--main-background{
   background-color: $basic-yellow;
+
+  &:hover{
+    background-color: $special-yellow-dark;
+  }
+
+  &:active, &:focus{
+    background-color: $special-yellow-dark;
+    opacity: 0.3;
+  }
 }
 
 .icon--middle-background{
@@ -72,6 +81,16 @@
 
 .icon--dark-blue{
   fill: $dark-blue;
+
+  &:hover{
+    fill: $special-grey;
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    fill: $special-grey;
+    opacity: 0.3;
+  }
 }
 
 .icon--light{

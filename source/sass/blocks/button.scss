@@ -1,9 +1,13 @@
 .button{
   background-color: $basic-yellow;
-  border-radius: 25px;
+  border-radius: 40px;
   text-decoration: none;
-  padding: 15px 25px 15px 25px;
+  padding: 10px 15px 10px 15px;
 
+  @media (min-width: $large-width) {
+    text-decoration: none;
+    padding: 25px 25px 25px 25px;
+  }
   &:hover{
     background-color: $special-yellow-dark;
   }
