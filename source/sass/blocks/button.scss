@@ -2,12 +2,7 @@
   background-color: $basic-yellow;
   border-radius: 40px;
   text-decoration: none;
-  padding: 10px 15px 10px 15px;
 
-  @media (min-width: $large-width) {
-    text-decoration: none;
-    padding: 25px 25px 25px 25px;
-  }
   &:hover{
     background-color: $special-yellow-dark;
   }
@@ -15,6 +10,14 @@
   &:active, &:focus{
     background-color: $special-yellow-dark;
     opacity: 0.3;
+  }
+}
+
+.button--authorization{
+  padding: 10px 15px 10px 15px;
+
+  @media (min-width: $large-width) {
+    padding: 25px 25px 25px 25px;
   }
 }
 

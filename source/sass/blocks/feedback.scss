@@ -28,6 +28,15 @@
 
 .feedback__authorisation-link{
   color: $basic-yellow;
+
+  &:hover{
+    color: $special_orange;
+  }
+
+  &:active, &:focus{
+    color: $special_orange;
+    opacity: 0.3;
+  }
 }
 
 .feedback__registration{
@@ -35,15 +44,36 @@
 }
 
 .feedback__email{
+  height: 62px;
+  width: 90%;
+  border-radius: 20px;
+
+  @media (min-width: $medium-width) {
+    height: 80px;
+  }
+
+  &::placeholder{
+    @include text(18px, bold, 18px, $special-grey);
+    opacity: 0.3;
+    padding-left: 25px
+  }
+
+  &:hover::placeholder{
+    color: $special-grey;
+    opacity: 1;
+  }
+
+  &:active, &:focus{
+    background-color: $basic-blue;
+  }
+
+  &:active::placeholder, &:focus::placeholder{
+    color: #ffffff;
+  }
 }
 
 .feedback__any-questions{
   @include text(16px, 300, 22px, #FFFFFF);
   letter-spacing: 0.01em;
   text-align: center;
-}
-
-.feedback__email::placeholder{
-  @include text(18px, bold, 18px, $special-grey);
-  opacity: 0.3;
 }

@@ -85,3 +85,11 @@
 .menu__list--row{
   flex-direction: row;
 }
+
+.menu__authorization{
+  padding: 10px 15px 10px 15px;
+
+  @media (min-width: $large-width) {
+    padding: 25px 25px 25px 25px;
+  }
+}

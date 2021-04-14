@@ -16,8 +16,27 @@
   }
 }
 
+.icon__social{
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 0.3;
+  }
+}
+
 .icon--main-theme{
   fill: $basic-yellow;
+
+  &:hover{
+    fill: $special-yellow-dark
+  }
+
+  &:active, &:focus{
+    fill: $special-yellow-dark;
+    opacity: 0.3;
+  }
 }
 
 .icon--special-dark-theme{

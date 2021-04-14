@@ -17,6 +17,15 @@
 
 .icon-list__details--light{
   color: $basic-yellow;
+
+  &:hover{
+    color: $special-yellow-dark
+  }
+
+  &:active, &:focus{
+    color: $special-yellow-dark;
+    opacity: 0.3;
+  }
 }
 
 .icon-list__item{
