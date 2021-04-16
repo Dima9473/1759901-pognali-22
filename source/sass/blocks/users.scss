@@ -54,6 +54,10 @@ padding-bottom: 25px;
 .users__card-list{
   position: relative;
 
+  &:hover{
+    transform: scale(1.01, 1.01);
+  }
+
   @media (min-width: $medium-width) {
     &:not(:last-child){
       margin-right: 55px;
@@ -86,20 +90,6 @@ padding-bottom: 25px;
   @media (min-width: $large-width) {
     max-height: 297px;
   }
-}
-
-.users__flags{
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-.users__flag{
-  width: 35px;
-  height: 25px;
-  margin-right: 10px;
 }
 
 .users__card-info{
@@ -227,10 +217,18 @@ padding-bottom: 25px;
   display: none;
 }
 
-.users__flag-tooltip-position{
-  position: absolute;
-  margin-left: -10px;
-  margin-top: -5px;
+.users__flags{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.users__flag{
+  width: 35px;
+  height: 25px;
+  margin-right: 10px;
 }
 
 .users__flag-tooltip-1{
@@ -241,6 +239,99 @@ padding-bottom: 25px;
   }
 }
 
+.users__flag-tooltip-1-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -45px;
+  }
+}
+
 .users__flag-tooltip-1--visible {
+  display: none;
+}
+
+.users__flag-tooltip-2{
+  &:hover{
+    .users__flag-tooltip-2--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-2-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -40px;
+  }
+}
+
+.users__flag-tooltip-2--visible {
+  display: none;
+}
+
+.users__flag-tooltip-3{
+  &:hover{
+    .users__flag-tooltip-3--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-3-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -55px;
+  }
+}
+
+.users__flag-tooltip-3--visible {
+  display: none;
+}
+
+.users__flag-tooltip-4{
+  &:hover{
+    .users__flag-tooltip-4--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-4-position{
+  position: absolute;
+  margin-left: -15px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -35px;
+  }
+}
+
+.users__flag-tooltip-4--visible {
+  display: none;
+}
+
+.users__flag-tooltip-5{
+  &:hover{
+    .users__flag-tooltip-5--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-5-position{
+  position: absolute;
+  margin-left: -5px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -25px;
+  }
+}
+
+.users__flag-tooltip-5--visible {
   display: none;
 }
