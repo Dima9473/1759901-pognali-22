@@ -50,3 +50,15 @@
     padding-bottom: 85px;
   }
 }
+
+.profile__show-tarifs{
+  &:hover{
+    color: #132576;
+    opacity: 0.7;
+  }
+
+  &:active, &:focus{
+    color: #132576;
+    opacity: 0.3;
+  }
+}

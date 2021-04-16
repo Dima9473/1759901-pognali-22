@@ -1,6 +1,32 @@
 .button{
-  background: $basic-yellow;
-  border-radius: 25px;
+  background-color: $basic-yellow;
+  border-radius: 40px;
+  text-decoration: none;
+
+  &:hover{
+    background-color: $special-yellow-dark;
+  }
+
+  &:active, &:focus{
+    background-color: $special-yellow-dark;
+    opacity: 0.3;
+  }
+}
+
+.button--authorization{
+  padding: 10px 15px 10px 15px;
+
+  @media (min-width: $large-width) {
+    padding: 25px 25px 25px 25px;
+  }
+}
+
+.button--dark-theme{
+  background-color: $basic-grey;
+}
+
+.button--transparent-theme{
+  background-color: transparent;
 }
 
 .button--active{
@@ -35,16 +61,8 @@
 
 .button__caption{
   @include text(17px, bold, 20px, $basic-blue);
+  text-align: center;
 }
-
-.button--dark-theme{
-  background-color: $basic-grey;
-}
-
-.button--transparent-theme{
-  background-color: transparent;
-}
-
 
 .button__caption--light{
   color: $basic-blue-light;

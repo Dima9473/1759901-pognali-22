@@ -54,12 +54,20 @@ padding-bottom: 25px;
 .users__card-list{
   position: relative;
 
+  &:hover{
+    transform: scale(1.01, 1.01);
+  }
+
   @media (min-width: $medium-width) {
-    margin-right: 55px;
+    &:not(:last-child){
+      margin-right: 55px;
+    }
   }
 
   @media (min-width: $large-width) {
-    margin-right: 60px;
+    &:not(:last-child){
+      margin-right: 60px;
+    }
   }
 }
 
@@ -72,4 +80,258 @@ padding-bottom: 25px;
     display: flex;
     flex-direction: column;
   }
+}
+
+.users__photo{
+  @media (min-width: $medium-width) {
+    max-height: 365px;
+  }
+
+  @media (min-width: $large-width) {
+    max-height: 297px;
+  }
+}
+
+.users__card-info{
+  padding-bottom: 24px;
+}
+
+.users__plain{
+  position: absolute;
+  margin-left: -30px;
+  margin-top: -5px;
+}
+
+.users__plain-1{
+  &:hover{
+    .users__plain--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__plain--visible-1{
+  display: none;
+}
+
+
+.users__plain-2{
+  &:hover{
+    .users__plain--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__plain--visible-2{
+  display: none;
+}
+
+.users__bus{
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -5px;
+}
+
+.users__bus-1{
+  &:hover{
+    .users__bus--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__bus--visible-1{
+  display: none;
+}
+
+.users__bus-2{
+  &:hover{
+    .users__bus--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__bus--visible-2{
+  display: none;
+}
+
+.users__bicycle{
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -5px;
+}
+
+.users__bicycle-1{
+  &:hover{
+    .users__bicycle--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__bicycle--visible-1{
+  display: none;
+}
+
+.users__bicycle-2{
+  &:hover{
+    .users__bicycle--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__bicycle--visible-2{
+  display: none;
+}
+
+.users__walk{
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.users__walk-1{
+  &:hover{
+    .users__walk--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__walk--visible-1{
+  display: none;
+}
+
+.users__walk-2{
+  &:hover{
+    .users__walk--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__walk--visible-2{
+  display: none;
+}
+
+.users__flags{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.users__flag{
+  width: 35px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.users__flag-tooltip-1{
+  &:hover{
+    .users__flag-tooltip-1--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-1-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -45px;
+  }
+}
+
+.users__flag-tooltip-1--visible {
+  display: none;
+}
+
+.users__flag-tooltip-2{
+  &:hover{
+    .users__flag-tooltip-2--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-2-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -40px;
+  }
+}
+
+.users__flag-tooltip-2--visible {
+  display: none;
+}
+
+.users__flag-tooltip-3{
+  &:hover{
+    .users__flag-tooltip-3--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-3-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -55px;
+  }
+}
+
+.users__flag-tooltip-3--visible {
+  display: none;
+}
+
+.users__flag-tooltip-4{
+  &:hover{
+    .users__flag-tooltip-4--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-4-position{
+  position: absolute;
+  margin-left: -15px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -35px;
+  }
+}
+
+.users__flag-tooltip-4--visible {
+  display: none;
+}
+
+.users__flag-tooltip-5{
+  &:hover{
+    .users__flag-tooltip-5--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-5-position{
+  position: absolute;
+  margin-left: -5px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -25px;
+  }
+}
+
+.users__flag-tooltip-5--visible {
+  display: none;
 }

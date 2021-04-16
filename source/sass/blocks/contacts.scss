@@ -7,9 +7,12 @@
 .contacts__get-direction{
   display: flex;
   flex-direction: column;
-  @media (min-width: $medium-width) {
+  margin-bottom: 57px;
+
+  @media (min-width: $large-width) {
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
 }
 
@@ -63,4 +66,31 @@ fill: $basic-yellow;
     display: none;
   }
 
+}
+
+.contacts__build-way{
+  height: 62px;
+  width: 100%;
+  border: 3px solid #192144;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  @media (min-width: $large-width) {
+    width: 324px;
+  }
+
+  &:hover{
+    background: #192144;
+    .contacts__wat-text{
+      color: #ffffff;
+    }
+  }
+
+  &:active, &:focus{
+    background: #192144;
+    .contacts__wat-text{
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
 }

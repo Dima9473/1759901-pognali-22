@@ -124,7 +124,7 @@
   @media (min-width: $large-width){
     order: 4;
     width: 45%;
-    margin-top: 25px;
+    margin-top: 75px;
     height: 105px;
   }
 }
@@ -142,6 +142,8 @@
     order: 5;
     width: 45%;
     height: 105px;
+
+    margin-top: 75px;
   }
 }
 
@@ -156,5 +158,7 @@
 }
 
 .user-info__legend--left{
-  left: 10%;
+  @media (min-width: $large-width) {
+    left: 10%;
+  }
 }

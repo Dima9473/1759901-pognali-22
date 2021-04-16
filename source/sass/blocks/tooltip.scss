@@ -1,0 +1,31 @@
+.tooltip{
+  @include text(14px, normal, 16px, #FFFFFF);
+  padding: 5px;
+  border: 1px solid #000000;
+  background-color: $special-blue-dark;
+  background: none repeat scroll 0 0 $special-blue-dark;
+
+  @media (min-width: $medium-width) {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &:after, &::before{
+    bottom: 100%;
+    left: 70%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after{
+    border-color: rgba(238, 238, 238, 0);
+    border-bottom-color: $special-blue-dark;
+    border-width: 5px;
+    margin-left: -15px;
+  }
+}
