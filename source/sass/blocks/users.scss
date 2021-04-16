@@ -79,10 +79,168 @@ padding-bottom: 25px;
 }
 
 .users__photo{
-  // width: 100%;
-  // max-height: 270px;
+  @media (min-width: $medium-width) {
+    max-height: 365px;
+  }
 
-  // @media (min-width: $medium-width) {
-  //   max-height: 290px;
-  // }
+  @media (min-width: $large-width) {
+    max-height: 297px;
+  }
+}
+
+.users__flags{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.users__flag{
+  width: 35px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.users__card-info{
+  padding-bottom: 24px;
+}
+
+.users__plain{
+  position: absolute;
+  margin-left: -30px;
+  margin-top: -5px;
+}
+
+.users__plain-1{
+  &:hover{
+    .users__plain--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__plain--visible-1{
+  display: none;
+}
+
+
+.users__plain-2{
+  &:hover{
+    .users__plain--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__plain--visible-2{
+  display: none;
+}
+
+.users__bus{
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -5px;
+}
+
+.users__bus-1{
+  &:hover{
+    .users__bus--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__bus--visible-1{
+  display: none;
+}
+
+.users__bus-2{
+  &:hover{
+    .users__bus--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__bus--visible-2{
+  display: none;
+}
+
+.users__bicycle{
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -5px;
+}
+
+.users__bicycle-1{
+  &:hover{
+    .users__bicycle--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__bicycle--visible-1{
+  display: none;
+}
+
+.users__bicycle-2{
+  &:hover{
+    .users__bicycle--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__bicycle--visible-2{
+  display: none;
+}
+
+.users__walk{
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.users__walk-1{
+  &:hover{
+    .users__walk--visible-1{
+      display: block;
+    }
+  }
+}
+
+.users__walk--visible-1{
+  display: none;
+}
+
+.users__walk-2{
+  &:hover{
+    .users__walk--visible-2{
+      display: block;
+    }
+  }
+}
+
+.users__walk--visible-2{
+  display: none;
+}
+
+.users__flag-tooltip-position{
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.users__flag-tooltip-1{
+  &:hover{
+    .users__flag-tooltip-1--visible{
+      display: block;
+    }
+  }
+}
+
+.users__flag-tooltip-1--visible {
+  display: none;
 }
