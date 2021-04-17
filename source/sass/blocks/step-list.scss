@@ -105,6 +105,21 @@
 
 .step-list__previous{
   border: none;
+
+  &:hover{
+    background-color: transparent;
+    .step-list__step-back-caption{
+        color: $basic-blue-light;
+    }
+  }
+
+  &:active, &:focus{
+    background-color: transparent;
+    .step-list__step-back-caption{
+      color: $basic-blue-light;
+      opacity: 0.3;
+    }
+  }
 }
 
 .step-list__trip-data{
@@ -156,6 +171,9 @@
 }
 
 .step-list__count{
+  box-sizing: border-box;
+  border-radius: 4px;
+
   @include text(14px, 500, 14px, $basic-blue-light);
   text-align: center;
 
@@ -165,6 +183,14 @@
 
   @media (min-width: $large-width) {
     order: 1;
+  }
+
+  &:hover{
+    border: 1px solid #959BB2;
+  }
+
+  &:active, &:focus{
+    border: 1px solid #161C35;
   }
 }
 
