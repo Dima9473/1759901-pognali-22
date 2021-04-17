@@ -32,6 +32,14 @@
   @media (min-width: $medium-width) {
     display: flex;
   }
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 0.3;
+  }
 }
 
 .filter__filter-text{

@@ -31,6 +31,11 @@
   @media (min-width: $large-width) {
     border-radius: 25px;
   }
+
+  &:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 4px 2px -2px gray;
+  }
 }
 
 .card-list--indentation{
@@ -119,6 +124,7 @@
 
   &:hover{
     color: $basic-blue-light;
+    opacity: 0.6;
   }
 
   &:active, &:focus{
@@ -152,9 +158,28 @@
 .card-list__button{
   background-color: #F9EAEA;
 
+  &:hover{
+    background-color: #F9D8D8;
+  }
+
+  &:active, &:focus{
+    background-color: #F9D8D8;
+    opacity: 0.5;
+  }
   // @media (min-width: $medium-width) {
   //   order: 7;
   // }
+}
+
+.card-list__button--disabled{
+  background-color: #E2E5F2;
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 0.1;
+  }
 }
 
 .card-list__transport-text{

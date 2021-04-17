@@ -4,4 +4,14 @@
 
 .continents-list__item{
   margin-right: 30px;
+  color: $dark-blue;
+  opacity: 0.3;
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 1;
+  }
 }

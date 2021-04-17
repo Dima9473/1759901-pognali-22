@@ -12,3 +12,15 @@
     justify-content: space-between;
   }
 }
+
+.companions-operations__button{
+  &:hover{
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    background-color: transparent;
+    opacity: 0.3;
+  }
+}

@@ -1,5 +1,13 @@
 .dropdown-multiple-select__text{
   @include text(16px, bold, 18px, $basic-blue-light);
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 0.3;
+  }
 }
 
 .dropdown-multiple-select__header{
