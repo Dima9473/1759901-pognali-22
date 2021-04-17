@@ -3,10 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  width: 100%;
 
   @media (min-width: $medium-width) {
     align-items: flex-start;
-    padding-left: 100px;
+    // padding-left: 100px;
   }
 }
 
