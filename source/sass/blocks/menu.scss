@@ -93,3 +93,7 @@
     padding: 25px 25px 25px 25px;
   }
 }
+
+.menu__open-icon{
+  @include icon();
+}

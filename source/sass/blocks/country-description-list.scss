@@ -13,6 +13,16 @@
 
 .country-description-list__change-text{
   @include text(16px, normal, 22px, $special-grey);
+
+  &:hover{
+    .country-description-list__change-text::placeholder{
+      font-size: 20px;
+    }
+  }
+
+  &:active, &:focus{
+    background: #E2E5F1;
+  }
 }
 
 .country-description-list__change-text::placeholder{

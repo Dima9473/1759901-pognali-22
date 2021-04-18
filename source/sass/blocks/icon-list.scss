@@ -49,3 +49,13 @@
 .icon-list__link{
   position: relative;
 }
+
+.icon-list__icon{
+  height: 20px;
+  width: 20px;
+
+  @media (min-width: $medium-width) {
+    width: 23px;
+    height: 22px;
+  }
+}

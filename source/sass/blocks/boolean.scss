@@ -1,3 +1,17 @@
 .boolean__text{
   @include text(15px, normal, 15px, $basic-blue-light);
 }
+
+.boolean__check{
+  border: 1px solid #CBCED9;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:hover{
+    border: 1px solid #959BB2;
+  }
+
+  &:active, &:focus{
+    background: #E2E5F1;
+  }
+}
