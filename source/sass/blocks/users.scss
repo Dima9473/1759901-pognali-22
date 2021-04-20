@@ -54,10 +54,6 @@ padding-bottom: 25px;
 .users__card-list{
   position: relative;
 
-  &:hover{
-    transform: scale(1.01, 1.01);
-  }
-
   @media (min-width: $medium-width) {
     &:not(:last-child){
       margin-right: 55px;

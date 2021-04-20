@@ -176,16 +176,16 @@
           <span class="filter__filter-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
           <ul class="filter__continents-list continents-list">
             <li class="continents-list__item">
-              Европа
+              <span class="text">Европа</span>
             </li>
             <li class="continents-list__item">
-              Азия
+              <span class="text">Азия</span>
             </li>
             <li class="continents-list__item">
-              Америка
+              <span class="text">Америка</span>
             </li>
             <li class="continents-list__item">
-              Острова
+              <span class="text">Острова</span>
             </li>
           </ul>
           <span class="filter__show-all text">Показать все</span>
@@ -373,7 +373,7 @@
         </div>
       </div>
     </section>
-    <div class="companions-container">
+    <div class="companions__container">
       <div class="container">
         <h1 class="visually-hidden">Подбор попутчиков</h1>
         <div class="companions-operations">
@@ -696,7 +696,7 @@
                   <div class="companions__buttons card-list__buttons">
                     <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button button--active">
+                      <button class="card-list__button button card-list__button--disabled">
                         <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <g>
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -822,7 +822,7 @@
                   <div class="companions__buttons card-list__buttons">
                     <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button button--active">
+                      <button class="card-list__button button card-list__button--disabled">
                         <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <g>
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -951,7 +951,7 @@
                   <div class="companions__buttons card-list__buttons">
                     <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button button--active">
+                      <button class="card-list__button button card-list__button--disabled">
                         <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <g>
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1040,7 +1040,7 @@
                 </div>
               </li>
             </ul>
-            <button type="button" class="button button--plus button--transparent-theme">
+            <button type="button" class="companions-operations__button  button button--plus button--transparent-theme">
               <svg class="button--active" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                 <line x1="7" x2="7" y2="14" stroke="#C2C4C9" stroke-width="2" />
                 <line y1="7" x2="14" y2="7" stroke="#C2C4C9" stroke-width="2" />
@@ -1049,20 +1049,22 @@
             </button>
           </section>
         </div>
-        <div class="companions__navigation">
+      </div>
+      <div class="companions__navigation">
+        <div class="companions__navigation-container container">
           <div class="companions__pages">
-            <span class="companions__page">1</span>
-            <span class="companions__page">2</span>
-            <span class="companions__page">3</span>
-            <span class="companions__page">4</span>
+            <span class="companions__page text">1</span>
+            <span class="companions__page text">2</span>
+            <span class="companions__page text">3</span>
+            <span class="companions__page text">4</span>
           </div>
           <div class="companions__page-buttons">
-            <button class="companions__button button" type="button">
+            <button class="companions__button button button--transparent-theme" type="button">
               <svg class="button--active" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 9L9.75 0.339745L9.75 17.6603L0 9Z" />
               </svg>
             </button>
-            <button class="companions__button button" type="button">
+            <button class="companions__button button button--transparent-theme" type="button">
               <svg class="button--active" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
               </svg>

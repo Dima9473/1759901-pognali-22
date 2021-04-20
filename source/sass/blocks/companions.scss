@@ -4,6 +4,17 @@
   flex-direction: column;
 }
 
+.companions__navigation-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  @media (min-width: $medium-width) {
+    width: 100%;
+  }
+}
+
 .companions__pages{
   display: none;
 
@@ -76,7 +87,7 @@
   @media (min-width: $large-width) {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 0;
+    // margin-top: 0;
     margin-left: auto;
   }
 }
@@ -201,5 +212,32 @@
   @media (min-width: $large-width) {
     flex-direction: row;
     justify-content: flex-start;
+  }
+}
+
+.companions__page{
+  padding: 12px;
+
+  @media (min-width: $medium-width) {
+    padding: 21px;
+  }
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    background-color: $basic-yellow;
+    border-radius: 50%;
+  }
+}
+
+
+.companions__button{
+  &:hover{
+    background-color: transparent;
+  }
+  &:active, &:focus{
+    background-color: transparent;
+    opacity: 0.3;
   }
 }
