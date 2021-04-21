@@ -231,7 +231,6 @@
   }
 }
 
-
 .companions__button{
   &:hover{
     background-color: transparent;
@@ -240,4 +239,88 @@
     background-color: transparent;
     opacity: 0.3;
   }
+}
+
+.companions__transport-tooltip-1{
+  &:hover{
+    .companions__transport-tooltip-1--visible{
+      display: block;
+    }
+  }
+}
+
+.companions__transport-tooltip-1-position{
+  position: absolute;
+  margin-left: -40px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -70px;
+  }
+}
+
+.companions__transport-tooltip-1--visible{
+  display: none;
+}
+
+.companions__transport-tooltip-2{
+  &:hover{
+    .companions__transport-tooltip-2--visible{
+      display: block;
+    }
+  }
+}
+
+.companions__transport-tooltip-2-position{
+  position: absolute;
+  margin-left: -52px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -83px;
+  }
+}
+
+.companions__transport-tooltip-2--visible{
+  display: none;
+}
+
+.companions__transport-tooltip-3{
+  &:hover{
+    .companions__transport-tooltip-3--visible{
+      display: block;
+    }
+  }
+}
+
+.companions__transport-tooltip-3-position{
+  position: absolute;
+  margin-left: -30px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -55px;
+  }
+}
+
+.companions__transport-tooltip-3--visible{
+  display: none;
+}
+
+.companions__transport-tooltip-4{
+  &:hover{
+    .companions__transport-tooltip-4--visible{
+      display: block;
+    }
+  }
+}
+
+.companions__transport-tooltip-4-position{
+  position: absolute;
+  margin-left: -20px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -45px;
+  }
+}
+
+.companions__transport-tooltip-4--visible{
+  display: none;
 }
