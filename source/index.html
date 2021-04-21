@@ -12,16 +12,23 @@
   <header class="page-header">
     <div class="container page-header__menu  menu">
       <a href="#" class="menu__logo-mobile">
-        <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x">
+          <img class="logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226" height="30"
+            alt="Логотип" />
+        </picture>
       </a>
+
       <a href="#" class="menu__logo-mobile-dark visually-hidden">
-        <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
-      </a>
-      <a href="#" class="menu__logo">
-        <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
+          <img class="logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x" width="226"
+            height="30" alt="Логотип" />
+        </picture>
       </a>
       <a class="menu__toggle">
-        <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
+        <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11" svg
           xmlns="http://www.w3.org/2000/svg">
           <rect width="25" height="3" rx="1.5" />
           <rect y="8" width="25" height="3" rx="1.5" />
@@ -164,8 +171,14 @@
         <header class="promo__header">
           <h2 class="promo__slogan text">В путешествие <br>с крутыми <br>попутчиками!</h2>
           <div class="promo__quote">
-            <img class="promo__traveller-icon" src="img/traveller-illustration.png" alt="Путешественник">
-            <img class="promo__traveller-icon__large" src="img/traveller-illustration-large.png" alt="Путешественник">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/traveller-illustration-large.png 1x, img/traveller-illustration-large@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/traveller-illustration-medium.png 1x, img/traveller-illustration-medium@2x.png 2x">
+              <img class="promo__traveller-icon" src="img/traveller-illustration.png"
+                srcset="img/traveller-illustration@2x.png 2x" width="192" height="255" alt="Путешественник" />
+            </picture>
             <blockquote class="promo__review">
               <q class="text text--default">Лучшее приложение, <br> что я видел в жизни!</q>
               <p class="promo__author-info text text--bold">Мурат Эльтазин главный редактор газеты <q>гаджет лайф</q>
@@ -194,14 +207,11 @@
           </ul>
         </div>
         <div class="container promo__menu menu">
-          <a href="#" class="menu__logo-mobile menu__logo-mobile--hidden">
-            <img class="logo" src="img/logo-mobile.png" width="226" height="30" alt="Погнали?" />
-          </a>
-          <a href="#" class="menu__logo-mobile-dark visually-hidden">
-            <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
-          </a>
-          <a href="#" class="menu__logo">
-            <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
+          <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--visible">
+            <picture>
+              <img class="logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x" width="226"
+                height="30" alt="Логотип" />
+            </picture>
           </a>
           <a class="menu__toggle menu__toggle--hidden">
             <svg class="menu__open-icon icon icon--light" width="25" height="11" viewBox="0 0 25 11"
@@ -265,21 +275,24 @@
       </div>
     </section>
     <section class="about">
-      <div class="about__container container">
-        <h2 class="text text--caption">О сервисе</h2>
-        <p class="about__description text text--default">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
-          черпайте вдохновение в чужих.
-        </p>
-        <p class="about__description text text--bold">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-        </p>
-        <button class="about__details button button--arrow">
-          <span class="button__caption">Подробнее</span>
-          <svg width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
-          </svg>
-        </button>
+      <div class="container">
+        <div class="about__container">
+          <h2 class="text text--caption">О сервисе</h2>
+          <p class="about__description text text--default">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
+            и
+            черпайте вдохновение в чужих.
+          </p>
+          <p class="about__description text text--bold">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+          <button class="about__details button button--arrow">
+            <span class="button__caption">Подробнее</span>
+            <svg width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="countries">
@@ -295,8 +308,21 @@
           <ul class="countries__list card-list">
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
-                <img class="countries__photo" src="img/thailand.png" alt="Тайланд" />
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/thailand-large.png 1x, img/thailand-large@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x">
+                  <img class="countries__photo" src="img/thailand-small.png" srcset="img/thailand-small@2x.png 2x"
+                    width="270" height="110" alt="Тайланд" />
+                </picture>
                 <div class="countries__card-info card-list__info">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="img/thailand-large.png 1x, img/thailand-large@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x">
+                    <img class="countries__flag card-list__flag flag" src="img/thailand-flag.png"
+                      srcset="img/thailand-flag@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
+                  </picture>
                   <img class="countries__flag card-list__flag flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
                   <div class="countries__description">
                     <dl class="countries__visits card-list visits-list">
@@ -397,7 +423,6 @@
               отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
             <p class="text text--bold">Теперь можно легко найти единомышленников!</p>
           </div>
-          <!-- <img src="img/rogovaya-back-desktop.png" alt="Фото Роговой" /> -->
           <ul class="users__cards card-list">
             <li class="users__card-list card-list__item">
               <div class="users__card card-list__card">

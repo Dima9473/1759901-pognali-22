@@ -1,25 +1,16 @@
 .menu{}
 
 .menu__logo-mobile{
-  @media (min-width: $medium-width){
-    display: none;
-  }
-}
-
-.menu__logo-mobile--hidden{
-  display: none;
 }
 
 .menu__logo-mobile-dark{
-  @media (min-width: $medium-width) {
-    display: none;
-  }
 }
 
-.menu__logo{
+.menu__logo-mobile-dark--visible{
   display: none;
-  @media (min-width: $medium-width){
-      display: block;
+
+  @media (min-width: $large-width) {
+    display: block;
   }
 }
 
