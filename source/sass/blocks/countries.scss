@@ -68,9 +68,11 @@
   margin-top: -10px;
   margin-left: 25px;
   height: 24px;
+  width: 35px;
 
   @media (min-width: $medium-width) {
     height: 47px;
+    width: 70px;
     margin-top: -45px;
     margin-left: 410px;
   }

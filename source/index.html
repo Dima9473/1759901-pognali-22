@@ -19,7 +19,6 @@
             alt="Логотип" />
         </picture>
       </a>
-
       <a href="#" class="menu__logo-mobile-dark visually-hidden">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
@@ -309,21 +308,17 @@
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/thailand-large.png 1x, img/thailand-large@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x">
                   <img class="countries__photo" src="img/thailand-small.png" srcset="img/thailand-small@2x.png 2x"
                     width="270" height="110" alt="Тайланд" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
-                    <source media="(min-width: 1440px)"
-                      srcset="img/thailand-large.png 1x, img/thailand-large@2x.png 2x">
                     <source media="(min-width: 768px)"
-                      srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x">
-                    <img class="countries__flag card-list__flag flag" src="img/thailand-flag.png"
-                      srcset="img/thailand-flag@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
+                      srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x">
+                    <img class="countries__flag card-list__flag flag" src="img/thailand-flag-small.png"
+                      srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                   </picture>
-                  <img class="countries__flag card-list__flag flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
                   <div class="countries__description">
                     <dl class="countries__visits card-list visits-list">
                       <div class="visits-list__item">
@@ -347,9 +342,18 @@
             </li>
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
-                <img class="countries__photo" src="img/france.png" alt="Франция" />
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/france-medium.png 1x, img/france-medium@2x.png 2x">
+                  <img class="countries__photo" src="img/france-small.png" srcset="img/france-small@2x.png 2x"
+                    width="270" height="110" alt="Франция" />
+                </picture>
                 <div class="countries__card-info card-list__info">
-                  <img class="countries__flag card-list__flag flag" src="img/france-flag.png" alt="Флаг Франции" />
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/france-flag-medium.png 1x, img/france-flag-medium@2x.png 2x">
+                    <img class="countries__flag card-list__flag flag" src="img/france-flag-small.png"
+                      srcset="img/france-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Франции" />
+                  </picture>
                   <div class="countries__description">
                     <dl class="countries__visits card-list visits-list">
                       <div class="visits-list__item">
@@ -373,9 +377,18 @@
             </li>
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
-                <img class="countries__photo" src="img/czech-photo.png" alt="Чехия" />
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/czech-medium.png 1x, img/czech-medium@2x.png 2x">
+                  <img class="countries__photo" src="img/czech-small.png" srcset="img/czech-small@2x.png 2x" width="270"
+                    height="110" alt="Чехия" />
+                </picture>
                 <div class="countries__card-info card-list__info">
-                  <img class="countries__flag card-list__flag flag" src="img/czech-flag.png" alt="Флаг Чехии" />
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
+                    <img class="countries__flag card-list__flag flag" src="img/czech-flag-small.png"
+                      srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                  </picture>
                   <div class="countries__description">
                     <dl class="countries__visits card-list visits-list">
                       <div class="visits-list__item">
@@ -416,8 +429,14 @@
               Попутчики
             </h2>
             <div class="users__background-images">
-              <img class="users__back-photo" src="img/smolov-back-desktop.png" alt="Фотографи Смолова" />
-              <img src="img/back.svg" alt="Фоновое изображение" />
+              <picture>
+                <img class="users__back-photo" src="img/smolov-back-desktop.png"
+                  srcset="img/smolov-back-desktop@2x.png 2x" width="143" height="143" alt="Фотографи Смолова" />
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/back-medium.png 1x, img/back-medium@2x.png 2x">
+                <img src="img/back.svg" srcset="img/back@2x.png 2x" width="226" height="30" alt="Фоновое изображение" />
+              </picture>
             </div>
             <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на идеальный
               отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
@@ -426,7 +445,10 @@
           <ul class="users__cards card-list">
             <li class="users__card-list card-list__item">
               <div class="users__card card-list__card">
-                <img class="users__photo" src="img/tany-photo.png" alt="Фото Тани Фирсовой" />
+                <picture>
+                  <img class="users__photo" src="img/tany-photo.png" srcset="img/tany-photo@2x.png 2x" width="226"
+                    height="30" alt="Фото Тани Фирсовой" />
+                </picture>
                 <div class="users__level ">
                   <b class="text users__level-number">99</b>
                   <span class="text users__level-text">level</span>
@@ -434,19 +456,34 @@
                 <div class="users__card-info card-list__info">
                   <ul class="users__flags card-list__flags">
                     <li class="users__flag-tooltip-1">
-                      <img class="users__flag  flag" src="img/seychelles-flag.png" alt="Флаг Сейшилы" />
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/seychelles-flag-medium.png 1x, img/seychelles-flag-medium@2x.png 2x">
+                        <img class="users__flag  flag" src="img/seychelles-flag-small.png"
+                          srcset="img/seychelles-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Сейшилы" />
+                      </picture>
                       <div class="users__flag-tooltip-1-position users__flag-tooltip-1--visible tooltip text">
                         Сейшилы
                       </div>
                     </li>
                     <li class="users__flag-tooltip-2">
-                      <img class="users__flag flag" src="img/thailand-flag.png" alt="Флаг Тайланда" />
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x">
+                        <img class="users__flag  flag" src="img/thailand-flag-small.png"
+                          srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
+                      </picture>
                       <div class="users__flag-tooltip-2-position users__flag-tooltip-2--visible tooltip text">
                         Тайланд
                       </div>
                     </li>
                     <li class="users__flag-tooltip-3">
-                      <img class="users__flag  flag" src="img/sri-lanka-flag.png" alt="Флаг Шри-Ланки" />
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/sri-lanka-flag-medium.png 1x, img/sri-lanka-flag-medium@2x.png 2x">
+                        <img class="users__flag  flag" src="img/sri-lanka-flag-small.png"
+                          srcset="img/sri-lanka-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Шри-Ланки" />
+                      </picture>
                       <div class="users__flag-tooltip-3-position users__flag-tooltip-3--visible tooltip text">
                         Шри-Ланка
                       </div>
@@ -536,7 +573,10 @@
             </li>
             <li class="users__card-list card-list__item">
               <div class="users__card card-list__card">
-                <img class="users__photo" src="img/demin-photo.png" alt="Фото Петра Демина" />
+                <picture>
+                  <img class="users__photo" src="img/demin-photo.png" srcset="img/demin-photo@2x.png 2x" width="226"
+                    height="30" alt="Фото Петра Демина" />
+                </picture>
                 <div class="users__level">
                   <b class="text users__level-number">80</b>
                   <span class="text users__level-text">level</span>
@@ -544,13 +584,23 @@
                 <div class="users__card-info card-list__info">
                   <ul class="users__flags card-list__flags">
                     <li class="users__flag-tooltip-4">
-                      <img class="users__flag flag" src="img/belgium-flag.png" alt="Флаг Бельгии" />
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/belgium-flag-medium.png 1x, img/belgium-flag-medium@2x.png 2x">
+                        <img class="users__flag  flag" src="img/belgium-flag-small.png.png"
+                          srcset="img/belgium-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Бельгии" />
+                      </picture>
                       <div class="users__flag-tooltip-4-position users__flag-tooltip-4--visible tooltip text">
                         Бельгия
                       </div>
                     </li>
                     <li class="users__flag-tooltip-5">
-                      <img class="users__flag flag" src="img/czech-flag.png" alt="Флаг Чехии" />
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
+                        <img class="users__flag flag" src="img/czech-flag-small.png"
+                          srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                      </picture>
                       <div class="users__flag-tooltip-5-position users__flag-tooltip-5--visible tooltip text">
                         Чехия
                       </div>
@@ -654,7 +704,11 @@
         <header class="profile__header">
           <h2 class="profile__caption text text--caption">Добавьте <br>свой <br>профиль</h2>
         </header>
-        <img class="profile__rates" src="img/rates.png" alt="Диапозон цен" />
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/rates-large.png 1x, img/rates-large@2x.png 2x">
+          <img class="profile__rates" src="img/rates-small.png" srcset="img/rates-small@2x.png 2x" width="100"
+            height="100" alt="Диапозон цен" />
+        </picture>
         <ol class="profile__list information-list">
           <li class="information-list__item information-list__item--digital-dark-theme">
             <span>1</span>
@@ -761,9 +815,12 @@
             </svg>
           </a>
         </div>
-        <img class="contacts__map contacts__map--small" src="img/background_map.png" alt="Карта" />
-        <img class="contacts__map contacts__map--medium" src="img/map-medium-icon.png" alt="Карта" />
-        <img class="contacts__map contacts__map--large" src="img/map-large-icon.png" alt="Карта" />
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-large-icon.png 1x, img/map-large-icon@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-medium-icon.png 1x, img/map-medium-icon@2x.png 2x">
+          <img class="contacts__map" src="img/map-small-icon.png" srcset="img/map-small-icon@2x.png 2x" width="320"
+            height="424" alt="Карта" />
+        </picture>
         <svg class="contacts__map-point" width="41" height="41" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
           <circle cx="20.5" cy="20.4998" r="19.7679" />
           <circle cx="20.4999" cy="19.7676" r="8.78572" />
@@ -775,10 +832,11 @@
     <div class="page-footer__container container">
       <h2 class="visually-hidden">Погнали?</h2>
       <a href="#" class="page-footer__logo-mobile">
-        <img class="logo" src="img/logo-mobile-dark.png" width="226" height="30" alt="Погнали?" />
-      </a>
-      <a href="#" class="page-footer__logo">
-        <img class="logo" src="img/logo.png" width="226" height="30" alt="Логотип" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
+          <img class="logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x" width="226"
+            height="30" alt="Логотип" />
+        </picture>
       </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
