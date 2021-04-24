@@ -51,4 +51,10 @@ background-color: $basic-yellow;
 
 .information-list__description--small{
   @include text(18px, 300, 18px, $special-grey);
+
+  @media (min-width: $medium-width) {
+    font-size: 28px;
+    line-height: 28px;
+    min-width: 135px;
+  }
 }

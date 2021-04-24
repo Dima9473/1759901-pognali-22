@@ -19,12 +19,10 @@
 }
 
 .card-list__item{
-  margin-bottom: 10px;
   background: #FFFFFF;
   border-radius: 10px;
 
   @media (min-width: $medium-width) {
-    margin-bottom: 40px;
     border-radius: 20px;
   }
 
@@ -120,6 +118,8 @@
   text-align: start;
   @media (min-width: $medium-width) {
     min-width: 150px;
+    font-size: 24px;
+    line-height: 22px;
   }
 
   &:hover{
@@ -172,7 +172,7 @@
 }
 
 .card-list__button--disabled{
-  background-color: #E2E5F2;
+  background-color: $dark-grey;
   &:hover{
     opacity: 0.6;
   }

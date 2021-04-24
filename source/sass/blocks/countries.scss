@@ -31,6 +31,13 @@
   }
 }
 
+.countries__header-text{
+  @media (min-width: $medium-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
 .countries__list{
   margin-top: 60px;
   margin-bottom: 25px;
@@ -43,11 +50,26 @@
 }
 
 .countries__all-countries{
-  margin: 25px;
+  width: 270px;
+  height: 61px;
+  border-radius: 10px;
+
+  @media (min-width: $medium-width) {
+    width: 618px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 275px;
+  }
 }
 
 .countries__info{
   @include text(16px, 300, 22px, $special-grey);
+
+  @media (min-width: $medium-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .countries__collection{
@@ -62,15 +84,22 @@
 
 .countries__card-info{
   text-align: left;
+
+  @media (min-width: $medium-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .countries__flag{
   margin-top: -10px;
   margin-left: 25px;
   height: 24px;
+  width: 35px;
 
   @media (min-width: $medium-width) {
     height: 47px;
+    width: 70px;
     margin-top: -45px;
     margin-left: 410px;
   }
@@ -111,6 +140,7 @@
 
 .countries__photo{
   // height: 110px;
+  width: 100%;
 
   @media (min-width: $medium-width) {
     height: 140px;
@@ -120,4 +150,9 @@
 
 .countries__item{
   width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 40px;
+  }
 }

@@ -13,6 +13,11 @@ padding-bottom: 25px;
 .users__caption{
   margin-top: 34px;
   margin-left: 51px;
+
+  @media (min-width: $medium-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .users__back-photo{
@@ -23,6 +28,13 @@ padding-bottom: 25px;
 
 .users__description{
   margin-bottom: 25px;
+
+  @media (min-width: $medium-width) {
+    max-width: 427px;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 300;
+  }
 }
 
 .users__cards{
@@ -53,6 +65,7 @@ padding-bottom: 25px;
 
 .users__card-list{
   position: relative;
+  margin-bottom: 10px;
 
   @media (min-width: $medium-width) {
     &:not(:last-child){
@@ -79,6 +92,8 @@ padding-bottom: 25px;
 }
 
 .users__photo{
+  width: 100%;
+  height: 100%;
   @media (min-width: $medium-width) {
     max-height: 365px;
   }
@@ -89,7 +104,11 @@ padding-bottom: 25px;
 }
 
 .users__card-info{
-  padding-bottom: 24px;
+  padding-bottom: 22px;
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .users__plain{
@@ -330,4 +349,17 @@ padding-bottom: 25px;
 
 .users__flag-tooltip-5--visible {
   display: none;
+}
+
+.users__can-find{
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.users__list{
+  margin-top: 15px;
+}
+
+.users__icons{
+  margin-top: 17px;
 }
