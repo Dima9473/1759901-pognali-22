@@ -1,4 +1,7 @@
 .button{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: $basic-yellow;
   border: none;
   border-radius: 40px;
@@ -16,9 +19,10 @@
 
 .button--authorization{
   padding: 10px 15px 10px 15px;
+  text-transform: uppercase;
 
   @media (min-width: $large-width) {
-    padding: 25px 25px 25px 25px;
+    padding: 21px 21px 21px 21px;
   }
 }
 
@@ -60,8 +64,8 @@
 }
 
 .button--arrow{
-  font-size: 18px;
-  line-height: 18px;
+  // font-size: 18px;
+  // line-height: 18px;
   color: $basic-blue-light;
 }
 
@@ -70,8 +74,13 @@
 }
 
 .button__caption{
-  @include text(17px, bold, 20px, $basic-blue);
+  @include text(17px, bold, 30px, $basic-blue);
   text-align: center;
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .button__caption--light{
@@ -106,3 +115,4 @@
     opacity: 0.1;
   }
 }
+

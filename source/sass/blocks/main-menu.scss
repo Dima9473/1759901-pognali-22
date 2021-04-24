@@ -12,6 +12,10 @@
   }
 }
 
+.main-menu__container{
+  width: 75%;
+}
+
 .main-menu--opened{
   display: flex;
 }
@@ -21,9 +25,12 @@
 }
 
 .main-menu__nav{
+  display: flex;
+  justify-content: center;
   margin-top: 75px;
 
   @media (min-width: $medium-width) {
-    margin-top: 100px;
+    margin-top: 98px;
+    justify-content: flex-start;
   }
 }

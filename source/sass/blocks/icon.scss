@@ -4,6 +4,19 @@
   padding: $padding;
 }
 
+@mixin icon-background($background-color: $basic-yellow, $hover-background-color: $special-yellow-dark) {
+  background-color: $background-color;
+
+  &:hover{
+    background-color: $hover-background-color;
+  }
+
+  &:active, &:focus{
+    background-color: $hover-background-color;
+    opacity: 0.3;
+  }
+}
+
 .icon{
   fill: #101D41;
   text-align: center;
@@ -66,28 +79,18 @@
 }
 
 .icon--main-background{
-  background-color: $basic-yellow;
-
-  &:hover{
-    background-color: $special-yellow-dark;
-  }
-
-  &:active, &:focus{
-    background-color: $special-yellow-dark;
-    opacity: 0.3;
-  }
+  @include icon-background();
 }
 
 .icon--middle-background{
-  background-color: $special-orange;
+  @include icon-background($special-orange, #F26926);
+}
+
+.icon--grey-background{
+  @include icon-background($dark-grey, $dark-grey);
 
   &:hover{
-    background-color: #F26926;
-  }
-
-  &:active, &:focus{
-    background-color: #F26926;
-    opacity: 0.3;
+    opacity: 0.7;
   }
 }
 
@@ -104,7 +107,7 @@
   }
 }
 
-.icon--circle-dark-blue-background{
+.icon--dark-blue-background{
   background-color: $blue;
 }
 

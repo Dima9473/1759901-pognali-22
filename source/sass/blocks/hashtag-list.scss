@@ -6,5 +6,10 @@
 
 .hashtag-list__item{
   @include text(16px, normal, 18px, $special-grey);
-  display: inline
+  display: inline;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }

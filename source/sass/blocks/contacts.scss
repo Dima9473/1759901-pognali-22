@@ -19,11 +19,20 @@
 .contacts__addres{
   color: $basic-blue-light;
   line-height: 22px;
+
+  @media (min-width: $medium-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .contacts__map-icon{
-background-color: $blue;
-fill: $basic-yellow;
+  background-color: $blue;
+  fill: $basic-yellow;
+  @media (min-width: $medium-width) {
+    width: 23px;
+    height: 21px;
+  }
 }
 
 .contacts__new-line{

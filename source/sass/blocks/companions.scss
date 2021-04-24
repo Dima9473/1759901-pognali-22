@@ -63,9 +63,11 @@
 .companions__item{
   position: relative;
   min-width: 270px;
+  margin-bottom: 10px;
 
   @media (min-width: $medium-width) {
     min-width: 690px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $large-width) {

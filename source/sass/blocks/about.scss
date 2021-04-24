@@ -4,12 +4,17 @@
   background-size:     contain;
   background-repeat:   no-repeat;
   background-position: center center;
-  // background: #192144 url(../../img/about-mobile.png) no-repeat cover;
 
   @media (min-width: $medium-width) {
+    margin-top: 137px;
     background-position: center right;
   }
-  // background-size: contain;
+
+
+  @media (min-width: $large-width) {
+    margin-top: 42px;
+    background-position: center right;
+  }
 }
 
 .about__container{
@@ -17,8 +22,10 @@
   margin-bottom: 82px;
 }
 
-.countries__header{
-  margin-left: 25px;
+.about__slogan{
+  @media (min-width: $medium-width) {
+    @include text(45px, bold, 45px, $special-orange);
+  }
 }
 
 .about__details{
@@ -26,18 +33,33 @@
 
   @media (min-width: $medium-width) {
     display: block;
+    border-radius: 20px;
+    width: 276px;
+    height: 80px;
   }
 }
 
 .about__description{
   margin-bottom: 25px;
   width: 210px;
+  font-weight: 300;
 
   @media (min-width: $medium-width) {
     width: 310px;
+    font-size: 28px;
+    line-height: 33px;
   }
 
   @media (min-width: $large-width) {
     width: 620px;
+  }
+}
+
+.about--travel{
+  font-weight: bold;
+
+  @media (min-width: $medium-width) {
+    font-size: 21px;
+    line-height: 25px;
   }
 }
