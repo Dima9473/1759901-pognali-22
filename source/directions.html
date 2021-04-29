@@ -174,8 +174,17 @@
         <div class="user-info__container container">
           <h2 class="visually-hidden">Предпочтения</h2>
           <div class="user-info__level general-info__level">
-            <b class="general-info__level-number">80</b>
-            <span class="general-info__level-text text">level</span>
+            <svg class="general-info__level-icon" width="100" height="100" viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="general-info__level-subtract" fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.76698 26.6667C2.08488 33.6324 0 41.5727 0 50C0 77.6142 22.3858 100 50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0V3C75.9574 3 97 24.0426 97 50C97 75.9574 75.9574 97 50 97C24.0426 97 3 75.9574 3 50C3 41.508 5.25217 33.5419 9.19181 26.6667H5.76698Z" />
+              <text class="general-info__level-number" x="30" y="40">
+                80
+              </text>
+              <line class="general-info__level-line" x1="20" y1="50" x2="80" y2="50" stroke="black" />
+              <text class="general-info__level-text" x="30" y="70">level</text>
+              Sorry, your browser does not support inline SVG.
+            </svg>
           </div>
           <div class="user-info__avatars">
             <picture>
@@ -254,9 +263,9 @@
           <ul class="user-plans__list plan-list">
             <li class="plan-list__item">
               <div class="plan-list__header">
-                <span>1. </span>
+                <span class="country-list__item">1. </span>
                 <ul class="country-list">
-                  <li class="country-list__item">
+                  <li class="country-list__item country-list__comma">
                     Франция
                   </li>
                   <li class="country-list__item">
@@ -286,9 +295,9 @@
             </li>
             <li class="plan-list__item">
               <div class="plan-list__header">
-                <span>2. </span>
+                <span class="country-list__item">2. </span>
                 <ul class="country-list">
-                  <li class="country-list__item">
+                  <li class="country-list__item country-list__comma">
                     Тайланд
                   </li>
                   <li class="country-list__item">
@@ -323,12 +332,13 @@
         <div class="container">
           <header class="add-plans__header">
             <h2 class="add-plans__caption">Добавить план:</h2>
-            <p class="add-plans__toggles slider-toggles">
-              <button class="slider-toggles__toggle button button--slider-button button--current"
-                type="button">1</button>
-              <button class="slider-toggles__toggle button button--slider-button" type="button">2</button>
-              <button class="slider-toggles__toggle button button--slider-button" type="button">3</button>
-            </p>
+            <div class="add-plans__toggles slider-toggles">
+              <svg width="76" height="6" viewBox="0 0 76 6" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" transform="rotate(-90 3 3)" />
+                <circle opacity="0.3" cx="38" cy="3" r="3" transform="rotate(-90 38 3)" />
+                <circle opacity="0.3" cx="73" cy="3" r="3" transform="rotate(-90 73 3)" />
+              </svg>
+            </div>
           </header>
           <ol class="add-plans__adding-list step-list">
             <li class="step-list__item step-list__container">
@@ -349,21 +359,43 @@
               <div class="step-list__questions">
                 <div class="step-list__trip-data step-list__trip-data--companions">
                   <label for="companions" class="step-list__info text">
-                    <b>Ищу попутчиков:</b>
+                    Ищу попутчиков:
                   </label>
-                  <div class="step-list__definition text text--disabled">
+                  <div class="step-list__definition text">
                     ЧЕЛ.
                   </div>
-                  <input id="companions" class="step-list__count spinner text" type="number" value="2" />
+                  <div class="step-list__input">
+                    <input id="companions" class="step-list__count spinner text" type="number" value="2" />
+                    <svg class="step-list__minus" width="14" height="2" viewBox="0 0 14 2"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <line y1="1" x2="14" y2="1" />
+                    </svg>
+                    <svg class="step-list__plus" width="14" height="14" viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <line x1="7" x2="7" y2="14" />
+                      <line y1="7" x2="14" y2="7" />
+                    </svg>
+                  </div>
                 </div>
                 <div class="step-list__trip-data step-list__trip-data--duration">
                   <label for="days" class="step-list__info text">
-                    <b>Длительность:</b>
+                    Длительность:
                   </label>
-                  <div class="step-list__definition text text--disabled">
+                  <div class="step-list__definition text">
                     ДН.
                   </div>
-                  <input id="days" class="step-list__count spinner text" type="number" value="3" />
+                  <div class="step-list__input">
+                    <input id="companions" class="step-list__count spinner text" type="number" value="3" />
+                    <svg class="step-list__minus" width="14" height="2" viewBox="0 0 14 2"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <line y1="1" x2="14" y2="1" />
+                    </svg>
+                    <svg class="step-list__plus" width="14" height="14" viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <line x1="7" x2="7" y2="14" />
+                      <line y1="7" x2="14" y2="7" />
+                    </svg>
+                  </div>
                 </div>
                 <div class="step-list__child boolean">
                   <input id="children" class="boolean__check" type="checkbox" />
@@ -375,8 +407,13 @@
                 <input type="date" class="step-list__day-date date " />
               </div>
               <button type="button"
-                class="add-plans__button-step add-plans__button-step--outsideflow button button__caption button--middle-theme">СЛЕДУЮЩИЙ
-                ШАГ</button>
+                class="add-plans__button-step add-plans__button-step--outsideflow button  button--middle-theme">
+                <span class="button__caption">Следующий шаг</span>
+                <svg class="add-plans__arrow" width="10" height="18" viewBox="0 0 10 18"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
+                </svg>
+              </button>
             </li>
             <li class="step-list__item step-list__container">
               <div class="step-list__header">
@@ -524,16 +561,25 @@
                       <source media="(min-width: 768px)"
                         srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
                       <img class="country-description-list__flag" src="img/czech-flag-small.png"
-                        srcset="img/czech-flag-small-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                        srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
                     </picture>
                   </div>
                   <textarea class="country-description-list__change-text text"
                     placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
+              <svg class="country-description-list__connection" width="17" height="287" viewBox="0 0 17 287"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="3" r="3" />
+                <circle cx="14" cy="284" r="3" />
+                <rect x="2" y="2" width="11" height="2" />
+                <rect y="283" width="12" height="2" />
+                <rect y="285" width="283" height="2" transform="rotate(-90 0 285)" />
+              </svg>
+
               <div class="step-list__nav-buttons">
                 <button type="button" class="add-plans__button-step button button--middle-theme">
-                  <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>
+                  <span class="button__caption">Отправить</span>
                 </button>
                 <button type="button"
                   class="add-plans__button-step step-list__previous button button--transparent-theme">

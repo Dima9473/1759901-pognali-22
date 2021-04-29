@@ -5,8 +5,15 @@
 .country-list__item{
   display: inline-block;
   @include text(16px, bold, 16px, $basic-blue-light);
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
-.country-list__item:not(:last-child):after{
-  content: ", "
+.country-list__comma{
+  &:after{
+    content: ", "
+  }
 }

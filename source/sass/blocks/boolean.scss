@@ -1,5 +1,13 @@
 .boolean__text{
   @include text(15px, normal, 15px, $basic-blue-light);
+
+  @media (min-width: $medium-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
 }
 
 .boolean__check{

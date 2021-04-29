@@ -8,7 +8,7 @@
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 26px;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
 }
 
 .visits-list__user-icon{
@@ -20,12 +20,18 @@
 }
 
 .visits-list__info{
+  display: block;
   @include text(16px, 500, 20px, $basic-blue);
   opacity: 0.3;
 }
 
 .visits-list__caption{
   margin-inline-start: 0;
+  min-width: 135px;
+
+  @media (min-width: $large-width) {
+    min-width: 170px;
+  }
 }
 
 .visits-list__count{

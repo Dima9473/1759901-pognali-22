@@ -225,4 +225,8 @@
 
 .promo__list-item {
   margin-left: -1px;
+
+  &:not(first-child){
+    margin-left: -25px;
+  }
 }

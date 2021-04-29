@@ -24,7 +24,11 @@
 }
 
 .general-info__user-data-text{
-  @include text(20px, bold, 18px, $basic-blue);
+  @include text(20px, 500, 18px, $basic-blue);
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    letter-spacing: 0.09em;
+  }
 }
 
 .general-info__change{
@@ -71,18 +75,32 @@
   flex-direction: column;
 }
 
-.general-info__level-number{
+.general-info__level-icon{
   @include text(20px, bold, 18px, $basic-blue);
 
+  fill: $basic-blue;
   @media (min-width: $large-width) {
-    color: #ffffff;
+    fill: #ffffff;
   }
 }
 
 .general-info__level-text{
   @include text(18px, normal, 18px, $basic-blue);
+}
+
+.general-info__level-number{
+  @include text(38px, bold, 38px, $basic-blue);
+}
+
+.general-info__level-subtract{
+  fill: #FF8D30;
+}
+
+.general-info__level-line{
+  stroke: $special-grey;
+  opacity: 0.3;
 
   @media (min-width: $large-width) {
-    color: #ffffff;
+    stroke: #ffffff;
   }
 }

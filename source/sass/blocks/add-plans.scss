@@ -1,6 +1,7 @@
 .add-plans__header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .add-plans__adding-list{
@@ -21,13 +22,40 @@
 
 .add-plans__button-step{
   margin-top: 22px;
+  height: 40px;
+  // font-size: 17px;
+  // line-height: 30px;
+
+  @media (max-width: $small-max-width) {
+    text-transform: uppercase;
+  }
+
   @media (min-width: $medium-width) {
     max-width: 50%;
+    height: 80px;
+    max-width: 284px;
   }
 }
 
 .add-plans__button-step--outsideflow{
   @media (min-width: $medium-width) {
     order: 7;
+  }
+}
+
+.add-plans__caption{
+  @include text(24px, bold, 24px, $basic-blue-light);
+
+  @media (min-width: $medium-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.add-plans__arrow{
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: block;
   }
 }

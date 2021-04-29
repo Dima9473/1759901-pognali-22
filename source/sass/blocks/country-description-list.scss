@@ -2,32 +2,75 @@
   padding: 0;
 }
 
+.country-description-list__item{
+  &:not(last-child){
+    margin-bottom: 10px
+  }
+}
+
 .country-description-list__caption{
   @include text(18px, 500, 18px, $basic-blue-light);
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  @media (min-width: $medium-width) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .country-description-list__country{
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 18px;
 }
 
 .country-description-list__change-text{
+  border: 1px solid #CBCED9;
+  border-radius: 4px;
   @include text(16px, normal, 22px, $special-grey);
+  width: 100%;
+  height: 220px;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 23px;
+    height: 140px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 20px;
+    line-height: 23px;
+    height: 142px;
+    max-width: 730px;
+  }
 
   &:hover{
-    .country-description-list__change-text::placeholder{
-      font-size: 20px;
-    }
+    border: 1px solid #959BB2;
+  }
+
+  &::placeholder{
+    font-family: Blogger Sans;
+    font-style: normal;
+    @include text(16px, normal, 22px, $special-grey);
+    opacity: 0.3;
   }
 
   &:active, &:focus{
-    background: #E2E5F1;
+    border: 1px solid #161C35;
+    .country-description-list__change-text::placeholder{
+      opacity: 1;
+    }
   }
 }
 
-.country-description-list__change-text::placeholder{
-  font-family: Blogger Sans;
-  font-style: normal;
-  @include text(16px, normal, 22px, $special-grey);
-  opacity: 0.3;
+
+.country-description-list__connection{
+  position: absolute;
+  top: 225px;
+  left: 5px;
+  // height: ;
 }

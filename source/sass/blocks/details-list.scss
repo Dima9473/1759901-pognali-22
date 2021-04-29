@@ -3,5 +3,13 @@
 }
 
 .details-list__text{
-  @include text(20px, bold, 20px, $basic-blue-light);
+  @include text(14px, 500, 14px, $basic-blue-light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
