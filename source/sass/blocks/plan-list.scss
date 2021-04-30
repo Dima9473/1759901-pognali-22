@@ -30,9 +30,16 @@
 }
 
 .plan-list__change-text{
-  @include text(14px, bold, 14px, #000000);
+  @include text(14px, 500, 14px, #000000);
   letter-spacing: 0.03em;
   opacity: 0.3;
+  text-transform: uppercase;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .plan-list__details{
@@ -44,11 +51,12 @@
     padding-right: 45px;
     padding-top: 20px;
     padding-left: 40px;
-    border-top: 1px solid #CBCED9;
+    border-top: 1px solid $special-dark-grey;
   }
 
   @media (min-width: $large-width) {
     border-top: none;
+    width: 50%;
   }
 }
 
@@ -60,10 +68,17 @@
     flex-direction: row;
     margin-top: 0;
   }
+
+  // @media (min-width: $large-width) {
+  //   // margin-right: 116px;
+  //   width: 50%;
+  // }
 }
 
 .plan-list__change{
+  display: block;
   margin-top: 24px;
+  align-items: flex-start;
 
   @media (min-width: $medium-width) {
     flex-direction: row;
@@ -81,4 +96,8 @@
     opacity: 0.1;
     background-color: transparent;
   }
+}
+
+.plan-list__countries{
+  display: flex;
 }

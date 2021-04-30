@@ -53,6 +53,8 @@
   width: 270px;
   height: 61px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $medium-width) {
     width: 618px;
@@ -101,7 +103,11 @@
     height: 47px;
     width: 70px;
     margin-top: -45px;
-    margin-left: 410px;
+    margin-left: 510px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 550px;
   }
 }
 
@@ -113,6 +119,7 @@
 
 .countries__cards{
   @media (min-width: $medium-width) {
+    max-height: 140px;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -154,5 +161,7 @@
 
   @media (min-width: $medium-width) {
     margin-bottom: 40px;
+    max-width: 730px;
+    // max-width: 616px;
   }
 }

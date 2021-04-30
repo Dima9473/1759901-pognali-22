@@ -116,3 +116,18 @@
   }
 }
 
+.button--padding-left{
+  margin-left: 22px;
+
+  @media (min-width: $medium-width) {
+    margin-left: 37px;
+  }
+}
+
+.button--padding-right{
+  margin-right: 22px;
+
+  @media (min-width: $medium-width) {
+    margin-right: 37px;
+  }
+}

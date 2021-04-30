@@ -49,14 +49,22 @@ padding-bottom: 25px;
 
 .users__level{
   position: absolute;
+  top: 17px;
+  left: 16px;
 }
 
 .users__level-number{
-  @include text(24px, bold, 24px, #FFFFFF);
+  @include text(24px, bold, 24px);
+  fill: #FFFFFF;
 }
 
 .users__level-text{
-  @include text(14px, normal, 14px, #FFFFFF);
+  @include text(14px, normal, 14px);
+  fill: #FFFFFF;
+}
+
+.users__level-line{
+  stroke: #FFFFFF;
 }
 
 .users__background-images{
@@ -236,7 +244,7 @@ padding-bottom: 25px;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-bottom: 10px;
 }
 
@@ -362,4 +370,11 @@ padding-bottom: 25px;
 
 .users__icons{
   margin-top: 17px;
+}
+
+.users__level-icon{
+  stroke: #FF8D30;
+  stroke-width: 4;
+  stroke-linecap: round;
+  fill: #161C35;
 }

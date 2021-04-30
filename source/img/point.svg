@@ -1,0 +1,5 @@
+<svg width="76" height="6" viewBox="0 0 76 6" xmlns="http://www.w3.org/2000/svg">
+<circle cx="3" cy="3" r="3" transform="rotate(-90 3 3)"/>
+<circle opacity="0.3" cx="38" cy="3" r="3" transform="rotate(-90 38 3)" />
+<circle opacity="0.3" cx="73" cy="3" r="3" transform="rotate(-90 73 3)" />
+</svg>

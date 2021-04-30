@@ -9,5 +9,11 @@
 .dataset__change-tags{
   width: 100%;
   margin-top: 10px;
+  opacity: 0.6;
   @include text(16px, normal, 18px, $special-grey);
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

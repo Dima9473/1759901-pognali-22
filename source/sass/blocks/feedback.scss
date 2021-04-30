@@ -52,6 +52,7 @@
 }
 
 .feedback__registration{
+  position: relative;
   text-align: center;
   margin-top: 29px;
 
@@ -62,7 +63,8 @@
 
 .feedback__email{
   height: 62px;
-  width: 90%;
+  width: 80%;
+  padding-right: 65px;
   border-radius: 20px;
 
   @media (min-width: $medium-width) {
@@ -89,6 +91,7 @@
 
   &:active, &:focus{
     background-color: $basic-blue;
+    border: 4px solid #FFFFFF;
   }
 
   &:active::placeholder, &:focus::placeholder{
@@ -109,11 +112,27 @@
 
 .feedback__send-email{
   display: inline-block;
+  border-radius: 20px;
+  margin-left: -65px;
+  width: 60px;
+  height: 65px;
+
+  @media (min-width: $medium-width) {
+    margin-left: -84px;
+    width: 80px;
+    height: 84px;
+  }
 }
 
 .feedback__details{
   @media (min-width: $medium-width) {
     font-size: 28px;
     line-height: 28px;
+  }
+}
+
+.feedback__any-questions-br{
+  @media (min-width: $medium-width) {
+    display: none;
   }
 }
