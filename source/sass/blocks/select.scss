@@ -6,4 +6,11 @@
 .select__item{
   @include text(14px, 500, 18px, $basic-blue-light);
   letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }

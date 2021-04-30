@@ -7,8 +7,6 @@ var closButton = document.querySelector('.menu__close-icon');
 var openButton = document.querySelector('.menu__open-icon');
 var promoActions = document.querySelector('.menu__actions');
 
-// // navMain.classList.remove('main-nav--nojs');
-
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-menu--closed')) {
     navMain.classList.remove('main-menu--closed');

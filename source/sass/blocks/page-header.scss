@@ -2,6 +2,13 @@
   padding-top: 19px;
   padding-bottom: 12px;
   position: relative;
+  background-color: $basic-blue;
+  margin-bottom: -70px;
+}
+
+.page-header--border-radius{
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 .page-header--height{

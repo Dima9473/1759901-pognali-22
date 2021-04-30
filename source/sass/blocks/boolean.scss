@@ -11,12 +11,12 @@
 }
 
 .boolean__check{
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   box-sizing: border-box;
   border-radius: 4px;
 
   &:hover{
-    border: 1px solid #959BB2;
+    border: 1px solid $special-light-grey;
   }
 
   &:active, &:focus{

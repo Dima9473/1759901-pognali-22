@@ -51,7 +51,7 @@
     padding-right: 45px;
     padding-top: 20px;
     padding-left: 40px;
-    border-top: 1px solid #CBCED9;
+    border-top: 1px solid $special-dark-grey;
   }
 
   @media (min-width: $large-width) {
@@ -96,4 +96,8 @@
     opacity: 0.1;
     background-color: transparent;
   }
+}
+
+.plan-list__countries{
+  display: flex;
 }

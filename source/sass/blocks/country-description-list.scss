@@ -1,10 +1,18 @@
 .country-description-list{
   padding: 0;
+
+  @media (min-width: $medium-width) {
+    width: 90%;
+  }
 }
 
 .country-description-list__item{
   &:not(last-child){
     margin-bottom: 10px
+  }
+
+  @media (min-width: $large-width) {
+    max-width: 90%;
   }
 }
 
@@ -29,7 +37,7 @@
 }
 
 .country-description-list__change-text{
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   border-radius: 4px;
   @include text(16px, normal, 22px, $special-grey);
   width: 100%;
@@ -49,7 +57,7 @@
   }
 
   &:hover{
-    border: 1px solid #959BB2;
+    border: 1px solid $special-light-grey;
   }
 
   &::placeholder{
@@ -67,10 +75,12 @@
   }
 }
 
+.country-description-list__flag{
+  width: 35px;
+  height: 24px;
 
-.country-description-list__connection{
-  position: absolute;
-  top: 225px;
-  left: 5px;
-  // height: ;
+  @media (min-width: $medium-width) {
+    width: 70px;
+  height: 47px;
+  }
 }

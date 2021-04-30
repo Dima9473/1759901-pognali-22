@@ -79,12 +79,14 @@
 
 .step-list__description{
   margin-bottom: 20px;
+  min-height: 90px;
   @include text(16px, bold, 22px, $special-grey);
 
 
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 24px;
+    min-height: 48px;
   }
 }
 
@@ -101,7 +103,6 @@
 .step-list__nav-buttons{
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
 
   @media (min-width: $medium-width) {
     margin-top: 25px;
@@ -115,17 +116,12 @@
 
   &:hover{
     background-color: transparent;
-    .step-list__step-back-caption{
-        color: $basic-blue-light;
-    }
+    opacity: 0.7;
   }
 
   &:active, &:focus{
     background-color: transparent;
-    .step-list__step-back-caption{
-      color: $basic-blue-light;
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }
 
@@ -207,7 +203,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   height: 43px;
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
 
   @include text(14px, 500, 14px, $basic-blue-light);
   text-transform: uppercase;
@@ -224,7 +220,11 @@
   }
 
   &:hover{
-    border: 1px solid #959BB2;
+    border: 1px solid $special-light-grey;
+  }
+
+  &:hover .step-list__minus{
+    stroke: $special-light-grey;
   }
 
   &:active, &:focus{
@@ -267,17 +267,6 @@
   @media (min-width: $medium-width) {
     order: 6;
   }
-}
-
-.step-list__month-date{
-  padding-top: 25px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.step-list__day-date{
-  margin-top: 25px;
-  padding-top: 25px;
 }
 
 .step-list__questions{
@@ -328,4 +317,66 @@
   right: 25px;
   padding: 10px 12px;
   top: 5px;
+}
+
+.step-list__month{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+  text-align: center;
+  border-top: 1px solid #D6D9E6;
+  border-bottom: 1px solid #D6D9E6;
+}
+
+.step-list__month-text{
+  @include text(20px, bold, 20px, $basic-blue-light);
+
+  @media (min-width: $medium-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.step-list__back{
+  width: 14px;
+  height: 21px;
+
+  @media (min-width: $medium-width) {
+    width: 30px;
+    height: 36px;
+  }
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  &:active, &:focus{
+    opacity: 0.1;
+  }
+}
+
+.step-list__next{
+  width: 14px;
+  height: 21px;
+
+  @media (min-width: $medium-width) {
+    width: 30px;
+    height: 36px;
+  }
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  &:active, &:focus{
+    opacity: 0.1;
+  }
+}
+
+.step-list__days{
+  margin-top: 22px;
+  width: 100%;
 }

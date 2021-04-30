@@ -1,5 +1,5 @@
 .promo{
-  margin-top: 60px;
+  margin-top: 130px;
   background-image: url(../../img/globe-back-mobile.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -226,7 +226,9 @@
 .promo__list-item {
   margin-left: -1px;
 
-  &:not(first-child){
-    margin-left: -25px;
+  @media (min-width: $large-width) {
+    &:not(first-child){
+      margin-left: -25px;
+    }
   }
 }

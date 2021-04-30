@@ -1,0 +1,33 @@
+.alphabet{
+  border-collapse: collapse;
+}
+
+.alphabet__latter-cell{
+  width: 43px;
+  height: 41px;
+  border: 1px solid $special-dark-grey;
+
+  @media (min-width: $medium-width) {
+    width: 55px;
+    height: 70px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 60px;
+  }
+}
+
+.alphabet__letter{
+  @include text(14px, 500, 18px, $basic-blue-light);
+  text-align: center;
+
+  &:hover{
+    border: 1px solid $special-light-grey;
+  }
+
+  &:active, &:focus{
+    background-color: $basic-blue-light;
+    color: #ffffff;
+  }
+}
+
