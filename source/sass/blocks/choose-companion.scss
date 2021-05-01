@@ -24,14 +24,26 @@
 .choose-companion__list{
   margin-top: 35px;
   padding: 0;
-}
-
-.choose-companion__line{
-  border-top: 1px solid #F3C72B;
+  list-style-type: none;
 }
 
 .choose-companion__br{
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;
   }
+}
+
+.choose-companion__checkboxes{
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-companion__checkboxe{
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.choose-companion__checkboxe-text{
+  margin-left: 9px;
 }

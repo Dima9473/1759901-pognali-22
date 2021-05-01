@@ -399,71 +399,138 @@
                   class="choose-companion__br">попутчика</h2>
               <ul class="choose-companion__list companions-list">
                 <li class="companions-list__item">
-                  <hr class="choose-companion__line" />
                   <div class="companions-list__select dropdown-multiple-select">
                     <div class="dropdown-multiple-select__header">
                       <span class="dropdown-multiple-select__text text">ХОББИ</span>
-                      <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
-                        <svg class="dropdown-multiple-select__button button button--transparent-theme" width="10"
-                          height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                      <button
+                        class="dropdown-multiple-select__toggle choose-companion__checkboxes-toggle-1 button button--arrow"
+                        type="button">
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__checkboxe-opened-icon-1 button button--transparent-theme visually-hidden"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
+                        </svg>
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__checkboxe-closed-icon-1 button button--transparent-theme"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <select class="select-input-list select visually-hidden" multiple>
-                      <option class="select__item">Походы по концертам</option>
-                    </select>
+                    <div class="choose-companion__checkboxes choose-companion__checkboxes-1 visually-hidden">
+                      <div class="choose-companion__checkboxe">
+                        <input id="gym" type="checkbox" name="hobbypreference" value="Gym">
+                        <label for="gym" class="choose-companion__checkboxe-text checkbox__text text">Спортзал</label>
+                      </div>
+                      <div class="choose-companion__checkboxe">
+                        <input id="hookah" type="checkbox" name="hobbypreference" value="Hookah">
+                        <label for="hookah" class="choose-companion__checkboxe-text checkbox__text text">Кальян</label>
+                      </div>
+                      <div class="choose-companion__checkboxe">
+                        <input id="sofa" type="checkbox" name="hobbypreference" value="Sofa">
+                        <label for="sofa" class="choose-companion__checkboxe-text checkbox__text text">Диван</label>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="companions-list__item">
-                  <hr class="choose-companion__line" />
                   <div class="companions-list__select dropdown-multiple-select dropdown-multiple-select--active">
                     <div class="dropdown-multiple-select__header">
                       <span class="dropdown-multiple-select__text text">МУЗЫКА</span>
-                      <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
-                        <svg class="dropdown-multiple-select__button button button--transparent-theme" width="10"
-                          height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                      <button
+                        class="dropdown-multiple-select__toggle choose-companion__checkboxes-toggle-2 button button--arrow"
+                        type="button">
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__checkboxe-opened-icon-2 button button--transparent-theme"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
                         </svg>
-                      </button>
-                    </div>
-                    <select class="select-input-list hobies-input-list select" multiple>
-                      <option class="select__item text" selected>Тяжелый рок</option>
-                      <option class="select__item text" selected>Русский рэп</option>
-                      <option class="select__item text">Евроденс</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="companions-list__item">
-                  <hr class="choose-companion__line" />
-                  <div class="companions-list__select dropdown-multiple-select">
-                    <div class="dropdown-multiple-select__header"><span
-                        class="dropdown-multiple-select__text">ЕДА</span>
-                      <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
-                        <svg class="dropdown-multiple-select__button button button--transparent-theme" width="10"
-                          height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__checkboxe-closed-icon-2 button button--transparent-theme visually-hidden"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <select class="select-input-list select visually-hidden" multiple>
-                      <option class="select__item">Салат цезарь</option>
-                    </select>
+                    <div class="choose-companion__checkboxes choose-companion__checkboxes-2">
+                      <div class="choose-companion__checkboxe">
+                        <input id="hardrock" type="checkbox" name="musicpreference" value="Hardrock">
+                        <label for="hardrock" class="choose-companion__checkboxe-text checkbox__text text">Тяжелый
+                          рок</label>
+                      </div>
+                      <div class="choose-companion__checkboxe">
+                        <input id="russianrap" type="checkbox" name="musicpreference" value="Russianrap">
+                        <label for="russianrap" class="choose-companion__checkboxe-text checkbox__text text">Русский
+                          рэп</label>
+                      </div>
+                      <div class="choose-companion__checkboxe">
+                        <input id="eurodance" type="checkbox" name="musicpreference" value="Eurodance">
+                        <label for="eurodance"
+                          class="choose-companion__checkboxe-text checkbox__text text">Евроденс</label>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="companions-list__item">
-                  <hr class="choose-companion__line" />
                   <div class="companions-list__select dropdown-multiple-select">
-                    <div class="dropdown-multiple-select__header">
-                      <span class="dropdown-multiple-select__text">ТРАНСПОРТ</span>
-                      <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
-                        <svg class="dropdown-multiple-select__button button button--transparent-theme" width="10"
-                          height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                    <div class="dropdown-multiple-select__header"><span
+                        class="dropdown-multiple-select__text">ЕДА</span>
+                      <button
+                        class="dropdown-multiple-select__toggle choose-companion__checkboxes-toggle-3 button button--arrow"
+                        type="button">
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__checkboxe-opened-icon-3 button button--transparent-theme visually-hidden"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
+                        </svg>
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__checkboxe-closed-icon-3 button button--transparent-theme"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <ul class="dropdown-multiple-select__list transport-list">
+                    <div class="choose-companion__checkboxes choose-companion__checkboxes-3 visually-hidden">
+                      <div class="choose-companion__checkboxe">
+                        <input id="meateater" type="checkbox" name="foodpreference" value="Meateater">
+                        <label for="meateater"
+                          class="choose-companion__checkboxe-text checkbox__text text">Мясоед</label>
+                      </div>
+                      <div class="choose-companion__checkboxe">
+                        <input id="sitsonpropernutrition" type="checkbox" name="foodpreference"
+                          value="Sitsonpropernutrition">
+                        <label for="sitsonpropernutrition"
+                          class="choose-companion__checkboxe-text checkbox__text text">Сидит на
+                          ПП</label>
+                      </div>
+                      <div class="choose-companion__checkboxe">
+                        <input id="rawvegan" type="checkbox" name="foodpreference" value="Rawvegan">
+                        <label for="rawvegan"
+                          class="choose-companion__checkboxe-text checkbox__text text">Веган-сыроед</label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="companions-list__item">
+                  <div class="companions-list__select dropdown-multiple-select">
+                    <div class="dropdown-multiple-select__header">
+                      <span class="dropdown-multiple-select__text">ТРАНСПОРТ</span>
+                      <button
+                        class="dropdown-multiple-select__toggle choose-companion__transport-toggle button button--arrow"
+                        type="button">
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__transport-opened-icon button button--transparent-theme"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
+                        </svg>
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__transport-closed-icon button button--transparent-theme visually-hidden"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
+                        </svg>
+                      </button>
+                    </div>
+                    <ul class="choose-companion__transport dropdown-multiple-select__list transport-list">
                       <li class="transport-list__item">
                         <button class="transport-list__item button button--togle button--light-theme " type="button">
                           <svg class="button--active" width="18" height="20" viewBox="0 0 18 20"
@@ -514,20 +581,29 @@
                   </div>
                 </li>
                 <li class="companions-list__item">
-                  <hr class="choose-companion__line" />
                   <div class="companions-list__select dropdown-multiple-select">
                     <div class="dropdown-multiple-select__header">
                       <span class="dropdown-multiple-select__text">ЛЕВЕЛ</span>
-                      <button class="dropdown-multiple-select__toggle button button--arrow" type="button">
-                        <svg class="dropdown-multiple-select__button button button--transparent-theme" width="10"
-                          height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                      <button
+                        class="dropdown-multiple-select__toggle choose-companion__level-toggle button button--arrow"
+                        type="button">
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__level-opened-icon button button--transparent-theme"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
+                        </svg>
+                        <svg
+                          class="dropdown-multiple-select__button choose-companion__level-closed-icon button button--transparent-theme visually-hidden"
+                          width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <span class="dropdown-multiple-select__range-min-value text">30</span>
-                    <input type="range" class="dropdown-multiple-select__range" min="30" max="100" />
-                    <span class="dropdown-multiple-select__range-min-value text">100</span>
+                    <div class="choose-companion__level">
+                      <span class="dropdown-multiple-select__range-min-value text">30</span>
+                      <input type="range" class="dropdown-multiple-select__range" min="30" max="100" />
+                      <span class="dropdown-multiple-select__range-min-value text">100</span>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -1232,6 +1308,7 @@
   </footer>
   <script src="js/navigationActions.js"></script>
   <script src="js/filterActions.js"></script>
+  <script src="js/checkboxeActions.js"></script>
 </body>
 
 </html>
