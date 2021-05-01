@@ -7,7 +7,14 @@
 .contacts__get-direction{
   display: flex;
   flex-direction: column;
-  margin-bottom: 57px;
+  padding-bottom: 57px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  @media (min-width: $medium-width) {
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
 
   @media (min-width: $large-width) {
     flex-direction: row;

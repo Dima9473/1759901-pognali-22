@@ -174,7 +174,7 @@
         <div class="user-info__container container">
           <h2 class="visually-hidden">Предпочтения</h2>
           <div class="user-info__level general-info__level">
-            <svg class="general-info__level-icon" width="100" height="100" viewBox="0 0 100 100"
+            <svg class="user-info__level-icon general-info__level-icon" width="100" height="100" viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg">
               <path class="general-info__level-subtract" fill-rule="evenodd" clip-rule="evenodd"
                 d="M5.76698 26.6667C2.08488 33.6324 0 41.5727 0 50C0 77.6142 22.3858 100 50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0V3C75.9574 3 97 24.0426 97 50C97 75.9574 75.9574 97 50 97C24.0426 97 3 75.9574 3 50C3 41.508 5.25217 33.5419 9.19181 26.6667H5.76698Z" />
@@ -191,10 +191,14 @@
                 srcset="img/demin-avatar-large.png 1x, img/demin-avatar-large@2x.png 2x">
               <source media="(min-width: 768px)"
                 srcset="img/demin-avatar-medium.png 1x, img/demin-avatar-medium@2x.png 2x">
-              <img class="user-info__avatar" src="img/demin-avatar.png" srcset="img/demin-avatar@2x.png 2x"
+              <img class="user-info__avatar" src="img/demin-avatar-small.png" srcset="img/demin-avatar-small@2x.png 2x"
                 alt="Фотография Демина" width="100" height="100" />
             </picture>
           </div>
+          <button
+            class="user-info__change-photo general-info__change-photo button user-info__change-photo--large button--light-theme">
+            <span class="general-info__user-data-text text">ФОТО</span>
+          </button>
           <button class="user-info__change-photo general-info__change-photo button button--light-theme">
             <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
           </button>
@@ -611,7 +615,7 @@
                   <li class="step-list__nav-item step-list__nav-item--disabled text">Развлечения</li>
                 </ul>
               </div>
-              <ul class="add-plans__added-countries step-list__sub-list select-input-list">
+              <ul class="step-list__sub-list select-input-list">
                 <li class="add-plans__country select-input-list__item">
                   <div class="add-plans__select-country add-plans__select-country--empty">
                     <div class="add-plans__selected-country-with-flag">
@@ -634,7 +638,7 @@
                         </svg>
                         <svg class="add-plans__remove-country-icon add-plans__remove-country-icon--selected" width="21"
                           height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="10.5" cy="10.5" r="10.5" />
+                          <circle class="add-plans__remove-country-icon--background" cx="10.5" cy="10.5" r="10.5" />
                           <path class="add-plans__remove-country-icon--stroke" d="M13.875 7.125L7.125 13.875" />
                           <path class="add-plans__remove-country-icon--stroke" d="M7.125 7.125L13.875 13.875" />
                         </svg>
@@ -1117,22 +1121,20 @@
                     </div>
                   </div>
                 </li>
-                <li class="add-plans__country select-input-list__item">
-                  <button type="button" class="add-plans__add-country button button--transparent-theme">
-                    <span class="add-plans__add-country-text button__caption">ДОБАВИТЬ СТРАНУ</span>
-                    <svg class="add-plans__circle-icon add-plans__circle-icon--add-button" width="8" height="8"
-                      viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="add-plans__circle-icon-stroke" cx="4" cy="4" r="3.5" />
-                    </svg>
-                    <svg class="add-plans__add-country-icon select-input-list__flag" width="14" height="14"
-                      viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="7" x2="7" y2="14" stroke="#C2C4C9" stroke-width="2" />
-                      <line y1="7" x2="14" y2="7" stroke="#C2C4C9" stroke-width="2" />
-                    </svg>
-                  </button>
-                </li>
               </ul>
               <div class="step-list__buttons">
+                <button type="button" class="add-plans__add-country button button--transparent-theme">
+                  <span class="add-plans__add-country-text button__caption">ДОБАВИТЬ СТРАНУ</span>
+                  <svg class="add-plans__circle-icon add-plans__circle-icon--add-button" width="8" height="8"
+                    viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="add-plans__circle-icon-stroke" cx="4" cy="4" r="3.5" />
+                  </svg>
+                  <svg class="add-plans__add-country-icon select-input-list__flag" width="14" height="14"
+                    viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="7" x2="7" y2="14" stroke="#C2C4C9" stroke-width="2" />
+                    <line y1="7" x2="14" y2="7" stroke="#C2C4C9" stroke-width="2" />
+                  </svg>
+                </button>
                 <div class="step-list__nav-buttons">
                   <button type="button" class="add-plans__button-step button button--middle-theme">
                     <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>

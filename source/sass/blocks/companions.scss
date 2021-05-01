@@ -2,6 +2,10 @@
   margin-top: 28px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $large-width) {
+    margin-right: 86px;
+  }
 }
 
 .companions__container{
@@ -84,6 +88,7 @@
 
   @media (min-width: $large-width) {
     min-width: 950px;
+    max-height: 285px;
   }
 }
 
@@ -254,4 +259,246 @@
     background-color: transparent;
     opacity: 0.3;
   }
+}
+
+.companions__flag{
+  width: 26px;
+  height: 18px;
+
+  @media (min-width: $medium-width) {
+    width: 35px;
+    height: 24px;
+  }
+}
+
+.companions__plain{
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -70px;
+  }
+}
+
+.companions__plain-1{
+  &:hover{
+    .companions__plain--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-1{
+  display: none;
+}
+
+.companions__plain-2{
+  &:hover{
+    .companions__plain--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-2{
+  display: none;
+}
+
+.companions__plain-3{
+  &:hover{
+    .companions__plain--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-3{
+  display: none;
+}
+
+.companions__plain-4{
+  &:hover{
+    .companions__plain--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-4{
+  display: none;
+}
+
+.companions__bus{
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -82px;
+  }
+}
+
+.companions__bus-1{
+  &:hover{
+    .companions__bus--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-1{
+  display: none;
+}
+
+.companions__bus-2{
+  &:hover{
+    .companions__bus--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-2{
+  display: none;
+}
+
+.companions__bus-3{
+  &:hover{
+    .companions__bus--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-3{
+  display: none;
+}
+
+.companions__bus-4{
+  &:hover{
+    .companions__bus--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-4{
+  display: none;
+}
+
+.companions__bicycle{
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -58px;
+  }
+}
+
+.companions__bicycle-1{
+  &:hover{
+    .companions__bicycle--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-1{
+  display: none;
+}
+
+.companions__bicycle-2{
+  &:hover{
+    .companions__bicycle--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-2{
+  display: none;
+}
+
+.companions__bicycle-3{
+  &:hover{
+    .companions__bicycle--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-3{
+  display: none;
+}
+
+.companions__bicycle-4{
+  &:hover{
+    .companions__bicycle--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-4{
+  display: none;
+}
+
+.companions__walk{
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -45px;
+  }
+}
+
+.companions__walk-1{
+  &:hover{
+    .companions__walk--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-1{
+  display: none;
+}
+
+.companions__walk-2{
+  &:hover{
+    .companions__walk--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-2{
+  display: none;
+}
+
+.companions__walk-3{
+  &:hover{
+    .companions__walk--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-3{
+  display: none;
+}
+
+.companions__walk-4{
+  &:hover{
+    .companions__walk--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-4{
+  display: none;
 }

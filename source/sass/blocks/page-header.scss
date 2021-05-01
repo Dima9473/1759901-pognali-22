@@ -57,6 +57,11 @@
 
 .page-header__caption{
   @include text(36px, bold, 36px, #ffffff);
+
+  @media (min-width: $medium-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-header__buttons{

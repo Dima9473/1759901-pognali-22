@@ -60,29 +60,15 @@
 
 .card-list__photo{
   width: 70px;
+  height: 70px;
   @media (min-width: $medium-width) {
-    width: 100%;
+    width: 190px;
+    height: 190px;
   }
-}
-
-.card-list__photo--small{
-  @media (min-width: $medium-width) {
-    display: none;
-  }
-}
-
-.card-list__photo--medium{
-  display: none;
-  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
-    display: flex;
-  }
-}
-
-.card-list__photo--large{
-  display: none;
 
   @media (min-width: $large-width) {
-    display: flex;
+    width: 285px;
+    height: 285px;
   }
 }
 
