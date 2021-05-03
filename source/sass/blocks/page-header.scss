@@ -25,6 +25,14 @@
   }
 }
 
+.page-header__link {
+  display: none;
+
+  @media (min-width: $medium-width) {
+    display: block;
+  }
+}
+
 .page-header__menu{
   display: flex;
   justify-content: space-between;
@@ -78,6 +86,9 @@
   margin: 0;
   padding-left: 25px;
   padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $medium-width) {
     font-size: 60px;
@@ -164,4 +175,15 @@
   @media (min-width: $large-width) {
     left: 126px;
   }
+}
+
+.page-header__back-link-text{
+  @include text(20px, bold, 20px, #ffffff);
+  text-transform: uppercase;
+  margin-right: 28px;
+}
+
+.page-header__return-to-main{
+  display: flex;
+  align-items: center;
 }

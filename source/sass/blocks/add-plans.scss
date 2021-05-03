@@ -343,12 +343,15 @@
   width: 100%;
 
   @media (min-width: $medium-width) {
-    border-collapse: separate;
-    border-spacing: 16px 14px;
     margin-top: 35px;
     margin-right: 80px;
     margin-bottom: 33px;
     margin-left: 27px;
+  }
+
+  @media (min-width: $large-width) {
+    border-collapse: separate;
+    border-spacing: 16px 14px;
   }
 }
 

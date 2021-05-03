@@ -2,9 +2,12 @@
 
 }
 
+.filter__text{
+
+}
+
 .continents-list__item{
   margin-right: 30px;
-  color: $dark-blue;
   opacity: 0.3;
 
   &:hover{
@@ -14,4 +17,8 @@
   &:active, &:focus{
     opacity: 1;
   }
+}
+
+.continents-list__item--active{
+  opacity: 1;
 }

@@ -180,20 +180,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 220px;
   @include text(16px, 500, 16px, $basic-blue-light);
   text-transform: uppercase;
   letter-spacing: 0.09em;
 
-  @media (min-width: $large-width) {
-    justify-content: flex-start;
-    order: 0;
-  }
 
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $large-width) {
+    justify-content: flex-start;
+    min-width: 220px;
+    order: 0;
   }
 }
 

@@ -161,10 +161,12 @@
   background-color: $dark-grey;
   &:hover{
     opacity: 0.6;
+    background-color: $dark-grey;
   }
 
   &:active, &:focus{
     opacity: 0.1;
+    background-color: $dark-grey;
   }
 }
 
@@ -204,6 +206,7 @@
 .card-list__level{
   display: flex;
   flex-direction: column;
+  align-items: center
 }
 
 .card-list__level-number{
@@ -263,4 +266,11 @@
 
 .card-list__likes-count{
   min-width: 40px;
+  @include text(14px, bold, 16px, $basic-blue);
+  text-transform: uppercase;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
