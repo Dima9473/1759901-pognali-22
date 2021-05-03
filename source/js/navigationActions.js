@@ -1,11 +1,11 @@
-var navMain = document.querySelector('.main-menu');
-var navToggle = document.querySelector('.menu__toggle');
-var pageHeader = document.querySelector('.page-header');
-var logo = document.querySelector('.menu__logo-mobile');
-var logoDark = document.querySelector('.menu__logo-mobile-dark');
-var closButton = document.querySelector('.menu__close-icon');
-var openButton = document.querySelector('.menu__open-icon');
-var promoActions = document.querySelector('.menu__actions');
+let navMain = document.querySelector('.main-menu');
+let navToggle = document.querySelector('.menu__toggle');
+let pageHeader = document.querySelector('.page-header');
+let logo = document.querySelector('.menu__logo-mobile');
+let logoDark = document.querySelector('.menu__logo-mobile-dark');
+let closButton = document.querySelector('.menu__close-icon');
+let openButton = document.querySelector('.menu__open-icon');
+let promoActions = document.querySelector('.menu__actions');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-menu--closed')) {

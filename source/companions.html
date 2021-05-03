@@ -46,13 +46,13 @@
       <nav class="menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="text site-list__link site-list__link--light" href="index.html">О СЕРВИСЕ</a>
+            <a class="text site-list__link link site-list__link--light" href="index.html">О СЕРВИСЕ</a>
           </li>
           <li class="site-list__item">
-            <a class="text site-list__link site-list__link--light" href="directions.html">НАПРАВЛЕНИЯ</a>
+            <a class="text site-list__link link site-list__link--light" href="directions.html">НАПРАВЛЕНИЯ</a>
           </li>
           <li class="site-list__item">
-            <a class="text site-list__link site-list__link--light" href="#">ПОПУТЧИКИ</a>
+            <a class="text site-list__link link site-list__link--light" href="#">ПОПУТЧИКИ</a>
           </li>
         </ul>
       </nav>
@@ -89,13 +89,13 @@
         <nav class="main-menu__nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="text site-list__link" href="index.html">О СЕРВИСЕ</a>
+              <a class="text site-list__link link" href="index.html">О СЕРВИСЕ</a>
             </li>
             <li class="site-list__item">
-              <a class="text site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
+              <a class="text site-list__link link" href="directions.html">НАПРАВЛЕНИЯ</a>
             </li>
             <li class="site-list__item">
-              <a class="text site-list__link" href="#">ПОПУТЧИКИ</a>
+              <a class="text site-list__link link" href="#">ПОПУТЧИКИ</a>
             </li>
           </ul>
         </nav>
@@ -166,6 +166,17 @@
     </div>
     <div class="page-header__caption container">
       <span class="text">Попутчики</span>
+      <div class="page-header__return-to-main">
+        <a class="page-header__link link" href="index.html">
+          <span class="page-header__back-link-text text">На главную</span>
+          <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4 16H28C30.2091 16 32 14.2091 32 12V7C32 4.79086 30.2091 3 28 3H4V5H28C29.1046 5 30 5.89543 30 7V12C30 13.1046 29.1046 14 28 14H4V16Z"
+              fill="white" />
+            <path d="M0 4L9 0.535898V7.4641L0 4Z" fill="white" />
+          </svg>
+        </a>
+      </div>
     </div>
     <svg class="page-header__underline" width="358" height="8" viewBox="0 0 358 8" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -174,385 +185,365 @@
   </header>
   <main class="page-main page-main--light">
     <section class="filter">
-      <div class="container">
-        <header class="filter__header">
-          <h2 class="visually-hidden">Фильтрация странн</h2>
-          <svg class="filter__filter-icon" width="16" height="10" viewBox="0 0 16 10"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect x="7.17395" width="7.82609" height="2" />
-            <rect x="7.17383" y="8" width="7.82609" height="2" />
-            <rect y="4" width="7.82609" height="2" />
-            <rect x="3.91309" width="1.95652" height="2" />
-            <rect x="3.91309" y="8" width="1.95652" height="2" />
-            <rect x="9.13037" y="4" width="1.95652" height="2" />
-            <rect width="2.6087" height="2" />
-            <rect y="8" width="2.6087" height="2" />
-            <rect x="12.3914" y="4" width="2.6087" height="2" />
-          </svg>
-          <span class="filter__filter-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
-          <ul class="filter__continents-list continents-list">
-            <li class="continents-list__item">
-              <span class="text">Европа</span>
-            </li>
-            <li class="continents-list__item">
-              <span class="text">Азия</span>
-            </li>
-            <li class="continents-list__item">
-              <span class="text">Америка</span>
-            </li>
-            <li class="continents-list__item">
-              <span class="text">Острова</span>
-            </li>
-          </ul>
-          <span class="filter__show-all text">Показать все</span>
-          <span class="filter__hide text">Свернуть</span>
-          <button class="filter__toggle button button--points-togle" type="button">
-            <span class="visually-hidden">...</span>
-          </button>
-        </header>
-        <div class="filter__body filter__body--closed">
-          <!-- <select class="filter__input-list select-input-list select" multiple>
-            <option class="select__item" selected>ЕВРОПА</option>
-            <option class="select__item">АЗИЯ</option>
-            <option class="select__item">АМЕРИКА</option>
-            <option class="select__item">ОСТРОВА</option>
-          </select> -->
-          <ul class="filter__list buttons-block">
-            <li class="buttons-block__item">
-              <ul class="buttons-block__list buttons-line">
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button button--active">
-                    <span class="button__caption">А</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Б</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">В</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Г</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Д</span>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="buttons-block__item">
-              <ul class="buttons-block__list buttons-line">
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Е</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">З</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">И</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">К</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Л</span>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="buttons-block__item">
-              <ul class="buttons-block__list buttons-line">
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">М</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Н</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">О</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">П</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Р</span>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="buttons-block__item">
-              <ul class="buttons-block__list buttons-line">
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">С</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Т</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">У</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Ф</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Х</span>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="buttons-block__item">
-              <ul class="buttons-block__list buttons-line">
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Ч</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="butto__text">Ш</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Э</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Ю</span>
-                  </button>
-                </li>
-                <li class="buttons-line__item">
-                  <button class="buttons-line__button button">
-                    <span class="button__caption">Я</span>
-                  </button>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <select class="filter__input-list select-input-list select" multiple>
-            <option class="select__item">Австралия</option>
-            <option class="select__item">Австрия</option>
-            <option class="select__item">Айзербайджан</option>
-            <option class="select__item">Албания</option>
-            <option class="select__item">Алжир</option>
-            <option class="select__item">Ангола</option>
-            <option class="select__item">Андорра</option>
-            <option class="select__item">Антигуа и Барбуда</option>
-            <option class="select__item">Аргентина</option>
-            <option class="select__item">Армения</option>
-            <option class="select__item">Афганистан</option>
-          </select>
-          <button class="filter__change-photo button button--light-theme">
-            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
-                stroke-linejoin="round" />
+      <div class="filter__container container">
+        <div class="filter__wrapper">
+          <div class="filter__header">
+            <h2 class="visually-hidden">Фильтрация странн</h2>
+            <svg class="filter__filter-icon" width="16" height="10" viewBox="0 0 16 10"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="7.17395" width="7.82609" height="2" />
+              <rect x="7.17383" y="8" width="7.82609" height="2" />
+              <rect y="4" width="7.82609" height="2" />
+              <rect x="3.91309" width="1.95652" height="2" />
+              <rect x="3.91309" y="8" width="1.95652" height="2" />
+              <rect x="9.13037" y="4" width="1.95652" height="2" />
+              <rect width="2.6087" height="2" />
+              <rect y="8" width="2.6087" height="2" />
+              <rect x="12.3914" y="4" width="2.6087" height="2" />
             </svg>
-            <span class="button__caption">СВЕРНУТЬ</span>
-          </button>
+            <span class="filter__filter-country-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
+            <ul class="filter__continents-list continents-list">
+              <li class="continents-list__item  filter__text continents-list__item--active">
+                <span class="text">Европа</span>
+              </li>
+              <li class="continents-list__item filter__text">
+                <span class="text">Азия</span>
+              </li>
+              <li class="continents-list__item filter__text">
+                <span class="text">Америка</span>
+              </li>
+              <li class="continents-list__item filter__text">
+                <span class="text">Острова</span>
+              </li>
+            </ul>
+            <span class="filter__show-all text filter__text">Показать все</span>
+            <span class="filter__hide filter__text text visually-hidden">Свернуть</span>
+            <button class="filter__toggle-button button button--transparent-theme" type="button">
+              <svg class="filter__toggle filter__toggle--opened" width="17" height="3" viewBox="0 0 30 6"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" />
+                <circle cx="15" cy="3" r="3" />
+                <circle cx="27" cy="3" r="3" />
+              </svg>
+              <svg class="filter__toggle filter__toggle--closed visually-hidden" width="16" height="16"
+                viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M21 2.91573L3 19.3428" />
+                  <path d="M3 2.91573L21 19.3428" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect class="filter__close-icon" width="22" height="24"
+                      transform="translate(0 22.0807) rotate(-90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div class="filter__body visually-hidden">
+            <!-- filter__countries-table-wrapper visually-hidden filter__countries-table--3 -->
+            <table class="filter__countries-table alphabet">
+              <tr>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">а</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">б</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">в</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">г</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">д</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">е</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">з</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">и</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">к</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">л</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">м</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">н</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">о</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">п</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">р</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">с</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">т</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">у</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">ф</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">х</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">ч</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">ш</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">э</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">ю</span>
+                </td>
+                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                  <span class="text--uper">я</span>
+                </td>
+              </tr>
+            </table>
+            <ul class="filter__countries country-list">
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Австралия</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Австрия</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Айзербайджан</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Албания</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Алжир</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Ангола</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Андора</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Антигуа и Барбуда</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Аргентина</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Армения</span>
+              </li>
+              <li class="filter__countries country-list__item">
+                <span class="filter__country-text text">Афганистан</span>
+              </li>
+            </ul>
+            <button class="filter__close button button--light-theme">
+              <svg class="filter__close-icon" width="14" height="14" viewBox="0 0 14 14"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <span class="button__caption">СВЕРНУТЬ</span>
+            </button>
+          </div>
         </div>
-      </div>
+        </header>
     </section>
     <div class="companions__container">
       <div class="container">
         <h1 class="visually-hidden">Подбор попутчиков</h1>
         <div class="companions-operations">
           <form action="https://echo.htmlacademy.ru" method="POST" class="choose-companion">
-            <div class="container">
+            <div class="choose-companion__container container">
               <h2 class="choose-companion__caption text">Подберите <br class="choose-companion__br">идеального <br
                   class="choose-companion__br">попутчика</h2>
               <ul class="choose-companion__list companions-list">
-                <li class="companions-list__item">
-                  <div class="companions-list__select dropdown-multiple-select">
-                    <div class="dropdown-multiple-select__header">
-                      <span class="dropdown-multiple-select__text text">ХОББИ</span>
+                <li class="choose-companion__item">
+                  <div class="choose-companion__select">
+                    <div class="choose-companion__select-header">
+                      <span class="choose-companion__select-text text">ХОББИ</span>
                       <button
-                        class="dropdown-multiple-select__toggle choose-companion__checkboxes-toggle-1 button button--arrow"
+                        class="choose-companion__search-params-toggle choose-companion__search-params-toggle-1 button button--arrow"
                         type="button">
                         <svg
-                          class="dropdown-multiple-select__button choose-companion__checkboxe-opened-icon-1 button button--transparent-theme visually-hidden"
+                          class="choose-companion__checkboxe-opened-icon-1 button button--transparent-theme visually-hidden"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
                         </svg>
-                        <svg
-                          class="dropdown-multiple-select__button choose-companion__checkboxe-closed-icon-1 button button--transparent-theme"
+                        <svg class="choose-companion__checkboxe-closed-icon-1 button button--transparent-theme"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <div class="choose-companion__checkboxes choose-companion__checkboxes-1 visually-hidden">
+                    <div
+                      class="choose-companion__search-params choose-companion__search-params-1 choose-companion__visually-hidden">
                       <div class="choose-companion__checkboxe">
-                        <input id="gym" type="checkbox" name="hobbypreference" value="Gym">
+                        <input id="gym" type="checkbox" class="checkbox" name="hobbypreference" value="Gym">
                         <label for="gym" class="choose-companion__checkboxe-text checkbox__text text">Спортзал</label>
                       </div>
                       <div class="choose-companion__checkboxe">
-                        <input id="hookah" type="checkbox" name="hobbypreference" value="Hookah">
+                        <input id="hookah" type="checkbox" class="checkbox" name="hobbypreference" value="Hookah">
                         <label for="hookah" class="choose-companion__checkboxe-text checkbox__text text">Кальян</label>
                       </div>
                       <div class="choose-companion__checkboxe">
-                        <input id="sofa" type="checkbox" name="hobbypreference" value="Sofa">
+                        <input id="sofa" type="checkbox" class="checkbox" name="hobbypreference" value="Sofa">
                         <label for="sofa" class="choose-companion__checkboxe-text checkbox__text text">Диван</label>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="companions-list__item">
-                  <div class="companions-list__select dropdown-multiple-select dropdown-multiple-select--active">
-                    <div class="dropdown-multiple-select__header">
-                      <span class="dropdown-multiple-select__text text">МУЗЫКА</span>
+                <li class="choose-companion__item">
+                  <div class="choose-companion__select">
+                    <div class="choose-companion__select-header">
+                      <span class="choose-companion__select-text text">МУЗЫКА</span>
                       <button
-                        class="dropdown-multiple-select__toggle choose-companion__checkboxes-toggle-2 button button--arrow"
+                        class="choose-companion__search-params-toggle choose-companion__search-params-toggle-2 button button--arrow"
                         type="button">
-                        <svg
-                          class="dropdown-multiple-select__button choose-companion__checkboxe-opened-icon-2 button button--transparent-theme"
+                        <svg class="choose-companion__checkboxe-opened-icon-2 button button--transparent-theme"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
                         </svg>
                         <svg
-                          class="dropdown-multiple-select__button choose-companion__checkboxe-closed-icon-2 button button--transparent-theme visually-hidden"
+                          class="choose-companion__checkboxe-closed-icon-2 button button--transparent-theme visually-hidden"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <div class="choose-companion__checkboxes choose-companion__checkboxes-2">
+                    <div class="choose-companion__search-params choose-companion__search-params-2">
                       <div class="choose-companion__checkboxe">
-                        <input id="hardrock" type="checkbox" name="musicpreference" value="Hardrock">
+                        <input id="hardrock" type="checkbox" class="checkbox" name="musicpreference" value="Hardrock">
                         <label for="hardrock" class="choose-companion__checkboxe-text checkbox__text text">Тяжелый
                           рок</label>
                       </div>
                       <div class="choose-companion__checkboxe">
-                        <input id="russianrap" type="checkbox" name="musicpreference" value="Russianrap">
+                        <input id="russianrap" type="checkbox" class="checkbox" name="musicpreference"
+                          value="Russianrap">
                         <label for="russianrap" class="choose-companion__checkboxe-text checkbox__text text">Русский
                           рэп</label>
                       </div>
                       <div class="choose-companion__checkboxe">
-                        <input id="eurodance" type="checkbox" name="musicpreference" value="Eurodance">
+                        <input id="eurodance" type="checkbox" class="checkbox" name="musicpreference" value="Eurodance">
                         <label for="eurodance"
                           class="choose-companion__checkboxe-text checkbox__text text">Евроденс</label>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="companions-list__item">
-                  <div class="companions-list__select dropdown-multiple-select">
-                    <div class="dropdown-multiple-select__header"><span
-                        class="dropdown-multiple-select__text">ЕДА</span>
+                <li class="choose-companion__item">
+                  <div class="choose-companion__select">
+                    <div class="choose-companion__select-header"><span class="choose-companion__select-text">ЕДА</span>
                       <button
-                        class="dropdown-multiple-select__toggle choose-companion__checkboxes-toggle-3 button button--arrow"
+                        class="choose-companion__search-params-toggle choose-companion__search-params-toggle-3 button button--arrow"
                         type="button">
                         <svg
-                          class="dropdown-multiple-select__button choose-companion__checkboxe-opened-icon-3 button button--transparent-theme visually-hidden"
+                          class="choose-companion__checkboxe-opened-icon-3 button button--transparent-theme visually-hidden"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
                         </svg>
-                        <svg
-                          class="dropdown-multiple-select__button choose-companion__checkboxe-closed-icon-3 button button--transparent-theme"
+                        <svg class="choose-companion__checkboxe-closed-icon-3 button button--transparent-theme"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <div class="choose-companion__checkboxes choose-companion__checkboxes-3 visually-hidden">
+                    <div
+                      class="choose-companion__search-params choose-companion__search-params-3 choose-companion__visually-hidden">
                       <div class="choose-companion__checkboxe">
-                        <input id="meateater" type="checkbox" name="foodpreference" value="Meateater">
+                        <input id="meateater" type="checkbox" class="checkbox" name="foodpreference" value="Meateater">
                         <label for="meateater"
                           class="choose-companion__checkboxe-text checkbox__text text">Мясоед</label>
                       </div>
                       <div class="choose-companion__checkboxe">
-                        <input id="sitsonpropernutrition" type="checkbox" name="foodpreference"
+                        <input id="sitsonpropernutrition" type="checkbox" class="checkbox" name="foodpreference"
                           value="Sitsonpropernutrition">
                         <label for="sitsonpropernutrition"
                           class="choose-companion__checkboxe-text checkbox__text text">Сидит на
                           ПП</label>
                       </div>
                       <div class="choose-companion__checkboxe">
-                        <input id="rawvegan" type="checkbox" name="foodpreference" value="Rawvegan">
+                        <input id="rawvegan" type="checkbox" class="checkbox" name="foodpreference" value="Rawvegan">
                         <label for="rawvegan"
                           class="choose-companion__checkboxe-text checkbox__text text">Веган-сыроед</label>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="companions-list__item">
-                  <div class="companions-list__select dropdown-multiple-select">
-                    <div class="dropdown-multiple-select__header">
-                      <span class="dropdown-multiple-select__text">ТРАНСПОРТ</span>
+                <li class="choose-companion__item">
+                  <div class="choose-companion__select">
+                    <div class="choose-companion__select-header">
+                      <span class="choose-companion__select-text">ТРАНСПОРТ</span>
                       <button
-                        class="dropdown-multiple-select__toggle choose-companion__transport-toggle button button--arrow"
+                        class="choose-companion__search-params-toggle-4 choose-companion__search-params-toggle button button--arrow"
                         type="button">
                         <svg
-                          class="dropdown-multiple-select__button choose-companion__transport-opened-icon button button--transparent-theme"
+                          class="choose-companion__transport-opened-icon-4 choose-companion__search-params-toggle button button--transparent-theme"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
                         </svg>
                         <svg
-                          class="dropdown-multiple-select__button choose-companion__transport-closed-icon button button--transparent-theme visually-hidden"
+                          class="choose-companion__transport-closed-icon-4 button button--transparent-theme visually-hidden"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <ul class="choose-companion__transport dropdown-multiple-select__list transport-list">
-                      <li class="transport-list__item">
-                        <button class="transport-list__item button button--togle button--light-theme " type="button">
-                          <svg class="button--active" width="18" height="20" viewBox="0 0 18 20"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <ul class="choose-companion__transports choose-companion__search-params-4 transport-list">
+                      <li class="choose-companion__transport transport-list__item">
+                        <button class="choose-companion__transport-button button button--togle button--light-theme "
+                          type="button">
+                          <svg class="choose-companion__transport-icon icon--active" width="18" height="20"
+                            viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
                           </svg>
                         </button>
                       </li>
-                      <li class="transport-list__item">
-                        <button class="transport-list__item button button--togle button--light-theme" type="button">
-                          <svg class="button--active" width="18" height="21" viewBox="0 0 18 21"
-                            xmlns="http://www.w3.org/2000/svg">
+                      <li class="choose-companion__transport transport-list__item">
+                        <button class="choose-companion__transport-button button button--togle button--light-theme"
+                          type="button">
+                          <svg class="choose-companion__transport-icon icon--active" width="18" height="20"
+                            viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
                           </svg>
                         </button>
                       </li>
-                      <li class="transport-list__item">
-                        <button class="transport-list__item button button--light-theme button--togle" type="button">
-                          <svg class="icon--disabled" width="25" height="24" viewBox="0 0 25 24"
-                            xmlns="http://www.w3.org/2000/svg">
+                      <li class="choose-companion__transport transport-list__item">
+                        <button class="choose-companion__transport-button button button--light-theme button--togle"
+                          type="button">
+                          <svg class="choose-companion__transport-icon icon--disabled" width="18" height="20"
+                            viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M18.3075 21C17.4664 21 16.6442 20.7471 15.9449 20.2732C15.2456 19.7994 14.7005 19.1258 14.3786 18.3378C14.0568 17.5498 13.9726 16.6827 14.1366 15.8462C14.3007 15.0096 14.7057 14.2412 15.3005 13.6381C15.8952 13.035 16.6529 12.6243 17.4779 12.4579C18.3028 12.2915 19.1578 12.3769 19.9349 12.7033C20.7119 13.0297 21.3761 13.5824 21.8434 14.2916C22.3106 15.0008 22.5601 15.8346 22.5601 16.6875C22.5588 17.8309 22.1104 18.927 21.3132 19.7355C20.5159 20.544 19.435 20.9988 18.3075 21V21ZM18.3075 13.875C17.759 13.875 17.2228 14.04 16.7667 14.349C16.3106 14.658 15.9551 15.0973 15.7452 15.6112C15.5353 16.1251 15.4804 16.6906 15.5874 17.2362C15.6944 17.7818 15.9585 18.2829 16.3464 18.6762C16.7343 19.0696 17.2284 19.3374 17.7664 19.446C18.3044 19.5545 18.8621 19.4988 19.3688 19.2859C19.8756 19.073 20.3088 18.7126 20.6135 18.25C20.9182 17.7875 21.0809 17.2438 21.0809 16.6875C21.08 15.9418 20.7876 15.227 20.2676 14.6997C19.7477 14.1725 19.0428 13.8759 18.3075 13.875V13.875Z" />
                             <path
@@ -564,10 +555,11 @@
                           </svg>
                         </button>
                       </li>
-                      <li class="transport-list__item">
-                        <button class="transport-list__item button button--togle button--light-theme" type="button">
-                          <svg class="button--active" width="21" height="24" viewBox="0 0 21 24"
-                            xmlns="http://www.w3.org/2000/svg">
+                      <li class="choose-companion__transport transport-list__item">
+                        <button class="choose-companion__transport-button button button--togle button--light-theme"
+                          type="button">
+                          <svg class="choose-companion__transport-icon icon--active" width="18" height="20"
+                            viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z"
                               fill="#1D2E5B" />
@@ -580,29 +572,45 @@
                     </ul>
                   </div>
                 </li>
-                <li class="companions-list__item">
-                  <div class="companions-list__select dropdown-multiple-select">
-                    <div class="dropdown-multiple-select__header">
-                      <span class="dropdown-multiple-select__text">ЛЕВЕЛ</span>
+                <li class="choose-companion__item">
+                  <div class="choose-companion__select">
+                    <div class="choose-companion__select-header">
+                      <span class="choose-companion__select-text">ЛЕВЕЛ</span>
                       <button
-                        class="dropdown-multiple-select__toggle choose-companion__level-toggle button button--arrow"
+                        class="choose-companion__search-params-toggle-5 choose-companion__search-params-toggle button button--arrow"
                         type="button">
-                        <svg
-                          class="dropdown-multiple-select__button choose-companion__level-opened-icon button button--transparent-theme"
+                        <svg class="choose-companion__search-params-opened-icon-5 button button--transparent-theme"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 0L9.33013 4.5H0.669873L5 0Z" />
                         </svg>
                         <svg
-                          class="dropdown-multiple-select__button choose-companion__level-closed-icon button button--transparent-theme visually-hidden"
+                          class="choose-companion__search-params-closed-icon-5 button button--transparent-theme visually-hidden"
                           width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 5L0.669872 0.5L9.33013 0.5L5 5Z" />
                         </svg>
                       </button>
                     </div>
-                    <div class="choose-companion__level">
-                      <span class="dropdown-multiple-select__range-min-value text">30</span>
-                      <input type="range" class="dropdown-multiple-select__range" min="30" max="100" />
-                      <span class="dropdown-multiple-select__range-min-value text">100</span>
+                    <div class="choose-compnion__level choose-companion__search-params-5">
+                      <div class="choose-compnion__level-range">
+                        <span class="choose-compnion__range-value text">30</span>
+                        <svg class="choose-companion__range-icon" width="16" height="35" viewBox="0 0 16 35"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <line x1="8.5" y1="22.8261" x2="8.5" y2="35" />
+                          <line x1="8.5" x2="8.5" y2="12.1739" />
+                          <line y1="17" x2="16" y2="17" />
+                        </svg>
+                        <span class="choose-compnion__range-value text">100</span>
+                      </div>
+                      <div class="choose-compnion__range">
+                        <svg width="220" height="10" viewBox="0 0 220 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="72" cy="5" r="5" fill="#1D2E5B" />
+                          <circle cx="215" cy="5" r="5" fill="#1D2E5B" />
+                          <rect opacity="0.2" y="4" width="193" height="2" fill="#1D2E5B" />
+                          <rect x="73" y="4" width="138" height="2" fill="#1D2E5B" />
+                        </svg>
+                      </div>
+                      <!-- <input type="range" class="choose-compnion__range" min="30" max="100" /> -->
                     </div>
                   </div>
                 </li>
@@ -657,11 +665,11 @@
                     </ul>
                   </div>
                   <div class="companions__buttons card-list__buttons">
-                    <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
+                    <button type="button" class="companions__call button button--middle-theme text">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button button--active">
-                        <svg class="button--like" width="13" height="11" viewBox="0 0 13 11"
-                          xmlns="http://www.w3.org/2000/svg">
+                      <button class="companions__button-like card-list__button button">
+                        <svg class="companions__like icon--active button--like icon--background-padding" width="13"
+                          height="11" viewBox="0 0 13 11" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M3.25536 0.47406C4.94813 0.47406 6.31919 1.82156 6.31919 3.48385C6.31919 1.82156 7.69025 0.47406 9.38302 0.47406C11.0758 0.47406 12.4469 1.82156 12.4469 3.48385C12.4469 5.98919 9.96974 6.87293 6.61945 10.8609C6.58256 10.9047 6.53658 10.9399 6.48472 10.9641C6.43286 10.9882 6.37637 11.0007 6.31919 11.0007C6.26201 11.0007 6.20552 10.9882 6.15366 10.9641C6.1018 10.9399 6.05582 10.9047 6.01893 10.8609C2.66864 6.87293 0.191528 5.98919 0.191528 3.48385C0.191528 1.82156 1.56259 0.47406 3.25536 0.47406Z" />
                         </svg>
@@ -711,9 +719,9 @@
                         Транспорт
                       </span>
                       <ul class="companions__card-list card-list icon-list">
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__plain-1 icon-list__link icon icon--transparent-theme">
-                            <svg class="button--active" width="18" height="20" viewBox="0 0 18 20"
+                            <svg class="icon--active" width="18" height="20" viewBox="0 0 18 20"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
@@ -721,7 +729,7 @@
                             <div class="companions__plain companions__plain--visible-1 tooltip text">Авиаперелет</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bus-1 icon-list__link icon icon--transparent-theme">
                             <svg class="icon--disabled" width="18" height="21" viewBox="0 0 18 21"
                               xmlns="http://www.w3.org/2000/svg">
@@ -731,7 +739,7 @@
                             <div class="companions__bus companions__bus--visible-1 tooltip text">Автотранспорт</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bicycle-1 icon-list__link icon icon--transparent-theme">
                             <svg class="icon--disabled" width="25" height="24" viewBox="0 0 25 24"
                               xmlns="http://www.w3.org/2000/svg">
@@ -747,7 +755,7 @@
                             <div class="companions__bicycle companions__bicycle--visible-1 tooltip text">Велосипед</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__walk-1 icon-list__link icon icon--transparent-theme icon--pedestrian">
                             <svg class="icon--disabled" width="21" height="24" viewBox="0 0 21 24"
                               xmlns="http://www.w3.org/2000/svg">
@@ -763,9 +771,28 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="card-list__level">
-                      <span class="card-list__text text">level</span>
-                      <b class="card-list__level-number text">99</b>
+                    <div class="companions__level card-list__level">
+                      <span class="companions__level-text card-list__text text">level</span>
+                      <svg class="companions__level-icon companions__level-icon--small" width="46" height="45"
+                        viewBox="0 0 46 45" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M23.5454 1.52201C28.9393 1.76918 34.0308 4.08455 37.7624 7.98727C41.494 11.89 43.5789 17.0801 43.5841 22.4797C43.5893 27.8793 41.5144 33.0735 37.7904 36.9834C34.0664 40.8933 28.9794 43.2185 23.5859 43.4761C18.1924 43.7337 12.907 41.9038 8.82727 38.3666C4.74757 34.8294 2.18715 29.8566 1.67776 24.4811C1.16837 19.1056 2.74917 13.7404 6.09185 9.49979C9.43452 5.25923 14.2822 2.46918 19.628 1.7091" />
+                        <text class="companions__level-number" x="12" y="30">
+                          99
+                        </text>
+                      </svg>
+                      <svg class="companions__level-icon companions__level-icon--medium" width="64" height="64"
+                        viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M27.436 2.3492C19.7903 3.52607 12.8947 7.61087 8.18897 13.7508C3.48324 19.8906 1.33115 27.611 2.18203 35.2998C3.03291 42.9886 6.82098 50.0516 12.7553 55.014C18.6897 59.9764 26.3116 62.4546 34.0296 61.9313C41.7477 61.4079 48.9652 57.9234 54.1753 52.2053C59.3854 46.4872 62.1854 38.9775 61.9905 31.2442C61.7956 23.5109 58.621 16.1518 53.1295 10.7034C47.6379 5.25497 40.254 2.13844 32.5194 2.0045" />
+                        <text class="companions__level-number" x="20" y="30">
+                          99
+                        </text>
+                        <line class="companions__level-line" x1="17" y1="38.5" x2="48" y2="38.5" />
+                        <text class="companions__level-icon-text" x="18" y="50">
+                          level
+                        </text>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -809,10 +836,11 @@
                     </ul>
                   </div>
                   <div class="companions__buttons card-list__buttons">
-                    <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
+                    <button type="button" class="companions__call button button--middle-theme">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button card-list__button--disabled">
-                        <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <button class="companions__button-like card-list__button button card-list__button--disabled">
+                        <svg class="companions__like icon--background-padding" width="12" height="12"
+                          viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <g>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" />
@@ -843,7 +871,7 @@
                           <img class="companions__flag flags-list__icon flag" src="img/czech-flag-small.png"
                             srcset="img/czech-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Бельгии" />
                         </picture>
-                        <span class="flags-list__flag-caption">Чехия</span>
+                        <span class="flags-list__flag-caption text">Чехия</span>
                       </div>
                     </li>
                   </ul>
@@ -853,9 +881,9 @@
                         Транспорт
                       </span>
                       <ul class="companions__card-list card-list icon-list">
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__plain-2 icon-list__link icon icon--transparent-theme">
-                            <svg class="button--active" width="18" height="20" viewBox="0 0 18 20"
+                            <svg class="icon--active" width="18" height="20" viewBox="0 0 18 20"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
@@ -863,9 +891,9 @@
                             <div class="companions__plain companions__plain--visible-2 tooltip text">Авиаперелет</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class=" companions__bus-2 icon-list__link icon icon--transparent-theme">
-                            <svg class="button--active" width="18" height="21" viewBox="0 0 18 21"
+                            <svg class="icon--active" width="18" height="21" viewBox="0 0 18 21"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
@@ -873,7 +901,7 @@
                             <div class="companions__bus companions__bus--visible-2 tooltip text">Автотранспорт</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bicycle-2 icon-list__link icon icon--transparent-theme">
                             <svg class="icon--disabled" width="25" height="24" viewBox="0 0 25 24"
                               xmlns="http://www.w3.org/2000/svg">
@@ -889,9 +917,9 @@
                             <div class="companions__bicycle companions__bicycle--visible-2 tooltip text">Велосипед</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__walk-2 icon-list__link icon icon--transparent-theme icon--pedestrian">
-                            <svg class="button--active" width="21" height="24" viewBox="0 0 21 24"
+                            <svg class="icon--active" width="21" height="24" viewBox="0 0 21 24"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z"
@@ -905,9 +933,28 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="card-list__level">
-                      <span class="card-list__text text">level</span>
-                      <b class="card-list__level-number text">80</b>
+                    <div class="companions__level card-list__level">
+                      <span class="companions__level-text card-list__text text">level</span>
+                      <svg class="companions__level-icon companions__level-icon--small" width="46" height="45"
+                        viewBox="0 0 46 45" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M23.5145 1.50818C27.9499 1.63199 32.2321 3.15753 35.7467 5.86592C39.2614 8.57431 41.8278 12.3264 43.0779 16.5838C44.3279 20.8412 44.1973 25.3851 42.7048 29.5637C41.2123 33.7423 38.4346 37.3407 34.7702 39.8428C31.1059 42.3449 26.7431 43.6219 22.3079 43.4908C17.8727 43.3597 13.593 41.8271 10.0829 39.113C6.57268 36.3988 4.01241 32.6425 2.76936 28.3831C1.52632 24.1236 1.66439 19.5799 3.16376 15.4038" />
+                        <text class="companions__level-number" x="12" y="30">
+                          80
+                        </text>
+                      </svg>
+                      <svg class="companions__level-icon companions__level-icon--medium" width="64" height="64"
+                        viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M4.93242 19.0638C2.18934 24.8033 1.34174 31.2663 2.51205 37.5191C3.68236 43.7719 6.80999 49.4909 11.4432 53.8499C16.0764 58.2089 21.9752 60.9823 28.2877 61.7694C34.6002 62.5566 40.9995 61.3168 46.5613 58.2291C52.1231 55.1415 56.5594 50.3658 59.2295 44.5919C61.8995 38.8179 62.6651 32.3447 61.4156 26.1073C60.166 19.8698 56.9661 14.191 52.278 9.89114C47.5899 5.59126 41.6563 2.89292 35.3344 2.18588" />
+                        <text class="companions__level-number" x="20" y="30">
+                          80
+                        </text>
+                        <line class="companions__level-line" x1="17" y1="38.5" x2="48" y2="38.5" />
+                        <text class="companions__level-icon-text" x="18" y="50">
+                          level
+                        </text>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -951,10 +998,11 @@
                     </ul>
                   </div>
                   <div class="companions__buttons card-list__buttons">
-                    <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
+                    <button type="button" class="companions__call button button--middle-theme">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button card-list__button--disabled">
-                        <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <button class="companions__button-like card-list__button button card-list__button--disabled">
+                        <svg class="companions__like icon--background-padding" width="12" height="12"
+                          viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <g>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" />
@@ -987,7 +1035,7 @@
                           <img class="companions__flag flags-list__icon flag" src="img/australia-flag-small.png"
                             srcset="img/australia-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Австралии" />
                         </picture>
-                        <span class="flags-list__flag-caption">Австралия</span>
+                        <span class="flags-list__flag-caption text">Австралия</span>
                       </div>
                     </li>
                     <li class="flags-list__item">
@@ -998,7 +1046,7 @@
                           <img class="companions__flag flags-list__icon flag" src="img/dominica-flag-small.png"
                             srcset="img/dominica-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Доминиканы" />
                         </picture>
-                        <span class="flags-list__flag-caption">Доминикана</span>
+                        <span class="flags-list__flag-caption text">Доминикана</span>
                       </div>
                     </li>
                   </ul>
@@ -1008,9 +1056,9 @@
                         Транспорт
                       </span>
                       <ul class="companions__card-list card-list icon-list">
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__plain-3 icon-list__link icon icon--transparent-theme">
-                            <svg class="button--active" width="18" height="20" viewBox="0 0 18 20"
+                            <svg class="icon--active" width="18" height="20" viewBox="0 0 18 20"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
@@ -1018,7 +1066,7 @@
                             <div class="companions__plain companions__plain--visible-3 tooltip text">Авиаперелет</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bus-3 icon-list__link icon icon--transparent-theme ">
                             <svg class="icon--disabled" width="18" height="21" viewBox="0 0 18 21"
                               xmlns="http://www.w3.org/2000/svg">
@@ -1028,9 +1076,9 @@
                             <div class="companions__bus companions__bus--visible-3 tooltip text">Автотранспорт</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bicycle-3 icon-list__link icon icon--transparent-theme ">
-                            <svg class="button--active" width="25" height="24" viewBox="0 0 25 24"
+                            <svg class="icon--active" width="25" height="24" viewBox="0 0 25 24"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M18.3075 21C17.4664 21 16.6442 20.7471 15.9449 20.2732C15.2456 19.7994 14.7005 19.1258 14.3786 18.3378C14.0568 17.5498 13.9726 16.6827 14.1366 15.8462C14.3007 15.0096 14.7057 14.2412 15.3005 13.6381C15.8952 13.035 16.6529 12.6243 17.4779 12.4579C18.3028 12.2915 19.1578 12.3769 19.9349 12.7033C20.7119 13.0297 21.3761 13.5824 21.8434 14.2916C22.3106 15.0008 22.5601 15.8346 22.5601 16.6875C22.5588 17.8309 22.1104 18.927 21.3132 19.7355C20.5159 20.544 19.435 20.9988 18.3075 21V21ZM18.3075 13.875C17.759 13.875 17.2228 14.04 16.7667 14.349C16.3106 14.658 15.9551 15.0973 15.7452 15.6112C15.5353 16.1251 15.4804 16.6906 15.5874 17.2362C15.6944 17.7818 15.9585 18.2829 16.3464 18.6762C16.7343 19.0696 17.2284 19.3374 17.7664 19.446C18.3044 19.5545 18.8621 19.4988 19.3688 19.2859C19.8756 19.073 20.3088 18.7126 20.6135 18.25C20.9182 17.7875 21.0809 17.2438 21.0809 16.6875C21.08 15.9418 20.7876 15.227 20.2676 14.6997C19.7477 14.1725 19.0428 13.8759 18.3075 13.875V13.875Z" />
@@ -1044,7 +1092,7 @@
                             <div class="companions__bicycle companions__bicycle--visible-3 tooltip text">Велосипед</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__walk-3 icon-list__link icon icon--transparent-theme icon--pedestrian">
                             <svg class="icon--disabled" width="21" height="24" viewBox="0 0 21 24"
                               xmlns="http://www.w3.org/2000/svg">
@@ -1060,9 +1108,28 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="card-list__level">
-                      <span class="card-list__text text">level</span>
-                      <b class="card-list__level-number text">25</b>
+                    <div class="companions__level card-list__level">
+                      <span class="companions__level-text card-list__text text">level</span>
+                      <svg class="companions__level-icon companions__level-icon--small" width="46" height="45"
+                        viewBox="0 0 46 45" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M22.5841 1.5C25.3419 1.5 28.0726 2.04318 30.6205 3.09853C33.1683 4.15388 35.4833 5.70073 37.4333 7.65076C39.3834 9.60079 40.9302 11.9158 41.9856 14.4636C43.0409 17.0115 43.5841 19.7422 43.5841 22.5" />
+                        <text class="companions__level-number" x="12" y="30">
+                          25
+                        </text>
+                      </svg>
+                      <svg class="companions__level-icon companions__level-icon--medium" width="64" height="64"
+                        viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M59.8014 35.4465C60.254 31.5329 59.9313 27.5685 58.8518 23.7796C57.7723 19.9908 55.9571 16.4516 53.5098 13.3643C51.0625 10.2769 48.0311 7.70183 44.5886 5.78602C41.1461 3.87022 37.36 2.65122 33.4465 2.19863" />
+                        <text class="companions__level-number" x="20" y="30">
+                          25
+                        </text>
+                        <line class="companions__level-line" x1="17" y1="38.5" x2="48" y2="38.5" />
+                        <text class="companions__level-icon-text" x="18" y="50">
+                          level
+                        </text>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -1103,10 +1170,11 @@
                     </ul>
                   </div>
                   <div class="companions__buttons card-list__buttons">
-                    <button type="button" class="card-list__call button button--middle-theme">ПОЗВАТЬ!</button>
+                    <button type="button" class="companions__call button button--middle-theme">ПОЗВАТЬ!</button>
                     <div class="companions__likes card-list__likes">
-                      <button class="card-list__button button card-list__button--disabled">
-                        <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <button class="companions__button-like card-list__button button card-list__button--disabled">
+                        <svg class="companions__like icon--background-padding" width="12" height="12"
+                          viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <g>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M6 4.66465L6.6705 3.25538C6.837 2.90641 7.12575 2.40462 7.5345 1.99894C7.9365 1.59955 8.418 1.32778 9 1.32778C10.257 1.32778 11.25 2.37233 11.25 3.62799C11.25 4.58194 10.8345 5.25546 9.849 6.28267C9.59625 6.54578 9.30825 6.83015 8.9895 7.14367C8.1585 7.96293 7.125 8.98226 6 10.3451C4.875 8.98226 3.8415 7.96293 3.0105 7.14367C2.69175 6.83015 2.403 6.54499 2.151 6.28267C1.1655 5.25546 0.75 4.58194 0.75 3.62799C0.75 2.37233 1.743 1.32778 3 1.32778C3.582 1.32778 4.0635 1.59955 4.4655 1.99894C4.87425 2.40462 5.163 2.90641 5.3295 3.25538L6 4.66465ZM6.294 11.1966C6.25788 11.2415 6.21286 11.2777 6.16209 11.3024C6.11131 11.3272 6.05599 11.34 6 11.34C5.94401 11.34 5.8887 11.3272 5.83792 11.3024C5.78714 11.2777 5.74212 11.2415 5.706 11.1966C4.50525 9.69832 3.4185 8.62699 2.52375 7.74551C0.975 6.21808 0 5.25782 0 3.62799C0 1.92253 1.3425 0.540039 3 0.540039C4.2 0.540039 5.03925 1.36717 5.553 2.12182C5.748 2.40935 5.8965 2.68585 6 2.90326C6.12975 2.63116 6.27918 2.36991 6.447 2.12182C6.96075 1.36638 7.8 0.540039 9 0.540039C10.6575 0.540039 12 1.92253 12 3.62799C12 5.25782 11.025 6.21808 9.47625 7.74551C8.5815 8.62778 7.49475 9.69911 6.294 11.1958V11.1966Z" />
@@ -1138,7 +1206,7 @@
                           <img class="companions__flag flags-list__icon flag" src="img/germany-flag-small.png"
                             srcset="img/germany-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Германии" />
                         </picture>
-                        <span class="flags-list__flag-caption">Германия</span>
+                        <span class="flags-list__flag-caption text">Германия</span>
                       </div>
                     </li>
                   </ul>
@@ -1148,9 +1216,9 @@
                         Транспорт
                       </span>
                       <ul class="companions__card-list card-list icon-list">
-                        <li class="companions__plain-4 icon-list__item icon-list__inline-card-item">
+                        <li class="companions__plain-4 icon-list__item companions__inline-card-item">
                           <a class="icon-list__link icon icon--transparent-theme ">
-                            <svg class="button--active" width="18" height="20" viewBox="0 0 18 20"
+                            <svg class="icon--active" width="18" height="20" viewBox="0 0 18 20"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M15.7831 0.0931421C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.0069433 15.7831 0.0931421Z" />
@@ -1158,9 +1226,9 @@
                             <div class="companions__plain companions__plain--visible-4 tooltip text">Авиаперелет</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bus-4 icon-list__link icon icon--transparent-theme ">
-                            <svg class="button--active" width="18" height="21" viewBox="0 0 18 21"
+                            <svg class="icon--active" width="18" height="21" viewBox="0 0 18 21"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M4.34046 13.9485C4.34046 13.5699 4.20185 13.2467 3.92462 12.9788C3.64739 12.711 3.31288 12.5771 2.92106 12.5771C2.52925 12.5771 2.19473 12.711 1.91751 12.9788C1.64028 13.2467 1.50167 13.5699 1.50167 13.9485C1.50167 14.3271 1.64028 14.6503 1.91751 14.9181C2.19473 15.186 2.52925 15.3199 2.92106 15.3199C3.31288 15.3199 3.64739 15.186 3.92462 14.9181C4.20185 14.6503 4.34046 14.3271 4.34046 13.9485ZM15.6956 13.9485C15.6956 13.5699 15.557 13.2467 15.2798 12.9788C15.0025 12.711 14.668 12.5771 14.2762 12.5771C13.8844 12.5771 13.5499 12.711 13.2727 12.9788C12.9954 13.2467 12.8568 13.5699 12.8568 13.9485C12.8568 14.3271 12.9954 14.6503 13.2727 14.9181C13.5499 15.186 13.8844 15.3199 14.2762 15.3199C14.668 15.3199 15.0025 15.186 15.2798 14.9181C15.557 14.6503 15.6956 14.3271 15.6956 13.9485ZM15.1855 9.70563L14.3871 5.59135C14.3501 5.42706 14.267 5.29313 14.1376 5.18956C14.0082 5.08599 13.8585 5.0342 13.6885 5.0342H3.50878C3.33875 5.0342 3.18905 5.08599 3.05968 5.18956C2.9303 5.29313 2.84714 5.42706 2.81017 5.59135L2.01176 9.70563C1.9748 9.91992 2.02655 10.1092 2.16701 10.2735C2.30747 10.4378 2.48859 10.5199 2.71037 10.5199H14.4869C14.7087 10.5199 14.8898 10.4378 15.0303 10.2735C15.1707 10.1092 15.2225 9.91992 15.1855 9.70563ZM12.6794 3.14849C12.6794 3.00563 12.6276 2.88421 12.5242 2.78421C12.4207 2.68421 12.295 2.63421 12.1471 2.63421H5.05015C4.9023 2.63421 4.77663 2.68421 4.67313 2.78421C4.56963 2.88421 4.51788 3.00563 4.51788 3.14849C4.51788 3.29135 4.56963 3.41278 4.67313 3.51278C4.77663 3.61278 4.9023 3.66278 5.05015 3.66278H12.1471C12.295 3.66278 12.4207 3.61278 12.5242 3.51278C12.6276 3.41278 12.6794 3.29135 12.6794 3.14849ZM17.115 10.9163V17.3771H15.6956V18.7485C15.6956 19.1271 15.557 19.4503 15.2798 19.7181C15.0025 19.986 14.668 20.1199 14.2762 20.1199C13.8844 20.1199 13.5499 19.986 13.2727 19.7181C12.9954 19.4503 12.8568 19.1271 12.8568 18.7485V17.3771H4.34046V18.7485C4.34046 19.1271 4.20185 19.4503 3.92462 19.7181C3.64739 19.986 3.31288 20.1199 2.92106 20.1199C2.52925 20.1199 2.19473 19.986 1.91751 19.7181C1.64028 19.4503 1.50167 19.1271 1.50167 18.7485V17.3771H0.0822754V10.9163C0.0822754 10.1163 0.174684 9.31992 0.359501 8.52706L1.50167 3.66278C1.5682 3.10563 1.9286 2.61635 2.58285 2.19492C3.2371 1.77349 4.08726 1.45564 5.13332 1.24135C6.17939 1.02706 7.33449 0.919922 8.59864 0.919922C9.86279 0.919922 11.0179 1.02706 12.064 1.24135C13.11 1.45564 13.9602 1.77349 14.6144 2.19492C15.2687 2.61635 15.6291 3.10563 15.6956 3.66278L16.86 8.52706C17.03 9.25563 17.115 10.0521 17.115 10.9163Z" />
@@ -1168,7 +1236,7 @@
                             <div class="companions__bus companions__bus--visible-4 tooltip text">Автотранспорт</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__bicycle-4 icon-list__link icon icon--transparent-theme ">
                             <svg class="icon--disabled" width="25" height="24" viewBox="0 0 25 24"
                               xmlns="http://www.w3.org/2000/svg">
@@ -1184,7 +1252,7 @@
                             <div class="companions__bicycle companions__bicycle--visible-4 tooltip text">Велосипед</div>
                           </a>
                         </li>
-                        <li class="icon-list__item icon-list__inline-card-item">
+                        <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__walk-4 icon-list__link icon icon--transparent-theme icon--pedestrian">
                             <svg class="icon--disabled" width="21" height="24" viewBox="0 0 21 24"
                               xmlns="http://www.w3.org/2000/svg">
@@ -1200,16 +1268,36 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="card-list__level">
-                      <span class="card-list__text text">level</span>
-                      <b class="card-list__level-number text">50</b>
+                    <div class="companions__level card-list__level">
+                      <span class="companions__level-text card-list__text text">level</span>
+                      <svg class="companions__level-icon companions__level-icon--small" width="46" height="45"
+                        viewBox="0 0 46 45" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M21.9282 1.60522C27.6304 1.60522 33.099 3.8704 37.131 7.90243C41.163 11.9345 43.4282 17.4031 43.4282 23.1052C43.4282 28.8074 41.1631 34.276 37.131 38.308C33.099 42.34 27.6304 44.6052 21.9282 44.6052" />
+                        <text class="companions__level-number" x="12" y="30">
+                          50
+                        </text>
+                      </svg>
+                      <svg class="companions__level-icon companions__level-icon--medium" width="64" height="64"
+                        viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="companions__user-level-icon"
+                          d="M30 62C37.9565 62 45.5871 58.8393 51.2132 53.2132C56.8393 47.5871 60 39.9565 60 32C60 24.0435 56.8393 16.4129 51.2132 10.7868C45.5871 5.16071 37.9565 2 30 2" />
+                        <text class="companions__level-number" x="20" y="30">
+                          50
+                        </text>
+                        <line class="companions__level-line" x1="17" y1="38.5" x2="48" y2="38.5" />
+                        <text class="companions__level-icon-text" x="18" y="50">
+                          level
+                        </text>
+                      </svg>
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
             <button type="button" class="companions-operations__button  button button--plus button--transparent-theme">
-              <svg class="button--active" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <svg class="companions-operations__icon icon--active" width="14" height="14" viewBox="0 0 14 14"
+                xmlns="http://www.w3.org/2000/svg">
                 <line x1="7" x2="7" y2="14" stroke="#C2C4C9" stroke-width="2" />
                 <line y1="7" x2="14" y2="7" stroke="#C2C4C9" stroke-width="2" />
               </svg>
@@ -1218,26 +1306,27 @@
           </section>
         </div>
       </div>
-      <div class="companions__navigation">
-        <div class="companions__navigation-container container">
-          <div class="companions__pages">
-            <span class="companions__page text">1</span>
-            <span class="companions__page text">2</span>
-            <span class="companions__page text">3</span>
-            <span class="companions__page text">4</span>
-          </div>
-          <div class="companions__page-buttons">
-            <button class="companions__button button button--transparent-theme" type="button">
-              <svg class="button--active" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 9L9.75 0.339745L9.75 17.6603L0 9Z" />
-              </svg>
-            </button>
-            <button class="companions__button button button--transparent-theme" type="button">
-              <svg class="button--active" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
-              </svg>
-            </button>
-          </div>
+      <div class="companions__navigation companions__navigation-container">
+        <div class="companions__pages">
+          <span class="companions__page text">1</span>
+          <span class="companions__page text">2</span>
+          <span class="companions__page text">3</span>
+          <span class="companions__page text">4</span>
+        </div>
+        <div class="companions__page-buttons">
+          <button class="companions__button button button--transparent-theme" type="button">
+            <svg class="icon--active" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 9L9.75 0.339745L9.75 17.6603L0 9Z" />
+            </svg>
+          </button>
+          <svg class="companions__line" width="1" height="51" viewBox="0 0 1 51" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" x2="0.5" y2="51" />
+          </svg>
+          <button class="companions__button button button--transparent-theme" type="button">
+            <svg class="icon--active" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 8.89478L0.25 17.555L0.25 0.234521L10 8.89478Z" />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -1297,7 +1386,7 @@
                 d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5658L13.5 33.3892L27 25.5658V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z" />
             </g>
             <defs>
-              <clipPath id="clip0">
+              <clipPath id="clip1">
                 <rect width="27" height="33.3033" transform="translate(0 0.0859375)" />
               </clipPath>
             </defs>
