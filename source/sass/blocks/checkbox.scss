@@ -27,6 +27,7 @@
   &:checked+label::before{
     // fill="#161C35"
     background-image: url(../../img/check.svg);
+    fill: $basic-blue;
   }
 
   &:not(:disabled):not(:checked)+label:hover::before, label:hover{

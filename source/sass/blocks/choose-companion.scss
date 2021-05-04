@@ -158,6 +158,29 @@
   }
 }
 
+.choose-companion__range-dot{
+  background: $basic-blue-light;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.choose-companion__range-line{
+  height: 2px;
+  background: $basic-blue-light;
+  width: 75%;
+
+  @media (min-width: $medium-width) {
+    height: 3px;
+    border-radius: 2px;
+  }
+}
+
+.choose-companion__range-line--out-range{
+  opacity: 0.2;
+  width: 25%
+}
+
 .choose-compnion__range-value{
   @include text(14px, 500, 13px, $basic-blue-light);
   letter-spacing: 0.06em;

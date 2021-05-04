@@ -20,6 +20,7 @@
 
 .calendar__day{
   @include text(14px, normal, 18px, $special-grey);
+  border: 2px solid rgba(0, 0, 0, 0);
   text-align: center;
 
   @media (min-width: $medium-width) {
