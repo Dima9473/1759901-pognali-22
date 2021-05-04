@@ -2,9 +2,18 @@
   background-color: $dark-grey;
   padding-top: 90px;
   padding-bottom: 15px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  // position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  @media (min-width: $medium-width) {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+}
+
+.filter--opened{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .filter__container{
@@ -43,6 +52,8 @@
   padding-right: 50px;
   background: $dark-grey;
   padding-bottom: 28px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 
   @media (min-width: $medium-width) {
     flex-direction: row;
@@ -50,11 +61,6 @@
     padding-bottom: 79px;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  @media (min-width: $large-width) {
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
   }
 }
 
@@ -165,8 +171,10 @@
 }
 
 .filter__latter-row{
-  display: flex;
-  justify-content: space-around;
+  @media (min-width: $large-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .filter__latter-cell{

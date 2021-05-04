@@ -186,9 +186,10 @@
   </header>
   <main class="page-main page-main--light">
     <section class="filter">
-      <div class="filter__container container">
+      <div>
+        <!-- class="filter__container container" -->
         <div class="filter__wrapper">
-          <div class="filter__header">
+          <div class="filter__container container filter__header">
             <h2 class="visually-hidden">Фильтрация странн</h2>
             <svg class="filter__filter-icon" width="16" height="10" viewBox="0 0 16 10"
               xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +243,6 @@
             </button>
           </div>
           <div class="filter__body visually-hidden">
-            <!-- filter__countries-table-wrapper visually-hidden filter__countries-table--3 -->
             <table class="filter__countries-table alphabet">
               <tr class="filter__latter-row">
                 <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
@@ -1139,17 +1139,10 @@
                         <span class="choose-compnion__range-value text">100</span>
                       </div>
                       <div class="choose-compnion__range">
-                        <div class="choose-companion__range-line choose-companion__range-line--out-range"></div>
-                        <div class="choose-companion__range-dot"></div>
+                        <!-- <div class="choose-companion__range-line choose-companion__range-line--out-range"></div> -->
+                        <div class="choose-companion__range-dot choose-companion__range-left-dot"></div>
                         <div class="choose-companion__range-line"></div>
-                        <div class="choose-companion__range-dot"></div>
-                        <!-- <svg width="220" height="10" viewBox="0 0 220 10" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="72" cy="5" r="5" fill="#1D2E5B" />
-                          <circle cx="215" cy="5" r="5" fill="#1D2E5B" />
-                          <rect opacity="0.2" y="4" width="193" height="2" fill="#1D2E5B" />
-                          <rect x="73" y="4" width="138" height="2" fill="#1D2E5B" />
-                        </svg> -->
+                        <div class="choose-companion__range-dot choose-companion__range-right-dot"></div>
                       </div>
                       <!-- <input type="range" class="choose-compnion__range" min="30" max="100" /> -->
                     </div>

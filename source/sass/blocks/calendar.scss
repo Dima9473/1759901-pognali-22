@@ -1,11 +1,12 @@
 .calendar{
-  border-collapse: collapse
+    // border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .calendar__day-cell{
   width: 33px;
   height: 32px;
-  border: 1px solid #D6D9E6;
+  border: 2px solid #D6D9E6;
 
   @media (min-width: $medium-width) {
     width: 77px;
@@ -20,7 +21,7 @@
 
 .calendar__day{
   @include text(14px, normal, 18px, $special-grey);
-  border: 2px solid rgba(0, 0, 0, 0);
+  // border: 2px solid rgba(0, 0, 0, 0);
   text-align: center;
 
   @media (min-width: $medium-width) {
@@ -51,7 +52,7 @@
 .calendar__day--active{
   font-weight: 500;
   color: $basic-blue-light;
-  border: 1px solid $special-dark-grey;
+  border-color:$special-dark-grey;
   background-color: $basic-grey;
 
   @media (min-width: $large-width) {
@@ -61,7 +62,14 @@
 
 .calendar__day--selected{
   background-color: $basic-blue-light;
+  border: none;
   color: #FFFFFF;
+}
+
+.calendar__header{
+  &:hover{
+    border: none;
+  }
 }
 
 .calendar__notice{

@@ -1,3 +1,4 @@
+let filter = document.querySelector('.filter');
 let filterToggleButton = document.querySelector('.filter__toggle-button');
 let filterClose = document.querySelector('.filter__close');
 let filterToggleIconClose = document.querySelector('.filter__toggle--closed');
@@ -21,6 +22,7 @@ filterClose.addEventListener('click', () => {
 })
 
 const onOpen = () => {
+  filter.classList.add('filter--opened');
   filterBody.classList.remove('visually-hidden');
   filterToggleIconClose.classList.remove('visually-hidden');
   filterHide.classList.remove('visually-hidden');
@@ -28,11 +30,12 @@ const onOpen = () => {
   filterToggleIconOpened.classList.add('visually-hidden');
 
   if (window.innerWidth > mediumMaxWidth) {
-    filterToggleButton.classList.add('visually-hidden')
+    filterToggleButton.classList.add('visually-hidden');
   }
 }
 
 const onClose = () => {
+  filter.classList.remove('filter--opened');
   filterBody.classList.add('visually-hidden');
   filterToggleIconClose.classList.add('visually-hidden');
   filterHide.classList.add('visually-hidden');

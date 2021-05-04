@@ -66,6 +66,7 @@
 }
 
 .companions__card{
+  position: relative;
   width: 100%;
   @include text(15px, normal, 16px, $special-grey);
 
@@ -97,7 +98,7 @@
 
 .companions__flags{
   order: 3;
-  margin-top: 19px;
+  margin-top: 50px;
 
   @media (min-width: $medium-width) {
     display: flex;
@@ -136,8 +137,13 @@
 }
 
 .companiouns__want-visit{
+  position: absolute;
   order: 1;
   margin-top: 16px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  // min-width: 110px;
   // width: 100%;
 
   @media (min-width: $medium-width) {
@@ -163,7 +169,7 @@
     display: inline-block;
     content: "";
     border-top: 1px solid #EDEFF6;
-     width: 50%;
+     width: 57%;
     // margin: 0 1rem;
     transform: translateY(-0.2rem);
   }
@@ -178,6 +184,10 @@
     width: 100%;
     transform: translateY(-50%);
   }
+}
+
+.companiouns__want-visit-line{
+
 }
 
 .companions__buttons{
@@ -226,6 +236,7 @@
 .companions__hashtags{
   display: flex;
   margin-top: 40px;
+  min-height: 36px;
 
   @media (min-width: $medium-width) {
     margin-top: 20px;

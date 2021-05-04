@@ -162,6 +162,10 @@
     height: 140px;
     width: 550px;
   }
+
+  @media (min-width: $large-width) {
+    width: 520px;
+  }
 }
 
 .countries__item{
