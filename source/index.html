@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
+<!-- TODO
+  2. users__background remove display:none
+-->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Погнали!</title>
 </head>
 
@@ -46,13 +51,13 @@
       <nav class="menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="text site-list__link site-list__link--light" href="#">О СЕРВИСЕ</a>
+            <a class="text site-list__link link site-list__link--light" href="#">О СЕРВИСЕ</a>
           </li>
           <li class="site-list__item">
-            <a class="text site-list__link site-list__link--light" href="directions.html">НАПРАВЛЕНИЯ</a>
+            <a class="text site-list__link link site-list__link--light" href="directions.html">НАПРАВЛЕНИЯ</a>
           </li>
           <li class="site-list__item">
-            <a class="text site-list__link site-list__link--light" href="companions.html">ПОПУТЧИКИ</a>
+            <a class="text site-list__link link site-list__link--light" href="companions.html">ПОПУТЧИКИ</a>
           </li>
         </ul>
       </nav>
@@ -89,13 +94,13 @@
         <nav class="main-menu__nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="text site-list__link" href="#">О СЕРВИСЕ</a>
+              <a class="text site-list__link link" href="#">О СЕРВИСЕ</a>
             </li>
             <li class="site-list__item">
-              <a class="text site-list__link" href="directions.html">НАПРАВЛЕНИЯ</a>
+              <a class="text site-list__link link" href="directions.html">НАПРАВЛЕНИЯ</a>
             </li>
             <li class="site-list__item">
-              <a class="text site-list__link" href="companions.html">ПОПУТЧИКИ</a>
+              <a class="text site-list__link link" href="companions.html">ПОПУТЧИКИ</a>
             </li>
           </ul>
         </nav>
@@ -246,13 +251,13 @@
         <nav class="menu__nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="text site-list__link site-list__link--dark" href="#">О СЕРВИСЕ</a>
+              <a class="text site-list__link link site-list__link--dark" href="#">О СЕРВИСЕ</a>
             </li>
             <li class="site-list__item">
-              <a class="text site-list__link site-list__link--dark" href="directions.html">НАПРАВЛЕНИЯ</a>
+              <a class="text site-list__link link site-list__link--dark" href="directions.html">НАПРАВЛЕНИЯ</a>
             </li>
             <li class="site-list__item">
-              <a class="text site-list__link site-list__link--dark" href="companions.html">ПОПУТЧИКИ</a>
+              <a class="text site-list__link link site-list__link--dark" href="companions.html">ПОПУТЧИКИ</a>
             </li>
           </ul>
         </nav>
@@ -453,7 +458,8 @@
               </picture>
               <picture>
                 <source media="(min-width: 768px)" srcset="img/back-medium.png 1x, img/back-medium@2x.png 2x">
-                <img src="img/back.svg" srcset="img/back@2x.png 2x" width="226" height="30" alt="Фоновое изображение" />
+                <img class="users__background" src="img/back.svg" srcset="img/back@2x.png 2x" width="226" height="30"
+                  alt="Фоновое изображение" />
               </picture>
             </div>
             <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на идеальный
@@ -464,7 +470,7 @@
             <li class="users__card-list card-list__item">
               <div class="users__card card-list__card">
                 <picture>
-                  <img class="users__photo" src="img/tany-photo.png" srcset="img/tany-photo@2x.png 2x" width="226"
+                  <img class="users__photo" src="img/tanya-photo.png" srcset="img/tanya-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Тани Фирсовой" />
                 </picture>
                 <div class="users__level general-info__level">
@@ -479,7 +485,6 @@
                     <line class="users__level-line general-info__level-line" x1="10" y1="33" x2="50" y2="33"
                       stroke="black" />
                     <text class="users__level-text general-info__level-text" x="15" y="47">level</text>
-
                   </svg>
                 </div>
                 <div class="users__card-info card-list__info">
@@ -585,9 +590,9 @@
                       </a>
                     </li>
                     <li class="users__icon icon-list__item">
-                      <a class="users__walk-1 icon-list__link icon--disabled">
-                        <svg class="icon icon--transparent-theme" width="21" height="24" viewBox="0 0 21 24"
-                          xmlns="http://www.w3.org/2000/svg">
+                      <a class="users__walk-1 icon-list__link">
+                        <svg class="icon icon--transparent-theme icon--disabled" width="21" height="24"
+                          viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M14.9758 5.75992C15.9264 5.75992 16.697 4.90031 16.697 3.83992C16.697 2.77954 15.9264 1.91992 14.9758 1.91992C14.0252 1.91992 13.2546 2.77954 13.2546 3.83992C13.2546 4.90031 14.0252 5.75992 14.9758 5.75992Z" />
                           <path

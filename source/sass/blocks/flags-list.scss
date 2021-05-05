@@ -9,6 +9,7 @@
 
 .flags-list__flag-caption{
   @include text(15px, 500, 16px, $basic-blue-light);
+  text-transform: uppercase;
 }
 
 .flags-list__country-info{

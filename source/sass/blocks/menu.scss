@@ -1,6 +1,7 @@
 .menu{}
 
 .menu__logo-mobile{
+
 }
 
 .menu__logo-mobile-dark{
@@ -39,6 +40,8 @@
   @media (min-width: $large-width) {
     display: block;
     fill: #ffffff;
+    margin-left: 40px;
+    margin-right: 45px;
   }
 }
 
@@ -51,7 +54,7 @@
 
   @media (min-width: $large-width) {
     display: flex;
-    width: 50%;
+    width: 45%;
   }
 }
 

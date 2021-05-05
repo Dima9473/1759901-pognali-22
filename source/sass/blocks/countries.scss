@@ -1,6 +1,13 @@
 .countries{
-  background-color: #EDEFF6;
+  background-color: $basic-grey;
   padding-bottom: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  @media (min-width: $medium-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .countries__container{
@@ -128,7 +135,8 @@
 .countries__description{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  margin-top: 26px;
 
   @media (min-width: $medium-width) {
     flex-direction: column;
@@ -137,6 +145,7 @@
 }
 
 .countries__visists-count{
+  min-width: 50px;
   margin-right: 25px;
 
   @media (min-width: $medium-width) {
@@ -158,8 +167,10 @@
 .countries__item{
   width: 100%;
   margin-bottom: 10px;
+  padding-bottom: 24px;
 
   @media (min-width: $medium-width) {
+    padding-bottom: 0;
     margin-bottom: 40px;
     max-width: 730px;
     // max-width: 616px;

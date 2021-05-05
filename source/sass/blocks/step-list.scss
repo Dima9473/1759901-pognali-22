@@ -45,6 +45,14 @@
 .step-list__header{
   display: flex;
   justify-content: space-between;
+  @media (min-width: $medium-width) {
+    border-bottom: 1px solid #E1E3E9;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .step-list__header-text{
@@ -92,6 +100,14 @@
 
 .step-list__sub-list{
   margin-top: 21px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 42px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 62px;
+  }
 }
 
 .step-list__buttons{
@@ -143,7 +159,6 @@
 .step-list__trip-data--companions{
   @media (min-width: $medium-width) {
     order: 3;
-    border-top: 1px solid #E1E3E9;
     padding-top: 26px;
   }
 }
@@ -169,15 +184,17 @@
   text-transform: uppercase;
   letter-spacing: 0.09em;
 
-  @media (min-width: $large-width) {
-    justify-content: flex-start;
-    order: 0;
-  }
 
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $large-width) {
+    justify-content: flex-start;
+    min-width: 220px;
+    order: 0;
   }
 }
 

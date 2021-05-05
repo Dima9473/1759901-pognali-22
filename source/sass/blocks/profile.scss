@@ -4,8 +4,13 @@
   // padding-top: 37px;
   padding-bottom: 38px;
   // padding-left: 24px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   @media (min-width: $medium-width) {
     padding-bottom: 63px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 
@@ -38,6 +43,15 @@
 
   @media (min-width: $large-width) {
     margin-left: 180px;
+  }
+
+  &:hover{
+    background: none;
+    opacity: 0.7;
+  }
+
+  &:active, &:focus{
+    background: none;
   }
 }
 
@@ -159,7 +173,7 @@
 .profile__tarifs-text{
   @media (min-width: $medium-width) {
     font-size: 20px;
-line-height: 20px;
+    line-height: 20px;
   }
 }
 

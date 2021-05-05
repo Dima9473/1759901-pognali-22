@@ -14,6 +14,8 @@
 }
 
 .companions-operations__button{
+  justify-content: center;
+  align-items: center;
   &:hover{
     background-color: transparent;
     opacity: 0.6;
@@ -23,4 +25,8 @@
     background-color: transparent;
     opacity: 0.3;
   }
+}
+
+.companions-operations__icon{
+  padding-right: 15px;
 }

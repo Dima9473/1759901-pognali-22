@@ -83,6 +83,7 @@
 }
 
 .add-plans__add-country{
+  position: relative;
   border-radius: 4px;
   justify-content: space-between;
   width: 100%;
@@ -129,7 +130,7 @@
   display: none;
   @media (min-width: $medium-width) {
     display: block;
-    top: 0;
+    top: 27px;
     right: 5%;
     stroke: $basic-blue-light;
     stroke-width: 2;
@@ -137,8 +138,9 @@
   }
 
   @media (min-width: $large-width) {
-    top: 0;
+    top: 90px;
     right: 27%;
+    height: 250px;
   }
 }
 
@@ -201,13 +203,14 @@
   right: -10px;
   width: 21px;
   height: 21px;
-  fill: #EDEFF6;
+  fill: $basic-grey;
   stroke-linecap: round;
   stroke-linejoin: round;
   opacity: 0.1;
 
   @media (min-width: $medium-width) {
     fill: transparent;
+    transform: scale(1.5);
     width: 24px;
     height: 22px;
     right: -170px;
@@ -241,7 +244,17 @@
 }
 
 .add-plans__remove-country-icon--stroke{
-  stroke: #AFB0B5;
+  stroke: black;
+  stroke-width: 1.7;
+}
+
+.add-plans__remove-country-icon--background{
+  @media (max-width: $small-max-width) {
+    fill: $basic-grey;
+    .add-plans__remove-country-icon{
+      opacity: 1;
+    }
+  }
 }
 
 .add-plans__add-country-icon{
@@ -260,9 +273,11 @@
 
 .add-plans__circle-icon{
   fill: none;
+  position: absolute;
+  top: 17px;
+  right: 47px;
 
   @media (min-width: $medium-width) {
-    position: absolute;
     right: -30px;
     top: 30px;
   }
@@ -328,12 +343,15 @@
   width: 100%;
 
   @media (min-width: $medium-width) {
-    border-collapse: separate;
-    border-spacing: 16px 14px;
     margin-top: 35px;
     margin-right: 80px;
     margin-bottom: 33px;
     margin-left: 27px;
+  }
+
+  @media (min-width: $large-width) {
+    border-collapse: separate;
+    border-spacing: 16px 14px;
   }
 }
 
@@ -374,6 +392,7 @@
 
 .add-plans__selected-country-with-flag--width{
   width: 100%;
+  min-width: 140px;
 
   @media (min-width: $medium-width) {
     width: 60%;
@@ -401,8 +420,8 @@
 .add-plans__flag-image{
   padding: 9px;
   vertical-align: middle;
-  width: 53px;
-  height: 42px;
+  width: 35px;
+  height: 24px;
 
   @media (min-width: $medium-width) {
     width: 70px;
@@ -412,11 +431,6 @@
 
 .add-plans__description{
   min-width: none;
-}
-
-.add-plans__added-countries{
-  border-top: 1px solid #E1E3E9;
-  padding-top: 42px;
 }
 
 .add-plans__arrow-down{
@@ -431,5 +445,5 @@
 }
 
 .add-plans__arrow-down--for-empty-country{
-  right: 65px;
+  right: 47px;
 }

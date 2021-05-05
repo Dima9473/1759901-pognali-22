@@ -2,6 +2,10 @@
   margin-top: 28px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $large-width) {
+    margin-right: 86px;
+  }
 }
 
 .companions__container{
@@ -20,11 +24,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  @media (min-width: $medium-width) {
-    width: 100%;
-  }
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 51px;
+
 }
 
 .companions__pages{
@@ -32,21 +35,24 @@
 
   @media (min-width: $medium-width) {
     display: flex;
+    padding-left: 48px;
   }
 }
 
 .filter__continents-list{
   display: none;
+  list-style-type: none;
 
   @media (min-width: $medium-width) {
     display: flex;
-    list-style-type: none;
   }
 }
 
 .companions__navigation{
   margin-top: 18px;
   background-color: #ffffff;
+  border-radius: 20px;
+
   @media (min-width: $medium-width) {
     display: flex;
     margin-top: 60px;
@@ -61,6 +67,7 @@
 
 .companions__card{
   width: 100%;
+  @include text(15px, normal, 16px, $special-grey);
 
   @media (min-width: $medium-width) {
    flex-direction: column;
@@ -84,12 +91,13 @@
 
   @media (min-width: $large-width) {
     min-width: 950px;
+    max-height: 285px;
   }
 }
 
 .companions__flags{
   order: 3;
-  margin-top: 20px;
+  margin-top: 19px;
 
   @media (min-width: $medium-width) {
     display: flex;
@@ -108,11 +116,14 @@
 
 .companions__additional-info{
   order: 4;
+  margin-top: 15px;
+
   @media (min-width: $medium-width) {
     flex-direction: column;
+    align-items: center;
     margin-left: auto;
-    margin-top: -130px;
-    margin-bottom: 80px;
+    margin-top: -180px;
+    margin-bottom: 40px;
     order: 2;
   }
 
@@ -126,7 +137,7 @@
 
 .companiouns__want-visit{
   order: 1;
-  margin-top: 20px;
+  margin-top: 16px;
   // width: 100%;
 
   @media (min-width: $medium-width) {
@@ -140,15 +151,33 @@
     display: none;
   }
 
-  // &::before,
-  // &::after {
-  //   display: inline-block;
-  //   content: "";
-  //   border-top: .1rem solid black;
-  //    width: 30%;
-  //   // margin: 0 1rem;
-  //   transform: translateY(-0.2rem);
-  // }
+  &::before{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #EDEFF6;
+     width: 5%;
+    // margin: 0 1rem;
+    transform: translateY(-0.2rem);
+  }
+  &::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #EDEFF6;
+     width: 50%;
+    // margin: 0 1rem;
+    transform: translateY(-0.2rem);
+  }
+
+  .companiouns__want-visit:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 1px solid black;
+    background: black;
+    width: 100%;
+    transform: translateY(-50%);
+  }
 }
 
 .companions__buttons{
@@ -200,6 +229,7 @@
 
   @media (min-width: $medium-width) {
     margin-top: 20px;
+    max-width: 226px;
   }
 }
 
@@ -218,9 +248,11 @@
 
 .companions__card-list{
   flex-direction: row;
+  margin-top: 18px;
 
   @media (min-width: $medium-width) {
     flex-direction: column;
+    margin-top: 0;
   }
 
   @media (min-width: $large-width) {
@@ -247,6 +279,10 @@
 
 
 .companions__button{
+  @media (min-width: $medium-width) {
+    margin-left: 27px;
+  }
+
   &:hover{
     background-color: transparent;
   }
@@ -254,4 +290,379 @@
     background-color: transparent;
     opacity: 0.3;
   }
+}
+
+.companions__flag{
+  width: 26px;
+  height: 18px;
+
+  @media (min-width: $medium-width) {
+    width: 35px;
+    height: 24px;
+  }
+}
+
+.companions__plain{
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -70px;
+  }
+}
+
+.companions__plain-1{
+  &:hover{
+    .companions__plain--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-1{
+  display: none;
+}
+
+.companions__plain-2{
+  &:hover{
+    .companions__plain--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-2{
+  display: none;
+}
+
+.companions__plain-3{
+  &:hover{
+    .companions__plain--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-3{
+  display: none;
+}
+
+.companions__plain-4{
+  &:hover{
+    .companions__plain--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__plain--visible-4{
+  display: none;
+}
+
+.companions__bus{
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -82px;
+  }
+}
+
+.companions__bus-1{
+  &:hover{
+    .companions__bus--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-1{
+  display: none;
+}
+
+.companions__bus-2{
+  &:hover{
+    .companions__bus--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-2{
+  display: none;
+}
+
+.companions__bus-3{
+  &:hover{
+    .companions__bus--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-3{
+  display: none;
+}
+
+.companions__bus-4{
+  &:hover{
+    .companions__bus--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__bus--visible-4{
+  display: none;
+}
+
+.companions__bicycle{
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -58px;
+  }
+}
+
+.companions__bicycle-1{
+  &:hover{
+    .companions__bicycle--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-1{
+  display: none;
+}
+
+.companions__bicycle-2{
+  &:hover{
+    .companions__bicycle--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-2{
+  display: none;
+}
+
+.companions__bicycle-3{
+  &:hover{
+    .companions__bicycle--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-3{
+  display: none;
+}
+
+.companions__bicycle-4{
+  &:hover{
+    .companions__bicycle--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__bicycle--visible-4{
+  display: none;
+}
+
+.companions__walk{
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 0;
+
+  @media (min-width: $medium-width) {
+    margin-left: -45px;
+  }
+}
+
+.companions__walk-1{
+  &:hover{
+    .companions__walk--visible-1{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-1{
+  display: none;
+}
+
+.companions__walk-2{
+  &:hover{
+    .companions__walk--visible-2{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-2{
+  display: none;
+}
+
+.companions__walk-3{
+  &:hover{
+    .companions__walk--visible-3{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-3{
+  display: none;
+}
+
+.companions__walk-4{
+  &:hover{
+    .companions__walk--visible-4{
+      display: block;
+    }
+  }
+}
+
+.companions__walk--visible-4{
+  display: none;
+}
+
+.companions__page-buttons{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 63px;
+  padding-right: 63px;
+
+  @media (max-width: $medium-max-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $medium-width) {
+    justify-content: flex-end;
+  }
+}
+
+.companions__line{
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  stroke: #EDEFF6;
+
+  @media (min-width: $medium-width) {
+    display: none;
+  }
+}
+
+.companions__level{
+  @media (min-width: $medium-width) {
+    margin-top: 10px;
+  }
+}
+
+.companions__level-icon{
+  width: 46px;
+  height: 45px;
+  fill: none;
+
+  @media (max-width: $small-max-width) {
+    margin-top: 10px;
+  }
+}
+
+.companions__level-icon--small{
+  @media (min-width: $medium-width) {
+    display: none;
+  }
+}
+
+.companions__level-icon--medium{
+  display: none;
+  @media (min-width: $medium-width) {
+    display: block;
+  }
+}
+
+.companions__user-level-icon{
+  stroke: #FF8D30;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.companions__level-number{
+  fill: $basic-blue-light;
+  @include text(24px, bold, 24px);
+}
+
+.companions__level-line{
+  opacity: 0.1;
+  stroke: #000000;
+}
+
+
+.companions__level-text{
+  @media (min-width: $medium-width) {
+    display: none;
+  }
+}
+
+.companions__level-icon-text{
+  @include text(14px, normal, 14px);
+  opacity: 0.4;
+  fill: #000000;
+}
+
+.companions__call{
+  height: 40px;
+  @include text(17px, bold, 17px, $basic-blue);
+  text-transform: uppercase;
+
+  @media (max-width: $small-max-width) {
+    width: 100%;
+    margin-top: 21px;
+  }
+
+  @media (min-width: $medium-width) {
+    min-width: 150px;
+    height: 50px;
+  }
+}
+
+.companions__inline-card-item{
+  margin-right: 10px;
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.companions__button-like{
+  width: 31px;
+  height: 31px;
+
+  @media (min-width: $medium-width) {
+   width: 50px;
+   height: 50px;
+  }
+}
+
+.companions__like{
+  padding: 0;
+  width: 12px;
+  height: 12px;
+
+  @media (min-width: $medium-width) {
+    width: 20px;
+    height: 18px;
+  }
+  // height: 50px;
+  // width: 50px;
 }

@@ -1,10 +1,10 @@
-var selectCountry1 = document.querySelector('.add-plans__select-country--1');
-var selectText1 = document.querySelector('.add-plans__select-country-text--1');
-var openIcon1 = document.querySelector('.add-plans__show-countries-icon--closed-1');
-var circleIcon1 = document.querySelector('.add-plans__circle-icon--1');
-var closeIcon1 = document.querySelector('.add-plans__close-icon--1');
-var countriesDropdown1 = document.querySelector('.add-plans__countries-dropdown--1');
-var flag1 = document.querySelector('.add-plans__flag--1');
+let selectCountry1 = document.querySelector('.add-plans__select-country--1');
+let selectText1 = document.querySelector('.add-plans__select-country-text--1');
+let openIcon1 = document.querySelector('.add-plans__show-countries-icon--closed-1');
+let circleIcon1 = document.querySelector('.add-plans__circle-icon--1');
+let closeIcon1 = document.querySelector('.add-plans__close-icon--1');
+let countriesDropdown1 = document.querySelector('.add-plans__countries-dropdown--1');
+let flag1 = document.querySelector('.add-plans__flag--1');
 
 selectCountry1.addEventListener('click', function () {
   if (!selectCountry1.classList.contains('add-plans__select-country--opened')) {
@@ -16,13 +16,13 @@ closeIcon1.addEventListener('click', function (e) {
   onClose(e, selectCountry1, selectText1, openIcon1, circleIcon1, closeIcon1, countriesDropdown1, flag1);
 })
 
-var selectCountry2 = document.querySelector('.add-plans__select-country--2');
-var selectText2 = document.querySelector('.add-plans__select-country-text--2');
-var openIcon2 = document.querySelector('.add-plans__show-countries-icon--closed-2');
-var circleIcon2 = document.querySelector('.add-plans__circle-icon--2');
-var closeIcon2 = document.querySelector('.add-plans__close-icon--2');
-var countriesDropdown2 = document.querySelector('.add-plans__countries-dropdown--2');
-var flag2 = document.querySelector('.add-plans__flag--2');
+let selectCountry2 = document.querySelector('.add-plans__select-country--2');
+let selectText2 = document.querySelector('.add-plans__select-country-text--2');
+let openIcon2 = document.querySelector('.add-plans__show-countries-icon--closed-2');
+let circleIcon2 = document.querySelector('.add-plans__circle-icon--2');
+let closeIcon2 = document.querySelector('.add-plans__close-icon--2');
+let countriesDropdown2 = document.querySelector('.add-plans__countries-dropdown--2');
+let flag2 = document.querySelector('.add-plans__flag--2');
 
 selectCountry2.addEventListener('click', function () {
   if (!selectCountry2.classList.contains('add-plans__select-country--opened')) {
@@ -35,12 +35,12 @@ closeIcon2.addEventListener('click', function (e) {
 })
 
 
-var selectCountry3 = document.querySelector('.add-plans__select-country--3');
-var selectText3 = document.querySelector('.add-plans__select-country-text--3');
-var openIcon3 = document.querySelector('.add-plans__show-countries-icon--closed-3');
-var circleIcon3 = document.querySelector('.add-plans__circle-icon--3');
-var closeIcon3 = document.querySelector('.add-plans__close-icon--3');
-var countriesDropdown3 = document.querySelector('.add-plans__countries-dropdown--3');
+let selectCountry3 = document.querySelector('.add-plans__select-country--3');
+let selectText3 = document.querySelector('.add-plans__select-country-text--3');
+let openIcon3 = document.querySelector('.add-plans__show-countries-icon--closed-3');
+let circleIcon3 = document.querySelector('.add-plans__circle-icon--3');
+let closeIcon3 = document.querySelector('.add-plans__close-icon--3');
+let countriesDropdown3 = document.querySelector('.add-plans__countries-dropdown--3');
 
 selectCountry3.addEventListener('click', function () {
   if (!selectCountry3.classList.contains('add-plans__select-country--opened')) {

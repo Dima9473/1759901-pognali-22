@@ -35,6 +35,10 @@
   }
 }
 
+.icon--active{
+  fill: $basic-blue-light;
+}
+
 .icon--disabled{
   opacity: 0.15;
 }
