@@ -172,6 +172,10 @@
 
 .card-list__transport-text{
   @include text(15px, normal, 16px, $special-grey);
+  width: 80px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  padding-left: 12px;
 
   @media (min-width: $medium-width) {
     display: none;

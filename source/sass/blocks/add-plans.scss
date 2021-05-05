@@ -94,8 +94,12 @@
 
   @media (min-width: $medium-width) {
     margin-top: 13px;
-     width: 60%;
-    // max-width: 369px;
+     width: 65%;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 13px;
+     width: 63%;
   }
 
   &:hover{
@@ -286,8 +290,12 @@
 .add-plans__circle-icon--add-button{
   @media (min-width: $medium-width) {
     position: absolute;
-    right: 167px;
-    top: 30px;
+    right: -22px;
+    top: 18px;
+  }
+
+  @media (min-width: $large-width) {
+    right: -26px;
   }
 }
 

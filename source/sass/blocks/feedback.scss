@@ -136,3 +136,9 @@
     display: none;
   }
 }
+
+.feedback__contact{
+  @media (min-width: $large-width) {
+    margin-right: 110px;
+  }
+}
