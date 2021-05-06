@@ -210,7 +210,7 @@
   fill: $basic-grey;
   stroke-linecap: round;
   stroke-linejoin: round;
-  opacity: 0.1;
+  // opacity: 0.1;
 
   @media (min-width: $medium-width) {
     fill: transparent;
@@ -262,6 +262,8 @@
 }
 
 .add-plans__add-country-icon{
+  stroke: #C2C4C9;
+  stroke-width: 2px;
   margin-right: 0;
 }
 
@@ -278,6 +280,7 @@
 .add-plans__circle-icon{
   fill: none;
   position: absolute;
+  stroke: $special-dark-grey;
   top: 17px;
   right: 47px;
 
@@ -288,6 +291,8 @@
 }
 
 .add-plans__circle-icon--add-button{
+  stroke: $special-dark-grey;
+
   @media (min-width: $medium-width) {
     position: absolute;
     right: -22px;
@@ -364,7 +369,7 @@
 }
 
 .add-plans__countries{
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -410,7 +415,7 @@
 .add-plans__flag{
   display: flex;
   align-items: center;
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   border-radius: 4px;
   margin-bottom: -2px;
 
@@ -443,7 +448,7 @@
 
 .add-plans__arrow-down{
   position: absolute;
-  fill: #CBCED9;
+  fill: $special-dark-grey;
   right: -5px;
   bottom: -15px;
 
