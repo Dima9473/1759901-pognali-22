@@ -1,18 +1,18 @@
 .promo{
   margin-top: 94px;
-  background-image: url(/img/globe-back-mobile.png), linear-gradient($basic-blue 733px, $dark-blue 733px);
+  background-image: url(../img/globe-back-mobile.png), linear-gradient($basic-blue 733px, $dark-blue 733px);
   background-repeat: no-repeat;
   background-size: 100% 450px, 400px 110%;
   background-position: 0px -85px, 0px -92px;
 
   @media (min-width: $medium-width) {
-    background-image: url(/img/globe-back-tablet.png);
+    background-image: url(../img/globe-back-tablet.png);
     background-position: 0px 267px;
     background-size: 100% 505px;
   }
 
   @media (min-width: $large-width) {
-    background-image: url(/img/globe-back-desktop.png);
+    background-image: url(../img/globe-back-desktop.png);
     background-position: 0px -110px;
     background-size: 100% 795px;
   }
