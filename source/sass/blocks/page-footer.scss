@@ -25,21 +25,14 @@
   }
 }
 
-.page-footer__logo-mobile{
-  // fill: orange;
-  // display: block;
-  // @media (min-width: $medium-width){
-  //   display: none;
-  // }
-}
+.page-footer__logo{
+  width: 27px;
+  height: 33px;
 
-// .page-footer__logo{
-//   display: none;
-//   @media (min-width: $medium-width){
-//       display: block;
-//       text-align: center;
-//   }
-// }
+  @media (min-width: $medium-width) {
+    height: 34px;
+  }
+}
 
 .page-footer__developed-caption{
   margin-right: 23px;
