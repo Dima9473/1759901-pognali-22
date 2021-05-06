@@ -1,21 +1,24 @@
 .about{
-  margin-top: 72px;
+  z-index: 10;
+  position: relative;
+  margin-top: -52px;
+  padding-top: 124px;
   background-image: url(../../img/about-mobile.png),url(../../img/back-medium.png);
-  background-size: contain, 113px 132px;
+  background-size: 100% 100%, 113px 132px;
   background-repeat: no-repeat;
-  background-position: right center, top left;
-  border-radius: 20px;
-  // background-image: url(../../img/back-medium.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-position: top 39px right, top 39px left;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: $dark-blue;
 
   @media (min-width: $medium-width) {
     margin-top: 96px;
     padding-top: 41px;
-    // padding-top: 137px;
     background-image: url(../../img/about-tablet.png),url(../../img/back-medium.png);
     background-size: 376px 510px, 100% 212px;
     background-position: right top 45px, top left 40px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
 

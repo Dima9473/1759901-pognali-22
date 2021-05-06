@@ -1,14 +1,23 @@
 .feedback{
-  padding-top: 72px;
+  position: relative;
+  z-index: 5;
+  padding-top: 102px;
   padding-bottom: 29px;
+  margin-top: -30px;
+  background-color: $dark-blue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   @media (min-width: $medium-width) {
-    padding-top: 76px;
+    margin-top: -55px;
+    padding-top: 131px;
     padding-bottom: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   @media (min-width: $large-width) {
-    padding-top: 109px;
+    padding-top: 164px;
     padding-bottom: 104px;
   }
 }

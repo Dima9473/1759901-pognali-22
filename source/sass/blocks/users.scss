@@ -1,12 +1,19 @@
 
 .users{
-  padding-top: 68px;
+  margin-top: -20px;
+  padding-top: 88px;
   padding-bottom: 25px;
   position: relative;
+  z-index: 7;
+  background-color: $dark-blue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   @media (min-width: $medium-width) {
     padding-top: 141px;
     padding-bottom: 87px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   @media (min-width: $large-width) {
@@ -131,7 +138,7 @@
 .users__background-image-1{
   position: absolute;
   left: 0;
-  top: 34px;
+  top: 54px;
   border-radius: 20px;
   background-image: url(../../img/back-medium.png);
   background-repeat: no-repeat;
@@ -142,12 +149,12 @@
   @media (min-width: $medium-width) {
     width: 212px;
     height: 212px;
-    top: 71px;
+    top: 91px;
     left: 40px;
   }
 
   @media (min-width: $large-width) {
-    top: 70px;
+    top: 90px;
     left: 60px;
   }
 }
@@ -155,7 +162,7 @@
 .users__background-image-2{
   position: absolute;
   right: 25px;
-  top: 35px;
+  top: 55px;
   background-image: url(../../img/smolov-back-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,18 +171,18 @@
 
   @media (min-width: $medium-width) {
     left: 40px;
-    top: 426px;
+    top: 446px;
   }
 
   @media (min-width: $large-width) {
-    top: 134px;
+    top: 154px;
     left: 547px;
   }
 }
 
 .users__background-image-3{
   position: absolute;
-  top: 307px;
+  top: 327px;
   background-image: url(../../img/rogovaya-back-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,13 +193,13 @@
   @media (min-width: $medium-width) {
     width: 285px;
     height: 285px;
-    top: 80px;
+    top: 100px;
     right: 74px;
     left: auto;
   }
 
   @media (min-width: $large-width) {
-    top: 386px;
+    top: 406px;
     left: 190px;
   }
 }

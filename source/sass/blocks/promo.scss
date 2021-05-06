@@ -2,8 +2,8 @@
   margin-top: 94px;
   background-image: url(../../img/globe-back-mobile.png), linear-gradient($basic-blue 733px, $dark-blue 733px);
   background-repeat: no-repeat;
-  background-size: 100% 450px, 100% 100%;
-  background-position: 0px -85px;
+  background-size: 100% 450px, 400px 110%;
+  background-position: 0px -85px, 0px -92px;
 
   @media (min-width: $medium-width) {
     background-image: url(../../img/globe-back-tablet.png);
@@ -18,6 +18,54 @@
   }
 }
 
+.promo__container{
+  z-index: 11;
+  position: relative;
+  padding: 0;
+  flex-direction: row;
+
+  @media (max-width: $small-max-width) {
+    & ul li:first-child{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    & ul li:last-child{
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    & ul li:first-child{
+      border-top-left-radius: 25px;
+    }
+
+    & ul li:nth-of-type(2){
+      border-top-right-radius: 25px;
+    }
+
+    & ul li:nth-of-type(3){
+      border-bottom-left-radius: 25px;
+    }
+
+    & ul li:last-child{
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    & ul li{
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+
+    & ul li:last-child{
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+}
 .promo__header{
   align-items: center;
   margin-bottom: 29px;
@@ -107,53 +155,6 @@
   @media (min-width: $medium-width) {
     max-width: 251px;
     @include text(21px, bold, 25px, #ffffff);
-  }
-}
-
-.promo__container{
-  padding: 0;
-  flex-direction: row;
-
-  @media (max-width: $small-max-width) {
-    & ul li:first-child{
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-    }
-
-    & ul li:last-child{
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
-    }
-  }
-
-  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
-    & ul li:first-child{
-      border-top-left-radius: 25px;
-    }
-
-    & ul li:nth-of-type(2){
-      border-top-right-radius: 25px;
-    }
-
-    & ul li:nth-of-type(3){
-      border-bottom-left-radius: 25px;
-    }
-
-    & ul li:last-child{
-      border-bottom-right-radius: 25px;
-    }
-  }
-
-  @media (min-width: $large-width) {
-    & ul li{
-      border-top-left-radius: 25px;
-      border-bottom-left-radius: 25px;
-    }
-
-    & ul li:last-child{
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px;
-    }
   }
 }
 
