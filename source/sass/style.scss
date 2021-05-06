@@ -2,6 +2,7 @@
 @import "global/colors.scss";
 @import "global/text.scss";
 @import "global/sizes.scss";
+@import "global/reset-default-values.scss";
 
 //Blocks
 @import "blocks/alphabet";
@@ -12,6 +13,7 @@
 @import "blocks/line.scss";
 @import "blocks/link.scss";
 @import "blocks/select.scss";
+@import "blocks/social-list.scss";
 @import "blocks/tooltip.scss";
 @import "blocks/transport-list.scss";
 @import "blocks/container.scss";
@@ -57,7 +59,6 @@
 @import "blocks/select-input-list.scss";
 @import "blocks/site-list.scss";
 @import "blocks/slider-toggles.scss";
-@import "blocks/social-list.scss";
 @import "blocks/step-list.scss";
 @import "blocks/user-info.scss";
 @import "blocks/user-list.scss";

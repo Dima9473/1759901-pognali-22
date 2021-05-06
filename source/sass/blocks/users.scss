@@ -1,10 +1,16 @@
 
 .users{
+  padding-top: 68px;
   padding-bottom: 25px;
   position: relative;
 
+  @media (min-width: $medium-width) {
+    padding-top: 141px;
+    padding-bottom: 87px;
+  }
+
   @media (min-width: $large-width) {
-    min-height: 852px;
+    padding-top: 130px;
   }
 }
 
@@ -17,17 +23,18 @@
 }
 
 .users__caption{
-  margin-top: 34px;
-  margin-left: 51px;
+  position: relative;
+  z-index: 1;
+  margin-left: 24px;
 
   @media (min-width: $medium-width) {
+    margin-left: 33px;
     font-size: 45px;
     line-height: 45px;
   }
 
   @media (min-width: $large-width) {
-    z-index: 1;
-    margin-top: 130px;
+    margin-left: 69px;
   }
 }
 
@@ -38,17 +45,23 @@
 }
 
 .users__description{
-  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+  min-height: 88px;
+  margin-left: 24px;
+  margin-top: 19px;
 
   @media (min-width: $medium-width) {
     max-width: 427px;
     font-size: 28px;
     line-height: 34px;
     font-weight: 300;
+    margin-top: 55px;
+    margin-left: 33px;
   }
 
   @media (min-width: $large-width) {
-    z-index: 1;
+    margin-left: 69px;
   }
 }
 
@@ -59,6 +72,13 @@
   flex-direction: column;
   @media (min-width: $medium-width) {
     flex-direction: row;
+    margin-top: 59px;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 193px;
   }
 }
 
@@ -82,6 +102,18 @@
   stroke: #FFFFFF;
 }
 
+.users__level-icon{
+  --circle-opacity: opacity: 0.6;
+  --path-stroke: #f3eb04;
+  --path-stroke-width: #f6214e;
+  --path-stroke-linecap: #2153f6;
+  --path-fill: #53f621;
+  // stroke: #FF8D30;
+  // stroke-width: 4;
+  // stroke-linecap: round;
+  // fill: #161C35;
+}
+
 .users__background-images{
   display: flex;
   justify-content: space-between;
@@ -97,23 +129,33 @@
 }
 
 .users__background-image-1{
+  position: absolute;
+  left: 0;
+  top: 34px;
+  border-radius: 20px;
   background-image: url(../../img/back-medium.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: -25px;
   width: 113px;
   height: 132px;
 
   @media (min-width: $medium-width) {
     width: 212px;
     height: 212px;
+    top: 71px;
+    left: 40px;
   }
 
   @media (min-width: $large-width) {
+    top: 70px;
+    left: 60px;
   }
 }
 
 .users__background-image-2{
+  position: absolute;
+  right: 25px;
+  top: 35px;
   background-image: url(../../img/smolov-back-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,9 +163,8 @@
   height: 143px;
 
   @media (min-width: $medium-width) {
-    position: absolute;
     left: 40px;
-    top: 360px;
+    top: 426px;
   }
 
   @media (min-width: $large-width) {
@@ -134,7 +175,7 @@
 
 .users__background-image-3{
   position: absolute;
-  top: 235px;
+  top: 307px;
   background-image: url(../../img/rogovaya-back-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,13 +184,14 @@
   left: 0;
 
   @media (min-width: $medium-width) {
-    position: static;
     width: 285px;
     height: 285px;
+    top: 80px;
+    right: 74px;
+    left: auto;
   }
 
   @media (min-width: $large-width) {
-    position: absolute;
     top: 386px;
     left: 190px;
   }
@@ -161,11 +203,17 @@
 
 .users__card-list{
   position: relative;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   margin-bottom: 10px;
+  border-radius: 22px;
 
   @media (min-width: $medium-width) {
+    width: 100%;
     &:not(:last-child){
-      margin-right: 55px;
+      margin-right: 50px;
     }
   }
 
@@ -192,7 +240,7 @@
   width: 100%;
   height: 100%;
   @media (min-width: $medium-width) {
-    height: 325px;
+    height: 286px;
   }
 
   @media (min-width: $large-width) {
@@ -354,7 +402,11 @@
   display: flex;
   justify-content: center;
   margin-top: -15px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .users__flag{
@@ -469,21 +521,77 @@
 }
 
 .users__can-find{
-  font-size: 21px;
-  line-height: 24px;
+  position: relative;
+  z-index: 1;
+  @include text(16px, bold, 22px);
+  margin-top: 25px;
+  margin-left: 24px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 39px;
+    font-size: 21px;
+    line-height: 24px;
+    margin-left: 33px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 42px;
+    margin-left: 69px;
+  }
 }
 
 .users__list{
   margin-top: 15px;
+  margin-left: 46px;
+  margin-right: 36px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 23px;
+    margin-left: 31px;
+    margin-right: 31px;
+  }
 }
 
 .users__icons{
   margin-top: 17px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 26px;
+  }
 }
 
-.users__level-icon{
-  stroke: #FF8D30;
-  stroke-width: 4;
-  stroke-linecap: round;
-  fill: #161C35;
+.users__name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users__online-status-icon{
+  margin-right: 10px;
+}
+
+.users__hashtag{
+  margin-right: 3px;
+}
+
+.users__all{
+  width: 100%;
+  height: 61px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $medium-width) {
+    // width: 618px;
+    width: auto;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+
+  @media (min-width: $large-width) {
+    position: absolute;
+    top: 537px;
+    left: 131px;
+    width: 275px;
+  }
 }

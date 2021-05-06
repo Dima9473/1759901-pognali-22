@@ -1,17 +1,27 @@
 .promo{
-  margin-top: 130px;
-  background-image: url(../../img/globe-back-mobile.png);
+  margin-top: 94px;
+  background-image: url(../../img/globe-back-mobile.png), linear-gradient($basic-blue 733px, $dark-blue 733px);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0px -235px;
+  background-size: 100% 450px, 100% 100%;
+  background-position: 0px -85px;
 
   @media (min-width: $medium-width) {
     background-image: url(../../img/globe-back-tablet.png);
+    background-position: 0px 267px;
+    background-size: 100% 505px;
+  }
+
+  @media (min-width: $large-width) {
+    background-image: url(../../img/globe-back-desktop.png);
+    background-position: 0px -110px;
+    background-size: 100% 795px;
   }
 }
 
 .promo__header{
   align-items: center;
+  margin-bottom: 29px;
+
   @media (min-width: $medium-width) {
     display: flex;
     flex-direction: column;
@@ -72,6 +82,11 @@
 
 .promo__slogan{
   text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
   @include text(36px, bold, 40px, #ffffff);
 
   @media (min-width: $medium-width) {
@@ -80,6 +95,8 @@
 
   @media (min-width: $large-width) {
     text-align: left;
+    margin-top: -240px;
+    margin-right: 59px;
   }
 }
 
@@ -146,25 +163,28 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: -200px;
-    padding-bottom: 200px;
+    margin-top: -230px;
+    padding-bottom: 108px;
   }
 }
 
 .promo__traveller-icon{
-  margin-top: 10px;
+  margin-top: -10px;
   margin-left: 80px;
   width: 192px;
   height: 255px;
 
   @media (min-width: $medium-width) {
     margin-left: 0;
+    margin-top: 32px;
+    margin-bottom: -33px;
     width: 372px;
     height: 451px;
   }
 
   @media (min-width: $large-width) {
     display: flex;
+    margin-bottom: 0;
     width: 431px;
     height: 640px;
   }
@@ -186,18 +206,27 @@
 
 .promo__review{
   margin: 28px 0px 0px 0px;
-  margin-top: 28px;
   margin-left: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $medium-width) {
+    margin-top: -95px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -230px;
+    margin-left: 58px;
+  }
 }
 
 .promo__menu-actions{
   align-items: center;
   justify-content: center;
   align-items: center;
+  margin-top: 7px;
 }
 
 .promo__menu-actions--visible{
@@ -205,8 +234,10 @@
 }
 
 .promo__description{
+  font-weight: 300;
   @media (min-width: $medium-width) {
     @include text(28px, 300, 33px, #ffffff);
+    min-width: 266px;
   }
 }
 
@@ -218,9 +249,23 @@
   text-align: left;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  padding-left: 24px;
+  padding-right: 21px;
 
   @media (min-width: $medium-width) {
     width: 100%;
+    flex-direction: column;
+    height: 88px;
+    padding-top: 31px;
+    padding-bottom: 21px;
+    padding-left: 32px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $large-width) {
+    flex-direction: row;
+    padding-right: 34px;
+    height: 55px;
   }
 }
 
@@ -229,7 +274,37 @@
 
   @media (min-width: $large-width) {
     &:not(first-child){
-      margin-left: -25px;
+      margin-left: -21px;
     }
   }
+}
+
+.promo__button-authorization{
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 25px;
+}
+
+.promo__icon{
+  padding: 10px;
+
+  @media (min-width: $large-width) {
+    padding: 15px;
+  }
+}
+
+.promo__order-number{
+  @include text(18px, bold, 18px);
+
+  @media (min-width: $medium-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.promo__logo{
+  width: 198px;
+  height: 60px;
+  padding-top: 17px;
+  padding-bottom: 13px;
 }

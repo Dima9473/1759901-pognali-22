@@ -1,11 +1,15 @@
 .icon-list{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .icon-list__details{
   @include text(16px, bold, 18px, $dark-blue);
-  margin-inline-start: 15px;
+  margin-inline-start: 16px;
   @media (min-width: $medium-width) {
     margin-inline-start: 20px;
   }

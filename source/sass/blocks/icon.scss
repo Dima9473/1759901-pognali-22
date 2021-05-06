@@ -31,7 +31,11 @@
   border-radius: 50%;
 
   @media (min-width: $medium-width) {
-    padding: 21px;
+    padding: 23px;
+  }
+
+  @media (min-width: $large-width) {
+    padding: 15px;
   }
 }
 

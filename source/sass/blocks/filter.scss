@@ -136,7 +136,7 @@
 .filter__toggle{
   width: 17px;
   height: 3px;
-  fill: #192144;
+  fill: $dark-blue;
 
   @media (min-width: $medium-width) {
     width: 30px;
@@ -147,7 +147,7 @@
 .filter__toggle--closed{
   width: 16px;
   height: 16px;
-  stroke: #192144;
+  stroke: $dark-blue;
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: round;

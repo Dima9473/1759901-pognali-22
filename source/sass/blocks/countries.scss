@@ -1,12 +1,21 @@
 .countries{
   background-color: $basic-grey;
-  padding-bottom: 25px;
+  padding-bottom: 34px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
   @media (min-width: $medium-width) {
+    padding-bottom: 80px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    background-image: url(../../img/flags-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top 80px right 40px;
+  }
+
+  @media (min-width: $large-width) {
+    background-position: top 88px right 60px;
   }
 }
 
@@ -14,13 +23,15 @@
   padding-top: 71px;
 
   @media (min-width:$medium-width) {
-    background-image: url(../../img/flags-background.png);
-    // background-size:     contain;
-    background-repeat:   no-repeat;
-    background-position: top right;
+    padding-top: 73px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (min-width:$medium-width) {
+    position: relative;
+    padding-top: 161px;
   }
 }
 
@@ -29,11 +40,10 @@
   max-width: 380px;
 
   @media (min-width: $medium-width) {
-    margin: 0 auto;
+    margin-left: 35px;
   }
 
   @media (min-width: $large-width) {
-    padding-top: 50px;
     margin-left: 170px;
   }
 }
@@ -47,17 +57,34 @@
 
 .countries__list{
   margin-top: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   display: flex;
   flex-direction: column;
   flex-direction: column;
+
   @media (min-width: $medium-width) {
     align-items: center;
+    margin-bottom: 46px;
+    margin-top: 64px;
+    margin-left: -35px;
+    padding-top: 38px;
+    padding-left: 35px;
+    background-image: url(../../img/background-light.png);
+    background-repeat: no-repeat;
+    background-size: 141px 141px;
+    background-position: top left;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -71px;
+    margin-left: -70px;
+    padding-top: 71px;
+    padding-left: 70px;
   }
 }
 
 .countries__all-countries{
-  width: 270px;
+  width: 100%;
   height: 61px;
   border-radius: 10px;
   display: flex;
@@ -68,16 +95,25 @@
   }
 
   @media (min-width: $large-width) {
+    position: absolute;
+    top: 532px;
+    left: 62%;
     width: 275px;
   }
 }
 
 .countries__info{
   @include text(16px, 300, 22px, $special-grey);
+  margin-top: 19px;
 
   @media (min-width: $medium-width) {
+    margin-top: 57px;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 58px;
   }
 }
 
@@ -93,6 +129,7 @@
 
 .countries__card-info{
   text-align: left;
+  margin-top: -5px;
 
   @media (min-width: $medium-width) {
     font-size: 28px;
@@ -107,14 +144,17 @@
   width: 35px;
 
   @media (min-width: $medium-width) {
+    position: absolute;
     height: 47px;
     width: 70px;
-    margin-top: -45px;
-    margin-left: 510px;
+    left: 375px;
+    top: 31px;
+    // margin-left: 510px;
   }
 
   @media (min-width: $large-width) {
-    margin-left: 550px;
+    left: 318px;
+    top: 37px;
   }
 }
 
@@ -126,6 +166,7 @@
 
 .countries__cards{
   @media (min-width: $medium-width) {
+    position: relative;
     max-height: 140px;
     display: flex;
     flex-direction: row-reverse;
@@ -136,11 +177,20 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 26px;
+  margin-top: 15px;
 
   @media (min-width: $medium-width) {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 30px;
+  }
+}
+
+.countries__caption{
+  margin-top: 2px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 5px;
   }
 }
 
@@ -149,6 +199,7 @@
   margin-right: 25px;
 
   @media (min-width: $medium-width) {
+    margin-top: 20px;
     margin-right: 0;
     margin-left: 25px;
   }
@@ -159,24 +210,33 @@
   width: 100%;
 
   @media (min-width: $medium-width) {
+    position: absolute;
+    right: 0;
     height: 140px;
     width: 550px;
   }
 
   @media (min-width: $large-width) {
-    width: 520px;
+    width: 559px;
   }
 }
 
 .countries__item{
   width: 100%;
+  height: 190px;
   margin-bottom: 10px;
   padding-bottom: 24px;
 
   @media (min-width: $medium-width) {
     padding-bottom: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    min-width: 616px;
     max-width: 730px;
-    // max-width: 616px;
+    max-height: 140px;
+  }
+
+  @media (min-width: $large-width) {
+    min-width: 559px;
+    // max-width: 559px;
   }
 }

@@ -12,9 +12,19 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $large-width) {
+    padding-bottom: 165px;
+  }
+}
+
+.profile__container{
+  padding-left: 50px;
 }
 
 .profile__list{
+  position: relative;
+  z-index: 0;
   margin-top: -80px;
   padding-top: 126px;
   background-image: url(../../img/rates-large.png);
@@ -26,31 +36,66 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 0;
+    margin-top: 73px;
     padding-top: 0;
+    padding-right: 35px;
     margin-bottom: -100px;
     padding-bottom: 100px;
-    background-position: bottom right 20px;
+    background-position: bottom right 45px;
   }
 
   @media (min-width: $large-width) {
     width: 75%;
+    margin: 0;
+    margin-top: 83px;
     margin-bottom: 0;
     padding-bottom: 0;
+    padding-left: 80px;
     padding-right: 230px;
     background-size: 198px 198px;
     background-position: right ;
   }
+  // overflow: hidden;
+
+  &:after {
+  display: none;
+  @media (min-width: $medium-width) {
+    display: block;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 285px;
+    width: 198px;
+    top: -50px;
+    right: 0;
+    border-radius: 20px;
+    background-color: $dark-grey;
+  }
+
+  @media (min-width: $large-width) {
+    height: 300px;
+    width: 446px;
+    right: 110px;
+    top: -35px;
+  }
+}
 }
 
 .profile__header{
   display: flex;
   justify-content: space-between;
   padding-top: 53px;
+
+  @media (min-width: $medium-width) {
+    padding-top: 74px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 107px;
+  }
 }
 
 .profile__business-tarifs{
-  margin-left: 25px;
 
   @media (min-width: $medium-width) {
     margin-left: 0;
@@ -58,7 +103,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin-left: 180px;
+    margin-left: 80px;
   }
 
   &:hover{
@@ -94,7 +139,6 @@
 
   @media (min-width: $medium-width) {
     margin: 0 auto;
-    padding-bottom: 35px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -108,7 +152,13 @@
 .profile__show-tarifs{
   display: flex;
   align-items: center;
-  margin-top: 46px;
+  margin-top: 31px;
+  width: 100%;
+
+  @media (min-width: $medium-width) {
+    margin-top: 59px;
+  }
+
   &:hover{
     color: #132576;
     opacity: 0.7;
@@ -131,17 +181,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  &:not(:last-child){
-    margin-bottom: 13px;
+  padding-bottom: 13px;
+
+  &:first-child{
+    border-top: 1px solid #E1E3E9;
   }
 
   @media (min-width: $medium-width) {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    &:not(:last-child){
-      margin-bottom: 20px;
-    }
+    padding-bottom: 0;
   }
 }
 
@@ -169,6 +219,10 @@
     line-height: 28px;
     padding-bottom: 25px;
   }
+
+  @media (min-width: $large-width) {
+    padding: 24px;
+  }
 }
 
 .profile__tarif-icon{
@@ -180,10 +234,43 @@
 }
 
 .profile__cost{
-  &::before,
-  &::after {
-    background-color: black;
-  }
+//   position: relative;
+//   z-index: 2;
+//   // overflow: hidden;
+
+//   &:before,
+//   &:after {
+//   z-index: -1;
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   // top: -70px;
+//   // bottom: -70px;
+//   // right: -161px;
+//   // left: -155px;
+//   height: 100px;
+//   width: 50%;
+// }
+
+//   &:before {
+//     left: 0;
+//     background: $dark-grey;
+//   }
+
+//   &:after {
+//     right: 0;
+//     background: $dark-grey;
+//   }
+}
+
+.honor-container:before {
+  left: 0;
+  background: red;/*поставить нужный цвет крайнего левого элемента */
+}
+
+.honor-container:after {
+  right: 0;
+  background: green;/*поставить нужный цвет крайнего правого элемента */
 }
 
 .profile__tarifs-text{
@@ -195,4 +282,8 @@
 
 .profile__consts{
   position: relative;
+}
+
+.profile__price-name{
+  text-align: left;
 }
