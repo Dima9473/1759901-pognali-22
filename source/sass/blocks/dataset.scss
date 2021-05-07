@@ -2,10 +2,6 @@
   position: relative
 }
 
-.dataset__legend{
-  @include text(16px, bold, 18px, $basic-blue-light);
-}
-
 .dataset__change-tags{
   width: 100%;
   margin-top: 10px;

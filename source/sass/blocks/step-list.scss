@@ -6,23 +6,23 @@
 .step-list__container{
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 23px;
   padding-left: 25px;
   padding-right: 25px;
 
   @media (min-width: $medium-width) {
-    padding-top: 50px;
-    padding-bottom: 55px;
+    padding-top: 48px;
+    padding-bottom: 56px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   @media (min-width: $large-width) {
-    padding-top: 100px;
-    padding-bottom: 110px;
-    padding-left: 155px;
-    padding-right: 155px;
+    padding-top: 101px;
+    padding-bottom: 106px;
+    padding-left: 159px;
+    padding-right: 163px;
   }
 }
 
@@ -47,7 +47,7 @@
   justify-content: space-between;
   @media (min-width: $medium-width) {
     border-bottom: 1px solid #E1E3E9;
-    padding-bottom: 33px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $large-width) {
@@ -65,19 +65,23 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    min-width: 185px;
   }
 }
 
 .step-list__nav-item{
   @include text(20px, normal, 24px, #000000);
   letter-spacing: 0.11em;
+  text-transform: uppercase;
   &::before {
     content: "\2022";
-    color: #000000;
+    color: $basic-blue-light;
     font-weight: bold;
     display: inline-block;
-    width: 1em;
+    width: 6px;
+    height: 6px;
     margin-left: -1em;
+    margin-right: 36px;
   }
 }
 
@@ -86,9 +90,9 @@
 }
 
 .step-list__description{
-  margin-bottom: 20px;
+  margin-top: 16px;
   min-height: 90px;
-  @include text(16px, bold, 22px, $special-grey);
+  @include text(16px, normal, 22px, $special-grey);
 
 
   @media (min-width: $medium-width) {
@@ -99,7 +103,9 @@
 }
 
 .step-list__sub-list{
-  margin-top: 21px;
+  // margin-top: 21px;
+  position: relative;
+  z-index: 0;
 
   @media (min-width: $medium-width) {
     margin-top: 42px;
@@ -108,10 +114,32 @@
   @media (min-width: $large-width) {
     margin-top: 62px;
   }
+
+  &:after {
+    display: none;
+    @media (min-width: $medium-width) {
+      display: block;
+      z-index: -1;
+      content: "";
+      position: absolute;
+      height: 400px;
+      width: 1px;
+      top: -43px;
+      right: 164px;
+      background-image: linear-gradient(to bottom,#E1E3E9 85%, rgba(225,227,233,0));
+    }
+
+    @media (min-width: $large-width) {
+      height: 600px;
+      width: 1px;
+      top: -63px;
+      right: 348px;
+      background-image: linear-gradient(to bottom,#E1E3E9 80%, rgba(225,227,233,0));
+    }
+  }
 }
 
 .step-list__buttons{
-  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
 }
@@ -121,7 +149,6 @@
   flex-direction: column;
 
   @media (min-width: $medium-width) {
-    margin-top: 25px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -142,7 +169,7 @@
 }
 
 .step-list__trip-data{
-  margin-bottom: 20px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -150,9 +177,13 @@
   @include text(16px, 500, 16px, $basic-blue-light);
   letter-spacing: 0.09em;
 
+  @media (min-width: $medium-width) {
+    margin-top: 27px;
+  }
+
   @media (min-width: $large-width) {
-    justify-content: flex-start;
-    width: 50%;
+    display: grid;
+    grid-template-columns: 285px 1fr 1fr;
   }
 }
 
@@ -161,13 +192,17 @@
     order: 3;
     padding-top: 26px;
   }
+
+  @media (min-width: $medium-width) {
+    padding-top: 30px;
+  }
 }
 
 .step-list__trip-data--duration{
   @media (min-width: $medium-width) {
     order: 5;
     border-top: 1px solid #E1E3E9;
-    padding-top: 26px;
+    padding-top: 25px;
   }
 
 
@@ -211,7 +246,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin: 0 0 0 auto;
+    margin: 0 0 0 35px;
     order: 2;
   }
 }
@@ -226,13 +261,18 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (max-width: $medium-max-width) {
-    width: 100%;
+  @media (min-width: $medium-width) {
+    height: 70px;
     font-size: 20px;
     line-height: 20px;
   }
 
+  @media (max-width: $medium-max-width) {
+    width: 100%;
+  }
+
   @media (min-width: $large-width) {
+    min-width: 180px;
     order: 1;
   }
 
@@ -240,12 +280,12 @@
     border: 1px solid $special-light-grey;
   }
 
-  &:hover .step-list__minus{
+  &:hover .step-list__horizontal-line{
     stroke: $special-light-grey;
   }
 
   &:active, &:focus{
-    border: 1px solid #161C35;
+    border: 1px solid $dark-blue;
   }
 
   /* Chrome, Safari, Edge, Opera */
@@ -262,18 +302,17 @@
 }
 
 .step-list__child{
-  margin-bottom: 20px;
+  margin-top: 20px;
 
   @media (min-width: $medium-width) {
     order: 4;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 25px;
   }
 
   @media (min-width: $large-width) {
-    margin-top: 0;
+    margin-top: -55px;
     margin-bottom: 0;
-      margin-left: auto;
+    margin-left: auto;
   }
 }
 
@@ -298,6 +337,10 @@
 
 .step-list__caption{
   @include text(20px, bold, 20px, $basic-blue-light);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 
   @media (min-width: $medium-width) {
     font-size: 36px;
@@ -308,6 +351,10 @@
 .step-list__input{
   position: relative;
   margin-top: 8px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 24px;
+  }
   @media (max-width: $medium-max-width) {
     width: 100%;
   }
@@ -317,23 +364,61 @@
   }
 }
 
-.step-list__minus{
-  stroke: #CCCCCC;
-  stroke-width: 2;
+.step-list__plus{
   position: absolute;
-  left: 14px;
-  padding: 10px 12px;
+  right: 37px;
+  top: 20px;
 
-  top: 10px;
+  @media (min-width: $medium-width) {
+    right: 45px;
+    top: 35px;
+  }
 }
 
-.step-list__plus{
-  stroke: #C2C4C9;
-  stroke-width: 2;
+.step-list__add-plus{
   position: absolute;
-  right: 25px;
-  padding: 10px 12px;
-  top: 5px;
+  right: 30px;
+  top: 20px;
+
+  @media (min-width: $medium-width) {
+    right: 35px;
+    top: 35px;
+  }
+}
+
+.step-list__horizontal-line{
+  position: absolute;
+  background-color: #CCCCCC;
+  left: 14px;
+  top: 20px;
+  width: 14px;
+  height: 2px;
+
+  @media (min-width: $medium-width) {
+    width: 20px;
+    left: 23px;
+    top: 35px;
+  }
+}
+
+.step-list__horizontal-line--plus{
+  left: auto;
+  top: auto;
+}
+
+.step-list__vertical-line{
+  position: absolute;
+  background-color: #CCCCCC;
+  left: 6px;
+  top: -6px;
+  width: 2px;
+  height: 14px;
+
+  @media (min-width: $medium-width) {
+    height: 20px;
+    left: 9px;
+    top: -9px;
+  }
 }
 
 .step-list__month{
@@ -342,10 +427,18 @@
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-top: 10px;
+  margin-top: 25px;
   text-align: center;
   border-top: 1px solid #D6D9E6;
   border-bottom: 1px solid #D6D9E6;
+
+  @media (min-width: $medium-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 33px;
+  }
 }
 
 .step-list__month-text{
@@ -397,3 +490,17 @@
   margin-top: 22px;
   width: 100%;
 }
+
+// .step-list__line{
+//   display: flex;
+//   justify-content: space-between;
+//   list-style-type: none;
+//   margin-inline-start: 0;
+//   margin-inline-end: 0;
+//   padding-inline-start: 0;
+// }
+
+// .step-list__line--header{
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }

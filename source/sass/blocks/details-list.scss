@@ -1,5 +1,6 @@
 .details-list__item{
   display: flex;
+  align-items: center;
 }
 
 .details-list__text{
@@ -13,3 +14,18 @@
     letter-spacing: 0.1em;
   }
 }
+
+.details-list__details{
+  margin-inline-start: 5px;
+}
+
+.details-list__date-details{
+  margin-inline-start: 5px;
+  letter-spacing: 0.06em;
+
+}
+
+.details-list__date{
+  letter-spacing: 0.06em;
+}
+

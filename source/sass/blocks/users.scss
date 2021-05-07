@@ -109,18 +109,6 @@
   stroke: #FFFFFF;
 }
 
-.users__level-icon{
-  --circle-opacity: opacity: 0.6;
-  --path-stroke: #f3eb04;
-  --path-stroke-width: #f6214e;
-  --path-stroke-linecap: #2153f6;
-  --path-fill: #53f621;
-  // stroke: #FF8D30;
-  // stroke-width: 4;
-  // stroke-linecap: round;
-  // fill: #161C35;
-}
-
 .users__background-images{
   display: flex;
   justify-content: space-between;
@@ -598,7 +586,7 @@
   @media (min-width: $large-width) {
     position: absolute;
     top: 537px;
-    left: 131px;
+    left: 90px;
     width: 275px;
   }
 }

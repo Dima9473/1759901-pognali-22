@@ -183,37 +183,37 @@
             <span class="general-info__user-data-text text">СМЕНИТЬ ФОТО</span>
           </button>
           <fieldset class="user-info__tags general-info__tags dataset">
-            <legend class="user-info__legend dataset__legend user-info__legend--left text">ТЭГИ</legend>
+            <legend class="user-info__legend user-info__legend--left text">ТЭГИ</legend>
             <textarea
               class="user-info__tag-input dataset__change-tags text">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
           <fieldset class="user-info__transport general-info__transport dataset">
-            <legend class="user-info__legend dataset__legend">Транспорт</legend>
-            <ul class="dataset__list transport-list">
+            <legend class="user-info__legend">Транспорт</legend>
+            <ul class="user-info__list transport-list">
               <li class="transport-list__item">
-                <button class="button button--togle button--light-theme" type="button">
-                  <svg class="icon--active" width="18" height="20">
+                <button class="user-info__transport-button button button--togle button--light-theme" type="button">
+                  <svg class="user-info__icon icon--active" width="18" height="20">
                     <use xlink:href="../img/sprite.svg#plain"></use>
                   </svg>
                 </button>
               </li>
               <li class="transport-list__item">
-                <button class="button button--togle button--light-theme" type="button">
-                  <svg class="icon--active" width="18" height="21">
+                <button class="user-info__transport-button button button--togle button--light-theme" type="button">
+                  <svg class="user-info__icon icon--active" width="18" height="21">
                     <use xlink:href="../img/sprite.svg#bus"></use>
                   </svg>
                 </button>
               </li>
               <li class="transport-list__item">
-                <button class="button button--togle button--light-theme" type="button">
-                  <svg class="icon--disabled" width="25" height="24">
+                <button class="user-info__transport-button button button--togle button--light-theme" type="button">
+                  <svg class="user-info__icon icon--disabled" width="25" height="24">
                     <use xlink:href="../img/sprite.svg#bicycle"></use>
                   </svg>
                 </button>
               </li>
               <li class="transport-list__item">
-                <button class="button button--togle button--light-theme" type="button">
-                  <svg class="icon--active" width="21" height="24">
+                <button class="user-info__transport-button button button--togle button--light-theme" type="button">
+                  <svg class="user-info__icon icon--active" width="21" height="24">
                     <use xlink:href="../img/sprite.svg#walk"></use>
                   </svg>
                 </button>
@@ -223,7 +223,7 @@
         </div>
       </section>
       <section class="user-info__plans user-plans">
-        <div class="container">
+        <div class="user-info__add-plans-container container">
           <h2 class="user-plans__caption">Мои планы:</h2>
           <ul class="user-plans__list plan-list">
             <li class="plan-list__item">
@@ -240,17 +240,17 @@
               </div>
               <div class="plan-list__details">
                 <dl class="plan-list__details-list details-list">
-                  <div class="details-list__item">
+                  <div class="details-list__item details-list__text text">
                     <dt class="details-list__companions-count">
                       3
                     </dt>
-                    <dd class="details-list__details details-list__text text">Попутчика</dd>
+                    <dd class="details-list__details">Попутчика</dd>
                   </div>
-                  <div class="details-list__item">
-                    <dt class="details-list__dates details-list__text text">
+                  <div class="details-list__item details-list__text text">
+                    <dt class="details-list__date">
                       26 МАР
                     </dt>
-                    <dd class="details-list__dates-details details-list__text text">- 29 МАР</dd>
+                    <dd class="details-list__date-details">- 29 МАР</dd>
                   </div>
                 </dl>
                 <a class="plan-list__change button button--change">
@@ -272,17 +272,17 @@
               </div>
               <div class="plan-list__details">
                 <dl class="plan-list__details-list details-list">
-                  <div class="details-list__item">
+                  <div class="details-list__item details-list__text text">
                     <dt class="details-list__companions-count">
                       1
                     </dt>
-                    <dd class="details-list__details details-list__text text">Попутчик</dd>
+                    <dd class="details-list__details">Попутчик</dd>
                   </div>
-                  <div class="details-list__item">
-                    <dt class="details-list__dates details-list__text text">
+                  <div class="details-list__item details-list__text text">
+                    <dt class="details-list__date">
                       1 ИЮЛ
                     </dt>
-                    <dd class="details-list__dates-details details-list__text text">- 15 ИЮЛ</dd>
+                    <dd class="details-list__date-details">- 15 ИЮЛ</dd>
                   </div>
                 </dl>
                 <a class="plan-list__change button button--change">
@@ -294,14 +294,26 @@
         </div>
       </section>
       <section class="user-info__add-plans add-plans">
-        <div class="container">
+        <div class="user-info__step-container container">
           <header class="add-plans__header">
             <h2 class="add-plans__caption">Добавить план:</h2>
-            <div class="add-plans__toggles slider-toggles">
-              <svg width="76" height="6">
-                <use xlink:href="../img/sprite.svg#three-dots"></use>
-              </svg>
-            </div>
+            <ul class="user-info__points slider-toggles">
+              <li class="user-info__point">
+                <svg class="user-info__point-icon" width="5" height="5">
+                  <use xlink:href="../img/sprite.svg#point"></use>
+                </svg>
+              </li>
+              <li class="user-info__point">
+                <svg class="user-info__point-icon user-info__point-icon--disabled" width="5" height="5">
+                  <use xlink:href="../img/sprite.svg#point"></use>
+                </svg>
+              </li>
+              <li class="user-info__point">
+                <svg class="user-info__point-icon user-info__point-icon--disabled" width="5" height="5">
+                  <use xlink:href="../img/sprite.svg#point"></use>
+                </svg>
+              </li>
+            </ul>
           </header>
           <ol class="add-plans__adding-list step-list">
             <li class="step-list__item step-list__container">
@@ -330,12 +342,11 @@
                   </div>
                   <div class="step-list__input">
                     <input id="companions" class="step-list__count text" type="number" value="2" />
-                    <svg class="step-list__minus" width="14" height="2">
-                      <use xlink:href="../img/sprite.svg#minus"></use>
-                    </svg>
-                    <svg class="step-list__plus" width="14" height="14">
-                      <use xlink:href="../img/sprite.svg#plus"></use>
-                    </svg>
+                    <div class="step-list__horizontal-line step-list__minus--1"></div>
+                    <div class="step-list__plus step-list__plus--1">
+                      <div class="step-list__horizontal-line step-list__horizontal-line--plus"></div>
+                      <div class="step-list__vertical-line"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="step-list__trip-data step-list__trip-data--duration">
@@ -347,17 +358,17 @@
                   </div>
                   <div class="step-list__input">
                     <input id="calendar" class="step-list__count text" type="number" value="3" />
-                    <svg class="step-list__minus" width="14" height="2">
-                      <use xlink:href="../img/sprite.svg#minus"></use>
-                    </svg>
-                    <svg class="step-list__plus" width="14" height="14">
-                      <use xlink:href="../img/sprite.svg#plus"></use>
-                    </svg>
+                    <div class="step-list__horizontal-line step-list__minus--2"></div>
+                    <div class="step-list__plus step-list__plus--1">
+                      <div class="step-list__horizontal-line step-list__horizontal-line--plus"></div>
+                      <div class="step-list__vertical-line"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="step-list__child boolean">
-                  <input id="children" class="boolean__check" type="checkbox" />
-                  <label for="children" class="boolean__text text">Можно с детьми</label>
+                <div class="step-list__child">
+                  <input id="children" class="checkbox checkbox--border checkbox--large" name="children"
+                    type="checkbox" />
+                  <label for="children" class="user-info__checkbox-text checkbox__text text">Можно с детьми</label>
                 </div>
               </div>
               <div class="step-list__date">
@@ -370,173 +381,336 @@
                     <use xlink:href="../img/sprite.svg#arrow-right-thin"></use>
                   </svg>
                 </div>
-                <div class="step-list__days">
-                  <table class="step-list__days calendar">
-                    <tr>
-                      <th class="calendar__day calendar__header text">
-                        <span>П</span>
-                      </th>
-                      <th class="calendar__day calendar__header text">
-                        <span>В</span>
-                      </th>
-                      <th class="calendar__day calendar__header text">
-                        <span>С</span>
-                      </th>
-                      <th class="calendar__day calendar__header text">
-                        <span>Ч</span>
-                      </th>
-                      <th class="calendar__day calendar__header text">
-                        <span>П</span>
-                      </th>
-                      <th class="calendar__day calendar__header calendar__day--weakened text">
-                        <span>С</span>
-                      </th>
-                      <th class="calendar__day  calendar__header calendar__day--weakened text">
-                        <span>В</span>
-                      </th>
-                    </tr>
-                    <tr>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>23</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>24</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>25</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>26</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>27</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>28</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>1</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>2</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>3</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>4</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>5</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>6</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>7</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>8</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>9</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>10</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>11</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>12</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>13</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>14</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>15</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>16</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>17</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>18</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>19</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>20</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>21</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>22</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>23</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>24</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--disabled text">
-                        <span>25</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
-                        <span>26</span>
-                        <span class="calendar__notice">Заезд</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
-                        <span>27</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
-                        <span>28</span>
-                        <span class="calendar__notice">Выезд</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day  text calendar__day--active">
-                        <span>29</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>30</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>31</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>1</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>2</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>3</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>4</span>
-                      </td>
-                      <td class="calendar__day-cell calendar__day calendar__day--active text">
-                        <span>5</span>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
+                <!-- <div class="step-list__days calendar">
+                  <ul class="step-list__line step-list__line--header">
+                    <li class="calendar__day calendar__header text">
+                      <span>П</span>
+                    </li>
+                    <li class="calendar__day calendar__header text">
+                      <span>В</span>
+                    </li>
+                    <li class="calendar__day calendar__header text">
+                      <span>С</span>
+                    </li>
+                    <li class="calendar__day calendar__header text">
+                      <span>Ч</span>
+                    </li>
+                    <li class="calendar__day calendar__header text">
+                      <span>П</span>
+                    </li>
+                    <li class="calendar__day calendar__header calendar__day--weakened text">
+                      <span>С</span>
+                    </li>
+                    <li class="calendar__day  calendar__header calendar__day--weakened text">
+                      <span>В</span>
+                    </li>
+                  </ul>
+                  <ul class="step-list__line">
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>23</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>24</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>25</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>26</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>27</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>28</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>1</span>
+                    </li>
+                  </ul>
+                  <ul class="step-list__line">
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>2</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>3</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>4</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>5</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>6</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>7</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>8</span>
+                    </li>
+                  </ul>
+                  <ul class="step-list__line">
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>9</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>10</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>11</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>12</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>13</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>14</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>15</span>
+                    </li>
+                  </ul>
+                  <ul class="step-list__line">
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>16</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>17</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>18</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>19</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>20</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>21</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>22</span>
+                    </li>
+                  </ul>
+                  <ul class="step-list__line">
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>23</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>24</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>25</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
+                      <span>26</span>
+                      <span class="calendar__notice">Заезд</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
+                      <span>27</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
+                      <span>28</span>
+                      <span class="calendar__notice">Выезд</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day  text calendar__day--active">
+                      <span>29</span>
+                    </li>
+                  </ul>
+                  <ul class="step-list__line">
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>30</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>31</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>1</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>2</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>3</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>4</span>
+                    </li>
+                    <li class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>5</span>
+                    </li>
+                  </ul>
+                </div> -->
+                <table class="step-list__days calendar">
+                  <tr class="calendar__day-row">
+                    <th class="calendar__day calendar__header text">
+                      <span>П</span>
+                    </th>
+                    <th class="calendar__day calendar__header text">
+                      <span>В</span>
+                    </th>
+                    <th class="calendar__day calendar__header text">
+                      <span>С</span>
+                    </th>
+                    <th class="calendar__day calendar__header text">
+                      <span>Ч</span>
+                    </th>
+                    <th class="calendar__day calendar__header text">
+                      <span>П</span>
+                    </th>
+                    <th class="calendar__day calendar__header calendar__day--weakened text">
+                      <span>С</span>
+                    </th>
+                    <th class="calendar__day  calendar__header calendar__day--weakened text">
+                      <span>В</span>
+                    </th>
+                  </tr>
+                  <tr class="calendar__day-row">
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>23</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>24</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>25</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>26</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>27</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>28</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>1</span>
+                    </td>
+                  </tr>
+                  <tr class="calendar__day-row">
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>2</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>3</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>4</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>5</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>6</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>7</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>8</span>
+                    </td>
+                  </tr>
+                  <tr class="calendar__day-row">
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>9</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>10</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>11</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>12</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>13</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>14</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>15</span>
+                    </td>
+                  </tr>
+                  <tr class="calendar__day-row">
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>16</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>17</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>18</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>19</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>20</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>21</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>22</span>
+                    </td>
+                  </tr>
+                  <tr class="calendar__day-row">
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>23</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>24</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--disabled text">
+                      <span>25</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
+                      <span>26</span>
+                      <span class="calendar__notice">Заезд</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
+                      <span>27</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
+                      <span>28</span>
+                      <span class="calendar__notice">Выезд</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day  text calendar__day--active">
+                      <span>29</span>
+                    </td>
+                  </tr>
+                  <tr class="calendar__day-row">
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>30</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>31</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>1</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>2</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>3</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>4</span>
+                    </td>
+                    <td class="calendar__day-cell calendar__day calendar__day--active text">
+                      <span>5</span>
+                    </td>
+                  </tr>
+                </table>
               </div>
               <button type="button"
                 class="add-plans__button-step add-plans__button-step--outsideflow button  button--middle-theme">
@@ -551,7 +725,7 @@
               <div class="step-list__header">
                 <div class="step-list__header-text">
                   <h3 class="step-list__caption">Шаг 2. <br>Маршрут</h3>
-                  <p class="add-plans__descriptionstep-list__description text">
+                  <p class="add-plans__description step-list__description text">
                     Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
                   </p>
                 </div>
@@ -897,7 +1071,8 @@
                       <span class="select__item text text--uper add-plans__select-country-text--3">
                         Выберите страну
                       </span>
-                      <svg class="add-plans__circle-icon add-plans__circle-icon--3" width="8" height="8">
+                      <svg class="add-plans__circle-icon add-plans__circle-icon--not-selected add-plans__circle-icon--3"
+                        width="8" height="8">
                         <use xlink:href="../img/sprite.svg#point"></use>
                       </svg>
                       <svg
@@ -1049,9 +1224,10 @@
                   <svg class="add-plans__circle-icon add-plans__circle-icon--add-button" width="8" height="8">
                     <use xlink:href="../img/sprite.svg#point"></use>
                   </svg>
-                  <svg class="add-plans__add-country-icon select-input-list__flag" width="14" height="14">
-                    <use xlink:href="../img/sprite.svg#plus"></use>
-                  </svg>
+                  <div class="step-list__add-plus step-list__plus--2">
+                    <div class="step-list__horizontal-line step-list__horizontal-line--plus"></div>
+                    <div class="step-list__vertical-line"></div>
+                  </div>
                 </button>
                 <div class="step-list__nav-buttons">
                   <button type="button" class="add-plans__button-step button button--middle-theme">
@@ -1062,7 +1238,7 @@
                     </svg>
                   </button>
                   <button type="button"
-                    class="add-plans__button-step step-list__previous button button--transparent-theme">
+                    class="add-plans__button-step step-list__previous button button--transparent-theme add-plans__button-step--previous">
                     <svg class="add-plans__back icon--active" width="10" height="18">
                       <use xlink:href="../img/sprite.svg#arrow-left-thick"></use>
                     </svg>
@@ -1134,7 +1310,7 @@
                   </svg>
                 </button>
                 <button type="button"
-                  class="add-plans__button-step step-list__previous button button--transparent-theme">
+                  class="add-plans__button-step step-list__previous button button--transparent-theme add-plans__button-step--previous">
                   <svg class="add-plans__back icon--active" width="10" height="18">
                     <use xlink:href="../img/sprite.svg#arrow-left-thick"></use>
                   </svg>
