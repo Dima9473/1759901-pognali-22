@@ -94,6 +94,11 @@
     min-width: 950px;
     max-height: 285px;
   }
+
+  &:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 4px 2px -2px gray;
+  }
 }
 
 .companions__flags{
