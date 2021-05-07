@@ -96,7 +96,7 @@
   }
 }
 
-.profile__business-tarifs{
+.profile__business-tariffs-button{
 
   @media (min-width: $medium-width) {
     margin-left: 0;
@@ -150,13 +150,15 @@
   }
 }
 
-.profile__show-tarifs{
+.profile__show-tariffs{
   display: flex;
   align-items: center;
   margin-top: 31px;
   width: 100%;
 
   @media (min-width: $medium-width) {
+    position: relative;
+    z-index: 1;
     margin-top: 59px;
   }
 
@@ -238,7 +240,7 @@
 
 }
 
-.profile__tarifs-text{
+.profile__tariffs-text{
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 20px;
@@ -251,4 +253,23 @@
 
 .profile__price-name{
   text-align: left;
+}
+
+.profile__business-tariffs{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  right: 25px;
+
+  @media (min-width: $medium-width) {
+    top: 56px;
+    left: 40px;
+    right: 40px;
+  }
+
+  @media (min-width: $large-width) {
+    top: 130px;
+    left: 363px;
+    right: 327px;
+  }
 }

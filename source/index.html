@@ -694,14 +694,40 @@
             </span>
           </li>
         </ol>
-        <a class="profile__business-tarifs button button--transparent-theme" href="businesstarifs.html">
-          <div class="profile__show-tarifs">
+        <a class="profile__business-tariffs-button button button--transparent-theme">
+          <div class="profile__show-tariffs">
             <svg class="profile__tarif-icon icon icon--background-padding icon--grey-background" width="28" height="28">
               <use xlink:href="img/sprite.svg#businessman"></use>
             </svg>
-            <span class="profile__tarifs-text text button__caption--small">Показать тарифы для бизнеса</span>
+            <span class="profile__tariffs-text text button__caption--small">Показать тарифы для бизнеса</span>
           </div>
         </a>
+        <div class="profile__business-tariffs business-tariffs visually-hidden">
+          <div class="business-tariffs__container container">
+            <span class="business-tariffs__caption text">Бизнес-тарифы</span>
+            <ul class="business-tariffs__list">
+              <li class="business-tariffs__item">
+                <span class="text">Рекламау блоггера</span>
+                <span class="text">300 000 руб./пост</span>
+              </li>
+              <li class="business-tariffs__item">
+                <span class="text">Накрутка подписчиков</span>
+                <span class="text">от 1 руб./шт.</span>
+              </li>
+              <li class="business-tariffs__item">
+                <span class="text">Лайки от ботов</span>
+                <span class="text">от 20 коп./лайк</span>
+              </li>
+              <li class="business-tariffs__item">
+                <span class="text">Ваш продакт-плейсмент</span>
+                <span class="text">Индивидуально</span>
+              </li>
+            </ul>
+          </div>
+          <button class="business-tariffs__close button button--transparent-theme">
+            <span class="text">Закрыть окно</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="feedback">
@@ -764,7 +790,7 @@
                   class="contacts__new-line">КОНЮШЕННАЯ, 19/8</dd>
             </div>
           </dl>
-          <a class="contacts__build-way button button--arrow" href="businesstarifs.html">
+          <a class="contacts__build-way button button--arrow" href="businesstariffs.html">
             <span class="contacts__wat-text text button__caption button__caption--light button--padding-left">Проложить
               маршрут</span>
             <svg class="button__icon button--padding-right" width="11" height="12">
@@ -830,6 +856,7 @@
     </div>
   </footer>
   <script src="js/navigationActions.js"></script>
+  <script src="js/tariffs.js"></script>
 </body>
 
 </html>

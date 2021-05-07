@@ -1,0 +1,105 @@
+.business-tariffs{
+  background-color: #ffffff;
+  padding-top: 34px;
+  border-radius: 20px;
+
+  @media (min-width: $medium-width) {
+    padding-top: 54px;
+  }
+}
+
+.business-tariffs__container{
+  @media (min-width: $medium-width) {
+    padding-left: 90px;
+    padding-right: 92px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.business-tariffs__caption{
+  display: block;
+  text-align: center;
+  @include text(24px, bold, 24px, $special-orange);
+
+  @media (min-width: $medium-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.business-tariffs__list{
+  margin-top: 28px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 47px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 46px;
+  }
+}
+
+.business-tariffs__item{
+  display: flex;
+  flex-direction: column;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  @include text(16px, normal, 22px, $special-grey);
+
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  &:last-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+.business-tariffs__close{
+  width: 100%;
+  margin-top: 34px;
+  background-color: #F3F4F8;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 59px;
+  @include text(16px, bold, 24px, $basic-blue-light);
+  text-transform: uppercase;
+
+  @media (min-width: $medium-width) {
+    margin-top: 52px;
+    height: 108px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 53px;
+  }
+
+  &:hover{
+    background-color: $basic-grey;
+  }
+
+  &:active, &:focus{
+    background-color: $basic-grey;
+    opacity: 0.3;
+  }
+}
