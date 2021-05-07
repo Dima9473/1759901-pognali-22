@@ -68,6 +68,10 @@
     margin-left: 35px;
     margin-right: 35px;
   }
+
+  @media (min-width: $large-width) {
+    margin-left: 226px;
+  }
 }
 
 .contacts__map-icon{
@@ -92,7 +96,7 @@
 
 .contacts__map{
   width: 100%;
-  margin-top: -30px;
+  margin-top: -50px;
   padding-top: 30px;
   position: relative;
   z-index: -1;

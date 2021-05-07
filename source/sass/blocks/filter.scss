@@ -8,6 +8,8 @@
   @media (min-width: $medium-width) {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    padding-top: 115px;
+    padding-bottom: 56px;
   }
 }
 
@@ -17,16 +19,9 @@
 }
 
 .filter__container{
-  // position: absolute;
-  // z-index: 1;
-  // top: 10px;
-  // left: 0;
-  // right: 0;
-
   @media (min-width: $medium-width) {
-    // top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 72px;
+    padding-right: 73px;
   }
 }
 
@@ -35,7 +30,6 @@
 }
 
 .filter__header{
-  // position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,13 +37,12 @@
 
 .filter__body{
   position: absolute;
-  z-index: 1;
+  z-index: 6;
   display: flex;
   flex-direction: column;
   left: 0;
   right: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+
   background: $dark-grey;
   padding-bottom: 28px;
   border-bottom-left-radius: 40px;
@@ -59,6 +52,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 79px;
+  }
+}
+
+.filter__body-container{
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: $medium-width) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -66,6 +67,7 @@
 
 .filter__toggle-button{
   min-width: 28px;
+  justify-content: flex-start;
 
   &:hover{
     background-color: transparent;
@@ -80,6 +82,7 @@
 
 .filter__filter-icon{
   fill: $dark-blue;
+  min-width: 15px;
   width: 15px;
   height: 10px;
 
@@ -132,17 +135,6 @@
   }
 }
 
-
-.filter__toggle{
-  width: 17px;
-  height: 3px;
-  fill: $dark-blue;
-
-  @media (min-width: $medium-width) {
-    width: 30px;
-    height: 6px;
-  }
-}
 
 .filter__toggle--closed{
   width: 16px;
@@ -290,5 +282,33 @@
   @media (min-width: $medium-width) {
     width: 22px;
     height: 24px;
+  }
+}
+
+.filter__points{
+  list-style-type: none;
+  display: flex;
+  margin-top: -5px;
+}
+
+.filter__point{
+  &:not(:last-child){
+    margin-right: 4px;
+  }
+
+  @media (min-width: $medium-width) {
+    &:not(:last-child){
+      margin-right: 6px;
+    }
+  }
+}
+
+.filter__point-icon{
+  width: 4px;
+  height: 4px;
+
+  @media (min-width: $medium-width) {
+    width: 6px;
+    height: 6px;
   }
 }

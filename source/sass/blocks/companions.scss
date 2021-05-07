@@ -689,3 +689,10 @@
   // height: 50px;
   // width: 50px;
 }
+
+.companions__online-status{
+  @media (min-width: $large-width) {
+    position: absolute;
+    left: -18px;
+  }
+}

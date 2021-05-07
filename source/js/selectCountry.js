@@ -4,6 +4,7 @@ let openIcon1 = document.querySelector('.add-plans__show-countries-icon--closed-
 let circleIcon1 = document.querySelector('.add-plans__circle-icon--1');
 let closeIcon1 = document.querySelector('.add-plans__close-icon--1');
 let countriesDropdown1 = document.querySelector('.add-plans__countries-dropdown--1');
+let addCountry = document.querySelector('.add-plans__add-country');
 
 selectCountry1.addEventListener('click', function () {
   if (!selectCountry1.classList.contains('add-plans__select-country--opened')) {
@@ -56,13 +57,13 @@ const onOpen = (selectCountry, selectText, openIcon, circleIcon, closeIcon, coun
   openIcon.classList.add('visually-hidden');
   closeIcon.classList.remove('visually-hidden');
   countriesDropdown.classList.remove('visually-hidden');
+  addCountry.classList.add('visually-collapced');
 
   if (window.innerWidth < 768) {
     circleIcon.classList.add('visually-hidden');
   }
 
   if (window.innerWidth >= 1440) {
-    // debugger;
     countriesDropdown.style.width = selectCountry.offsetWidth + "px";
   }
 
@@ -74,6 +75,7 @@ const onClose = (e, selectCountry, selectText, openIcon, circleIcon, closeIcon, 
   openIcon.classList.remove('visually-hidden');
   closeIcon.classList.add('visually-hidden');
   countriesDropdown.classList.add('visually-hidden');
+  addCountry.classList.remove('visually-collapced');
 
   if (window.innerWidth < 768) {
     circleIcon.classList.remove('visually-hidden');

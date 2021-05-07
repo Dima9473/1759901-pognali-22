@@ -16,6 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $large-width) {
+    margin-left: 69px;
+  }
 }
 
 .add-plans__adding-list{
@@ -371,12 +375,12 @@
   height: 9px;
 
   @media (min-width: $medium-width) {
-    width: 22x;
+    width: 22px;
     height: 21px;
   }
 
   @media (min-width: $large-width) {
-    width: 22x;
+    width: 22px;
     height: 24px;
   }
 
@@ -430,12 +434,12 @@
 }
 
 .add-plans__country-item{
-  &:not(last-child){
+  &:not(:last-child){
     margin-bottom: 4px;
   }
 
   @media (min-width: $medium-width) {
-    &:not(last-child){
+    &:not(:last-child){
       margin-bottom: 10px;
     }
   }
