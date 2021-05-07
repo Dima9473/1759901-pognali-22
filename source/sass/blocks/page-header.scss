@@ -6,6 +6,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    background-color: #182044;
+  }
+}
+
+.page-header--light-theme{
+  background-color: #182044;
 }
 
 .page-header--border-radius{
@@ -25,7 +33,28 @@
   }
 }
 
-.page-header__link {
+.page-header__logo{
+  width: 96px;
+  height: 15px;
+
+  @media (min-width: $medium-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 200px;
+    height: 52px;
+  }
+}
+
+.page-header__open-icon{
+  padding: 0;
+  width: 25px;
+  height: 11px;
+}
+
+.page-header__link{
   display: none;
 
   @media (min-width: $medium-width) {
@@ -39,15 +68,19 @@
   align-items: center;
   z-index: 2;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 19px;  ;
 
   @media (min-width: $medium-width) {
     margin-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px
   }
 
   @media (min-width: $large-width) {
     margin: 0 auto;
     margin-top: 46px;
+    padding-left: 60px;
+    padding-right: 60px
   }
 }
 
@@ -75,9 +108,12 @@
 .page-header__social-list{
   margin-bottom: 40px;
   margin-top: 41px;
+  align-items: center;
+
   @media (min-width: $medium-width) {
     justify-content: flex-start;
     margin-top: 129px;
+    margin-bottom: 91px;
   }
 }
 
@@ -113,10 +149,12 @@
 
   @media (min-width: $medium-width) {
     margin-top: 144px;
+    margin-left: 97px;
   }
 }
 
 .page-header__authorization-button{
+  height: 50px;
  @media (max-width: $small-max-width) {
   width: 100%;
  }
@@ -126,7 +164,6 @@
   display: none;
   order: 1;
   @media (min-width: $medium-width) {
-    padding-right: 40px;
     display: flex;
     align-items: center;
   }

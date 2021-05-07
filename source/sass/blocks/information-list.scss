@@ -5,7 +5,6 @@
   padding-inline-start: 0;
 
   @media (min-width: $medium-width){
-    max-width: 688px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -47,6 +46,11 @@ background-color: $basic-yellow;
 
 .information-list__description{
   @include text(18px, bold, 18px, $basic-blue);
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .information-list__description--small{

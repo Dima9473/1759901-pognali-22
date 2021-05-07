@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--border-radius page-header--height">
+  <header class="page-header page-header--border-radius page-header--height page-header--light-theme">
     <div class="container page-header__menu  menu">
       <a href="index.html" class="menu__logo-mobile">
         <picture>
@@ -35,9 +35,9 @@
         </svg>
         <svg class="menu__close-icon visually-hidden" width="14" height="14" viewBox="0 0 14 14"
           xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+          <path d="M12.25 1.75L1.75 12.25" stroke="$dark-blue" stroke-width="1.4" stroke-linecap="round"
             stroke-linejoin="round" />
-          <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
+          <path d="M1.75 1.75L12.25 12.25" stroke="$dark-blue" stroke-width="1.4" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
       </a>
@@ -186,734 +186,731 @@
   </header>
   <main class="page-main page-main--light">
     <section class="filter">
-      <div class="filter__container container">
-        <div class="filter__wrapper">
-          <div class="filter__header">
-            <h2 class="visually-hidden">Фильтрация странн</h2>
-            <svg class="filter__filter-icon" width="16" height="10" viewBox="0 0 16 10"
+      <div class="filter__wrapper">
+        <div class="filter__container container filter__header">
+          <h2 class="visually-hidden">Фильтрация странн</h2>
+          <svg class="filter__filter-icon" width="16" height="10" viewBox="0 0 16 10"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="7.17395" width="7.82609" height="2" />
+            <rect x="7.17383" y="8" width="7.82609" height="2" />
+            <rect y="4" width="7.82609" height="2" />
+            <rect x="3.91309" width="1.95652" height="2" />
+            <rect x="3.91309" y="8" width="1.95652" height="2" />
+            <rect x="9.13037" y="4" width="1.95652" height="2" />
+            <rect width="2.6087" height="2" />
+            <rect y="8" width="2.6087" height="2" />
+            <rect x="12.3914" y="4" width="2.6087" height="2" />
+          </svg>
+          <span class="filter__filter-country-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
+          <ul class="filter__continents-list continents-list">
+            <li class="continents-list__item  filter__text continents-list__item--active">
+              <span class="text">Европа</span>
+            </li>
+            <li class="continents-list__item filter__text">
+              <span class="text">Азия</span>
+            </li>
+            <li class="continents-list__item filter__text">
+              <span class="text">Америка</span>
+            </li>
+            <li class="continents-list__item filter__text">
+              <span class="text">Острова</span>
+            </li>
+          </ul>
+          <span class="filter__show-all text filter__text">Показать все</span>
+          <span class="filter__hide filter__text text visually-hidden">Свернуть</span>
+          <button class="filter__toggle-button button button--transparent-theme" type="button">
+            <svg class="filter__toggle filter__toggle--opened" width="17" height="3" viewBox="0 0 30 6"
               xmlns="http://www.w3.org/2000/svg">
-              <rect x="7.17395" width="7.82609" height="2" />
-              <rect x="7.17383" y="8" width="7.82609" height="2" />
-              <rect y="4" width="7.82609" height="2" />
-              <rect x="3.91309" width="1.95652" height="2" />
-              <rect x="3.91309" y="8" width="1.95652" height="2" />
-              <rect x="9.13037" y="4" width="1.95652" height="2" />
-              <rect width="2.6087" height="2" />
-              <rect y="8" width="2.6087" height="2" />
-              <rect x="12.3914" y="4" width="2.6087" height="2" />
+              <circle cx="3" cy="3" r="3" />
+              <circle cx="15" cy="3" r="3" />
+              <circle cx="27" cy="3" r="3" />
             </svg>
-            <span class="filter__filter-country-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ</span>
-            <ul class="filter__continents-list continents-list">
-              <li class="continents-list__item  filter__text continents-list__item--active">
-                <span class="text">Европа</span>
-              </li>
-              <li class="continents-list__item filter__text">
-                <span class="text">Азия</span>
-              </li>
-              <li class="continents-list__item filter__text">
-                <span class="text">Америка</span>
-              </li>
-              <li class="continents-list__item filter__text">
-                <span class="text">Острова</span>
-              </li>
-            </ul>
-            <span class="filter__show-all text filter__text">Показать все</span>
-            <span class="filter__hide filter__text text visually-hidden">Свернуть</span>
-            <button class="filter__toggle-button button button--transparent-theme" type="button">
-              <svg class="filter__toggle filter__toggle--opened" width="17" height="3" viewBox="0 0 30 6"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="3" cy="3" r="3" />
-                <circle cx="15" cy="3" r="3" />
-                <circle cx="27" cy="3" r="3" />
-              </svg>
-              <svg class="filter__toggle filter__toggle--closed visually-hidden" width="16" height="16"
-                viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                  <path d="M21 2.91573L3 19.3428" />
-                  <path d="M3 2.91573L21 19.3428" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect class="filter__close-icon" width="22" height="24"
-                      transform="translate(0 22.0807) rotate(-90)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
-          <div class="filter__body visually-hidden">
-            <!-- filter__countries-table-wrapper visually-hidden filter__countries-table--3 -->
-            <table class="filter__countries-table alphabet">
-              <tr class="filter__latter-row">
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">а</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Австралия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Австрия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Айзербайджан</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Албания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Алжир</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ангола</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Андора</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Антигуа и Барбуда</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Аргентина</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Армения</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Афганистан</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">б</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Багамские Острова</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бангладеш</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Барбадос</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бахрейн</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Белоруссия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Белиз</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бельгия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бенин</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Болгария</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Боливия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Босния и Герцеговина</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ботсвана</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бразилия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бруней</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Буркина-Фасо</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бурунди</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Бутан</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">в</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Вануату</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Великобритания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Венгрия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Восточный Тимор</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Вьетная</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">г</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Габон</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гаити</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гайана</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гамбия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гана</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гватемала</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гвинея</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гвинея-Бисау</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Германия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гондурас</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Гренада</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Греция</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Грузия</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">д</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Дания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Джибути</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Доминика</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Доминикана</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="filter__latter-row">
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">е</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Египет</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">з</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Замбия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Зимбабве</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">и</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Израиль</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Индия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Индонезия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Иордания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ирак</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Иран</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ирландия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Исландия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Испания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Италия</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">к</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Кабо-Верде</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Казахстан</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Камбоджа</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Камерун</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Канада</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Катар</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Кения</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Кипр</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Киргизия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Кирибати</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Китай</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Колумбия</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">л</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Лаос</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Латвия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Лесото</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Либерия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ливан</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ливия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Литва</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Лихтенштейн</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Люксенбург</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="filter__latter-row">
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">м</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Маврикий</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Мавритания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Мадагаскар</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Малави</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Малайзия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Мали</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Мальдивы</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Мальта</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">ЛюксенбургМароко</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">н</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Намибия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Науру</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Непал</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Нигер</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Нигерия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Нидерланды</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Никарагуа</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Новая Зеландия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Норвегия</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">о</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">ОАЭ</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Оман</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">п</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Пакистан</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Палау</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Панама</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Папуа - Новая Гвинея</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Парагвай</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Перу</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Польша</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Португалия</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">р</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Руанда</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Румыния</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Россия</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="filter__latter-row">
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">с</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сальвадор</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Самоа</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сан-Марино</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Саудовская Аравия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сейшелы</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сенегал</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сербия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сингапур</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Сирия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Словакия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Словения</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">США</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">т</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Таджикистан</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Таиланд</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Танзания</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Того</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Тонга</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Тринидад и Тобаго</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Тувалу</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Тунис</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Туркмения</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Турция</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">у</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Уганда</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Узбекистан</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Украина</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Уругвай</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">ф</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Фиджи</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Филиппины</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Финляндия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Франция</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">х</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Хорватия</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="filter__latter-row">
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">ч</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Чад</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Черногория</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Чехия</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Чили</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">ш</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Швейцария</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Швеция</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Шри-Ланка</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">э</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Эквадор</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Эритрея</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Эсватини</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Эстония</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Эфиопия</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">ю</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">ЮАР</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Южный Судан</span>
-                    </li>
-                  </ul>
-                </td>
-                <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
-                  <span class="filter__latter text--uper">я</span>
-                  <ul class="country-list filter__countries--large">
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Ямайка</span>
-                    </li>
-                    <li class="country-list__item">
-                      <span class="filter__country-text text">Япония</span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <ul class="filter__countries country-list">
-              <li class="country-list__item">
-                <span class="filter__country-text text">Австралия</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Австрия</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Айзербайджан</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Албания</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Алжир</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Ангола</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Андора</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Антигуа и Барбуда</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Аргентина</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Армения</span>
-              </li>
-              <li class="country-list__item">
-                <span class="filter__country-text text">Афганистан</span>
-              </li>
-            </ul>
-            <button class="filter__close button button--light-theme">
-              <svg class="filter__close-icon" width="14" height="14" viewBox="0 0 14 14"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span class="button__caption">СВЕРНУТЬ</span>
-            </button>
-          </div>
+            <svg class="filter__toggle filter__toggle--closed visually-hidden" width="16" height="16"
+              viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M21 2.91573L3 19.3428" />
+                <path d="M3 2.91573L21 19.3428" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect class="filter__close-icon" width="22" height="24"
+                    transform="translate(0 22.0807) rotate(-90)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
         </div>
-        </header>
+        <div class="filter__body visually-hidden">
+          <table class="filter__countries-table alphabet">
+            <tr class="filter__latter-row">
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">а</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Австралия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Австрия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Айзербайджан</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Албания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Алжир</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ангола</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Андора</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Антигуа и Барбуда</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Аргентина</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Армения</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Афганистан</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">б</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Багамские Острова</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бангладеш</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Барбадос</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бахрейн</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Белоруссия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Белиз</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бельгия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бенин</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Болгария</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Боливия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Босния и Герцеговина</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ботсвана</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бразилия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бруней</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Буркина-Фасо</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бурунди</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Бутан</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">в</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Вануату</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Великобритания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Венгрия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Восточный Тимор</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Вьетная</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">г</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Габон</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гаити</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гайана</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гамбия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гана</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гватемала</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гвинея</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гвинея-Бисау</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Германия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гондурас</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Гренада</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Греция</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Грузия</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">д</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Дания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Джибути</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Доминика</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Доминикана</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="filter__latter-row">
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">е</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Египет</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">з</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Замбия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Зимбабве</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">и</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Израиль</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Индия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Индонезия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Иордания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ирак</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Иран</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ирландия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Исландия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Испания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Италия</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">к</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Кабо-Верде</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Казахстан</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Камбоджа</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Камерун</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Канада</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Катар</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Кения</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Кипр</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Киргизия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Кирибати</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Китай</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Колумбия</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">л</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Лаос</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Латвия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Лесото</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Либерия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ливан</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ливия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Литва</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Лихтенштейн</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Люксенбург</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="filter__latter-row">
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">м</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Маврикий</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Мавритания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Мадагаскар</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Малави</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Малайзия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Мали</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Мальдивы</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Мальта</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">ЛюксенбургМароко</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">н</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Намибия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Науру</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Непал</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Нигер</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Нигерия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Нидерланды</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Никарагуа</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Новая Зеландия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Норвегия</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">о</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">ОАЭ</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Оман</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">п</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Пакистан</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Палау</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Панама</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Папуа - Новая Гвинея</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Парагвай</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Перу</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Польша</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Португалия</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">р</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Руанда</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Румыния</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Россия</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="filter__latter-row">
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">с</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сальвадор</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Самоа</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сан-Марино</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Саудовская Аравия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сейшелы</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сенегал</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сербия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сингапур</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Сирия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Словакия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Словения</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">США</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">т</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Таджикистан</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Таиланд</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Танзания</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Того</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Тонга</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Тринидад и Тобаго</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Тувалу</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Тунис</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Туркмения</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Турция</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">у</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Уганда</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Узбекистан</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Украина</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Уругвай</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">ф</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Фиджи</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Филиппины</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Финляндия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Франция</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">х</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Хорватия</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="filter__latter-row">
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">ч</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Чад</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Черногория</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Чехия</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Чили</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">ш</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Швейцария</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Швеция</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Шри-Ланка</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">э</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Эквадор</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Эритрея</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Эсватини</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Эстония</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Эфиопия</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">ю</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">ЮАР</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Южный Судан</span>
+                  </li>
+                </ul>
+              </td>
+              <td class="filter__latter-cell alphabet__latter-cell alphabet__letter text">
+                <span class="filter__latter text--uper">я</span>
+                <ul class="country-list filter__countries--large">
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Ямайка</span>
+                  </li>
+                  <li class="country-list__item">
+                    <span class="filter__country-text text">Япония</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <ul class="filter__countries country-list">
+            <li class="country-list__item">
+              <span class="filter__country-text text">Австралия</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Австрия</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Айзербайджан</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Албания</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Алжир</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Ангола</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Андора</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Антигуа и Барбуда</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Аргентина</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Армения</span>
+            </li>
+            <li class="country-list__item">
+              <span class="filter__country-text text">Афганистан</span>
+            </li>
+          </ul>
+          <button class="filter__close button button--light-theme">
+            <svg class="filter__close-icon" width="14" height="14" viewBox="0 0 14 14"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.25 1.75L1.75 12.25" stroke="$dark-blue" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M1.75 1.75L12.25 12.25" stroke="$dark-blue" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="button__caption">СВЕРНУТЬ</span>
+          </button>
+        </div>
+      </div>
     </section>
     <div class="companions__container">
       <div class="container">
@@ -1139,19 +1136,10 @@
                         <span class="choose-compnion__range-value text">100</span>
                       </div>
                       <div class="choose-compnion__range">
-                        <div class="choose-companion__range-line choose-companion__range-line--out-range"></div>
-                        <div class="choose-companion__range-dot"></div>
+                        <div class="choose-companion__range-dot choose-companion__range-left-dot"></div>
                         <div class="choose-companion__range-line"></div>
-                        <div class="choose-companion__range-dot"></div>
-                        <!-- <svg width="220" height="10" viewBox="0 0 220 10" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="72" cy="5" r="5" fill="#1D2E5B" />
-                          <circle cx="215" cy="5" r="5" fill="#1D2E5B" />
-                          <rect opacity="0.2" y="4" width="193" height="2" fill="#1D2E5B" />
-                          <rect x="73" y="4" width="138" height="2" fill="#1D2E5B" />
-                        </svg> -->
+                        <div class="choose-companion__range-dot choose-companion__range-right-dot"></div>
                       </div>
-                      <!-- <input type="range" class="choose-compnion__range" min="30" max="100" /> -->
                     </div>
                   </div>
                 </li>
@@ -1219,6 +1207,7 @@
                     </div>
                   </div>
                   <span class="companiouns__want-visit card-list__text text">хочет посетить:</span>
+                  <div class="companions__want-visit-line line"></div>
                   <ul class="companions__flags card-list__flags card-list__flags-order flags-list">
                     <li class="flags-list__item">
                       <div class="flags-list__country-info">
@@ -1259,6 +1248,7 @@
                       <span class="card-list__transport-text text">
                         Транспорт
                       </span>
+                      <div class="companions__transport-line line"></div>
                       <ul class="companions__card-list card-list icon-list">
                         <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__plain-1 icon-list__link icon icon--transparent-theme">
@@ -1392,6 +1382,7 @@
                     </div>
                   </div>
                   <span class="companiouns__want-visit card-list__text text">хочет посетить:</span>
+                  <div class="companions__want-visit-line line"></div>
                   <ul class="companions__flags card-list__flags card-list__flags-order flags-list">
                     <li class="flags-list__item">
                       <div class="flags-list__country-info">
@@ -1421,6 +1412,7 @@
                       <span class="card-list__transport-text text">
                         Транспорт
                       </span>
+                      <div class="companions__transport-line line"></div>
                       <ul class="companions__card-list card-list icon-list">
                         <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__plain-2 icon-list__link icon icon--transparent-theme">
@@ -1554,6 +1546,7 @@
                     </div>
                   </div>
                   <span class="companiouns__want-visit card-list__text text">хочет посетить:</span>
+                  <div class="companions__want-visit-line line"></div>
                   <ul class="companions__flags card-list__flags card-list__flags-order flags-list">
                     <li class="flags-list__item">
                       <div class="flags-list__country-info">
@@ -1596,6 +1589,7 @@
                       <span class="card-list__transport-text text">
                         Транспорт
                       </span>
+                      <div class="companions__transport-line line"></div>
                       <ul class="companions__card-list card-list icon-list">
                         <li class="icon-list__item companions__inline-card-item">
                           <a class="companions__plain-3 icon-list__link icon icon--transparent-theme">
@@ -1726,6 +1720,7 @@
                     </div>
                   </div>
                   <span class="companiouns__want-visit card-list__text text">хочет посетить:</span>
+                  <div class="companions__want-visit-line line"></div>
                   <ul class="companions__flags card-list__flags card-list__flags-order flags-list">
                     <li class="flags-list__item">
                       <div class="flags-list__country-info">
@@ -1756,6 +1751,7 @@
                       <span class="card-list__transport-text text">
                         Транспорт
                       </span>
+                      <div class="companions__transport-line line"></div>
                       <ul class="companions__card-list card-list icon-list">
                         <li class="companions__plain-4 icon-list__item companions__inline-card-item">
                           <a class="icon-list__link icon icon--transparent-theme ">
@@ -1860,7 +1856,8 @@
               <path d="M0 9L9.75 0.339745L9.75 17.6603L0 9Z" />
             </svg>
           </button>
-          <svg class="companions__line" width="1" height="51" viewBox="0 0 1 51" xmlns="http://www.w3.org/2000/svg">
+          <svg class="companions__vertical-line" width="1" height="51" viewBox="0 0 1 51"
+            xmlns="http://www.w3.org/2000/svg">
             <line x1="0.5" x2="0.5" y2="51" />
           </svg>
           <button class="companions__button button button--transparent-theme" type="button">
@@ -1875,14 +1872,14 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <h2 class="visually-hidden">Погнали?</h2>
-      <a href="index.html" class="page-footer__logo-mobile">
+      <a href="index.html">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
           <img class="logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x" width="226"
             height="30" alt="Логотип" />
         </picture>
       </a>
-      <ul class="page-footer__list social-list">
+      <ul class="page-footer__socials social-list">
         <li class="social-list__item">
           <a class="social-list__link icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
             <svg class="icon icon--background-padding icon--main-background" width="20" height="20" viewBox="0 0 11 21"

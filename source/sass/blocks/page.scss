@@ -2,6 +2,12 @@
   background-color: $basic-blue;
 }
 
+.page--index{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    background-color: #182044;
+  }
+}
+
 .page-header__menu-opened{
 
   // background-color: #ffffff;

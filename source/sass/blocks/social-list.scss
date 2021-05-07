@@ -10,6 +10,39 @@
 }
 
 .social-list__item{
+  margin-right: 27px;
+}
+
+.social-list__facebook{
+  width: 11px;
+  height: 21px;
+
+  @media (min-width: $medium-width) {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+.social-list__vk{
+  width: 23px;
+  height: 20px;
+
+  @media (min-width: $medium-width) {
+    width: 31px;
+    height: 16px;
+  }
+}
+
+.social-list__instagramm{
+  width: 18px;
+  height: 18px;
+  opacity: 0.5;
+
+  @media (min-width: $medium-width) {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+  }
 }
 
 .social-list__link{

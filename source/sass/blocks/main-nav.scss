@@ -1,5 +1,13 @@
 .main-nav__list{
+  @media (min-width: $medium-width) {
+    margin-top: 98px;
+    margin-left: 97px;
+  }
+
   @media (min-width: $large-width) {
     display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
