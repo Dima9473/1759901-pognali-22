@@ -33,6 +33,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $medium-width) {
+    min-height: 26px;
+  }
+
+  @media (min-width: $large-width) {
+    justify-content: flex-start;
+  }
 }
 
 .filter__body{
@@ -42,6 +50,7 @@
   flex-direction: column;
   left: 0;
   right: 0;
+  margin-top: 15px;
 
   background: $dark-grey;
   padding-bottom: 28px;
@@ -51,7 +60,16 @@
   @media (min-width: $medium-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 64px;
+    padding-right: 73px;
     padding-bottom: 79px;
+    padding-left: 77px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 74px;
+    padding-left: 57px;
+    padding-right: 63px;
   }
 }
 
@@ -60,6 +78,8 @@
   padding-right: 25px;
 
   @media (min-width: $medium-width) {
+    display: flex;
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -97,8 +117,12 @@
 }
 
 .filter__text{
-  @include text(20px, bold, 20px, $dark-blue);
+  @include text(16px, bold, 18px, $dark-blue);
   text-transform: uppercase;
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .filter__show-all{
@@ -107,6 +131,10 @@
 
   @media (min-width: $medium-width) {
     display: flex;
+  }
+
+  @media (min-width: $large-width) {
+    margin-right: 20px;
   }
 
   &:hover{
@@ -128,10 +156,16 @@
 
 .filter__filter-country-text{
   @include text(16px, bold, 18px, $dark-blue);
-  min-width: 228px;
+  min-width: 233px;
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 22px;
   }
 }
 
@@ -205,6 +239,7 @@
 }
 
 .filter__countries{
+  margin-top: 14px;
   @media (min-width: $large-width) {
     display: none;
   }
@@ -231,9 +266,9 @@
   background-color: #ffffff;
 
   @media (min-width: $medium-width) {
+    margin-top: 0;
     background: none;
     width: 65%;
-    margin-top: 10px;
     margin-right: 35px;
   }
 
@@ -272,9 +307,15 @@
     width: 100%;
     margin-top: 80px;
   }
+
+  @media (min-width: $large-width) {
+    margin-top: 49px;
+  }
 }
 
 .filter__close-icon{
+  fill: #CCCCCC;
+  stroke: #192144;
   margin-right: 12px;
   width: 14px;
   height: 14px;
@@ -301,6 +342,7 @@
       margin-right: 6px;
     }
   }
+
 }
 
 .filter__point-icon{
@@ -310,5 +352,27 @@
   @media (min-width: $medium-width) {
     width: 6px;
     height: 6px;
+  }
+}
+
+.filter__continents-list{
+  display: none;
+  list-style-type: none;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 30px;
+  }
+}
+
+.filter__continents-list--small{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium-width) {
+    display: none;
   }
 }
