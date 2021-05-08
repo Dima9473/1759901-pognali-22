@@ -22,10 +22,33 @@
 .details-list__date-details{
   margin-inline-start: 5px;
   letter-spacing: 0.06em;
+  margin-left: 3px;
 
 }
 
 .details-list__date{
+  position: relative;
   letter-spacing: 0.06em;
+  margin-right: 3px;
+  min-width: 70px;
+
+  &:after{
+    content: '';
+    width: 15px;
+    border-bottom: solid 1px $basic-blue-light;
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    z-index: 1;
+  }
+
+  @media (min-width: $medium-width) {
+    min-width: 100px;
+    &:after{
+      width: 20px;
+      border-bottom: solid 2px $basic-blue-light;
+      left: 80px;
+    }
+  }
 }
 

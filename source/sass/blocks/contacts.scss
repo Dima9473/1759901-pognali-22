@@ -105,6 +105,10 @@
     margin-top: -120px;
     padding-top: 65px;
   }
+
+  @media (min-width: $large-width) {
+    min-height: 584px;
+  }
 }
 
 .contacts__map--small{
