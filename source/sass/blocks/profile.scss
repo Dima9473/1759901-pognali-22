@@ -28,7 +28,7 @@
   z-index: auto;
   margin-top: -80px;
   padding-top: 126px;
-  background-image: url(../img/rates-large.png);
+  background-image: url(../../../build/img/rates-small.webp);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100px 100px;
@@ -42,6 +42,7 @@
     padding-right: 35px;
     margin-bottom: -100px;
     padding-bottom: 100px;
+    background-image: url(../../../build/img/rates-medium.webp);
     background-position: bottom right 45px;
   }
 
@@ -53,33 +54,45 @@
     padding-bottom: 0;
     padding-left: 80px;
     padding-right: 230px;
+    background-image: url(../../../build/img/rates-large.webp);
     background-size: 198px 198px;
     background-position: right ;
   }
-  // overflow: hidden;
+
+  @media (min-resolution: 2dppx){
+    background-image: url(../../../build/img/rates-small@2x.webp);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $medium-width) {
+    background-image: url(../../../build/img/rates-medium@2x.webp);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $large-width) {
+    background-image: url(../../../build/img/rates-large@2x.webp);
+  }
 
   &:after {
   display: none;
   @media (min-width: $medium-width) {
-    display: block;
-    z-index: -1;
-    content: "";
-    position: absolute;
-    height: 285px;
-    width: 198px;
-    top: -50px;
-    right: 0;
-    border-radius: 20px;
-    background-color: $dark-grey;
-  }
+      display: block;
+      z-index: -1;
+      content: "";
+      position: absolute;
+      height: 285px;
+      width: 198px;
+      top: -50px;
+      right: 0;
+      border-radius: 20px;
+      background-color: $dark-grey;
+    }
 
-  @media (min-width: $large-width) {
-    height: 300px;
-    width: 446px;
-    right: 110px;
-    top: -35px;
+    @media (min-width: $large-width) {
+      height: 300px;
+      width: 446px;
+      right: 110px;
+      top: -35px;
+    }
   }
-}
 }
 
 .profile__header{

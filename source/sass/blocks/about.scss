@@ -3,7 +3,7 @@
   position: relative;
   margin-top: -52px;
   padding-top: 33px;
-  background-image: url(../img/about-mobile.png),url(/img/back-medium.png);
+  background-image: url(../../../build/img/about-mobile.webp),url(../img/back.webp);
   background-size: 100% 100%, 113px 132px;
   background-repeat: no-repeat;
   background-position: top 39px right, top 39px left;
@@ -14,7 +14,7 @@
   @media (min-width: $medium-width) {
     margin-top: 96px;
     padding-top: 41px;
-    background-image: url(../img/about-tablet.png),url(/img/back-medium.png);
+    background-image: url(../../../build/img/about-tablet.webp),url(../img/back-medium.webp);
     background-size: 376px 510px, 90% 212px;
     background-position: right top 45px, top left 40px;
     border-bottom-left-radius: 60px;
@@ -25,9 +25,21 @@
   @media (min-width: $large-width) {
     margin-top: 0;
     padding-top: 42px;
-    background-image: url(../img/about-desctop.png),url(/img/back-medium.png);
+    background-image: url(../../../build/img/about-desktop.webp),url(../img/back-large.webp);
     background-size: 630px 735px, 212px 212px;
     background-position: right top, top left 40px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../../build/img/about-mobile@2x.webp),url(../img/back@2x.webp);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $medium-width) {
+    background-image: url(../../../build/img/about-tablet@2x.webp),url(../img/back-medium@2x.webp);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $large-width) {
+    background-image: url(../../../build/img/about-desktop@2x.webp),url(../img/back-large@2x.webp);
   }
 }
 
