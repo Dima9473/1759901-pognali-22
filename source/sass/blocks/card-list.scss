@@ -29,11 +29,6 @@
   @media (min-width: $large-width) {
     border-radius: 25px;
   }
-
-  &:hover{
-    transform: scale(1.01, 1.01);
-    box-shadow: 0 4px 2px -2px gray;
-  }
 }
 
 .card-list--indentation{
@@ -106,16 +101,6 @@
     min-width: 150px;
     font-size: 24px;
     line-height: 22px;
-  }
-
-  &:hover{
-    color: $basic-blue-light;
-    opacity: 0.6;
-  }
-
-  &:active, &:focus{
-    color: $basic-blue-light;
-    opacity: 0.3;
   }
 }
 

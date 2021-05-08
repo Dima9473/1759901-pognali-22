@@ -4,15 +4,24 @@
 
 .plan-list__item{
   margin-bottom: 10px;
+  padding-bottom: 23px;
   background: #FFFFFF;
   border-radius: $card-border-radius-small;
   list-style-type: none;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 11px;
+    padding-bottom: 14px;
+  }
 
   @media(min-width: $large-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-right: 42px;
+    padding-bottom: 38px;
+    padding-left: 43px;
   }
 }
 
@@ -24,8 +33,17 @@
   @media (min-width: $medium-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-right: 45px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 34px;
     padding-left: 40px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
@@ -48,15 +66,19 @@
   @media (min-width: $medium-width) {
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
     padding-right: 45px;
     padding-top: 20px;
     padding-left: 40px;
-    border-top: 1px solid $special-dark-grey;
+    border-top: 1px solid rgba(203,206,217, 0.3);
   }
 
   @media (min-width: $large-width) {
     border-top: none;
     width: 50%;
+    padding-right: 0;
+     padding-top: 0;
+     padding-left: 0;
   }
 }
 
@@ -65,14 +87,16 @@
   flex-direction: column;
 
   @media (min-width: $medium-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 200px 200px;
     margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 25px;
   }
 
-  // @media (min-width: $large-width) {
-  //   // margin-right: 116px;
-  //   width: 50%;
-  // }
+  @media (min-width: $large-width) {
+    padding-right: 0;
+  }
 }
 
 .plan-list__change{
@@ -100,4 +124,9 @@
 
 .plan-list__countries{
   display: flex;
+  margin-left: 5px;
+
+  @media (min-width: $medium-width) {
+    margin-left: 0;
+  }
 }

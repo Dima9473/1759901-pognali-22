@@ -6,7 +6,8 @@
 .calendar__day-cell{
   width: 33px;
   height: 32px;
-  border: 2px solid #D6D9E6;
+  border-bottom: 1px solid #D6D9E6;
+  border-left: 1px solid #D6D9E6;
 
   @media (min-width: $medium-width) {
     width: 77px;
@@ -19,9 +20,20 @@
   }
 }
 
+.calendar .calendar__header{
+  border-bottom: 1px solid rgba(214,217,230, 0.3);
+}
+
+.calendar .calendar__day-row:first-child {
+  border-bottom: 1px solid #D6D9E6;
+}
+
+.calendar .calendar__day-row .calendar__day-cell:last-child{
+  border-right: 1px solid #D6D9E6;
+}
+
 .calendar__day{
   @include text(14px, normal, 18px, $special-grey);
-  // border: 2px solid rgba(0, 0, 0, 0);
   text-align: center;
 
   @media (min-width: $medium-width) {
@@ -37,7 +49,7 @@
   }
 
   &:hover{
-    border: 2px solid #FF5C23;
+    border: 1px solid #FF5C23;
   }
 }
 

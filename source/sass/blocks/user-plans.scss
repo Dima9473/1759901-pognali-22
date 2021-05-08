@@ -4,6 +4,10 @@
 
 .user-plans__list{
   margin-top: 29px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 48px;
+  }
 }
 
 .user-plans__caption{

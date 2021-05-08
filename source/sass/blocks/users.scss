@@ -109,18 +109,6 @@
   stroke: #FFFFFF;
 }
 
-.users__level-icon{
-  --circle-opacity: opacity: 0.6;
-  --path-stroke: #f3eb04;
-  --path-stroke-width: #f6214e;
-  --path-stroke-linecap: #2153f6;
-  --path-fill: #53f621;
-  // stroke: #FF8D30;
-  // stroke-width: 4;
-  // stroke-linecap: round;
-  // fill: #161C35;
-}
-
 .users__background-images{
   display: flex;
   justify-content: space-between;
@@ -230,10 +218,22 @@
       margin-right: 60px;
     }
   }
+
+  &:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 4px 2px -2px gray;
+  }
 }
 
 .users__card{
   flex-direction: column;
+}
+
+.users__hashtags{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .users__info{
@@ -571,6 +571,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover{
+    color: $basic-blue-light;
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    color: $basic-blue-light;
+    opacity: 0.3;
+  }
 }
 
 .users__online-status-icon{
@@ -598,7 +608,7 @@
   @media (min-width: $large-width) {
     position: absolute;
     top: 537px;
-    left: 131px;
+    left: 90px;
     width: 275px;
   }
 }

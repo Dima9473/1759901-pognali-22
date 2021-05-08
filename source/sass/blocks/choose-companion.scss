@@ -139,7 +139,7 @@
   display: flex;
   justify-content: space-around;
   background: #FFFFFF;
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 24px;
@@ -228,7 +228,7 @@
   top: 0;
   width: 16px;
   height: 35px;
-  stroke: #CBCED9;
+  stroke: $special-dark-grey;
 
   @media (min-width: $medium-width) {
     height: 46px;

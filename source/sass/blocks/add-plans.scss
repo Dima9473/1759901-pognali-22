@@ -19,13 +19,10 @@
 }
 
 .add-plans__adding-list{
-  padding-top: 30px;
-  padding-top: 24px;
-}
+  padding-top: 29px;
 
-.add-plans__toggles{
-  @media (min-width: $large-width) {
-    display: none;
+  @media (min-width: $medium-width) {
+    padding-top: 56px;
   }
 }
 
@@ -46,14 +43,29 @@
   @media (min-width: $medium-width) {
     max-width: 50%;
     height: 80px;
-    max-width: 284px;
     min-width: 286px;
+    margin-top: 47px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 57px;
   }
 }
 
 .add-plans__button-step--outsideflow{
   @media (min-width: $medium-width) {
     order: 7;
+  }
+}
+
+.add-plans__button-step--previous{
+  @media (max-width: $small-max-width) {
+    margin-top: 13px
+  }
+
+  @media (min-width: $medium-width) {
+    justify-content: flex-end;
+    padding-right: 41px;
   }
 }
 
@@ -71,6 +83,8 @@
 
   @media (min-width: $medium-width) {
     display: block;
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -79,6 +93,8 @@
   @media (min-width: $medium-width) {
     display: block;
     margin-right: 19px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -87,14 +103,18 @@
   border-radius: 4px;
   justify-content: space-between;
   width: 100%;
+  margin-top: 22px;
   padding-top: 13px;
   padding-right: 15px;
   padding-bottom: 11px;
   padding-left: 11px;
+  background: #EDEFF6;
+  border-radius: 4px;
 
   @media (min-width: $medium-width) {
     margin-top: 13px;
-     width: 65%;
+    width: 65%;
+    height: 70px;
   }
 
   @media (min-width: $large-width) {
@@ -125,6 +145,9 @@
 .add-plans__connection--small{
   top: 12px;
   left: -18px;
+  width: 17px;
+  height: 287px;
+
   @media (min-width: $medium-width) {
     display: none;
   }
@@ -138,18 +161,24 @@
     right: 5%;
     stroke: $basic-blue-light;
     stroke-width: 2;
-    height: 274px;
+    width: 14px;
+    height: 274px
   }
 
   @media (min-width: $large-width) {
     top: 90px;
-    right: 27%;
+    right: 20%;
     height: 250px;
   }
 }
 
 .add-plans__entertainments{
   position: relative;
+  margin-top: 23px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 0;
+  }
 }
 
 .add-plans__selected-country{
@@ -193,7 +222,18 @@
 
 
 .add-plans__show-countries-icon{
-  // padding-right: 15px;
+  width: 16px;
+  height: 12px;
+
+  @media (min-width: $medium-width) {
+    width: 20px;
+    height: 17px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 22px;
+    height: 24px;
+  }
 }
 
 .add-plans__show-countries-icon--closed{
@@ -210,7 +250,7 @@
   fill: $basic-grey;
   stroke-linecap: round;
   stroke-linejoin: round;
-  opacity: 0.1;
+  --circle-fill: $basic-grey;
 
   @media (min-width: $medium-width) {
     fill: transparent;
@@ -219,6 +259,7 @@
     height: 22px;
     right: -170px;
     top: 23px;
+    --circle-fill: none;
   }
 
   @media (min-width: $large-width) {
@@ -247,21 +288,9 @@
   }
 }
 
-.add-plans__remove-country-icon--stroke{
-  stroke: black;
-  stroke-width: 1.7;
-}
-
-.add-plans__remove-country-icon--background{
-  @media (max-width: $small-max-width) {
-    fill: $basic-grey;
-    .add-plans__remove-country-icon{
-      opacity: 1;
-    }
-  }
-}
-
 .add-plans__add-country-icon{
+  stroke: #C2C4C9;
+  stroke-width: 2px;
   margin-right: 0;
 }
 
@@ -273,6 +302,12 @@
   @media (max-width: $small-max-width) {
     margin-left: 0;
   }
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+  }
 }
 
 .add-plans__circle-icon{
@@ -280,18 +315,29 @@
   position: absolute;
   top: 17px;
   right: 47px;
+  width: 8px;
+  height: 8px;
 
   @media (min-width: $medium-width) {
     right: -30px;
     top: 30px;
+    width: 14px;
+    height: 14px;
   }
 }
 
+.add-plans__circle-icon--not-selected{
+  stroke: $special-dark-grey;
+}
+
 .add-plans__circle-icon--add-button{
+  stroke: $special-dark-grey;
+
   @media (min-width: $medium-width) {
     position: absolute;
-    right: -22px;
+    right: -30px;
     top: 18px;
+    fill: #EDEFF6;
   }
 
   @media (min-width: $large-width) {
@@ -321,6 +367,18 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   opacity: 0.3;
+  width: 8px;
+  height: 9px;
+
+  @media (min-width: $medium-width) {
+    width: 22x;
+    height: 21px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 22x;
+    height: 24px;
+  }
 
   &:hover{
     opacity: 1;
@@ -343,7 +401,7 @@
   }
 
   @media (min-width: $large-width) {
-    width: 60%;
+    width: auto;
   }
 }
 
@@ -364,7 +422,7 @@
 }
 
 .add-plans__countries{
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -396,6 +454,10 @@
   position: relative;
   display: flex;
   margin-bottom: -2px;
+
+  @media (min-width: $medium-width) {
+    min-height: 70px;
+  }
 }
 
 .add-plans__selected-country-with-flag--width{
@@ -410,7 +472,7 @@
 .add-plans__flag{
   display: flex;
   align-items: center;
-  border: 1px solid #CBCED9;
+  border: 1px solid $special-dark-grey;
   border-radius: 4px;
   margin-bottom: -2px;
 
@@ -437,15 +499,13 @@
   }
 }
 
-.add-plans__description{
-  min-width: none;
-}
-
 .add-plans__arrow-down{
   position: absolute;
-  fill: #CBCED9;
+  fill: $special-dark-grey;
   right: -5px;
   bottom: -15px;
+  width: 8px;
+  height: 11px;
 
   @media (min-width: $medium-width) {
     display: none;

@@ -31,8 +31,9 @@
 
 .menu__close-icon{
   fill: #CCCCCC;
-  width: 14px;
-  height: 14px;
+  stroke: #192144;
+  width: 18px;
+  height: 19px;
 
   @media (min-width: $medium-width) {
     width: 22px;
@@ -45,6 +46,8 @@
   display: none;
 
   @media (min-width: $large-width) {
+    width: 60px;
+    height: 2px;
     display: block;
     fill: #ffffff;
     margin-left: 40px;

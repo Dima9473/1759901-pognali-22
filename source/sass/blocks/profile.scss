@@ -25,7 +25,7 @@
 
 .profile__list{
   position: relative;
-  z-index: 0;
+  z-index: auto;
   margin-top: -80px;
   padding-top: 126px;
   background-image: url(../img/rates-large.png);
@@ -235,43 +235,7 @@
 }
 
 .profile__cost{
-//   position: relative;
-//   z-index: 2;
-//   // overflow: hidden;
 
-//   &:before,
-//   &:after {
-//   z-index: -1;
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   // top: -70px;
-//   // bottom: -70px;
-//   // right: -161px;
-//   // left: -155px;
-//   height: 100px;
-//   width: 50%;
-// }
-
-//   &:before {
-//     left: 0;
-//     background: $dark-grey;
-//   }
-
-//   &:after {
-//     right: 0;
-//     background: $dark-grey;
-//   }
-}
-
-.honor-container:before {
-  left: 0;
-  background: red;/*поставить нужный цвет крайнего левого элемента */
-}
-
-.honor-container:after {
-  right: 0;
-  background: green;/*поставить нужный цвет крайнего правого элемента */
 }
 
 .profile__tarifs-text{

@@ -21,13 +21,43 @@
   border-top-right-radius: 40px;
 
   @media (min-width: $medium-width) {
+    padding-top: 57px;
     padding-bottom: 76px;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-top: 54px;
+    padding-bottom: 64px;
+  }
+}
+
+.user-info__add-plans-container{
+  @media (min-width: $medium-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 124px;
+    padding-right: 58px;
+  }
+}
+
+.user-info__step-container{
+  @media (min-width: $medium-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 .user-info__general{
-  padding-top: 136px;
-  padding-bottom: 59px;
+  padding-top: 95px;
+  padding-bottom: 34px;
 
   @media (min-width: $medium-width) {
     position: relative;
@@ -47,6 +77,16 @@
   margin-top: -25px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+
+  @media (min-width: $medium-width) {
+    padding-top: 53px;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 55px;
+    padding-bottom: 106px;
+  }
 }
 
 
@@ -147,7 +187,7 @@
 
 .user-info__tags{
   width: 100%;
-  margin-top: 30px;
+  margin-top: 33px;
   border-radius: 10px;
   border: 1px solid $special-dark-grey;
 
@@ -178,12 +218,14 @@
 .user-info__transport{
   width: 100%;
   margin-top: 25px;
+  height: 66px;
   border: 1px solid $special-dark-grey;
   border-radius: 10px;
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width){
     order: 2;
     margin-top: 0;
+    padding-bottom: 15px;
     width: 30%;
   }
 
@@ -228,4 +270,112 @@
 .user-info__level-icon{
   display: block;
   margin: 0 0 0 auto;
+  --color-1: $dark-blue;
+  --color-2: $special-grey;
+  --color-3: #444444;
+
+  @media (min-width: $large-width) {
+    --color-1: #ffffff;
+    --color-2: #ffffff;
+    --color-3: #ffffff;
+  }
+}
+
+.user-info__checkbox{
+  border: 1px solid #CBCED9;
+}
+
+.user-info__checkbox-text{
+  margin-left: 9px;
+  @include text(15px, normal, 15px, $basic-blue-light);
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+.user-info__points{
+  list-style-type: none;
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+
+  @media (min-width: $large-width) {
+    display: none;
+  }
+}
+
+.user-info__point{
+  &:not(last-child){
+    margin-right: 16px;
+  }
+
+  @media (min-width: $medium-width) {
+    &:not(last-child){
+      margin-right: 29px;
+    }
+  }
+}
+
+.user-info__point-icon{
+  width: 5px;
+  height: 5px;
+
+  @media (min-width: $medium-width) {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.user-info__point-icon--disabled{
+  opacity: 0.3;
+}
+
+.user-info__transport-button{
+  padding: 7px;
+
+  @media (min-width: $medium-width) {
+    padding: 10px;
+  }
+
+  @media (min-width: $large-width) {
+    padding: 11px;
+  }
+}
+
+.user-info__icon{
+  width: 18px;
+  height: 17px;
+
+  @media (min-width: $medium-width) {
+    width: 23px;
+    height: 22px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 23px;
+    height: 22px;
+  }
+}
+
+.user-info__list{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-top: 8px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 26px;
+  }
 }

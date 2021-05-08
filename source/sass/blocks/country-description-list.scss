@@ -7,6 +7,7 @@
   }
 
   @media (min-width: $large-width) {
+    width: auto;
     margin-top: 75px;
   }
 }
@@ -73,7 +74,7 @@
   }
 
   &:active, &:focus{
-    border: 1px solid #161C35;
+    border: 1px solid $dark-blue;
     .country-description-list__change-text::placeholder{
       opacity: 1;
     }
