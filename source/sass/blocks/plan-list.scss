@@ -40,6 +40,7 @@
   }
 
   @media (min-width: $large-width) {
+    flex-direction: row;
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -128,5 +129,17 @@
 
   @media (min-width: $medium-width) {
     margin-left: 0;
+  }
+}
+
+.plan-list__country{
+  &:not(:last-child){
+    margin-right: 5px;
+  }
+}
+
+.plan-list__index{
+  @media (min-width: $large-width) {
+    margin-right: 36px;
   }
 }

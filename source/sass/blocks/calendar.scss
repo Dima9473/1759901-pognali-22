@@ -22,19 +22,29 @@
 
 .calendar .calendar__header{
   border-bottom: 1px solid rgba(214,217,230, 0.3);
+  &:hover{
+    border-bottom: 2px solid #FF5C23;
+  }
 }
 
 .calendar .calendar__day-row:first-child {
   border-bottom: 1px solid #D6D9E6;
+  &:hover{
+    border-bottom: 2px solid #FF5C23;
+  }
 }
 
 .calendar .calendar__day-row .calendar__day-cell:last-child{
   border-right: 1px solid #D6D9E6;
+  &:hover{
+    border-right: 2px solid #FF5C23;
+  }
 }
 
 .calendar__day{
   @include text(14px, normal, 18px, $special-grey);
   text-align: center;
+  box-sizing: border-box;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
@@ -49,7 +59,7 @@
   }
 
   &:hover{
-    border: 1px solid #FF5C23;
+    border: 2px solid #FF5C23;
   }
 }
 
@@ -64,6 +74,7 @@
 .calendar__day--active{
   font-weight: 500;
   color: $basic-blue-light;
+  // min-height: 64px;
   border-color:$special-dark-grey;
   background-color: $basic-grey;
 
@@ -74,7 +85,7 @@
 
 .calendar__day--selected{
   background-color: $basic-blue-light;
-  border: none;
+  // min-height: 64px;
   color: #FFFFFF;
 }
 
@@ -89,7 +100,6 @@
 
   @media (min-width: $large-width) {
     display: block;
-    margin-top: 9px;
     line-height: 20px;
   }
 }

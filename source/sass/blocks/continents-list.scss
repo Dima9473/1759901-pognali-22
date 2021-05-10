@@ -7,7 +7,16 @@
 }
 
 .continents-list__item{
-  margin-right: 30px;
+  @media (max-width: $small-max-width) {
+    &:not(:last-child){
+      margin-bottom: 9px;
+    }
+  }
+
+  @media (min-width: $medium-width) {
+    margin-right: 28px;
+  }
+
   opacity: 0.3;
 
   &:hover{

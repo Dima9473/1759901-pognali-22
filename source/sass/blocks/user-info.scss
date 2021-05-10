@@ -300,11 +300,6 @@
 .user-info__points{
   list-style-type: none;
   display: flex;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
 
   @media (min-width: $large-width) {
     display: none;
@@ -312,12 +307,12 @@
 }
 
 .user-info__point{
-  &:not(last-child){
+  &:not(:last-child){
     margin-right: 16px;
   }
 
   @media (min-width: $medium-width) {
-    &:not(last-child){
+    &:not(:last-child){
       margin-right: 29px;
     }
   }

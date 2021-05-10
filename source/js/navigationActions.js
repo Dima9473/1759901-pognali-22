@@ -17,7 +17,9 @@ navToggle.addEventListener('click', function () {
     logo.classList.add('visually-hidden');
     closButton.classList.remove('visually-hidden');
     openButton.classList.add('visually-hidden');
-    promoActions.classList.add('visually-hidden');
+    if (promoActions) {
+      promoActions.classList.add('visually-hidden');
+    }
     if (underline) {
       underline.classList.add('visually-hidden');
     }
@@ -29,7 +31,10 @@ navToggle.addEventListener('click', function () {
     logo.classList.remove('visually-hidden');
     closButton.classList.add('visually-hidden')
     openButton.classList.remove('visually-hidden');
-    promoActions.classList.remove('visually-hidden');
+    if (promoActions) {
+      promoActions.classList.remove('visually-hidden');
+    }
+
     if (underline) {
       underline.classList.remove('visually-hidden');
     }
