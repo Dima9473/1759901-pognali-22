@@ -1,4 +1,5 @@
 //Checkbox actions
+debugger
 let hobbyCheckboxeToggle1 = document.querySelector('.choose-companion__search-params-toggle-1');
 let hobbyCheckboxes1 = document.querySelector('.choose-companion__search-params-1');
 let checkBoxOpenedIcon1 = document.querySelector('.choose-companion__checkboxe-opened-icon-1');
