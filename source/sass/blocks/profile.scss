@@ -28,7 +28,7 @@
   z-index: auto;
   margin-top: -80px;
   padding-top: 126px;
-  background-image: url(../../../build/img/rates-small.webp);
+  background-image: url(../img/rates-small.webp);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100px 100px;
@@ -42,7 +42,7 @@
     padding-right: 35px;
     margin-bottom: -100px;
     padding-bottom: 100px;
-    background-image: url(../../../build/img/rates-medium.webp);
+    background-image: url(../img/rates-medium.webp);
     background-position: bottom right 45px;
   }
 
@@ -54,21 +54,21 @@
     padding-bottom: 0;
     padding-left: 80px;
     padding-right: 230px;
-    background-image: url(../../../build/img/rates-large.webp);
+    background-image: url(../img/rates-large.webp);
     background-size: 198px 198px;
     background-position: right ;
   }
 
   @media (min-resolution: 2dppx){
-    background-image: url(../../../build/img/rates-small@2x.webp);
+    background-image: url(../img/rates-small@2x.webp);
   }
 
   @media (min-resolution: 2dppx) and (min-width: $medium-width) {
-    background-image: url(../../../build/img/rates-medium@2x.webp);
+    background-image: url(../img/rates-medium@2x.webp);
   }
 
   @media (min-resolution: 2dppx) and (min-width: $large-width) {
-    background-image: url(../../../build/img/rates-large@2x.webp);
+    background-image: url(../img/rates-large@2x.webp);
   }
 
   &:after {
