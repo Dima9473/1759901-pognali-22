@@ -1,11 +1,10 @@
 //Checkbox actions
-debugger
 let hobbyCheckboxeToggle1 = document.querySelector('.choose-companion__search-params-toggle-1');
 let hobbyCheckboxes1 = document.querySelector('.choose-companion__search-params-1');
 let checkBoxOpenedIcon1 = document.querySelector('.choose-companion__checkboxe-opened-icon-1');
 let checkBoxClosedIcon1 = document.querySelector('.choose-companion__checkboxe-closed-icon-1');
 
-hobbyCheckboxeToggle1.addEventListener('click', () => {
+hobbyCheckboxeToggle1?.addEventListener('click', () => {
   onCheckboxClick(hobbyCheckboxes1, checkBoxOpenedIcon1, checkBoxClosedIcon1);
 });
 
@@ -14,7 +13,7 @@ let hobbyCheckboxes2 = document.querySelector('.choose-companion__search-params-
 let checkBoxOpenedIcon2 = document.querySelector('.choose-companion__checkboxe-opened-icon-2');
 let checkBoxClosedIcon2 = document.querySelector('.choose-companion__checkboxe-closed-icon-2');
 
-hobbyCheckboxeToggle2.addEventListener('click', () => {
+hobbyCheckboxeToggle2?.addEventListener('click', () => {
   onCheckboxClick(hobbyCheckboxes2, checkBoxOpenedIcon2, checkBoxClosedIcon2);
 });
 
@@ -23,7 +22,7 @@ let hobbyCheckboxes3 = document.querySelector('.choose-companion__search-params-
 let checkBoxOpenedIcon3 = document.querySelector('.choose-companion__checkboxe-opened-icon-3');
 let checkBoxClosedIcon3 = document.querySelector('.choose-companion__checkboxe-closed-icon-3');
 
-hobbyCheckboxeToggle3.addEventListener('click', () => {
+hobbyCheckboxeToggle3?.addEventListener('click', () => {
   onCheckboxClick(hobbyCheckboxes3, checkBoxOpenedIcon3, checkBoxClosedIcon3);
 });
 
@@ -33,7 +32,7 @@ let transport = document.querySelector('.choose-companion__search-params-4');
 let transportOpenedIcon = document.querySelector('.choose-companion__transport-opened-icon-4');
 let transportClosedIcon = document.querySelector('.choose-companion__transport-closed-icon-4');
 
-transportToggle.addEventListener('click', () => {
+transportToggle?.addEventListener('click', () => {
   onCheckboxClick(transport, transportOpenedIcon, transportClosedIcon);
 });
 
@@ -43,7 +42,7 @@ let level = document.querySelector('.choose-companion__search-params-5');
 let levelOpenedIcon = document.querySelector('.choose-companion__search-params-opened-icon-5');
 let levelClosedIcon = document.querySelector('.choose-companion__search-params-closed-icon-5');
 
-levelToggle.addEventListener('click', () => {
+levelToggle?.addEventListener('click', () => {
   onCheckboxClick(level, levelOpenedIcon, levelClosedIcon);
 });
 
@@ -72,7 +71,7 @@ let filterBody = document.querySelector('.filter__body');
 const mediumMaxWidth = 1439;
 
 
-filterToggleButton.addEventListener('click', () => {
+filterToggleButton?.addEventListener('click', () => {
   if (filterBody.classList.contains('visually-hidden')) {
     onFilterOpen();
   } else {
@@ -80,7 +79,7 @@ filterToggleButton.addEventListener('click', () => {
   }
 });
 
-filterClose.addEventListener('click', () => {
+filterClose?.addEventListener('click', () => {
   onFilterClose();
 })
 
@@ -121,7 +120,7 @@ let openButton = document.querySelector('.menu__open-icon');
 let promoActions = document.querySelector('.menu__actions');
 let underline = document.querySelector('.page-header__underline');
 
-navToggle.addEventListener('click', () => {
+navToggle?.addEventListener('click', () => {
   if (navMain.classList.contains('main-menu--closed')) {
     onNavigationOpen();
   } else {
@@ -171,13 +170,13 @@ let closeIcon1 = document.querySelector('.add-plans__close-icon--1');
 let countriesDropdown1 = document.querySelector('.add-plans__countries-dropdown--1');
 let addCountry = document.querySelector('.add-plans__add-country');
 
-selectCountry1.addEventListener('click', () => {
+selectCountry1?.addEventListener('click', () => {
   if (!selectCountry1.classList.contains('add-plans__select-country--opened')) {
     onSelectOpen(selectCountry1, selectText1, openIcon1, circleIcon1, closeIcon1, countriesDropdown1)
   }
 })
 
-closeIcon1.addEventListener('click', function (e) {
+closeIcon1?.addEventListener('click', function (e) {
   onSelectClose(e, selectCountry1, selectText1, openIcon1, circleIcon1, closeIcon1, countriesDropdown1);
 })
 
@@ -188,13 +187,13 @@ let circleIcon2 = document.querySelector('.add-plans__circle-icon--2');
 let closeIcon2 = document.querySelector('.add-plans__close-icon--2');
 let countriesDropdown2 = document.querySelector('.add-plans__countries-dropdown--2');
 
-selectCountry2.addEventListener('click', () => {
+selectCountry2?.addEventListener('click', () => {
   if (!selectCountry2.classList.contains('add-plans__select-country--opened')) {
     onSelectOpen(selectCountry2, selectText2, openIcon2, circleIcon2, closeIcon2, countriesDropdown2);
   }
 })
 
-closeIcon2.addEventListener('click', function (e) {
+closeIcon2?.addEventListener('click', function (e) {
   onSelectClose(e, selectCountry2, selectText2, openIcon2, circleIcon2, closeIcon2, countriesDropdown2);
 })
 
@@ -206,13 +205,13 @@ let circleIcon3 = document.querySelector('.add-plans__circle-icon--3');
 let closeIcon3 = document.querySelector('.add-plans__close-icon--3');
 let countriesDropdown3 = document.querySelector('.add-plans__countries-dropdown--3');
 
-selectCountry3.addEventListener('click', () => {
+selectCountry3?.addEventListener('click', () => {
   if (!selectCountry3.classList.contains('add-plans__select-country--opened')) {
     onSelectOpen(selectCountry3, selectText3, openIcon3, circleIcon3, closeIcon3, countriesDropdown3);
   }
 })
 
-closeIcon3.addEventListener('click', function (e) {
+closeIcon3?.addEventListener('click', function (e) {
   onSelectClose(e, selectCountry3, selectText3, openIcon3, circleIcon3, closeIcon3, countriesDropdown3);
 })
 
@@ -255,7 +254,7 @@ let tariffsList = document.querySelector('.profile__business-tariffs');
 let closeButton = document.querySelector('.business-tariffs__close');
 
 
-tariffs.addEventListener('click', () => {
+tariffs?.addEventListener('click', () => {
   if (tariffsList.classList.contains('visually-hidden')) {
     onTariffsOpen();
   } else {
@@ -264,7 +263,7 @@ tariffs.addEventListener('click', () => {
 });
 
 
-closeButton.addEventListener('click', () => {
+closeButton?.addEventListener('click', () => {
   onTariffsClose();
 });
 
