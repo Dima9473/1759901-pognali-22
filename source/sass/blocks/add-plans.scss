@@ -261,7 +261,7 @@
     transform: scale(1.5);
     width: 24px;
     height: 22px;
-    right: -170px;
+    right: 15px;
     top: 23px;
     --circle-fill: none;
   }
@@ -283,7 +283,7 @@
   right: -65px;
 
   @media (min-width: $medium-width) {
-    right: -170px;
+    right: -35px;
     top: 23px;
   }
 
@@ -323,7 +323,7 @@
   height: 8px;
 
   @media (min-width: $medium-width) {
-    right: -30px;
+    right: 157px;
     top: 30px;
     width: 14px;
     height: 14px;
@@ -339,8 +339,8 @@
 
   @media (min-width: $medium-width) {
     position: absolute;
-    right: -30px;
-    top: 18px;
+    right: 157px;
+    top: 43px;
     fill: #EDEFF6;
   }
 
@@ -356,7 +356,7 @@
   fill: $basic-blue-light;
 
   @media (min-width: $medium-width) {
-    right: -30px;
+    right: 107px;
     top: 30px;
   }
 }
@@ -481,6 +481,8 @@
   margin-bottom: -2px;
 
   @media (min-width: $medium-width) {
+    position: absolute;
+    right: 50px;
     border: none;
     margin-left: 52px;
   }
