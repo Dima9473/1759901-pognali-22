@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Направления</title>
 </head>
@@ -19,16 +19,16 @@
     <div class="container page-header__menu  menu">
       <a href="index.html" class="menu__logo-mobile">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x">
-          <img class="page-header__logo logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226"
+          <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.webp 1x, img/logo-medium@2x.webp 2x">
+          <img class="page-header__logo logo" src="img/logo-mobile.webp" srcset="img/logo-mobile@2x.webp 2x" width="226"
             height="30" alt="Логотип" />
         </picture>
       </a>
       <a href="index.html" class="menu__logo-mobile-dark visually-hidden">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
-          <img class="page-header__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
+          <img class="page-header__logo logo" src="img/logo-mobile-dark.webp" srcset="img/logo-mobile-dark@2x.webp 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
@@ -168,11 +168,11 @@
           <div class="user-info__avatars">
             <picture>
               <source media="(min-width: 1440px)"
-                srcset="img/demin-avatar-large.png 1x, img/demin-avatar-large@2x.png 2x">
+                srcset="img/demin-avatar-large.webp 1x, img/demin-avatar-large@2x.webp 2x">
               <source media="(min-width: 768px)"
-                srcset="img/demin-avatar-medium.png 1x, img/demin-avatar-medium@2x.png 2x">
-              <img class="user-info__avatar" src="img/demin-avatar-small.png" srcset="img/demin-avatar-small@2x.png 2x"
-                alt="Фотография Демина" width="100" height="100" />
+                srcset="img/demin-avatar-medium.webp 1x, img/demin-avatar-medium@2x.webp 2x">
+              <img class="user-info__avatar" src="img/demin-avatar-small.webp"
+                srcset="img/demin-avatar-small@2x.webp 2x" alt="Фотография Демина" width="100" height="100" />
             </picture>
           </div>
           <button
@@ -381,171 +381,6 @@
                     <use xlink:href="img/sprite.svg#arrow-right-thin"></use>
                   </svg>
                 </div>
-                <!-- <div class="step-list__days calendar">
-                  <ul class="step-list__line step-list__line--header">
-                    <li class="calendar__day calendar__header text">
-                      <span>П</span>
-                    </li>
-                    <li class="calendar__day calendar__header text">
-                      <span>В</span>
-                    </li>
-                    <li class="calendar__day calendar__header text">
-                      <span>С</span>
-                    </li>
-                    <li class="calendar__day calendar__header text">
-                      <span>Ч</span>
-                    </li>
-                    <li class="calendar__day calendar__header text">
-                      <span>П</span>
-                    </li>
-                    <li class="calendar__day calendar__header calendar__day--weakened text">
-                      <span>С</span>
-                    </li>
-                    <li class="calendar__day  calendar__header calendar__day--weakened text">
-                      <span>В</span>
-                    </li>
-                  </ul>
-                  <ul class="step-list__line">
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>23</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>24</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>25</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>26</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>27</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>28</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>1</span>
-                    </li>
-                  </ul>
-                  <ul class="step-list__line">
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>2</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>3</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>4</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>5</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>6</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>7</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>8</span>
-                    </li>
-                  </ul>
-                  <ul class="step-list__line">
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>9</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>10</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>11</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>12</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>13</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>14</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>15</span>
-                    </li>
-                  </ul>
-                  <ul class="step-list__line">
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>16</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>17</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>18</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>19</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>20</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>21</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>22</span>
-                    </li>
-                  </ul>
-                  <ul class="step-list__line">
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>23</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>24</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--disabled text">
-                      <span>25</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
-                      <span>26</span>
-                      <span class="calendar__notice">Заезд</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
-                      <span>27</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--selected calendar__day--active text">
-                      <span>28</span>
-                      <span class="calendar__notice">Выезд</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day  text calendar__day--active">
-                      <span>29</span>
-                    </li>
-                  </ul>
-                  <ul class="step-list__line">
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>30</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>31</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>1</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>2</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>3</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>4</span>
-                    </li>
-                    <li class="calendar__day-cell calendar__day calendar__day--active text">
-                      <span>5</span>
-                    </li>
-                  </ul>
-                </div> -->
                 <table class="step-list__days calendar">
                   <tr class="calendar__day-row">
                     <th class="calendar__day calendar__header text">
@@ -742,7 +577,7 @@
                       <div
                         class="add-plans__selected-country add-plans__selected-country-with-flag--width add-plans__select-country--1">
                         <span class="select__item text text--uper add-plans__select-country-text--1">
-                          Чехия
+                          Босния и Герцеговина
                         </span>
                         <svg class="add-plans__circle-icon add-plans__circle-icon--selected add-plans__circle-icon--1"
                           width="8" height="8">
@@ -768,9 +603,11 @@
                       <div class="add-plans__flag add-plans__flag--1">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
-                          <img class="add-plans__flag-image select-input-list__flag" src="img/czech-flag-small.png"
-                            srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                            srcset="img/bosnia-and-herzegovina-flag-medium.webp 1x, img/bosnia-and-herzegovina-flag-medium@2x.webp 2x">
+                          <img class="add-plans__flag-image select-input-list__flag"
+                            src="img/bosnia-and-herzegovina-flag-small.webp"
+                            srcset="img/bosnia-and-herzegovina-flag-small@2x.webp 2x" width="35" height="24"
+                            alt="Флаг Боснии и Герцеговины" />
                         </picture>
                       </div>
                     </div>
@@ -933,9 +770,9 @@
                       <div class="add-plans__flag add-plans__flag--2">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
-                          <img class="add-plans__flag-image select-input-list__flag" src="img/czech-flag-small.png"
-                            srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                            srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
+                          <img class="add-plans__flag-image select-input-list__flag" src="img/czech-flag-small.webp"
+                            srcset="img/czech-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Чехии" />
                         </picture>
                       </div>
                     </div>
@@ -1224,10 +1061,9 @@
                   <svg class="add-plans__circle-icon add-plans__circle-icon--add-button" width="8" height="8">
                     <use xlink:href="img/sprite.svg#point"></use>
                   </svg>
-                  <div class="step-list__add-plus step-list__plus--2">
-                    <div class="step-list__horizontal-line step-list__horizontal-line--plus"></div>
-                    <div class="step-list__vertical-line"></div>
-                  </div>
+                  <svg class="step-list__add-plus step-list__plus--2" width="14" height="14">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="step-list__nav-buttons">
                   <button type="button" class="add-plans__button-step button button--middle-theme">
@@ -1270,9 +1106,9 @@
                       </h4>
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/bosnia-and-herzegovina-flag-medium.png 1x, img/bosnia-and-herzegovina-flag-medium@2x.png 2x">
-                        <img class="country-description-list__flag" src="img/bosnia-and-herzegovina-flag-small.png"
-                          srcset="img/bosnia-and-herzegovina-flag-small@2x.png 2x" width="35" height="24"
+                          srcset="img/bosnia-and-herzegovina-flag-medium.webp 1x, img/bosnia-and-herzegovina-flag-medium@2x.webp 2x">
+                        <img class="country-description-list__flag" src="img/bosnia-and-herzegovina-flag-small.webp"
+                          srcset="img/bosnia-and-herzegovina-flag-small@2x.webp 2x" width="35" height="24"
                           alt="Флаг Боснии и Герцеговины" />
                       </picture>
                     </div>
@@ -1285,9 +1121,9 @@
                       </h4>
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
-                        <img class="country-description-list__flag" src="img/czech-flag-small.png"
-                          srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                          srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
+                        <img class="country-description-list__flag" src="img/czech-flag-small.webp"
+                          srcset="img/czech-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Чехии" />
                       </picture>
                     </div>
                     <textarea class="country-description-list__change-text text"
@@ -1328,9 +1164,9 @@
       <h2 class="visually-hidden">Погнали?</h2>
       <a href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.png 1x, img/logo-large-dark@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
-          <img class="page-fotter__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
+          <img class="page-fotter__logo logo" src="img/logo-mobile-dark.webp" srcset="img/logo-mobile-dark@2x.webp 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
@@ -1368,8 +1204,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/navigationActions.js"></script>
-  <script src="js/selectCountry.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

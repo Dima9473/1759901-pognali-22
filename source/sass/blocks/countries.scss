@@ -12,14 +12,23 @@
     padding-bottom: 80px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    background-image: url(../img/flags-background.png);
+    background-image: url(../img/flags-background-medium.webp);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top 80px right 40px;
   }
 
   @media (min-width: $large-width) {
+    background-image: url(../img/flags-background-large.webp);
     background-position: top 88px right 60px;
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $medium-width) {
+    background-image: url(../img/flags-background-medium@2x.webp);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $large-width) {
+    background-image: url(../img/flags-background-large@2x.webp);
   }
 }
 
@@ -73,17 +82,26 @@
     margin-left: -35px;
     padding-top: 38px;
     padding-left: 35px;
-    background-image: url(../img/background-light.png);
+    background-image: url(../img/background-light-medium.webp);
     background-repeat: no-repeat;
     background-size: 141px 141px;
     background-position: top left;
   }
 
   @media (min-width: $large-width) {
+    background-image: url(../img/background-light-large.webp);
     margin-top: -71px;
     margin-left: -70px;
     padding-top: 71px;
     padding-left: 70px;
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $medium-width) {
+    background-image: url(../img/background-light@2x.webp);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $large-width) {
+    background-image: url(../img/background-light-large@2x.webp);
   }
 }
 

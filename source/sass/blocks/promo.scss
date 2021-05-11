@@ -1,20 +1,32 @@
 .promo{
   margin-top: 94px;
-  background-image: url(../img/globe-back-mobile.png), linear-gradient($basic-blue 733px, $dark-blue 733px);
+  background-image: url(../img/globe-back-mobile.webp), linear-gradient($basic-blue 733px, $dark-blue 733px);
   background-repeat: no-repeat;
   background-size: 100% 450px, 400px 110%;
   background-position: 0px -85px, 0px -92px;
 
   @media (min-width: $medium-width) {
-    background-image: url(../img/globe-back-tablet.png);
+    background-image: url(../img/globe-back-tablet.webp);
     background-position: 0px 267px;
     background-size: 100% 505px;
   }
 
   @media (min-width: $large-width) {
-    background-image: url(../img/globe-back-desktop.png);
+    background-image: url(../img/globe-back-desktop.webp);
     background-position: 0px -110px;
     background-size: 100% 795px;
+  }
+
+  @media (min-resolution: 2dppx){
+    background-image: url(../img/globe-back-mobile@2x.webp), linear-gradient($basic-blue 733px, $dark-blue 733px);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $medium-width) {
+    background-image: url(../img/globe-back-tablet@2x.webp), linear-gradient($basic-blue 733px, $dark-blue 733px);
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: $large-width) {
+    background-image: url(../img/globe-back-desktop@2x.webp), linear-gradient($basic-blue 733px, $dark-blue 733px);
   }
 }
 

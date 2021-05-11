@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Попутчики</title>
 </head>
@@ -14,16 +14,16 @@
     <div class="container page-header__menu  menu">
       <a href="index.html" class="menu__logo-mobile">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x">
-          <img class="page-header__logo logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226"
+          <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.webp 1x, img/logo-medium@2x.webp 2x">
+          <img class="page-header__logo logo" src="img/logo-mobile.webp" srcset="img/logo-mobile@2x.webp 2x" width="226"
             height="30" alt="Логотип" />
         </picture>
       </a>
       <a href="index.html" class="menu__logo-mobile-dark visually-hidden">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
-          <img class="page-header__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
+          <img class="page-header__logo logo" src="img/logo-mobile-dark.webp" srcset="img/logo-mobile-dark@2x.webp 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
@@ -174,7 +174,7 @@
           </ul>
           <span class="filter__show-all text filter__text">Показать все</span>
           <span class="filter__hide filter__text text visually-hidden">Свернуть</span>
-          <button class="filter__toggle-button button button--transparent-theme" type="button">
+          <a class="filter__toggle-button button button--transparent-theme" href="#">
             <ul class="filter__points slider-toggles filter__toggle filter__toggle--opened">
               <li class="filter__point">
                 <svg class="filter__point-icon" width="5" height="5">
@@ -195,7 +195,7 @@
             <svg class="filter__toggle filter__toggle--closed visually-hidden" width="14" height="14">
               <use xlink:href="img/sprite.svg#toggle-close"></use>
             </svg>
-          </button>
+          </a>
         </div>
         <div class="filter__body container visually-hidden">
           <div class="filter__body-container">
@@ -1109,11 +1109,11 @@
                 <div class="companions__avatar card-list__avatar">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="img/tanya-avatar-large.png 1x, img/tanya-avatar-large@2x.png 2x">
+                      srcset="img/tanya-avatar-large.webp 1x, img/tanya-avatar-large@2x.webp 2x">
                     <source media="(min-width: 768px)"
-                      srcset="img/tanya-avatar-medium.png 1x, img/tanya-avatar-medium@2x.png 2x">
-                    <img class="card-list__photo card-list__photo--order" src="img/tanya-avatar-small.png"
-                      srcset="img/tanya-avatar-small@2x.png 2x" width="226" height="30" alt="Фото Тани Фирсовой" />
+                      srcset="img/tanya-avatar-medium.webp 1x, img/tanya-avatar-medium@2x.webp 2x">
+                    <img class="card-list__photo card-list__photo--order" src="img/tanya-avatar-small.webp"
+                      srcset="img/tanya-avatar-small@2x.webp 2x" width="226" height="30" alt="Фото Тани Фирсовой" />
                   </picture>
                 </div>
                 <div class="companions__card card-list__card card-list--indentation">
@@ -1165,9 +1165,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/sri-lanka-flag-medium.png 1x, img/sri-lanka-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/sri-lanka-flag-small.png"
-                            srcset="img/sri-lanka-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Шри-Ланки" />
+                            srcset="img/sri-lanka-flag-medium.webp 1x, img/sri-lanka-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/sri-lanka-flag-small.webp"
+                            srcset="img/sri-lanka-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Шри-Ланки" />
                         </picture>
                         <span class="flags-list__flag-caption text">ШРИ-ЛАНКА</span>
                       </div>
@@ -1176,9 +1176,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/thailand-flag-small.png"
-                            srcset="img/thailand-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Тайланда" />
+                            srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/thailand-flag-small.webp"
+                            srcset="img/thailand-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Тайланда" />
                         </picture>
                         <span class="flags-list__flag-caption">ТАЙЛАНД</span>
                       </div>
@@ -1187,9 +1187,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/seychelles-flag-medium.png 1x, img/seychelles-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/seychelles-flag-small.png"
-                            srcset="img/seychelles-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Сейшилы" />
+                            srcset="img/seychelles-flag-medium.webp 1x, img/seychelles-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/seychelles-flag-small.webp"
+                            srcset="img/seychelles-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Сейшилы" />
                         </picture>
                         <span class="flags-list__flag-caption">СЕЙШИЛЫ</span>
                       </div>
@@ -1256,11 +1256,11 @@
                 <div class="companions__avatar card-list__avatar">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="img/demin-avatar-large.png 1x, img/demin-avatar-large@2x.png 2x">
+                      srcset="img/demin-avatar-large.webp 1x, img/demin-avatar-large@2x.webp 2x">
                     <source media="(min-width: 768px)"
-                      srcset="img/demin-avatar-medium.png 1x, img/demin-avatar-medium@2x.png 2x">
-                    <img class="card-list__photo card-list__photo--order" src="img/demin-avatar-small.png"
-                      srcset="img/demin-avatar-small@2x.png 2x" width="226" height="30" alt="Фото Пети Демина" />
+                      srcset="img/demin-avatar-medium.webp 1x, img/demin-avatar-medium@2x.webp 2x">
+                    <img class="card-list__photo card-list__photo--order" src="img/demin-avatar-small.webp"
+                      srcset="img/demin-avatar-small@2x.webp 2x" width="226" height="30" alt="Фото Пети Демина" />
                   </picture>
                 </div>
                 <div class="companions__card card-list__card card-list--indentation">
@@ -1308,9 +1308,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/belgium-flag-medium.png 1x, img/belgium-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/belgium-flag-small.png"
-                            srcset="img/belgium-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Бельгии" />
+                            srcset="img/belgium-flag-medium.webp 1x, img/belgium-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/belgium-flag-small.webp"
+                            srcset="img/belgium-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Бельгии" />
                         </picture>
                         <span class="flags-list__flag-caption text">Бельгия</span>
                       </div>
@@ -1319,9 +1319,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/czech-flag-small.png"
-                            srcset="img/czech-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Бельгии" />
+                            srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/czech-flag-small.webp"
+                            srcset="img/czech-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Чехии" />
                         </picture>
                         <span class="flags-list__flag-caption text">Чехия</span>
                       </div>
@@ -1388,11 +1388,11 @@
                 <div class="companions__avatar card-list__avatar">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="img/smolov-avatar-large.png 1x, img/smolov-avatar-large@2x.png 2x">
+                      srcset="img/smolov-avatar-large.webp 1x, img/smolov-avatar-large@2x.webp 2x">
                     <source media="(min-width: 768px)"
-                      srcset="img/smolov-avatar-medium.png 1x, img/smolov-avatar-medium@2x.png 2x">
-                    <img class="card-list__photo card-list__photo--order" src="img/smolov-avatar-small.png"
-                      srcset="img/smolov-avatar-small@2x.png 2x" width="226" height="30" alt="Фото Марка Смолова" />
+                      srcset="img/smolov-avatar-medium.webp 1x, img/smolov-avatar-medium@2x.webp 2x">
+                    <img class="card-list__photo card-list__photo--order" src="img/smolov-avatar-small.webp"
+                      srcset="img/smolov-avatar-small@2x.webp 2x" width="226" height="30" alt="Фото Марка Смолова" />
                   </picture>
                 </div>
                 <div class="companions__card card-list__card card-list--indentation">
@@ -1440,10 +1440,10 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/united-states-of-america-flag-medium.png 1x, img/united-states-of-america-flag-medium@2x.png 2x">
+                            srcset="img/united-states-of-america-flag-medium.webp 1x, img/united-states-of-america-flag-medium@2x.webp 2x">
                           <img class="companions__flag flags-list__icon flag"
-                            src="img/united-states-of-america-flag-small.png"
-                            srcset="img/united-states-of-america-flag-small@2x.png 2x" width="226" height="30"
+                            src="img/united-states-of-america-flag-small.webp"
+                            srcset="img/united-states-of-america-flag-small@2x.webp 2x" width="226" height="30"
                             alt="Флаг США" />
                         </picture>
                         <span class="flags-list__flag-caption text">США</span>
@@ -1453,9 +1453,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/australia-flag-medium.png 1x, img/australia-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/australia-flag-small.png"
-                            srcset="img/australia-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Австралии" />
+                            srcset="img/australia-flag-medium.webp 1x, img/australia-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/australia-flag-small.webp"
+                            srcset="img/australia-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Австралии" />
                         </picture>
                         <span class="flags-list__flag-caption text">Австралия</span>
                       </div>
@@ -1464,9 +1464,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/dominica-flag-medium.png 1x, img/dominica-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/dominica-flag-small.png"
-                            srcset="img/dominica-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Доминиканы" />
+                            srcset="img/dominica-flag-medium.webp 1x, img/dominica-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/dominica-flag-small.webp"
+                            srcset="img/dominica-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Доминиканы" />
                         </picture>
                         <span class="flags-list__flag-caption text">Доминикана</span>
                       </div>
@@ -1533,11 +1533,11 @@
                 <div class="companions__avatar card-list__avatar">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="img/rogovaya-avatar-large.png 1x, img/rogovaya-avatar-large@2x.png 2x">
+                      srcset="img/rogovaya-avatar-large.webp 1x, img/rogovaya-avatar-large@2x.webp 2x">
                     <source media="(min-width: 768px)"
-                      srcset="img/rogovaya-avatar-medium.png 1x, img/rogovaya-avatar-medium@2x.png 2x">
-                    <img class="card-list__photo card-list__photo--order" src="img/rogovaya-avatar-small.png"
-                      srcset="img/rogovaya-avatar-small@2x.png 2x" width="226" height="30" alt="Фото Ларисы Роговой" />
+                      srcset="img/rogovaya-avatar-medium.webp 1x, img/rogovaya-avatar-medium@2x.webp 2x">
+                    <img class="card-list__photo card-list__photo--order" src="img/rogovaya-avatar-small.webp"
+                      srcset="img/rogovaya-avatar-small@2x.webp 2x" width="226" height="30" alt="Фото Ларисы Роговой" />
                   </picture>
                 </div>
                 <div class="companions__card card-list__card card-list--indentation">
@@ -1582,9 +1582,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/united-kingdom-flag-medium.png 1x, img/united-kingdom-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/united-kingdom-flag-small.png"
-                            srcset="img/united-kingdom-flag-small@2x.png 2x" width="226" height="30"
+                            srcset="img/united-kingdom-flag-medium.webp 1x, img/united-kingdom-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/united-kingdom-flag-small.webp"
+                            srcset="img/united-kingdom-flag-small@2x.webp 2x" width="226" height="30"
                             alt="Флаг Великобринании" />
                         </picture>
                         <span class="flags-list__flag-caption text">Великобритания</span>
@@ -1594,9 +1594,9 @@
                       <div class="flags-list__country-info">
                         <picture>
                           <source media="(min-width: 768px)"
-                            srcset="img/germany-flag-medium.png 1x, img/germany-flag-medium@2x.png 2x">
-                          <img class="companions__flag flags-list__icon flag" src="img/germany-flag-small.png"
-                            srcset="img/germany-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Германии" />
+                            srcset="img/germany-flag-medium.webp 1x, img/germany-flag-medium@2x.webp 2x">
+                          <img class="companions__flag flags-list__icon flag" src="img/germany-flag-small.webp"
+                            srcset="img/germany-flag-small@2x.webp 2x" width="226" height="30" alt="Флаг Германии" />
                         </picture>
                         <span class="flags-list__flag-caption text">Германия</span>
                       </div>
@@ -1701,9 +1701,9 @@
       <h2 class="visually-hidden">Погнали?</h2>
       <a href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.png 1x, img/logo-large-dark@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
-          <img class="page-fotter__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
+          <img class="page-fotter__logo logo" src="img/logo-mobile-dark.webp" srcset="img/logo-mobile-dark@2x.webp 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
@@ -1741,9 +1741,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/navigationActions.js"></script>
-  <script src="js/filterActions.js"></script>
-  <script src="js/checkboxeActions.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
