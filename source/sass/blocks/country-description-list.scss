@@ -13,6 +13,7 @@
 }
 
 .country-description-list__item{
+  position: relative;
   &:not(:last-child){
     margin-bottom: 10px
   }
@@ -45,17 +46,23 @@
 .country-description-list__change-text{
   border: 1px solid $special-dark-grey;
   border-radius: 4px;
+  padding-top: 11px;
+  padding-left: 14px;
   @include text(16px, normal, 22px, $special-grey);
   width: 100%;
   height: 220px;
 
   @media (min-width: $medium-width) {
+    padding-top: 18px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: 23px;
     height: 140px;
   }
 
   @media (min-width: $large-width) {
+    padding-top: 26px;
+    padding-left: 25px;
     font-size: 20px;
     line-height: 23px;
     height: 142px;
@@ -79,6 +86,43 @@
       opacity: 1;
     }
   }
+
+  &:invalid{
+    border: 1px solid #F47E7E;
+  }
+
+  // &:invalid &::after{
+  //   border: 1px solid #F47E7E;
+  //   position: absolute;
+  //   content: "Это поле должно быть заполнено";
+  //   height: 2px;
+  //   background-color:orangered;
+  //   // &::after{
+  //   // }
+  // }
+}
+
+.country-description-list__change-text-invalid{
+  display: none;
+}
+
+.country-description-list__change-text:invalid + .country-description-list__change-text-invalid{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #FFEFEF;
+  width: 100%;
+  display: block;
+}
+
+.country-description-list__change-text:invalid + .country-description-list__change-text::after{
+  position: absolute;
+  content: "Тест";
+  bottom: 10px;
+  left: 10px;
+  background-color: #FFEFEF;
+  width: 100%;
+  display: block;
 }
 
 .country-description-list__flag{

@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.min.css" rel="preload" as="style">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Погнали!</title>
 </head>
@@ -18,20 +18,24 @@
     <div class="container page-header__menu  menu">
       <a href="#" class="menu__logo-mobile">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium.webp 1x, img/logo-medium@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x">
-          <source srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x" type="image/png">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.webp 1x, img/logo-medium@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x"
+            type="image/png">
+          <source srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x" type="image/webp">
           <img class="page-header__logo logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226"
             height="30" alt="Логотип" />
         </picture>
       </a>
       <a href="#" class="menu__logo-mobile-dark visually-hidden">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
-          <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
+            type="image/png">
+          <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
           <img class="page-header__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
@@ -161,14 +165,19 @@
           <div class="promo__quote">
             <picture>
               <source media="(min-width: 1440px)"
-                srcset="img/traveller-illustration-large.webp 1x, img/traveller-illustration-large@2x.webp 2x">
+                srcset="img/traveller-illustration-large.webp 1x, img/traveller-illustration-large@2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 1440px)"
-                srcset="img/traveller-illustration-large.png 1x, img/traveller-illustration-large@2x.png 2x">
+                srcset="img/traveller-illustration-large.png 1x, img/traveller-illustration-large@2x.png 2x"
+                type="image/png">
               <source media="(min-width: 768px)"
-                srcset="img/traveller-illustration-medium.webp 1x, img/traveller-illustration-medium@2x.webp 2x">
+                srcset="img/traveller-illustration-medium.webp 1x, img/traveller-illustration-medium@2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 768px)"
-                srcset="img/traveller-illustration-medium.png 1x, img/traveller-illustration-medium@2x.png 2x">
-              <source srcset="img/traveller-illustration.webp 1x, img/traveller-illustration@2x.webp 2x">
+                srcset="img/traveller-illustration-medium.png 1x, img/traveller-illustration-medium@2x.png 2x"
+                type="image/png">
+              <source srcset="img/traveller-illustration.webp 1x, img/traveller-illustration@2x.webp 2x"
+                type="image/webp">
               <img class="promo__traveller-icon" src="img/traveller-illustration.png"
                 srcset="img/traveller-illustration@2x.png 2x" width="192" height="255" alt="Путешественник" />
             </picture>
@@ -213,7 +222,7 @@
       <div class="promo__menu-container container">
         <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--visible">
           <picture>
-            <source srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x">
+            <source srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x" type="image/webp">
             <img class="promo__logo logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x"
               width="226" height="30" alt="Логотип" />
           </picture>
@@ -303,19 +312,21 @@
               <div class="countries__cards card-list__card">
                 <picture>
                   <source media="(min-width: 768px)"
-                    srcset="img/thailand-medium.webp 1x, img/thailand-medium@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x">
-                  <source srcset="img/thailand-small.webp 1x, img/thailand-small@2x.webp 2x">
+                    srcset="img/thailand-medium.webp 1x, img/thailand-medium@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x"
+                    type="image/png">
+                  <source srcset="img/thailand-small.webp 1x, img/thailand-small@2x.webp 2x" type="image/webp">
                   <img class="countries__photo" src="img/thailand-small.png" srcset="img/thailand-small@2x.png 2x"
                     width="270" height="110" alt="Тайланд" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
                     <source media="(min-width: 768px)"
-                      srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x">
+                      srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 768px)"
-                      srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x">
-                    <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x">
+                      srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x" type="image/png">
+                    <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x"
+                      type="image/webp">
                     <img class="countries__flag card-list__flag flag" src="img/thailand-flag-small.png"
                       srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                   </picture>
@@ -343,19 +354,21 @@
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/france-medium.webp 1x, img/france-medium@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/france-medium.png 1x, img/france-medium@2x.png 2x">
-                  <source srcset="img/france-small.webp 1x, img/france-small@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/france-medium.webp 1x, img/france-medium@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/france-medium.png 1x, img/france-medium@2x.png 2x"
+                    type="image/png">
+                  <source srcset="img/france-small.webp 1x, img/france-small@2x.webp 2x" type="image/webp">
                   <img class="countries__photo" src="img/france-small.png" srcset="img/france-small@2x.png 2x"
                     width="270" height="110" alt="Франция" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
                     <source media="(min-width: 768px)"
-                      srcset="img/france-flag-medium.webp 1x, img/france-flag-medium@2x.webp 2x">
+                      srcset="img/france-flag-medium.webp 1x, img/france-flag-medium@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 768px)"
-                      srcset="img/france-flag-medium.png 1x, img/france-flag-medium@2x.png 2x">
-                    <source srcset="img/france-flag-small.webp 1x, img/france-flag-small@2x.webp 2x">
+                      srcset="img/france-flag-medium.png 1x, img/france-flag-medium@2x.png 2x" type="image/png">
+                    <source srcset="img/france-flag-small.webp 1x, img/france-flag-small@2x.webp 2x" type="image/webp">
                     <img class="countries__flag card-list__flag flag" src="img/france-flag-small.png"
                       srcset="img/france-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Франции" />
                   </picture>
@@ -383,19 +396,21 @@
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/czech-medium.webp 1x, img/czech-medium@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/czech-medium.png 1x, img/czech-medium@2x.png 2x">
-                  <source srcset="img/czech-small.webp 1x, img/czech-small@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/czech-medium.webp 1x, img/czech-medium@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/czech-medium.png 1x, img/czech-medium@2x.png 2x"
+                    type="image/png">
+                  <source srcset="img/czech-small.webp 1x, img/czech-small@2x.webp 2x" type="image/webp">
                   <img class="countries__photo" src="img/czech-small.png" srcset="img/czech-small@2x.png 2x" width="270"
                     height="110" alt="Чехия" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
                     <source media="(min-width: 768px)"
-                      srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
+                      srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 768px)"
-                      srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
-                    <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x">
+                      srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x" type="image/png">
+                    <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x" type="image/webp">
                     <img class="countries__flag card-list__flag flag" src="img/czech-flag-small.png"
                       srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
                   </picture>
@@ -449,14 +464,14 @@
               <div class="users__card card-list__card">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/tanya-photo-large.webp 1x, img/tanya-photo-large@2x.webp 2x">
+                    srcset="img/tanya-photo-large.webp 1x, img/tanya-photo-large@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1440px)"
-                    srcset="img/tanya-photo-large.png 1x, img/tanya-photo-large@2x.png 2x">
+                    srcset="img/tanya-photo-large.png 1x, img/tanya-photo-large@2x.png 2x" type="image/png">
                   <source media="(min-width: 768px)"
-                    srcset="img/tanya-photo-medium.webp 1x, img/tanya-photo-medium@2x.webp 2x">
+                    srcset="img/tanya-photo-medium.webp 1x, img/tanya-photo-medium@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 768px)"
-                    srcset="img/tanya-photo-medium.png 1x, img/tanya-photo-medium@2x.png 2x">
-                  <source srcset="img/tanya-photo.webp 1x, img/tanya-photo@2x.webp 2x">
+                    srcset="img/tanya-photo-medium.png 1x, img/tanya-photo-medium@2x.png 2x" type="image/png">
+                  <source srcset="img/tanya-photo.webp 1x, img/tanya-photo@2x.webp 2x" type="image/webp">
                   <img class="users__photo" src="img/tanya-photo.png" srcset="img/tanya-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Тани Фирсовой" />
                 </picture>
@@ -470,10 +485,13 @@
                     <li class="users__flag-tooltip-1">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/seychelles-flag-medium.webp 1x, img/seychelles-flag-medium@2x.webp 2x">
+                          srcset="img/seychelles-flag-medium.webp 1x, img/seychelles-flag-medium@2x.webp 2x"
+                          type="image/webp">
                         <source media="(min-width: 768px)"
-                          srcset="img/seychelles-flag-medium.png 1x, img/seychelles-flag-medium@2x.png 2x">
-                        <source srcset="img/seychelles-flag-small.webp 1x, img/seychelles-flag-small@2x.webp 2x">
+                          srcset="img/seychelles-flag-medium.png 1x, img/seychelles-flag-medium@2x.png 2x"
+                          type="image/png">
+                        <source srcset="img/seychelles-flag-small.webp 1x, img/seychelles-flag-small@2x.webp 2x"
+                          type="image/webp">
                         <img class="users__flag  flag" src="img/seychelles-flag-small.png"
                           srcset="img/seychelles-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Сейшилы" />
                       </picture>
@@ -484,10 +502,12 @@
                     <li class="users__flag-tooltip-2">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x">
+                          srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x"
+                          type="image/webp">
                         <source media="(min-width: 768px)"
-                          srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x">
-                        <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x">
+                          srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x" type="image/png">
+                        <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x"
+                          type="image/webp">
                         <img class="users__flag  flag" src="img/thailand-flag-small.png"
                           srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                       </picture>
@@ -498,10 +518,13 @@
                     <li class="users__flag-tooltip-3">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/sri-lanka-flag-medium.webp 1x, img/sri-lanka-flag-medium@2x.webp 2x">
+                          srcset="img/sri-lanka-flag-medium.webp 1x, img/sri-lanka-flag-medium@2x.webp 2x"
+                          type="image/webp">
                         <source media="(min-width: 768px)"
-                          srcset="img/sri-lanka-flag-medium.png 1x, img/sri-lanka-flag-medium@2x.png 2x">
-                        <source srcset="img/sri-lanka-flag-small.webp 1x, img/sri-lanka-flag-small@2x.webp 2x">
+                          srcset="img/sri-lanka-flag-medium.png 1x, img/sri-lanka-flag-medium@2x.png 2x"
+                          type="image/png">
+                        <source srcset="img/sri-lanka-flag-small.webp 1x, img/sri-lanka-flag-small@2x.webp 2x"
+                          type="image/webp">
                         <img class="users__flag  flag" src="img/sri-lanka-flag-small.png"
                           srcset="img/sri-lanka-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Шри-Ланки" />
                       </picture>
@@ -581,14 +604,14 @@
               <div class="users__card card-list__card">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/demin-photo-large.webp 1x, img/demin-photo-large@2x.webp 2x">
+                    srcset="img/demin-photo-large.webp 1x, img/demin-photo-large@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1440px)"
-                    srcset="img/demin-photo-large.png 1x, img/demin-photo-large@2x.png 2x">
+                    srcset="img/demin-photo-large.png 1x, img/demin-photo-large@2x.png 2x" type="image/png">
                   <source media="(min-width: 768px)"
-                    srcset="img/demin-photo-medium.webp 1x, img/demin-photo-medium@2x.webp 2x">
+                    srcset="img/demin-photo-medium.webp 1x, img/demin-photo-medium@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 768px)"
-                    srcset="img/demin-photo-medium.png 1x, img/demin-photo-medium@2x.png 2x">
-                  <source srcset="img/demin-photo.webp 1x, img/demin-photo@2x.webp 2x">
+                    srcset="img/demin-photo-medium.png 1x, img/demin-photo-medium@2x.png 2x" type="image/png">
+                  <source srcset="img/demin-photo.webp 1x, img/demin-photo@2x.webp 2x" type="image/webp">
                   <img class="users__photo" src="img/demin-photo.png" srcset="img/demin-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Петра Демина" />
                 </picture>
@@ -602,10 +625,12 @@
                     <li class="users__flag-tooltip-4">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/belgium-flag-medium.webp 1x, img/belgium-flag-medium@2x.webp 2x">
+                          srcset="img/belgium-flag-medium.webp 1x, img/belgium-flag-medium@2x.webp 2x"
+                          type="image/webp">
                         <source media="(min-width: 768px)"
-                          srcset="img/belgium-flag-medium.png 1x, img/belgium-flag-medium@2x.png 2x">
-                        <source srcset="img/belgium-flag-small.webp 1x, img/belgium-flag-small@2x.webp 2x">
+                          srcset="img/belgium-flag-medium.png 1x, img/belgium-flag-medium@2x.png 2x" type="image/png">
+                        <source srcset="img/belgium-flag-small.webp 1x, img/belgium-flag-small@2x.webp 2x"
+                          type="image/webp">
                         <img class="users__flag  flag" src="img/belgium-flag-small.png"
                           srcset="img/belgium-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Бельгии" />
                       </picture>
@@ -616,10 +641,11 @@
                     <li class="users__flag-tooltip-5">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
+                          srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x" type="image/webp">
                         <source media="(min-width: 768px)"
-                          srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x">
-                        <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x">
+                          srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x" type="image/png">
+                        <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x"
+                          type="image/webp">
                         <img class="users__flag flag" src="img/czech-flag-small.png"
                           srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
                       </picture>
@@ -706,8 +732,7 @@
       <div class="profile__container container">
         <header class="profile__header">
           <h2 class="profile__caption text text--caption">
-            <pre>Добавьте <br class="profile__br">свой <br
-              class="profile__br">профиль</pre>
+            Добавьте <br class="profile__br">свой <br class="profile__br">профиль
           </h2>
         </header>
         <ol class="profile__list information-list">
@@ -794,8 +819,8 @@
           </p>
         </header>
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
-          <input type="email" class="feedback__email text text--default" placeholder="E-mail" />
-          <button class="feedback__send-email button button--arrow">
+          <input type="email" class="feedback__email text text--default" placeholder="E-mail" required />
+          <button class="feedback__send-email button button--arrow" type="submit">
             <svg class="button__icon" width="11" height="12">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
@@ -854,11 +879,15 @@
         </div>
       </header>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/map-large-icon.webp 1x, img/map-large-icon@2x.webp 2x">
-        <source media="(min-width: 1440px)" srcset="img/map-large-icon.png 1x, img/map-large-icon@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/map-medium-icon.webp 1x, img/map-medium-icon@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/map-medium-icon.png 1x, img/map-medium-icon@2x.png 2x">
-        <source srcset="img/map-small-icon.webp 1x, img/map-small-icon@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/map-large-icon.webp 1x, img/map-large-icon@2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 1440px)" srcset="img/map-large-icon.png 1x, img/map-large-icon@2x.png 2x"
+          type="image/png">
+        <source media="(min-width: 768px)" srcset="img/map-medium-icon.webp 1x, img/map-medium-icon@2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/map-medium-icon.png 1x, img/map-medium-icon@2x.png 2x"
+          type="image/png">
+        <source srcset="img/map-small-icon.webp 1x, img/map-small-icon@2x.webp 2x" type="image/webp">
         <img class="contacts__map" src="img/map-small-icon.png" srcset="img/map-small-icon@2x.png 2x" width="320"
           height="424" alt="Карта" />
       </picture>
@@ -872,11 +901,15 @@
       <h2 class="visually-hidden">Погнали?</h2>
       <a href="#">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.png 1x, img/logo-large-dark@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x">
-          <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.png 1x, img/logo-large-dark@2x.png 2x"
+            type="image/png">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
+            type="image/png">
+          <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
           <img class="page-fotter__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
