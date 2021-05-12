@@ -168,7 +168,6 @@ let openIcon1 = document.querySelector('.add-plans__show-countries-icon--closed-
 let circleIcon1 = document.querySelector('.add-plans__circle-icon--1');
 let closeIcon1 = document.querySelector('.add-plans__close-icon--1');
 let countriesDropdown1 = document.querySelector('.add-plans__countries-dropdown--1');
-let addCountry = document.querySelector('.add-plans__add-country');
 
 selectCountry1?.addEventListener('click', () => {
   if (!selectCountry1.classList.contains('add-plans__select-country--opened')) {
@@ -215,13 +214,14 @@ closeIcon3?.addEventListener('click', function (e) {
   onSelectClose(e, selectCountry3, selectText3, openIcon3, circleIcon3, closeIcon3, countriesDropdown3);
 })
 
+let navButtons = document.querySelector('.step-list__nav-buttons--1');
+
 const onSelectOpen = (selectCountry, selectText, openIcon, circleIcon, closeIcon, countriesDropdown) => {
   selectCountry.classList.add('add-plans__select-country--opened');
   selectText.classList.add('add-plans__select-country--text-opened');
   openIcon.classList.add('visually-hidden');
   closeIcon.classList.remove('visually-hidden');
   countriesDropdown.classList.remove('visually-hidden');
-  addCountry.classList.add('visually-collapced');
 
   if (window.innerWidth < 768) {
     circleIcon.classList.add('visually-hidden');
@@ -239,7 +239,6 @@ const onSelectClose = (e, selectCountry, selectText, openIcon, circleIcon, close
   openIcon.classList.remove('visually-hidden');
   closeIcon.classList.add('visually-hidden');
   countriesDropdown.classList.add('visually-hidden');
-  addCountry.classList.remove('visually-collapced');
 
   if (window.innerWidth < 768) {
     circleIcon.classList.remove('visually-hidden');
@@ -273,4 +272,32 @@ const onTariffsOpen = () => {
 
 const onTariffsClose = () => {
   tariffsList.classList.add('visually-hidden');
+}
+
+//invalid input
+let countryDescriptionInput = document.querySelector('.country-description-list__change-text');
+let countryDescriptionInputInvalid = document.querySelector('.country-description-list__change-text-invalid');
+
+countryDescriptionInput?.addEventListener('invalid', () => {
+  debugger
+  onCountryInputInvalid();
+});
+
+countryDescriptionInput?.addEventListener('valid', () => {
+  onCountryInputValid();
+});
+
+const onCountryInputInvalid = () => {
+  if (window.innerWidth >= 1440) {
+    //25 is padding-left
+    countryDescriptionInputInvalid.style.width = countryDescriptionInput.offsetWidth - 25 + "px";
+  }
+  //
+  countryDescriptionInputInvalid.classList.remove('visually-hidden');
+  countryDescriptionInput.classList.add('country-description-list__text-invalid-border');
+}
+
+const onCountryInputValid = () => {
+  countryDescriptionInputInvalid.classList.add('visually-hidden');
+  countryDescriptionInput.classList.remove('country-description-list__text-invalid-border');
 }

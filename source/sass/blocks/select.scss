@@ -18,6 +18,7 @@
     letter-spacing: 0.1em;
   }
 }
+
 .select__item:after {
   position: absolute;
   right: 0;
@@ -28,5 +29,5 @@
      rgba(255,255,255, 1) 10%,
      rgba(255,255,255, 0) 30%
   );
-  pointer-events: none; /* so the text is still selectable */
+  pointer-events: none;
 }

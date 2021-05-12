@@ -100,6 +100,10 @@
   justify-content: space-between;
   padding-top: 83px;
 
+  @media (max-width: $small-max-width) {
+    max-width: 135px;
+  }
+
   @media (min-width: $medium-width) {
     padding-top: 109px;
   }
@@ -186,12 +190,6 @@
   }
 }
 
-.profile__br{
-  @media (min-width: $medium-width) {
-    display: none;
-  }
-}
-
 .profile__information{
   border-bottom: 1px solid #E1E3E9;
   display: flex;
@@ -266,19 +264,19 @@
 
 .profile__business-tariffs{
   position: absolute;
-  z-index: 1;
-  top: 20px;
+  z-index: 13;
+  top: 3715px;
   left: 25px;
   right: 25px;
 
   @media (min-width: $medium-width) {
-    top: 56px;
+    top: 4153px;
     left: 40px;
     right: 40px;
   }
 
   @media (min-width: $large-width) {
-    top: 130px;
+    top: 3292px;
     left: 363px;
     right: 327px;
   }

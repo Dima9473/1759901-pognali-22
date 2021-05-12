@@ -86,34 +86,59 @@
       opacity: 1;
     }
   }
+}
 
-  &:invalid{
-    border: 1px solid #F47E7E;
-  }
+.country-description-list__text-invalid-border{
+  border: 1px solid #F47E7E;
 }
 
 .country-description-list__change-text-invalid{
-  display: none;
+  position: absolute;
+  bottom: 6px;
+  left: 2px;
+  right: -16px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-left: 21px;
+  // margin-left: 21px;
+  background-color: #FFEFEF;
+
+  @media (min-width: $medium-width) {
+    bottom: 6px;
+    left: 2px;
+    right: -21px;
+  }
+
 }
 
-.country-description-list__change-text:invalid + .country-description-list__change-text-invalid{
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: #FFEFEF;
-  width: 100%;
-  display: block;
-}
+// .country-description-list__change-text:invalid + .country-description-list__change-text-invalid{
+//   // position: absolute;
+//   // bottom: 10px;
+//   // left: 10px;
+//   // background-color: #FFEFEF;
+//   // width: 100%;
+//   // display: block;
+// }
 
-.country-description-list__change-text:invalid + .country-description-list__change-text::after{
-  position: absolute;
-  content: "Тест";
-  bottom: 10px;
-  left: 10px;
-  background-color: #FFEFEF;
-  width: 100%;
-  display: block;
-}
+// .country-description-list__change-text::after{
+//   position: absolute;
+//   content: "Тест";
+//   bottom: 10px;
+//   left: 10px;
+//   background-color: #FFEFEF;
+//   width: 100%;
+//   display: block;
+// }
+
+// .country-description-list__change-text:invalid + .country-description-list__change-text::after{
+//   position: absolute;
+//   content: "Тест";
+//   bottom: 10px;
+//   left: 10px;
+//   background-color: #FFEFEF;
+//   width: 100%;
+//   display: block;
+// }
 
 .country-description-list__flag{
   width: 35px;
