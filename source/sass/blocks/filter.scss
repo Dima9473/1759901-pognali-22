@@ -157,6 +157,7 @@
 .filter__filter-country-text{
   @include text(16px, bold, 18px, $dark-blue);
   min-width: 233px;
+  margin-left: 12px;
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;

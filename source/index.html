@@ -13,7 +13,7 @@
   <title>Погнали!</title>
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header">
     <div class="container page-header__menu  menu">
       <a href="#" class="menu__logo-mobile">
@@ -25,7 +25,7 @@
           <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x"
             type="image/png">
           <source srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x" type="image/webp">
-          <img class="page-header__logo logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226"
+          <img class="page-header__logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226"
             height="30" alt="Логотип" />
         </picture>
       </a>
@@ -36,7 +36,7 @@
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
             type="image/png">
           <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
-          <img class="page-header__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <img class="page-header__logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
@@ -87,72 +87,70 @@
       </div>
     </div>
     <div class="main-menu main-menu--closed">
-      <div class="main-menu__container">
-        <nav class="main-menu__nav main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="text site-list__link link" href="#">О СЕРВИСЕ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="text site-list__link link" href="directions.html">НАПРАВЛЕНИЯ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="text site-list__link link" href="companions.html">ПОПУТЧИКИ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__authorisation">
-          <a class="page-header__authorization-button button button--authorization" href="authorization.html">
-            <div class="text button__caption">АВТОРИЗАЦИЯ</div>
-          </a>
-        </div>
-        <div class="page-header__contact-list">
-          <dl class="icon-list">
-            <div class="page-header__icon icon-list__item">
-              <dt class="icon-list__phone">
-                <svg
-                  class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
-                  width="17" height="15">
-                  <use xlink:href="img/sprite.svg#home-phone"></use>
-                </svg>
-              </dt>
-              <dd class="text page-header__details icon-list__details">8 800 555-86-28</dd>
-            </div>
-            <div class="page-header__icon icon-list__item">
-              <dt class="icon-list__email">
-                <svg
-                  class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
-                  width="19" height="13">
-                  <use xlink:href="img/sprite.svg#e-mail"></use>
-                </svg>
-              </dt>
-              <dd class="text page-header__details icon-list__details">MAIL@HTMLACADEMY.RU</dd>
-            </div>
-          </dl>
-          <ul class="page-header__social-list social-list">
-            <li class="social-list__item">
-              <a class="social-list__link icon icon__social" href="https://www.facebook.com/htmlacademy">
-                <svg class="social-list__facebook" width="11" height="21">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link icon icon__social" href="https://vk.com/htmlacademy">
-                <svg class="social-list__vk" width="23" height="12">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link icon icon__social" href="https://www.instagram.com/htmlacademy">
-                <svg class="social-list__instagramm" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-menu__nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="text site-list__link link" href="#">О СЕРВИСЕ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link link" href="directions.html">НАПРАВЛЕНИЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link link" href="companions.html">ПОПУТЧИКИ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__authorisation">
+        <a class="page-header__authorization-button button button--authorization" href="authorization.html">
+          <div class="text button__caption">АВТОРИЗАЦИЯ</div>
+        </a>
+      </div>
+      <div class="page-header__contact-list">
+        <dl class="icon-list">
+          <div class="page-header__icon icon-list__item">
+            <dt class="icon-list__phone">
+              <svg
+                class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
+                width="17" height="15">
+                <use xlink:href="img/sprite.svg#home-phone"></use>
+              </svg>
+            </dt>
+            <dd class="text page-header__details icon-list__details">8 800 555-86-28</dd>
+          </div>
+          <div class="page-header__icon icon-list__item">
+            <dt class="icon-list__email">
+              <svg
+                class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
+                width="19" height="13">
+                <use xlink:href="img/sprite.svg#e-mail"></use>
+              </svg>
+            </dt>
+            <dd class="text page-header__details icon-list__details">MAIL@HTMLACADEMY.RU</dd>
+          </div>
+        </dl>
+        <ul class="page-header__social-list social-list">
+          <li class="social-list__item">
+            <a class="icon icon__social" href="https://www.facebook.com/htmlacademy">
+              <svg class="social-list__facebook" width="11" height="21">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="icon icon__social" href="https://vk.com/htmlacademy">
+              <svg class="social-list__vk" width="23" height="12">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="icon icon__social" href="https://www.instagram.com/htmlacademy">
+              <svg class="social-list__instagramm" width="18" height="18">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -223,8 +221,8 @@
         <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--visible">
           <picture>
             <source srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x" type="image/webp">
-            <img class="promo__logo logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x"
-              width="226" height="30" alt="Логотип" />
+            <img class="promo__logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x" width="226"
+              height="30" alt="Логотип" />
           </picture>
         </a>
         <a class="menu__toggle menu__toggle--hidden">
@@ -327,11 +325,11 @@
                       srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x" type="image/png">
                     <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x"
                       type="image/webp">
-                    <img class="countries__flag card-list__flag flag" src="img/thailand-flag-small.png"
+                    <img class="countries__flag card-list__flag" src="img/thailand-flag-small.png"
                       srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list visits-list">
+                    <dl class="countries__visits card-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Тайланд
@@ -369,11 +367,11 @@
                     <source media="(min-width: 768px)"
                       srcset="img/france-flag-medium.png 1x, img/france-flag-medium@2x.png 2x" type="image/png">
                     <source srcset="img/france-flag-small.webp 1x, img/france-flag-small@2x.webp 2x" type="image/webp">
-                    <img class="countries__flag card-list__flag flag" src="img/france-flag-small.png"
+                    <img class="countries__flag card-list__flag" src="img/france-flag-small.png"
                       srcset="img/france-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Франции" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list visits-list">
+                    <dl class="countries__visits card-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Франция
@@ -411,11 +409,11 @@
                     <source media="(min-width: 768px)"
                       srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x" type="image/png">
                     <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x" type="image/webp">
-                    <img class="countries__flag card-list__flag flag" src="img/czech-flag-small.png"
+                    <img class="countries__flag card-list__flag" src="img/czech-flag-small.png"
                       srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list visits-list">
+                    <dl class="countries__visits card-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Чехия
@@ -492,7 +490,7 @@
                           type="image/png">
                         <source srcset="img/seychelles-flag-small.webp 1x, img/seychelles-flag-small@2x.webp 2x"
                           type="image/webp">
-                        <img class="users__flag  flag" src="img/seychelles-flag-small.png"
+                        <img class="users__flag" src="img/seychelles-flag-small.png"
                           srcset="img/seychelles-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Сейшилы" />
                       </picture>
                       <div class="users__flag-tooltip-1-position users__flag-tooltip-1--visible tooltip text">
@@ -508,7 +506,7 @@
                           srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x" type="image/png">
                         <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x"
                           type="image/webp">
-                        <img class="users__flag  flag" src="img/thailand-flag-small.png"
+                        <img class="users__flag" src="img/thailand-flag-small.png"
                           srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                       </picture>
                       <div class="users__flag-tooltip-2-position users__flag-tooltip-2--visible tooltip text">
@@ -525,7 +523,7 @@
                           type="image/png">
                         <source srcset="img/sri-lanka-flag-small.webp 1x, img/sri-lanka-flag-small@2x.webp 2x"
                           type="image/webp">
-                        <img class="users__flag  flag" src="img/sri-lanka-flag-small.png"
+                        <img class="users__flag" src="img/sri-lanka-flag-small.png"
                           srcset="img/sri-lanka-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Шри-Ланки" />
                       </picture>
                       <div class="users__flag-tooltip-3-position users__flag-tooltip-3--visible tooltip text">
@@ -631,7 +629,7 @@
                           srcset="img/belgium-flag-medium.png 1x, img/belgium-flag-medium@2x.png 2x" type="image/png">
                         <source srcset="img/belgium-flag-small.webp 1x, img/belgium-flag-small@2x.webp 2x"
                           type="image/webp">
-                        <img class="users__flag  flag" src="img/belgium-flag-small.png"
+                        <img class="users__flag" src="img/belgium-flag-small.png"
                           srcset="img/belgium-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Бельгии" />
                       </picture>
                       <div class="users__flag-tooltip-4-position users__flag-tooltip-4--visible tooltip text">
@@ -646,8 +644,8 @@
                           srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x" type="image/png">
                         <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x"
                           type="image/webp">
-                        <img class="users__flag flag" src="img/czech-flag-small.png"
-                          srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
+                        <img class="users__flag" src="img/czech-flag-small.png" srcset="img/czech-flag-small@2x.png 2x"
+                          width="35" height="24" alt="Флаг Чехии" />
                       </picture>
                       <div class="users__flag-tooltip-5-position users__flag-tooltip-5--visible tooltip text">
                         Чехия
@@ -746,7 +744,7 @@
                 Базовое размещение
               </span>
             </div>
-            <span class="profile__cost text information-list__description--small">
+            <span class="text information-list__description--small">
               бесплатно
             </span>
           </li>
@@ -757,7 +755,7 @@
               <span class="profile__price-name text information-list__description--small">Вывод на первых
                 позициях</span>
             </div>
-            <span class="profile__cost text information-list__description--small">
+            <span class="text information-list__description--small">
               99 руб./мес
             </span>
           </li>
@@ -768,7 +766,7 @@
               <span class="profile__price-name text information-list__description--small">Кастомный цвет карточки
               </span>
             </div>
-            <span class="profile__cost text information-list__description--small">
+            <span class="text information-list__description--small">
               59 руб./мес
             </span>
           </li>
@@ -910,20 +908,20 @@
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
             type="image/png">
           <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
-          <img class="page-fotter__logo logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <img class="page-fotter__logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
       <ul class="page-footer__socials social-list">
         <li class="page-footer__social-item social-list__item">
-          <a class="social-list__link icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
+          <a class="icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
             <svg class="page-fotter__icon icon icon--background-padding icon--main-background" width="20" height="20">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item social-list__item">
-          <a class="social-list__link icon icon--dark-blue" href="https://vk.com/htmlacademy">
+          <a class="icon icon--dark-blue" href="https://vk.com/htmlacademy">
             <svg class="page-fotter__icon icon icon--background-padding icon--dark-blue icon--main-background"
               width="20" height="20">
               <use xlink:href="img/sprite.svg#vk"></use>
@@ -931,7 +929,7 @@
           </a>
         </li>
         <li class="page-footer__social-item social-list__item">
-          <a class="social-list__link icon icon--dark-blue" href="https://www.instagram.com/htmlacademy">
+          <a class="icon icon--dark-blue" href="https://www.instagram.com/htmlacademy">
             <svg class="page-fotter__icon icon--background-padding icon--main-background" width="20" height="20">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>

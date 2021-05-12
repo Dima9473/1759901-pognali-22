@@ -22,7 +22,6 @@
 }
 
 .users__header{
-  // margin-left: 25px;
   @media (min-width: $large-width) {
     display: flex;
     justify-content: space-between;
@@ -641,7 +640,6 @@
   justify-content: space-between;
 
   @media (min-width: $medium-width) {
-    // width: 618px;
     width: auto;
     margin-left: 34px;
     margin-right: 34px;
