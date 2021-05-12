@@ -13,21 +13,30 @@
   <title>Погнали!</title>
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header">
     <div class="container page-header__menu  menu">
       <a href="#" class="menu__logo-mobile">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium.webp 1x, img/logo-medium@2x.webp 2x">
-          <img class="page-header__logo logo" src="img/logo-mobile.webp" srcset="img/logo-mobile@2x.webp 2x" width="226"
+          <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x" type="image/png">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.webp 1x, img/logo-medium@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.png 1x, img/logo-medium@2x.png 2x"
+            type="image/png">
+          <source srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x" type="image/webp">
+          <img class="page-header__logo" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" width="226"
             height="30" alt="Логотип" />
         </picture>
       </a>
       <a href="#" class="menu__logo-mobile-dark visually-hidden">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
-          <img class="page-header__logo logo" src="img/logo-mobile-dark.webp" srcset="img/logo-mobile-dark@2x.webp 2x"
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
+            type="image/png">
+          <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
+          <img class="page-header__logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
@@ -78,72 +87,70 @@
       </div>
     </div>
     <div class="main-menu main-menu--closed">
-      <div class="main-menu__container">
-        <nav class="main-menu__nav main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="text site-list__link link" href="#">О СЕРВИСЕ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="text site-list__link link" href="directions.html">НАПРАВЛЕНИЯ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="text site-list__link link" href="companions.html">ПОПУТЧИКИ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__authorisation">
-          <a class="page-header__authorization-button button button--authorization" href="authorization.html">
-            <div class="text button__caption">АВТОРИЗАЦИЯ</div>
-          </a>
-        </div>
-        <div class="page-header__contact-list contact-list">
-          <dl class="icon-list">
-            <div class="page-header__icon icon-list__item">
-              <dt class="icon-list__phone">
-                <svg
-                  class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
-                  width="17" height="15">
-                  <use xlink:href="img/sprite.svg#home-phone"></use>
-                </svg>
-              </dt>
-              <dd class="text page-header__details icon-list__details">8 800 555-86-28</dd>
-            </div>
-            <div class="page-header__icon icon-list__item">
-              <dt class="icon-list__email">
-                <svg
-                  class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
-                  width="19" height="13">
-                  <use xlink:href="img/sprite.svg#e-mail"></use>
-                </svg>
-              </dt>
-              <dd class="text page-header__details icon-list__details">MAIL@HTMLACADEMY.RU</dd>
-            </div>
-          </dl>
-          <ul class="page-header__social-list social-list">
-            <li class="social-list__item">
-              <a class="social-list__link icon icon__social" href="https://www.facebook.com/htmlacademy">
-                <svg class="social-list__facebook" width="11" height="21">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link icon icon__social" href="https://vk.com/htmlacademy">
-                <svg class="social-list__vk" width="23" height="12">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link icon icon__social" href="https://www.instagram.com/htmlacademy">
-                <svg class="social-list__instagramm" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-menu__nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="text site-list__link link" href="#">О СЕРВИСЕ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link link" href="directions.html">НАПРАВЛЕНИЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="text site-list__link link" href="companions.html">ПОПУТЧИКИ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__authorisation">
+        <a class="page-header__authorization-button button button--authorization" href="authorization.html">
+          <div class="text button__caption">АВТОРИЗАЦИЯ</div>
+        </a>
+      </div>
+      <div class="page-header__contact-list">
+        <dl class="icon-list">
+          <div class="page-header__icon icon-list__item">
+            <dt class="icon-list__phone">
+              <svg
+                class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
+                width="17" height="15">
+                <use xlink:href="img/sprite.svg#home-phone"></use>
+              </svg>
+            </dt>
+            <dd class="text page-header__details icon-list__details">8 800 555-86-28</dd>
+          </div>
+          <div class="page-header__icon icon-list__item">
+            <dt class="icon-list__email">
+              <svg
+                class="icon-list__icon icon-list__link icon icon--main-theme icon--dark-blue-background icon--background-padding"
+                width="19" height="13">
+                <use xlink:href="img/sprite.svg#e-mail"></use>
+              </svg>
+            </dt>
+            <dd class="text page-header__details icon-list__details">MAIL@HTMLACADEMY.RU</dd>
+          </div>
+        </dl>
+        <ul class="page-header__social-list social-list">
+          <li class="social-list__item">
+            <a class="icon icon__social" href="https://www.facebook.com/htmlacademy">
+              <svg class="social-list__facebook" width="11" height="21">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="icon icon__social" href="https://vk.com/htmlacademy">
+              <svg class="social-list__vk" width="23" height="12">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="icon icon__social" href="https://www.instagram.com/htmlacademy">
+              <svg class="social-list__instagramm" width="18" height="18">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -156,11 +163,21 @@
           <div class="promo__quote">
             <picture>
               <source media="(min-width: 1440px)"
-                srcset="img/traveller-illustration-large.webp 1x, img/traveller-illustration-large@2x.webp 2x">
+                srcset="img/traveller-illustration-large.webp 1x, img/traveller-illustration-large@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1440px)"
+                srcset="img/traveller-illustration-large.png 1x, img/traveller-illustration-large@2x.png 2x"
+                type="image/png">
               <source media="(min-width: 768px)"
-                srcset="img/traveller-illustration-medium.webp 1x, img/traveller-illustration-medium@2x.webp 2x">
-              <img class="promo__traveller-icon" src="img/traveller-illustration.webp"
-                srcset="img/traveller-illustration@2x.webp 2x" width="192" height="255" alt="Путешественник" />
+                srcset="img/traveller-illustration-medium.webp 1x, img/traveller-illustration-medium@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)"
+                srcset="img/traveller-illustration-medium.png 1x, img/traveller-illustration-medium@2x.png 2x"
+                type="image/png">
+              <source srcset="img/traveller-illustration.webp 1x, img/traveller-illustration@2x.webp 2x"
+                type="image/webp">
+              <img class="promo__traveller-icon" src="img/traveller-illustration.png"
+                srcset="img/traveller-illustration@2x.png 2x" width="192" height="255" alt="Путешественник" />
             </picture>
             <blockquote class="promo__review">
               <q class="promo__description text text--default">Лучшее приложение, <br> что я видел в жизни!</q>
@@ -203,8 +220,9 @@
       <div class="promo__menu-container container">
         <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--visible">
           <picture>
-            <img class="promo__logo logo" src="img/logo-large-dark.webp" srcset="img/logo-large-dark@2x.webp 2x"
-              width="226" height="30" alt="Логотип" />
+            <source srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x" type="image/webp">
+            <img class="promo__logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x" width="226"
+              height="30" alt="Логотип" />
           </picture>
         </a>
         <a class="menu__toggle menu__toggle--hidden">
@@ -292,19 +310,26 @@
               <div class="countries__cards card-list__card">
                 <picture>
                   <source media="(min-width: 768px)"
-                    srcset="img/thailand-medium.webp 1x, img/thailand-medium@2x.webp 2x">
-                  <img class="countries__photo" src="img/thailand-small.webp" srcset="img/thailand-small@2x.webp 2x"
+                    srcset="img/thailand-medium.webp 1x, img/thailand-medium@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/thailand-medium.png 1x, img/thailand-medium@2x.png 2x"
+                    type="image/png">
+                  <source srcset="img/thailand-small.webp 1x, img/thailand-small@2x.webp 2x" type="image/webp">
+                  <img class="countries__photo" src="img/thailand-small.png" srcset="img/thailand-small@2x.png 2x"
                     width="270" height="110" alt="Тайланд" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
                     <source media="(min-width: 768px)"
-                      srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x">
-                    <img class="countries__flag card-list__flag flag" src="img/thailand-flag-small.webp"
-                      srcset="img/thailand-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Тайланда" />
+                      srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x" type="image/png">
+                    <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x"
+                      type="image/webp">
+                    <img class="countries__flag card-list__flag" src="img/thailand-flag-small.png"
+                      srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list visits-list">
+                    <dl class="countries__visits card-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Тайланд
@@ -327,19 +352,26 @@
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/france-medium.webp 1x, img/france-medium@2x.webp 2x">
-                  <img class="countries__photo" src="img/france-small.webp" srcset="img/france-small@2x.webp 2x"
+                  <source media="(min-width: 768px)" srcset="img/france-medium.webp 1x, img/france-medium@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/france-medium.png 1x, img/france-medium@2x.png 2x"
+                    type="image/png">
+                  <source srcset="img/france-small.webp 1x, img/france-small@2x.webp 2x" type="image/webp">
+                  <img class="countries__photo" src="img/france-small.png" srcset="img/france-small@2x.png 2x"
                     width="270" height="110" alt="Франция" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
                     <source media="(min-width: 768px)"
-                      srcset="img/france-flag-medium.webp 1x, img/france-flag-medium@2x.webp 2x">
-                    <img class="countries__flag card-list__flag flag" src="img/france-flag-small.webp"
-                      srcset="img/france-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Франции" />
+                      srcset="img/france-flag-medium.webp 1x, img/france-flag-medium@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/france-flag-medium.png 1x, img/france-flag-medium@2x.png 2x" type="image/png">
+                    <source srcset="img/france-flag-small.webp 1x, img/france-flag-small@2x.webp 2x" type="image/webp">
+                    <img class="countries__flag card-list__flag" src="img/france-flag-small.png"
+                      srcset="img/france-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Франции" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list visits-list">
+                    <dl class="countries__visits card-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Франция
@@ -362,19 +394,26 @@
             <li class="countries__item card-list__item">
               <div class="countries__cards card-list__card">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/czech-medium.webp 1x, img/czech-medium@2x.webp 2x">
-                  <img class="countries__photo" src="img/czech-small.webp" srcset="img/czech-small@2x.webp 2x"
-                    width="270" height="110" alt="Чехия" />
+                  <source media="(min-width: 768px)" srcset="img/czech-medium.webp 1x, img/czech-medium@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/czech-medium.png 1x, img/czech-medium@2x.png 2x"
+                    type="image/png">
+                  <source srcset="img/czech-small.webp 1x, img/czech-small@2x.webp 2x" type="image/webp">
+                  <img class="countries__photo" src="img/czech-small.png" srcset="img/czech-small@2x.png 2x" width="270"
+                    height="110" alt="Чехия" />
                 </picture>
                 <div class="countries__card-info card-list__info">
                   <picture>
                     <source media="(min-width: 768px)"
-                      srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
-                    <img class="countries__flag card-list__flag flag" src="img/czech-flag-small.webp"
-                      srcset="img/czech-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Чехии" />
+                      srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x" type="image/png">
+                    <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x" type="image/webp">
+                    <img class="countries__flag card-list__flag" src="img/czech-flag-small.png"
+                      srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list visits-list">
+                    <dl class="countries__visits card-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Чехия
@@ -423,10 +462,15 @@
               <div class="users__card card-list__card">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/tanya-photo-large.webp 1x, img/tanya-photo-large@2x.webp 2x">
+                    srcset="img/tanya-photo-large.webp 1x, img/tanya-photo-large@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/tanya-photo-large.png 1x, img/tanya-photo-large@2x.png 2x" type="image/png">
                   <source media="(min-width: 768px)"
-                    srcset="img/tanya-photo-medium.webp 1x, img/tanya-photo-medium@2x.webp 2x">
-                  <img class="users__photo" src="img/tanya-photo.webp" srcset="img/tanya-photo@2x.webp 2x" width="226"
+                    srcset="img/tanya-photo-medium.webp 1x, img/tanya-photo-medium@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tanya-photo-medium.png 1x, img/tanya-photo-medium@2x.png 2x" type="image/png">
+                  <source srcset="img/tanya-photo.webp 1x, img/tanya-photo@2x.webp 2x" type="image/webp">
+                  <img class="users__photo" src="img/tanya-photo.png" srcset="img/tanya-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Тани Фирсовой" />
                 </picture>
                 <div class="users__level general-info__level">
@@ -439,9 +483,15 @@
                     <li class="users__flag-tooltip-1">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/seychelles-flag-medium.webp 1x, img/seychelles-flag-medium@2x.webp 2x">
-                        <img class="users__flag  flag" src="img/seychelles-flag-small.webp"
-                          srcset="img/seychelles-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Сейшилы" />
+                          srcset="img/seychelles-flag-medium.webp 1x, img/seychelles-flag-medium@2x.webp 2x"
+                          type="image/webp">
+                        <source media="(min-width: 768px)"
+                          srcset="img/seychelles-flag-medium.png 1x, img/seychelles-flag-medium@2x.png 2x"
+                          type="image/png">
+                        <source srcset="img/seychelles-flag-small.webp 1x, img/seychelles-flag-small@2x.webp 2x"
+                          type="image/webp">
+                        <img class="users__flag" src="img/seychelles-flag-small.png"
+                          srcset="img/seychelles-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Сейшилы" />
                       </picture>
                       <div class="users__flag-tooltip-1-position users__flag-tooltip-1--visible tooltip text">
                         Сейшилы
@@ -450,9 +500,14 @@
                     <li class="users__flag-tooltip-2">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x">
-                        <img class="users__flag  flag" src="img/thailand-flag-small.webp"
-                          srcset="img/thailand-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Тайланда" />
+                          srcset="img/thailand-flag-medium.webp 1x, img/thailand-flag-medium@2x.webp 2x"
+                          type="image/webp">
+                        <source media="(min-width: 768px)"
+                          srcset="img/thailand-flag-medium.png 1x, img/thailand-flag-medium@2x.png 2x" type="image/png">
+                        <source srcset="img/thailand-flag-small.webp 1x, img/thailand-flag-small@2x.webp 2x"
+                          type="image/webp">
+                        <img class="users__flag" src="img/thailand-flag-small.png"
+                          srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                       </picture>
                       <div class="users__flag-tooltip-2-position users__flag-tooltip-2--visible tooltip text">
                         Тайланд
@@ -461,9 +516,15 @@
                     <li class="users__flag-tooltip-3">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/sri-lanka-flag-medium.webp 1x, img/sri-lanka-flag-medium@2x.webp 2x">
-                        <img class="users__flag  flag" src="img/sri-lanka-flag-small.webp"
-                          srcset="img/sri-lanka-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Шри-Ланки" />
+                          srcset="img/sri-lanka-flag-medium.webp 1x, img/sri-lanka-flag-medium@2x.webp 2x"
+                          type="image/webp">
+                        <source media="(min-width: 768px)"
+                          srcset="img/sri-lanka-flag-medium.png 1x, img/sri-lanka-flag-medium@2x.png 2x"
+                          type="image/png">
+                        <source srcset="img/sri-lanka-flag-small.webp 1x, img/sri-lanka-flag-small@2x.webp 2x"
+                          type="image/webp">
+                        <img class="users__flag" src="img/sri-lanka-flag-small.png"
+                          srcset="img/sri-lanka-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Шри-Ланки" />
                       </picture>
                       <div class="users__flag-tooltip-3-position users__flag-tooltip-3--visible tooltip text">
                         Шри-Ланка
@@ -541,10 +602,15 @@
               <div class="users__card card-list__card">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/demin-photo-large.webp 1x, img/demin-photo-large@2x.webp 2x">
+                    srcset="img/demin-photo-large.webp 1x, img/demin-photo-large@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/demin-photo-large.png 1x, img/demin-photo-large@2x.png 2x" type="image/png">
                   <source media="(min-width: 768px)"
-                    srcset="img/demin-photo-medium.webp 1x, img/demin-photo-medium@2x.webp 2x">
-                  <img class="users__photo" src="img/demin-photo.webp" srcset="img/demin-photo@2x.webp 2x" width="226"
+                    srcset="img/demin-photo-medium.webp 1x, img/demin-photo-medium@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/demin-photo-medium.png 1x, img/demin-photo-medium@2x.png 2x" type="image/png">
+                  <source srcset="img/demin-photo.webp 1x, img/demin-photo@2x.webp 2x" type="image/webp">
+                  <img class="users__photo" src="img/demin-photo.png" srcset="img/demin-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Петра Демина" />
                 </picture>
                 <div class="users__level general-info__level">
@@ -557,9 +623,14 @@
                     <li class="users__flag-tooltip-4">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/belgium-flag-medium.webp 1x, img/belgium-flag-medium@2x.webp 2x">
-                        <img class="users__flag  flag" src="img/belgium-flag-small.webp"
-                          srcset="img/belgium-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Бельгии" />
+                          srcset="img/belgium-flag-medium.webp 1x, img/belgium-flag-medium@2x.webp 2x"
+                          type="image/webp">
+                        <source media="(min-width: 768px)"
+                          srcset="img/belgium-flag-medium.png 1x, img/belgium-flag-medium@2x.png 2x" type="image/png">
+                        <source srcset="img/belgium-flag-small.webp 1x, img/belgium-flag-small@2x.webp 2x"
+                          type="image/webp">
+                        <img class="users__flag" src="img/belgium-flag-small.png"
+                          srcset="img/belgium-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Бельгии" />
                       </picture>
                       <div class="users__flag-tooltip-4-position users__flag-tooltip-4--visible tooltip text">
                         Бельгия
@@ -568,9 +639,13 @@
                     <li class="users__flag-tooltip-5">
                       <picture>
                         <source media="(min-width: 768px)"
-                          srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x">
-                        <img class="users__flag flag" src="img/czech-flag-small.webp"
-                          srcset="img/czech-flag-small@2x.webp 2x" width="35" height="24" alt="Флаг Чехии" />
+                          srcset="img/czech-flag-medium.webp 1x, img/czech-flag-medium@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)"
+                          srcset="img/czech-flag-medium.png 1x, img/czech-flag-medium@2x.png 2x" type="image/png">
+                        <source srcset="img/czech-flag-small.webp 1x, img/czech-flag-small@2x.webp 2x"
+                          type="image/webp">
+                        <img class="users__flag" src="img/czech-flag-small.png" srcset="img/czech-flag-small@2x.png 2x"
+                          width="35" height="24" alt="Флаг Чехии" />
                       </picture>
                       <div class="users__flag-tooltip-5-position users__flag-tooltip-5--visible tooltip text">
                         Чехия
@@ -654,8 +729,9 @@
     <section class="profile">
       <div class="profile__container container">
         <header class="profile__header">
-          <h2 class="profile__caption text text--caption">Добавьте <br class="profile__br">свой <br
-              class="profile__br">профиль</h2>
+          <h2 class="profile__caption text text--caption">
+            Добавьте <br class="profile__br">свой <br class="profile__br">профиль
+          </h2>
         </header>
         <ol class="profile__list information-list">
           <li class="profile__information information-list__item information-list__item--digital-dark-theme">
@@ -668,7 +744,7 @@
                 Базовое размещение
               </span>
             </div>
-            <span class="profile__cost text information-list__description--small">
+            <span class="text information-list__description--small">
               бесплатно
             </span>
           </li>
@@ -679,7 +755,7 @@
               <span class="profile__price-name text information-list__description--small">Вывод на первых
                 позициях</span>
             </div>
-            <span class="profile__cost text information-list__description--small">
+            <span class="text information-list__description--small">
               99 руб./мес
             </span>
           </li>
@@ -690,7 +766,7 @@
               <span class="profile__price-name text information-list__description--small">Кастомный цвет карточки
               </span>
             </div>
-            <span class="profile__cost text information-list__description--small">
+            <span class="text information-list__description--small">
               59 руб./мес
             </span>
           </li>
@@ -741,8 +817,8 @@
           </p>
         </header>
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
-          <input type="email" class="feedback__email text text--default" placeholder="E-mail" />
-          <button class="feedback__send-email button button--arrow">
+          <input type="email" class="feedback__email text text--default" placeholder="E-mail" required />
+          <button class="feedback__send-email button button--arrow" type="submit">
             <svg class="button__icon" width="11" height="12">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
@@ -801,9 +877,16 @@
         </div>
       </header>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/map-large-icon.webp 1x, img/map-large-icon@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/map-medium-icon.webp 1x, img/map-medium-icon@2x.webp 2x">
-        <img class="contacts__map" src="img/map-small-icon.webp" srcset="img/map-small-icon@2x.webp 2x" width="320"
+        <source media="(min-width: 1440px)" srcset="img/map-large-icon.webp 1x, img/map-large-icon@2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 1440px)" srcset="img/map-large-icon.png 1x, img/map-large-icon@2x.png 2x"
+          type="image/png">
+        <source media="(min-width: 768px)" srcset="img/map-medium-icon.webp 1x, img/map-medium-icon@2x.webp 2x"
+          type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/map-medium-icon.png 1x, img/map-medium-icon@2x.png 2x"
+          type="image/png">
+        <source srcset="img/map-small-icon.webp 1x, img/map-small-icon@2x.webp 2x" type="image/webp">
+        <img class="contacts__map" src="img/map-small-icon.png" srcset="img/map-small-icon@2x.png 2x" width="320"
           height="424" alt="Карта" />
       </picture>
       <svg class="contacts__map-point" width="41" height="41">
@@ -816,22 +899,29 @@
       <h2 class="visually-hidden">Погнали?</h2>
       <a href="#">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x">
-          <img class="page-fotter__logo logo" src="img/logo-mobile-dark.webp" srcset="img/logo-mobile-dark@2x.webp 2x"
+          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/logo-large-dark.png 1x, img/logo-large-dark@2x.png 2x"
+            type="image/png">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
+            type="image/png">
+          <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
+          <img class="page-fotter__logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
       <ul class="page-footer__socials social-list">
         <li class="page-footer__social-item social-list__item">
-          <a class="social-list__link icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
+          <a class="icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
             <svg class="page-fotter__icon icon icon--background-padding icon--main-background" width="20" height="20">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item social-list__item">
-          <a class="social-list__link icon icon--dark-blue" href="https://vk.com/htmlacademy">
+          <a class="icon icon--dark-blue" href="https://vk.com/htmlacademy">
             <svg class="page-fotter__icon icon icon--background-padding icon--dark-blue icon--main-background"
               width="20" height="20">
               <use xlink:href="img/sprite.svg#vk"></use>
@@ -839,7 +929,7 @@
           </a>
         </li>
         <li class="page-footer__social-item social-list__item">
-          <a class="social-list__link icon icon--dark-blue" href="https://www.instagram.com/htmlacademy">
+          <a class="icon icon--dark-blue" href="https://www.instagram.com/htmlacademy">
             <svg class="page-fotter__icon icon--background-padding icon--main-background" width="20" height="20">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>

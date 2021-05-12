@@ -6,6 +6,7 @@
   border: none;
   border-radius: 40px;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover{
     background-color: $special-yellow-dark;
@@ -63,8 +64,6 @@
 }
 
 .button--arrow{
-  // font-size: 18px;
-  // line-height: 18px;
   color: $basic-blue-light;
 }
 

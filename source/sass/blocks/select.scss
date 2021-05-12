@@ -4,6 +4,8 @@
 }
 
 .select__item{
+  position: relative;
+  width: 100%;
   @include text(14px, 500, 18px, $basic-blue-light);
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -15,4 +17,16 @@
     line-height: 20px;
     letter-spacing: 0.1em;
   }
+}
+.select__item:after {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to left,
+     rgba(255,255,255, 1) 10%,
+     rgba(255,255,255, 0) 30%
+  );
+  pointer-events: none; /* so the text is still selectable */
 }

@@ -118,7 +118,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 18px;
-    // flex-direction: row;
   }
 }
 
@@ -196,8 +195,6 @@
   background: $basic-blue-light;
   width: 100%;
   background: linear-gradient(to right, rgba(29,46,91, 0.2) 25%, $basic-blue-light 25%);
-  // background: linear-gradient(to right,
-  // red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);
 
   @media (min-width: $medium-width) {
     height: 3px;
@@ -279,8 +276,6 @@
 
 .choose-companion__select{
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
-    // display: flex;
-    // align-items: center;
     display: grid;
     grid-template-columns: 1fr 5fr;
     width: 100%;
@@ -321,14 +316,6 @@
 
 .choose-companion__range-icon{
   position: relative;
-  // top: 0;
-  // width: 16px;
-  // height: 35px;
-  // stroke: $special-dark-grey;
-
-  // @media (min-width: $medium-width) {
-  //   height: 46px;
-  // }
 }
 
 .choose-companion__vertical-line{

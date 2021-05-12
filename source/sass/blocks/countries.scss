@@ -97,7 +97,7 @@
   }
 
   @media (min-resolution: 2dppx) and (min-width: $medium-width) {
-    background-image: url(../img/background-light@2x.webp);
+    background-image: url(../img/background-light-medium@2x.webp);
   }
 
   @media (min-resolution: 2dppx) and (min-width: $large-width) {
@@ -171,7 +171,6 @@
     width: 70px;
     left: 375px;
     top: 31px;
-    // margin-left: 510px;
   }
 
   @media (min-width: $large-width) {
@@ -228,7 +227,6 @@
 }
 
 .countries__photo{
-  // height: 110px;
   width: 100%;
 
   @media (min-width: $medium-width) {
@@ -244,6 +242,7 @@
 }
 
 .countries__item{
+  position: relative;
   width: 100%;
   height: 190px;
   margin-bottom: 10px;
@@ -259,6 +258,21 @@
 
   @media (min-width: $large-width) {
     min-width: 559px;
-    // max-width: 559px;
   }
+}
+
+.countries__item:last-child:after{
+  @media (min-width: $large-width) {
+    position: absolute;
+    bottom: -10px;
+    height: 81px;
+    width: 100%;
+    content: "";
+    background-image: url(../img/fade.webp);
+    pointer-events: none; /* so the text is still selectable */
+  }
+  @media (min-resolution: 2dppx) and (min-width: $large-width) {
+    background-image: url(../img/fade@2x.webp);
+  }
+
 }

@@ -157,6 +157,7 @@
 .filter__filter-country-text{
   @include text(16px, bold, 18px, $dark-blue);
   min-width: 233px;
+  margin-left: 12px;
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: none;
@@ -251,15 +252,8 @@
   @media (min-width: $large-width) {
     display: flex;
     flex-direction: column;
-    // align-items: flex-start;
   }
 }
-
-// .filter__country{
-//   @media (min-width: $large-width) {
-//     padding-left: 95px;
-//   }
-// }
 
 .filter__countries-table{
   margin-top: 21px;
@@ -375,4 +369,30 @@
   @media (min-width: $medium-width) {
     display: none;
   }
+}
+
+.filter__item{
+  @media (max-width: $small-max-width) {
+    &:not(:last-child){
+      margin-bottom: 9px;
+    }
+  }
+
+  @media (min-width: $medium-width) {
+    margin-right: 28px;
+  }
+
+  opacity: 0.3;
+
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 1;
+  }
+}
+
+.filter__item--active{
+  opacity: 1;
 }
