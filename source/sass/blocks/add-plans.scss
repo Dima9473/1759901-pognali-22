@@ -261,13 +261,13 @@
     transform: scale(1.5);
     width: 24px;
     height: 22px;
-    right: 15px;
+    right: -15px;
     top: 23px;
     --circle-fill: none;
   }
 
   @media (min-width: $large-width) {
-    right: -200px;
+    right: 3px;
   }
 
   &:hover {
@@ -280,10 +280,10 @@
 }
 
 .add-plans__remove-country-icon--selected{
-  right: -65px;
+  right: -13px;
 
   @media (min-width: $medium-width) {
-    right: -35px;
+    right: -65px;
     top: 23px;
   }
 
@@ -328,6 +328,10 @@
     width: 14px;
     height: 14px;
   }
+
+  @media (min-width: $large-width) {
+    right: 323px;
+  }
 }
 
 .add-plans__circle-icon--not-selected{
@@ -345,7 +349,7 @@
   }
 
   @media (min-width: $large-width) {
-    right: -26px;
+    right: 323px;
   }
 }
 
@@ -358,6 +362,10 @@
   @media (min-width: $medium-width) {
     right: 107px;
     top: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    right: 118px;
   }
 }
 
@@ -485,6 +493,10 @@
     right: 50px;
     border: none;
     margin-left: 52px;
+  }
+
+  @media (min-width: $large-width) {
+    right: 205px;
   }
 }
 

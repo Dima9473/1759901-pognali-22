@@ -41,6 +41,16 @@
   }
 }
 
+.step-list__item--step-2{
+  position: relative;
+  z-index: 1;
+}
+
+.step-list__item--step-3{
+  position: relative;
+  z-index: 0;
+}
+
 .step-list__header{
   display: flex;
   justify-content: space-between;
@@ -132,7 +142,7 @@
       height: 600px;
       width: 1px;
       top: -63px;
-      right: 348px;
+      right: 330px;
       background-image: linear-gradient(to bottom,#E1E3E9 80%, rgba(225,227,233,0));
     }
   }

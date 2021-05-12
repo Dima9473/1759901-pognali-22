@@ -107,7 +107,6 @@
   @media (min-width: $large-width) {
     flex-direction: column;
     align-items: flex-start;
-    // margin-top: 0;
     margin-left: auto;
   }
 }
@@ -140,11 +139,6 @@
   z-index: 1;
   padding-left: 12px;
   width: 110px;
-  // top: 130px;
-  // left: 0;
-  // right: 0;
-  // min-width: 110px;
-  // width: 100%;
 
   @media (min-width: $medium-width) {
     text-align: start;
@@ -679,8 +673,6 @@
     width: 20px;
     height: 18px;
   }
-  // height: 50px;
-  // width: 50px;
 }
 
 .companions__online-status{

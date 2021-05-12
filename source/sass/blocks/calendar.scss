@@ -1,5 +1,4 @@
 .calendar{
-    // border-collapse: collapse;
     border-spacing: 0;
 }
 
@@ -74,7 +73,6 @@
 .calendar__day--active{
   font-weight: 500;
   color: $basic-blue-light;
-  // min-height: 64px;
   border-color:$special-dark-grey;
   background-color: $basic-grey;
 
@@ -85,7 +83,6 @@
 
 .calendar__day--selected{
   background-color: $basic-blue-light;
-  // min-height: 64px;
   color: #FFFFFF;
 }
 

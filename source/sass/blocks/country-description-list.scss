@@ -90,16 +90,6 @@
   &:invalid{
     border: 1px solid #F47E7E;
   }
-
-  // &:invalid &::after{
-  //   border: 1px solid #F47E7E;
-  //   position: absolute;
-  //   content: "Это поле должно быть заполнено";
-  //   height: 2px;
-  //   background-color:orangered;
-  //   // &::after{
-  //   // }
-  // }
 }
 
 .country-description-list__change-text-invalid{

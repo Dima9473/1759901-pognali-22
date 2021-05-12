@@ -102,7 +102,7 @@
             <div class="text button__caption">АВТОРИЗАЦИЯ</div>
           </a>
         </div>
-        <div class="page-header__contact-list contact-list">
+        <div class="page-header__contact-list">
           <dl class="icon-list">
             <div class="page-header__icon icon-list__item">
               <dt class="icon-list__phone">
@@ -167,17 +167,17 @@
             <use xlink:href="img/sprite.svg#filter"></use>
           </svg>
           <span class="filter__filter-country-text text">ФИЛЬТРАЦИЯ ПО СТРАНАМ:</span>
-          <ul class="filter__continents-list continents-list">
-            <li class="continents-list__item  filter__text continents-list__item--active">
+          <ul class="filter__continents-list">
+            <li class="filter__item  filter__text filter__item--active">
               <span class="text">Европа</span>
             </li>
-            <li class="continents-list__item filter__text">
+            <li class="filter__item filter__text">
               <span class="text">Азия</span>
             </li>
-            <li class="continents-list__item filter__text">
+            <li class="filter__item filter__text">
               <span class="text">Америка</span>
             </li>
-            <li class="continents-list__item filter__text">
+            <li class="filter__item filter__text">
               <span class="text">Острова</span>
             </li>
           </ul>
@@ -208,17 +208,17 @@
         </div>
         <div class="filter__body container visually-hidden">
           <div class="filter__body-container">
-            <ul class="filter__continents-list continents-list filter__continents-list--small">
-              <li class="continents-list__item  filter__text continents-list__item--active">
+            <ul class="filter__continents-list filter__continents-list--small">
+              <li class="filter__item  filter__text filter__item--active">
                 <span class="text">Европа</span>
               </li>
-              <li class="continents-list__item filter__text">
+              <li class="filter__item filter__text">
                 <span class="text">Азия</span>
               </li>
-              <li class="continents-list__item filter__text">
+              <li class="filter__item filter__text">
                 <span class="text">Америка</span>
               </li>
-              <li class="continents-list__item filter__text">
+              <li class="filter__item filter__text">
                 <span class="text">Острова</span>
               </li>
             </ul>
@@ -1134,8 +1134,7 @@
                 <div class="companions__card card-list__card card-list--indentation">
                   <div class="card-list__preferences">
                     <div class="companions__user card-list__user">
-                      <svg class="companions__online-status card-list__offline card-list__offline--indentation"
-                        width="6" height="7">
+                      <svg class="companions__online-status card-list__offline" width="6" height="7">
                         <use xlink:href="img/sprite.svg#point"></use>
                       </svg>
                       <span class="text card-list__user-name">Таня <br class="card-list_name-br">Фирсова</span>
@@ -1305,8 +1304,7 @@
                 <div class="companions__card card-list__card card-list--indentation">
                   <div class="card-list__preferences">
                     <div class="companions__user card-list__user">
-                      <svg class="companions__online-status card-list__offline card-list__offline--indentation"
-                        width="6" height="7">
+                      <svg class="companions__online-status card-list__offline" width="6" height="7">
                         <use xlink:href="img/sprite.svg#point"></use>
                       </svg>
                       <span class="text card-list__user-name">Петя <br class="card-list_name-br">Демин</span>
@@ -1452,8 +1450,7 @@
                 <div class="companions__card card-list__card card-list--indentation">
                   <div class="card-list__preferences">
                     <div class="companions__user card-list__user">
-                      <svg class="companions__online-status card-list__offline card-list__offline--indentation"
-                        width="6" height="7">
+                      <svg class="companions__online-status card-list__offline" width="6" height="7">
                         <use xlink:href="img/sprite.svg#point"></use>
                       </svg>
                       <span class="text card-list__user-name">Марк <br class="card-list_name-br">Смолов</span>
@@ -1502,7 +1499,7 @@
                           <source
                             srcset="img/united-states-of-america-flag-small.webp 1x, img/united-states-of-america-flag-small@2x.webp 2x"
                             type="image/webp">
-                          <img class="companions__flag flags-list__icon flag"
+                          <img class="companions__flag flags-list__icon"
                             src="img/united-states-of-america-flag-small.png"
                             srcset="img/united-states-of-america-flag-small@2x.png 2x" width="226" height="30"
                             alt="Флаг США" />
@@ -1521,7 +1518,7 @@
                             type="image/png">
                           <source srcset="img/australia-flag-small.webp 1x, img/australia-flag-small@2x.webp 2x"
                             type="image/webp">
-                          <img class="companions__flag flags-list__icon flag" src="img/australia-flag-small.png"
+                          <img class="companions__flag flags-list__icon" src="img/australia-flag-small.png"
                             srcset="img/australia-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Австралии" />
                         </picture>
                         <span class="flags-list__flag-caption text">Австралия</span>
@@ -1538,7 +1535,7 @@
                             type="image/png">
                           <source srcset="img/dominica-flag-small.webp 1x, img/dominica-flag-small@2x.webp 2x"
                             type="image/webp">
-                          <img class="companions__flag flags-list__icon flag" src="img/dominica-flag-small.png"
+                          <img class="companions__flag flags-list__icon" src="img/dominica-flag-small.png"
                             srcset="img/dominica-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Доминиканы" />
                         </picture>
                         <span class="flags-list__flag-caption text">Доминикана</span>
@@ -1624,8 +1621,7 @@
                 <div class="companions__card card-list__card card-list--indentation">
                   <div class="card-list__preferences">
                     <div class="companions__user card-list__user">
-                      <svg class="companions__online-status card-list__online card-list__offline--indentation" width="6"
-                        height="7">
+                      <svg class="companions__online-status card-list__online" width="6" height="7">
                         <use xlink:href="img/sprite.svg#point"></use>
                       </svg>
                       <span class="text card-list__user-name">Лариса <br class="card-list_name-br">Роговая</span>
@@ -1671,7 +1667,7 @@
                           <source
                             srcset="img/united-kingdom-flag-small.webp 1x, img/united-kingdom-flag-small@2x.webp 2x"
                             type="image/webp">
-                          <img class="companions__flag flags-list__icon flag" src="img/united-kingdom-flag-small.png"
+                          <img class="companions__flag flags-list__icon" src="img/united-kingdom-flag-small.png"
                             srcset="img/united-kingdom-flag-small@2x.png 2x" width="226" height="30"
                             alt="Флаг Великобринании" />
                         </picture>
@@ -1688,7 +1684,7 @@
                             srcset="img/germany-flag-medium.png 1x, img/germany-flag-medium@2x.png 2x" type="image/png">
                           <source srcset="img/germany-flag-small.webp 1x, img/germany-flag-small@2x.webp 2x"
                             type="image/webp">
-                          <img class="companions__flag flags-list__icon flag" src="img/germany-flag-small.png"
+                          <img class="companions__flag flags-list__icon" src="img/germany-flag-small.png"
                             srcset="img/germany-flag-small@2x.png 2x" width="226" height="30" alt="Флаг Германии" />
                         </picture>
                         <span class="flags-list__flag-caption text">Германия</span>
