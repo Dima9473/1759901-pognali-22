@@ -11,6 +11,19 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Погнали!</title>
+  <script>
+    function initMap() {
+      const stPetersburg = { lat: 59.938717, lng: 30.323047 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: stPetersburg,
+      });
+      const marker = new google.maps.Marker({
+        position: stPetersburg,
+        map: map,
+      });
+    }
+  </script>
 </head>
 
 <body class="text">
@@ -843,7 +856,7 @@
             </div>
           </dl>
           <a class="contacts__build-way button button--arrow"
-            href="https://www.google.ru/maps/dir/Метро+Невский+проспект,+Санкт-Петербург/Гостиный+двор,+Санкт-Петербург/@59.9348641,30.3271575,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4696310f60221711:0xa5ce218c14da9409!2m2!1d30.3248929!2d59.935386!1m5!1m1!1s0x469631087d4b02dd:0x52698ac282b242bd!2m2!1d30.3305639!2d59.9342471!3e3">
+            href="https://www.google.ru/maps/dir/Большая+Конюшенная+улица,+19%2F8,+Санкт-Петербург/Гостиный+двор,+Санкт-Петербург/@59.9364817,30.3235009,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!1m5!1m1!1s0x469631087d4b02dd:0x52698ac282b242bd!2m2!1d30.3305639!2d59.9342471!3e3">
             <span
               class="contacts__wat-text text button__caption button__caption--light button__caption--padding-left">Проложить
               маршрут</span>
@@ -853,9 +866,7 @@
           </a>
         </div>
       </header>
-      <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d800.8900759686541!2d30.323383279134678!3d59.93576766670703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m5!1s0x4696310f60221711%3A0xa5ce218c14da9409!2z0JzQtdGC0YDQviDQndC10LLRgdC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsw!3m2!1d59.935385999999994!2d30.3248929!4m0!5e0!3m2!1sru!2sru!4v1620883081499!5m2!1sru!2sru"
-        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div id="map" class="contacts__map"></div>
     </section>
   </main>
   <footer class="page-footer">
@@ -941,6 +952,9 @@
     </button>
   </div>
   <script src="js/script.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARAJB8dffcQ1-dingU-PWyQ4f_ipEtu00&callback=initMap&libraries=&v=weekly"
+    async></script>
 </body>
 
 </html>
