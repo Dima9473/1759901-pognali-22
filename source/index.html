@@ -9,6 +9,21 @@
   <title>Погнали!</title>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ebb1ba2b-9091-4db5-838b-28c6ee995cd1&lang=ru_RU"
     type="text/javascript" rel="preload" as="script"></script>
+
+  <script>
+    ymaps.ready(init);
+    function init() {
+      const centrCoordinates = [59.93743991554876, 30.324340587310726];
+      const pointerCoordinates = [59.938717, 30.323047];
+      var myMap = new ymaps.Map("map", {
+        center: centrCoordinates,
+        zoom: 16,
+        controls: []
+      });
+      var myPlacemark = new ymaps.Placemark(pointerCoordinates);
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
 </head>
 
 <body class="text">
