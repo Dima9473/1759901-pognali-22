@@ -25,7 +25,7 @@
   }
 }
 
-.page-footer__logo{
+.page-footer__developed-logo{
   width: 27px;
   height: 33px;
 
@@ -98,4 +98,10 @@
     width: 200px;
     height: 55px;
   }
+}
+
+.page-footer__link{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

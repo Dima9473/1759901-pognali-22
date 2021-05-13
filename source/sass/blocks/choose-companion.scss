@@ -195,11 +195,15 @@
   height: 2px;
   background: $basic-blue-light;
   width: 100%;
-  background: linear-gradient(to right, rgba(29,46,91, 0.2) 25%, $basic-blue-light 25%);
+  background: linear-gradient(to right, rgba(29,46,91, 0.2) 35%, $basic-blue-light 35%);
 
   @media (min-width: $medium-width) {
     height: 3px;
     border-radius: 2px;
+  }
+
+  @media (min-width: $large-width) {
+    background: linear-gradient(to right, rgba(29,46,91, 0.2) 25%, $basic-blue-light 25%);
   }
 }
 
