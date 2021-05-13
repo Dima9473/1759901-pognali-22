@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html class="page page--index" lang="ru">
 
-<!-- TODO
-  1. reset background-position for promo
--->
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Погнали!</title>
-  <script>
-    function initMap() {
-      const stPetersburg = { lat: 59.938717, lng: 30.323047 };
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: stPetersburg,
-      });
-      const marker = new google.maps.Marker({
-        position: stPetersburg,
-        map: map,
-      });
-    }
-  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ebb1ba2b-9091-4db5-838b-28c6ee995cd1&lang=ru_RU"
+    type="text/javascript" rel="preload" as="script"></script>
 </head>
 
 <body class="text">
@@ -867,6 +852,7 @@
         </div>
       </header>
       <div id="map" class="contacts__map"></div>
+      <!-- <div id="map" class="contacts__map"></div> -->
     </section>
   </main>
   <footer class="page-footer">
@@ -952,9 +938,6 @@
     </button>
   </div>
   <script src="js/script.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARAJB8dffcQ1-dingU-PWyQ4f_ipEtu00&callback=initMap&libraries=&v=weekly"
-    async></script>
 </body>
 
 </html>

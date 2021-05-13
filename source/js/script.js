@@ -1,3 +1,17 @@
+//Map initialisation
+ymaps.ready(init);
+function init() {
+  const centrCoordinates = [59.93743991554876, 30.324340587310726];
+  const pointerCoordinates = [59.938717, 30.323047];
+  var myMap = new ymaps.Map("map", {
+    center: centrCoordinates,
+    zoom: 16,
+    controls: []
+  });
+  var myPlacemark = new ymaps.Placemark(pointerCoordinates);
+  myMap.geoObjects.add(myPlacemark);
+}
+
 //Navigation actions
 let navMain = document.querySelector('.main-menu');
 let navToggle = document.querySelector('.menu__toggle');
