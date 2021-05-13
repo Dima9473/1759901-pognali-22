@@ -44,3 +44,13 @@
     opacity: 1;
   }
 }
+
+.social-list__icon{
+  &:hover{
+    opacity: 0.6;
+  }
+
+  &:active, &:focus{
+    opacity: 0.3;
+  }
+}

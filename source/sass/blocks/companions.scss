@@ -159,7 +159,7 @@
   right: 0;
 
   @media (min-width: $medium-width) {
-    top: 258px;
+    top: 306px;
     left: -225px;
   }
 
@@ -555,17 +555,6 @@
   }
 }
 
-.companions__vertical-line{
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  stroke: #EDEFF6;
-
-  @media (min-width: $medium-width) {
-    display: none;
-  }
-}
-
 .companions__level{
   @media (min-width: $medium-width) {
     margin-top: 10px;
@@ -704,5 +693,18 @@
   @media (min-width: $large-width) {
     width: 19px;
     height: 20px;
+  }
+}
+
+.companions__vertical-line{
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  width: 1px;
+  height: 51px;
+  background-color: $basic-grey;
+
+  @media (min-width: $medium-width) {
+    display: none;
   }
 }

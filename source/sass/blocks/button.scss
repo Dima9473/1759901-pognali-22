@@ -85,7 +85,7 @@
   color: $basic-blue-light;
 }
 
-.button__caption--small{
+.button__caption-small{
   @include text(16px, bold, 16px, #132576);
 }
 
@@ -114,7 +114,7 @@
   }
 }
 
-.button--padding-left{
+.button__caption--padding-left{
   margin-left: 22px;
 
   @media (min-width: $medium-width) {
@@ -122,7 +122,7 @@
   }
 }
 
-.button--padding-right{
+.button__icon--padding-right{
   margin-right: 22px;
 
   @media (min-width: $medium-width) {

@@ -97,6 +97,10 @@
 .card-list__user-name{
   @include text(21px, bold, 21px, $basic-blue-light);
   text-align: start;
+  @media (max-width: $small-max-width) {
+    max-width: 85px;
+  }
+
   @media (min-width: $medium-width) {
     min-width: 150px;
     font-size: 24px;
@@ -231,12 +235,6 @@
 .card-list__flags-order{
   @media (min-width: $medium-width) {
     order: 2;
-  }
-}
-
-.card-list_name-br{
-  @media (min-width: $medium-width) {
-    display: none;
   }
 }
 

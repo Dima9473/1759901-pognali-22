@@ -89,6 +89,8 @@
 }
 
 .users__level{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 17px;
   left: 16px;
@@ -465,7 +467,7 @@
 
 .users__flag-tooltip-1{
   &:hover{
-    .users__flag-tooltip-1--visible{
+    .users__flag-text-1-visible{
       display: block;
     }
   }
@@ -480,13 +482,13 @@
   }
 }
 
-.users__flag-tooltip-1--visible {
+.users__flag-text-1-visible {
   display: none;
 }
 
 .users__flag-tooltip-2{
   &:hover{
-    .users__flag-tooltip-2--visible{
+    .users__flag-tooltip-2-visible{
       display: block;
     }
   }
@@ -501,13 +503,13 @@
   }
 }
 
-.users__flag-tooltip-2--visible {
+.users__flag-tooltip-2-visible {
   display: none;
 }
 
 .users__flag-tooltip-3{
   &:hover{
-    .users__flag-tooltip-3--visible{
+    .users__flag-tooltip-3-visible{
       display: block;
     }
   }
@@ -522,7 +524,7 @@
   }
 }
 
-.users__flag-tooltip-3--visible {
+.users__flag-tooltip-3-visible {
   display: none;
 }
 
@@ -543,7 +545,7 @@
   }
 }
 
-.users__flag-tooltip-4--visible {
+.users__flag-tooltip-4-visible {
   display: none;
 }
 
@@ -564,7 +566,7 @@
   }
 }
 
-.users__flag-tooltip-5--visible {
+.users__flag-tooltip-5-visible {
   display: none;
 }
 

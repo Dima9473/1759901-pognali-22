@@ -130,21 +130,21 @@
         </dl>
         <ul class="page-header__social-list social-list">
           <li class="social-list__item">
-            <a class="icon icon__social" href="https://www.facebook.com/htmlacademy">
+            <a class="icon social-list__icon" href="https://www.facebook.com/htmlacademy">
               <svg class="social-list__facebook" width="11" height="21">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="icon icon__social" href="https://vk.com/htmlacademy">
+            <a class="icon social-list__icon" href="https://vk.com/htmlacademy">
               <svg class="social-list__vk" width="23" height="12">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="icon icon__social" href="https://www.instagram.com/htmlacademy">
+            <a class="icon social-list__icon" href="https://www.instagram.com/htmlacademy">
               <svg class="social-list__instagramm" width="18" height="18">
                 <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
@@ -216,13 +216,14 @@
         </div>
       </div>
     </section>
-    <div class="promo__menu menu">
-      <div class="promo__menu-container container">
+    <section class="middle-menu menu">
+      <h2 class="visually-hidden">Центральное меню</h2>
+      <div class="middle-menu__container container">
         <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--visible">
           <picture>
             <source srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x" type="image/webp">
-            <img class="promo__logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x" width="226"
-              height="30" alt="Логотип" />
+            <img class="middle-menu__logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x"
+              width="226" height="30" alt="Логотип" />
           </picture>
         </a>
         <a class="menu__toggle menu__toggle--hidden">
@@ -249,11 +250,11 @@
             </li>
           </ul>
         </nav>
-        <div class="promo__menu-actions menu__actions promo__menu-actions--visible visually-hidden">
-          <ul class="menu__list menu__list--row promo__menu-actions--visible icon-list">
+        <div class="middle-menu__actions menu__actions middle-menu__actions--visible visually-hidden">
+          <ul class="menu__list menu__list--row icon-list">
             <li class="icon-list__item icon-list__item--stuck">
               <a class="icon-list__link">
-                <svg class="promo__icon icon icon--dark-blue icon--middle-background icon--background-padding"
+                <svg class="middle-menu__icon icon icon--dark-blue icon--middle-background icon--background-padding"
                   width="19" height="19">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
@@ -261,19 +262,19 @@
             </li>
             <li class=" icon-list__item icon-list__item--stuck">
               <a class="icon-list__link">
-                <svg class="promo__icon icon icon--dark-blue icon--dark-background icon--background-padding" width="17"
-                  height="14">
+                <svg class="middle-menu__icon icon icon--dark-blue icon--dark-background icon--background-padding"
+                  width="17" height="14">
                   <use xlink:href="img/sprite.svg#mail"></use>
                 </svg>
               </a>
             </li>
           </ul>
           <a class="button button--authorization" href="authorization.html">
-            <div class="promo__button-authorization text button__caption">АВТОРИЗАЦИЯ</div>
+            <div class="middle-menu__authorization text button__caption">АВТОРИЗАЦИЯ</div>
           </a>
         </div>
       </div>
-    </div>
+    </section>
     <section class="about">
       <div class="container">
         <div class="about__container">
@@ -283,7 +284,7 @@
             и
             черпайте вдохновение в чужих.
           </p>
-          <p class="about__description about--travel text text--default">
+          <p class="about__description about__description--travel text text--default">
             А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
           <button class="about__details button button--arrow">
@@ -329,7 +330,7 @@
                       srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list">
+                    <dl class="countries__visits visits-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Тайланд
@@ -340,10 +341,10 @@
                       </div>
                     </dl>
                     <div class="countries__visists-count">
-                      <svg class="visits-list__user-icon" width="14" height="14">
+                      <svg class="countries__user-icon" width="14" height="14">
                         <use xlink:href="img/sprite.svg#man"></use>
                       </svg>
-                      <small class="text visits-list__count">18321</small>
+                      <small class="text countries__count">18321</small>
                     </div>
                   </div>
                 </div>
@@ -371,7 +372,7 @@
                       srcset="img/france-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Франции" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list">
+                    <dl class="countries__visits visits-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Франция
@@ -382,10 +383,10 @@
                       </div>
                     </dl>
                     <div class="countries__visists-count">
-                      <svg class="visits-list__user-icon" width="14" height="14">
+                      <svg class="countries__user-icon" width="14" height="14">
                         <use xlink:href="img/sprite.svg#man"></use>
                       </svg>
-                      <small class="text visits-list__count">12518</small>
+                      <small class="text countries__count">12518</small>
                     </div>
                   </div>
                 </div>
@@ -413,7 +414,7 @@
                       srcset="img/czech-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Чехии" />
                   </picture>
                   <div class="countries__description">
-                    <dl class="countries__visits card-list">
+                    <dl class="countries__visits visits-list">
                       <div class="visits-list__item">
                         <dt class="text visits-list__country">
                           Чехия
@@ -424,10 +425,10 @@
                       </div>
                     </dl>
                     <div class="countries__visists-count">
-                      <svg class="visits-list__user-icon" width="14" height="14">
+                      <svg class="countries__user-icon" width="14" height="14">
                         <use xlink:href="img/sprite.svg#man"></use>
                       </svg>
-                      <small class="text visits-list__count">5326</small>
+                      <small class="text countries__count">5326</small>
                     </div>
                   </div>
                 </div>
@@ -436,8 +437,8 @@
           </ul>
         </div>
         <a class="countries__all-countries button button--arrow" href="directions.html">
-          <span class="button__caption button--padding-left">Показать все</span>
-          <svg class="button__icon button--padding-right" width="11" height="12">
+          <span class="button__caption button__caption--padding-left">Показать все</span>
+          <svg class="button__icon button__icon--padding-right" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>
         </a>
@@ -473,7 +474,7 @@
                   <img class="users__photo" src="img/tanya-photo.png" srcset="img/tanya-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Тани Фирсовой" />
                 </picture>
-                <div class="users__level general-info__level">
+                <div class="users__level general-info">
                   <svg class="general-info__level-icon" width="60" height="60">
                     <use xlink:href="img/sprite.svg#level-99"></use>
                   </svg>
@@ -493,7 +494,7 @@
                         <img class="users__flag" src="img/seychelles-flag-small.png"
                           srcset="img/seychelles-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Сейшилы" />
                       </picture>
-                      <div class="users__flag-tooltip-1-position users__flag-tooltip-1--visible tooltip text">
+                      <div class="users__flag-tooltip-1-position users__flag-text-1-visible tooltip text">
                         Сейшилы
                       </div>
                     </li>
@@ -509,7 +510,7 @@
                         <img class="users__flag" src="img/thailand-flag-small.png"
                           srcset="img/thailand-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Тайланда" />
                       </picture>
-                      <div class="users__flag-tooltip-2-position users__flag-tooltip-2--visible tooltip text">
+                      <div class="users__flag-tooltip-2-position users__flag-tooltip-2-visible tooltip text">
                         Тайланд
                       </div>
                     </li>
@@ -526,7 +527,7 @@
                         <img class="users__flag" src="img/sri-lanka-flag-small.png"
                           srcset="img/sri-lanka-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Шри-Ланки" />
                       </picture>
-                      <div class="users__flag-tooltip-3-position users__flag-tooltip-3--visible tooltip text">
+                      <div class="users__flag-tooltip-3-position users__flag-tooltip-3-visible tooltip text">
                         Шри-Ланка
                       </div>
                     </li>
@@ -613,7 +614,7 @@
                   <img class="users__photo" src="img/demin-photo.png" srcset="img/demin-photo@2x.png 2x" width="226"
                     height="30" alt="Фото Петра Демина" />
                 </picture>
-                <div class="users__level general-info__level">
+                <div class="users__level general-info">
                   <svg class="general-info__level-icon" width="60" height="60">
                     <use xlink:href="img/sprite.svg#level-88"></use>
                   </svg>
@@ -632,7 +633,7 @@
                         <img class="users__flag" src="img/belgium-flag-small.png"
                           srcset="img/belgium-flag-small@2x.png 2x" width="35" height="24" alt="Флаг Бельгии" />
                       </picture>
-                      <div class="users__flag-tooltip-4-position users__flag-tooltip-4--visible tooltip text">
+                      <div class="users__flag-tooltip-4-position users__flag-tooltip-4-visible tooltip text">
                         Бельгия
                       </div>
                     </li>
@@ -647,7 +648,7 @@
                         <img class="users__flag" src="img/czech-flag-small.png" srcset="img/czech-flag-small@2x.png 2x"
                           width="35" height="24" alt="Флаг Чехии" />
                       </picture>
-                      <div class="users__flag-tooltip-5-position users__flag-tooltip-5--visible tooltip text">
+                      <div class="users__flag-tooltip-5-position users__flag-tooltip-5-visible tooltip text">
                         Чехия
                       </div>
                     </li>
@@ -719,8 +720,8 @@
           </ul>
         </div>
         <a class="users__all button button--arrow" href="companions.html">
-          <span class="button__caption button--padding-left">Показать всех</span>
-          <svg class="button__icon button--padding-right" width="11" height="12">
+          <span class="button__caption button__caption--padding-left">Показать всех</span>
+          <svg class="button__icon button__icon--padding-right" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>
         </a>
@@ -740,11 +741,11 @@
                 class="profile__price-digital icon icon--background-padding icon--middle-background text text--default">
                 1
               </div>
-              <span class="profile__price-name text information-list__description--small">
+              <span class="profile__price-name text information-list__description-small">
                 Базовое размещение
               </span>
             </div>
-            <span class="text information-list__description--small">
+            <span class="text information-list__description-small">
               бесплатно
             </span>
           </li>
@@ -752,10 +753,10 @@
             <div class="profile__price">
               <span
                 class="profile__price-digital icon icon--background-padding icon--dark-background text text--default">2</span>
-              <span class="profile__price-name text information-list__description--small">Вывод на первых
+              <span class="profile__price-name text information-list__description-small">Вывод на первых
                 позициях</span>
             </div>
-            <span class="text information-list__description--small">
+            <span class="text information-list__description-small">
               99 руб./мес
             </span>
           </li>
@@ -763,10 +764,10 @@
             <div class="profile__price">
               <span
                 class="profile__price-digital icon icon--background-padding icon--main-background text text--default">3</span>
-              <span class="profile__price-name text information-list__description--small">Кастомный цвет карточки
+              <span class="profile__price-name text information-list__description-small">Кастомный цвет карточки
               </span>
             </div>
-            <span class="text information-list__description--small">
+            <span class="text information-list__description-small">
               59 руб./мес
             </span>
           </li>
@@ -776,7 +777,7 @@
             <svg class="profile__tarif-icon icon icon--background-padding icon--grey-background" width="28" height="28">
               <use xlink:href="img/sprite.svg#businessman"></use>
             </svg>
-            <span class="profile__tariffs-text text button__caption--small">Показать тарифы для бизнеса</span>
+            <span class="profile__tariffs-text text button__caption-small">Показать тарифы для бизнеса</span>
           </div>
         </a>
       </div>
@@ -843,9 +844,10 @@
           </dl>
           <a class="contacts__build-way button button--arrow"
             href="https://www.google.ru/maps/dir/Метро+Невский+проспект,+Санкт-Петербург/Гостиный+двор,+Санкт-Петербург/@59.9348641,30.3271575,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4696310f60221711:0xa5ce218c14da9409!2m2!1d30.3248929!2d59.935386!1m5!1m1!1s0x469631087d4b02dd:0x52698ac282b242bd!2m2!1d30.3305639!2d59.9342471!3e3">
-            <span class="contacts__wat-text text button__caption button__caption--light button--padding-left">Проложить
+            <span
+              class="contacts__wat-text text button__caption button__caption--light button__caption--padding-left">Проложить
               маршрут</span>
-            <svg class="button__icon button--padding-right" width="11" height="12">
+            <svg class="button__icon button__icon--padding-right" width="11" height="12">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
           </a>
@@ -870,29 +872,33 @@
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.png 1x, img/logo-medium-dark@2x.png 2x"
             type="image/png">
           <source srcset="img/logo-mobile-dark.webp 1x, img/logo-mobile-dark@2x.webp 2x" type="image/webp">
-          <img class="page-fotter__logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
+          <img class="page-footer__logo" src="img/logo-mobile-dark.png" srcset="img/logo-mobile-dark@2x.png 2x"
             width="226" height="30" alt="Логотип" />
         </picture>
       </a>
       <ul class="page-footer__socials social-list">
         <li class="page-footer__social-item social-list__item">
-          <a class="icon icon--dark-blue" href="https://www.facebook.com/htmlacademy">
-            <svg class="page-fotter__icon icon icon--background-padding icon--main-background" width="20" height="20">
+          <a class="link" href="https://www.facebook.com/htmlacademy">
+            <svg
+              class="icon icon--dark-blue icon--footer-background-padding icon--background-padding icon--main-background"
+              width="20" height="20">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item social-list__item">
-          <a class="icon icon--dark-blue" href="https://vk.com/htmlacademy">
-            <svg class="page-fotter__icon icon icon--background-padding icon--dark-blue icon--main-background"
+          <a class="link" href="https://vk.com/htmlacademy">
+            <svg
+              class="icon icon--footer-background-padding icon--background-padding icon--dark-blue icon--main-background"
               width="20" height="20">
               <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item social-list__item">
-          <a class="icon icon--dark-blue" href="https://www.instagram.com/htmlacademy">
-            <svg class="page-fotter__icon icon--background-padding icon--main-background" width="20" height="20">
+          <a class="ilink" href="https://www.instagram.com/htmlacademy">
+            <svg class="icon icon--footer-background-padding icon--background-padding icon--main-background" width="20"
+              height="20">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
@@ -908,7 +914,7 @@
       </div>
     </div>
   </footer>
-  <div class="profile__business-tariffs business-tariffs visually-hidden">
+  <div class="business-tariffs visually-hidden">
     <div class="business-tariffs__container container">
       <span class="business-tariffs__caption text">Бизнес-тарифы</span>
       <ul class="business-tariffs__list">

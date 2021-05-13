@@ -276,3 +276,12 @@
   }
 
 }
+
+.countries__user-icon{
+  opacity: 0.1;
+}
+
+.countries__count{
+  @include text(16px, 500, 18px, $special-grey);
+  opacity: 0.3;
+}

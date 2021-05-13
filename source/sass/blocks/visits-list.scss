@@ -1,12 +1,16 @@
+.visits-list{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .visits-list__item{
   display: flex;
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
-}
-
-.visits-list__user-icon{
-  opacity: 0.1;
 }
 
 .visits-list__country{
@@ -26,9 +30,4 @@
   @media (min-width: $large-width) {
     min-width: 170px;
   }
-}
-
-.visits-list__count{
-  @include text(16px, 500, 18px, $special-grey);
-  opacity: 0.3;
 }

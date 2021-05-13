@@ -14,8 +14,10 @@
 }
 
 .filter--opened{
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  @media (max-width: $medium-max-width) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .filter__container{
@@ -67,6 +69,7 @@
   }
 
   @media (min-width: $large-width) {
+    position: static;
     padding-top: 74px;
     padding-left: 57px;
     padding-right: 63px;

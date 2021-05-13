@@ -265,7 +265,7 @@ const onSelectClose = (e, selectCountry, selectText, openIcon, circleIcon, close
 
 //Tariffs actions
 let tariffs = document.querySelector('.profile__business-tariffs-button');
-let tariffsList = document.querySelector('.profile__business-tariffs');
+let tariffsList = document.querySelector('.business-tariffs');
 let closeButton = document.querySelector('.business-tariffs__close');
 
 
