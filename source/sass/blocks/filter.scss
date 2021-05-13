@@ -253,15 +253,6 @@
   }
 }
 
-.filter__countries--large{
-  display: none;
-
-  @media (min-width: $large-width) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .filter__countries-table{
   margin-top: 21px;
   background-color: #ffffff;

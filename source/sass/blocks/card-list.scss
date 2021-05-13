@@ -6,10 +6,6 @@
   justify-content: center;
 }
 
-.card-list--inline{
-  display: flex;
-}
-
 .card-list__flags{
   padding-inline-start: 0;
 }
@@ -31,26 +27,8 @@
   }
 }
 
-.card-list--indentation{
-  padding-top: 15px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $medium-width) {
-    padding-top: 35px;
-    padding-bottom: 25px;
-    padding-left: 35px;
-    padding-right: 25px;
-  }
-
-  @media (min-width: $large-width) {
-    margin-left: 60px;;
-    padding-top: 35px;
-    padding-bottom: 25px;
-    padding-left: 0;
-    padding-right: 25px;
-  }
+.card-list__item--inline{
+  display: flex;
 }
 
 .card-list__photo{
@@ -205,6 +183,28 @@
 
   @media (min-width: $medium-width) {
     flex-direction: row;
+  }
+}
+
+.card-list__card--indentation{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $medium-width) {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 60px;;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 25px;
   }
 }
 

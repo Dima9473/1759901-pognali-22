@@ -127,13 +127,13 @@
   }
 }
 
-.choose-compnion__level{
+.choose-companion__level{
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     display: flex;
   }
 }
 
-.choose-compnion__level-range{
+.choose-companion__level-range{
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -154,7 +154,7 @@
   }
 }
 
-.choose-compnion__range{
+.choose-companion__range{
   position: relative;
   display: flex;
   align-items: center;
@@ -203,7 +203,7 @@
   }
 }
 
-.choose-compnion__range-value{
+.choose-companion__range-value{
   @include text(14px, 500, 13px, $basic-blue-light);
   letter-spacing: 0.06em;
 }
