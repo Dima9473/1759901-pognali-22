@@ -98,7 +98,7 @@
 
 .feedback__email{
   height: 62px;
-  width: 74%;
+  width: 71%;
   padding-right: 65px;
   border-radius: 20px;
   @include text(18px, bold, 18px, $special-grey);
@@ -154,14 +154,15 @@
 .feedback__send-email{
   display: inline-block;
   border-radius: 20px;
-  margin-left: -61px;
+  margin-left: -65px;
   width: 60px;
   height: 65px;
 
   @media (min-width: $medium-width) {
     margin-left: -84px;
     width: 80px;
-    height: 84px;
+    height: 83px;
+    padding-top: 4px;
   }
 }
 
