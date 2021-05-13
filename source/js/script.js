@@ -1,3 +1,62 @@
+//Navigation actions
+let navMain = document.querySelector('.main-menu');
+let navToggle = document.querySelector('.menu__toggle');
+let pageHeader = document.querySelector('.page-header');
+let logo = document.querySelector('.menu__logo-mobile');
+let logoDark = document.querySelector('.menu__logo-mobile-dark');
+let closButton = document.querySelector('.menu__close-icon');
+let openButton = document.querySelector('.menu__open-icon');
+let promoActions = document.querySelector('.menu__actions');
+let underline = document.querySelector('.page-header__underline');
+
+navToggle?.addEventListener('click', () => {
+  if (navMain.classList.contains('main-menu--closed')) {
+    onNavigationOpen();
+  } else {
+    onNavigationClosed();
+  }
+});
+
+const onNavigationOpen = () => {
+  navMain.classList.remove('main-menu--closed');
+  navMain.classList.add('main-menu--opened');
+  pageHeader.classList.add('page-header--menu-opened');
+  logoDark.classList.remove('visually-hidden');
+  logo.classList.add('visually-hidden');
+  closButton.classList.remove('visually-hidden');
+  openButton.classList.add('visually-hidden');
+  if (promoActions) {
+    promoActions.classList.add('visually-hidden');
+  }
+  if (underline) {
+    underline.classList.add('visually-hidden');
+  }
+}
+
+const onNavigationClosed = () => {
+  navMain.classList.add('main-menu--closed');
+  navMain.classList.remove('main-menu--opened');
+  pageHeader.classList.remove('page-header--menu-opened');
+  logoDark.classList.add('visually-hidden');
+  logo.classList.remove('visually-hidden');
+  closButton.classList.add('visually-hidden')
+  openButton.classList.remove('visually-hidden');
+  if (promoActions) {
+    promoActions.classList.remove('visually-hidden');
+  }
+
+  if (underline) {
+    underline.classList.remove('visually-hidden');
+  }
+}
+
+const enableMenuJs = () => {
+  navMain?.classList.remove('main-menu--without-js');
+  onNavigationClosed();
+}
+
+enableMenuJs();
+
 //Checkbox actions
 let hobbyCheckboxeToggle1 = document.querySelector('.choose-companion__search-params-toggle-1');
 let hobbyCheckboxes1 = document.querySelector('.choose-companion__search-params-1');
@@ -70,7 +129,6 @@ let filterShowAll = document.querySelector('.filter__show-all');
 let filterBody = document.querySelector('.filter__body');
 const mediumMaxWidth = 1439;
 
-
 filterToggleButton?.addEventListener('click', () => {
   if (filterBody.classList.contains('visually-hidden')) {
     onFilterOpen();
@@ -109,57 +167,15 @@ const onFilterClose = () => {
   }
 }
 
-//Navigation actions
-let navMain = document.querySelector('.main-menu');
-let navToggle = document.querySelector('.menu__toggle');
-let pageHeader = document.querySelector('.page-header');
-let logo = document.querySelector('.menu__logo-mobile');
-let logoDark = document.querySelector('.menu__logo-mobile-dark');
-let closButton = document.querySelector('.menu__close-icon');
-let openButton = document.querySelector('.menu__open-icon');
-let promoActions = document.querySelector('.menu__actions');
-let underline = document.querySelector('.page-header__underline');
+const enableFilterJs = () => {
+  if (!filterBody) return;
 
-navToggle?.addEventListener('click', () => {
-  if (navMain.classList.contains('main-menu--closed')) {
-    onNavigationOpen();
-  } else {
-    onNavigationClosed();
-  }
-});
-
-const onNavigationOpen = () => {
-  navMain.classList.remove('main-menu--closed');
-  navMain.classList.add('main-menu--opened');
-  pageHeader.classList.add('page-header--menu-opened');
-  logoDark.classList.remove('visually-hidden');
-  logo.classList.add('visually-hidden');
-  closButton.classList.remove('visually-hidden');
-  openButton.classList.add('visually-hidden');
-  if (promoActions) {
-    promoActions.classList.add('visually-hidden');
-  }
-  if (underline) {
-    underline.classList.add('visually-hidden');
-  }
+  filterClose.classList.remove('filter__close--without-js');
+  filterBody.classList.remove('filter__body--without-js');
+  onFilterClose();
 }
 
-const onNavigationClosed = () => {
-  navMain.classList.add('main-menu--closed');
-  navMain.classList.remove('main-menu--opened');
-  pageHeader.classList.remove('page-header--menu-opened');
-  logoDark.classList.add('visually-hidden');
-  logo.classList.remove('visually-hidden');
-  closButton.classList.add('visually-hidden')
-  openButton.classList.remove('visually-hidden');
-  if (promoActions) {
-    promoActions.classList.remove('visually-hidden');
-  }
-
-  if (underline) {
-    underline.classList.remove('visually-hidden');
-  }
-}
+enableFilterJs();
 
 //Select actions
 let selectCountry1 = document.querySelector('.add-plans__select-country--1');

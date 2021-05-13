@@ -14,6 +14,14 @@
 
 .main-menu--opened{
   display: flex;
+
+  @media (min-width: $large-width) {
+    display: none;
+  }
+}
+
+.main-menu--without-js{
+  position: static;
 }
 
 .main-menu--closed{

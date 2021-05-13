@@ -15,6 +15,8 @@
 }
 
 .contacts__header{
+  position: relative;
+  z-index: 1;
   background-color: $basic-yellow;
   margin-top: -50px;
   padding-top: 50px;
@@ -96,17 +98,20 @@
 
 .contacts__map{
   width: 100%;
+  min-height: 424px;
   margin-top: -50px;
   padding-top: 30px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-width: $medium-width) {
+    min-height: 581px;
     margin-top: -120px;
     padding-top: 65px;
   }
 
   @media (min-width: $large-width) {
+    margin-top: -90px;
     min-height: 584px;
   }
 }

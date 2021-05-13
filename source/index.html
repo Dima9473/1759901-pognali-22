@@ -13,10 +13,10 @@
   <title>Погнали!</title>
 </head>
 
-<body>
-  <header class="page-header">
+<body class="text">
+  <header class="page-header page-header--menu-opened">
     <div class="container page-header__menu  menu">
-      <a href="#" class="menu__logo-mobile">
+      <a href="#" class="menu__logo-mobile visually-hidden">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x" type="image/png">
@@ -29,7 +29,7 @@
             height="30" alt="Логотип" />
         </picture>
       </a>
-      <a href="#" class="menu__logo-mobile-dark visually-hidden">
+      <a href="#" class="menu__logo-mobile-dark">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
             type="image/webp">
@@ -41,7 +41,7 @@
         </picture>
       </a>
       <a class="menu__toggle">
-        <svg class="page-header__open-icon menu__open-icon icon icon--light" width="25" height="11">
+        <svg class="page-header__open-icon menu__open-icon icon icon--light visually-hidden" width="25" height="11">
           <use xlink:href="img/sprite.svg#menu-toggle-open"></use>
         </svg>
         <svg class="menu__close-icon visually-hidden" width="14" height="14">
@@ -86,7 +86,7 @@
         </a>
       </div>
     </div>
-    <div class="main-menu main-menu--closed">
+    <div class="main-menu main-menu--opened main-menu--without-js">
       <nav class="main-menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -249,7 +249,7 @@
             </li>
           </ul>
         </nav>
-        <div class="promo__menu-actions menu__actions promo__menu-actions--visible">
+        <div class="promo__menu-actions menu__actions promo__menu-actions--visible visually-hidden">
           <ul class="menu__list menu__list--row promo__menu-actions--visible icon-list">
             <li class="icon-list__item icon-list__item--stuck">
               <a class="icon-list__link">
@@ -435,7 +435,7 @@
             </li>
           </ul>
         </div>
-        <a class="countries__all-countries button button--arrow" href="allcountries.html">
+        <a class="countries__all-countries button button--arrow" href="directions.html">
           <span class="button__caption button--padding-left">Показать все</span>
           <svg class="button__icon button--padding-right" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
@@ -718,7 +718,7 @@
             </li>
           </ul>
         </div>
-        <a class="users__all button button--arrow" href="allcountries.html">
+        <a class="users__all button button--arrow" href="companions.html">
           <span class="button__caption button--padding-left">Показать всех</span>
           <svg class="button__icon button--padding-right" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
@@ -787,7 +787,7 @@
           <h2 class="feedback__caption text text--caption">Заинтересовались?</h2>
           <p class="feedback__authorize text text--default">
             Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
-            <a href="#" class="feedback__authorisation-link">авторизуйтесь</a>.
+            <a href="authorisation.html" class="feedback__authorisation-link">авторизуйтесь</a>.
           </p>
         </header>
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
@@ -841,7 +841,8 @@
                   class="contacts__new-line">КОНЮШЕННАЯ, 19/8</dd>
             </div>
           </dl>
-          <a class="contacts__build-way button button--arrow" href="businesstariffs.html">
+          <a class="contacts__build-way button button--arrow"
+            href="https://www.google.ru/maps/dir/Метро+Невский+проспект,+Санкт-Петербург/Гостиный+двор,+Санкт-Петербург/@59.9348641,30.3271575,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4696310f60221711:0xa5ce218c14da9409!2m2!1d30.3248929!2d59.935386!1m5!1m1!1s0x469631087d4b02dd:0x52698ac282b242bd!2m2!1d30.3305639!2d59.9342471!3e3">
             <span class="contacts__wat-text text button__caption button__caption--light button--padding-left">Проложить
               маршрут</span>
             <svg class="button__icon button--padding-right" width="11" height="12">
@@ -850,22 +851,9 @@
           </a>
         </div>
       </header>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/map-large-icon.webp 1x, img/map-large-icon@2x.webp 2x"
-          type="image/webp">
-        <source media="(min-width: 1440px)" srcset="img/map-large-icon.png 1x, img/map-large-icon@2x.png 2x"
-          type="image/png">
-        <source media="(min-width: 768px)" srcset="img/map-medium-icon.webp 1x, img/map-medium-icon@2x.webp 2x"
-          type="image/webp">
-        <source media="(min-width: 768px)" srcset="img/map-medium-icon.png 1x, img/map-medium-icon@2x.png 2x"
-          type="image/png">
-        <source srcset="img/map-small-icon.webp 1x, img/map-small-icon@2x.webp 2x" type="image/webp">
-        <img class="contacts__map" src="img/map-small-icon.png" srcset="img/map-small-icon@2x.png 2x" width="320"
-          height="424" alt="Карта" />
-      </picture>
-      <svg class="contacts__map-point" width="41" height="41">
-        <use xlink:href="img/sprite.svg#double-point"></use>
-      </svg>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d800.8900759686541!2d30.323383279134678!3d59.93576766670703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m5!1s0x4696310f60221711%3A0xa5ce218c14da9409!2z0JzQtdGC0YDQviDQndC10LLRgdC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsw!3m2!1d59.935385999999994!2d30.3248929!4m0!5e0!3m2!1sru!2sru!4v1620883081499!5m2!1sru!2sru"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="page-footer">
@@ -911,7 +899,7 @@
         </li>
       </ul>
       <div class="page-footer__developed">
-        <a class="link" href="https://htmlacademy.ru/study">
+        <a class="link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__developed-caption text text--default">Разработано</span>
           <svg class="page-footer__logo icon icon--dark-blue" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo"></use>
@@ -946,7 +934,7 @@
       <span class="text">Закрыть окно</span>
     </button>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

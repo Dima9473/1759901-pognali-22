@@ -14,10 +14,11 @@
 </head>
 
 
-<body>
-  <header class="page-header page-header--border-radius page-header--height page-header--light-theme">
+<body class="text">
+  <header
+    class="page-header page-header--border-radius page-header--height page-header--light-theme page-header--menu-opened">
     <div class="container page-header__menu  menu">
-      <a href="#" class="menu__logo-mobile">
+      <a href="index.html" class="menu__logo-mobile visually-hidden">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x" type="image/png">
@@ -30,7 +31,7 @@
             height="30" alt="Логотип" />
         </picture>
       </a>
-      <a href="#" class="menu__logo-mobile-dark visually-hidden">
+      <a href="index.html" class="menu__logo-mobile-dark">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
             type="image/webp">
@@ -42,7 +43,7 @@
         </picture>
       </a>
       <a class="menu__toggle">
-        <svg class="page-header__open-icon menu__open-icon icon icon--light" width="25" height="11">
+        <svg class="page-header__open-icon menu__open-icon icon icon--light visually-hidden" width="25" height="11">
           <use xlink:href="img/sprite.svg#menu-toggle-open"></use>
         </svg>
         <svg class="menu__close-icon visually-hidden" width="14" height="14">
@@ -87,7 +88,7 @@
         </a>
       </div>
     </div>
-    <div class="main-menu main-menu--closed">
+    <div class="main-menu main-menu--opened main-menu--without-js">
       <nav class="main-menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -157,7 +158,7 @@
     <div class="page-header__caption container">
       <span class="text">Направления</span>
     </div>
-    <svg class="page-header__underline page-header_underline--directions" width="358" height="8">
+    <svg class="page-header__underline page-header_underline--directions visually-hidden" width="358" height="8">
       <use xlink:href="img/sprite.svg#horizontal-line"></use>
     </svg>
   </header>
@@ -265,7 +266,7 @@
                     <dd class="details-list__date-details"> 29 МАР</dd>
                   </div>
                 </dl>
-                <a class="plan-list__change button button--change">
+                <a href="editplans.html" class="plan-list__change button button--change">
                   <span class="plan-list__change-text text">ИЗМЕНИТЬ</span>
                 </a>
               </div>
@@ -328,7 +329,7 @@
             </ul>
           </header>
           <ol class="add-plans__adding-list step-list">
-            <li class="step-list__item step-list__container">
+            <li id="step1" class="step-list__item step-list__container">
               <div class="step-list__header">
                 <div class="step-list__header-text">
                   <h3 class="step-list__caption">Шаг 1. <br>Даты пребывания</h3>
@@ -339,9 +340,12 @@
                     позвать в поездку, и ее предполагаемую длительность.</p>
                 </div>
                 <ul class="step-list__nav">
-                  <li class="step-list__nav-item text">Даты</li>
-                  <li class="step-list__nav-item step-list__nav-item--disabled text">Маршрут</li>
-                  <li class="step-list__nav-item step-list__nav-item--disabled text">Развлечения</li>
+                  <li><a href="#step1" class="step-list__nav-item text link">Даты</a></li>
+                  <li><a href="#step2" class="step-list__nav-item step-list__nav-item--disabled text link">Маршрут</a>
+                  </li>
+                  <li><a href="#step3"
+                      class="step-list__nav-item step-list__nav-item--disabled text link">Развлечения</a>
+                  </li>
                 </ul>
               </div>
               <div class="step-list__questions">
@@ -559,16 +563,16 @@
                   </tr>
                 </table>
               </div>
-              <button type="button"
-                class="add-plans__button-step add-plans__button-step--outsideflow button  button--middle-theme">
+              <a href="#step2"
+                class="add-plans__button-step add-plans__button-step--outsideflow button button--middle-theme">
                 <span class="button__caption">Следующий шаг</span>
                 <svg class="add-plans__arrow" width="10" height="18" viewBox="0 0 10 18"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
                 </svg>
-              </button>
+              </a>
             </li>
-            <li class="step-list__item step-list__container step-list__item--step-2">
+            <li id="step2" class="step-list__item step-list__container step-list__item--step-2">
               <div class="step-list__header">
                 <div class="step-list__header-text">
                   <h3 class="step-list__caption">Шаг 2. <br>Маршрут</h3>
@@ -577,9 +581,12 @@
                   </p>
                 </div>
                 <ul class="step-list__nav">
-                  <li class="step-list__nav-item step-list__nav-item--disabled text">Даты</li>
-                  <li class="step-list__nav-item text">Маршрут</li>
-                  <li class="step-list__nav-item step-list__nav-item--disabled text">Развлечения</li>
+                  <li><a href="#step1" class="step-list__nav-item step-list__nav-item--disabled text link">Даты</a></li>
+                  <li><a href="#step2" class="step-list__nav-item text link">Маршрут</a>
+                  </li>
+                  <li><a href="#step3"
+                      class="step-list__nav-item step-list__nav-item--disabled text link">Развлечения</a>
+                  </li>
                 </ul>
               </div>
               <ul class="step-list__sub-list select-input-list">
@@ -1089,24 +1096,24 @@
                   <use xlink:href="img/sprite.svg#point"></use>
                 </svg>
                 <div class="step-list__nav-buttons step-list__nav-buttons--1">
-                  <button type="button" class="add-plans__button-step button button--middle-theme">
-                    <span class="button__caption">СЛЕДУЮЩИЙ ШАГ</span>
+                  <a href="#step3" class="add-plans__button-step button button--middle-theme">
+                    <span class="button__caption">Следующий шаг</span>
                     <svg class="add-plans__arrow" width="10" height="18" viewBox="0 0 10 18"
                       xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
                     </svg>
-                  </button>
-                  <button type="button"
+                  </a>
+                  <a href="#step1"
                     class="add-plans__button-step step-list__previous button button--transparent-theme add-plans__button-step--previous">
                     <svg class="add-plans__back icon--active" width="10" height="18">
                       <use xlink:href="img/sprite.svg#arrow-left-thick"></use>
                     </svg>
-                    <span class="step-list__step-back-caption button__caption">НА ШАГ НАЗАД</span>
-                  </button>
+                    <span class="step-list__step-back-caption button__caption">На шаг назад</span>
+                  </a>
                 </div>
               </div>
             </li>
-            <li class="step-list__item step-list__container step-list__item--step-3">
+            <li id="step3" class="step-list__item step-list__container step-list__item--step-3">
               <div class="step-list__header">
                 <div class="step-list__header-text">
                   <h3 class="step-list__caption">Шаг 3. <br>Развлечения</h3>
@@ -1115,9 +1122,11 @@
                   </p>
                 </div>
                 <ul class="step-list__nav">
-                  <li class="step-list__nav-item step-list__nav-item--disabled text">Даты</li>
-                  <li class="step-list__nav-item step-list__nav-item--disabled text">Маршрут</li>
-                  <li class="step-list__nav-item text">Развлечения</li>
+                  <li><a href="#step1" class="step-list__nav-item step-list__nav-item--disabled text link">Даты</a></li>
+                  <li><a href="#step2" class="step-list__nav-item step-list__nav-item--disabled text link">Маршрут</a>
+                  </li>
+                  <li><a href="#step3" class="step-list__nav-item text link">Развлечения</a>
+                  </li>
                 </ul>
               </div>
               <div class="add-plans__entertainments">
@@ -1183,13 +1192,13 @@
                     <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
                   </svg>
                 </button>
-                <button type="button"
+                <a href="#step2"
                   class="add-plans__button-step step-list__previous button button--transparent-theme add-plans__button-step--previous">
                   <svg class="add-plans__back icon--active" width="10" height="18">
                     <use xlink:href="img/sprite.svg#arrow-left-thick"></use>
                   </svg>
                   <span class="button__caption">НА ШАГ НАЗАД</span>
-                </button>
+                </a>
               </div>
             </li>
           </ol>
@@ -1240,7 +1249,7 @@
         </li>
       </ul>
       <div class="page-footer__developed">
-        <a class="link" href="https://htmlacademy.ru/study">
+        <a class="link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__developed-caption text text--default">Разработано</span>
           <svg class="page-footer__logo icon icon--dark-blue" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo"></use>
@@ -1249,7 +1258,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -9,10 +9,11 @@
   <title>Попутчики</title>
 </head>
 
-<body>
-  <header class="page-header page-header--border-radius page-header--height page-header--light-theme">
+<body class="text">
+  <header
+    class="page-header page-header--border-radius page-header--height page-header--light-theme page-header--menu-opened">
     <div class="container page-header__menu  menu">
-      <a href="#" class="menu__logo-mobile">
+      <a href="index.html" class="menu__logo-mobile visually-hidden">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x" type="image/png">
@@ -25,7 +26,7 @@
             height="30" alt="Логотип" />
         </picture>
       </a>
-      <a href="#" class="menu__logo-mobile-dark visually-hidden">
+      <a href="index.html" class="menu__logo-mobile-dark">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
             type="image/webp">
@@ -37,7 +38,7 @@
         </picture>
       </a>
       <a class="menu__toggle">
-        <svg class="page-header__open-icon menu__open-icon icon icon--light" width="25" height="11">
+        <svg class="page-header__open-icon menu__open-icon icon icon--light visually-hidden" width="25" height="11">
           <use xlink:href="img/sprite.svg#menu-toggle-open"></use>
         </svg>
         <svg class="menu__close-icon visually-hidden" width="14" height="14">
@@ -82,7 +83,7 @@
         </a>
       </div>
     </div>
-    <div class="main-menu main-menu--closed">
+    <div class="main-menu main-menu--opened main-menu--without-js">
       <nav class="main-menu__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -152,12 +153,12 @@
     <div class="page-header__caption container">
       <span class="text">Попутчики</span>
     </div>
-    <svg class="page-header__underline page-header_underline--directions" width="358" height="8">
+    <svg class="page-header__underline page-header_underline--directions visually-hidden" width="358" height="8">
       <use xlink:href="img/sprite.svg#horizontal-line"></use>
     </svg>
   </header>
   <main class="page-main page-main--light">
-    <section class="filter">
+    <section class="filter filter--opened">
       <div class="filter__wrapper">
         <div class="filter__container container filter__header">
           <h2 class="visually-hidden">Фильтрация странн</h2>
@@ -179,10 +180,10 @@
               <span class="text">Острова</span>
             </li>
           </ul>
-          <span class="filter__show-all text filter__text">Показать все</span>
+          <span class="filter__show-all text filter__text visually-hidden">Показать все</span>
           <span class="filter__hide filter__text text visually-hidden">Свернуть</span>
           <a class="filter__toggle-button button button--transparent-theme" href="#">
-            <ul class="filter__points filter__toggle filter__toggle--opened">
+            <ul class="filter__points filter__toggle filter__toggle--opened visually-hidden">
               <li class="filter__point">
                 <svg class="filter__point-icon" width="5" height="5">
                   <use xlink:href="img/sprite.svg#point"></use>
@@ -204,7 +205,7 @@
             </svg>
           </a>
         </div>
-        <div class="filter__body container visually-hidden">
+        <div class="filter__body filter__body--without-js container">
           <div class="filter__body-container">
             <ul class="filter__continents-list filter__continents-list--small">
               <li class="filter__item  filter__text filter__item--active">
@@ -879,7 +880,7 @@
               </li>
             </ul>
           </div>
-          <button class="filter__close button button--light-theme">
+          <button class="filter__close button button--light-theme filter__close--without-js">
             <svg class="filter__close-icon" width="14" height="14">
               <use xlink:href="img/sprite.svg#toggle-close"></use>
             </svg>
@@ -1826,7 +1827,7 @@
         </li>
       </ul>
       <div class="page-footer__developed">
-        <a class="link" href="https://htmlacademy.ru/study">
+        <a class="link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__developed-caption text text--default">Разработано</span>
           <svg class="page-footer__logo icon icon--dark-blue" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo"></use>

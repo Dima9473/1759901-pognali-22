@@ -85,7 +85,9 @@
 }
 
 .page-header--menu-opened{
-  background-color: #ffffff;
+  @media (max-width: $medium-max-width) {
+    background-color: #ffffff;
+  }
 }
 
 .page-header__authorisation{
