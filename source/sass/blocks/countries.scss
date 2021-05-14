@@ -3,9 +3,9 @@
   z-index: 9;
   margin-top: -30px;
   background-color: $basic-grey;
-  padding-bottom: 34px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding-bottom: 36px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 
   @media (min-width: $medium-width) {
     margin-top: -55px;
@@ -70,7 +70,7 @@
 
 .countries__list{
   margin-top: 60px;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   flex-direction: column;
@@ -128,6 +128,10 @@
   @include text(16px, 300, 22px, $special-grey);
   margin-top: 19px;
 
+  @media (max-width: $small-max-width) {
+    max-width: 195px;
+  }
+
   @media (min-width: $medium-width) {
     margin-top: 57px;
     font-size: 28px;
@@ -150,8 +154,11 @@
 }
 
 .countries__card-info{
+  background-color: #ffffff;
   text-align: left;
-  margin-top: -5px;
+  margin-top: -14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
   @media (min-width: $medium-width) {
     font-size: 28px;
@@ -160,7 +167,8 @@
 }
 
 .countries__flag{
-  margin-top: -10px;
+  position: absolute;
+  margin-top: -14px;
   margin-left: 25px;
   height: 24px;
   width: 35px;
@@ -198,7 +206,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 15px;
+  margin-top: 24px;
 
   @media (min-width: $medium-width) {
     flex-direction: column;
@@ -216,7 +224,7 @@
 }
 
 .countries__visists-count{
-  min-width: 50px;
+  min-width: 59px;
   margin-right: 25px;
 
   @media (min-width: $medium-width) {
@@ -245,8 +253,8 @@
   position: relative;
   width: 100%;
   height: 190px;
-  margin-bottom: 10px;
-  padding-bottom: 24px;
+  margin-bottom: 9px;
+  // padding-bottom: 24px;
 
   @media (min-width: $medium-width) {
     padding-bottom: 0;

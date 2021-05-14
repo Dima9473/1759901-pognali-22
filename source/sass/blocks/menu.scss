@@ -7,6 +7,8 @@
 }
 
 .menu__toggle{
+  margin-right: 3px;
+  margin-top: -2px;
   order: 2;
   @media (min-width: $medium-width) {
     order: 0;

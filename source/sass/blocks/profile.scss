@@ -3,9 +3,9 @@
   position: relative;
   z-index: 6;
   background-color: #E6E8F1;
-  padding-bottom: 38px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding-bottom: 39px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 
   @media (min-width: $medium-width) {
     margin-top: -55px;
@@ -26,7 +26,7 @@
 .profile__list{
   position: relative;
   z-index: auto;
-  margin-top: -80px;
+  margin-top: -88px;
   padding-top: 126px;
   background-image: url(../img/rates-small.webp);
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@
 .profile__show-tariffs{
   display: flex;
   align-items: center;
-  margin-top: 31px;
+  margin-top: 33px;
   width: 100%;
 
   @media (min-width: $medium-width) {
@@ -195,7 +195,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 13px;
+  padding-top: 7px;
+  padding-bottom: 12px;
 
   &:first-child{
     border-top: 1px solid #E1E3E9;
@@ -226,6 +227,7 @@
 
 .profile__price-digital{
   position: relative;
+  padding: 8px;
 
   @media (min-width: $medium-width) {
     margin-right: 22px;

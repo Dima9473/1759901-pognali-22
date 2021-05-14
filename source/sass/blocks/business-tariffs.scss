@@ -1,7 +1,7 @@
 .business-tariffs{
   position: absolute;
   z-index: 13;
-  top: 3715px;
+  top: 3692px;
   left: 25px;
   right: 25px;
   background-color: #ffffff;
@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   @include text(16px, normal, 22px, $special-grey);
 
@@ -116,4 +116,9 @@
     background-color: $basic-grey;
     opacity: 0.3;
   }
+}
+
+.business-tariffs__button-text{
+  font-size: 16px;
+  line-height: 24px;
 }

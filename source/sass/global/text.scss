@@ -3,6 +3,60 @@
   src: url("../fonts/bloggersans.woff2") format("woff2"),
        url("../fonts/bloggersans.woff") format("woff");
   font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2"),
+       url("../fonts/bloggersans-bold.woff") format("woff");
+  font-display: swap;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Blogger Sans BoldItalic";
+  src: url("../fonts/bloggersans-bolditalic.woff2") format("woff2"),
+       url("../fonts/bloggersans-bolditalic.woff") format("woff");
+  // font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans Italic";
+  src: url("../fonts/bloggersans-italic.woff2") format("woff2"),
+       url("../fonts/bloggersans-italic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("../fonts/bloggersans-light.woff2") format("woff2"),
+       url("../fonts/bloggersans-light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans LightItalic";
+  src: url("../fonts/bloggersans-lightitalic.woff2") format("woff2"),
+       url("../fonts/bloggersans-lightitalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2"),
+       url("../fonts/bloggersans-medium.woff") format("woff");
+  font-weight: 500px;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans MediumItalic";
+  src: url("../fonts/bloggersans-mediumitalic.woff2") format("woff2"),
+       url("../fonts/bloggersans-mediumitalic.woff") format("woff");
+  font-display: swap;
 }
 
 @mixin text($font-size: 16px, $font-weight: normal, $line-height: 22px, $color: #ffffff){
@@ -17,20 +71,28 @@
   font-style: normal;
 }
 
+.text--bolditalic{
+  font-family: "Blogger Sans BoldItalic", "Tahoma";
+}
+
+.text--italic{
+  font-family: "Blogger Sans Italic", "Tahoma";
+}
+
+.text--lightitalic{
+  font-family: "Blogger Sans LightItalic", "Tahoma";
+}
+
+.text--mediumitalic{
+  font-family: "Blogger Sans MediumItalic", "Tahoma";
+}
+
 .text--caption{
   @include text(24px, bold, 24px, $special-orange);
 }
 
 .text--default{
   @include text(16px, normal, 22px, #ffffff);
-}
-
-.text--bold{
-  @include text(16px, bold, 22px, #ffffff);
-}
-
-.text--light{
-  color: #ffffff;
 }
 
 .text--uper{

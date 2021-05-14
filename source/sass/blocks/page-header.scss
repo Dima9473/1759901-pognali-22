@@ -13,6 +13,12 @@
   }
 }
 
+.page-header--opened{
+  @media (max-width: $medium-max-width) {
+    background-color: #ffffff;
+  }
+}
+
 .page-header--light-theme{
   background-color: #182044;
 }
@@ -34,6 +40,19 @@
   }
 }
 
+.page-header--without-js{
+  @media (max-width: $medium-max-width) {
+    position: static;
+    margin-bottom: 370px;
+    background-color: #fff;
+  }
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    margin-bottom: 670px;
+  }
+}
+
+
 .page-header__logo{
   width: 96px;
   height: 15px;
@@ -47,6 +66,10 @@
     width: 200px;
     height: 52px;
   }
+}
+
+.page-header__logo--dark{
+  width: 100px;
 }
 
 .page-header__open-icon{
@@ -64,12 +87,15 @@
 }
 
 .page-header__menu{
+  position: absolute;
+  right: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
   margin: 0;
-  margin-top: 19px;  ;
+  margin-top: 19px;
 
   @media (min-width: $medium-width) {
     margin-top: 40px;
@@ -84,16 +110,14 @@
   }
 }
 
-.page-header--menu-opened{
-  @media (max-width: $medium-max-width) {
-    background-color: #ffffff;
-  }
+.page-header__menu--opened{
+  margin-top: 27px;
 }
 
 .page-header__authorisation{
-  margin-top: 51px;
+  margin-top: 54px;
   display: flex;
-  width: 100%;
+  width: 83%;
   justify-content: center;
   @media (min-width: $medium-width) {
     display: none;
@@ -102,7 +126,8 @@
 
 .page-header__social-list{
   margin-bottom: 40px;
-  margin-top: 41px;
+  margin-top: 42px;
+  margin-left: 33px;
   align-items: center;
 
   @media (min-width: $medium-width) {
@@ -134,13 +159,19 @@
   }
 }
 
+.page-header__caption--without-js{
+  @media (max-width: $medium-max-width) {
+    color: $basic-blue;
+  }
+}
+
 .page-header__buttons{
   display: flex;
   justify-content: space-between;
 }
 
 .page-header__contact-list{
-  margin-top: 51px;
+  margin-top: 49px;
 
   @media (min-width: $medium-width) {
     margin-top: 144px;
@@ -196,6 +227,12 @@
   }
 }
 
+.page-header__underline--visually-hidden{
+  @media (max-width: $medium-max-width) {
+    display: none;
+  }
+}
+
 .page-header__underline--directions{
   width: 220px;
 
@@ -218,4 +255,12 @@
 .page-header__return-to-main{
   display: flex;
   align-items: center;
+}
+
+.page-header__icons{
+  margin-left: -34px;
+}
+
+.page-header__icon{
+  margin-top: 2px;
 }

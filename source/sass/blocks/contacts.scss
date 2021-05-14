@@ -1,7 +1,7 @@
 .contacts{
   position: relative;
   z-index: 4;
-  margin-top: -30px;
+  margin-top: -40px;
   padding-top: 63px;
 
   @media (min-width: $medium-width) {
@@ -19,7 +19,7 @@
   z-index: 1;
   background-color: $basic-yellow;
   margin-top: -50px;
-  padding-top: 50px;
+  padding-top: 59px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
@@ -57,7 +57,7 @@
 .contacts__addres{
   color: $basic-blue-light;
   line-height: 22px;
-  margin-left: 26px;
+  margin-left: 17px;
 
   @media (min-width: $medium-width) {
     font-size: 28px;
@@ -174,16 +174,26 @@
 
   &:hover{
     background: $dark-blue;
-    .contacts__wat-text{
+    .contacts__way-text{
       color: #ffffff;
     }
   }
 
   &:active, &:focus{
     background: $dark-blue;
-    .contacts__wat-text{
+    .contacts__way-text{
       color: #ffffff;
       opacity: 0.3;
     }
   }
+}
+
+.contacts__way-text{
+  margin-left: 19px;
+}
+
+.contacts__button{
+  width: 24px;
+  height: 13px;
+  margin-right: 15px;
 }

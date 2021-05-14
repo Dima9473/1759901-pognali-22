@@ -63,28 +63,6 @@
   background-color: transparent;
 }
 
-.button__caption{
-  @include text(17px, bold, 30px, $basic-blue);
-  text-align: center;
-
-  @media (min-width: $medium-width) {
-    font-size: 24px;
-    line-height: 24px;
-  }
-}
-
-.button__caption--light{
-  color: $basic-blue-light;
-}
-
-.button__caption-small{
-  @include text(16px, bold, 16px, #132576);
-}
-
-.button__map-icon{
-  background-color: $blue;
-}
-
 .button--togle{
   &:hover{
     opacity: 0.7;
@@ -106,7 +84,29 @@
   }
 }
 
-.button__caption--padding-left{
+.button__main-caption{
+  @include text(18px, bold, 18px, $basic-blue-light);
+  text-align: center;
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.button__main-caption--authorization{
+  font-size: 17px;
+}
+
+.button__main-caption--dark{
+  color: $basic-blue;
+}
+
+.button__main-caption-small{
+  @include text(16px, bold, 16px, #132576);
+}
+
+.button__main-caption--padding-left{
   margin-left: 22px;
 
   @media (min-width: $medium-width) {
@@ -114,8 +114,8 @@
   }
 }
 
-.button__icon--padding-right{
-  margin-right: 22px;
+.button__icon{
+  margin-right: 24px;
 
   @media (min-width: $medium-width) {
     margin-right: 37px;

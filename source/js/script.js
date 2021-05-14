@@ -1,3 +1,20 @@
+//Map initialisation
+let map = document.querySelector('.contacts__map')
+if (map) {
+  ymaps?.ready(init);
+  function init() {
+    const centrCoordinates = [59.93743991554876, 30.324340587310726];
+    const pointerCoordinates = [59.938717, 30.323047];
+    var myMap = new ymaps.Map("map", {
+      center: centrCoordinates,
+      zoom: 16,
+      controls: []
+    });
+    var myPlacemark = new ymaps.Placemark(pointerCoordinates);
+    myMap.geoObjects.add(myPlacemark);
+  }
+}
+
 //Navigation actions
 let navMain = document.querySelector('.main-menu');
 let navToggle = document.querySelector('.menu__toggle');
@@ -8,6 +25,8 @@ let closButton = document.querySelector('.menu__close-icon');
 let openButton = document.querySelector('.menu__open-icon');
 let promoActions = document.querySelector('.menu__actions');
 let underline = document.querySelector('.page-header__underline');
+let pageHeaderMenu = document.querySelector('.page-header__menu');
+let pageHeaderCaption = document.querySelector('.page-header__caption');
 
 navToggle?.addEventListener('click', () => {
   if (navMain.classList.contains('main-menu--closed')) {
@@ -20,13 +39,15 @@ navToggle?.addEventListener('click', () => {
 const onNavigationOpen = () => {
   navMain.classList.remove('main-menu--closed');
   navMain.classList.add('main-menu--opened');
-  pageHeader.classList.add('page-header--menu-opened');
+  pageHeader.classList.add('page-header--opened');
   logoDark.classList.remove('visually-hidden');
   logo.classList.add('visually-hidden');
   closButton.classList.remove('visually-hidden');
   openButton.classList.add('visually-hidden');
+  pageHeaderMenu?.classList.add('page-header__menu--opened');
+
   if (promoActions) {
-    promoActions.classList.add('visually-hidden');
+    promoActions.classList.add('visually-collapced');
   }
   if (underline) {
     underline.classList.add('visually-hidden');
@@ -36,22 +57,28 @@ const onNavigationOpen = () => {
 const onNavigationClosed = () => {
   navMain.classList.add('main-menu--closed');
   navMain.classList.remove('main-menu--opened');
-  pageHeader.classList.remove('page-header--menu-opened');
+  pageHeader.classList.remove('page-header--opened');
   logoDark.classList.add('visually-hidden');
   logo.classList.remove('visually-hidden');
   closButton.classList.add('visually-hidden')
   openButton.classList.remove('visually-hidden');
+  pageHeaderMenu?.classList.remove('page-header__menu--opened');
+
   if (promoActions) {
-    promoActions.classList.remove('visually-hidden');
+    promoActions.classList.remove('visually-collapced');
   }
 
   if (underline) {
-    underline.classList.remove('visually-hidden');
+    underline.classList.remove('page-header__underline--visually-hidden');
   }
 }
 
 const enableMenuJs = () => {
   navMain?.classList.remove('main-menu--without-js');
+  pageHeader?.classList.remove('page-header--without-js');
+  pageHeaderCaption?.classList.remove('page-header__caption--without-js');
+  pageHeaderCaption?.classList.remove('page-header__underline--without-js');
+
   onNavigationClosed();
 }
 
@@ -179,42 +206,44 @@ enableFilterJs();
 
 //Select actions
 let selectCountry1 = document.querySelector('.add-plans__select-country--1');
-let selectText1 = document.querySelector('.add-plans__select-country-text--1');
+let selectText1 = document.querySelector('.select__item-country-text--1');
 let openIcon1 = document.querySelector('.add-plans__show-countries-icon--closed-1');
 let circleIcon1 = document.querySelector('.add-plans__circle-icon--1');
 let closeIcon1 = document.querySelector('.add-plans__close-icon--1');
 let countriesDropdown1 = document.querySelector('.add-plans__countries-dropdown--1');
+// let flag1 = document.querySelector('.add-plans__flag--1');
 
 selectCountry1?.addEventListener('click', () => {
   if (!selectCountry1.classList.contains('add-plans__select-country--opened')) {
-    onSelectOpen(selectCountry1, selectText1, openIcon1, circleIcon1, closeIcon1, countriesDropdown1)
+    onSelectOpen(selectCountry1, selectText1, openIcon1, closeIcon1, countriesDropdown1)//, circleIcon1, flag1
   }
 })
 
 closeIcon1?.addEventListener('click', function (e) {
-  onSelectClose(e, selectCountry1, selectText1, openIcon1, circleIcon1, closeIcon1, countriesDropdown1);
+  onSelectClose(e, selectCountry1, selectText1, openIcon1, closeIcon1, countriesDropdown1);//, circleIcon1, flag1
 })
 
 let selectCountry2 = document.querySelector('.add-plans__select-country--2');
-let selectText2 = document.querySelector('.add-plans__select-country-text--2');
+let selectText2 = document.querySelector('.select__item-country-text--2');
 let openIcon2 = document.querySelector('.add-plans__show-countries-icon--closed-2');
 let circleIcon2 = document.querySelector('.add-plans__circle-icon--2');
 let closeIcon2 = document.querySelector('.add-plans__close-icon--2');
 let countriesDropdown2 = document.querySelector('.add-plans__countries-dropdown--2');
+// let flag2 = document.querySelector('.add-plans__flag--2');
 
 selectCountry2?.addEventListener('click', () => {
   if (!selectCountry2.classList.contains('add-plans__select-country--opened')) {
-    onSelectOpen(selectCountry2, selectText2, openIcon2, circleIcon2, closeIcon2, countriesDropdown2);
+    onSelectOpen(selectCountry2, selectText2, openIcon2, closeIcon2, countriesDropdown2);//, circleIcon2, flag2
   }
 })
 
 closeIcon2?.addEventListener('click', function (e) {
-  onSelectClose(e, selectCountry2, selectText2, openIcon2, circleIcon2, closeIcon2, countriesDropdown2);
+  onSelectClose(e, selectCountry2, selectText2, openIcon2, closeIcon2, countriesDropdown2);//, circleIcon2, flag2
 })
 
 
 let selectCountry3 = document.querySelector('.add-plans__select-country--3');
-let selectText3 = document.querySelector('.add-plans__select-country-text--3');
+let selectText3 = document.querySelector('.select__item-country-text--3');
 let openIcon3 = document.querySelector('.add-plans__show-countries-icon--closed-3');
 let circleIcon3 = document.querySelector('.add-plans__circle-icon--3');
 let closeIcon3 = document.querySelector('.add-plans__close-icon--3');
@@ -222,24 +251,24 @@ let countriesDropdown3 = document.querySelector('.add-plans__countries-dropdown-
 
 selectCountry3?.addEventListener('click', () => {
   if (!selectCountry3.classList.contains('add-plans__select-country--opened')) {
-    onSelectOpen(selectCountry3, selectText3, openIcon3, circleIcon3, closeIcon3, countriesDropdown3);
+    onSelectOpen(selectCountry3, selectText3, openIcon3, closeIcon3, countriesDropdown3, circleIcon3);
   }
 })
 
 closeIcon3?.addEventListener('click', function (e) {
-  onSelectClose(e, selectCountry3, selectText3, openIcon3, circleIcon3, closeIcon3, countriesDropdown3);
+  onSelectClose(e, selectCountry3, selectText3, openIcon3, closeIcon3, countriesDropdown3, circleIcon3);
 })
 
 let navButtons = document.querySelector('.step-list__nav-buttons--1');
 
-const onSelectOpen = (selectCountry, selectText, openIcon, circleIcon, closeIcon, countriesDropdown) => {
+const onSelectOpen = (selectCountry, selectText, openIcon, closeIcon, countriesDropdown, circleIcon) => {
   selectCountry.classList.add('add-plans__select-country--opened');
-  selectText.classList.add('add-plans__select-country--text-opened');
+  selectText.classList.add('select__item-country--text-opened');
   openIcon.classList.add('visually-hidden');
   closeIcon.classList.remove('visually-hidden');
   countriesDropdown.classList.remove('visually-hidden');
 
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 768 && circleIcon) {
     circleIcon.classList.add('visually-hidden');
   }
 
@@ -249,14 +278,17 @@ const onSelectOpen = (selectCountry, selectText, openIcon, circleIcon, closeIcon
 
 }
 
-const onSelectClose = (e, selectCountry, selectText, openIcon, circleIcon, closeIcon, countriesDropdown) => {
+const onSelectClose = (e, selectCountry, selectText, openIcon, closeIcon, countriesDropdown, flag, circleIcon) => {
   selectCountry.classList.remove('add-plans__select-country--opened');
-  selectText.classList.remove('add-plans__select-country--text-opened');
+  selectText.classList.remove('select__item-country--text-opened');
   openIcon.classList.remove('visually-hidden');
   closeIcon.classList.add('visually-hidden');
   countriesDropdown.classList.add('visually-hidden');
 
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 768 && circleIcon) {
+    // if (flag) {
+
+    // }
     circleIcon.classList.remove('visually-hidden');
   }
 
@@ -295,7 +327,6 @@ let countryDescriptionInput = document.querySelector('.country-description-list_
 let countryDescriptionInputInvalid = document.querySelector('.country-description-list__change-text-invalid');
 
 countryDescriptionInput?.addEventListener('invalid', () => {
-  debugger
   onCountryInputInvalid();
 });
 

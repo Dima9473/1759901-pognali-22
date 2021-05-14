@@ -36,6 +36,12 @@
 }
 
 .site-list__item{
+  text-align: center;
+
+  @media (min-width: $medium-width) {
+    text-align: left;
+  }
+
   @media (min-width: $large-width) {
     padding-right: 35px;
   }

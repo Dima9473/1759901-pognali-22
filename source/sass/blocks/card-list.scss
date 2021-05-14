@@ -76,7 +76,7 @@
   @include text(21px, bold, 21px, $basic-blue-light);
   text-align: start;
   @media (max-width: $small-max-width) {
-    max-width: 85px;
+    max-width: 140px;//85px;
   }
 
   @media (min-width: $medium-width) {

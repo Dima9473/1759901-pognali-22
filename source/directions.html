@@ -16,7 +16,7 @@
 
 <body class="text">
   <header
-    class="page-header page-header--border-radius page-header--height page-header--light-theme page-header--menu-opened">
+    class="page-header page-header--border-radius page-header--light-theme page-header--height page-header--opened page-header--without-js">
     <div class="container page-header__menu  menu">
       <a href="#" class="menu__logo-mobile visually-hidden">
         <picture>
@@ -84,7 +84,9 @@
           </li>
         </ul>
         <a class="button button--authorization" href="authorization.html">
-          <div class="text  menu__authorization button__caption">АВТОРИЗАЦИЯ</div>
+          <div
+            class="text  menu__authorization button__main-caption button__main-caption--dark button__main-caption--authorization">
+            АВТОРИЗАЦИЯ</div>
         </a>
       </div>
     </div>
@@ -104,7 +106,8 @@
       </nav>
       <div class="page-header__authorisation">
         <a class="page-header__authorization-button button button--authorization" href="authorization.html">
-          <div class="text button__caption">АВТОРИЗАЦИЯ</div>
+          <div class="text button__main-caption button__main-caption--dark button__main-caption--authorization">
+            АВТОРИЗАЦИЯ</div>
         </a>
       </div>
       <div class="page-header__contact-list">
@@ -155,10 +158,11 @@
         </ul>
       </div>
     </div>
-    <div class="page-header__caption container">
+    <div class="page-header__caption page-header__caption--without-js container">
       <span class="text">Направления</span>
     </div>
-    <svg class="page-header__underline page-header__underline--directions visually-hidden" width="358" height="8">
+    <svg class="page-header__underline page-header__underline--directions page-header__underline--visually-hidden"
+      width="358" height="8">
       <use xlink:href="img/sprite.svg#horizontal-line"></use>
     </svg>
   </header>
@@ -565,7 +569,7 @@
               </div>
               <a href="#step2"
                 class="add-plans__button-step add-plans__button-step--outsideflow button button--middle-theme">
-                <span class="button__caption">Следующий шаг</span>
+                <span class="button__main-caption">Следующий шаг</span>
                 <svg class="add-plans__arrow" width="10" height="18" viewBox="0 0 10 18"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
@@ -595,7 +599,7 @@
                     <div class="add-plans__selected-country-with-flag">
                       <div
                         class="add-plans__selected-country add-plans__selected-country-with-flag--width add-plans__select-country--1">
-                        <span class="select__item text text--uper add-plans__select-country-text--1">
+                        <span class="select__item text text--uper select__item-country-text--1">
                           Босния и Герцеговина
                         </span>
                         <svg
@@ -768,7 +772,7 @@
                     <div class="add-plans__selected-country-with-flag">
                       <div
                         class="add-plans__selected-country add-plans__selected-country-with-flag--width add-plans__select-country--2">
-                        <span class="select__item text text--uper add-plans__select-country-text--2">
+                        <span class="select__item text text--uper select__item-country-text--2">
                           Чехия
                         </span>
                         <svg
@@ -935,7 +939,7 @@
                 <li class="add-plans__country select-input-list__item">
                   <div class="add-plans__select-country add-plans__select-country--empty">
                     <div class="add-plans__empty-country add-plans__select-country--3">
-                      <span class="select__item text text--uper add-plans__select-country-text--3">
+                      <span class="select__item text text--uper select__item-country-text--3">
                         Выберите страну
                       </span>
                       <svg
@@ -1087,7 +1091,7 @@
               </ul>
               <div class="step-list__buttons">
                 <button type="button" class="add-plans__add-country button button--transparent-theme">
-                  <span class="add-plans__add-country-text button__caption">ДОБАВИТЬ СТРАНУ</span>
+                  <span class="add-plans__add-country-text button__main-caption">ДОБАВИТЬ СТРАНУ</span>
                   <svg class="step-list__add-plus step-list__plus--2" width="14" height="14">
                     <use xlink:href="img/sprite.svg#plus"></use>
                   </svg>
@@ -1097,7 +1101,7 @@
                 </svg>
                 <div class="step-list__nav-buttons step-list__nav-buttons--1">
                   <a href="#step3" class="add-plans__button-step button button--middle-theme">
-                    <span class="button__caption">Следующий шаг</span>
+                    <span class="button__main-caption">Следующий шаг</span>
                     <svg class="add-plans__arrow" width="10" height="18" viewBox="0 0 10 18"
                       xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
@@ -1108,7 +1112,7 @@
                     <svg class="add-plans__back icon icon--active" width="10" height="18">
                       <use xlink:href="img/sprite.svg#arrow-left-thick"></use>
                     </svg>
-                    <span class="step-list__step-back-caption button__caption">На шаг назад</span>
+                    <span class="step-list__step-back-caption button__main-caption">На шаг назад</span>
                   </a>
                 </div>
               </div>
@@ -1186,7 +1190,7 @@
               </div>
               <div class="step-list__nav-buttons">
                 <button type="submit" class="add-plans__button-step button button--middle-theme">
-                  <span class="button__caption">Отправить</span>
+                  <span class="button__main-caption">Отправить</span>
                   <svg class="add-plans__arrow" width="10" height="18" viewBox="0 0 10 18"
                     xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
@@ -1197,7 +1201,7 @@
                   <svg class="add-plans__back icon icon--active" width="10" height="18">
                     <use xlink:href="img/sprite.svg#arrow-left-thick"></use>
                   </svg>
-                  <span class="button__caption">НА ШАГ НАЗАД</span>
+                  <span class="button__main-caption">НА ШАГ НАЗАД</span>
                 </a>
               </div>
             </li>

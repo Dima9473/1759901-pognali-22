@@ -11,7 +11,7 @@
 
 <body class="text">
   <header
-    class="page-header page-header--border-radius page-header--height page-header--light-theme page-header--menu-opened">
+    class="page-header page-header--border-radius page-header--height page-header--light-theme page-header--opened page-header--without-js">
     <div class="container page-header__menu  menu">
       <a href="#" class="menu__logo-mobile visually-hidden">
         <picture>
@@ -79,7 +79,7 @@
           </li>
         </ul>
         <a class="button button--authorization" href="authorization.html">
-          <div class="text  menu__authorization button__caption">АВТОРИЗАЦИЯ</div>
+          <div class="text  menu__authorization button__main-caption button__main-caption--dark">АВТОРИЗАЦИЯ</div>
         </a>
       </div>
     </div>
@@ -99,7 +99,8 @@
       </nav>
       <div class="page-header__authorisation">
         <a class="page-header__authorization-button button button--authorization" href="authorization.html">
-          <div class="text button__caption">АВТОРИЗАЦИЯ</div>
+          <div class="text button__main-caption button__main-caption--dark button__main-caption--authorization">
+            АВТОРИЗАЦИЯ</div>
         </a>
       </div>
       <div class="page-header__contact-list">
@@ -150,10 +151,11 @@
         </ul>
       </div>
     </div>
-    <div class="page-header__caption container">
+    <div class="page-header__caption page-header__caption--without-js container">
       <span class="text">Попутчики</span>
     </div>
-    <svg class="page-header__underline page-header__underline--directions visually-hidden" width="358" height="8">
+    <svg class="page-header__underline page-header__underline--directions page-header__underline--visually-hidden"
+      width="358" height="8">
       <use xlink:href="img/sprite.svg#horizontal-line"></use>
     </svg>
   </header>
@@ -887,7 +889,7 @@
             <svg class="filter__close-icon" width="14" height="14">
               <use xlink:href="img/sprite.svg#toggle-close"></use>
             </svg>
-            <span class="button__caption">СВЕРНУТЬ</span>
+            <span class="button__main-caption">СВЕРНУТЬ</span>
           </button>
         </div>
       </div>
@@ -1107,7 +1109,7 @@
                 </li>
               </ul>
               <button type="submit" class="choose-companion__show button button--light-theme">
-                <span class="button__caption">Показать</span>
+                <span class="button__main-caption">Показать</span>
               </button>
             </div>
           </form>
@@ -1767,7 +1769,7 @@
               <svg class="companions-operations__icon icon icon--active" width="14" height="14">
                 <use xlink:href="img/sprite.svg#plus"></use>
               </svg>
-              <span class="button__caption">ПОКАЗАТЬ ЕЩЕ</span>
+              <span class="button__main-caption">ПОКАЗАТЬ ЕЩЕ</span>
             </a>
             <div class="companions__navigation companions__navigation-container">
               <div class="companions__pages">

@@ -31,3 +31,11 @@
   );
   pointer-events: none;
 }
+
+.select__item-country--text-opened{
+  color: #ffffff;
+}
+
+.select__item-country--text-opened.select__item:after{
+  background: none;
+}

@@ -4,11 +4,11 @@
   margin-top: -52px;
   padding-top: 33px;
   background-image: url(../img/about-mobile.webp),url(../img/back.webp);
-  background-size: 100% 100%, 113px 132px;
+  background-size: 92% 90%, 113px 132px;
   background-repeat: no-repeat;
-  background-position: top 39px right, top 39px left;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background-position: top 45px right 9px,top 39px left;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: $dark-blue;
 
   @media (min-width: $medium-width) {
@@ -44,7 +44,7 @@
 }
 
 .about__container{
-  margin-left: 29px;
+  margin-left: 24px;
   padding-bottom: 82px;
 
   @media (min-width: $medium-width) {
@@ -59,7 +59,7 @@
 }
 
 .about__slogan{
-  padding-top: 33px;
+  padding-top: 43px;
 
   @media (min-width: $medium-width) {
     @include text(45px, bold, 45px, $special-orange);
@@ -88,9 +88,12 @@
 }
 
 .about__description{
-  width: 210px;
   font-weight: 300;
-  margin-top: 19px;
+  margin-top: 20px;
+
+  @media (max-width: $small-max-width) {
+    max-width: 210px;
+  }
 
   @media (min-width: $medium-width) {
     width: 310px;

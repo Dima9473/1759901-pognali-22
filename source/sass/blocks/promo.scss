@@ -1,9 +1,9 @@
 .promo{
-  margin-top: 94px;
+  margin-top: 150px;
   background-image: url(../img/globe-back-mobile.webp), linear-gradient($basic-blue 733px, $dark-blue 733px);
   background-repeat: no-repeat;
-  background-size: 100% 450px, 400px 110%;
-  background-position: 0px -85px, 0px -92px;
+  background-size: 100% 382px,400px 110%;
+    background-position: 0 4px,0 -92px;
 
   @media (min-width: $medium-width) {
     background-image: url(../img/globe-back-tablet.webp);
@@ -38,13 +38,13 @@
 
   @media (max-width: $small-max-width) {
     & ul li:first-child{
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 11px;
     }
 
     & ul li:last-child{
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 11px;
     }
   }
 
@@ -131,7 +131,8 @@
 }
 
 .promo__author-info{
-  margin-top: 25px;
+  @include text(16px, bold, 22px, #ffffff);
+  margin-top: 19px;
   max-width: 170px;
 
   @media (min-width: $medium-width) {
@@ -152,8 +153,8 @@
 }
 
 .promo__traveller-icon{
-  margin-top: -10px;
-  margin-left: 80px;
+  margin-top: 9px;
+  margin-left: 30px;
   width: 192px;
   height: 255px;
 
@@ -188,8 +189,7 @@
 }
 
 .promo__review{
-  margin: 28px 0px 0px 0px;
-  margin-left: 25px;
+  margin: 44px 0 0 -49px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,6 +252,7 @@
 
 .promo__order-number{
   @include text(18px, bold, 18px);
+  margin-top: -20px;
 
   @media (min-width: $medium-width) {
     font-size: 30px;
