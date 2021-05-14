@@ -9,7 +9,7 @@
 
   @media (min-width: $medium-width) {
     margin-top: -55px;
-    padding-bottom: 63px;
+    padding-bottom: 61px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -21,6 +21,10 @@
 
 .profile__container{
   padding-left: 50px;
+
+  @media (min-width: $medium-width) {
+    padding-left: 40px;
+  }
 }
 
 .profile__list{
@@ -40,8 +44,8 @@
     margin-top: 73px;
     padding-top: 0;
     padding-right: 35px;
-    margin-bottom: -100px;
-    padding-bottom: 100px;
+    margin-bottom: -143px;
+    padding-bottom: 120px;
     background-image: url(../img/rates-medium.webp);
     background-position: bottom right 45px;
   }
@@ -105,7 +109,7 @@
   }
 
   @media (min-width: $medium-width) {
-    padding-top: 109px;
+    padding-top: 125px;
   }
 
   @media (min-width: $large-width) {
@@ -176,7 +180,7 @@
   @media (min-width: $medium-width) {
     position: relative;
     z-index: 1;
-    margin-top: 59px;
+    margin-top: 57px;
   }
 
   &:hover{
@@ -206,6 +210,9 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    margin-top: 2px;
+    margin-bottom: -2px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -221,6 +228,7 @@
   @media (min-width: $medium-width) {
     flex-direction: row;
     justify-content: flex-start;
+    margin-top: -2px;
     margin-bottom: 0;
   }
 }
@@ -233,7 +241,7 @@
     margin-right: 22px;
     font-size: 28px;
     line-height: 28px;
-    padding-bottom: 25px;
+    padding: 23px 24px 25px 24px;
   }
 
   @media (min-width: $large-width) {
@@ -246,6 +254,10 @@
 
   @media (min-width: $medium-width) {
     display: block;
+    width: 27px;
+    height: 27px;
+    margin-left: -2px;
+    margin-top: -3px;
   }
 }
 
@@ -253,6 +265,7 @@
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 18px;
   }
 }
 

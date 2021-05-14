@@ -11,6 +11,7 @@
   margin-top: -2px;
   order: 2;
   @media (min-width: $medium-width) {
+    margin-right: -20px;
     order: 0;
   }
   @media (min-width: $large-width){
@@ -20,6 +21,12 @@
 
 .menu__toggle--hidden{
   display: none;
+}
+
+.menu__toggle--opened{
+  @media (min-width: $medium-width) {
+    margin-right: -21px;
+  }
 }
 
 .menu__close-icon{

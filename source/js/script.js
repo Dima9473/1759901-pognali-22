@@ -37,6 +37,7 @@ navToggle?.addEventListener('click', () => {
 });
 
 const onNavigationOpen = () => {
+  navToggle.classList.add('menu__toggle--opened');
   navMain.classList.remove('main-menu--closed');
   navMain.classList.add('main-menu--opened');
   pageHeader.classList.add('page-header--opened');
@@ -55,6 +56,7 @@ const onNavigationOpen = () => {
 }
 
 const onNavigationClosed = () => {
+  navToggle.classList.remove('menu__toggle--opened');
   navMain.classList.add('main-menu--closed');
   navMain.classList.remove('main-menu--opened');
   pageHeader.classList.remove('page-header--opened');

@@ -11,16 +11,37 @@
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
+
+  @media (min-width: $medium-width) {
+    margin-left: 29px;
+  }
 }
 
 .visits-list__country{
   @include text(21px, bold, 21px, #000000);
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .visits-list__info{
   display: block;
   @include text(16px, 500, 18px, $basic-blue);
   opacity: 0.3;
+
+  @media (min-width: $medium-width) {
+    max-width: 170px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.visits-list__info--large-text{
+  @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    max-width: 130px;
+  }
 }
 
 .visits-list__caption{

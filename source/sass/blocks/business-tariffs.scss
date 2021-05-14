@@ -9,10 +9,10 @@
   border-radius: 20px;
 
   @media (min-width: $medium-width) {
-    top: 4153px;
+    top: 4262px;
     left: 40px;
     right: 40px;
-    padding-top: 54px;
+    padding-top: 50px;
   }
 
   @media (min-width: $large-width) {
@@ -60,22 +60,22 @@
 .business-tariffs__item{
   display: flex;
   flex-direction: column;
-  padding-top: 11px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 12px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  @include text(16px, normal, 22px, $special-grey);
+  @include text(16px, 300, 22px, $special-grey);
 
   @media (min-width: $medium-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 14px;
-    padding-bottom: 13px;
+    padding-top: 16px;
+    padding-bottom: 10px;
     font-weight: 300;
     font-size: 22px;
     line-height: 28px;
   }
 
-  @media (min-width: $medium-width) {
+  @media (min-width: $large-width) {
     padding-top: 12px;
     padding-bottom: 15px;
   }
@@ -97,7 +97,7 @@
   text-transform: uppercase;
 
   @media (min-width: $medium-width) {
-    margin-top: 52px;
+    margin-top: 55px;
     height: 108px;
     font-size: 24px;
     line-height: 24px;
@@ -121,4 +121,9 @@
 .business-tariffs__button-text{
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: $medium-width) {
+    font-size: 24px;
+    margin-top: -7px;
+  }
 }

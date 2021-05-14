@@ -10,7 +10,7 @@
     border-bottom-right-radius: 30px;
 
   @media (min-width: $medium-width) {
-    padding-top: 141px;
+    padding-top: 157px;
     padding-bottom: 87px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -64,8 +64,8 @@
     font-size: 28px;
     line-height: 34px;
     font-weight: 300;
-    margin-top: 55px;
-    margin-left: 33px;
+    margin-top: 57px;
+    margin-left: 35px;
   }
 
   @media (min-width: $large-width) {
@@ -79,7 +79,7 @@
   flex-direction: column;
   @media (min-width: $medium-width) {
     flex-direction: row;
-    margin-top: 59px;
+    margin-top: 62px;
     margin-left: 34px;
     margin-right: 34px;
   }
@@ -95,6 +95,11 @@
   position: absolute;
   top: 17px;
   left: 16px;
+
+  @media (min-width: $medium-width) {
+    top: 19px;
+    left: 22px;
+  }
 }
 
 .users__level-number{
@@ -251,6 +256,7 @@
 
   @media (min-width: $medium-width) {
     width: 100%;
+    border-radius: 25px;
     &:not(:last-child){
       margin-right: 50px;
     }
@@ -279,6 +285,10 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   margin-top: 6px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 12px;
+  }
 }
 
 .users__info{
@@ -456,7 +466,7 @@
   margin-top: -14px;
 
   @media (min-width: $medium-width) {
-    margin-bottom: 19px;
+    margin-top: -18px;
   }
 }
 
@@ -585,6 +595,7 @@
 
   @media (min-width: $medium-width) {
     margin-top: 39px;
+    max-width: 400px;
     font-size: 21px;
     line-height: 24px;
     margin-left: 33px;
@@ -603,8 +614,8 @@
 
   @media (min-width: $medium-width) {
     margin-top: 23px;
-    margin-left: 31px;
-    margin-right: 31px;
+    margin-left: 25px;
+    margin-right: 20px;
   }
 }
 
@@ -633,8 +644,22 @@
   }
 }
 
+.users__name-text{
+  @media (min-width: $medium-width) {
+    margin-right: 7px;
+  }
+}
+
 .users__online-status-icon{
   margin-right: 10px;
+  width: 6px;
+  height: 7px;
+
+  @media (min-width: $medium-width) {
+    margin-right: 15px;
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .users__hashtag{
@@ -651,8 +676,11 @@
 
   @media (min-width: $medium-width) {
     width: auto;
-    margin-left: 34px;
+    height: 80px;
+    margin-top: 72px;
     margin-right: 34px;
+    margin-left: 34px;
+    border-radius: 20px;
   }
 
   @media (min-width: $large-width) {
@@ -667,4 +695,8 @@
   &:not(:last-child){
     margin-right: 15px;
   }
+}
+
+.users__button-arrow{
+  margin-right: 38px;
 }

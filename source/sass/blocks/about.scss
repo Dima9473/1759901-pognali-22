@@ -12,11 +12,11 @@
   background-color: $dark-blue;
 
   @media (min-width: $medium-width) {
-    margin-top: 96px;
+    margin-top: 50px;
     padding-top: 41px;
     background-image: url(../img/about-tablet.webp),url(../img/back-medium.webp);
-    background-size: 376px 510px, 90% 212px;
-    background-position: right top 45px, top left 40px;
+    background-size: 380px 550px,90% 212px;
+    background-position: right 5px top 91px,top 45px left 40px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -76,7 +76,7 @@
 
   @media (min-width: $medium-width) {
     display: flex;
-    margin-top: 52px;
+    margin-top: 54px;
     border-radius: 20px;
     width: 276px;
     height: 80px;
@@ -99,7 +99,7 @@
     width: 310px;
     font-size: 28px;
     line-height: 33px;
-    margin-top: 40px;
+    margin-top: 42px;
     margin-bottom: 25px;
   }
 

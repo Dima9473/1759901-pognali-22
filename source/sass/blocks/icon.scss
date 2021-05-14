@@ -42,12 +42,6 @@
     padding: 15px;
   }
 }
-.icon--footer-background-padding{
-  @media (min-width: $medium-width) {
-    padding: 21px;
-  }
-}
-
 
 .icon--active{
   fill: $basic-blue-light;
@@ -141,4 +135,9 @@
   fill: $basic-blue-light;
   width: 10px;
   height: 14px;
+
+  @media (min-width: $medium-width) {
+    width: 14px;
+    height: 13px;
+  }
 }

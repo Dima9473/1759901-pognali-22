@@ -7,8 +7,7 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Погнали!</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ebb1ba2b-9091-4db5-838b-28c6ee995cd1&lang=ru_RU"
-    type="text/javascript" rel="preload" as="script"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ebb1ba2b-9091-4db5-838b-28c6ee995cd1&lang=ru_RU"></script>
 </head>
 
 <body class="text">
@@ -38,7 +37,7 @@
             srcset="img/logo-mobile-dark@2x.png 2x" width="226" height="30" alt="Логотип" />
         </picture>
       </a>
-      <a class="menu__toggle">
+      <a class="menu__toggle menu__toggle--opened">
         <svg class="page-header__open-icon menu__open-icon icon icon--light visually-hidden" width="25" height="11">
           <use xlink:href="img/sprite.svg#menu-toggle-open"></use>
         </svg>
@@ -79,7 +78,7 @@
             </a>
           </li>
         </ul>
-        <a class="button button--authorization" href="authorization.html">
+        <a class="page-header__button button button--authorization" href="authorization.html">
           <div
             class="text  menu__authorization button__main-caption button__main-caption--dark button__main-caption--authorization">
             АВТОРИЗАЦИЯ</div>
@@ -117,7 +116,7 @@
                 <use xlink:href="img/sprite.svg#home-phone"></use>
               </svg>
             </dt>
-            <dd class="page-header__details icon-list__details text text--bold">8 800 555-86-28</dd>
+            <dd class="page-header__details icon-list__details text">8 800 555-86-28</dd>
           </div>
           <div class="page-header__icon icon-list__item">
             <dt class="icon-list__email">
@@ -127,7 +126,7 @@
                 <use xlink:href="img/sprite.svg#e-mail"></use>
               </svg>
             </dt>
-            <dd class="page-header__details icon-list__details text text--bold">MAIL@HTMLACADEMY.RU</dd>
+            <dd class="page-header__details icon-list__details text">MAIL@HTMLACADEMY.RU</dd>
           </div>
         </dl>
         <ul class="page-header__social-list social-list">
@@ -161,31 +160,30 @@
     <section class="promo">
       <div class="container">
         <header class="promo__header">
-          <h2 class="promo__slogan text text--bold">В путешествие <br>с крутыми <br>попутчиками!</h2>
+          <h2 class="promo__slogan text">В путешествие <br>с крутыми <br>попутчиками!</h2>
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/traveller-illustration-large.webp 1x, img/traveller-illustration-large@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 1440px)"
+              srcset="img/traveller-illustration-large.png 1x, img/traveller-illustration-large@2x.png 2x"
+              type="image/png">
+            <source media="(min-width: 768px)"
+              srcset="img/traveller-illustration-medium.webp 1x, img/traveller-illustration-medium@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/traveller-illustration-medium.png 1x, img/traveller-illustration-medium@2x.png 2x"
+              type="image/png">
+            <source srcset="img/traveller-illustration.webp 1x, img/traveller-illustration@2x.webp 2x"
+              type="image/webp">
+            <img class="promo__traveller-icon" src="img/traveller-illustration.png"
+              srcset="img/traveller-illustration@2x.png 2x" width="192" height="255" alt="Путешественник" />
+          </picture>
           <div class="promo__quote">
-            <picture>
-              <source media="(min-width: 1440px)"
-                srcset="img/traveller-illustration-large.webp 1x, img/traveller-illustration-large@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1440px)"
-                srcset="img/traveller-illustration-large.png 1x, img/traveller-illustration-large@2x.png 2x"
-                type="image/png">
-              <source media="(min-width: 768px)"
-                srcset="img/traveller-illustration-medium.webp 1x, img/traveller-illustration-medium@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)"
-                srcset="img/traveller-illustration-medium.png 1x, img/traveller-illustration-medium@2x.png 2x"
-                type="image/png">
-              <source srcset="img/traveller-illustration.webp 1x, img/traveller-illustration@2x.webp 2x"
-                type="image/webp">
-              <img class="promo__traveller-icon" src="img/traveller-illustration.png"
-                srcset="img/traveller-illustration@2x.png 2x" width="192" height="255" alt="Путешественник" />
-            </picture>
             <blockquote class="promo__review">
-              <q class="promo__description text text--default text--light">Лучшее приложение, <br> что я видел в
+              <q class="promo__description text text--default">Лучшее приложение, <br> что я видел в
                 жизни!</q>
-              <p class="promo__author-info text text--bold">Мурат Эльтазин главный редактор газеты <q
-                  class="text text--bold">гаджет
+              <p class="promo__author-info text">Мурат Эльтазин главный редактор газеты <q class="text">гаджет
                   лайф</q>
               </p>
             </blockquote>
@@ -196,25 +194,25 @@
             <li class="promo__list-item information-list__item  information-list__item--dark-theme">
               <div class="promo__item">
                 <span class="text information-list__description">Выберите <br /> направление</span>
-                <span class="promo__order-number text text--light">1</span>
+                <span class="promo__order-number text">1</span>
               </div>
             </li>
             <li class="promo__list-item  information-list__item information-list__item--middle-theme">
               <div class="promo__item">
                 <span class="text information-list__description">Изучите идеи <br /> путешественников</span>
-                <span class="promo__order-number text text--light">2</span>
+                <span class="promo__order-number text">2</span>
               </div>
             </li>
             <li class="promo__list-item  information-list__item information-list__item--light-theme">
               <div class="promo__item">
                 <span class="text information-list__description">Находите тех, <br /> кто похож на вас</span>
-                <span class="promo__order-number text text--light">3</span>
+                <span class="promo__order-number text">3</span>
               </div>
             </li>
             <li class="promo__list-item  information-list__item information-list__item--even-lighter-theme">
               <div class="promo__item">
                 <span class="text information-list__description">Путешествуйте <br /> вместе!</span>
-                <span class="promo__order-number text text--light">4</span>
+                <span class="promo__order-number text">4</span>
               </div>
             </li>
           </ul>
@@ -287,12 +285,12 @@
       <div class="container">
         <div class="about__container">
           <h2 class="about__slogan text text--caption">О сервисе</h2>
-          <p class="about__description text text--default text--light">
+          <p class="about__description text text--default">
             Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
             и
             черпайте вдохновение в чужих.
           </p>
-          <p class="about__description about__description--travel text text--default text--bold">
+          <p class="about__description about__description--travel text text--default">
             А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
           <button class="about__details button">
@@ -308,8 +306,8 @@
       <div class="countries__container container">
         <div class="countries__collection">
           <div class="countries__header">
-            <h2 class="countries__header-text text text--caption text--bold">Направления</h2>
-            <p class="text countries__info text--light">
+            <h2 class="countries__header-text text text--caption">Направления</h2>
+            <p class="text countries__info">
               Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем
               можно там заняться.
             </p>
@@ -428,11 +426,12 @@
                           Чехия
                         </dt>
                         <dd class="countries__caption visits-list__caption">
-                          <span class="text visits-list__info"> Закаулки старой Европы </span>
+                          <span class="text visits-list__info visits-list__info--large-text"> Закаулки старой Европы
+                          </span>
                         </dd>
                       </div>
                     </dl>
-                    <div class="countries__visists-count">
+                    <div class="countries__visists-count countries__visists-count--small-margin">
                       <svg class="countries__user-icon" width="14" height="14">
                         <use xlink:href="img/sprite.svg#man"></use>
                       </svg>
@@ -444,7 +443,7 @@
             </li>
           </ul>
         </div>
-        <a class="countries__all-countries button button--arrow" href="directions.html">
+        <a class="countries__all-countries button" href="directions.html">
           <span class="button__main-caption button__main-caption--padding-left">Показать все</span>
           <svg class="button__icon icon icon--arrow" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
@@ -456,16 +455,16 @@
       <div class="container">
         <div class="users__header">
           <div class="users__info">
-            <h2 class="users__caption text text--caption text--bold">
+            <h2 class="users__caption text text--caption">
               Попутчики
             </h2>
             <div class="users__background-image-1"></div>
             <div class="users__background-image-2"></div>
             <div class="users__background-image-3"></div>
-            <p class="users__description text text--default text--light">Все мы индивидуальны и у каждого свой взгляд на
+            <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на
               идеальный
               отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-            <p class="users__can-find text text--bold">Теперь можно легко найти единомышленников!</p>
+            <p class="users__can-find text">Теперь можно легко найти единомышленников!</p>
           </div>
           <ul class="users__cards card-list">
             <li class="users__card-list card-list__item">
@@ -547,7 +546,7 @@
                         <svg class="users__online-status-icon card-list__offline" width="6" height="7">
                           <use xlink:href="img/sprite.svg#point"></use>
                         </svg>
-                        <cite class="text card-list__user-name">Таня Фирсова</cite>
+                        <cite class="users__name-text text card-list__user-name">Таня Фирсова</cite>
                       </div>
                       <ul class="users__list card-list hashtag-list">
                         <li class="users__hashtag text hashtag-list__item">
@@ -668,7 +667,7 @@
                         <svg class="users__online-status-icon card-list__online" width="7" height="7">
                           <use xlink:href="img/sprite.svg#point"></use>
                         </svg>
-                        <cite class="text card-list__user-name">Петя Демин</cite>
+                        <cite class="users__name-text text card-list__user-name">Петя Демин</cite>
                       </div>
                       <ul class="users__list card-list hashtag-list">
                         <li class="users__hashtag text hashtag-list__item">
@@ -728,9 +727,9 @@
             </li>
           </ul>
         </div>
-        <a class="users__all button button--arrow" href="companions.html">
+        <a class="users__all button" href="companions.html">
           <span class="button__main-caption button__main-caption--padding-left">Показать всех</span>
-          <svg class="button__icon" width="11" height="12">
+          <svg class="users__button-arrow button__icon icon icon--arrow" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>
         </a>
@@ -739,7 +738,7 @@
     <section class="profile">
       <div class="profile__container container">
         <header class="profile__header">
-          <h2 class="profile__caption text text--caption text--bold">
+          <h2 class="profile__caption text text--caption">
             Добавьте свой профиль
           </h2>
         </header>
@@ -755,7 +754,7 @@
               </span>
             </div>
             <span class="text information-list__description-small">
-              бесплатно
+              Бесплатно
             </span>
           </li>
           <li class="profile__information information-list__item information-list__item--digital-middle-theme">
@@ -786,7 +785,7 @@
             <svg class="profile__tarif-icon icon icon--background-padding icon--grey-background" width="28" height="28">
               <use xlink:href="img/sprite.svg#businessman"></use>
             </svg>
-            <span class="profile__tariffs-text text button__main-caption-small text--bold">Показать тарифы для
+            <span class="profile__tariffs-text text button__main-caption-small">Показать тарифы для
               бизнеса</span>
           </div>
         </a>
@@ -795,8 +794,8 @@
     <section class="feedback">
       <div class="container">
         <header class="feedback__header">
-          <h2 class="feedback__caption text text--caption text--bold">Заинтересовались?</h2>
-          <p class="feedback__authorize text text--default text--light">
+          <h2 class="feedback__caption text text--caption">Заинтересовались?</h2>
+          <p class="feedback__authorize text text--default">
             Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
             <a href="authorisation.html" class="feedback__authorisation-link">авторизуйтесь</a>.
           </p>
@@ -804,12 +803,12 @@
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
           <input type="email" class="feedback__email text text--default" placeholder="E-mail" required />
           <button class="feedback__send-email button" type="submit">
-            <svg class="button--arrow" width="11" height="12">
+            <svg class="icon icon--arrow" width="11" height="12">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
           </button>
         </form>
-        <p class="text feedback__any-questions text--light">
+        <p class="text feedback__any-questions">
           Остались вопросы?<br class="feedback__any-questions-br">
           Мы с радостью на них ответим!
         </p>
@@ -822,7 +821,7 @@
                 <use xlink:href="img/sprite.svg#home-phone"></use>
               </svg>
             </dt>
-            <dd class="feedback__details text icon-list__details icon-list__details--light text--bold">8 800 555-86-28
+            <dd class="feedback__details text icon-list__details icon-list__details--light">8 800 555-86-28
             </dd>
           </div>
           <div class="feedback__contact icon-list__item">
@@ -833,7 +832,7 @@
                 <use xlink:href="img/sprite.svg#e-mail"></use>
               </svg>
             </dt>
-            <dd class="feedback__details text icon-list__details icon-list__details--light text--bold">
+            <dd class="feedback__details text icon-list__details icon-list__details--light">
               MAIL@HTMLACADEMY.RU</dd>
           </div>
         </dl>
@@ -850,15 +849,15 @@
                   <use xlink:href="img/sprite.svg#map-marker"></use>
                 </svg>
               </dt>
-              <dd class="text contacts__addres icon-list__details text--bold">УЛ. БОЛЬШАЯ <br
+              <dd class="text contacts__addres icon-list__details">УЛ. БОЛЬШАЯ <br
                   class="contacts__new-line">КОНЮШЕННАЯ, 19/8</dd>
             </div>
           </dl>
-          <a class="contacts__build-way button button--arrow"
+          <a class="contacts__build-way button"
             href="https://www.google.ru/maps/dir/Большая+Конюшенная+улица,+19%2F8,+Санкт-Петербург/Гостиный+двор,+Санкт-Петербург/@59.9364817,30.3235009,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!1m5!1m1!1s0x469631087d4b02dd:0x52698ac282b242bd!2m2!1d30.3305639!2d59.9342471!3e3">
             <span class="contacts__way-text text button__main-caption button__main-caption--padding-left">Проложить
               маршрут</span>
-            <svg class="contacts__button button__icon" width="11" height="12">
+            <svg class="contacts__button button__icon icon icon--arrow" width="11" height="12">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
           </a>
@@ -889,7 +888,7 @@
         <li class="page-footer__social-item social-list__item">
           <a class="link" href="https://www.facebook.com/htmlacademy">
             <svg
-              class="icon icon--dark-blue icon--footer-background-padding icon--background-padding icon--main-background"
+              class="page-footer__icon page-footer__icon--facebook icon icon--dark-blue icon--background-padding icon--main-background"
               width="20" height="20">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
@@ -898,7 +897,7 @@
         <li class="page-footer__social-item social-list__item">
           <a class="link" href="https://vk.com/htmlacademy">
             <svg
-              class="icon icon--footer-background-padding icon--background-padding icon--dark-blue icon--main-background"
+              class="page-footer__icon page-footer__icon--vk icon icon--background-padding icon--dark-blue icon--main-background"
               width="20" height="20">
               <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
@@ -906,8 +905,9 @@
         </li>
         <li class="page-footer__social-item social-list__item">
           <a class="ilink" href="https://www.instagram.com/htmlacademy">
-            <svg class="icon icon--footer-background-padding icon--background-padding icon--main-background" width="20"
-              height="20">
+            <svg
+              class="page-footer__icon page-footer__icon--instogram icon icon--background-padding icon--main-background"
+              width="20" height="20">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
@@ -925,23 +925,23 @@
   </footer>
   <div class="business-tariffs visually-hidden">
     <div class="business-tariffs__container container">
-      <span class="business-tariffs__caption text text--bold">Бизнес-тарифы</span>
+      <span class="business-tariffs__caption text">Бизнес-тарифы</span>
       <ul class="business-tariffs__list">
         <li class="business-tariffs__item">
-          <span class="text text--light">Рекламау блоггера</span>
-          <span class="text text--light">300 000 руб./пост</span>
+          <span class="text">Реклама у блоггера</span>
+          <span class="text">300 000 руб./пост</span>
         </li>
         <li class="business-tariffs__item">
-          <span class="text text--light">Накрутка подписчиков</span>
-          <span class="text text--light">от 1 руб./шт.</span>
+          <span class="text">Накрутка подписчиков</span>
+          <span class="text">от 1 руб./шт.</span>
         </li>
         <li class="business-tariffs__item">
-          <span class="text text--light">Лайки от ботов</span>
-          <span class="text text--light">от 20 коп./лайк</span>
+          <span class="text">Лайки от ботов</span>
+          <span class="text">от 20 коп./лайк</span>
         </li>
         <li class="business-tariffs__item">
-          <span class="text text--light">Ваш продакт-плейсмент</span>
-          <span class="text text--light">Индивидуально</span>
+          <span class="text">Ваш продакт-плейсмент</span>
+          <span class="text">Индивидуально</span>
         </li>
       </ul>
     </div>

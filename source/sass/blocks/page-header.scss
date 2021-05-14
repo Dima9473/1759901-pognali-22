@@ -70,6 +70,9 @@
 
 .page-header__logo--dark{
   width: 100px;
+  @media (min-width: $medium-width) {
+    width: 164px;
+  }
 }
 
 .page-header__open-icon{
@@ -98,9 +101,9 @@
   margin-top: 19px;
 
   @media (min-width: $medium-width) {
-    margin-top: 40px;
-    padding-left: 45px;
-    padding-right: 45px
+    margin-top: 43px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (min-width: $large-width) {
@@ -112,6 +115,10 @@
 
 .page-header__menu--opened{
   margin-top: 27px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 43px;
+  }
 }
 
 .page-header__authorisation{
@@ -132,8 +139,9 @@
 
   @media (min-width: $medium-width) {
     justify-content: flex-start;
-    margin-top: 129px;
+    margin-top: 126px;
     margin-bottom: 91px;
+    margin-left: -9px;
   }
 }
 
@@ -174,8 +182,8 @@
   margin-top: 49px;
 
   @media (min-width: $medium-width) {
-    margin-top: 144px;
-    margin-left: 97px;
+    margin-top: 135px;
+    margin-left: 132px;
   }
 }
 
@@ -263,4 +271,14 @@
 
 .page-header__icon{
   margin-top: 2px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 0;
+  }
+}
+
+.page-header__button{
+  @media (min-width: $medium-width) {
+    margin-top: -3px;
+  }
 }

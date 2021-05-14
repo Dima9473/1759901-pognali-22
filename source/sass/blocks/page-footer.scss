@@ -11,7 +11,7 @@
   border-top-right-radius: 30px;
   @media (min-width: $medium-width) {
     padding: 50px 0px;
-    margin-top: -55px;
+    margin-top: -63px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
@@ -38,6 +38,13 @@
   line-height: 16px;
   color: $special-grey;
 
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+    margin-right: 19px;
+  }
+
   &:hover{
     color: $special-grey;
     opacity: 0.6;
@@ -55,12 +62,17 @@
   margin-top: 37px;
 
   @media (min-width: $medium-width) {
-    margin-top: 0;
+    margin-top: -4px;
+    margin-left: -3px;
   }
 }
 
 .page-footer__social-item{
   margin: 0;
+
+  @media (min-width: $medium-width) {
+    // margin-right: 10px;
+  }
 }
 
 .page-footer__developed{
@@ -93,7 +105,7 @@
     height: 42px;
   }
 
-  @media (min-width: $medium-width) {
+  @media (min-width: $large-width) {
     width: 200px;
     height: 55px;
   }
@@ -104,4 +116,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-footer__icon{
+  @media (min-width: $medium-width) {
+    padding: 21px;
+  }
+}
+
+.page-footer__icon--facebook{
+  @media (min-width: $medium-width) {
+    width: 14px;
+    height: 26px;
+    padding: 18px 23px 18px 23px;
+  }
+}
+
+.page-footer__icon--vk{
+  @media (min-width: $medium-width) {
+    width: 28px;
+    height: 18px;
+    padding: 22px 18px 22px 18px;
+  }
+}
+
+.page-footer__icon--instogram{
+  @media (min-width: $medium-width) {
+    width: 22px;
+    height: 22px;
+    padding: 21px 21px 21px 21px;
+  }
 }
