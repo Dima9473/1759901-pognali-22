@@ -13,8 +13,8 @@
   &+label::before{
     content: '';
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 18px;
+    height: 18px;
     flex-shrink: 0;
     flex-grow: 0;
     background-color: #ffffff;
@@ -23,6 +23,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
+
+    @media (min-width: $medium-width) {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
   }
 
   &:checked+label::before{

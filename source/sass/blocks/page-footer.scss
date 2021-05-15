@@ -29,6 +29,14 @@
   }
 }
 
+.page-footer--companions{
+  margin-top: -73px;
+
+  @media (min-width: $medium-width) {
+    margin-top: -71px;
+  }
+}
+
 .page-footer__container{
   @media (min-width: $medium-width){
     display: flex;

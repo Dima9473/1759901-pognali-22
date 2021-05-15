@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $medium-width) {
+    margin-top: 41px;;
+  }
+
   @media (min-width: $large-width) {
     margin-right: 86px;
   }
@@ -20,18 +24,18 @@
 
   @media (min-width: $medium-width) {
     display: flex;
-    padding-left: 48px;
+    margin-left: 26px;
   }
 }
 
 .companions__navigation{
-  margin-top: 18px;
+  margin-top: 20px;
   background-color: #ffffff;
   border-radius: 20px;
 
   @media (min-width: $medium-width) {
     display: flex;
-    margin-top: 60px;
+    margin-top: 54px;
     height: 100px;
   }
 
@@ -49,6 +53,8 @@
 
   @media (min-width: $medium-width) {
    flex-direction: column;
+   margin-top: 1px;
+   padding-bottom: 0;
   }
 
   @media (min-width: $large-width) {
@@ -61,6 +67,8 @@
   position: relative;
   min-width: 270px;
   margin-bottom: 10px;
+  padding-bottom: 2px;
+  border-radius: 20px;
 
   @media (min-width: $medium-width) {
     min-width: 690px;
@@ -80,13 +88,15 @@
 
 .companions__flags{
   order: 3;
-  margin-top: 19px;
+  margin-top: 18px;
+  margin-left: 4px;
+  min-height: 54px;
 
   @media (min-width: $medium-width) {
     display: flex;
-    align-items: center;
-    margin-top: 25px;
-    margin-left: -220px;
+    margin-top: 20px;
+    margin-left: -225px;
+    margin-bottom: -5px;
   }
 
   @media (min-width: $large-width) {
@@ -99,14 +109,16 @@
 
 .companions__additional-info{
   order: 4;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-left: -6px;
 
   @media (min-width: $medium-width) {
     flex-direction: column;
     align-items: center;
     margin-left: auto;
-    margin-top: -180px;
+    margin-top: -192px;
     margin-bottom: 40px;
+    padding-right: 18px;
     order: 2;
   }
 
@@ -120,17 +132,18 @@
 
 .companions__want-visit{
   order: 1;
-  margin-top: 16px;
   background-color: #ffffff;
   z-index: 1;
-  padding-left: 12px;
   width: 110px;
+  margin-top: 16px;
+  margin-left: -7px;
+  padding-left: 12px;
 
   @media (min-width: $medium-width) {
     text-align: start;
     order: 3;
-    margin-top: 0;
-    margin-left: -180px;
+    margin-top: -15px;
+    margin-left: -189px;
   }
 
   @media (min-width: $large-width) {
@@ -140,12 +153,12 @@
 
 .companions__want-visit-line {
   position: absolute;
-  top: 158px;
+  top: 156px;
   left: 0;
   right: 0;
 
   @media (min-width: $medium-width) {
-    top: 306px;
+    top: 253px;
     left: -225px;
   }
 
@@ -156,7 +169,7 @@
 
 .companions__transport-line {
   position: absolute;
-  bottom: 143px;
+  bottom: 134px;
   left: 0;
   right: 0;
 
@@ -171,8 +184,10 @@
 
 .companions__buttons{
   order: 5;
+  margin-top: -6px;
   @media (min-width: $medium-width) {
-    margin-top: 50px;
+    margin-top: 49px;
+    margin-left: -5px;
     order: 0;
   }
 
@@ -183,8 +198,8 @@
 
 .companions__avatar{
   position: absolute;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 14px;
+  margin-left: 18px;
   min-height: 70px;
   min-width: 70px;
 
@@ -205,29 +220,37 @@
 }
 
 .companions__user{
-  margin-left: 100px;
+  position: relative;
+  margin-top: -3px;
+  margin-left: 84px;
+  max-width: 100px;
 
   @media (min-width: $medium-width) {
-    margin-left: 0;
+    max-width: 225px;
+    margin-left: -2px;
+    margin-top: -5px;
   }
 }
 
 .companions__hashtags{
   display: flex;
-  margin-top: 40px;
+  margin-top: 44px;
+  margin-left: 5px;
   min-height: 36px;
+  max-width: 175px;
 
   @media (min-width: $medium-width) {
-    margin-top: 20px;
+    margin-top: 17px;
     max-width: 226px;
+    margin-left: 0px;
   }
 }
 
 .companions__likes{
   top: 0;
   position: absolute;
-  margin-top: 60px;
-  margin-left: 50px;
+  margin-top: 54px;
+  margin-left: 48px;
 
   @media (min-width: $medium-width) {
     margin-top: 0;
@@ -236,9 +259,14 @@
   }
 }
 
+.companions__likes-count{
+  margin-left: 5px;
+}
+
 .companions__card-list{
   flex-direction: row;
-  margin-top: 18px;
+  margin-top: 16px;
+  margin-left: 5px;
 
   @media (min-width: $medium-width) {
     flex-direction: column;
@@ -256,6 +284,8 @@
 
   @media (min-width: $medium-width) {
     padding: 21px;
+    @include text(20px, bold, 20px, $basic-blue-light);
+    text-transform: uppercase;
   }
 
   &:hover{
@@ -529,11 +559,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-left: 63px;
-  padding-right: 63px;
+  padding-left: 60px;
+  padding-right: 60px;
 
   @media (max-width: $medium-max-width) {
     width: 100%;
+    padding-right: 28px;
   }
 
   @media (min-width: $medium-width) {
@@ -543,7 +574,8 @@
 
 .companions__level{
   @media (min-width: $medium-width) {
-    margin-top: 10px;
+    margin-top: 16px;
+    transform: scale(1.4);
   }
 }
 
@@ -551,6 +583,7 @@
   width: 46px;
   height: 45px;
   fill: none;
+  margin-right: -8px;
 
   @media (max-width: $small-max-width) {
     margin-top: 10px;
@@ -591,7 +624,7 @@
   background-color: #ffffff;
   z-index: 1;
   padding-left: 14px;
-  padding-right: 10px;
+  padding-right: 5px;
 
   @media (min-width: $medium-width) {
     display: none;
@@ -611,21 +644,22 @@
 
   @media (max-width: $small-max-width) {
     width: 100%;
-    margin-top: 21px;
+    margin-top: 20px;
   }
 
   @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
     min-width: 150px;
     height: 50px;
   }
 }
 
 .companions__inline-card-item{
-  margin-right: 10px;
+  margin-right: 2px;
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     margin-right: 0;
-    margin-bottom: 8px;
   }
 }
 
@@ -658,8 +692,16 @@
 }
 
 .companions__online-status{
+  position: absolute;
+  top: 21px;
+  left: 241px;
+
+  @media (min-width: $medium-width) {
+    left: 244px;
+    top: 42px;
+  }
+
   @media (min-width: $large-width) {
-    position: absolute;
     left: -18px;
   }
 }
@@ -700,4 +742,37 @@
   @media (min-width: $medium-width) {
     display: none;
   }
+}
+
+.companions__name{
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $medium-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #f97676;
+    border-radius: 50%;
+    margin-left: 23px;
+    top: 10px;
+    left: 114px;
+
+    @media (min-width: $medium-width) {
+      margin-left: 23px;
+      top: 12px;
+      left: auto;
+    }
+  }
+}
+
+.companions__name--online.companions__name::after{
+  background-color: #BBF085;
 }

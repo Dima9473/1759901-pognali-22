@@ -3,13 +3,29 @@
 }
 
 .flags-list__item{
-  margin-bottom: 10px;
-  margin-right: 25px
+  margin-right: 25px;
+
+  &:not(:last-child){
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $medium-width) and (max-width: $medium-max-width){
+    margin-right: 0;
+    &:not(:last-child){
+      margin-right: 27px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .flags-list__flag-caption{
   @include text(15px, 500, 16px, $basic-blue-light);
   text-transform: uppercase;
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .flags-list__country-info{
@@ -19,4 +35,8 @@
 
 .flags-list__icon{
   margin-right: 15px;
+
+  @media (min-width: $medium-width) {
+    margin-right: 12px;
+  }
 }
