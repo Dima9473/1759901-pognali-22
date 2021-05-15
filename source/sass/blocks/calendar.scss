@@ -4,7 +4,7 @@
 
 .calendar__day-cell{
   width: 33px;
-  height: 32px;
+  height: 31px;
   border-bottom: 1px solid #D6D9E6;
   border-left: 1px solid #D6D9E6;
 
@@ -20,6 +20,8 @@
 }
 
 .calendar .calendar__header{
+  padding-left: 5px;
+  padding-bottom: 8px;
   border-bottom: 1px solid rgba(214,217,230, 0.3);
   &:hover{
     border-bottom: 2px solid #FF5C23;

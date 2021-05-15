@@ -16,10 +16,10 @@
 }
 
 .user-info__plans{
-  padding-top: 28px;
-  padding-bottom: 30px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  padding-top: 26px;
+  padding-bottom: 45px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 
   @media (min-width: $medium-width) {
     padding-top: 57px;
@@ -57,7 +57,7 @@
 }
 
 .user-info__general{
-  padding-top: 95px;
+  padding-top: 94px;
   padding-bottom: 34px;
 
   @media (min-width: $medium-width) {
@@ -73,11 +73,11 @@
 
 .user-info__add-plans{
   background-color: #D4D9EB;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 113px;
   margin-top: -25px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 
   @media (min-width: $medium-width) {
     padding-top: 53px;
@@ -113,7 +113,11 @@
 
 .user-info__avatars{
   width: 45%;
-  text-align: left;
+
+  @media (min-width: $medium-width) {
+    text-align: left;
+  }
+
   @media (min-width: $medium-width) and (max-width: $medium-max-width){
     order: 3;
     width: 30%;
@@ -188,7 +192,8 @@
 
 .user-info__tags{
   width: 100%;
-  margin-top: 33px;
+  height: 80px;
+  margin-top: 25px;
   border-radius: 10px;
   border: 1px solid $special-dark-grey;
 
@@ -218,8 +223,8 @@
 
 .user-info__transport{
   width: 100%;
-  margin-top: 25px;
-  height: 66px;
+  margin-top: 17px;
+  height: 54px;
   border: 1px solid $special-dark-grey;
   border-radius: 10px;
 
@@ -266,6 +271,7 @@
 .user-info__tag-input{
   border: none;
   background: none;
+  padding-left: 8px;
 }
 
 .user-info__level-icon{
@@ -301,6 +307,7 @@
 .user-info__points{
   list-style-type: none;
   display: flex;
+  margin-right: 16px;
 
   @media (min-width: $large-width) {
     display: none;
@@ -320,8 +327,8 @@
 }
 
 .user-info__point-icon{
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 
   @media (min-width: $medium-width) {
     width: 6px;
@@ -365,7 +372,7 @@
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  margin-top: 8px;
+  margin-top: 2px;
 
   @media (min-width: $medium-width) {
     margin-top: 15px;

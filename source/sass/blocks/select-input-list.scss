@@ -4,7 +4,9 @@
 
 .select-input-list__item{
   display: flex;
+  margin-top: -4px;
+
   &:not(:last-child){
-    margin-bottom: 22px;
+    margin-bottom: 26px;
   }
 }

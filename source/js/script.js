@@ -71,7 +71,7 @@ const onNavigationClosed = () => {
   }
 
   if (underline) {
-    underline.classList.remove('page-header__underline--visually-hidden');
+    underline.classList.remove('visually-hidden');
   }
 }
 
@@ -82,6 +82,7 @@ const enableMenuJs = () => {
   pageHeaderCaption?.classList.remove('page-header__underline--without-js');
   logo.classList.remove('menu__logo-mobile--without-js');
   logoDark.classList.remove('menu__logo-mobile-dark--without-js');
+  underline.classList.remove('page-header__underline--visually-hidden');
 
   onNavigationClosed();
 }

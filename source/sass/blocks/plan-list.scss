@@ -4,7 +4,7 @@
 
 .plan-list__item{
   margin-bottom: 10px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   background: #FFFFFF;
   border-radius: $card-border-radius-small;
   list-style-type: none;
@@ -27,8 +27,8 @@
 
 .plan-list__header{
   display: flex;
-  padding-top: 25px;
-  padding-left: 25px;
+  padding-top: 23px;
+  padding-left: 24px;
 
   @media (min-width: $medium-width) {
     flex-direction: row-reverse;
@@ -62,12 +62,10 @@
 }
 
 .plan-list__details{
-  margin-top: 20px;
   padding-left: 25px;
   @media (min-width: $medium-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
     padding-right: 45px;
     padding-top: 20px;
     padding-left: 40px;
@@ -78,8 +76,8 @@
     border-top: none;
     width: 50%;
     padding-right: 0;
-     padding-top: 0;
-     padding-left: 0;
+    padding-top: 0;
+    padding-left: 0;
   }
 }
 
@@ -102,7 +100,7 @@
 
 .plan-list__change{
   display: block;
-  margin-top: 24px;
+  margin-top: 20px;
   align-items: flex-start;
 
   @media (min-width: $medium-width) {

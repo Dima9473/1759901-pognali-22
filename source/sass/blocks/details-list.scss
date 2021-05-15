@@ -5,6 +5,7 @@
 
 .details-list__text{
   @include text(14px, 500, 14px, $basic-blue-light);
+  margin-top: 5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -30,7 +31,7 @@
   position: relative;
   letter-spacing: 0.06em;
   margin-right: 3px;
-  min-width: 70px;
+  padding-right: 19px;
 
   &:after{
     content: '';

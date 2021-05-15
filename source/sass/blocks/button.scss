@@ -102,10 +102,6 @@
   color: $basic-blue;
 }
 
-.button__main-caption-small{
-  @include text(16px, bold, 16px, #132576);
-}
-
 .button__main-caption--padding-left{
   margin-left: 22px;
 

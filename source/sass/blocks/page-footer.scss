@@ -21,6 +21,10 @@
   }
 }
 
+.page-footer--directions{
+  margin-top: -86px;
+}
+
 .page-footer__container{
   @media (min-width: $medium-width){
     display: flex;

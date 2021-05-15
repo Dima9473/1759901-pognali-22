@@ -8,8 +8,7 @@
   padding-top: 11px;
   padding-right: 15px;
   padding-bottom: 11px;
-  padding-left: 11px;
-  margin-bottom: -2px;
+  padding-left: 9px;
 }
 
 .add-plans__header{
@@ -23,7 +22,7 @@
 }
 
 .add-plans__adding-list{
-  padding-top: 29px;
+  padding-top: 15px;
 
   @media (min-width: $medium-width) {
     padding-top: 56px;
@@ -63,14 +62,21 @@
 }
 
 .add-plans__button-step--previous{
+  height: 22px;
   @media (max-width: $small-max-width) {
-    margin-top: 13px
+    margin-top: 15px;
+    margin-left: 3px;
   }
 
   @media (min-width: $medium-width) {
     justify-content: flex-end;
     padding-right: 41px;
   }
+}
+
+.add-plans__button-caption{
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .add-plans__caption{
@@ -148,7 +154,7 @@
 
 .add-plans__connection--small{
   top: 12px;
-  left: -18px;
+  left: -14px;
   width: 17px;
   height: 287px;
 
@@ -178,7 +184,7 @@
 
 .add-plans__entertainments{
   position: relative;
-  margin-top: 23px;
+  margin-top: 16px;
 
   @media (min-width: $medium-width) {
     margin-top: 0;
@@ -224,6 +230,7 @@
 .add-plans__show-countries-icon{
   width: 16px;
   height: 12px;
+  margin-right: -3px;
 
   @media (min-width: $medium-width) {
     width: 20px;
@@ -243,7 +250,7 @@
 
 .add-plans__remove-country-icon{
   position: absolute;
-  top: -10px;
+  top: -9px;
   right: -10px;
   width: 21px;
   height: 21px;
@@ -276,7 +283,7 @@
 }
 
 .add-plans__remove-country-icon--selected{
-  right: -13px;
+  right: -11px;
 
   @media (min-width: $medium-width) {
     right: -65px;
@@ -296,7 +303,7 @@
 
 .add-plans__add-country-text{
   @include text(14px, 500, 18px, $basic-blue-light);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 
   @media (max-width: $small-max-width) {
@@ -313,8 +320,8 @@
 .add-plans__circle-icon{
   fill: none;
   position: absolute;
-  top: 17px;
-  right: 47px;
+  top: 18px;
+  right: 48px;
   width: 8px;
   height: 8px;
 
@@ -335,6 +342,7 @@
 }
 
 .add-plans__circle-icon--add-button{
+  top: 40px;
   stroke: $special-dark-grey;
 
   @media (min-width: $medium-width) {
@@ -351,13 +359,13 @@
 
 .add-plans__circle-icon--selected{
   position: absolute;
-  top: 16px;
-  right: -5px;
+  top: 18px;
+  right: 49px;
   fill: $basic-blue-light;
 
   @media (min-width: $medium-width) {
-    right: 107px;
     top: 30px;
+    right: 107px;
   }
 
   @media (min-width: $large-width) {
@@ -432,9 +440,10 @@
 .add-plans__countries{
   border: 1px solid $special-dark-grey;
   border-top: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 19px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  letter-spacing: 0.02em;
 }
 
 .add-plans__country-item{
@@ -482,7 +491,6 @@
   align-items: center;
   border: 1px solid $special-dark-grey;
   border-radius: 4px;
-  margin-bottom: -2px;
 
   @media (min-width: $medium-width) {
     position: absolute;
@@ -516,8 +524,8 @@
 .add-plans__arrow-down{
   position: absolute;
   fill: $special-dark-grey;
-  right: -5px;
-  bottom: -15px;
+  right: -6px;
+  bottom: -16px;
   width: 8px;
   height: 11px;
 
@@ -527,5 +535,10 @@
 }
 
 .add-plans__arrow-down--for-empty-country{
-  right: 47px;
+  bottom: -19px;
+  right: 46px;
+}
+
+.add-plans__send{
+  margin-top: 14px;
 }
