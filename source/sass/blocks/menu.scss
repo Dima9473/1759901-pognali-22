@@ -1,8 +1,16 @@
-.menu__logo-mobile-dark--visible{
+.menu__logo-mobile--without-js{
   display: none;
 
   @media (min-width: $large-width) {
     display: block;
+  }
+}
+
+.menu__logo-mobile-dark--without-js{
+  display: block;
+
+  @media (min-width: $large-width) {
+    display: none;
   }
 }
 
@@ -50,8 +58,6 @@
     height: 2px;
     display: block;
     fill: #ffffff;
-    margin-left: 40px;
-    margin-right: 45px;
   }
 }
 
@@ -64,6 +70,7 @@
 
   @media (min-width: $large-width) {
     display: flex;
+    margin-right: 255px;
   }
 }
 

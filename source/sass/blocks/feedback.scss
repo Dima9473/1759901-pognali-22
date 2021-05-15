@@ -9,14 +9,15 @@
   border-bottom-right-radius: 30px;
 
   @media (min-width: $medium-width) {
-    margin-top: -57px;
+    margin-top: -54px;
     padding-top: 129px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 
   @media (min-width: $large-width) {
+    margin-top: -57px;
     padding-top: 164px;
     padding-bottom: 104px;
   }
@@ -42,6 +43,12 @@
     font-size: 28px;
     line-height: 32px;
   }
+
+  @media (min-width: $large-width) {
+    margin: 59px auto 0;
+    padding-left: 50px;
+    max-width: 700px;
+  }
 }
 
 .feedback__list{
@@ -56,7 +63,7 @@
 
   @media (min-width: $large-width) {
     flex-direction: row;
-    margin-top: 43px;
+    margin-top: 45px;
     margin-left: 226px;
   }
 }
@@ -97,6 +104,10 @@
   @media (min-width: $medium-width) {
     margin-top: 65px;
   }
+
+  @media (min-width: $large-width) {
+    margin-top: 57px;
+  }
 }
 
 .feedback__any-questions{
@@ -106,9 +117,14 @@
   margin-top: 27px;
 
   @media (min-width: $medium-width) {
-    margin-top: 56px;
+    margin-top: 55px;
     font-size: 28px;
     line-height: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 66px;
+    padding-right: 10px;
   }
 }
 
@@ -121,21 +137,24 @@
   border-radius: 10px;
   @include text(18px, bold, 18px, $special-grey);
 
-  @media (min-width: $medium-width) {
-    height: 80px;
-    width: 80%;
-    border-radius: 25px;
-  }
-
   &::placeholder{
     padding-left: 25px
   }
 
   @media (min-width: $medium-width) {
+    height: 80px;
+    width: 80%;
+    border-radius: 25px;
+
     &::placeholder{
       font-size: 24px;
       line-height: 24px;
     }
+  }
+
+  @media (min-width: $large-width) {
+    height: 81px;
+    width: 84%;
   }
 
   &:hover::placeholder{
@@ -175,6 +194,14 @@
     border-radius: 4px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+  }
+
+  @media (min-width: $large-width) {
+    top: 2px;
+    right: 73px;
+    margin-left: -84px;
+    width: 325px;
+    height: 83px;
   }
 }
 
@@ -217,4 +244,13 @@
 
 .feedback__phone{
   margin-top: -1px;
+}
+
+.feedback__button-text{
+  display: none;
+
+  @media (min-width: $large-width) {
+    display: block;
+    margin-right: 22px;
+  }
 }

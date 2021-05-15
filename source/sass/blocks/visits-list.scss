@@ -36,6 +36,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $large-width) {
+    max-width: 230px;
+  }
 }
 
 .visits-list__info--large-text{

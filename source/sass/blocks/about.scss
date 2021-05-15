@@ -12,7 +12,7 @@
   background-color: $dark-blue;
 
   @media (min-width: $medium-width) {
-    margin-top: 50px;
+    margin-top: 52px;
     padding-top: 41px;
     background-image: url(../img/about-tablet.webp),url(../img/back-medium.webp);
     background-size: 380px 550px,90% 212px;
@@ -24,10 +24,10 @@
 
   @media (min-width: $large-width) {
     margin-top: 0;
-    padding-top: 42px;
+    padding-top: 0;
     background-image: url(../img/about-desktop.webp),url(../img/back-large.webp);
-    background-size: 630px 735px, 212px 212px;
-    background-position: right top, top left 40px;
+    background-size: 630px 660px, 212px 195px;
+    background-position: right 62px top, top left 61px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -67,7 +67,7 @@
   }
 
   @media (min-width: $medium-width) {
-    padding-top: 42px;
+    padding-top: 40px;
   }
 }
 
@@ -96,7 +96,7 @@
   }
 
   @media (min-width: $medium-width) {
-    width: 310px;
+    max-width: 310px;
     font-size: 28px;
     line-height: 33px;
     margin-top: 42px;
@@ -104,7 +104,7 @@
   }
 
   @media (min-width: $large-width) {
-    width: 620px;
+    max-width: 620px;
     margin-top: 57px;
   }
 }
@@ -119,6 +119,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: 38px;
+    max-width: 420px;
+    margin-top: 42px;
   }
 }

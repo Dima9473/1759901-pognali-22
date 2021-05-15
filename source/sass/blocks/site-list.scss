@@ -43,6 +43,8 @@
   }
 
   @media (min-width: $large-width) {
-    padding-right: 35px;
+    &:not(:last-child){
+      padding-right: 35px;
+    }
   }
 }

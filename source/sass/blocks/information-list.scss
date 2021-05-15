@@ -64,4 +64,8 @@ background-color: $basic-yellow;
     line-height: 28px;
     min-width: 135px;
   }
+
+  @media (min-width: $large-width) {
+    margin-right: 18px;
+  }
 }

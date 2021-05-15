@@ -3,7 +3,7 @@
   background-image: url(../img/globe-back-mobile.webp), linear-gradient($basic-blue 733px, $dark-blue 733px);
   background-repeat: no-repeat;
   background-size: 100% 382px,400px 110%;
-    background-position: 0 4px,0 -92px;
+  background-position: 0 4px,0 -92px;
 
   @media (min-width: $medium-width) {
     margin-top: 216px;
@@ -14,8 +14,9 @@
 
   @media (min-width: $large-width) {
     background-image: url(../img/globe-back-desktop.webp);
-    background-position: 0px -110px;
+    background-position: 0px -171px;
     background-size: 100% 795px;
+    padding-bottom: 20px;
   }
 
   @media (min-resolution: 2dppx){
@@ -50,6 +51,7 @@
   }
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
+    margin-top: 32px;
     & ul li:first-child{
       border-top-left-radius: 25px;
     }
@@ -68,6 +70,8 @@
   }
 
   @media (min-width: $large-width) {
+    margin-top: -260px;
+    padding-bottom: 108px;
     & ul li{
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
@@ -91,7 +95,6 @@
   @media (min-width: $large-width) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -121,13 +124,14 @@
   @include text(36px, bold, 40px, #ffffff);
 
   @media (min-width: $medium-width) {
-    @include text(60px, bold, 70px, #ffffff);
+    font-size: 60px;
+    line-height: 70px;
   }
 
   @media (min-width: $large-width) {
     text-align: left;
-    margin-top: -240px;
-    margin-right: 59px;
+    margin-top: -285px;
+    margin-left: 65px;
   }
 }
 
@@ -138,19 +142,8 @@
 
   @media (min-width: $medium-width) {
     margin-top: 44px;
-    max-width: 251px;
+    max-width: 225px;
     @include text(21px, bold, 25px, #ffffff);
-  }
-}
-
-.promo__indent{
-  @media (min-width: $medium-width) {
-    margin-top: 32px;
-  }
-
-  @media (min-width: $large-width) {
-    margin-top: -230px;
-    padding-bottom: 108px;
   }
 }
 
@@ -171,6 +164,8 @@
   @media (min-width: $large-width) {
     display: flex;
     margin-bottom: 0;
+    margin-top: -48px;
+    margin-left: 85px;
     width: 431px;
     height: 640px;
   }
@@ -202,7 +197,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: -230px;
+    margin-top: -285px;
     margin-left: 58px;
   }
 }
@@ -247,8 +242,21 @@
   margin-left: -1px;
 
   @media (min-width: $large-width) {
-    &:not(first-child){
-      margin-left: -21px;
+    &:not(:first-child){
+      margin-left: -28px;
+    }
+
+    width: 29%;
+    &:first-child {
+      width: 26%;
+    }
+
+    &:last-child {
+      width: 24%;
+    }
+
+    &:last-child .promo__order-number{
+      margin-right: 0
     }
   }
 }
@@ -260,5 +268,12 @@
   @media (min-width: $medium-width) {
     font-size: 30px;
     line-height: 30px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -3px;
+    margin-right: 25px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }

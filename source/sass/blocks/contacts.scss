@@ -25,9 +25,13 @@
 
   @media (min-width: $medium-width) {
     margin-top: -105px;
-    padding-top: 105px;
+    padding-top: 103px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-top: 105px;
   }
 }
 
@@ -64,6 +68,10 @@
     line-height: 28px;
     margin-left: 25px;
   }
+
+  @media (min-width: $large-width) {
+    margin-left: 30px;
+  }
 }
 
 .contacts__list{
@@ -73,7 +81,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin-left: 226px;
+    margin-left: 179px;
   }
 }
 
@@ -87,6 +95,12 @@
     width: 23px;
     height: 31px;
     padding: 19px 23px 19px 23px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 42px;
+    height: 42px;
+    padding: 23px 25px;
   }
 }
 

@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $large-width) {
-    padding-bottom: 165px;
+    padding-bottom: 172px;
   }
 }
 
@@ -24,6 +24,10 @@
 
   @media (min-width: $medium-width) {
     padding-left: 40px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 60px;
   }
 }
 
@@ -51,16 +55,16 @@
   }
 
   @media (min-width: $large-width) {
-    width: 75%;
+    width: 70%;
     margin: 0;
-    margin-top: 83px;
+    margin-top: 48px;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-left: 80px;
-    padding-right: 230px;
+    padding-left: 70px;
+    padding-right: 253px;
     background-image: url(../img/rates-large.webp);
     background-size: 198px 198px;
-    background-position: right ;
+    background-position: top 7px right ;
   }
 
   @media (min-resolution: 2dppx){
@@ -91,10 +95,10 @@
     }
 
     @media (min-width: $large-width) {
-      height: 300px;
-      width: 446px;
-      right: 110px;
-      top: -35px;
+      height: 305px;
+      width: 455px;
+      right: 145px;
+      top: -50px;
     }
   }
 }
@@ -113,18 +117,21 @@
   }
 
   @media (min-width: $large-width) {
-    padding-top: 132px;
+    padding-top: 158px;
   }
 }
 
 .profile__business-tariffs-button{
+  margin-top: 33px;
 
   @media (min-width: $medium-width) {
+    margin-top: 57px;
     margin-left: 0;
     justify-content: flex-start;
   }
 
   @media (min-width: $large-width) {
+    margin-top: 41px;
     margin-left: 80px;
   }
 
@@ -166,7 +173,6 @@
   }
 
   @media (min-width: $large-width) {
-    margin: 0 auto;
     padding-bottom: 85px;
   }
 }
@@ -174,13 +180,11 @@
 .profile__show-tariffs{
   display: flex;
   align-items: center;
-  margin-top: 33px;
   width: 100%;
 
   @media (min-width: $medium-width) {
     position: relative;
     z-index: 1;
-    margin-top: 57px;
   }
 
   &:hover{
@@ -266,6 +270,10 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 18px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 25px;
   }
 }
 

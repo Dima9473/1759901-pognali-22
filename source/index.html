@@ -13,7 +13,7 @@
 <body class="text">
   <header class="page-header page-header--opened">
     <div class="container page-header__menu page-header__menu--opened menu">
-      <a href="#" class="menu__logo-mobile visually-hidden">
+      <a href="#" class="menu__logo-mobile menu__logo-mobile--without-js">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1440px)" srcset="img/logo.png 1x, img/logo@2x.png 2x" type="image/png">
@@ -26,7 +26,7 @@
             height="30" alt="Логотип" />
         </picture>
       </a>
-      <a href="#" class="menu__logo-mobile-dark">
+      <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--without-js">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-medium-dark.webp 1x, img/logo-medium-dark@2x.webp 2x"
             type="image/webp">
@@ -190,7 +190,7 @@
           </div>
         </header>
         <div class="promo__container container">
-          <ul class="promo__indent information-list">
+          <ul class="information-list">
             <li class="promo__list-item information-list__item  information-list__item--dark-theme">
               <div class="promo__item">
                 <span class="text information-list__description">Выберите <br /> направление</span>
@@ -222,7 +222,7 @@
     <section class="middle-menu menu">
       <h2 class="visually-hidden">Центральное меню</h2>
       <div class="middle-menu__container container">
-        <a href="#" class="menu__logo-mobile-dark menu__logo-mobile-dark--visible">
+        <a href="#" class="menu__logo-mobile-dark middle-menu__logo-mobile-dark--visible">
           <picture>
             <source srcset="img/logo-large-dark.webp 1x, img/logo-large-dark@2x.webp 2x" type="image/webp">
             <img class="middle-menu__logo" src="img/logo-large-dark.png" srcset="img/logo-large-dark@2x.png 2x"
@@ -237,10 +237,10 @@
             <use xlink:href="img/sprite.svg#toggle-close"></use>
           </svg>
         </a>
-        <svg class="menu__line menu__line--dark" width="60" height="2">
+        <svg class="middle-menu__line menu__line menu__line--dark" width="60" height="2">
           <use xlink:href="img/sprite.svg#menu-dash"></use>
         </svg>
-        <nav class="menu__nav main-nav">
+        <nav class="middle-menu__nav menu__nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link text link site-list__link--dark" href="#">О СЕРВИСЕ</a>
@@ -803,6 +803,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
           <input type="email" class="feedback__email text text--default" placeholder="E-mail" required />
           <button class="feedback__send-email button" type="submit">
+            <span class="feedback__button-text button__main-caption">Регистрация</span>
             <svg class="icon icon--arrow" width="11" height="12">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
