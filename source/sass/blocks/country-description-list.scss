@@ -2,13 +2,14 @@
   padding: 0;
 
   @media (min-width: $medium-width) {
-    width: 90%;
-    margin-top: 27px;
+    width: 94%;
+    margin-top: 20px;
+    margin-bottom: -6px;
   }
 
   @media (min-width: $large-width) {
     width: auto;
-    margin-top: 75px;
+    margin-top: 68px;
   }
 }
 
@@ -16,6 +17,12 @@
   position: relative;
   &:not(:last-child){
     margin-bottom: 16px
+  }
+
+  @media (min-width: $medium-width) {
+    &:not(:last-child){
+      margin-bottom: 33px;
+    }
   }
 
   @media (min-width: $large-width) {
@@ -28,11 +35,6 @@
   margin-block-start: 0;
   margin-block-end: 0;
 
-  @media (min-width: $medium-width) {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-  }
   &:after {
     position: absolute;
     right: 36px;
@@ -45,15 +47,42 @@
     );
     pointer-events: none;
   }
+
+  @media (min-width: $medium-width) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+
+    &:after {
+      position: absolute;
+      right: 75px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    &:after {
+      right: 100px;
+    }
+  }
 }
 
 .country-description-list__country{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin-bottom: 18px;
   margin-left: 11px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 34px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 32px;
+    margin-left: -1px;
+  }
 }
 
 .country-description-list__change-text{
@@ -67,20 +96,24 @@
   height: 208px;
 
   @media (min-width: $medium-width) {
+    margin-left: 5px;
     padding-top: 18px;
     padding-left: 19px;
     font-size: 20px;
     line-height: 23px;
-    height: 140px;
+    width: 95%;
+    height: 120px;
   }
 
   @media (min-width: $large-width) {
-    padding-top: 26px;
-    padding-left: 25px;
+    margin-left: 0;
+    padding-top: 23px;
+    padding-left: 26px;
     font-size: 20px;
     line-height: 23px;
-    height: 142px;
-    max-width: 730px;
+    height: 115px;
+    max-width: 702px;
+    letter-spacing: 0.09em;
   }
 
   &:hover{
@@ -114,7 +147,6 @@
   padding-top: 20px;
   padding-bottom: 16px;
   padding-left: 21px;
-  // margin-left: 21px;
   background-color: #FFEFEF;
 
   @media (min-width: $medium-width) {
@@ -125,35 +157,6 @@
 
 }
 
-// .country-description-list__change-text:invalid + .country-description-list__change-text-invalid{
-//   // position: absolute;
-//   // bottom: 10px;
-//   // left: 10px;
-//   // background-color: #FFEFEF;
-//   // width: 100%;
-//   // display: block;
-// }
-
-// .country-description-list__change-text::after{
-//   position: absolute;
-//   content: "Тест";
-//   bottom: 10px;
-//   left: 10px;
-//   background-color: #FFEFEF;
-//   width: 100%;
-//   display: block;
-// }
-
-// .country-description-list__change-text:invalid + .country-description-list__change-text::after{
-//   position: absolute;
-//   content: "Тест";
-//   bottom: 10px;
-//   left: 10px;
-//   background-color: #FFEFEF;
-//   width: 100%;
-//   display: block;
-// }
-
 .country-description-list__flag{
   width: 35px;
   height: 24px;
@@ -162,5 +165,7 @@
   @media (min-width: $medium-width) {
     width: 70px;
     height: 47px;
+    margin-top: 7px;
+    margin-right: 12px;
   }
 }

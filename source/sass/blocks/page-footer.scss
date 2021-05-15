@@ -23,6 +23,10 @@
 
 .page-footer--directions{
   margin-top: -86px;
+
+  @media (min-width: $medium-width) {
+    margin-top: -53px;
+  }
 }
 
 .page-footer__container{

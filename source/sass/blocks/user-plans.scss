@@ -6,7 +6,11 @@
   margin-top: 31px;
 
   @media (min-width: $medium-width) {
-    margin-top: 48px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 53px;
   }
 }
 
@@ -16,5 +20,9 @@
   @media (min-width: $medium-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 7px;
   }
 }

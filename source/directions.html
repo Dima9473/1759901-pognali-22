@@ -336,7 +336,8 @@
             <li id="step1" class="step-list__item step-list__container">
               <div class="step-list__header">
                 <div class="step-list__header-text">
-                  <h3 class="step-list__caption">Шаг 1. <br>Даты пребывания</h3>
+                  <h3 class="step-list__caption">Шаг 1.</h3>
+                  <span class="step-list__caption step-list__name">Даты пребывания</span>
                   <p class="step-list__description text">Укажите предпочтительное количество
                     попутчиков, которых вы
                     хотели
@@ -344,11 +345,16 @@
                     позвать в поездку, и ее предполагаемую длительность.</p>
                 </div>
                 <ul class="step-list__nav">
-                  <li><a href="#step1" class="step-list__nav-item text link">Даты</a></li>
-                  <li><a href="#step2" class="step-list__nav-item step-list__nav-item--disabled text link">Маршрут</a>
+                  <li class="step-list__nav-item">
+                    <a href="#step1" class="step-list__nav-link text link">Даты</a>
                   </li>
-                  <li><a href="#step3"
-                      class="step-list__nav-item step-list__nav-item--disabled text link">Развлечения</a>
+                  <li class="step-list__nav-item step-list__nav-item--disabled">
+                    <a href="#step2" class="step-list__nav-link text link">Маршрут</a>
+                  </li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled">
+                    <a href="#step3" class="step-list__nav-link text link">
+                      Развлечения
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -404,25 +410,25 @@
                 <table class="step-list__days calendar">
                   <tr class="calendar__day-row">
                     <th class="calendar__day calendar__header text">
-                      <span>П</span>
+                      <span>П<span class="calendar__weekend-latter">н</span></span>
                     </th>
                     <th class="calendar__day calendar__header text">
-                      <span>В</span>
+                      <span>В<span class="calendar__weekend-latter">т</span></span>
                     </th>
                     <th class="calendar__day calendar__header text">
-                      <span>С</span>
+                      <span>С<span class="calendar__weekend-latter">р</span></span>
                     </th>
                     <th class="calendar__day calendar__header text">
-                      <span>Ч</span>
+                      <span>Ч<span class="calendar__weekend-latter">т</span></span>
                     </th>
                     <th class="calendar__day calendar__header text">
-                      <span>П</span>
+                      <span>П<span class="calendar__weekend-latter">т</span></span>
                     </th>
                     <th class="calendar__day calendar__header calendar__day--weakened text">
-                      <span>С</span>
+                      <span>С<span class="calendar__weekend-latter">б</span></span>
                     </th>
                     <th class="calendar__day  calendar__header calendar__day--weakened text">
-                      <span>В</span>
+                      <span>В<span class="calendar__weekend-latter">с</span></span>
                     </th>
                   </tr>
                   <tr class="calendar__day-row">
@@ -579,17 +585,23 @@
             <li id="step2" class="step-list__item step-list__container step-list__item--step-2">
               <div class="step-list__header">
                 <div class="step-list__header-text">
-                  <h3 class="step-list__caption">Шаг 2. <br>Маршрут</h3>
+                  <h3 class="step-list__caption">Шаг 2.</h3>
+                  <span class="step-list__caption step-list__name">Маршрут</span>
                   <p class="add-plans__description step-list__description text">
                     Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
                   </p>
                 </div>
                 <ul class="step-list__nav">
-                  <li><a href="#step1" class="step-list__nav-item step-list__nav-item--disabled text link">Даты</a></li>
-                  <li><a href="#step2" class="step-list__nav-item text link">Маршрут</a>
+                  <li class="step-list__nav-item step-list__nav-item--disabled">
+                    <a href="#step1" class="step-list__nav-link text link">Даты</a>
                   </li>
-                  <li><a href="#step3"
-                      class="step-list__nav-item step-list__nav-item--disabled text link">Развлечения</a>
+                  <li class="step-list__nav-item">
+                    <a href="#step2" class="step-list__nav-link text link">Маршрут</a>
+                  </li>
+                  <li class="step-list__nav-item step-list__nav-item--disabled">
+                    <a href="#step3" class="step-list__nav-link text link">
+                      Развлечения
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -1120,16 +1132,23 @@
             <li id="step3" class="step-list__item step-list__container step-list__item--step-3">
               <div class="step-list__header">
                 <div class="step-list__header-text">
-                  <h3 class="step-list__caption">Шаг 3. <br>Развлечения</h3>
+                  <h3 class="step-list__caption">Шаг 3.</h3>
+                  <span class="step-list__caption step-list__name">Развлечения</span>
                   <p class="step-list__description">
                     Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
                   </p>
                 </div>
                 <ul class="step-list__nav">
-                  <li><a href="#step1" class="step-list__nav-item step-list__nav-item--disabled text link">Даты</a></li>
-                  <li><a href="#step2" class="step-list__nav-item step-list__nav-item--disabled text link">Маршрут</a>
+                  <li class="step-list__nav-item step-list__nav-item--disabled">
+                    <a href="#step1" class="step-list__nav-link text link">Даты</a>
                   </li>
-                  <li><a href="#step3" class="step-list__nav-item text link">Развлечения</a>
+                  <li class="step-list__nav-item step-list__nav-item--disabled">
+                    <a href="#step2" class="step-list__nav-link text link">Маршрут</a>
+                  </li>
+                  <li class="step-list__nav-item">
+                    <a href="#step3" class="step-list__nav-link text link">
+                      Развлечения
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -1201,7 +1220,7 @@
                   <svg class="add-plans__back icon icon--active" width="10" height="18">
                     <use xlink:href="img/sprite.svg#arrow-left-thick"></use>
                   </svg>
-                  <span class="button__main-caption">НА ШАГ НАЗАД</span>
+                  <span class="button__main-caption">На шаг назад</span>
                 </a>
               </div>
             </li>

@@ -11,14 +11,15 @@
 
   @media (min-width: $medium-width) {
     margin-bottom: 11px;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
   }
 
   @media(min-width: $large-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
+    margin-bottom: 15px;
+    padding-top: 34px;
     padding-right: 42px;
     padding-bottom: 38px;
     padding-left: 43px;
@@ -67,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     padding-right: 45px;
-    padding-top: 20px;
+    padding-top: 22px;
     padding-left: 40px;
     border-top: 1px solid rgba(203,206,217, 0.3);
   }
@@ -75,8 +76,8 @@
   @media (min-width: $large-width) {
     border-top: none;
     width: 50%;
+    padding-top: 5px;
     padding-right: 0;
-    padding-top: 0;
     padding-left: 0;
   }
 }
@@ -87,13 +88,14 @@
 
   @media (min-width: $medium-width) {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 178px 200px;
     margin-top: 0;
     margin-bottom: 0;
     padding-right: 25px;
   }
 
   @media (min-width: $large-width) {
+    grid-template-columns: 175px 200px;
     padding-right: 0;
   }
 }
@@ -106,6 +108,11 @@
   @media (min-width: $medium-width) {
     flex-direction: row;
     margin-top: 0;
+    margin-right: -6px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-right: 0;
   }
 
   &:hover{
@@ -138,6 +145,7 @@
 
 .plan-list__index{
   @media (min-width: $large-width) {
-    margin-right: 36px;
+    margin-top: 2px;
+    margin-right: 33px;
   }
 }
