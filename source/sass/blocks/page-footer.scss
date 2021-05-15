@@ -35,6 +35,10 @@
   @media (min-width: $medium-width) {
     margin-top: -71px;
   }
+
+  @media (min-width: $large-width) {
+    margin-top: -68px;
+  }
 }
 
 .page-footer__container{

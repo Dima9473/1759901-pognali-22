@@ -10,6 +10,7 @@
   @media (min-width: $large-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 32px;
   }
 }
 
@@ -20,6 +21,11 @@
 
   @media (min-width: $medium-width) {
     margin-top: 8px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 38px;
+    margin-left: -64px;
   }
 
   &:hover{

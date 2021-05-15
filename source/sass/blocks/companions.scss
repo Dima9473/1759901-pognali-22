@@ -42,7 +42,7 @@
   @media (min-width: $large-width) {
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 73px;
    }
 }
 
@@ -60,6 +60,8 @@
   @media (min-width: $large-width) {
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: 65px;
    }
 }
 
@@ -78,6 +80,8 @@
   @media (min-width: $large-width) {
     min-width: 950px;
     max-height: 285px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
   }
 
   &:hover{
@@ -100,10 +104,12 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: 5px;
+    margin-top: 0;
+    min-height: 95px;
+    max-width: 210px;
+    margin-left: 48px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: auto;
   }
 }
 
@@ -124,7 +130,7 @@
 
   @media (min-width: $large-width) {
     flex-direction: row;
-    margin-top: auto;
+    margin-top: 42px;
     margin-bottom: 0;
     order: 3;
   }
@@ -192,7 +198,8 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: auto;
+    margin-top: -4px;
+    margin-left: -10px;
   }
 }
 
@@ -244,6 +251,10 @@
     max-width: 226px;
     margin-left: 0px;
   }
+
+  @media (min-width: $large-width) {
+    margin-top: 19px;
+  }
 }
 
 .companions__likes{
@@ -276,6 +287,8 @@
   @media (min-width: $large-width) {
     flex-direction: row;
     justify-content: flex-start;
+    margin-top: 5px;
+    margin-right: 46px;
   }
 }
 
@@ -570,12 +583,21 @@
   @media (min-width: $medium-width) {
     justify-content: flex-end;
   }
+
+  @media (min-width: $large-width) {
+    padding-right: 36px;
+  }
 }
 
 .companions__level{
   @media (min-width: $medium-width) {
     margin-top: 16px;
     transform: scale(1.4);
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 7px;
+    margin-right: 18px;
   }
 }
 
@@ -754,7 +776,7 @@
     line-height: 30px;
   }
 
-  &:after{
+  &::after{
     position: absolute;
     content: "";
     width: 7px;
@@ -770,9 +792,26 @@
       top: 12px;
       left: auto;
     }
+
+    @media (min-width: $large-width) {
+      display: none;
+    }
+  }
+
+  &::before{
+    @media (min-width: $large-width) {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      background-color: #f97676;
+      border-radius: 50%;
+      top: 11px;
+      left: -26px;
+    }
   }
 }
 
-.companions__name--online.companions__name::after{
+.companions__name--online.companions__name::after, .companions__name--online.companions__name::before{
   background-color: #BBF085;
 }

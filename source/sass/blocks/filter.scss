@@ -11,6 +11,13 @@
     padding-top: 128px;
     padding-bottom: 56px;
   }
+
+  @media (min-width: $large-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    // padding-bottom: 0;
+    // background-color: $basic-grey;
+  }
 }
 
 .filter--opened{
@@ -18,12 +25,24 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+
+
+  &.filter{
+  @media (min-width: $large-width) {
+    background-color: $basic-grey;
+    padding-bottom: 0;
+  }
+}
 }
 
 .filter__container{
   @media (min-width: $medium-width) {
     padding-left: 72px;
     padding-right: 73px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-left: 80px;
   }
 }
 
@@ -70,9 +89,10 @@
 
   @media (min-width: $large-width) {
     position: static;
-    padding-top: 74px;
-    padding-left: 57px;
-    padding-right: 63px;
+    padding-top: 53px;
+    padding-left: 0px;
+    padding-right: 145px;
+    background-color: $basic-grey;
   }
 }
 
@@ -144,7 +164,9 @@
   }
 
   @media (min-width: $large-width) {
-    margin-right: 20px;
+    margin-right: 13px;
+    margin-left: 321px;
+    margin-top: -6px;
   }
 
   &:hover{
@@ -213,11 +235,26 @@
   @media (min-width: $large-width) {
     display: flex;
     justify-content: space-around;
+
+    &:first-child{
+      margin-bottom: 19px
+    }
+
+    &:nth-child(2){
+      margin-bottom: 48px
+    }
+
+    &:nth-child(3){
+      margin-bottom: 82px
+    }
+
+    &:nth-child(4){
+      margin-bottom: 19px
+    }
   }
 }
 
 .filter__latter-cell{
-  text-transform: uppercase;
   @include text(14px, 500, 14px, $basic-blue-light);
 
   @media (min-width: $medium-width) {
@@ -229,6 +266,7 @@
   @media (min-width: $large-width) {
     display: flex;
     flex-direction: column;
+    text-align: left;
     height: 100%;
   }
 
@@ -312,7 +350,19 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: 49px;
+    margin-top: 64px;
+    width: 102%;
+    margin-left: 60px;
+    margin-right: -100px;
+  }
+
+  &:hover{
+    background: #C8CEE8;
+  }
+
+  &:active, &:focus{
+    background: #C8CEE8;
+    opacity: 0.3;
   }
 }
 
@@ -333,6 +383,11 @@
     width: 22px;
     height: 24px;
     margin-left: 54px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: 20px;
+    margin-right: 19px;
   }
 }
 
@@ -399,6 +454,10 @@
     margin-right: 28px;
   }
 
+  @media (min-width: $large-width) {
+    margin-right: 32px;
+  }
+
   opacity: 0.3;
 
   &:hover{
@@ -429,5 +488,11 @@
 .filter__country{
   @media (min-width: $medium-width) {
     min-width: 165px;
+  }
+}
+
+.filter__countries-column {
+  @media (min-width: $large-width) {
+    margin-top: 31px;
   }
 }

@@ -276,6 +276,10 @@
   align-items: center;
   margin-top: 5px;
   margin-right: 35px;
+
+  @media (min-width: $large-width) {
+    margin-right: 63px;
+  }
 }
 
 .page-header__icons{
