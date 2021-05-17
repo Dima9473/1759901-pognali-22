@@ -10,7 +10,10 @@
   list-style-type: none;
 
   @media (min-width: $medium-width) {
-    margin-bottom: 11px;
+    margin-bottom: 0;
+    &:not(:last-child){
+      margin-bottom: 11px;
+    }
     padding-bottom: 12px;
   }
 
@@ -18,7 +21,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
     padding-top: 34px;
     padding-right: 42px;
     padding-bottom: 38px;
@@ -68,7 +73,7 @@
     display: flex;
     justify-content: space-between;
     padding-right: 45px;
-    padding-top: 22px;
+    padding-top: 20px;
     padding-left: 40px;
     border-top: 1px solid rgba(203,206,217, 0.3);
   }

@@ -56,6 +56,7 @@
   @media (min-width: $medium-width) {
     font-size: 30px;
     line-height: 30px;
+    letter-spacing: normal;
   }
 
   @media (min-width: $large-width) {
@@ -90,6 +91,14 @@
 
   @media (min-width: $medium-width) and (max-width: $medium-max-width) {
     margin-top: 0;
+
+    &:nth-child(2){
+      margin-left: 6px;
+    }
+
+    &:nth-child(3){
+      margin-left: 6px;
+    }
   }
 
   @media (min-width: $large-width) {
@@ -300,7 +309,6 @@
 .choose-companion__show-caption{
   @include text(17px, bold, 17px, $basic-blue);
   text-transform: uppercase;
-  margin-left: 10px;
 
   @media (min-width: $medium-width) {
     font-size: 20px;
@@ -309,7 +317,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin-left: 15px;
+    margin-left: 3px;
     margin-top: 0;
   }
 }

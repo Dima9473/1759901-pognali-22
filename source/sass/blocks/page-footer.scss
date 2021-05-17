@@ -25,7 +25,11 @@
   margin-top: -86px;
 
   @media (min-width: $medium-width) {
-    margin-top: -53px;
+    margin-top: -57px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -49px;
   }
 }
 

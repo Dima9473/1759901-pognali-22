@@ -314,7 +314,7 @@
 
 .companions__button{
   @media (min-width: $medium-width) {
-    margin-left: 27px;
+    margin-left: 22px;
   }
 
   &:hover{
@@ -323,6 +323,14 @@
   &:active, &:focus{
     background-color: transparent;
     opacity: 0.3;
+  }
+}
+
+.companions__button--right-arrow{
+  margin-right: 30px;
+
+  @media (min-width: $medium-width) {
+    margin-right: 3px;
   }
 }
 

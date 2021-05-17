@@ -67,6 +67,10 @@
     width: 34px;
     height: 34px;
   }
+
+  @media (min-width: $large-width) {
+    margin-right: 17px;
+  }
 }
 
 .checkbox.checkbox--border + label::before{

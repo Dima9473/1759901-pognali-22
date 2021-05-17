@@ -382,12 +382,12 @@
   @media (min-width: $medium-width) {
     width: 22px;
     height: 24px;
-    margin-left: 54px;
+    margin-left: 34px;
   }
 
   @media (min-width: $large-width) {
-    margin-left: 20px;
-    margin-right: 19px;
+    margin-left: -9px;
+    margin-right: 9px;
   }
 }
 
@@ -482,6 +482,8 @@
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 9px;
+    letter-spacing: normal;
   }
 }
 

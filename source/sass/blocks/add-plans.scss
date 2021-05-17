@@ -72,11 +72,11 @@
   @media (min-width: $medium-width) {
     justify-content: flex-end;
     margin-left: -36px;
-    margin-top: 77px;
+    margin-top: 79px;
   }
 
   @media (min-width: $large-width) {
-    margin-top: 85px;
+    margin-top: 82px;
   }
 }
 
@@ -91,12 +91,35 @@
   }
 }
 
+.add-plans__button-caption--step2{
+  @media (min-width: $medium-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: -3px;
+    margin-left: 22px;
+  }
+}
+
 .add-plans__caption{
   @include text(24px, bold, 24px, $basic-blue-light);
 
   @media (min-width: $medium-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.add-plans__send-caption{
+  @media (min-width: $medium-width) {
+    margin-left: -15px;
+    margin-top: -5px;;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: -18px;
+    margin-top: -1px;
   }
 }
 
@@ -121,6 +144,18 @@
   }
 }
 
+.add-plans__back--step3{
+  @media (min-width: $medium-width) {
+    margin-top: -3px;
+    margin-right: 22px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 10px;
+    margin-right: 19px;
+  }
+}
+
 .add-plans__add-country{
   position: relative;
   border-radius: 4px;
@@ -135,7 +170,8 @@
   border-radius: 4px;
 
   @media (min-width: $medium-width) {
-    margin-top: 13px;
+    margin-top: 10px;
+    margin-bottom: 2px;
     width: 69%;
     height: 70px;
   }
@@ -318,15 +354,9 @@
   }
 }
 
-.add-plans__add-country-icon{
-  stroke: #C2C4C9;
-  stroke-width: 2px;
-  margin-right: 0;
-}
-
 .add-plans__add-country-text{
   @include text(14px, 500, 18px, $basic-blue-light);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 
   @media (max-width: $small-max-width) {
@@ -335,13 +365,9 @@
 
   @media (min-width: $medium-width) {
     margin-top: 1px;
-    margin-left: 15px;
+    margin-left: 16px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $large-width) {
-    letter-spacing: normal;
   }
 }
 
@@ -493,6 +519,7 @@
   @media (min-width: $large-width) {
     padding-left: 25px;
     margin-right: 38px;
+    padding-top: 33px;
   }
 }
 
@@ -608,6 +635,8 @@
 }
 
 .add-plans__description{
+  margin-top: 15px;
+
   @media (min-width: $medium-width) {
     max-width: 440px;
     margin-top: 35px;
@@ -616,5 +645,22 @@
 
   @media (min-width: $large-width) {
     margin-left: -1px;
+  }
+}
+
+.add-plans__description--step3{
+  @media (min-width: $medium-width) {
+    max-width: none;
+    margin-left: 2px;
+  }
+
+  @media (min-width: $large-width) {
+    max-width: 581px;
+  }
+}
+
+.add-plans__send-icon{
+  @media (min-width: $medium-width) {
+    margin-right: -15px;
   }
 }
