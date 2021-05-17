@@ -141,8 +141,8 @@
   max-width: 170px;
 
   @media (min-width: $medium-width) {
+    min-width: 255px;
     margin-top: 44px;
-    max-width: 225px;
     @include text(21px, bold, 25px, #ffffff);
   }
 }

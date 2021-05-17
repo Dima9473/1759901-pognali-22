@@ -183,7 +183,7 @@
             <blockquote class="promo__review">
               <q class="promo__description text text--default">Лучшее приложение, <br> что я видел в
                 жизни!</q>
-              <p class="promo__author-info text">Мурат Эльтазин главный редактор газеты <q class="text">гаджет
+              <p class="promo__author-info text">Мурат Эльтазин <br /> главный редактор газеты <q class="text">гаджет
                   лайф</q>
               </p>
             </blockquote>
@@ -274,7 +274,7 @@
           </ul>
           <a class="button button--authorization" href="authorization.html">
             <div
-              class="middle-menu__authorization text button__main-caption button__main-caption--dark button__main-caption--authorization">
+              class="middle-menu__authorization text button__main-caption button__main-caption--dark button__main-caption--authorization text">
               АВТОРИЗАЦИЯ
             </div>
           </a>
@@ -294,8 +294,8 @@
             А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
           <button class="about__details button">
-            <span class="button__main-caption">Подробнее</span>
-            <svg class="icon icon--arrow" width="10" height="18">
+            <span class="about__details-caption button__main-caption text">Подробнее</span>
+            <svg class="about__details-icon icon icon--arrow" width="10" height="18">
               <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
             </svg>
           </button>
@@ -307,10 +307,11 @@
         <div class="countries__collection">
           <div class="countries__header">
             <h2 class="countries__header-text text text--caption">Направления</h2>
-            <p class="text countries__info">
-              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем
+            <div class="text countries__info">
+              Мы не продаем туры<br /> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и
+              чем
               можно там заняться.
-            </p>
+            </div>
           </div>
           <ul class="countries__list card-list">
             <li class="countries__item card-list__item">
@@ -444,7 +445,7 @@
           </ul>
         </div>
         <a class="countries__all-countries button" href="directions.html">
-          <span class="button__main-caption button__main-caption--padding-left">Показать все</span>
+          <span class="button__main-caption button__main-caption--padding-left text">Показать все</span>
           <svg class="button__icon icon icon--arrow" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>
@@ -728,7 +729,7 @@
           </ul>
         </div>
         <a class="users__all button" href="companions.html">
-          <span class="button__main-caption button__main-caption--padding-left">Показать всех</span>
+          <span class="button__main-caption button__main-caption--padding-left text">Показать всех</span>
           <svg class="users__button-arrow button__icon icon icon--arrow" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>
@@ -795,26 +796,30 @@
       <div class="container">
         <header class="feedback__header">
           <h2 class="feedback__caption text text--caption">Заинтересовались?</h2>
-          <p class="feedback__authorize text text--default">
-            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
-            <a href="authorisation.html" class="feedback__authorisation-link">авторизуйтесь</a>.
-          </p>
+          <div class="feedback__authorize text text--default">
+            <div class="feedback__autorize-slogan">
+              <span class="feedback__authorize-text">Зарегистрируйтесь,</span>
+              <span class="feedback__autorize-description">это быстро и бесплатно!</span>
+            </div>
+            <span class="feedback__login">Уже зарегистрированы? Тогда скорее <a href="authorisation.html"
+                class="feedback__authorisation-link">авторизуйтесь</a>.</span>
+          </div>
         </header>
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__registration">
           <div class="feedback__button">
             <input type="email" class="feedback__email text text--default" placeholder="E-mail" required />
             <button class="feedback__send-email button" type="submit">
-              <span class="feedback__button-text button__main-caption">Регистрация</span>
+              <span class="feedback__button-text button__main-caption text">Регистрация</span>
               <svg class="icon icon--arrow" width="11" height="12">
                 <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
               </svg>
             </button>
           </div>
         </form>
-        <p class="text feedback__any-questions">
-          Остались вопросы?<br class="feedback__any-questions-br">
-          Мы с радостью на них ответим!
-        </p>
+        <div class="text feedback__questions">
+          <span class="feedback__any-questions">Остались вопросы?</span>
+          <span>Мы с радостью на них ответим!</span>
+        </div>
         <dl class="feedback__list icon-list">
           <div class="feedback__contact icon-list__item">
             <dt class="feedback__phone">
@@ -852,8 +857,7 @@
                   <use xlink:href="img/sprite.svg#map-marker"></use>
                 </svg>
               </dt>
-              <dd class="text contacts__addres icon-list__details">УЛ. БОЛЬШАЯ <br
-                  class="contacts__new-line">КОНЮШЕННАЯ, 19/8</dd>
+              <dd class="text contacts__addres icon-list__details">УЛ. БОЛЬШАЯ КОНЮШЕННАЯ, 19/8</dd>
             </div>
           </dl>
           <a class="contacts__build-way button"

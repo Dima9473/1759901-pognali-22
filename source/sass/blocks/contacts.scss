@@ -63,6 +63,10 @@
   line-height: 22px;
   margin-left: 17px;
 
+  @media (max-width: $small-max-width) {
+    max-width: 150px;
+  }
+
   @media (min-width: $medium-width) {
     font-size: 28px;
     line-height: 28px;
@@ -103,13 +107,6 @@
     padding: 23px 25px;
   }
 }
-
-.contacts__new-line{
-  @media (min-width: $medium-width) {
-    display: none;
-  }
-}
-
 
 .contacts__map{
   width: 100%;
