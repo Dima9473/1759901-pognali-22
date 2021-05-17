@@ -3,7 +3,7 @@
 
   @media (min-width: $medium-width) {
     width: 94%;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: -6px;
   }
 
@@ -170,6 +170,10 @@
     width: 70px;
     height: 47px;
     margin-top: 7px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $large-width) {
     margin-right: 12px;
   }
 }

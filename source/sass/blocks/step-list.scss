@@ -523,6 +523,30 @@
   }
 }
 
+.step-list__arrow--right{
+  margin-right: -3px;
+
+  @media (min-width: $medium-width) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-right: -7px;
+  }
+}
+
+.step-list__arrow--left{
+  margin-left: -3px;
+
+  @media (min-width: $medium-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-left: -5px;
+  }
+}
+
 .step-list__days{
   margin-top: 20px;
   width: 100%;

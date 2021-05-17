@@ -237,7 +237,7 @@
     justify-content: space-around;
 
     &:first-child{
-      margin-bottom: 19px
+      margin-bottom: 47px
     }
 
     &:nth-child(2){
@@ -249,7 +249,7 @@
     }
 
     &:nth-child(4){
-      margin-bottom: 19px
+      margin-bottom: 50px
     }
   }
 }
@@ -488,6 +488,10 @@
 .filter__country{
   @media (min-width: $medium-width) {
     min-width: 165px;
+  }
+
+  @media (min-width: $large-width) {
+    min-width: 210px;
   }
 }
 
