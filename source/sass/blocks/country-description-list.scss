@@ -117,7 +117,6 @@
     line-height: 23px;
     height: 115px;
     max-width: 702px;
-    letter-spacing: 0.09em;
   }
 
   &:hover{
@@ -147,7 +146,6 @@
   position: absolute;
   bottom: 6px;
   left: 2px;
-  right: -16px;
   padding-top: 20px;
   padding-bottom: 16px;
   padding-left: 21px;
@@ -155,10 +153,12 @@
 
   @media (min-width: $medium-width) {
     bottom: 6px;
-    left: 2px;
-    right: -21px;
+    left: 6px;
   }
 
+  @media (min-width: $large-width) {
+    left: 2px;
+  }
 }
 
 .country-description-list__flag{
