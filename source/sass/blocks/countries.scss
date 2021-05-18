@@ -55,7 +55,7 @@
   max-width: 380px;
 
   @media (min-width: $medium-width) {
-    margin-left: 0;
+    margin-left: -2px;
   }
 
   @media (min-width: $large-width) {
@@ -144,7 +144,7 @@
   }
 
   @media (min-width: $large-width) {
-    margin-top: 58px;
+    margin-top: 61px;
   }
 }
 
@@ -326,5 +326,11 @@
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.countries__show-all{
+  @media (min-width: $large-width) {
+    margin-right: 36px;
   }
 }

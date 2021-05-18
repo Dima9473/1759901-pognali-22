@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Направления</title>
 </head>
@@ -339,9 +339,8 @@
                   <h3 class="step-list__caption">Шаг 1.</h3>
                   <span class="step-list__caption step-list__name">Даты пребывания</span>
                   <p class="step-list__description text">Укажите предпочтительное количество
-                    попутчиков, которых вы
-                    хотели
-                    бы
+                    попутчиков, которых<br />
+                    вы хотели бы
                     позвать в поездку, и ее предполагаемую длительность.</p>
                 </div>
                 <ul class="step-list__nav">

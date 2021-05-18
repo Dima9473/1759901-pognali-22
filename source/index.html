@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <title>Погнали!</title>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ebb1ba2b-9091-4db5-838b-28c6ee995cd1&lang=ru_RU"></script>
@@ -286,10 +286,12 @@
         <div class="about__container">
           <h2 class="about__slogan text text--caption">О сервисе</h2>
           <p class="about__description text text--default">
-            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
-            и
-            черпайте вдохновение в чужих.
+            Любое путешествие веселее&nbsp
+            <br class="about__description-br" />с попутчиками, которые на одной волне с тобой!
+            Делитесь своими идеями путешествий&nbsp<br class="about__description-br-2" />и черпайте вдохновение в
+            чужих.
           </p>
+          <!-- <br class="about__description-br"> -->
           <p class="about__description about__description--travel text text--default">
             А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
@@ -446,7 +448,7 @@
         </div>
         <a class="countries__all-countries button" href="directions.html">
           <span class="button__main-caption button__main-caption--padding-left text">Показать все</span>
-          <svg class="button__icon icon icon--arrow" width="11" height="12">
+          <svg class="countries__show-all button__icon icon icon--arrow" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>
         </a>
@@ -462,10 +464,15 @@
             <div class="users__background-image-1"></div>
             <div class="users__background-image-2"></div>
             <div class="users__background-image-3"></div>
-            <p class="users__description text text--default">Все мы индивидуальны и у каждого свой взгляд на
-              идеальный
-              отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-            <p class="users__can-find text">Теперь можно легко найти единомышленников!</p>
+            <p class="users__description text text--default">
+              Все мы индивидуальны и у каждого свой взгляд на идеальный
+              отдых. Одному нужен пляж и коктейль,&nbsp
+              <br class="users__description-br" />а другому маршрут для хайкинга.
+            </p>
+            <p class="users__can-find text">
+              Теперь можно легко&nbsp
+              <br class="users__can-find-br" />найти единомышленников!
+            </p>
           </div>
           <ul class="users__cards card-list">
             <li class="users__card-list card-list__item">
@@ -729,7 +736,8 @@
           </ul>
         </div>
         <a class="users__all button" href="companions.html">
-          <span class="button__main-caption button__main-caption--padding-left text">Показать всех</span>
+          <span class="users__button-caption button__main-caption button__main-caption--padding-left text">Показать
+            всех</span>
           <svg class="users__button-arrow button__icon icon icon--arrow" width="11" height="12">
             <use xlink:href="img/sprite.svg#arrow-right-thick"></use>
           </svg>

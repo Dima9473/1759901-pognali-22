@@ -130,7 +130,7 @@
 
   @media (min-width: $large-width) {
     text-align: left;
-    margin-top: -285px;
+    margin-top: -289px;
     margin-left: 65px;
   }
 }
@@ -142,8 +142,12 @@
 
   @media (min-width: $medium-width) {
     min-width: 255px;
-    margin-top: 44px;
+    margin-top: 46px;
     @include text(21px, bold, 25px, #ffffff);
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 44px;
   }
 }
 
@@ -193,7 +197,7 @@
 
   @media (min-width: $medium-width) {
     margin-top: -550px;
-    margin-left: -360px;
+    margin-left: -356px;
   }
 
   @media (min-width: $large-width) {
