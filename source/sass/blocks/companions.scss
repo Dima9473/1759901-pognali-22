@@ -82,6 +82,9 @@
     max-height: 285px;
     padding-bottom: 0;
     margin-bottom: 30px;
+    &:last-child{
+      margin-top: 3px;
+    }
   }
 
   &:hover{

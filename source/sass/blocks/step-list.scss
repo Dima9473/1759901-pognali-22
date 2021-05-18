@@ -24,6 +24,10 @@
     &:not(:first-child){
       padding-bottom: 54px;
     }
+
+    &:last-child{
+      padding-bottom: 52px;
+    }
   }
 
   @media (min-width: $large-width) {
